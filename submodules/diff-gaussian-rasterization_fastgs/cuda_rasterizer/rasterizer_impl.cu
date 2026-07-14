@@ -138,13 +138,22 @@ __global__ void duplicateWithKeys(
 	{
 		// Find this Gaussian's offset in buffer for writing keys/values.
 		uint32_t off = (idx == 0) ? 0 : offsets[idx - 1];
+#ifdef DUP_DEBUG
+		uint32_t end_dbg = offsets[idx];
+		if (idx == 1149042 || off > end_dbg || end_dbg - off != tiles_touched[idx])
+			printf("DUPDBG idx=%u off=%u end=%u tt=%u P=%d\n",
+			       (uint32_t)idx, off, end_dbg, tiles_touched[idx], P);
+#endif
     // Update unsorted arrays with Gaussian idx for every tile that
-    // Gaussian touches
+    // Gaussian touches. Writes are capped to the slot count reserved by
+    // the counting pass (tiles_touched) — the FP tile enumeration is
+    // re-run here and may not match the counting pass exactly.
     duplicateToTilesTouched(
         points_xy[idx], con_o[idx], grid, mult,
         idx, off, depths[idx],
         gaussian_keys_unsorted,
-        gaussian_values_unsorted);
+        gaussian_values_unsorted,
+        tiles_touched[idx]);
 	}
 }
 

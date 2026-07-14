@@ -198,6 +198,12 @@ __device__ inline float2 computeEllipseIntersection(
 }
 
 // This is built upon Speedy-Splat — many thanks for their excellent work.
+// budget: maximum number of key/value entries this gaussian may write (its
+// slot count from the counting pass). The counting pass and this write pass
+// recompute the same floating-point tile enumeration and may disagree by a
+// tile at boundaries (per-call-site FMA contraction); writes are capped at
+// budget and any shortfall is padded with the last valid key so the sort
+// never sees uninitialized keys.
 __device__ inline uint32_t processTiles(
     const float4 con_o, const float disc, const float t, const float2 p,
     float2 bbox_min, float2 bbox_max,
@@ -206,7 +212,8 @@ __device__ inline uint32_t processTiles(
     const dim3 grid, const bool isY,
     uint32_t idx, uint32_t off, float depth,
     uint64_t* gaussian_keys_unsorted,
-    uint32_t* gaussian_values_unsorted
+    uint32_t* gaussian_values_unsorted,
+    uint32_t budget
     )
 {
 
@@ -228,6 +235,8 @@ __device__ inline uint32_t processTiles(
     }
 
     uint32_t tiles_count = 0;
+    uint32_t written = 0;
+    uint64_t last_key = 0;
     float2 intersect_min_line, intersect_max_line;
     float ellipse_min, ellipse_max;
     float min_line, max_line;
@@ -288,12 +297,18 @@ __device__ inline uint32_t processTiles(
             max(rect_min.y, (int)(ellipse_max / BLOCK_V + 1))
             );
 
-        tiles_count += max_tile_v - min_tile_v;
+        // Degenerate slices can produce an inverted interval (ellipse_min >
+        // ellipse_max from the inverted init values when neither boundary
+        // line intersects); the raw difference is then negative and, summed
+        // into the uint32 tile count, corrupts the prefix sum offsets.
+        tiles_count += max(0, max_tile_v - min_tile_v);
         // Only update keys array if it exists.
         if (gaussian_keys_unsorted != nullptr) {
           // Loop over tiles and add to keys array
           for (int v = min_tile_v; v < max_tile_v; v++)
           {
+            if (written >= budget)
+              break;
             // For each tile that the Gaussian overlaps, emit a
             // key/value pair. The key is |  tile ID  |      depth      |,
             // and the value is the ID of the Gaussian. Sorting the values
@@ -302,14 +317,29 @@ __device__ inline uint32_t processTiles(
             uint64_t key = isY ?  (u * grid.x + v) : (v * grid.x + u);
             key <<= 32;
             key |= *((uint32_t*)&depth);
-            gaussian_keys_unsorted[off] = key;
-            gaussian_values_unsorted[off] = idx;
-            off++;
+            gaussian_keys_unsorted[off + written] = key;
+            gaussian_values_unsorted[off + written] = idx;
+            last_key = key;
+            written++;
           }
         }
         // Max line of this tile slice will be min lin of next tile slice
         intersect_min_line = intersect_max_line;
         min_line = max_line;
+    }
+    // Pad unused reserved slots with the last valid key (or a benign
+    // far-depth key in tile 0 if nothing was written) so downstream
+    // sorting/identifyTileRanges never reads uninitialized keys.
+    if (gaussian_keys_unsorted != nullptr) {
+      if (written == 0 && budget > 0) {
+        const float far_depth = 3.4e38f;
+        last_key = ((uint64_t)0 << 32) | *((uint32_t*)&far_depth);
+      }
+      while (written < budget) {
+        gaussian_keys_unsorted[off + written] = last_key;
+        gaussian_values_unsorted[off + written] = idx;
+        written++;
+      }
     }
     return tiles_count;
 }
@@ -319,17 +349,32 @@ __device__ inline uint32_t duplicateToTilesTouched(
     const float2 p, const float4 con_o, const dim3 grid, const float mult,
     uint32_t idx, uint32_t off, float depth,
     uint64_t* gaussian_keys_unsorted,
-    uint32_t* gaussian_values_unsorted
+    uint32_t* gaussian_values_unsorted,
+    uint32_t budget = 0xFFFFFFFFu
     )
 {
 
     //  ---- SNUGBOX Code ---- //
+
+    // In write mode, reserved slots must always be filled even if this
+    // pass enumerates nothing (see processTiles padding rationale).
+    auto pad_all = [&]() {
+        if (gaussian_keys_unsorted != nullptr && budget != 0xFFFFFFFFu) {
+            const float far_depth = 3.4e38f;
+            uint64_t pad_key = ((uint64_t)0 << 32) | *((uint32_t*)&far_depth);
+            for (uint32_t w = 0; w < budget; ++w) {
+                gaussian_keys_unsorted[off + w] = pad_key;
+                gaussian_values_unsorted[off + w] = idx;
+            }
+        }
+    };
 
     // Calculate discriminant
     float disc = con_o.y * con_o.y - con_o.x * con_o.z;
 
     // If ill-formed ellipse, return 0
     if (con_o.x <= 0 || con_o.z <= 0 || disc >= 0) {
+        pad_all();
         return 0;
     }
 
@@ -369,6 +414,7 @@ __device__ inline uint32_t duplicateToTilesTouched(
 
     // If no tiles are touched, return 0
     if (y_span * x_span == 0) {
+        pad_all();
         return 0;
     }
 
@@ -382,7 +428,8 @@ __device__ inline uint32_t duplicateToTilesTouched(
         grid, isY,
         idx, off, depth,
         gaussian_keys_unsorted,
-        gaussian_values_unsorted
+        gaussian_values_unsorted,
+        budget
     );
 }
 

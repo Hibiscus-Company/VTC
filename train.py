@@ -34,6 +34,23 @@ except ImportError:
 from utils.fast_utils import compute_gaussian_score_fastgs, sampling_cameras
 
 
+_lpips_loss_net = None  # lazy-init frozen VGG for --lambda_lpips fine-tune stage
+
+
+def edge_aware_tv_loss(render, gt, beta=10.0):
+    """Edge-preserving total-variation loss (DET-GS style). Penalizes gradients
+    in the rendered image weighted by GT-edge-awareness: homogeneous GT regions
+    (sky, panels) get high weight → floaters/speckle smoothed; GT edges (metal
+    trusses) get near-zero weight → sharp boundaries preserved. C,H,W tensors."""
+    dx_r = torch.abs(render[:, :, 1:] - render[:, :, :-1])
+    dy_r = torch.abs(render[:, 1:, :] - render[:, :-1, :])
+    dx_g = torch.abs(gt[:, :, 1:] - gt[:, :, :-1]).mean(0, keepdim=True)
+    dy_g = torch.abs(gt[:, 1:, :] - gt[:, :-1, :]).mean(0, keepdim=True)
+    wx = torch.exp(-beta * dx_g)
+    wy = torch.exp(-beta * dy_g)
+    return (wx * dx_r).mean() + (wy * dy_r).mean()
+
+
 def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoint_iterations, checkpoint, debug_from, websockets):
     first_iter = 0
     tb_writer = prepare_output_and_logger(dataset)
@@ -52,6 +69,17 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
     viewpoint_stack = scene.getTrainCameras().copy()
     viewpoint_indices = list(range(len(viewpoint_stack)))
+
+    # per-training-image appearance affine (exposure/WB drift absorber):
+    # render*(1+gain)+bias is compared to GT during TRAINING ONLY, so drift is
+    # absorbed here instead of being baked into the model; test renders stay raw.
+    app_gain = app_bias = app_optim = None
+    if opt.appearance_affine:
+        n_train = len(viewpoint_stack)
+        app_gain = torch.zeros(n_train, 3, device="cuda", requires_grad=True)
+        app_bias = torch.zeros(n_train, 3, device="cuda", requires_grad=True)
+        app_optim = torch.optim.Adam([app_gain, app_bias], lr=opt.app_lr)
+        print(f"Appearance affine enabled: {n_train} images, lr={opt.app_lr}, reg={opt.lambda_app}")
 
     # record time
     optim_start = torch.cuda.Event(enable_timing=True)
@@ -98,9 +126,34 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
         # Loss
         gt_image = viewpoint_cam.original_image.cuda()
-        Ll1 = l1_loss(image, gt_image)
-        ssim_value = fast_ssim(image.unsqueeze(0), gt_image.unsqueeze(0))
+        if app_gain is not None:
+            uid = viewpoint_cam.uid
+            image_pm = image * (1.0 + app_gain[uid]).view(3, 1, 1) + app_bias[uid].view(3, 1, 1)
+        else:
+            image_pm = image
+        Ll1 = l1_loss(image_pm, gt_image)
+        ssim_value = fast_ssim(image_pm.unsqueeze(0), gt_image.unsqueeze(0))
         loss = (1.0 - opt.lambda_dssim) * Ll1 + opt.lambda_dssim * (1.0 - ssim_value)
+        if app_gain is not None and opt.lambda_app > 0:
+            loss = loss + opt.lambda_app * (app_gain.square().mean() + app_bias.square().mean())
+        if opt.lambda_tv > 0:
+            loss = loss + opt.lambda_tv * edge_aware_tv_loss(image_pm, gt_image, opt.tv_beta)
+        if opt.lambda_opacity > 0 and iteration > opt.opacity_from_iter:
+            o = gaussians.get_opacity.clamp(1e-6, 1 - 1e-6)
+            opacity_entropy = -(o * torch.log(o) + (1 - o) * torch.log(1 - o)).mean()
+            loss = loss + opt.lambda_opacity * opacity_entropy
+        if opt.lambda_lpips > 0 and iteration > opt.lpips_from_iter:
+            # perceptual fine-tune stage: directly optimize the competition's
+            # 0.4-weight LPIPS term (frozen VGG backbone, same family as scoring)
+            global _lpips_loss_net
+            if _lpips_loss_net is None:
+                import lpips as _lpips_pkg
+                _lpips_loss_net = _lpips_pkg.LPIPS(net="vgg", verbose=False).cuda()
+                for p in _lpips_loss_net.parameters():
+                    p.requires_grad_(False)
+            # clamp for exact parity with the scored artifact (renders can exceed 1)
+            loss = loss + opt.lambda_lpips * _lpips_loss_net(
+                image_pm.clamp(0, 1).unsqueeze(0) * 2 - 1, gt_image.unsqueeze(0) * 2 - 1).squeeze()
         loss.backward()
 
         iter_end.record()
@@ -150,12 +203,19 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
             # The multiview consistent pruning of fastgs. We do it every 3k iterations after 15k
             # In this stage, the model converge basically. So we can prune more aggressively without degrading rendering quality.
             # You can check the rendering results of 20K iterations in arxiv version (https://arxiv.org/abs/2511.04283), the rendering quality is already very good.
-            if iteration % 3000 == 0 and iteration > 15_000 and iteration < 30_000:
+            # Tie the aggressive final-prune phase to densify_until_iter instead
+            # of a hardcoded 15k: densification and final-pruning must NOT overlap
+            # (they collide and can collapse the model to 0 gaussians). This lets
+            # densify_until_iter be raised past 15k to add capacity/detail.
+            # (parameterized end: last prune 3k before the end — identical to the
+            # original `< 30_000` at the default 30k schedule, scales with --iterations)
+            if iteration % 3000 == 0 and iteration > opt.densify_until_iter and iteration <= opt.iterations - 3000:
                 my_viewpoint_stack = scene.getTrainCameras().copy()
                 camlist = sampling_cameras(my_viewpoint_stack)
 
-                _, pruning_score = compute_gaussian_score_fastgs(camlist, gaussians, pipe, bg, opt)                    
-                gaussians.final_prune_fastgs(min_opacity = 0.1, pruning_score = pruning_score)
+                _, pruning_score = compute_gaussian_score_fastgs(camlist, gaussians, pipe, bg, opt)
+                gaussians.final_prune_fastgs(min_opacity = 0.1, pruning_score = pruning_score,
+                                             score_thresh = opt.final_prune_thresh)
         
             # Optimization step
             if iteration < opt.iterations:
@@ -165,6 +225,17 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
                     visible = radii > 0
                     gaussians.optimizer.step(visible, radii.shape[0])
                     gaussians.optimizer.zero_grad(set_to_none = True)
+                if app_optim is not None:
+                    app_optim.step()
+                    app_optim.zero_grad(set_to_none=True)
+                    # keep the affine zero-mean per channel: only relative
+                    # (per-image) drift is absorbed, global exposure stays in
+                    # the model — otherwise raw test renders inherit a bias
+                    app_gain -= app_gain.mean(0)
+                    app_bias -= app_bias.mean(0)
+                    if iteration % 5000 == 0:
+                        print(f"[APP] |gain| mean {app_gain.abs().mean():.4f} max {app_gain.abs().max():.4f} "
+                              f"|bias| mean {app_bias.abs().mean():.4f} max {app_bias.abs().max():.4f}")
 
             # record time
             optim_end.record()

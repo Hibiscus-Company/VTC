@@ -491,7 +491,17 @@ class GaussianModel:
 
         # This is our multi-view consisent metric for densification
         # We use this metric to further filter the candidates for densification, which is similar to taming 3dgs.
-        metric_mask = importance_score > 5
+        # Gate is tunable: importance_score ≈ flagged-pixel-hits per view, so a
+        # fixed >5 permanently blocks few-pixel (thin-structure) gaussians from
+        # densifying no matter how wrong they are.
+        metric_mask = importance_score > getattr(args, "metric_gate", 5)
+
+        # hard capacity cap (0 = off): stop clone/split but keep every prune
+        # path running, so a loose gate can't wedge the GPU (exp14: gate -1
+        # grew unboundedly, 15x wall clock at 16GB)
+        cap = getattr(args, "max_gaussians", 0)
+        if cap and self.get_xyz.shape[0] >= cap:
+            metric_mask = torch.zeros_like(metric_mask)
 
         self.densify_and_clone_fastgs(metric_mask, all_clones)
         self.densify_and_split_fastgs(metric_mask, all_splits)
@@ -509,7 +519,7 @@ class GaussianModel:
         # The budget is not necessary for our method.
         if remove_budget:
             n_init_points = self.get_xyz.shape[0]
-            padded_importance = torch.zeros((n_init_points), dtype=torch.float32)
+            padded_importance = torch.zeros((n_init_points), dtype=torch.float32, device="cuda")
             padded_importance[:scores.shape[0]] = 1 / (1e-6 + scores.squeeze())
             selected_pts_mask = torch.zeros_like(padded_importance, dtype=bool, device="cuda")
             sampled_indices = torch.multinomial(padded_importance, remove_budget, replacement=False)
@@ -517,7 +527,11 @@ class GaussianModel:
             final_prune = torch.logical_and(prune_mask, selected_pts_mask)
             self.prune_points(final_prune)
         
-        opacities_new = inverse_sigmoid(torch.min(self.get_opacity, torch.ones_like(self.get_opacity)*0.8))
+        # opacity ceiling: at 0.8 a single-splat thin structure transmits >=20% of
+        # the sky behind it through the whole densify phase (clamped every 100 it),
+        # forcing stacked/fatter splats. Tunable via --opacity_ceiling (stock 0.8).
+        ceiling = getattr(args, "opacity_ceiling", 0.8)
+        opacities_new = inverse_sigmoid(torch.min(self.get_opacity, torch.ones_like(self.get_opacity)*ceiling))
         optimizable_tensors = self.replace_tensor_to_optimizer(opacities_new, "opacity")
         self._opacity = optimizable_tensors["opacity"]
         tmp_radii = self.tmp_radii
@@ -530,11 +544,14 @@ class GaussianModel:
         self.xyz_gradient_accum_abs[update_filter] += torch.norm(viewspace_point_tensor.grad[update_filter, 2:], dim=-1, keepdim=True)
         self.denom[update_filter] += 1
 
-    def final_prune_fastgs(self, min_opacity, pruning_score = None):
+    def final_prune_fastgs(self, min_opacity, pruning_score = None, score_thresh = 0.9):
         """Final-stage pruning: remove Gaussians based on opacity and multi-view consistency.
         In the final stage we remove Gaussians that have low opacity or that are flagged by
-        our multi-view reconstruction consistency metric (provided as `pruning_score`)."""
-        prune_mask = (self.get_opacity < min_opacity).squeeze() 
-        scores_mask = pruning_score > 0.9
+        our multi-view reconstruction consistency metric (provided as `pruning_score`).
+        score_thresh tunable: min-max-normalized score always prunes a top slice,
+        and post-15k removals are never re-densified — on persistently-hard thin
+        structures that slice can be load-bearing geometry."""
+        prune_mask = (self.get_opacity < min_opacity).squeeze()
+        scores_mask = pruning_score > score_thresh
         final_prune = torch.logical_or(prune_mask, scores_mask)
         self.prune_points(final_prune)

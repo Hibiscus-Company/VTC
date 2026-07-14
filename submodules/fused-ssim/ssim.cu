@@ -27,8 +27,11 @@ namespace cg = cooperative_groups;
 #define SY (BY + 10)
 
 // convolution scratchpad size
-#define CX (BX)
-#define CCX (BX + 0)
+// do_separable_conv_x writes and do_separable_conv_y reads columns
+// [5, BX+5), so the scratch must be BX+10 wide (writing at threadIdx.x+5
+// with only BX columns overflows shared memory for threadIdx.x >= BX-5).
+#define CX (BX + 10)
+#define CCX (BX + 10)
 #define CY (BY + 10)
 
 

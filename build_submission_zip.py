@@ -1,0 +1,113 @@
+#
+# Build the competition submission zip from lossless PNG archives
+# (audit round 3: the packaged JPEGs must be SINGLE-GENERATION -- encoded once,
+# from PNG, at final quality; never re-encode an existing JPEG).
+#
+# Walks a quality ladder until the zip fits --max_mb: encodes every scene at
+# qualities[0]; if too big, steps the largest scenes down one rung at a time.
+# Validates the file list against each scene's test_poses.csv (exact names,
+# including .JPG case) and runs a CRC self-test before reporting.
+#
+# Usage:
+#   python build_submission_zip.py \
+#       --scene_dirs "SCENE1=/path/to/renders_png" "SCENE2=..." \
+#       --data_root ~/data/phase1/private_set1 \
+#       --out /mnt/d/avv/submissions/sub_XXX.zip \
+#       [--qualities 98 97 96] [--subsampling 2] [--max_mb 350]
+#
+import os
+import io
+import csv
+import glob
+import argparse
+import zipfile
+from PIL import Image
+
+
+def encode_scene(png_dir, names, sizes, quality, subsampling):
+    blobs = {}
+    for name in names:
+        stem = os.path.splitext(name)[0]
+        src = os.path.join(png_dir, stem + ".png")
+        assert os.path.exists(src), f"missing PNG source: {src}"
+        im = Image.open(src)
+        # guard against a stale/wrong-run png_dir (e.g. old supersample output):
+        # wrong-size images would pass every name/CRC check but score 0
+        assert im.size == sizes[name], f"{src}: {im.size} != csv {sizes[name]}"
+        buf = io.BytesIO()
+        # progressive: identical pixels at the same quality, ~5% smaller
+        # (measured 343.7->327.0MB on the 8-scene ensemble at q98ss2) --
+        # that headroom is what lets small scenes ride at q100/q99
+        im.convert("RGB").save(
+            buf, "JPEG", quality=quality, subsampling=subsampling,
+            optimize=True, progressive=True)
+        blobs[name] = buf.getvalue()
+    return blobs
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument("--scene_dirs", nargs="+", required=True,
+                   help="SCENE=png_dir pairs; SCENE must match a <data_root>/<SCENE>")
+    p.add_argument("--data_root", required=True, help="dir holding <scene>/test/test_poses.csv")
+    p.add_argument("--out", required=True)
+    p.add_argument("--qualities", type=int, nargs="+", default=[100, 99, 98, 97, 96, 95])
+    p.add_argument("--subsampling", type=int, default=2, help="0=4:4:4, 2=4:2:0")
+    p.add_argument("--max_mb", type=float, default=350.0)
+    args = p.parse_args()
+
+    scenes = {}
+    for sd in args.scene_dirs:
+        scene, png_dir = sd.split("=", 1)
+        csv_path = os.path.join(os.path.expanduser(args.data_root), scene, "test", "test_poses.csv")
+        with open(csv_path, newline="") as f:
+            rows = list(csv.DictReader(f))
+        names = [r["image_name"] for r in rows]
+        assert len(names) == len(set(names)), f"{csv_path}: duplicate image_name"
+        sizes = {r["image_name"]: (int(r["width"]), int(r["height"])) for r in rows}
+        scenes[scene] = {"png_dir": png_dir, "names": names, "sizes": sizes, "q": args.qualities[0]}
+
+    # first pass at top quality
+    for s, info in scenes.items():
+        info["blobs"] = encode_scene(info["png_dir"], info["names"], info["sizes"],
+                                     info["q"], args.subsampling)
+
+    def total_mb():
+        return sum(len(b) for i in scenes.values() for b in i["blobs"].values()) / 1e6
+
+    # ladder: step the currently-largest scene down one rung until it fits
+    while total_mb() > args.max_mb:
+        candidates = [s for s, i in scenes.items()
+                      if args.qualities.index(i["q"]) < len(args.qualities) - 1]
+        assert candidates, f"cannot fit {args.max_mb}MB even at q{args.qualities[-1]}"
+        big = max(candidates, key=lambda s: sum(len(b) for b in scenes[s]["blobs"].values()))
+        scenes[big]["q"] = args.qualities[args.qualities.index(scenes[big]["q"]) + 1]
+        print(f"{total_mb():.1f}MB > {args.max_mb}MB, re-encoding {big} at q{scenes[big]['q']}")
+        scenes[big]["blobs"] = encode_scene(
+            scenes[big]["png_dir"], scenes[big]["names"], scenes[big]["sizes"],
+            scenes[big]["q"], args.subsampling)
+
+    if os.path.dirname(args.out):
+        os.makedirs(os.path.dirname(args.out), exist_ok=True)
+    with zipfile.ZipFile(args.out, "w", zipfile.ZIP_STORED) as z:
+        for s in sorted(scenes):
+            for name in scenes[s]["names"]:
+                z.writestr(f"{s}/{name}", scenes[s]["blobs"][name])
+
+    # verify: CRC + exact arcname set vs CSVs
+    with zipfile.ZipFile(args.out) as z:
+        assert z.testzip() is None, "CRC check failed"
+        got = set(z.namelist())
+    exp = {f"{s}/{n}" for s, i in scenes.items() for n in i["names"]}
+    assert got == exp, f"arcname mismatch: missing={exp - got} extra={got - exp}"
+
+    size_mb = os.path.getsize(args.out) / 1e6
+    # blob budget ignores ~150B/entry of zip overhead; catch the edge here
+    assert size_mb <= args.max_mb, f"final zip {size_mb:.1f}MB exceeds {args.max_mb}MB"
+    print(f"OK: {args.out}  {size_mb:.1f}MB  {len(exp)} files")
+    for s in sorted(scenes):
+        print(f"  {s}: q{scenes[s]['q']}")
+
+
+if __name__ == "__main__":
+    main()

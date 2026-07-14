@@ -498,15 +498,21 @@ PerGaussianRenderCUDA(
   	#pragma unroll
 	for (int i = 0; i < BLOCK_SIZE + 31; ++i) {
     if (i % 32 == 0) {
+      // Loads at i == 256 (and image-edge tiles) index past the per-bucket
+      // sampled_ar window / the pixel buffers; those lanes' values are never
+      // consumed (guarded by idx < BLOCK_SIZE and valid_pixel below), but the
+      // reads themselves must stay in bounds to avoid faulting.
+      const bool in_bucket = (i + block.thread_rank()) < BLOCK_SIZE;
       for (int ch = 0; ch < C; ++ch) {
         int shift = BLOCK_SIZE * ch + i + block.thread_rank();
-        Shared_sampled_ar[ch * 32 + block.thread_rank()] = sampled_ar[shift];
+        Shared_sampled_ar[ch * 32 + block.thread_rank()] = in_bucket ? sampled_ar[shift] : 0.0f;
       }
       const uint32_t local_id = i + block.thread_rank();
       const uint2 pix = {pix_min.x + local_id % BLOCK_X, pix_min.y + local_id / BLOCK_X};
       const uint32_t id = W * pix.y + pix.x;
+      const bool pix_ok = in_bucket && pix.x < (uint32_t)W && pix.y < (uint32_t)H;
       for (int ch = 0; ch < C; ++ch) {
-        Shared_pixels[ch * 32 + block.thread_rank()] = pixel_colors[ch * H * W + id];
+        Shared_pixels[ch * 32 + block.thread_rank()] = pix_ok ? pixel_colors[ch * H * W + id] : 0.0f;
       }
       block.sync();
     }

@@ -98,6 +98,44 @@ class OptimizationParams(ParamGroup):
         self.grad_thresh = 0.0002
         self.dense = 0.001
         self.mult = 0.5      # multiplier for the compact box to control the tile number of each splat
+        # audit-exposed densify/prune gates (defaults = FastGS stock behavior):
+        # metric_gate: importance_score (flagged-pixel-hits/view) needed to densify.
+        #   >5 blocks few-pixel thin-structure gaussians from ever densifying.
+        self.metric_gate = 5
+        # final_prune_thresh: post-densify multi-view prune cutoff; min-max-normalized
+        #   score always prunes a top slice — on hard thin structures it can remove
+        #   load-bearing geometry with no chance of re-densification.
+        self.final_prune_thresh = 0.9
+        # opacity_ceiling: densify-phase opacity clamp (stock 0.8). 0.8 keeps thin
+        #   structures >=20% transparent during layout formation (audit H3).
+        self.opacity_ceiling = 0.8
+        # importance_vis_norm: normalize densification hit-counts by per-gaussian
+        #   visible-view count instead of the fixed 10 sampled views (audit item 5)
+        self.importance_vis_norm = False
+        # max_gaussians: hard densification cap, 0 = off. Growth stops at the
+        #   cap but pruning continues (guard against unbounded-densify configs;
+        #   exp14 gate -1 grew unboundedly and wedged the GPU at 16GB)
+        self.max_gaussians = 0
+
+        # edge-aware TV regularization (DET-GS style): smooth the rendered image
+        # where the GT is homogeneous, keep gradients free at GT edges
+        self.lambda_tv = 0.0     # 0 = off
+        self.tv_beta = 10.0      # edge-weight sharpness: w = exp(-tv_beta * |grad_gt|)
+
+        # opacity binary-entropy sparsity: push per-gaussian opacity toward 0 or 1
+        # → removes low-opacity floaters (esp. sky) WITHOUT touching pixel sharpness
+        self.lambda_opacity = 0.0   # 0 = off
+        self.opacity_from_iter = 500  # start after initial densification warmup
+
+        # perceptual (VGG-LPIPS) fine-tune stage: small extra loss term over the
+        # last iterations, directly optimizing the competition's 0.4-weight metric
+        self.lambda_lpips = 0.0       # 0 = off
+        self.lpips_from_iter = 25_000
+
+        # per-training-image appearance affine (train-time exposure/WB absorber)
+        self.appearance_affine = False
+        self.app_lr = 0.001
+        self.lambda_app = 0.1         # pulls gain/bias toward identity
 
         self.random_background = False
         self.optimizer_type = "default"

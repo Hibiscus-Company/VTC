@@ -88,8 +88,10 @@ def compute_gaussian_score_fastgs(camlist, gaussians, pipe, bg, args, DENSIFY = 
         if DENSIFY:
             if full_metric_counts is None:
                 full_metric_counts = accum_loss_counts.clone()
+                visible_counts = (render_pkg["radii"] > 0).int()
             else:
                 full_metric_counts += accum_loss_counts
+                visible_counts += (render_pkg["radii"] > 0).int()
 
         if full_metric_score is None:
             full_metric_score = photometric_loss * accum_loss_counts.clone()
@@ -99,7 +101,14 @@ def compute_gaussian_score_fastgs(camlist, gaussians, pipe, bg, args, DENSIFY = 
     pruning_score = (full_metric_score - torch.min(full_metric_score)) / (torch.max(full_metric_score) - torch.min(full_metric_score))
     
     if DENSIFY:
-        importance_score = torch.div(full_metric_counts, len(camlist), rounding_mode='floor')
+        if getattr(args, "importance_vis_norm", False):
+            # normalize hit counts by the views that actually SEE the gaussian,
+            # not the fixed 10: a peripheral structure visible in 3/10 sampled
+            # views is otherwise under-counted 3.3x and never passes the gate
+            importance_score = torch.div(full_metric_counts,
+                                         visible_counts.clamp(min=1), rounding_mode='floor')
+        else:
+            importance_score = torch.div(full_metric_counts, len(camlist), rounding_mode='floor')
     else:
         importance_score = None
     return importance_score, pruning_score
