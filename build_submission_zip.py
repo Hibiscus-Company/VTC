@@ -87,6 +87,33 @@ def main():
             scenes[big]["png_dir"], scenes[big]["names"], scenes[big]["sizes"],
             scenes[big]["q"], args.subsampling)
 
+    # RECLAIM: the descent above stops at the first rung that FITS, so the final step
+    # usually overshoots and throws the leftover headroom away. R8 landed at 342.7MB of
+    # a 350MB budget -- 7.3MB (2%) of quality discarded, after it had already knocked an
+    # untouched scene from q99 to q98 to get there. Step scenes back UP while they fit.
+    # Greedy on smallest-cost-first, so the cheapest upgrades land before the budget runs out.
+    improved = True
+    while improved:
+        improved = False
+        for s in sorted(scenes, key=lambda s: sum(len(b) for b in scenes[s]["blobs"].values())):
+            qi = args.qualities.index(scenes[s]["q"])
+            if qi == 0:
+                continue
+            up_q = args.qualities[qi - 1]
+            trial = encode_scene(scenes[s]["png_dir"], scenes[s]["names"],
+                                 scenes[s]["sizes"], up_q, args.subsampling)
+            cur_b = sum(len(b) for b in scenes[s]["blobs"].values())
+            new_b = sum(len(b) for b in trial.values())
+            # zip overhead is ~136 B/entry (ZIP_STORED), so a FIXED 0.5MB reserve stops
+            # covering it past ~3700 files -- and a bigger release could exceed that.
+            # Scale the margin with the file count (audit r11).
+            n_files = sum(len(i["names"]) for i in scenes.values())
+            margin = max(0.5, 0.0002 * n_files)
+            if total_mb() + (new_b - cur_b) / 1e6 <= args.max_mb - margin:
+                scenes[s]["q"], scenes[s]["blobs"] = up_q, trial
+                print(f"reclaim: {s} back up to q{up_q}  (total {total_mb():.1f}MB)")
+                improved = True
+
     if os.path.dirname(args.out):
         os.makedirs(os.path.dirname(args.out), exist_ok=True)
     with zipfile.ZipFile(args.out, "w", zipfile.ZIP_STORED) as z:

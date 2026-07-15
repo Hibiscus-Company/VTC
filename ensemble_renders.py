@@ -49,6 +49,11 @@ def main():
                         "meaningful across model FAMILIES with complementary "
                         "error profiles; equal-quality same-family weighting "
                         "measured worthless (round 3)")
+    p.add_argument("--masks", nargs="+", default=None,
+                   help="per-member .npy validity mask (or 'none'), same order as "
+                        "--dirs. Weight is zeroed where a member was never supervised "
+                        "and the remaining members are renormalized per pixel. See "
+                        "gsplat_track/fov_mask.py")
     args = p.parse_args()
 
     members = [load_stems(d) for d in args.dirs]
@@ -77,15 +82,35 @@ def main():
         w = np.asarray(args.weights, dtype=np.float64)
     w = w / w.sum()
 
+    # per-member spatial validity (P6). On HNI0131/HNI0265 (k1=-0.115) the same-K
+    # undistortion crops the outer ring, so the FastGS members were NEVER supervised
+    # on 11.9% of the frame -- yet they carry 0.4 of the weight there. Zero them
+    # outside their supervised region and renormalize per pixel, so the UT members
+    # (supervised across the whole frame, in distorted space) carry that ring alone.
+    masks = [None] * len(members)
+    if args.masks is not None:
+        assert len(args.masks) == len(members), "--masks count != --dirs count"
+        for i, mp in enumerate(args.masks):
+            if mp and mp.lower() != "none":
+                masks[i] = np.load(mp).astype(np.float32)
+                print(f"  mask {os.path.basename(mp)} on {args.dirs[i]}: "
+                      f"{100 * (masks[i] < 0.5).mean():.2f}% suppressed")
+
     for s in sorted(stems):
-        acc = None
-        for wi, m in zip(w, members):
+        acc, wsum = None, None
+        for wi, m, mk in zip(w, members, masks):
             im = Image.open(m[s])
             if im.mode == "P":
                 print(f"WARNING: {m[s]} is palette-quantized (lossy source, not the --png_dir archive)")
-            a = np.asarray(im.convert("RGB"), dtype=np.float32) * np.float32(wi)
-            acc = a if acc is None else acc + a
-        mean = acc
+            a = np.asarray(im.convert("RGB"), dtype=np.float32)
+            ww = np.float32(wi) if mk is None else (np.float32(wi) * mk)[..., None]
+            acc = a * ww if acc is None else acc + a * ww
+            wsum = np.broadcast_to(ww, a.shape).copy() if wsum is None \
+                else wsum + np.broadcast_to(ww, a.shape)
+        # renormalize: with a mask the weights no longer sum to 1 at every pixel
+        mean = acc / np.maximum(wsum, 1e-6)
+        assert wsum.min() > 1e-3, ("some pixel has no valid member -- at least one "
+                                   "unmasked member must cover the whole frame")
         img = Image.fromarray(np.clip(mean + 0.5, 0, 255).astype(np.uint8))
         if args.png_dir:
             img.save(os.path.join(args.png_dir, s + ".png"))

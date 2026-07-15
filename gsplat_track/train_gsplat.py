@@ -146,6 +146,21 @@ def main():
                         "gsplat rejects UT with antialiased mode, so renders of a "
                         "--ut model must also go through the UT path")
     p.add_argument("--geom_check", action="store_true", help="reprojection smoke test, no training")
+    p.add_argument("--metric_loss", action="store_true",
+                   help="idea 3: EXACT metric-matched loss, derived from the "
+                        "competition score S = 0.4(1-LPIPS) + 0.3 SSIM + 0.3 PSNR/50. "
+                        "Maximizing S == minimizing 0.4*LPIPS + 0.3*(1-SSIM) + "
+                        "0.02606*ln(MSE)  [0.06/ln10]. The log-MSE term is "
+                        "self-scaling (grad 1/mse) and is the ONLY term that "
+                        "optimizes PSNR — the stock L1+DSSIM loss never does "
+                        "(L1 = median estimator; PSNR needs the mean)")
+    p.add_argument("--pure_l2", action="store_true",
+                   help="DIAGNOSTIC (audit r12): loss = MSE only, no SSIM. Isolates "
+                        "whether the ~27dB train fit is a loss/reg cap or a real "
+                        "capacity/content wall — the one thing the registration oracle "
+                        "cannot see. Run from-scratch with densification ON.")
+    p.add_argument("--init_ckpt", default=None,
+                   help="warm-start from our own train_gsplat ckpt.pt (UT-aware)")
     p.add_argument("--init_ply", default=None,
                    help="warm-start from a FastGS/3DGS point_cloud.ply instead of SfM points "
                         "(log-scales/logit-opacities carried raw; f_rest reshaped channel-major)")
@@ -198,7 +213,15 @@ def main():
     scene_scale = 1.1 * float(np.max(np.linalg.norm(centers - centers.mean(0), axis=1)))
     print(f"scene_scale {scene_scale:.3f}")
 
-    if args.init_ply:
+    if args.init_ckpt:
+        # warm-start from OUR OWN ckpt.pt (same param layout; UT flag/k1 carried)
+        ick = torch.load(args.init_ckpt, map_location=dev, weights_only=False)
+        means, scales = ick["splats"]["means"].to(dev), ick["splats"]["scales"].to(dev)
+        quats, opacities = ick["splats"]["quats"].to(dev), ick["splats"]["opacities"].to(dev)
+        sh0, shN = ick["splats"]["sh0"].to(dev), ick["splats"]["shN"].to(dev)
+        print(f"Warm-start: {len(means)} gaussians from {args.init_ckpt} (ut={ick.get('ut')})")
+        assert args.cap_max >= len(means), f"cap_max {args.cap_max} < init N {len(means)}"
+    elif args.init_ply:
         # warm-start from a trained FastGS/3DGS model (audit round 6 rank-2):
         # ply stores raw log-scales and logit-opacities — carry over directly;
         # f_rest is CHANNEL-MAJOR (N,3,15) — transpose to gsplat's [N,15,3]
@@ -306,7 +329,8 @@ def main():
         # ramp only from SfM init — a warm-started model must render at full
         # degree immediately or its trained high-band SH gets damaged while
         # the image supervises low bands only
-        sh_deg = args.sh_degree if args.init_ply else min(step // 1000, args.sh_degree)
+        sh_deg = args.sh_degree if (args.init_ply or args.init_ckpt) \
+            else min(step // 1000, args.sh_degree)
         colors = torch.cat([params["sh0"], params["shN"]], dim=1)
         render, alpha, info = rasterization(
             means=params["means"], quats=params["quats"],
@@ -334,7 +358,20 @@ def main():
         l1 = (img - gt).abs().mean()
         ssim = fused_ssim(img.permute(2, 0, 1).unsqueeze(0),
                           gt.permute(2, 0, 1).unsqueeze(0))
-        loss = (1 - args.ssim_lambda) * l1 + args.ssim_lambda * (1 - ssim)
+        if args.pure_l2:
+            # DIAGNOSTIC (audit r12): ask the model for NOTHING but PSNR. This isolates
+            # whether the ~27dB train fit is a loss/reg artifact or a real capacity/content
+            # wall — the one lever the D5 registration oracle cannot see. Pure MSE, no SSIM.
+            loss = (img.clamp(0.0, 1.0) - gt).pow(2).mean()
+        elif args.metric_loss:
+            # exact score-matched loss: minimizing this maximizes the
+            # competition score (see --metric_loss help). MSE on the CLAMPED
+            # render — the scorer measures clamped uint8 pixels, and an
+            # unclamped MSE would chase gradients outside the display range.
+            mse = (img.clamp(0.0, 1.0) - gt).pow(2).mean()
+            loss = 0.3 * (1 - ssim) + 0.02606 * torch.log(mse.clamp(min=1e-8))
+        else:
+            loss = (1 - args.ssim_lambda) * l1 + args.ssim_lambda * (1 - ssim)
         if step < pp_act_step:
             loss += args.opacity_reg * torch.sigmoid(params["opacities"]).mean()
             loss += args.scale_reg * torch.exp(params["scales"]).mean()

@@ -69,6 +69,8 @@ def main():
                         "radial_coeffs, no warp); 'warp' renders pinhole in classic "
                         "mode and applies DistortionWarp — only for the UT-vs-warp "
                         "A/B smoke, both paths must agree sub-pixel away from corners")
+    p.add_argument("--sh_degree", type=int, default=None,
+                   help="clamp SH below the ckpt's degree at render time (P4 probe)")
     p.add_argument("--radial", action="store_true",
                    help="CLOSED LEVER, do not use for antialiased-trained models: "
                         "radial_coeffs needs with_ut=True, and gsplat 1.5.3 raises on "
@@ -90,6 +92,13 @@ def main():
     ckpt = torch.load(args.ckpt, map_location="cuda", weights_only=False)
     splats = {n: t.cuda() for n, t in ckpt["splats"].items()}
     sh_degree = ckpt["sh_degree"]
+    if args.sh_degree is not None:
+        # P4: at 11.8 deg of extrapolation from the nearest train view, view-dependent
+        # colour is a candidate silent PSNR tax -- higher SH orders can hallucinate
+        # view-dependent shading the test pose never justified. Clamping costs nothing
+        # to try and has never been measured. gsplat uses the first (d+1)^2 coeffs.
+        assert 0 <= args.sh_degree <= sh_degree, f"can only clamp below {sh_degree}"
+        sh_degree = args.sh_degree
     colors = torch.cat([splats["sh0"], splats["shN"]], dim=1)
     # a --ut-trained model was optimized in classic mode; rendering it
     # antialiased (or vice versa) shifts opacity compensation -> dim/bright

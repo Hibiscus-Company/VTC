@@ -43,6 +43,11 @@ def main():
     p.add_argument("--lr_scale", type=float, default=0.3,
                    help="finetune lr = base trainer lr x this")
     p.add_argument("--lambda_lpips", type=float, default=0.1, help="0 disables")
+    p.add_argument("--color_only", action="store_true",
+                   help="freeze means/quats/scales; optimize only sh0/shN/opacities. "
+                        "~5x faster (no geometry backward), no floater risk — the "
+                        "audit's safe variant; captures segment-appearance without "
+                        "geometry contortion")
     p.add_argument("--ssim_lambda", type=float, default=0.2)
     p.add_argument("--limit", type=int, default=0, help="only N poses (A/B smoke)")
     p.add_argument("--stride", type=int, default=1,
@@ -146,9 +151,11 @@ def main():
             d_n = np.linalg.norm(centers - c_test, axis=1)
         near_idx = [int(i) for i in np.argsort(d_n)[: args.k]]
 
-        params = {n: t.clone().requires_grad_(True) for n, t in base.items()}
+        tune = ["sh0", "shN", "opacities"] if args.color_only else list(base.keys())
+        params = {n: (base[n].clone().requires_grad_(True) if n in tune else base[n])
+                  for n in base}
         opts = {n: torch.optim.Adam([params[n]], lr=lrs[n], eps=1e-15)
-                for n in params}
+                for n in tune}
         order = np.tile(near_idx, args.steps // len(near_idx) + 1)[: args.steps]
         np.random.shuffle(order)
         for step, vi in enumerate(order):
