@@ -161,8 +161,10 @@ def check_scene(root, scene, images_dirname="images"):
             r2 = (xn ** 2).sum(axis=1, keepdims=True)
             proj = f * xn * (1.0 + k1 * r2) + _np.array([cx, cy])
             obs = xys[keep][front]
+            # obs may be at the ORIGINAL capture resolution while cameras.bin is the
+            # delivered one; the ratio is not always integer (set2 chair: 1080p->720p = 1.5)
             s, e = min(((c, float(_np.median(_np.linalg.norm(obs / c - proj, axis=1))))
-                        for c in (1, 2, 4, 8)), key=lambda t: t[1])
+                        for c in (1, 1.5, 2, 3, 4, 6, 8)), key=lambda t: t[1])
             errs_px.append(e); scales.append(s)
         if errs_px:
             med = float(_np.median(errs_px))

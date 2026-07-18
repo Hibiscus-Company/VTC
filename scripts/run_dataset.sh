@@ -18,15 +18,21 @@
 #   - tier-aware weights: w_UT is 0.5 each at tier<=2, 0.3 each at tier 3 (with gates
 #     at 0.1333 x3 -> the tuned w_UT=0.6 family split)
 set -euo pipefail
+# conda's nvcc activate.d references these unset; under `set -u` that aborts before any work
+export NVCC_PREPEND_FLAGS="${NVCC_PREPEND_FLAGS:-}" NVCC_APPEND_FLAGS="${NVCC_APPEND_FLAGS:-}"
 
 DATA_ROOT=""; OUT_ROOT=""; ZIP_OUT=""; TIER=2; GPUS="0,1"; SCENES=""
+# R9/production recipe by default; override for generation A/Bs
+# (e.g. R8-gen: --train_args "--iters 30000 --cap_max 5000000")
+TRAIN_ARGS="--iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 50000"
 while [[ $# -gt 0 ]]; do
   case $1 in
-    --data_root) DATA_ROOT=$2; shift 2;;
-    --out)       OUT_ROOT=$2; shift 2;;
-    --zip)       ZIP_OUT=$2; shift 2;;
-    --tier)      TIER=$2; shift 2;;
-    --gpus)      GPUS=$2; shift 2;;
+    --data_root)  DATA_ROOT=$2; shift 2;;
+    --out)        OUT_ROOT=$2; shift 2;;
+    --zip)        ZIP_OUT=$2; shift 2;;
+    --tier)       TIER=$2; shift 2;;
+    --gpus)       GPUS=$2; shift 2;;
+    --train_args) TRAIN_ARGS=$2; shift 2;;
     --scenes)    shift; while [[ $# -gt 0 && $1 != --* ]]; do SCENES="$SCENES $1"; shift; done;;
     *) echo "unknown arg: $1"; exit 1;;
   esac
@@ -39,7 +45,7 @@ DATA_ROOT=$(eval echo "$DATA_ROOT")
 [[ -n $SCENES ]] || SCENES=$(ls "$DATA_ROOT")
 IFS=',' read -ra GPULIST <<< "$GPUS"
 mkdir -p "$OUT_ROOT"/{models,fields,masks,ens,logs,claims,done}
-rm -f "$OUT_ROOT"/claims/* "$OUT_ROOT"/done/* 2>/dev/null || true
+rm -rf "$OUT_ROOT"/claims/* "$OUT_ROOT"/done/* 2>/dev/null || true  # claims are DIRS (mkdir); -f alone can't clear them
 source ~/miniconda3/etc/profile.d/conda.sh
 export PYTHONUNBUFFERED=1
 
@@ -61,11 +67,17 @@ do_scene() {                                   # $1 scene  $2 gpu
   # gaussians. The field must be FIT on the SAME path it is APPLIED to -- native vs warp
   # differ by mean 2.4/255 with 27% of px off by >2, far above the 0.2-2px field scale.
   local K1 UTR
-  K1=$(conda run -n fastgs2 python -c "
+  # plain python: fastgs2 is already active from preflight; `conda run` broke in this shell
+  # (g++ activate hook) and its error string awk-coerced to 0 -> silent native (audit r13/r14)
+  K1=$(python -c "
 import sys; sys.path.insert(0,'.')
 from scene.colmap_loader import read_intrinsics_binary
 c=list(read_intrinsics_binary('$SP/cameras.bin').values())[0]
 p=list(c.params); print(p[3] if c.model in ('SIMPLE_RADIAL','RADIAL') else 0.0)")
+  # HARD-FAIL on a non-numeric probe: routing must never rest on an error string
+  [[ $K1 =~ ^-?[0-9]*\.?[0-9]+([eE][+-]?[0-9]+)?$ ]] || {
+    echo "!!! [$s] k1 probe returned non-numeric: '$K1' -- refusing to guess the render path"
+    return 1; }
   UTR=native
   if awk -v k="$K1" 'BEGIN{exit !(k<0)}'; then UTR=warp; fi
   echo "[$s] k1=$K1 -> $UTR"
@@ -76,8 +88,16 @@ p=list(c.params); print(p[3] if c.model in ('SIMPLE_RADIAL','RADIAL') else 0.0)"
     if [[ ! -f $M/ckpt.pt ]]; then
       CUDA_VISIBLE_DEVICES=$g python gsplat_track/train_gsplat.py \
         --source "$S" --images images --ut --seed "$seed" \
-        --out "$M" --iters 60000 --cap_max 8000000 \
-        --refine_stop 50000 --noise_stop 50000 --lpips_from 50000 || return 1
+        --out "$M" $TRAIN_ARGS || return 1
+      echo "$TRAIN_ARGS" > "$M/train_args.txt"
+    else
+      # ckpt-exists skip: refuse a silent mixed-generation ensemble (audit r13/r14).
+      # Stamp missing = pre-stamp model (e.g. banked towers): warn, keep going.
+      if [[ -f $M/train_args.txt ]] && [[ "$(cat "$M/train_args.txt")" != "$TRAIN_ARGS" ]]; then
+        echo "!!! [$s] ckpt at $M was trained with '$(cat "$M/train_args.txt")' but this run wants '$TRAIN_ARGS' -- refusing to mix generations"
+        return 1
+      fi
+      [[ -f $M/train_args.txt ]] || echo "WARN [$s] reusing pre-stamp ckpt $M (no train_args.txt) -- verify generation manually"
     fi
     local RF="--ut_render $UTR"
     [[ $UTR == warp ]] && RF="$RF --distort auto --sparse $SP"
