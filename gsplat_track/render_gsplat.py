@@ -105,7 +105,11 @@ def main():
     ut = bool(ckpt.get("ut", False))
     mode = "classic" if ut else "antialiased"
     ut_native = ut and args.ut_render == "native"
-    print(f"{len(splats['means'])} gaussians (mode={mode}, ut={ut})")
+    # audit r16 B1: render must use the SAME eps2d the ckpt trained with, else opacity/size
+    # response shifts between train and test (>=0 means it was set; <0 = gsplat default)
+    eps2d = float(ckpt.get("eps2d", -1.0))
+    eps_extra = {"eps2d": eps2d} if eps2d >= 0 else {}
+    print(f"{len(splats['means'])} gaussians (mode={mode}, ut={ut}, eps2d={eps2d})")
 
     rows = load_csv(args.csv)
     r0 = rows[0]
@@ -169,7 +173,7 @@ def main():
                 # a UT-trained ckpt must keep with_ut/with_eval3d even in warp
                 # mode (pinhole UT is valid and fold-free): dropping eval3d
                 # changes the gaussian response model between train and render
-                with_ut=ut, with_eval3d=ut)
+                with_ut=ut, with_eval3d=ut, **eps_extra)
             img = render[0]
             if pp is not None:
                 img = pp(rgb=img, pixel_coords=pp_xy,

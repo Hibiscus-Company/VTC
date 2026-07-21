@@ -165,11 +165,57 @@ def main():
                    help="warm-start from a FastGS/3DGS point_cloud.ply instead of SfM points "
                         "(log-scales/logit-opacities carried raw; f_rest reshaped channel-major)")
     p.add_argument("--seed", type=int, default=42)
+    p.add_argument("--init_clip", type=float, default=0.0,
+                   help="drop SfM init points farther than camera-hull-radius x this "
+                        "(0 = off; consult#3 M2: mirror-world reflection points)")
+    p.add_argument("--eps2d", type=float, default=-1.0,
+                   help="2D-covariance low-pass (gsplat default 0.3; <0 = leave default). "
+                        "Lower = sharper; audit r16 B1 for interpolated video test poses")
+    p.add_argument("--texture_weight", type=float, default=0.0,
+                   help="LEGS-inspired (arXiv 2606.07932, simplified to first-order Sobel): "
+                        "weight the L1 term by local GT gradient magnitude, floor 1x, cap 6x. "
+                        "0 = off. Plain mean-L1 is diluted by large flat regions (walls, "
+                        "furniture), starving fine-texture regions (carpet fiber) of gradient "
+                        "signal -- this rebalances toward the GT photo's own high-frequency "
+                        "content, deriving the weight only from the training photo (Rule-10 "
+                        "clean, no external data/net).")
+    p.add_argument("--pose_opt", action="store_true",
+                   help="Robust-GS-inspired (arXiv 2404.04211) TRAIN-VIEW pose refinement: a "
+                        "learnable per-image SE3 residual (axis-angle + translation, "
+                        "composed in the camera's own frame: R_new=dR@R0, t_new=dR@t0+dt) "
+                        "corrects imperfect SfM/COLMAP poses. Applied ONLY to training-view "
+                        "poses during optimization -- test poses (CSV) are never touched, so "
+                        "this only improves the fitted Gaussians, not the render-time camera. "
+                        "Fixes systematic geometric misalignment (manifests as blur/ghosting) "
+                        "as opposed to up-weighting high-frequency pixels (texture_weight, "
+                        "killed 20/07) -- architecturally cannot overfit sensor noise the same "
+                        "way since it corrects ALL pixels via a rigid transform, not per-pixel.")
+    p.add_argument("--pose_lr", type=float, default=1e-4,
+                   help="Adam lr for the pose residual (both axis-angle and translation "
+                        "components share this rate; deltas start at 0 = identity)")
+    p.add_argument("--lambda_pose_reg", type=float, default=0.01,
+                   help="L2-to-identity weight on the pose residual, scaled by scene_scale "
+                        "for the translation term -- keeps corrections small/plausible, "
+                        "same role as --lambda_appreg for --app_affine")
     args = p.parse_args()
 
     views, K_np, (W, H), xyz, rgb, k1 = load_scene(args.source, args.images)
     print(f"{len(views)} views, {len(xyz)} init points, K=[[{K_np[0,0]:.1f},0,{K_np[0,2]:.1f}],"
           f"[0,{K_np[1,1]:.1f},{K_np[1,2]:.1f}]], size {W}x{H}")
+    if args.init_clip > 0:
+        # consult #3 / M2: glossy surfaces make COLMAP triangulate REFLECTED features into
+        # mirror-world points far outside the capture volume (bonsai: p100/p95 = 9.9 vs 3.5-4.5
+        # on honest scenes). Those gaussians float mid-air from opposing views and may seed the
+        # MCMC relocation collapse. Drop init points beyond camera-hull-radius x clip.
+        import numpy as _np
+        w2cs_ = _np.stack([v["w2c"] for v in views])
+        Cs = -_np.einsum("nij,nj->ni", w2cs_[:, :3, :3].transpose(0, 2, 1), w2cs_[:, :3, 3])
+        ctr = Cs.mean(0)
+        hull = _np.linalg.norm(Cs - ctr, axis=1).max()
+        keep = _np.linalg.norm(xyz - ctr, axis=1) <= hull * args.init_clip
+        print(f"init_clip {args.init_clip}: hull R={hull:.2f}, keeping {keep.sum()}/{len(xyz)} "
+              f"points (dropped {(~keep).sum()} beyond {hull * args.init_clip:.2f})")
+        xyz, rgb = xyz[keep], rgb[keep]
     if args.ut:
         if args.images == "images_undist":
             print("WARNING: --ut expects DISTORTED GT (--images images); "
@@ -207,6 +253,11 @@ def main():
                                                     dtype=torch.float32, device=dev)}
     else:
         rast_extra = {"rasterize_mode": "antialiased"}
+    # audit r16 B1: eps2d is gsplat's hardcoded 0.3 2D-covariance low-pass (anti-alias margin).
+    # Our video test poses are 3-4deg interpolations -> little aliasing risk -> 0.3 over-smooths
+    # the LPIPS-deficit scenes. Expose it; train AND render must use the same value (saved in ckpt).
+    if args.eps2d >= 0:
+        rast_extra["eps2d"] = args.eps2d
 
     # scene scale for lr/noise (world coords untouched)
     centers = np.stack([-v["w2c"][:3, :3].T @ v["w2c"][:3, 3] for v in views])
@@ -269,9 +320,43 @@ def main():
 
     K = torch.tensor(K_np, device=dev)
     w2cs = torch.tensor(np.stack([v["w2c"] for v in views]), device=dev)
+
+    # idea: TRAIN-VIEW pose refinement (Robust-GS-inspired). One SE3 residual per training
+    # image, composed in the camera's own frame; test poses (CSV, render_gsplat.py) are never
+    # touched -- only the photometric supervision signal improves, hence only the fitted
+    # Gaussians. delta_r is axis-angle (Rodrigues), starts at 0 -> R_delta = I at init.
+    pose_r = pose_t = pose_opt_ = None
+    if args.pose_opt:
+        pose_r = torch.nn.Parameter(torch.zeros(len(views), 3, device=dev))
+        pose_t = torch.nn.Parameter(torch.zeros(len(views), 3, device=dev))
+        pose_opt_ = torch.optim.Adam([pose_r, pose_t], lr=args.pose_lr, eps=1e-15)
+
+    def _rodrigues(phi):  # [3] axis-angle -> [3,3] rotation, safe at phi->0
+        theta = phi.norm().clamp(min=1e-8)
+        axis = phi / theta
+        K_ = torch.zeros(3, 3, device=phi.device, dtype=phi.dtype)
+        K_[0, 1], K_[0, 2] = -axis[2], axis[1]
+        K_[1, 0], K_[1, 2] = axis[2], -axis[0]
+        K_[2, 0], K_[2, 1] = -axis[1], axis[0]
+        eye3 = torch.eye(3, device=phi.device, dtype=phi.dtype)
+        return eye3 + torch.sin(theta) * K_ + (1 - torch.cos(theta)) * (K_ @ K_)
+
+    def corrected_w2c(vi):
+        R0, t0 = w2cs[vi, :3, :3], w2cs[vi, :3, 3]
+        dR = _rodrigues(pose_r[vi])
+        R_new, t_new = dR @ R0, dR @ t0 + pose_t[vi]
+        w2c_new = torch.eye(4, device=dev, dtype=w2cs.dtype)
+        w2c_new = w2c_new.clone()
+        w2c_new[:3, :3], w2c_new[:3, 3] = R_new, t_new
+        return w2c_new
+
     # GT cache on CPU (uint8), like FastGS --data_device cpu
     from PIL import Image
     gt_cache = [None] * len(views)
+    wmap_cache = [None] * len(views)  # texture_weight: static per view (derived from GT only)
+    _sobel_x = torch.tensor([[-1., 0., 1.], [-2., 0., 2.], [-1., 0., 1.]],
+                            device=dev).view(1, 1, 3, 3)
+    _sobel_y = _sobel_x.transpose(2, 3)
 
     # idea 1c: per-image 3x4 affine (M @ rgb + b) applied in the LOSS only —
     # the splat model stays canonical; drone AE/AWB drift is soaked per-frame.
@@ -332,11 +417,12 @@ def main():
         sh_deg = args.sh_degree if (args.init_ply or args.init_ckpt) \
             else min(step // 1000, args.sh_degree)
         colors = torch.cat([params["sh0"], params["shN"]], dim=1)
+        viewmat = corrected_w2c(vi)[None] if args.pose_opt else w2cs[vi:vi + 1]
         render, alpha, info = rasterization(
             means=params["means"], quats=params["quats"],
             scales=torch.exp(params["scales"]),
             opacities=torch.sigmoid(params["opacities"]),
-            colors=colors, viewmats=w2cs[vi:vi + 1], Ks=K[None], width=W, height=H,
+            colors=colors, viewmats=viewmat, Ks=K[None], width=W, height=H,
             sh_degree=sh_deg, near_plane=0.01, packed=False, absgrad=False,
             **rast_extra)
         # loss on UNCLAMPED colors (upstream convention: clamping zeroes
@@ -355,7 +441,17 @@ def main():
             img = pp(rgb=img, pixel_coords=pp_xy, resolution=(W, H),
                      camera_idx=0, frame_idx=vi)
 
-        l1 = (img - gt).abs().mean()
+        if args.texture_weight > 0:
+            if wmap_cache[vi] is None:
+                gray = gt.mean(-1, keepdim=True).permute(2, 0, 1).unsqueeze(0)  # [1,1,H,W]
+                gx = F.conv2d(gray, _sobel_x, padding=1)
+                gy = F.conv2d(gray, _sobel_y, padding=1)
+                gmag = (gx.pow(2) + gy.pow(2)).sqrt().squeeze(0).squeeze(0)  # [H,W]
+                w = (gmag / (gmag.mean() + 1e-6)).clamp(max=6.0)
+                wmap_cache[vi] = (1.0 + args.texture_weight * w).detach().unsqueeze(-1)  # [H,W,1]
+            l1 = (wmap_cache[vi] * (img - gt).abs()).mean()
+        else:
+            l1 = (img - gt).abs().mean()
         ssim = fused_ssim(img.permute(2, 0, 1).unsqueeze(0),
                           gt.permute(2, 0, 1).unsqueeze(0))
         if args.pure_l2:
@@ -378,6 +474,9 @@ def main():
         if app_M is not None:
             loss += args.lambda_appreg * (
                 (app_M[vi, :, :3] - app_eye).pow(2).sum() + app_M[vi, :, 3].pow(2).sum())
+        if args.pose_opt:
+            loss += args.lambda_pose_reg * (
+                pose_r[vi].pow(2).sum() + (pose_t[vi] / scene_scale).pow(2).sum())
         if bil is not None:
             loss += 10 * total_variation_loss(bil.grids)
         if pp is not None:
@@ -404,6 +503,9 @@ def main():
         if app_M is not None:
             app_opt.step()
             app_opt.zero_grad(set_to_none=True)
+        if args.pose_opt:
+            pose_opt_.step()
+            pose_opt_.zero_grad(set_to_none=True)
         if bil is not None:
             bil_opt.step()
             bil_opt.zero_grad(set_to_none=True)
@@ -426,7 +528,7 @@ def main():
     os.makedirs(args.out, exist_ok=True)
     torch.save({"splats": {n: params[n].detach().cpu() for n in params.keys()},
                 "sh_degree": args.sh_degree, "K": K_np, "wh": (W, H),
-                "ut": args.ut, "k1": k1},
+                "ut": args.ut, "k1": k1, "eps2d": args.eps2d},
                os.path.join(args.out, "ckpt.pt"))
     print(f"Saved {len(params['means'])} gaussians to {args.out}/ckpt.pt")
     if pp is not None:
