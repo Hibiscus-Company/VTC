@@ -30,6 +30,8 @@ def main():
     ap.add_argument("--out_dir", required=True)
     ap.add_argument("--strict", action="store_true",
                     help="require train-provenance on the field (use for submissions)")
+    ap.add_argument("--allow_degenerate", action="store_true",
+                    help="skip the all-zero / implausibly-large field sanity assert")
     args = ap.parse_args()
 
     meta_path = args.field + ".meta.json"
@@ -57,6 +59,19 @@ def main():
                  "costs a second generation.")
 
     field = np.load(args.field)
+    # audit 26/07: the guards covered provenance, double-warp and JPEG input, but never looked
+    # at the field's NUMBERS -- an all-zero field (how "ship unwarped" is encoded, via a free-text
+    # meta key nothing reads) or a garbage 50px field would both apply silently. This is the
+    # biggest single lever (+0.73); a degenerate field is invisible until the leaderboard.
+    amax, amean = float(np.abs(field).max()), float(np.abs(field).mean())
+    print(f"field {os.path.basename(args.field)}: mean|d| {amean:.4f}px  max|d| {amax:.4f}px")
+    if not args.allow_degenerate:
+        assert amax > 1e-6, (
+            f"REFUSING: {args.field} is all-zero (a deliberate 'ship unwarped' field?). "
+            "Skip apply_field entirely, or pass --allow_degenerate.")
+        assert amax < 8.0, (
+            f"REFUSING: {args.field} max displacement {amax:.2f}px is far beyond the sub-pixel "
+            "regime this correction operates in -- it is almost certainly a bad fit.")
     os.makedirs(args.out_dir, exist_ok=True)
     for f in files:
         img = np.asarray(Image.open(os.path.join(args.in_dir, f)).convert("RGB"),

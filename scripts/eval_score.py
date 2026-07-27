@@ -37,15 +37,23 @@ def main():
     gt_by = {os.path.splitext(f)[0]: f for f in os.listdir(args.gt_dir)}
     P = S = L = 0.0
     n = 0
+    renders = [f for f in sorted(os.listdir(args.render_dir))
+               if os.path.splitext(f)[1].lower() in (".png", ".jpg", ".jpeg")]
+    # audit 26/07: the 23/07 hardening asserted every RENDER has a GT, but not the converse.
+    # An arm that renders 57/58 poses and one that renders 58/58 both passed, and were then
+    # averaged over DIFFERENT subsets -- the same A/B poisoning, entered from the other side.
+    assert {os.path.splitext(f)[0] for f in renders} == set(gt_by), (
+        f"render/GT stem sets differ: {len(renders)} renders vs {len(gt_by)} GT "
+        f"(missing renders: {sorted(set(gt_by) - {os.path.splitext(f)[0] for f in renders})[:5]})")
     with torch.no_grad():
-        for f in sorted(os.listdir(args.render_dir)):
+        for f in renders:
             s = os.path.splitext(f)[0]
-            if s not in gt_by:
-                continue
+            # audit 23/07: silent pair-dropping can poison a paired A/B (arms averaged over
+            # different subsets while the printout looks normal) -- hard-error instead.
+            assert s in gt_by, f"render {f} has no GT match in {args.gt_dir}"
             r = load(os.path.join(args.render_dir, f)).to(dev)
             g = load(os.path.join(args.gt_dir, gt_by[s])).to(dev)
-            if r.shape != g.shape:
-                continue
+            assert r.shape == g.shape, f"shape mismatch {f}: render {tuple(r.shape)} vs GT {tuple(g.shape)}"
             mse = ((r - g) ** 2).mean().item()
             P += 10 * np.log10(1.0 / max(mse, 1e-12))
             S += float(repo_ssim(r, g))
