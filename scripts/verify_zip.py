@@ -91,10 +91,15 @@ def main():
     if len(names) != total:
         fails.append(f"zip holds {len(names)} files, expected {total}")
 
-    mb = os.path.getsize(args.zip) / 1e6
-    print(f"\nfiles {len(names)}/{total}   size {mb:.1f} MB (limit {args.limit_mb})")
-    if mb > args.limit_mb:
-        fails.append(f"size {mb:.1f}MB over the {args.limit_mb}MB limit")
+    # The organiser's cap is 350 MiB = 350*1024*1024 = 367,001,600 bytes, NOT 350e6. We had been
+    # enforcing the decimal reading, which silently threw away 17 MB of budget -- and byte budget
+    # is directly convertible into score (it is what caps the energy-restoration lambda).
+    nbytes = os.path.getsize(args.zip)
+    mib = nbytes / (1024.0 * 1024.0)
+    print(f"\nfiles {len(names)}/{total}   size {mib:.2f} MiB / {nbytes/1e6:.2f} MB "
+          f"(limit {args.limit_mb} MiB = {args.limit_mb*1024*1024/1e6:.1f} MB)")
+    if mib > args.limit_mb:
+        fails.append(f"size {mib:.2f} MiB over the {args.limit_mb} MiB limit")
 
     if fails:
         print("\nVERIFY FAILED:")

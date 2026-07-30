@@ -305,6 +305,9 @@ def main():
                         "(dead), wasting the cap budget. Raising this makes MCMC relocate "
                         "low-opacity gaussians more aggressively -> reclaim budget for hard "
                         "regions. Test 0.01, 0.02.")
+    p.add_argument("--reg_stop", type=int, default=0,
+                   help="stop applying opacity_reg/scale_reg after this step (0 = never stop, "
+                        "the historical behaviour). DBS/UBS gate both to the densify window.")
     p.add_argument("--aniso_reg", type=float, default=0.0,
                    help="scale-anisotropy regularizer (trick-hunt: distinct from the killed "
                         "opacity/scale-reg-lowering). Penalizes log-scale spread beyond a ~10x "
@@ -688,7 +691,11 @@ def main():
             loss = 0.3 * (1 - ssim) + 0.02606 * torch.log(mse.clamp(min=1e-8))
         else:
             loss = (1 - args.ssim_lambda) * l1 + args.ssim_lambda * (1 - ssim)
-        if step < pp_act_step:
+        # --reg_stop: DBS/UBS gate opacity_reg and scale_reg to the DENSIFICATION WINDOW only.
+        # gsplat MCMC (and we) apply them for the whole run, so on bonsai the scale penalty keeps
+        # shaping a frozen primitive set for 15k steps after relocation has ended. Default keeps
+        # the historical behaviour; --reg_stop 15000 reproduces the DBS/UBS schedule.
+        if step < pp_act_step and (args.reg_stop <= 0 or step < args.reg_stop):
             loss += args.opacity_reg * torch.sigmoid(params["opacities"]).mean()
             loss += args.scale_reg * torch.exp(params["scales"]).mean()
         if args.aniso_reg > 0:
