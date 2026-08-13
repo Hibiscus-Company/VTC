@@ -1,0 +1,22 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+
+DEADBAND A/B on the public harness, n=20 real test poses, k=8, full shipped chain
+
+  lam      arm    PSNR    SSIM   LPIPS    SCORE  FLOAT-ROUNDED
+ 0.25  ROUNDED  25.856  0.8923  0.0997  78.2958
+ 0.25    FLOAT  25.854  0.8925  0.0995  78.3076
+                                                       +0.0118
+ 0.50  ROUNDED  25.850  0.8929  0.0980  78.3755
+ 0.50    FLOAT  25.848  0.8930  0.0979  78.3848
+                                                       +0.0093
+ 1.00  ROUNDED  25.818  0.8933  0.0957  78.4626
+ 1.00    FLOAT  25.816  0.8936  0.0960  78.4551
+                                                       -0.0074
+
+Our private towers deliver 0.13-0.58 LSB at lam=1.0, i.e. they sit in the LOW-amplitude
+regime -- read the lam=0.25/0.5 rows, not lam=1.0, for the expected private-side recovery.

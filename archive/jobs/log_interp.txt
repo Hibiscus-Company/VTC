@@ -1,0 +1,27 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  HCM0181 0/60 6s
+  HCM0181 20/60 61s
+  HCM0181 40/60 91s
+
+== HCM0181 (n=60) ==
+  none               P 24.2675  S 0.84556  L 0.11680  score  75.2554  d +0.0000
+  linear             P 25.1697  S 0.86210  L 0.12457  score  75.9822  d +0.7267
+  cubic              P 25.2589  S 0.86994  L 0.11470  score  76.6655  d +1.4101
+  lanczos4           P 25.2876  S 0.87099  L 0.11232  score  76.8094  d +1.5540
+  lanczos4_ss2       P 25.3000  S 0.86733  L 0.11809  score  76.4763  d +1.2209
+  HCM0204 0/60 2s
+  HCM0204 20/60 38s
+  HCM0204 40/60 65s
+
+== HCM0204 (n=60) ==
+  none               P 24.8906  S 0.85408  L 0.12083  score  75.7235  d +0.0000
+  linear             P 25.6804  S 0.86723  L 0.12785  score  76.3114  d +0.5880
+  cubic              P 25.7536  S 0.87335  L 0.11918  score  76.8856  d +1.1622
+  lanczos4           P 25.7842  S 0.87417  L 0.11707  score  77.0126  d +1.2891
+  lanczos4_ss2       P 25.7828  S 0.87135  L 0.12222  score  76.7215  d +0.9981
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/res/interp.json

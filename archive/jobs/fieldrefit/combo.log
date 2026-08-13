@@ -1,0 +1,36 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+field magnitudes (mean |f| px): B9 0.2112  B11 0.1746  M2 0.1897  s0.85 0.1796  s1.30 0.2746
+B11/B9 magnitude ratio 0.827, M2/B9 0.898
+  3/60 434s
+  6/60 468s
+  9/60 524s
+  12/60 637s
+  15/60 752s
+  18/60 823s
+  21/60 855s
+  24/60 906s
+  27/60 998s
+  30/60 1139s
+  33/60 1191s
+  36/60 1265s
+  39/60 1325s
+  42/60 1415s
+  45/60 1497s
+  48/60 1560s
+  51/60 1603s
+  54/60 1629s
+  57/60 1724s
+  60/60 1826s
+
+FIT-TARGET + SCALE, HCM0181, n=60, FULL shipped chain (k4 mean -> restore lam=1.0 -> warp lanczos4 -> JPEG q100/ss2)
+    arm     SCORE     PSNR    SSIM    LPIPS    vs B9  paired t   win/N
+     B9   78.3877  25.8879  0.8883   0.0948  +0.0000        --   0/60
+    B11   78.2199  25.7662  0.8857   0.0952  -0.1679    -17.93   0/60
+     M2   78.3018  25.8250  0.8869   0.0950  -0.0859    -15.22   2/60
+  s0.85   78.2481  25.7846  0.8861   0.0952  -0.1396    -22.69   0/60
+  s1.30   78.5277  25.9948  0.8905   0.0946  +0.1400     10.15  55/60
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldrefit/res_combo.json   total 1826s

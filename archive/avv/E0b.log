@@ -1,0 +1,22 @@
+n=10560 cells, 110 frames
+err = 0.4792*texture + 3.0698   (R^2 0.468)
+
+=== AFTER removing the texture trend, what predicts the RESIDUAL? ===
+  corr(residual, GT brightness) = -0.232
+  darkest 25% (glass): residual +0.658 vs rest -0.219   -> glass is WORSE than its texture predicts
+
+=== residual by row (0=top ... 7=bottom/table) ===
+   row 0: residual  -1.309   raw err  2.809   texture  2.188
+   row 1: residual  -1.273   raw err  3.590   texture  3.741
+   row 2: residual  -0.766   raw err  5.133   texture  5.903
+   row 3: residual  +0.161   raw err  6.573   texture  6.974
+   row 4: residual  +0.761   raw err  7.086   texture  6.794
+   row 5: residual  +0.545   raw err  6.274   texture  5.549
+   row 6: residual  +0.798   raw err  6.514   texture  5.521
+   row 7: residual  +1.082   raw err  7.149   texture  6.254
+
+=== FRACTION OF TOTAL ERROR BY TEXTURE QUARTILE ===
+   Q1 smooth     11.1% of total error, 25.0% of cells
+   Q2            17.6% of total error, 25.0% of cells
+   Q3            25.8% of total error, 25.0% of cells
+   Q4 textured   45.6% of total error, 25.0% of cells

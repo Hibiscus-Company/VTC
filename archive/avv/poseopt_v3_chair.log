@@ -1,0 +1,12 @@
+[59000] loss 0.0599 l1 0.0295 ssim 0.8741 N 8000000 pose_r[mean/max] 0.00167/0.00348 pose_t[mean/max] 0.00389/0.01151
+[59999] loss 0.0738 l1 0.0339 ssim 0.8458 N 8000000 pose_r[mean/max] 0.00168/0.00335 pose_t[mean/max] 0.00391/0.01152
+Saved 8000000 gaussians to /mnt/d/avv/tw_test/chair_poseopt_v3/ckpt.pt
+Wrote 58 images to /mnt/d/avv/tw_test/chair_poseopt_v3/eval_render
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_poseopt_v3 n= 58  PSNR 21.6520  SSIM 0.5720  LPIPSvgg 0.2670  SCORE 59.4744
+=== CHAIR_POSEOPT_V3 DONE ===

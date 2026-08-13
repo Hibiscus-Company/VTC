@@ -1,0 +1,27 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+
+================================================================================================
+S3. CROSS-SCENE. HCM0181 is the only scene with >1 render variant at REAL test poses,
+    so the only other real multi-member novel-view data is the HCM0421 eval-split
+    (DIFFERENT tower, held-out real photos as GT, k=2: base UT + mip3d -- the exact
+    two families production blends). Data-starved regime: read the SIGN and the
+    location of the optimum, not the magnitude.
+================================================================================================
+  harness: 40 views x 2 members ['UT', 'mip3d']
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lv_main.py:114: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(self.G[i]).to(DEV).float().permute(2, 0, 1).unsqueeze(0) / 255.0
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+HCM0421 pixel-mean k=2               76.5498  +0.0000  25.5147  0.8511   0.1073   0/40 
+HCM0421 energy lam0.5 win3           76.5779  +0.0281  25.4805  0.8507   0.1058  33/40 
+HCM0421 energy lam0.75 win3          76.5746  +0.0248  25.4659  0.8506   0.1055  30/40 
+HCM0421 energy lam1.0 win3           76.5686  +0.0189  25.4497  0.8504   0.1053  24/40 
+HCM0421 energy lam1.25 win3          76.5599  +0.0101  25.4321  0.8502   0.1051  22/40 
+HCM0421 energy lam1.5 win3           76.5476  -0.0022  25.4133  0.8500   0.1050  21/40 
+HCM0421 energy lam2.0 win3           76.5119  -0.0378  25.3722  0.8495   0.1049  13/40 
+
+DONE 13:09:42

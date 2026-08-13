@@ -1,0 +1,20 @@
+=== 6-member bonsai pixel mean ===
+Ensembled 28 images from 6 members -> /mnt/d/avv/r24/bonsai/jpg
+=== assemble: towers+chair verbatim from r22, bonsai re-encoded at the shipped profile ===
+copied 358 tower/chair files verbatim, re-encoded 28 bonsai files
+=== verify ===
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 344.9 MB (limit 350.0)
+VERIFY PASSED
+=== confirm ONLY bonsai differs from r22 ===
+28 files differ from r22, in scenes: ['bonsai']
+CONFIRMED: bonsai is the only change; towers+chair byte-identical to r22
+=== R24 BUILD DONE Sun Jul 26 15:53:21 +07 2026 ===

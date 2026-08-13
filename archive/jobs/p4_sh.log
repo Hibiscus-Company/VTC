@@ -1,0 +1,13 @@
+Wrote 60 images to /mnt/d/avv/output/HCM0181_sh0/test_poses_renders
+P4 sh=0 HCM0181    n= 60  PSNR 21.0117  SSIM 0.7571  LPIPS(alex) 0.1278 LPIPS(vgg) 0.1890  Score(alex) 0.7021  Score(vgg) 0.6776
+P4 sh=0   Score(vgg)  = 67.7580   [0.4*(1-LPIPS)=0.3244  0.3*SSIM=0.2271  0.3*PSNRn=0.1261]  (psnr_max=50.0)
+Wrote 60 images to /mnt/d/avv/output/HCM0181_sh1/test_poses_renders
+P4 sh=1 HCM0181    n= 60  PSNR 21.5170  SSIM 0.7740  LPIPS(alex) 0.1161 LPIPS(vgg) 0.1754  Score(alex) 0.7149  Score(vgg) 0.6911
+P4 sh=1   Score(vgg)  = 69.1129   [0.4*(1-LPIPS)=0.3298  0.3*SSIM=0.2322  0.3*PSNRn=0.1291]  (psnr_max=50.0)
+Wrote 60 images to /mnt/d/avv/output/HCM0181_sh2/test_poses_renders
+P4 sh=2 HCM0181    n= 60  PSNR 22.9046  SSIM 0.8146  LPIPS(alex) 0.0905 LPIPS(vgg) 0.1424  Score(alex) 0.7456  Score(vgg) 0.7248
+P4 sh=2   Score(vgg)  = 72.4849   [0.4*(1-LPIPS)=0.3430  0.3*SSIM=0.2444  0.3*PSNRn=0.1374]  (psnr_max=50.0)
+Wrote 60 images to /mnt/d/avv/output/HCM0181_sh3/test_poses_renders
+P4 sh=3 HCM0181    n= 60  PSNR 24.4646  SSIM 0.8526  LPIPS(alex) 0.0638 LPIPS(vgg) 0.1089  Score(alex) 0.7771  Score(vgg) 0.7590
+P4 sh=3   Score(vgg)  = 75.8989   [0.4*(1-LPIPS)=0.3564  0.3*SSIM=0.2558  0.3*PSNRn=0.1468]  (psnr_max=50.0)
+P4 DONE

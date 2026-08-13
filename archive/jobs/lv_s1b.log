@@ -1,0 +1,27 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  harness: 60 views x 4 members ['gsplatB9ut', 'gsplatB10ut8M', 'gsplatB11ut60k', 'gsplatB12ut8Ms7']
+
+================================================================================================
+S1b. FAIR structure-only control + production-feasible map estimators (k=4, PNG)
+================================================================================================
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+pixel-mean BASELINE                  76.6749  +0.0000  24.9018  0.8650   0.1054   0/60 
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lv_main.py:114: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(self.G[i]).to(DEV).float().permute(2, 0, 1).unsqueeze(0) / 255.0
+energy lam1.0 REAL map               76.8736  +0.1988  24.8414  0.8653   0.0998  60/60 
+  hist ordered by -E_mean            76.8062  +0.1313  24.8873  0.8649   0.1018  60/60 
+  hist ordered by +E_mean            74.1828  -2.4921  22.9427  0.8517   0.1283   0/60 
+
+dev-estimator, all 4 members         76.8847  +0.2099  24.8179  0.8652   0.0991  60/60 
+dev-estimator, members {1,2}         76.8763  +0.2014  24.8236  0.8652   0.0993  60/60 
+dev-estimator, member {1} only       76.8619  +0.1870  24.8219  0.8651   0.0996  60/60 
+dev-estimator, member {3} only       76.8574  +0.1826  24.7964  0.8650   0.0992  60/60 
+
+  corr( r , log E_mean )          = -0.6299   (negative => the boost lands where the MEAN LOST energy, not on strong edges)
+  corr( r_full , r_dev1member )   = +0.8914
+  r: mean 1.1765  p50 1.0450  p99 2.4909  max 4.0000

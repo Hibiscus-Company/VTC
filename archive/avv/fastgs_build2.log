@@ -1,0 +1,18 @@
+Processing ./submodules/diff-gaussian-rasterization_fastgs
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: diff_gaussian_rasterization_fastgs
+  Building wheel for diff_gaussian_rasterization_fastgs (pyproject.toml): started
+  Building wheel for diff_gaussian_rasterization_fastgs (pyproject.toml): finished with status 'done'
+  Created wheel for diff_gaussian_rasterization_fastgs: filename=diff_gaussian_rasterization_fastgs-0.0.0-cp310-cp310-linux_x86_64.whl size=790439 sha256=1a46992ce7d28d49698e16475dc7a9c5e8149deb7c7b7348bf49ba6aeccfd763
+  Stored in directory: /home/bkai/.cache/pip/wheels/3a/09/ea/049bdb9c044f5980fa803d8d34b49ef70fab2239cbc8ae28cd
+Successfully built diff_gaussian_rasterization_fastgs
+Installing collected packages: diff_gaussian_rasterization_fastgs
+  Attempting uninstall: diff_gaussian_rasterization_fastgs
+    Found existing installation: diff_gaussian_rasterization_fastgs 0.0.0
+    Uninstalling diff_gaussian_rasterization_fastgs-0.0.0:
+      Successfully uninstalled diff_gaussian_rasterization_fastgs-0.0.0
+Successfully installed diff_gaussian_rasterization_fastgs-0.0.0
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'diff_gaussian_rasterization'

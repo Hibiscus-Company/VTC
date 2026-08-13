@@ -1,0 +1,25 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/50 2s
+  6/50 11s
+  11/50 20s
+  16/50 30s
+  21/50 39s
+  26/50 48s
+  31/50 58s
+  36/50 67s
+  41/50 76s
+  46/50 88s
+
+DIVERSITY-vs-DEPTH, HCM0181, n=50, FULL SHIPPED CHAIN (lam=1.0 gain=1.3)
+               arm  k     SCORE     PSNR     SSIM    LPIPS   d(mean8)      se       t    wins
+             mean8  8   79.2694  26.5089  0.90074  0.09145    +0.0000  0.0000    0.00   0/50
+        drop_m31b2  6   79.1951  26.4546  0.89989  0.09186    -0.0743  0.0101   -7.34   8/50
+         drop_ut2a  6   79.1481  26.4621  0.89966  0.09297    -0.1213  0.0093  -13.09   0/50
+         drop_ut2b  6   79.1213  26.4256  0.89899  0.09259    -0.1481  0.0132  -11.26   0/50
+        drop_ut1e1  6   79.1130  26.4171  0.89862  0.09239    -0.1564  0.0132  -11.84   0/50
+           drop_e2  6   79.0043  26.3482  0.89713  0.09296    -0.2651  0.0287   -9.23   2/50
+  famw_s0.00_repro  8   78.9949  26.3158  0.89700  0.09261    -0.2746  0.0338   -8.12   4/50
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/refdiv.json

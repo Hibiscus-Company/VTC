@@ -1,0 +1,7 @@
+# shipped-encode check: does the winner survive JPEG q100 ss2?
+# name|pool|ds|smooth|poly|up|remap
+median_ds8|median|8|0|0|cubic|cubic
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds8_rspl5|median|8|0|0|cubic|spline5
+med_ds8_g1_rlan|median|8|1|0|cubic|lanczos
+med_ds16_rlan|median|16|0|0|cubic|lanczos

@@ -1,0 +1,52 @@
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lever_ens/harn.py:19: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  _R = torch.from_numpy(np.ascontiguousarray(R)).to(DEV)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+pool 20 ['e15ceil95', 'e16app', 'e17visnorm', 'gsplatB1', 'gsplatB10ut8M', 'gsplatB11ut60k', 'gsplatB12ut8Ms7', 'gsplatB2', 'gsplatB3', 'gsplatB4warm', 'gsplatB5affine', 'gsplatB6bilagrid', 'gsplatB7ppisp2', 'gsplatB8pure', 'gsplatB9ut', 'm31b_nolpips', 'm31b_taillpips', 'sh0', 'sh1', 'sh2']
+
+=== RANK-ORDER PATH (add best-single-score first) ===
+k= 1 +gsplatB11ut60k     PSNR 24.4790 SSIM 0.8547 LPIPS 0.1091 SCORE  75.9643  (50s)
+k= 2 +m31b_taillpips     PSNR 24.6775 SSIM 0.8585 LPIPS 0.1047 SCORE  76.3745  (69s)
+k= 3 +gsplatB12ut8Ms7    PSNR 24.8692 SSIM 0.8638 LPIPS 0.1024 SCORE  76.7427  (87s)
+k= 4 +gsplatB10ut8M      PSNR 24.9465 SSIM 0.8660 LPIPS 0.1024 SCORE  76.8510  (107s)
+k= 5 +gsplatB9ut         PSNR 24.9615 SSIM 0.8663 LPIPS 0.1039 SCORE  76.8091  (122s)
+k= 6 +e17visnorm         PSNR 25.0879 SSIM 0.8695 LPIPS 0.1034 SCORE  77.0021  (159s)
+k= 7 +e15ceil95          PSNR 25.1399 SSIM 0.8709 LPIPS 0.1037 SCORE  77.0641  (182s)
+k= 8 +gsplatB8pure       PSNR 25.1416 SSIM 0.8710 LPIPS 0.1043 SCORE  77.0426  (203s)
+k= 9 +m31b_nolpips       PSNR 25.1614 SSIM 0.8714 LPIPS 0.1052 SCORE  77.0305  (223s)
+k=10 +gsplatB4warm       PSNR 25.1548 SSIM 0.8711 LPIPS 0.1061 SCORE  76.9826  (240s)
+k=11 +gsplatB7ppisp2     PSNR 25.1656 SSIM 0.8708 LPIPS 0.1072 SCORE  76.9364  (269s)
+k=12 +gsplatB2           PSNR 25.1558 SSIM 0.8703 LPIPS 0.1085 SCORE  76.8628  (292s)
+k=13 +gsplatB1           PSNR 25.1411 SSIM 0.8697 LPIPS 0.1097 SCORE  76.7868  (328s)
+k=14 +gsplatB3           PSNR 25.1306 SSIM 0.8691 LPIPS 0.1107 SCORE  76.7249  (373s)
+k=15 +e16app             PSNR 25.1261 SSIM 0.8693 LPIPS 0.1106 SCORE  76.7314  (400s)
+k=16 +gsplatB5affine     PSNR 25.1161 SSIM 0.8689 LPIPS 0.1115 SCORE  76.6766  (463s)
+k=17 +sh2                PSNR 25.1053 SSIM 0.8686 LPIPS 0.1109 SCORE  76.6861  (516s)
+k=18 +sh1                PSNR 25.0601 SSIM 0.8676 LPIPS 0.1110 SCORE  76.6253  (522s)
+k=19 +sh0                PSNR 24.9840 SSIM 0.8660 LPIPS 0.1115 SCORE  76.5109  (617s)
+k=20 +gsplatB6bilagrid   PSNR 24.8736 SSIM 0.8650 LPIPS 0.1121 SCORE  76.3899  (660s)
+
+=== GREEDY FORWARD SELECTION ===
+k= 1 +gsplatB11ut60k     (single 75.9644) PSNR 24.4790 SSIM 0.8547 LPIPS 0.1091 SCORE  75.9643  (1575s)
+k= 2 +e17visnorm         (single 75.2010) PSNR 24.9470 SSIM 0.8662 LPIPS 0.1044 SCORE  76.7767  (2163s)
+k= 3 +gsplatB10ut8M      (single 75.6331) PSNR 25.0393 SSIM 0.8687 LPIPS 0.1028 SCORE  76.9729  (2763s)
+k= 4 +m31b_taillpips     (single 75.7006) PSNR 25.0725 SSIM 0.8691 LPIPS 0.1015 SCORE  77.0560  (3282s)
+k= 5 +e15ceil95          (single 75.1578) PSNR 25.1246 SSIM 0.8706 LPIPS 0.1026 SCORE  77.0889  (3676s)
+k= 6 +gsplatB12ut8Ms7    (single 75.6640) PSNR 25.1479 SSIM 0.8712 LPIPS 0.1027 SCORE  77.1174  (3985s)
+k= 7 +e16app             (single 74.3052) PSNR 25.1266 SSIM 0.8714 LPIPS 0.1035 SCORE  77.0795  (4238s)
+k= 8 +m31b_nolpips       (single 74.9199) PSNR 25.1566 SSIM 0.8718 LPIPS 0.1046 SCORE  77.0659  (4485s)
+k= 9 +gsplatB9ut         (single 75.2555) PSNR 25.1592 SSIM 0.8717 LPIPS 0.1050 SCORE  77.0462  (4686s)
+k=10 +gsplatB8pure       (single 75.0470) PSNR 25.1580 SSIM 0.8717 LPIPS 0.1054 SCORE  77.0278  (4879s)
+k=11 +gsplatB7ppisp2     (single 74.7316) PSNR 25.1674 SSIM 0.8714 LPIPS 0.1066 SCORE  76.9794  (5051s)
+k=12 +sh2                (single 72.5382) PSNR 25.1336 SSIM 0.8706 LPIPS 0.1064 SCORE  76.9424  (5204s)
+k=13 +gsplatB4warm       (single 74.8674) PSNR 25.1293 SSIM 0.8703 LPIPS 0.1071 SCORE  76.9037  (5341s)
+k=14 +gsplatB3           (single 74.3173) PSNR 25.1288 SSIM 0.8699 LPIPS 0.1081 SCORE  76.8528  (5460s)
+k=15 +gsplatB5affine     (single 74.1378) PSNR 25.1221 SSIM 0.8695 LPIPS 0.1090 SCORE  76.7986  (5500s)
+k=16 +gsplatB2           (single 74.5344) PSNR 25.1151 SSIM 0.8691 LPIPS 0.1100 SCORE  76.7430  (5535s)
+k=17 +gsplatB1           (single 74.5325) PSNR 25.1053 SSIM 0.8686 LPIPS 0.1109 SCORE  76.6861  (5555s)
+k=18 +sh1                (single 69.1581) PSNR 25.0601 SSIM 0.8676 LPIPS 0.1110 SCORE  76.6253  (5569s)
+k=19 +sh0                (single 67.7954) PSNR 24.9840 SSIM 0.8660 LPIPS 0.1115 SCORE  76.5109  (5576s)
+k=20 +gsplatB6bilagrid   (single 66.9167) PSNR 24.8736 SSIM 0.8650 LPIPS 0.1121 SCORE  76.3899  (5576s)
+DONE 5575.802563428879 evals 223

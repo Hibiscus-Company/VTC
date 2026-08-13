@@ -1,0 +1,75 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  HCM0181 20/60 84s
+  HCM0181 40/60 174s
+  HCM0181 60/60 252s
+
+== HCM0181 (n=60) single member -> warp -> JPEG q100/ss2 ==
+   arm     SCORE   vs ship  paired t   win/N
+  none   75.2223   -1.5500    -33.09   0/60
+  ship   76.7723   +0.0000        --   0/60
+   sm2   76.7881   +0.0159     10.94  55/60
+   sm3   76.7861   +0.0138      5.18  46/60
+   sm4   76.7776   +0.0053      1.25  34/60
+   sm6   76.7372   -0.0351     -4.25  15/60
+  HCM0193 20/60 76s
+  HCM0193 40/60 124s
+  HCM0193 60/60 173s
+
+== HCM0193 (n=60) single member -> warp -> JPEG q100/ss2 ==
+   arm     SCORE   vs ship  paired t   win/N
+  none   75.6975   -1.1755    -26.83   0/60
+  ship   76.8730   +0.0000        --   0/60
+   sm2   76.8862   +0.0132     12.40  59/60
+   sm3   76.8858   +0.0128      7.77  52/60
+   sm4   76.8798   +0.0068      2.74  37/60
+   sm6   76.8493   -0.0237     -5.12  14/60
+  HCM0204 20/60 69s
+  HCM0204 40/60 105s
+  HCM0204 60/60 141s
+
+== HCM0204 (n=60) single member -> warp -> JPEG q100/ss2 ==
+   arm     SCORE   vs ship  paired t   win/N
+  none   75.6837   -1.2816    -26.89   0/60
+  ship   76.9654   +0.0000        --   0/60
+   sm2   76.9776   +0.0122      9.31  54/60
+   sm3   76.9741   +0.0088      3.43  42/60
+   sm4   76.9648   -0.0006     -0.13  30/60
+   sm6   76.9265   -0.0389     -4.33  19/60
+  hcm0031 20/50 39s
+  hcm0031 40/50 90s
+  hcm0031 50/50 105s
+
+== hcm0031 (n=50) single member -> warp -> JPEG q100/ss2 ==
+   arm     SCORE   vs ship  paired t   win/N
+  none   74.6264   -1.0090    -25.83   0/50
+  ship   75.6354   +0.0000        --   0/50
+   sm2   75.6526   +0.0172     13.41  50/50
+   sm3   75.6543   +0.0188      9.82  47/50
+   sm4   75.6490   +0.0136      4.81  38/50
+   sm6   75.6274   -0.0080     -1.48  22/50
+  hcm0034 20/60 47s
+  hcm0034 40/60 114s
+  hcm0034 60/60 177s
+
+== hcm0034 (n=60) single member -> warp -> JPEG q100/ss2 ==
+   arm     SCORE   vs ship  paired t   win/N
+  none   76.1219   -1.1635    -20.95   0/60
+  ship   77.2854   +0.0000        --   0/60
+   sm2   77.2977   +0.0123      9.76  52/60
+   sm3   77.2949   +0.0095      4.70  43/60
+   sm4   77.2854   -0.0000     -0.01  30/60
+   sm6   77.2452   -0.0402     -6.98   8/60
+
+=== ACROSS ALL 5 PUBLIC TOWERS (unweighted scene mean, vs ship) ===
+   arm    mean d  scenes>0   per-scene
+  none   -1.2359     0/5   HCM0181:-1.5500  HCM0193:-1.1755  HCM0204:-1.2816  hcm0031:-1.0090  hcm0034:-1.1635
+  ship   +0.0000     0/5   HCM0181:+0.0000  HCM0193:+0.0000  HCM0204:+0.0000  hcm0031:+0.0000  hcm0034:+0.0000
+   sm2   +0.0142     5/5   HCM0181:+0.0159  HCM0193:+0.0132  HCM0204:+0.0122  hcm0031:+0.0172  hcm0034:+0.0123
+   sm3   +0.0127     5/5   HCM0181:+0.0138  HCM0193:+0.0128  HCM0204:+0.0088  hcm0031:+0.0188  hcm0034:+0.0095
+   sm4   +0.0050     3/5   HCM0181:+0.0053  HCM0193:+0.0068  HCM0204:-0.0006  hcm0031:+0.0136  hcm0034:-0.0000
+   sm6   -0.0292     0/5   HCM0181:-0.0351  HCM0193:-0.0237  HCM0204:-0.0389  hcm0031:-0.0080  hcm0034:-0.0402
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldrefit/res_cross.json

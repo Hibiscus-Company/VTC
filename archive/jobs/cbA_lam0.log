@@ -1,0 +1,26 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/60 6s
+  6/60 30s
+  11/60 54s
+  16/60 81s
+  21/60 109s
+  26/60 134s
+  31/60 160s
+  36/60 176s
+  41/60 193s
+  46/60 207s
+  51/60 217s
+  56/60 227s
+
+POOL A  big=6 small=2  k=8  n=60  lam=0.0 gain=0.0
+FULL SHIPPED CHAIN: combine -> uint8 -> restore(k=8) -> field(lanczos4) -> JPEG q100/ss2
+           arm     SCORE     PSNR     SSIM    LPIPS   d(mean8)      se      t    wins      MB
+       winsor1   77.0674  25.1390  0.86978  0.10274    +0.0142  0.0029   4.92  46/60   61.29
+    winsorx0.7   77.0651  25.1418  0.86985  0.10289    +0.0119  0.0023   5.14  48/60   61.18
+    winsorx0.5   77.0626  25.1439  0.86987  0.10300    +0.0094  0.0018   5.11  47/60   61.13
+   winsorx0.25   77.0582  25.1449  0.86985  0.10311    +0.0050  0.0011   4.37  42/60   61.10
+         mean8   77.0532  25.1458  0.86980  0.10321    +0.0000  0.0000   0.00   0/60   61.07
+wrote cbA_lam0.json

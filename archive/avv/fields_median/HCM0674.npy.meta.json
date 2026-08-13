@@ -1,0 +1,5 @@
+{
+  "gt_dir": "/mnt/d/avv/data/phase1/private_set2/HCM0674/train/images",
+  "render_dir": "/mnt/d/avv/r2r9/models/HCM0674_ut42/train_png",
+  "ds": 8
+}

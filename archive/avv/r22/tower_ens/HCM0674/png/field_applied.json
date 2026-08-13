@@ -1,0 +1,10 @@
+{
+  "field": "/mnt/d/avv/r2r9/fields/HCM0674.npy",
+  "n": 60,
+  "source": "/mnt/d/avv/r22/tower_ens/HCM0674/png_ens",
+  "field_meta": {
+    "gt_dir": "/mnt/d/avv/data/phase1/private_set2/HCM0674/train/images",
+    "render_dir": "/mnt/d/avv/r2r9/models/HCM0674_ut42/train_png",
+    "ds": 8
+  }
+}

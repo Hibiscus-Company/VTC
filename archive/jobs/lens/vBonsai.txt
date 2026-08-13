@@ -1,0 +1,8 @@
+# Does bonsai have a lens field worth shipping? It is the LAST scene without one. Same variant set
+# the chair re-gate used, so the two are directly comparable.
+# name|pool|ds|smooth|poly|up|remap
+mean_ds8_cubic|mean|8|0|0|cubic|cubic
+median_ds8|median|8|0|0|cubic|cubic
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds16_rlan|median|16|0|0|cubic|lanczos
+med_ds8_g1_rlan|median|8|1|0|cubic|lanczos

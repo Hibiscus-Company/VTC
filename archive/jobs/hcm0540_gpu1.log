@@ -1,0 +1,6 @@
+=== [HCM0540] seed7 decay0.999 starting on GPU1 Fri Jul 24 04:48:29 +07 2026 ===
+[59999] loss 0.0384 l1 0.0217 ssim 0.9321 N 8000000
+Saving EMA-averaged params (decay 0.999, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/r17/HCM0540_ut7_ema999/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r17/HCM0540_ut7_ema999/test_render
+=== [HCM0540] DONE Fri Jul 24 07:33:13 +07 2026, 60 renders ===

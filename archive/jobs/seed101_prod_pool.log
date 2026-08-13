@@ -1,0 +1,26 @@
+>>> gpu1 HCM0421 train 15:42
+>>> gpu0 HCM0539 train 16:19
+[59999] loss 0.0441 l1 0.0237 ssim 0.9240 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/r22_seed101/HCM0421/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r22_seed101/HCM0421/test_render
+<<< gpu1 HCM0421 done 17:52 (60 test pngs)
+>>> gpu1 HCM0540 train 17:52
+[59999] loss 0.0471 l1 0.0239 ssim 0.9096 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/r22_seed101/HCM0539/ckpt.pt
+[59999] loss 0.0488 l1 0.0253 ssim 0.9020 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/r22_seed101/HCM0540/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r22_seed101/HCM0539/test_render
+<<< gpu0 HCM0539 done 20:00 (60 test pngs)
+>>> gpu0 HCM0644 train 20:00
+Wrote 60 images to /mnt/d/avv/r22_seed101/HCM0540/test_render
+<<< gpu1 HCM0540 done 20:00 (60 test pngs)
+>>> gpu1 HCM0674 train 20:00
+[59999] loss 0.0386 l1 0.0211 ssim 0.9288 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/r22_seed101/HCM0674/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r22_seed101/HCM0674/test_render
+<<< gpu1 HCM0674 done 22:06 (60 test pngs)
+[59999] loss 0.0466 l1 0.0253 ssim 0.9173 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/r22_seed101/HCM0644/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r22_seed101/HCM0644/test_render
+<<< gpu0 HCM0644 done 22:23 (60 test pngs)
+=== SEED101 PROD POOL DONE Sat Jul 25 22:23:56 +07 2026 ===

@@ -1,0 +1,29 @@
+>>> sr001 scale_reg=0.01 (gpu1) START 12:44
+Saved 8000000 gaussians to /mnt/d/avv/r41_towersr/sr001/ckpt.pt
+   CENSUS N=5,697,417  s2/s1 0.2530  s2/s3 45.6  s1/s3 191.9
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL sr001            n= 40  PSNR 25.1107  SSIM 0.8403  LPIPSvgg 0.1132  SCORE 75.7468
+<<< sr001 DONE 15:03
+>>> sr005 scale_reg=0.05 (gpu1) START 15:03
+Saved 8000000 gaussians to /mnt/d/avv/r41_towersr/sr005/ckpt.pt
+   CENSUS N=5,611,285  s2/s1 0.2559  s2/s3 1839.6  s1/s3 7695.1
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL sr005            n= 40  PSNR 24.9229  SSIM 0.8356  LPIPSvgg 0.1185  SCORE 75.2812
+<<< sr005 DONE 17:19
+>>> sr01 scale_reg=0.1 (gpu1) START 17:19
+tower_q2.sh: line 20: 1885830 Killed                  CUDA_VISIBLE_DEVICES=$G python gsplat_track/train_gsplat.py --source $ES/train_sub --images images --out $M $BASE --scale_reg $SR > $M/train.log 2>&1
+!!! sr01 NO CKPT
+[51000] loss 0.0594 l1 0.0302 ssim 0.8886 N 8000000
+[52000] loss 0.0762 l1 0.0383 ssim 0.8511 N 8000000
+[53000] loss 0.0618 l1 0.0318 ssim 0.8820 N 8000000
+=== TOWER SCREEN DONE 00:35 ===

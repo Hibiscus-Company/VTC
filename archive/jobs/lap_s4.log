@@ -1,0 +1,31 @@
+views n=60
+
+============================================================================================
+1. PAIRED PER-VIEW SIGNIFICANCE (60 views, exact decomposition of the score)
+============================================================================================
+config                               dScore       t     p(2s)            boot95%  win/60
+energy_n1_lam1.0_win5               +0.1742   24.51  0.00e+00 [+0.1606,+0.1882]    60/60
+energy_n1_lam1.5_win5               +0.1839   19.24  0.00e+00 [+0.1655,+0.2021]    60/60
+energy_n1_lam1.0_win9               +0.1408   21.60  0.00e+00 [+0.1284,+0.1534]    60/60
+pnorm_n1_p2.0_win3                  +0.1603   18.61  0.00e+00 [+0.1433,+0.1770]    59/60
+gain_n1_g1.02                       +0.0628   24.98  0.00e+00 [+0.0579,+0.0676]    60/60
+median_n1                           -0.0605  -23.36  0.00e+00 [-0.0656,-0.0556]     0/60
+maxmag_n1_win3                      -0.4326  -10.56  3.33e-15 [-0.5137,-0.3548]     2/60
+
+============================================================================================
+2. 2-FOLD VIEW CROSS-VALIDATION of the (lam,win) choice
+   naive = best config's full-data delta (optimistically biased)
+   cv    = pick (lam,win) on fold A, score on fold B, and vice versa -> honest
+============================================================================================
+   grid size = 18 configs: ['energy_n1_lam0.5_win5', 'energy_n1_lam0.75_win17', 'energy_n1_lam0.75_win3', 'energy_n1_lam0.75_win5', 'energy_n1_lam0.75_win9', 'energy_n1_lam1.0_win17', 'energy_n1_lam1.0_win3', 'energy_n1_lam1.0_win5', 'energy_n1_lam1.0_win9', 'energy_n1_lam1.25_win17', 'energy_n1_lam1.25_win3', 'energy_n1_lam1.25_win5', 'energy_n1_lam1.25_win9', 'energy_n1_lam1.5_win17', 'energy_n1_lam1.5_win3', 'energy_n1_lam1.5_win5', 'energy_n1_lam1.5_win9', 'energy_n1_lam2.0_win5']
+   naive best = energy_n1_lam1.25_win3  delta +0.2099
+   CV delta = +0.2093   (sd over 400 splits 0.0013, 5th pct +0.2065)
+   optimism = naive - cv = +0.0007
+   selection stability: lam1.25_win3:89%, lam1.5_win3:11%
+
+============================================================================================
+3. MEMBER-FOLD: (lam,win) tuned on k=3 sub-ensembles, applied at k=4
+============================================================================================
+   k=2: pixelmean 76.0694  energy 76.1599  delta +0.0905
+   k=3: pixelmean 76.5762  energy 76.7160  delta +0.1398
+   k=4: pixelmean 76.6749  energy 76.8491  delta +0.1742

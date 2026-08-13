@@ -1,0 +1,14 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+tower    PNG (lossless upper bound)   SCORE  76.2922  LPIPS 0.1078 SSIM 0.8598 PSNR 24.6837    144.1MB
+tower    q100 ss2 prog                SCORE  76.2865  LPIPS 0.1068 SSIM 0.8585 PSNR 24.6755     63.0MB
+tower    q99  ss2 prog                SCORE  76.2861  LPIPS 0.1065 SSIM 0.8582 PSNR 24.6713     56.1MB
+tower    q98  ss2 prog                SCORE  76.2702  LPIPS 0.1065 SSIM 0.8577 PSNR 24.6651     47.6MB
+tower    q97  ss2 prog                SCORE  76.2304  LPIPS 0.1069 SSIM 0.8571 PSNR 24.6567     42.9MB
+tower    q96  ss2 prog                SCORE  76.1508  LPIPS 0.1080 SSIM 0.8562 PSNR 24.6449     38.9MB
+tower    q95  ss2 prog                SCORE  76.0124  LPIPS 0.1102 SSIM 0.8547 PSNR 24.6279     35.4MB
+tower    q93  ss2 prog                SCORE  75.6873  LPIPS 0.1153 SSIM 0.8515 PSNR 24.5910     30.6MB

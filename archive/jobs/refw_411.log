@@ -1,0 +1,31 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/60 3s
+  11/60 30s
+  21/60 57s
+  31/60 88s
+  41/60 121s
+  51/60 151s
+
+n=60 lam=1.0 gain=1.3  FULL SHIPPED CHAIN, control = flat mean8
+             arm     SCORE     PSNR     SSIM    LPIPS         d      se      t    wins
+   mean8_CONTROL   78.8653  26.2274  0.89538  0.09331   +0.0000  0.0000   0.00   0/60
+     null_ws0.25   78.8653  26.2274  0.89538  0.09331   +0.0000  0.0000   0.00   0/60
+   famwE_ws0.333   78.8503  26.2257  0.89544  0.09371   -0.0150  0.0069  -2.17  19/60
+   famwM_ws0.333   78.8245  26.2071  0.89485  0.09363   -0.0409  0.0046  -8.90   7/60
+   famwU_ws0.333   78.8507  26.2161  0.89516  0.09335   -0.0146  0.0035  -4.13  19/60
+       prod411_E   78.8487  26.2275  0.89530  0.09367   -0.0166  0.0068  -2.45  19/60
+       prod611_E   78.8623  26.2276  0.89519  0.09325   -0.0030  0.0011  -2.87  21/60
+       prod411_U   78.8499  26.2179  0.89503  0.09329   -0.0154  0.0041  -3.77  21/60
+       prod611_U   78.8627  26.2278  0.89521  0.09325   -0.0026  0.0010  -2.47  22/60
+
+DECISION-RELEVANT PAIRED CONTRASTS (the literal one-token edit):
+       prod611_E - prod411_E        +0.0136 +/- 0.0069  t=  1.97  wins 39/60
+       prod611_U - prod411_U        +0.0128 +/- 0.0038  t=  3.40  wins 38/60
+   famwE_ws0.333 - mean8_CONTROL    -0.0150 +/- 0.0069  t= -2.17  wins 19/60
+   famwU_ws0.333 - mean8_CONTROL    -0.0146 +/- 0.0035  t= -4.13  wins 19/60
+   famwM_ws0.333 - mean8_CONTROL    -0.0409 +/- 0.0046  t= -8.90  wins 7/60
+     null_ws0.25 - mean8_CONTROL    +0.0000 +/- 0.0000  t=  0.00  wins 0/60
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/refw_411.json

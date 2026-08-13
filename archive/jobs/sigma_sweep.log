@@ -1,0 +1,61 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  HCM0181 n=60 72s
+  HCM0193 n=60 69s
+  HCM0204 n=60 67s
+  hcm0031 n=50 56s
+  hcm0034 n=60 69s
+
+SIGMA SWEEP CROSS-SCENE -- single member, gain 1.30, shipped encode, real test GT
+    scene      arm     SCORE   vs plain      se     wins
+  HCM0181    plain   76.7723    +0.0000  0.0000   0/60 
+  HCM0181       g1   76.7817    +0.0095  0.0006  60/60 
+  HCM0181       g2   76.7827    +0.0105  0.0012  53/60 
+  HCM0181       g3   76.7756    +0.0033  0.0018  36/60 
+  HCM0181       g4   76.7601    -0.0122  0.0030  18/60 
+  HCM0181       g6   76.7007    -0.0715  0.0057   2/60 
+  HCM0181       g8   76.6083    -0.1640  0.0086   1/60 
+  HCM0193    plain   76.8730    +0.0000  0.0000   0/60 
+  HCM0193       g1   76.8812    +0.0082  0.0007  56/60 
+  HCM0193       g2   76.8838    +0.0108  0.0013  51/60 
+  HCM0193       g3   76.8808    +0.0078  0.0021  39/60 
+  HCM0193       g4   76.8709    -0.0021  0.0031  25/60 
+  HCM0193       g6   76.8240    -0.0489  0.0058  10/60 
+  HCM0193       g8   76.7439    -0.1291  0.0091   3/60 
+  HCM0204    plain   76.9654    +0.0000  0.0000   0/60 
+  HCM0204       g1   76.9727    +0.0073  0.0006  57/60 
+  HCM0204       g2   76.9717    +0.0063  0.0010  48/60 
+  HCM0204       g3   76.9634    -0.0020  0.0019  22/60 
+  HCM0204       g4   76.9483    -0.0171  0.0032  11/60 
+  HCM0204       g6   76.8953    -0.0700  0.0066   4/60 
+  HCM0204       g8   76.8185    -0.1469  0.0106   3/60 
+  hcm0031    plain   75.6354    +0.0000  0.0000   0/50 
+  hcm0031       g1   75.6435    +0.0080  0.0008  47/50 
+  hcm0031       g2   75.6451    +0.0097  0.0015  40/50 
+  hcm0031       g3   75.6387    +0.0033  0.0026  25/50 
+  hcm0031       g4   75.6244    -0.0110  0.0040  15/50 
+  hcm0031       g6   75.5732    -0.0622  0.0070   5/50 
+  hcm0031       g8   75.4933    -0.1421  0.0104   2/50 
+  hcm0034    plain   77.2854    +0.0000  0.0000   0/60 
+  hcm0034       g1   77.2931    +0.0077  0.0007  55/60 
+  hcm0034       g2   77.2939    +0.0084  0.0011  52/60 
+  hcm0034       g3   77.2873    +0.0019  0.0018  30/60 
+  hcm0034       g4   77.2730    -0.0124  0.0030  15/60 
+  hcm0034       g6   77.2191    -0.0663  0.0057   4/60 
+  hcm0034       g8   77.1325    -0.1529  0.0091   1/60 
+
+g1: 5-scene mean +0.0081  per-scene [0.0095, 0.0082, 0.0073, 0.008, 0.0077]  positive 5/5
+
+g2: 5-scene mean +0.0091  per-scene [0.0105, 0.0108, 0.0063, 0.0097, 0.0084]  positive 5/5
+
+g3: 5-scene mean +0.0029  per-scene [0.0033, 0.0078, -0.002, 0.0033, 0.0019]  positive 4/5
+
+g4: 5-scene mean -0.0109  per-scene [-0.0122, -0.0021, -0.0171, -0.011, -0.0124]  positive 0/5
+
+g6: 5-scene mean -0.0638  per-scene [-0.0715, -0.0489, -0.07, -0.0622, -0.0663]  positive 0/5
+
+g8: 5-scene mean -0.1470  per-scene [-0.164, -0.1291, -0.1469, -0.1421, -0.1529]  positive 0/5

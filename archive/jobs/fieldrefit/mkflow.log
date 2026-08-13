@@ -1,0 +1,12 @@
+60 matched train pairs
+  0/60 10s
+  10/60 51s
+  20/60 71s
+  30/60 91s
+  40/60 109s
+  50/60 134s
+wrote flow_HCM0181_B9.npz
+wrote flow_HCM0181_B11.npz
+wrote flow_HCM0181_M2.npz
+wrote flow_HCM0181_M2ER.npz
+total 216s

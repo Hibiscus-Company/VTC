@@ -1,0 +1,7 @@
+>>> sr001seed42 (gpu0) START 12:45  [--scale_reg 0.01]
+Saved 5000000 gaussians to /mnt/d/avv/r36_shape/sr001seed42/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r36_shape/sr001seed42/render
+--- census sr001seed42 ---
+   N=1,012,972  s2/s1 0.2978  s2/s3 913.6  s1/s3 2960.6
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 26.9724  SSIM 0.8476  LPIPSvgg 0.2479  SCORE 71.6951   [BAR 70.7965]
+<<< sr001seed42 DONE 14:26

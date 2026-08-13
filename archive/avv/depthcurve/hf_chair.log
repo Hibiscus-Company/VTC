@@ -1,0 +1,70 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/58] frame_000005 21s
+[2/58] frame_000015 42s
+[3/58] frame_000045 61s
+[4/58] frame_000055 80s
+[5/58] frame_000085 99s
+[6/58] frame_000100 118s
+[7/58] frame_000110 137s
+[8/58] frame_000120 155s
+[9/58] frame_000130 177s
+[10/58] frame_000140 197s
+[11/58] frame_000175 216s
+[12/58] frame_000185 236s
+[13/58] frame_000225 254s
+[14/58] frame_000235 275s
+[15/58] frame_000280 298s
+[16/58] frame_000295 322s
+[17/58] frame_000335 344s
+[18/58] frame_000345 366s
+[19/58] frame_000355 385s
+[20/58] frame_000425 405s
+[21/58] frame_000475 425s
+[22/58] frame_000485 451s
+[23/58] frame_000495 475s
+[24/58] frame_000520 499s
+[25/58] frame_000560 524s
+[26/58] frame_000575 548s
+[27/58] frame_000585 572s
+[28/58] frame_000640 595s
+[29/58] frame_000695 621s
+[30/58] frame_000705 645s
+[31/58] frame_000755 667s
+[32/58] frame_000765 692s
+[33/58] frame_000775 717s
+[34/58] frame_000785 741s
+[35/58] frame_000815 766s
+[36/58] frame_000825 790s
+[37/58] frame_000835 813s
+[38/58] frame_000845 837s
+[39/58] frame_000905 861s
+[40/58] frame_000920 886s
+[41/58] frame_000955 907s
+[42/58] frame_000965 934s
+[43/58] frame_000975 957s
+[44/58] frame_000985 980s
+[45/58] frame_001020 1003s
+[46/58] frame_001030 1025s
+[47/58] frame_001040 1050s
+[48/58] frame_001050 1074s
+[49/58] frame_001060 1097s
+[50/58] frame_001090 1121s
+[51/58] frame_001100 1144s
+[52/58] frame_001125 1167s
+[53/58] frame_001150 1189s
+[54/58] frame_001160 1216s
+[55/58] frame_001175 1240s
+[56/58] frame_001185 1263s
+[57/58] frame_001245 1288s
+[58/58] frame_001275 1309s
+
+=== HF REINJECTION, k=7 mean, sigma=1.5, n=58 ===
+  alpha=0.0   PSNR 25.9154 SSIM 0.8173 LPIPS 0.2225 SCORE 71.1697  delta +0.0000
+  alpha=0.3   PSNR 25.8893 SSIM 0.8163 LPIPS 0.2202 SCORE 71.2164  delta +0.0467
+  alpha=0.6   PSNR 25.8044 SSIM 0.8124 LPIPS 0.2186 SCORE 71.1094  delta -0.0603
+  alpha=1.0   PSNR 25.6062 SSIM 0.8032 LPIPS 0.2214 SCORE 70.6050  delta -0.5647

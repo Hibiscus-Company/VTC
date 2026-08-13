@@ -1,0 +1,27 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0181: 4 members, 60 poses, lam=1.0
+  0/60  4s
+  10/60  60s
+  20/60  121s
+  30/60  178s
+  40/60  243s
+  50/60  293s
+
+=== HCM0181 QTABLE ALLOCATION, full shipped chain, n=60 ===
+         arm     SCORE         d      se      t    wins      MB     dMB    dPSNR     dSSIM     dLPIPS
+     q100ss2   78.5277   +0.0000  0.0000   0.00    0/60    63.26   +0.00  +0.0000  +0.00000   +0.00000
+      q98ss0   78.5526   +0.0249  0.0034   7.40   49/60    56.96   -6.30  -0.0191  -0.00103   -0.00168
+   L1_C4_ss0   78.5155   -0.0122  0.0033  -3.76   21/60    60.13   -3.13  -0.0125  -0.00031   -0.00012
+   L1_C8_ss0   78.4678   -0.0600  0.0031 -19.30    0/60    56.37   -6.89  -0.0203  -0.00056   +0.00078
+ LHF2_C1_ss0   78.5186   -0.0091  0.0029  -3.17   19/60    79.76  +16.50  -0.0175  -0.00169   -0.00130
+ LHF2_C4_ss0   78.5118   -0.0159  0.0032  -4.91   15/60    50.77  -12.49  -0.0205  -0.00114   -0.00076
+ LHF2_C8_ss0   78.4641   -0.0636  0.0033 -19.11    1/60    47.01  -16.25  -0.0283  -0.00138   +0.00013
+ LHF3_C8_ss0   78.4342   -0.0936  0.0035 -26.72    0/60    41.93  -21.33  -0.0363  -0.00207   +0.00024
+    LHF2_ss2   78.5240   -0.0037  0.0015  -2.40   17/60    53.89   -9.37  -0.0081  -0.00083   -0.00065
+
+elapsed 342s

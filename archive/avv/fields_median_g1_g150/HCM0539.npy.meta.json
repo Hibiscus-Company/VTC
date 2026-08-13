@@ -1,0 +1,8 @@
+{
+ "gt_dir": "/mnt/d/avv/data/phase1/private_set2/HCM0539/train/images",
+ "render_dir": "/mnt/d/avv/r2r9/models/HCM0539_ut42/train_png",
+ "ds": 8,
+ "scale": 1.5,
+ "smooth_sigma": 1,
+ "rationale": "gauss(1)+gain1.30. Smoothing measured on the FULL r29 chain: +0.0106+-0.0007, 59/60 wins (HCM0181, real test GT). Gain 1.30 is the twice-measured argmax. | r30b: 1.30 -> 1.50. The 1.30 constant was fit against a 30k/5M model; the private fields are fit on <T>_ut42 (60k/8M) and the 30k field measures 1.1486x the 60k field on all five private towers -> 1.493. Harness argmax on the k=10 chain is 1.50 (+0.0467 alone, +0.0964 with q98/ss0, n=60 real test GT)."
+}

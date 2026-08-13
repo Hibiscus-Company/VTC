@@ -1,0 +1,68 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  [HCM0421] 0/30  3s
+  [HCM0421] 10/30  11s
+  [HCM0421] 20/30  19s
+[HCM0421] done 26s
+  [HCM0539] 0/30  3s
+  [HCM0539] 10/30  11s
+  [HCM0539] 20/30  18s
+[HCM0539] done 27s
+  [HCM0540] 0/30  5s
+  [HCM0540] 10/30  13s
+  [HCM0540] 20/30  21s
+[HCM0540] done 29s
+  [HCM0644] 0/30  3s
+  [HCM0644] 10/30  12s
+  [HCM0644] 20/30  21s
+[HCM0644] done 28s
+  [HCM0674] 0/30  3s
+  [HCM0674] 10/30  12s
+  [HCM0674] 20/30  20s
+[HCM0674] done 27s
+
+               variant      MEAN  d(base)    HCM0421    HCM0539    HCM0540    HCM0644    HCM0674
+                  none   81.6508  -0.5305    -0.5561    -0.6005    -0.5669    -0.4312    -0.4976
+              mean_ds8   82.0386  -0.1426    -0.0756    -0.1226    -0.1067    -0.2684    -0.1397
+            median_ds8   82.1812  +0.0000    +0.0000    +0.0000    +0.0000    +0.0000    +0.0000
+            median_ds4   82.1806  -0.0006    -0.0006    -0.0010    -0.0007    -0.0001    -0.0007
+          med_ds8_rlan   82.2861  +0.1049    +0.1132    +0.1174    +0.1023    +0.0905    +0.1008
+          med_ds4_rlan   82.2855  +0.1042    +0.1125    +0.1165    +0.1017    +0.0904    +0.1001
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  [HCM0421] 0/30  3s
+  [HCM0421] 10/30  10s
+  [HCM0421] 20/30  17s
+[HCM0421] done 29s
+  [HCM0539] 0/30  4s
+  [HCM0539] 10/30  14s
+  [HCM0539] 20/30  25s
+[HCM0539] done 34s
+  [HCM0540] 0/30  4s
+  [HCM0540] 10/30  15s
+  [HCM0540] 20/30  27s
+[HCM0540] done 38s
+  [HCM0644] 0/30  4s
+  [HCM0644] 10/30  16s
+  [HCM0644] 20/30  30s
+[HCM0644] done 41s
+  [HCM0674] 0/30  4s
+  [HCM0674] 10/30  15s
+  [HCM0674] 20/30  26s
+[HCM0674] done 42s
+
+               variant      MEAN  d(base)    HCM0421    HCM0539    HCM0540    HCM0644    HCM0674
+                  none   81.6508  -0.4576    -0.4676    -0.4804    -0.4871    -0.4220    -0.4309
+              mean_ds8   82.0919  -0.0165    +0.0006    -0.0195    -0.0059    -0.0225    -0.0353
+            median_ds8   82.1084  +0.0000    +0.0000    +0.0000    +0.0000    +0.0000    +0.0000
+            median_ds4   82.1056  -0.0028    -0.0029    -0.0037    -0.0029    -0.0022    -0.0025
+          med_ds8_rlan   82.2356  +0.1272    +0.1402    +0.1498    +0.1253    +0.0988    +0.1220
+          med_ds4_rlan   82.2329  +0.1245    +0.1374    +0.1464    +0.1227    +0.0965    +0.1196

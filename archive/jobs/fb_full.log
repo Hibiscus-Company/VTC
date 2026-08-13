@@ -1,0 +1,24 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60  80s
+  10/60  251s
+  20/60  533s
+  30/60  853s
+  40/60  1249s
+  50/60  1410s
+
+HCM0181 n=60 lam=1.0  FULL SHIPPED CHAIN
+          arm     SCORE     PSNR     SSIM    LPIPS     vs A0  paired t    MB/60
+     A0_float   78.3878  25.8879   0.8883   0.0948   +0.0000      0.00    63.36
+      A1_qens   78.3891  25.8896   0.8881   0.0947   +0.0013      0.87    63.51
+  A2_qens_qer   78.3851  25.8896   0.8879   0.0946   -0.0027     -1.72    63.42
+          Q99   78.3900  25.8828   0.8880   0.0945   +0.0023      1.96    56.34
+          SS0   78.3810  25.8791   0.8874   0.0942   -0.0068     -2.31    89.30
+        ORDER   78.3852  25.8889   0.8882   0.0949   -0.0026     -5.69    63.34
+
+NULL CONTROL (post-warp uint8 round idempotent): PASS
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fb_full.json  (1529s)

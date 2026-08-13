@@ -1,0 +1,30 @@
+[29999] loss 0.0529 l1 0.0214 ssim 0.9317 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/bonsai_final/ut42/ckpt.pt
+[29999] loss 0.0560 l1 0.0227 ssim 0.9273 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/bonsai_final/ut7/ckpt.pt
+Wrote 28 images to /mnt/d/avv/bonsai_final/ut42/test_render
+Wrote 28 images to /mnt/d/avv/bonsai_final/ut7/test_render
+Ensembled 28 images from 2 members -> /mnt/d/avv/bonsai_final/ens/jpg
+=== BONSAI FINAL renders ready: /mnt/d/avv/bonsai_final/ens/png ===
+28
+354.4MB > 350.0MB, re-encoding HCM0421 at q99
+OK: /mnt/d/avv/submissions/sub_round10b_bonsaifix.zip  347.4MB  386 files
+  HCM0421: q99
+  HCM0539: q100
+  HCM0540: q100
+  HCM0644: q100
+  HCM0674: q100
+  bonsai: q100
+  chair: q100
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 347.4 MB (limit 350.0)
+VERIFY PASSED
+=== ROUND10b BUILT: sub_round10b_bonsaifix.zip ===

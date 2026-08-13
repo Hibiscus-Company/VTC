@@ -1,0 +1,33 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  HCM0181 n=60 33s
+  HCM0193 n=60 33s
+  HCM0204 n=60 31s
+  hcm0031 n=50 26s
+  hcm0034 n=60 32s
+
+FIELD SMOOTHING CROSS-SCENE -- single member, gain 1.30, shipped encode, real test GT
+    scene      arm     SCORE   vs plain      se     wins
+  HCM0181    plain   76.7723    +0.0000  0.0000   0/60 
+  HCM0181   gauss1   76.7817    +0.0095  0.0006  60/60 
+  HCM0181   gauss2   76.7827    +0.0105  0.0012  53/60 
+  HCM0193    plain   76.8730    +0.0000  0.0000   0/60 
+  HCM0193   gauss1   76.8812    +0.0082  0.0007  56/60 
+  HCM0193   gauss2   76.8838    +0.0108  0.0013  51/60 
+  HCM0204    plain   76.9654    +0.0000  0.0000   0/60 
+  HCM0204   gauss1   76.9727    +0.0073  0.0006  57/60 
+  HCM0204   gauss2   76.9717    +0.0063  0.0010  48/60 
+  hcm0031    plain   75.6354    +0.0000  0.0000   0/50 
+  hcm0031   gauss1   75.6435    +0.0080  0.0008  47/50 
+  hcm0031   gauss2   75.6451    +0.0097  0.0015  40/50 
+  hcm0034    plain   77.2854    +0.0000  0.0000   0/60 
+  hcm0034   gauss1   77.2931    +0.0077  0.0007  55/60 
+  hcm0034   gauss2   77.2939    +0.0084  0.0011  52/60 
+
+gauss1: 5-scene mean +0.0081  per-scene [0.0095, 0.0082, 0.0073, 0.008, 0.0077]  positive 5/5
+
+gauss2: 5-scene mean +0.0091  per-scene [0.0105, 0.0108, 0.0063, 0.0097, 0.0084]  positive 5/5

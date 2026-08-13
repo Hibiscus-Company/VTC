@@ -1,0 +1,17 @@
+>>> long45k_dp05 [--iters 45000 --refine_stop 38000 --noise_stop 38000 --lpips_from 30000 --seed 42 --depth_prior 0.05 --depth_dir /mnt/d/avv/depth/bonsai_sub] (gpu1) START 10:04
+Saved 5000000 gaussians to /mnt/d/avv/r43_bonsai/long45k_dp05/ckpt.pt
+   CENSUS N=2,253,293  s2/s1 0.3601  s2/s3 13650608.0  s1/s3 41695536.1
+EVAL long45k_dp05       n= 28  PSNR 24.5016 SSIM 0.8695 LPIPS 0.2566  SCORE 70.5229   d_vs_ref -1.4682  [ref 71.9911]
+     first8  n= 8  PSNR 22.8770 SSIM 0.7970 LPIPS 0.2819  SCORE 66.3579
+     last20  n=20  PSNR 25.1515 SSIM 0.8986 LPIPS 0.2465  SCORE 72.1889
+PERFRAME 10:72.24 120:60.90 190:67.15 260:67.02 440:64.39 510:62.34 630:67.35 710:69.48 810:72.70 910:71.04 1100:62.94 1180:62.34 1250:65.18 1320:68.83 1400:76.03 1470:72.71 1540:72.66 1640:75.35 1720:78.11 1820:77.38 1930:71.81 2120:72.01 2190:75.17 2260:75.70 2330:75.73 2440:71.15 2510:74.38 2650:72.56
+<<< long45k_dp05 DONE 11:51
+>>> long45k_dp15 [--iters 45000 --refine_stop 38000 --noise_stop 38000 --lpips_from 30000 --seed 42 --depth_prior 0.15 --depth_dir /mnt/d/avv/depth/bonsai_sub] (gpu1) START 11:51
+q3b.sh: line 30: 1970816 Killed                  CUDA_VISIBLE_DEVICES=$G python gsplat_track/train_gsplat.py --source $ES/train_sub --images images --out $M $COMMON "$@" > $M/train.log 2>&1
+!!! long45k_dp15 NO CKPT
+Step 25400: Added 0 GSs. Now having 5000000 GSs.
+Step 25500: Relocated 302057 GSs.
+Step 25500: Added 0 GSs. Now having 5000000 GSs.
+Step 25600: Relocated 308840 GSs.
+Step 25600: Added 0 GSs. Now having 5000000 GSs.
+=== Q3B DONE 12:18 ===

@@ -1,0 +1,10 @@
+HCM0421  30k5M 0.1816  60k8M 0.1563  ratio 0.8610  LS 1.1469  corr 0.9899   [72s]
+HCM0539  30k5M 0.1829  60k8M 0.1600  ratio 0.8749  LS 1.1162  corr 0.9927   [160s]
+HCM0540  30k5M 0.1824  60k8M 0.1584  ratio 0.8686  LS 1.1524  corr 0.9881   [242s]
+HCM0644  30k5M 0.1918  60k8M 0.1577  ratio 0.8221  LS 1.1858  corr 0.9870   [302s]
+HCM0674  30k5M 0.1778  60k8M 0.1569  ratio 0.8824  LS 1.1419  corr 0.9911   [357s]
+
+ratio 60k/30k  mean 0.8618  sd 0.0236  min 0.8221  max 0.8824
+LS scale       mean 1.1486  sd 0.0250
+CLAIM PREDICTS ratio ~= 0.827
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/refute/res_class.json

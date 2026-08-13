@@ -1,0 +1,21 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/audit_mu.py:46: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+[5/30 292s] k2[1.15:+0.0932 1.6:+0.0981 2.0:+0.0916 2.5:+0.0734]  k4[1.6:+0.2086 2.0:+0.1930 2.5:+0.1564]  k4_SHIP1.333:+0.2102
+[10/30 408s] k2[1.15:+0.1140 1.6:+0.1224 2.0:+0.1191 2.5:+0.1040]  k4[1.6:+0.2451 2.0:+0.2330 2.5:+0.2012]  k4_SHIP1.333:+0.2436
+[15/30 553s] k2[1.15:+0.1159 1.6:+0.1257 2.0:+0.1240 2.5:+0.1122]  k4[1.6:+0.2453 2.0:+0.2367 2.5:+0.2090]  k4_SHIP1.333:+0.2419
+[20/30 685s] k2[1.15:+0.1159 1.6:+0.1268 2.0:+0.1270 2.5:+0.1166]  k4[1.6:+0.2433 2.0:+0.2373 2.5:+0.2119]  k4_SHIP1.333:+0.2389
+[25/30 829s] k2[1.15:+0.1145 1.6:+0.1259 2.0:+0.1266 2.5:+0.1179]  k4[1.6:+0.2383 2.0:+0.2339 2.5:+0.2109]  k4_SHIP1.333:+0.2332
+[30/30 929s] k2[1.15:+0.1043 1.6:+0.1102 2.0:+0.1067 2.5:+0.0922]  k4[1.6:+0.2157 2.0:+0.2034 2.5:+0.1711]  k4_SHIP1.333:+0.2160
+
+=== BOOST MULTIPLE mu, HCM0181 real test GT, full shipped chain, n=30 ===
+  k=2 (shipped mu=2.000, base=77.4555)  mu1.15:+0.1043  mu1.6:+0.1102  mu2.0:+0.1067  mu2.5:+0.0922   vertex mu*=1.637
+  k=4 (shipped mu=1.333, base=78.1467)  mu1.333:+0.2160  mu1.6:+0.2157  mu2.0:+0.2034  mu2.5:+0.1711   vertex mu*=1.433
+
+  measured mu*(2)=1.637  mu*(4)=1.433
+    implied beta from k=2: 1.318  -> predicted mu*(7)=1.371  mu*(8)=1.364
+    implied beta from k=4: 1.325  -> predicted mu*(7)=1.379  mu*(8)=1.371
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/audit_mu.json

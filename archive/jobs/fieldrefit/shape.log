@@ -1,0 +1,32 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+      arm  mean|f|   p95|f|  cos(.,ship)  mean|f-ship|
+     ship   0.2746   0.7977      1.00000        0.0000
+  cmp0.15   0.2746   0.7117      0.99274        0.0297
+  cmp0.30   0.2746   0.6244      0.96973        0.0587
+  exp0.15   0.2746   0.8791      0.99372        0.0299
+    radin   0.2746   0.7604      0.99892        0.0120
+   radout   0.2746   0.8329      0.99919        0.0111
+    sm1.0   0.2746   0.8005      0.99878        0.0157
+    sm2.0   0.2746   0.8032      0.99704        0.0244
+  10/60 117s
+  20/60 219s
+  30/60 303s
+  40/60 380s
+  50/60 465s
+  60/60 555s
+
+FIELD SHAPE AT FIXED AMPLITUDE, HCM0181, n=60, FULL shipped chain
+      arm     SCORE     PSNR    SSIM    LPIPS   vs ship  paired t   win/N
+     ship   78.5277  25.9948  0.8905   0.0946   +0.0000        --   0/60
+  cmp0.15   78.5020  25.9775  0.8902   0.0948   -0.0257     -4.09  19/60
+  cmp0.30   78.4205  25.9182  0.8891   0.0951   -0.1073     -8.81  10/60
+  exp0.15   78.4744  25.9527  0.8897   0.0947   -0.0533     -8.18   9/60
+    radin   78.5189  25.9892  0.8904   0.0947   -0.0088     -3.46  20/60
+   radout   78.5261  25.9932  0.8905   0.0946   -0.0017     -0.73  31/60
+    sm1.0   78.5392  26.0025  0.8907   0.0946   +0.0115     16.43  59/60
+    sm2.0   78.5423  26.0045  0.8907   0.0946   +0.0146      9.27  55/60
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldrefit/res_shape.json   total 555s

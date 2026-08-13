@@ -1,0 +1,28 @@
+  warnings.warn(
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+restore_fast vs production restore: max|diff| = 0.000e+00
+  0/60 3s
+  5/60 19s
+  10/60 33s
+  15/60 49s
+  20/60 65s
+  25/60 81s
+  30/60 95s
+  35/60 111s
+  40/60 126s
+  45/60 142s
+  50/60 157s
+  55/60 173s
+
+ANALOGUE SWEEP, HCM0181, n=60, FULL SHIPPED CHAIN, A6 fixed, restore lam=1.0 k=8
+           minority family B  S@0.3333  S@0.4000     delta       t   wins    dPSNR     dSSIM    dLPIPS
+   CLAIM  fid_ctrl+taillpips   78.7761   78.7948   +0.0188    5.89  45/60   -0.0024  -0.00002  -0.00052
+   unrep1 nolpips+taillpips    78.6345   78.6042   -0.0303   -6.78  12/60   -0.0197  -0.00042  +0.00014
+   unrep3 e17+nolpips          78.6850   78.6797   -0.0053   -1.69  24/60   +0.0019  +0.00005  +0.00020
+   new    e15+e17 (geom)       78.5969   78.5444   -0.0526  -12.01   2/60   -0.0289  -0.00050  +0.00051
+   new    B8pure+B4warm        78.4566   78.3926   -0.0640  -20.12   0/60   -0.0328  -0.00066  +0.00061
+
+across 5 analogues: mean -0.0267  sd 0.0339  min -0.0640  max +0.0188  positive 1/5
+elapsed 185s

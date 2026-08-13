@@ -1,0 +1,24 @@
+# name|pool|ds|smooth|poly|up|remap
+mean_ds8|mean|8|0|0|cubic|cubic
+median_ds2|median|2|0|0|cubic|cubic
+median_ds4|median|4|0|0|cubic|cubic
+median_ds8|median|8|0|0|cubic|cubic
+median_ds16|median|16|0|0|cubic|cubic
+median_ds32|median|32|0|0|cubic|cubic
+med_ds8_g1|median|8|1|0|cubic|cubic
+med_ds4_g1|median|4|1|0|cubic|cubic
+med_ds4_g2|median|4|2|0|cubic|cubic
+med_ds2_g2|median|2|2|0|cubic|cubic
+med_ds2_g4|median|2|4|0|cubic|cubic
+poly1_ds8|median|8|0|1|cubic|cubic
+poly2_ds8|median|8|0|2|cubic|cubic
+poly3_ds8|median|8|0|3|cubic|cubic
+poly4_ds8|median|8|0|4|cubic|cubic
+poly6_ds8|median|8|0|6|cubic|cubic
+poly8_ds8|median|8|0|8|cubic|cubic
+med_ds8_uplin|median|8|0|0|linear|cubic
+med_ds8_uplan|median|8|0|0|lanczos|cubic
+med_ds8_rlin|median|8|0|0|cubic|linear
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds8_rspl|median|8|0|0|cubic|spline3
+med_ds8_rtorch|median|8|0|0|cubic|torch_bicubic

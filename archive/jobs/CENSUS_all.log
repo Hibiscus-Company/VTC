@@ -1,0 +1,13 @@
+K1_noUT_aa     score= 71.9029 total=5,000,000 N(op>.05)=1,055,310 (21.11%) s2/s1 0.2977 s2/s3      269.4 s1/s3      927.0
+K4_pC_seed1k   score= 71.3067 total=5,000,000 N(op>.05)=1,018,582 (20.37%) s2/s1 0.3337 s2/s3      211.4 s1/s3      636.4
+K4_pC_seed7    score=  71.219 total=5,000,000 N(op>.05)=  990,516 (19.81%) s2/s1 0.3336 s2/s3      198.9 s1/s3      601.9
+eps10          score= 71.5985 total=5,000,000 N(op>.05)=1,076,570 (21.53%) s2/s1 0.3182 s2/s3      339.6 s1/s3     1041.9
+eps20          score=  71.526 total=5,000,000 N(op>.05)=1,055,967 (21.12%) s2/s1 0.3086 s2/s3      663.5 s1/s3     2109.5
+ppisp_pc       score= 71.2285 total=5,000,000 N(op>.05)=1,008,912 (20.18%) s2/s1 0.3335 s2/s3      125.1 s1/s3      379.4
+K2_clip_full   score=    None total=5,000,000 N(op>.05)=   46,800 ( 0.94%) s2/s1 0.6250 s2/s3        7.7 s1/s3       14.2
+  N      vs score: spearman +0.829  pearson +0.802  (n=6)
+  s2s1   vs score: spearman -0.771  pearson -0.948  (n=6)
+  s2s3   vs score: spearman +0.714  pearson +0.370  (n=6)
+  s1s3   vs score: spearman +0.714  pearson +0.418  (n=6)
+  medop  vs score: spearman +0.086  pearson -0.194  (n=6)
+  vol    vs score: spearman -0.714  pearson -0.817  (n=6)

@@ -1,0 +1,39 @@
+Ensembled 60 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HCM0249/jpg
+=== ens5 HCM0249 done ===
+Ensembled 60 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HCM0254/jpg
+=== ens5 HCM0254 done ===
+Ensembled 60 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HCM0276/jpg
+=== ens5 HCM0276 done ===
+Ensembled 26 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HCM1439/jpg
+=== ens5 HCM1439 done ===
+Ensembled 60 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HNI0131/jpg
+=== ens5 HNI0131 done ===
+Ensembled 52 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HNI0265/jpg
+=== ens5 HNI0265 done ===
+Ensembled 60 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HNI0366/jpg
+=== ens5 HNI0366 done ===
+Ensembled 56 images from 4 members -> /mnt/d/avv/ens/private_m5ut/HNI0437/jpg
+=== ens5 HNI0437 done ===
+440.4MB > 350.0MB, re-encoding HCM0254 at q99
+433.4MB > 350.0MB, re-encoding HCM0249 at q99
+426.4MB > 350.0MB, re-encoding HCM0276 at q99
+419.4MB > 350.0MB, re-encoding HNI0366 at q99
+412.5MB > 350.0MB, re-encoding HNI0131 at q99
+405.5MB > 350.0MB, re-encoding HNI0437 at q99
+399.0MB > 350.0MB, re-encoding HCM0254 at q98
+390.5MB > 350.0MB, re-encoding HCM0249 at q98
+382.0MB > 350.0MB, re-encoding HCM0276 at q98
+373.7MB > 350.0MB, re-encoding HNI0265 at q99
+367.5MB > 350.0MB, re-encoding HNI0366 at q98
+359.5MB > 350.0MB, re-encoding HNI0131 at q98
+351.5MB > 350.0MB, re-encoding HNI0437 at q98
+OK: /mnt/d/avv/submissions/sub_round5_ensABCUT_private.zip  344.0MB  434 files
+  HCM0249: q98
+  HCM0254: q98
+  HCM0276: q98
+  HCM1439: q100
+  HNI0131: q98
+  HNI0265: q99
+  HNI0366: q98
+  HNI0437: q98
+ENS5 ZIP DONE

@@ -1,0 +1,22 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+base 76.6745
+e15ceil95             76.9118 delta +0.2373 (131s)
+e16app                76.8686 delta +0.1941 (155s)
+e17visnorm            76.9181 delta +0.2436 (178s)
+gsplatB1              76.6521 delta -0.0224 (201s)
+gsplatB2              76.6545 delta -0.0200 (223s)
+gsplatB3              76.6745 delta -0.0000 (248s)
+gsplatB4warm          76.7708 delta +0.0963 (270s)
+gsplatB5affine        76.6613 delta -0.0132 (294s)
+gsplatB6bilagrid      75.9967 delta -0.6778 (318s)
+gsplatB7ppisp2        76.7306 delta +0.0561 (347s)
+gsplatB8pure          76.8367 delta +0.1622 (370s)
+m31b_nolpips          76.7029 delta +0.0284 (391s)
+m31b_taillpips        76.8092 delta +0.1347 (420s)
+sh0                   76.2532 delta -0.4213 (463s)
+sh1                   76.3395 delta -0.3350 (520s)
+sh2                   76.5394 delta -0.1351 (548s)
+DONE 547.9639701843262

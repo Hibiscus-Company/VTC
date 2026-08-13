@@ -1,0 +1,1 @@
+--ut --init_clip 1.5 --iters 30000 --cap_max 5000000 --lpips_from 25000

@@ -1,0 +1,18 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+B11(60 from 120-stack) vs B11(own stack): mean |d| 0.00000 px
+recomputed-B9 vs production cache field: mean |d| 0.00000 px  max 0.00000 px
+
+     field  mean|f| px   p95|f|  mean|f-B9| px
+        B9      0.2112   0.6152         0.0000
+       B11      0.1746   0.5186         0.0478
+  avgfield      0.1923   0.5676         0.0239
+        M2      0.1897   0.5602         0.0297
+      M2ER      0.1915   0.5662         0.0286
+   M2_mean      0.2377   0.6504         0.0702
+   B11_n30      0.1803   0.4988         0.0607
+  B11_n120      0.1740   0.5178         0.0485
+     M2_sc      0.2112   0.6238         0.0242
+    B11_sc      0.2112   0.6273         0.0389

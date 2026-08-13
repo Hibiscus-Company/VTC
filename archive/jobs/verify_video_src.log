@@ -1,0 +1,15 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+=== 1. PROVENANCE: re-encode candidate PNGs with shipped settings vs r21 zip bytes ===
+  bonsai: 0 byte-identical, 28 differ, 0 missing  (of 28)
+  chair: 58 byte-identical, 0 differ, 0 missing  (of 58)
+
+=== 2. CALIBRATION: encode self-distortion (LPIPS png vs jpeg-roundtrip), GT-free ===
+  bonsai PRODUCTION (3-member)     n= 20  self-LPIPS shipped 0.06581  hq 0.00479  reduction  92.7%
+  bonsai EVAL (1-member)           n= 20  self-LPIPS shipped 0.06413  hq 0.00485  reduction  92.4%
+  chair PRODUCTION (7-member)      n= 20  self-LPIPS shipped 0.01698  hq 0.00218  reduction  87.1%
+  chair EVAL (4-member)            n= 20  self-LPIPS shipped 0.01758  hq 0.00238  reduction  86.4%

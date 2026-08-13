@@ -1,0 +1,23 @@
+=== GPU1 free, starting bonsai uncertainty_weight test ===
+=== GPU0 free, starting chair uncertainty_weight test ===
+[29999] loss -0.8791 l1 -1.1993 ssim 0.7458 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/tw_test/bonsai_uncweight/ckpt.pt
+Wrote 28 images to /mnt/d/avv/tw_test/bonsai_uncweight/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL bonsai_uncweight n= 28  PSNR 27.0139  SSIM 0.8478  LPIPSvgg 0.2524  SCORE 71.5466
+[59999] loss -2.0084 l1 -2.5817 ssim 0.8314 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/tw_test/chair_uncweight/ckpt.pt
+Wrote 58 images to /mnt/d/avv/tw_test/chair_uncweight/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_uncweight  n= 58  PSNR 25.0494  SSIM 0.7808  LPIPSvgg 0.2622  SCORE 67.9671
+=== UNC_TEST DONE ===

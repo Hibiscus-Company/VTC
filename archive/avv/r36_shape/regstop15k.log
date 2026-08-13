@@ -1,0 +1,5 @@
+>>> regstop15k (gpu0) START 16:04 Saved 5000000 gaussSaved 5000000 gaussians to /mnt/d/avv/r36_shape/regstop15k/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r36_shape/regstop15k/render
+   CENSUS N=1,471,800  s2/s1 0.2953  s2/s3 177.0  s1/s3 613.2
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 26.8699  SSIM 0.8502  LPIPSvgg 0.2437  SCORE 71.8798   [BAR 71.799]
+<<< regstop15k DONE 17:43

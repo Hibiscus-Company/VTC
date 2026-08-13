@@ -1,0 +1,10 @@
+>>> prod long45k seed 42 (gpu0) START 17:35
+Saved 5000000 gaussians to /mnt/d/avv/r45_prod/s42/ckpt.pt
+   CENSUS N=2,235,833  s2/s1 0.3668  s2/s3 9982688.9  s1/s3 31280571.3
+<<< prod seed 42 DONE 19:17 (28 pngs)
+>>> prod long45k seed 202 (gpu0) START 19:17
+Saved 5000000 gaussians to /mnt/d/avv/r45_prod/s202/ckpt.pt
+   CENSUS N=2,245,699  s2/s1 0.3673  s2/s3 10908027.3  s1/s3 34011533.2
+<<< prod seed 202 DONE 22:05 (28 pngs)
+s404 done, skip
+=== PROD gpu0 DONE 22:05 ===

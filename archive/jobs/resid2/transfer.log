@@ -1,0 +1,30 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+HCM0193  n=25  (35s)
+   s1.00   73.4250  vs s1.00  +0.0000  t     nan  win   0/25
+   s1.30   73.5001  vs s1.00  +0.0751  t    9.55  win  25/25
+   s1.37   73.5038  vs s1.00  +0.0788  t    8.44  win  25/25
+
+HCM0204  n=25  (68s)
+   s1.00   76.1538  vs s1.00  +0.0000  t     nan  win   0/25
+   s1.30   76.2709  vs s1.00  +0.1170  t    7.49  win  24/25
+   s1.37   76.2834  vs s1.00  +0.1296  t    6.59  win  24/25
+
+hcm0031  n=25  (97s)
+   s1.00   72.2689  vs s1.00  +0.0000  t     nan  win   0/25
+   s1.30   72.3624  vs s1.00  +0.0935  t    9.13  win  24/25
+   s1.37   72.3736  vs s1.00  +0.1047  t    8.10  win  24/25
+
+hcm0034  n=25  (121s)
+   s1.00   73.8730  vs s1.00  +0.0000  t     nan  win   0/25
+   s1.30   73.9387  vs s1.00  +0.0658  t    5.86  win  23/25
+   s1.37   73.9381  vs s1.00  +0.0651  t    4.71  win  22/25
+
+=== POOLED over scenes (unweighted mean of per-scene scores) ===
+   s1.00   73.9302   vs s1.00  +0.0000
+   s1.30   74.0180   vs s1.00  +0.0878
+   s1.37   74.0247   vs s1.00  +0.0946
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/resid2/res_transfer.json  total 121s

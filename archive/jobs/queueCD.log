@@ -1,0 +1,12 @@
+=== [GPU 0] HCM0249 -> /mnt/d/avv/output/HCM0249_memC ===
+=== [GPU 0] HCM0254 -> /mnt/d/avv/output/HCM0254_memC ===
+=== [GPU 0] HCM0276 -> /mnt/d/avv/output/HCM0276_memC ===
+=== [GPU 0] HCM1439 -> /mnt/d/avv/output/HCM1439_memC ===
+=== [GPU 0] HNI0131 -> /mnt/d/avv/output/HNI0131_memC ===
+=== [GPU 0] HNI0265 -> /mnt/d/avv/output/HNI0265_memC ===
+=== [GPU 0] HNI0366 -> /mnt/d/avv/output/HNI0366_memC ===
+=== [GPU 0] HNI0437 -> /mnt/d/avv/output/HNI0437_memC ===
+=== [GPU 0] queue 'memC' done ===
+MEMBER C DONE
+=== [GPU 0] HCM0249 -> /mnt/d/avv/output/HCM0249_memD ===
+=== [GPU 0] HCM0254 -> /mnt/d/avv/output/HCM0254_memD ===

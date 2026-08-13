@@ -1,0 +1,38 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+restore_fast vs production restore: max|diff| = 0.000e+00
+2-fold-CV LS weights (each applied only to the held-out fold):
+  fold0: gsplatB9ut=0.116 gsplatB10ut8M=0.147 gsplatB11ut60k=0.135 gsplatB12ut8Ms7=0.165 fid_ctrl=0.225 m31b_taillpips=0.211
+          minority family share = 0.4367 (uniform 0.250)
+  fold1: gsplatB9ut=0.113 gsplatB10ut8M=0.163 gsplatB11ut60k=0.118 gsplatB12ut8Ms7=0.171 fid_ctrl=0.231 m31b_taillpips=0.204
+          minority family share = 0.4351 (uniform 0.250)
+  0/60 2s
+  5/60 12s
+  10/60 21s
+  15/60 29s
+  20/60 39s
+  25/60 50s
+  30/60 60s
+  35/60 71s
+  40/60 82s
+  45/60 91s
+  50/60 102s
+  55/60 112s
+
+FAMILY WEIGHT, HCM0181, n=60, FULL SHIPPED CHAIN (4+2 members, restore lam=1.0 k=6, field x1.3 lanczos4, JPEG q100/ss2)
+         arm     SCORE     PSNR    SSIM    LPIPS  vs uniform  t(paired)   MB/60
+   drop_B_k6   78.5277  25.9948  0.8905   0.0946     -0.2342     -21.69   63.26
+    wB0.2500   78.7312  26.0992  0.8930   0.0929     -0.0307     -13.16   63.16
+    wB0.3333   78.7619  26.1140  0.8932   0.0926     +0.0000       0.00   63.21
+    wB0.4000   78.7723  26.1169  0.8932   0.0924     +0.0104       5.67   63.29
+    wB0.5000   78.7647  26.1067  0.8930   0.0922     +0.0028       0.61   63.49
+  LS_2foldCV   78.7795  26.1171  0.8933   0.0922     +0.0176       6.70   63.35
+
+argmax on the sweep grid: wB = 0.4000  (parabolic 0.4077); uniform-per-member = 0.3333
+LS 2-fold CV -> +0.0176 vs uniform 0.333
+drop minority family -> -0.2342 vs uniform 0.333
+elapsed 120s

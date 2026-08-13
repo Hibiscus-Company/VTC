@@ -1,0 +1,40 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/28] frame_000010 43s
+[2/28] frame_000120 82s
+[3/28] frame_000190 120s
+[4/28] frame_000260 161s
+[5/28] frame_000440 201s
+[6/28] frame_000510 241s
+[7/28] frame_000630 281s
+[8/28] frame_000710 321s
+[9/28] frame_000810 360s
+[10/28] frame_000910 399s
+[11/28] frame_001100 440s
+[12/28] frame_001180 479s
+[13/28] frame_001250 518s
+[14/28] frame_001320 556s
+[15/28] frame_001400 597s
+[16/28] frame_001470 638s
+[17/28] frame_001540 676s
+[18/28] frame_001640 716s
+[19/28] frame_001720 756s
+[20/28] frame_001820 796s
+[21/28] frame_001930 837s
+[22/28] frame_002120 885s
+[23/28] frame_002190 932s
+[24/28] frame_002260 980s
+[25/28] frame_002330 1027s
+[26/28] frame_002440 1075s
+[27/28] frame_002510 1128s
+[28/28] frame_002650 1180s
+
+=== HF REINJECTION, k=3 mean, sigma=1.5, n=28 ===
+  alpha=0.0   PSNR 27.9248 SSIM 0.8625 LPIPS 0.2423 SCORE 72.9380  delta +0.0000
+  alpha=0.3   PSNR 27.9170 SSIM 0.8620 LPIPS 0.2417 SCORE 72.9427  delta +0.0047
+  alpha=0.6   PSNR 27.8971 SSIM 0.8607 LPIPS 0.2413 SCORE 72.9049  delta -0.0331
+  alpha=1.0   PSNR 27.8524 SSIM 0.8580 LPIPS 0.2434 SCORE 72.7141  delta -0.2239

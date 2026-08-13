@@ -1,0 +1,22 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+p1 HCM0181
+p1 HCM0193
+p1 HCM0204
+p1 hcm0031
+p1 hcm0034
+p2 HCM0181
+p2 HCM0193
+p2 HCM0204
+p2 hcm0031
+p2 hcm0034
+
+=== DIRECT MEASUREMENT AT THE CLAIMED VERTEX (n=60 paired) ===
+ parabola predicts: t=0.21 +0.0148 | t=0.35 +0.0083 | t=0.50 -0.0137(measured anchor)
+  base   PSNR  25.7293 SSIM  0.86658 LPIPS  0.12119  dScore  +0.0000  paired SE 0.0000  win  0/60
+  t0.21  PSNR  25.6967 SSIM  0.86698 LPIPS  0.12075  dScore  +0.0101  paired SE 0.0042  win 39/60
+  t0.35  PSNR  25.6625 SSIM  0.86704 LPIPS  0.12037  dScore  +0.0070  paired SE 0.0076  win 33/60
+  t0.50  PSNR  25.6184 SSIM  0.86686 LPIPS  0.12009  dScore  -0.0137  paired SE 0.0110  win 29/60
+DONEREF

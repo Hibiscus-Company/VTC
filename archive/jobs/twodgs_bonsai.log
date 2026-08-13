@@ -1,0 +1,6 @@
+=== 2DGS bonsai eval-split (gpu1) Fri Jul 24 16:08:13 +07 2026 ===
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+!!! 2DGS bonsai FAIL

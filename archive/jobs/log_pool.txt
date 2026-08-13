@@ -1,0 +1,57 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  HCM0181 0/60 1s
+  HCM0181 20/60 12s
+  HCM0181 40/60 24s
+
+== HCM0181 (n=60) ==
+  g8_median          P 25.1832  S 0.86852  L 0.11260  score  76.6615  d +0.0000
+  xscene_loo         P 24.8165  S 0.85975  L 0.11438  score  76.1073  d -0.5542
+  xscene_all         P 24.8607  S 0.86086  L 0.11416  score  76.1759  d -0.4856
+  blend50            P 25.0500  S 0.86543  L 0.11321  score  76.4644  d -0.1971
+  blend75            P 25.1304  S 0.86731  L 0.11284  score  76.5841  d -0.0774
+  HCM0193 0/60 1s
+  HCM0193 20/60 18s
+  HCM0193 40/60 32s
+
+== HCM0193 (n=60) ==
+  g8_median          P 26.3627  S 0.86554  L 0.12358  score  76.8409  d +0.0000
+  xscene_loo         P 26.2857  S 0.86255  L 0.12412  score  76.6832  d -0.1577
+  xscene_all         P 26.3405  S 0.86442  L 0.12375  score  76.7867  d -0.0542
+  blend50            P 26.3470  S 0.86463  L 0.12372  score  76.7985  d -0.0424
+  blend75            P 26.3606  S 0.86524  L 0.12360  score  76.8295  d -0.0114
+  HCM0204 0/60 1s
+  HCM0204 20/60 16s
+  HCM0204 40/60 32s
+
+== HCM0204 (n=60) ==
+  g8_median          P 25.6829  S 0.87201  L 0.11734  score  76.8761  d +0.0000
+  xscene_loo         P 25.4301  S 0.86610  L 0.11862  score  76.4963  d -0.3798
+  xscene_all         P 25.4645  S 0.86692  L 0.11844  score  76.5487  d -0.3274
+  blend50            P 25.5996  S 0.87004  L 0.11774  score  76.7512  d -0.1250
+  blend75            P 25.6526  S 0.87127  L 0.11749  score  76.8303  d -0.0459
+  hcm0031 0/50 1s
+  hcm0031 20/50 16s
+  hcm0031 40/50 31s
+
+== hcm0031 (n=50) ==
+  g8_median          P 25.6355  S 0.85060  L 0.13350  score  75.5591  d +0.0000
+  xscene_loo         P 25.5789  S 0.84861  L 0.13390  score  75.4496  d -0.1096
+  xscene_all         P 25.6379  S 0.85051  L 0.13354  score  75.5566  d -0.0026
+  blend50            P 25.6269  S 0.85011  L 0.13359  score  75.5360  d -0.0231
+  blend75            P 25.6366  S 0.85049  L 0.13352  score  75.5559  d -0.0033
+  hcm0034 0/60 1s
+  hcm0034 20/60 16s
+  hcm0034 40/60 34s
+
+== hcm0034 (n=60) ==
+  g8_median          P 25.8591  S 0.88152  L 0.11846  score  77.2228  d +0.0000
+  xscene_loo         P 25.7957  S 0.87963  L 0.11883  score  77.1131  d -0.1097
+  xscene_all         P 25.8291  S 0.88082  L 0.11858  score  77.1788  d -0.0440
+  blend50            P 25.8422  S 0.88091  L 0.11856  score  77.1901  d -0.0328
+  blend75            P 25.8543  S 0.88129  L 0.11849  score  77.2119  d -0.0109
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/res/pool.json

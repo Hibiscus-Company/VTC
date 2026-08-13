@@ -1,0 +1,62 @@
+240/371 images.bin entries have files in /home/bkai/data/phase1/public_set/HCM0181/train/images
+5000000 gaussians, ut=True, k1=+0.009004, 1320x989
+  25/60
+  50/60
+rendered 60 train views -> /mnt/d/avv/output/HCM0181_gsplatB9ut/train_renders
+  fit on 60 pairs -> field 165x123  mean |d| 0.267 px  max 1.87 px
+saved -> /mnt/d/avv/fields/HCM0181.npy
+corrected 60 images -> /mnt/d/avv/output/HCM0181_gsplatB9ut/test_poses_renders_field
+=== FIELD HCM0181 DONE ===
+240/397 images.bin entries have files in /home/bkai/data/phase1/public_set/HCM0193/train/images
+5000000 gaussians, ut=True, k1=+0.007952, 1320x989
+  25/60
+  50/60
+rendered 60 train views -> /mnt/d/avv/output/HCM0193_gsplatB9ut/train_renders
+  fit on 60 pairs -> field 165x123  mean |d| 0.225 px  max 1.70 px
+saved -> /mnt/d/avv/fields/HCM0193.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/output/HCM0193_gsplatB9ut/test_poses_renders_field
+=== FIELD HCM0193 DONE ===
+240/409 images.bin entries have files in /home/bkai/data/phase1/public_set/HCM0204/train/images
+5000000 gaussians, ut=True, k1=+0.010010, 1320x989, path=native
+  25/60
+  50/60
+rendered 60 train views -> /mnt/d/avv/output/HCM0204_gsplatB9ut/train_renders
+  fit on 60 pairs -> field 165x123  mean |d| 0.242 px  max 1.62 px
+saved -> /mnt/d/avv/fields/HCM0204.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/output/HCM0204_gsplatB9ut/test_poses_renders_field
+=== FIELD HCM0204 DONE ===
+200/388 images.bin entries have files in /home/bkai/data/phase1/public_set/hcm0031/train/images
+5000000 gaussians, ut=True, k1=+0.007864, 1320x989, path=native
+  25/50
+  50/50
+rendered 50 train views -> /mnt/d/avv/output/hcm0031_gsplatB9ut/train_renders
+  fit on 50 pairs -> field 165x123  mean |d| 0.215 px  max 1.40 px
+saved -> /mnt/d/avv/fields/hcm0031.npy (+ .meta.json)
+corrected 50 images -> /mnt/d/avv/output/hcm0031_gsplatB9ut/test_poses_renders_field
+=== FIELD hcm0031 DONE ===
+240/337 images.bin entries have files in /home/bkai/data/phase1/public_set/hcm0034/train/images
+5000000 gaussians, ut=True, k1=+0.007844, 1320x989, path=native
+  25/60
+  50/60
+rendered 60 train views -> /mnt/d/avv/output/hcm0034_gsplatB9ut/train_renders
+  fit on 60 pairs -> field 165x123  mean |d| 0.205 px  max 1.70 px
+saved -> /mnt/d/avv/fields/hcm0034.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/output/hcm0034_gsplatB9ut/test_poses_renders_field
+=== FIELD hcm0034 DONE ===
+########## BEFORE (no field) ##########
+HCM0181    n= 60  PSNR 24.2675  SSIM 0.8456  LPIPS(alex) 0.0730 LPIPS(vgg) 0.1168  Score(alex) 0.7701  Score(vgg) 0.7526
+HCM0193    n= 60  PSNR 25.6807  SSIM 0.8473  LPIPS(alex) 0.0857 LPIPS(vgg) 0.1269  Score(alex) 0.7740  Score(vgg) 0.7575
+HCM0204    n= 60  PSNR 24.8906  SSIM 0.8541  LPIPS(alex) 0.0770 LPIPS(vgg) 0.1208  Score(alex) 0.7748  Score(vgg) 0.7572
+hcm0031    n= 50  PSNR 25.0854  SSIM 0.8350  LPIPS(alex) 0.0912 LPIPS(vgg) 0.1362  Score(alex) 0.7645  Score(vgg) 0.7465
+hcm0034    n= 60  PSNR 25.1418  SSIM 0.8647  LPIPS(alex) 0.0763 LPIPS(vgg) 0.1217  Score(alex) 0.7798  Score(vgg) 0.7616
+  Score(alex)  = 77.2630   [0.4*(1-LPIPS)=0.3677  0.3*SSIM=0.2548  0.3*PSNRn=0.1501]  (psnr_max=50.0)
+  Score(vgg)  = 75.5089   [0.4*(1-LPIPS)=0.3502  0.3*SSIM=0.2548  0.3*PSNRn=0.1501]  (psnr_max=50.0)
+########## AFTER (train-fitted field) ##########
+HCM0181    n= 60  PSNR 25.1464  SSIM 0.8671  LPIPS(alex) 0.0750 LPIPS(vgg) 0.1152  Score(alex) 0.7810  Score(vgg) 0.7649
+HCM0193    n= 60  PSNR 26.2119  SSIM 0.8616  LPIPS(alex) 0.0884 LPIPS(vgg) 0.1264  Score(alex) 0.7804  Score(vgg) 0.7652
+HCM0204    n= 60  PSNR 25.5686  SSIM 0.8693  LPIPS(alex) 0.0794 LPIPS(vgg) 0.1199  Score(alex) 0.7824  Score(vgg) 0.7663
+hcm0031    n= 50  PSNR 25.4865  SSIM 0.8468  LPIPS(alex) 0.0941 LPIPS(vgg) 0.1361  Score(alex) 0.7693  Score(vgg) 0.7525
+hcm0034    n= 60  PSNR 25.8123  SSIM 0.8799  LPIPS(alex) 0.0777 LPIPS(vgg) 0.1203  Score(alex) 0.7878  Score(vgg) 0.7707
+  Score(alex)  = 78.0176   [0.4*(1-LPIPS)=0.3668  0.3*SSIM=0.2595  0.3*PSNRn=0.1539]  (psnr_max=50.0)
+  Score(vgg)  = 76.3925   [0.4*(1-LPIPS)=0.3506  0.3*SSIM=0.2595  0.3*PSNRn=0.1539]  (psnr_max=50.0)
+FIELDVAL DONE

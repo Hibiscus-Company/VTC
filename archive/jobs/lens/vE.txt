@@ -1,0 +1,7 @@
+# estimator branch: only ds8, both remaps, so the estimator is the single variable
+# name|pool|ds|smooth|poly|up|remap
+mean_ds8|mean|8|0|0|cubic|cubic
+median_ds8|median|8|0|0|cubic|cubic
+median_ds4|median|4|0|0|cubic|cubic
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds4_rlan|median|4|0|0|cubic|lanczos

@@ -1,0 +1,5 @@
+# The repo-root .gitignore drops *.log and *.docx as build noise. Inside archive/ they are
+# not noise: the logs are the evidence base behind EXPERIMENTS.md, and the .docx is the
+# competition specification. Re-include them here.
+!*.log
+!*.docx

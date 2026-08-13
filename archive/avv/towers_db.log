@@ -1,0 +1,30 @@
+=== HCM0539 restore(float mean, lam=1.0) ===
+DEADBAND FIX: rebuilding ens in float from 3 dir(s) weights=[0.6667, 0.1667, 0.1667]
+restored 60 images (lam=1.0, k=8, 2 member(s), FLOAT MEAN, worst tie-frac 0.0000%) -> /mnt/d/avv/r33/tower_ens/HCM0539/png_er
+=== HCM0539 field ===
+field HCM0539.npy: mean|d| 0.1340px  max|d| 1.4369px
+corrected 60 images -> /mnt/d/avv/r33/tower_ens/HCM0539/png
+<<< HCM0539 done (60)
+=== HCM0540 restore(float mean, lam=1.0) ===
+DEADBAND FIX: rebuilding ens in float from 3 dir(s) weights=[0.6667, 0.1667, 0.1667]
+restored 60 images (lam=1.0, k=8, 2 member(s), FLOAT MEAN, worst tie-frac 0.0000%) -> /mnt/d/avv/r33/tower_ens/HCM0540/png_er
+=== HCM0540 field ===
+field HCM0540.npy: mean|d| 0.1321px  max|d| 1.0361px
+corrected 60 images -> /mnt/d/avv/r33/tower_ens/HCM0540/png
+<<< HCM0540 done (60)
+=== HCM0644 restore(float mean, lam=1.0) ===
+DEADBAND FIX: rebuilding ens in float from 3 dir(s) weights=[0.6667, 0.1667, 0.1667]
+restored 60 images (lam=1.0, k=8, 2 member(s), FLOAT MEAN, worst tie-frac 0.0000%) -> /mnt/d/avv/r33/tower_ens/HCM0644/png_er
+=== HCM0644 field ===
+field HCM0644.npy: mean|d| 0.1321px  max|d| 1.2715px
+corrected 60 images -> /mnt/d/avv/r33/tower_ens/HCM0644/png
+<<< HCM0644 done (60)
+=== HCM0674 restore(float mean, lam=1.0) ===
+DEADBAND FIX: rebuilding ens in float from 3 dir(s) weights=[0.6667, 0.1667, 0.1667]
+restored 60 images (lam=1.0, k=8, 2 member(s), FLOAT MEAN, worst tie-frac 0.0000%) -> /mnt/d/avv/r33/tower_ens/HCM0674/png_er
+=== HCM0674 field ===
+field HCM0674.npy: mean|d| 0.1305px  max|d| 1.4069px
+corrected 60 images -> /mnt/d/avv/r33/tower_ens/HCM0674/png
+<<< HCM0674 done (60)
+60
+=== ALL 5 TOWERS DEADBAND-FIXED ===

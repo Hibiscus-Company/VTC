@@ -1,0 +1,15 @@
+HCM0181 w256s64: 60 pairs 83s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0181_w256s64.npz
+HCM0193 w256s64: 60 pairs 61s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0193_w256s64.npz
+HCM0204 w256s64: 60 pairs 13s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0204_w256s64.npz
+hcm0031 w256s64: 50 pairs 9s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/hcm0031_w256s64.npz
+hcm0034 w256s64: 60 pairs 10s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/hcm0034_w256s64.npz
+HCM0181 w128s32: 60 pairs 15s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0181_w128s32.npz
+HCM0193 w128s32: 60 pairs 12s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0193_w128s32.npz
+HCM0204 w128s32: 60 pairs 11s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0204_w128s32.npz
+hcm0031 w128s32: 50 pairs 10s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/hcm0031_w128s32.npz
+hcm0034 w128s32: 60 pairs 10s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/hcm0034_w128s32.npz
+HCM0181 w64s16: 60 pairs 11s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0181_w64s16.npz
+HCM0193 w64s16: 60 pairs 13s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0193_w64s16.npz
+HCM0204 w64s16: 60 pairs 12s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/HCM0204_w64s16.npz
+hcm0031 w64s16: 50 pairs 11s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/hcm0031_w64s16.npz
+hcm0034 w64s16: 60 pairs 13s -> /home/bkai/.claude/jobs/1c9cf7e9/tmp/pc/hcm0034_w64s16.npz

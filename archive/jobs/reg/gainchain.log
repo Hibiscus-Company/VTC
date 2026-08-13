@@ -1,0 +1,27 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/45  8s
+  6/45  51s
+  11/45  94s
+  16/45  145s
+  21/45  188s
+  26/45  303s
+  31/45  370s
+  36/45  431s
+  41/45  511s
+
+HCM0181 FULL r28 CHAIN (weighted 4-member mean -> ENERGY RESTORE lam=1.0 k=4 -> field*gain lanczos4 -> JPEG q100/ss2), n=45
+               arm     SCORE     PSNR     SSIM    LPIPS  d(s1.00)      se    wins  mean|d|
+             s1.00   78.7267  26.1215  0.89328  0.09361   +0.0000  0.0000    0/45   0.2112
+             s1.15   78.8182  26.1933  0.89467  0.09345   +0.0915  0.0077   43/45   0.2429
+             s1.30   78.8595  26.2262  0.89535  0.09342   +0.1328  0.0158   41/45   0.2746
+             s1.45   78.8498  26.2203  0.89532  0.09355   +0.1231  0.0245   36/45   0.3063
+   rad1.45_tan1.00   78.8324  26.2056  0.89500  0.09352   +0.1058  0.0217   32/45   0.2897
+   rad1.00_tan1.45   78.7401  26.1323  0.89355  0.09365   +0.0134  0.0077   29/45   0.2303
+           ramp_up   78.8519  26.2214  0.89524  0.09346   +0.1252  0.0212   36/45   0.2870
+           ramp_dn   78.8245  26.1970  0.89487  0.09349   +0.0978  0.0121   41/45   0.2623
+
+field energy split: radial 0.931  tangential 0.069
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/reg/gainchain.json

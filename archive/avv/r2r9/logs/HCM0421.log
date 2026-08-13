@@ -1,0 +1,10 @@
+ERROR conda.cli.main_run:execute(142): `conda run python -c 
+import sys; sys.path.insert(0,'.')
+from scene.colmap_loader import read_intrinsics_binary
+c=list(read_intrinsics_binary('/mnt/d/avv/data/phase1/private_set2/HCM0421/train/sparse/0/cameras.bin').values())[0]
+p=list(c.params); print(p[3] if c.model in ('SIMPLE_RADIAL','RADIAL') else 0.0)` failed. (See above for error)
+[HCM0421] k1=ERROR: This cross-compiler package contains no program /home/bkai/miniconda3/bin/x86_64-conda-linux-gnu-g++ -> native
+  fit on 120 pairs -> field 165x123  mean |d| 0.171 px  max 1.20 px
+saved -> /mnt/d/avv/r2r9/fields/HCM0421.npy (+ .meta.json)
+k1=+0.00894  1320x989  unsupervised 0.00% -> /mnt/d/avv/r2r9/masks/HCM0421.npy
+=== [HCM0421] DONE (gpu1) ===

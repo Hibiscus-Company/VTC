@@ -1,0 +1,37 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  harness: 60 views x 4 members ['gsplatB9ut', 'gsplatB10ut8M', 'gsplatB11ut60k', 'gsplatB12ut8Ms7']
+
+================================================================================================
+S7. SHIPPED CHAIN  (ensemble -> energy restore -> median field lanczos4 -> JPEG q100 ss2)
+================================================================================================
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lv_ship.py:42: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  rows.append(h.eval_img(torch.from_numpy(np.ascontiguousarray(a)), i))
+pixel-mean  [SHIPPED TODAY]          78.1992  +0.0000  25.9417  0.8870   0.0994   0/60 
+FULL map   lam0.75                   78.3497  +0.1505  25.9169  0.8879   0.0959  60/60 
+FULL map   lam1.0                    78.3712  +0.1721  25.9041  0.8880   0.0953  60/60 
+FULL map   lam1.25                   78.3798  +0.1806  25.8887  0.8880   0.0949  60/60 
+
+DEV-2 map  lam0.75                   78.3618  +0.1626  25.9086  0.8880   0.0955  60/60 
+DEV-2 map  lam1.0                    78.3715  +0.1723  25.8902  0.8880   0.0950  60/60 
+DEV-2 map  lam1.25                   78.3641  +0.1650  25.8675  0.8879   0.0948  59/60 
+
+DEV-1 map  lam0.75                   78.3534  +0.1542  25.9075  0.8879   0.0957  60/60 
+DEV-1 map  lam1.0                    78.3600  +0.1608  25.8878  0.8879   0.0953  60/60 
+DEV-1 map  lam1.25                   78.3471  +0.1480  25.8638  0.8878   0.0951  59/60 
+
+DEV-1 map (member 3) lam0.75         78.3584  +0.1593  25.8938  0.8879   0.0954  60/60 
+DEV-1 map (member 3) lam1.0          78.3580  +0.1588  25.8663  0.8879   0.0950  60/60 
+DEV-1 map (member 3) lam1.25         78.3362  +0.1370  25.8331  0.8877   0.0949  59/60 
+
+  estimator x lambda, dScore on the shipped chain
+  est           0.75       1.0      1.25
+  full       +0.1505   +0.1721   +0.1806
+  dev2       +0.1626   +0.1723   +0.1650
+  dev1       +0.1542   +0.1608   +0.1480
+  dev1b      +0.1593   +0.1588   +0.1370

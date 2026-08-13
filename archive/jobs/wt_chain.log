@@ -1,0 +1,44 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+restore_fast vs production restore: max|diff| = 0.000e+00
+2-fold-CV LS weights (each applied only to the held-out fold):
+  fold0: gsplatB9ut=0.064 gsplatB10ut8M=0.115 gsplatB11ut60k=0.118 gsplatB12ut8Ms7=0.148 gsplatB1=0.127 gsplatB2=0.130 m31b_nolpips=0.211 m31b_taillpips=0.088
+          minority family share = 0.2988 (uniform 0.250)
+  fold1: gsplatB9ut=0.062 gsplatB10ut8M=0.133 gsplatB11ut60k=0.100 gsplatB12ut8Ms7=0.154 gsplatB1=0.135 gsplatB2=0.127 m31b_nolpips=0.207 m31b_taillpips=0.082
+          minority family share = 0.2895 (uniform 0.250)
+  0/60 14s
+  5/60 48s
+  10/60 85s
+  15/60 111s
+  20/60 138s
+  25/60 154s
+  30/60 175s
+  35/60 198s
+  40/60 221s
+  45/60 238s
+  50/60 266s
+  55/60 294s
+
+FAMILY WEIGHT, HCM0181, n=60, FULL SHIPPED CHAIN (6+2 members, restore lam=1.0 k=8, field x1.3 lanczos4, JPEG q100/ss2)
+         arm     SCORE     PSNR    SSIM    LPIPS  vs uniform  t(paired)   MB/60
+   drop_B_k6   78.4751  26.0749  0.8913   0.0977     -0.1678     -13.86   61.67
+    wB0.1250   78.5968  26.1346  0.8928   0.0967     -0.0462      -7.34   61.79
+    wB0.2000   78.6332  26.1550  0.8931   0.0963     -0.0097      -3.63   61.89
+    wB0.2500   78.6429  26.1600  0.8932   0.0962     +0.0000       0.00   61.99
+    wB0.2910   78.6422  26.1587  0.8931   0.0962     -0.0007      -0.31   62.10
+    wB0.3333   78.6345  26.1526  0.8930   0.0962     -0.0084      -1.66   62.22
+    wB0.4000   78.6042  26.1329  0.8926   0.0963     -0.0387      -4.09   62.46
+    wB0.5000   78.5199  26.0807  0.8915   0.0968     -0.1231      -7.06   62.87
+  LS_2foldCV   78.5999  26.1599  0.8931   0.0973     -0.0430     -12.31   61.99
+
+argmax on the sweep grid: wB = 0.2500  (uniform-per-member 0.250)
+shipped r29 weight 0.3333 -> -0.0084 vs uniform 0.250
+r28 weight         0.20   -> -0.0097 vs uniform 0.250
+MSE-optimal        0.291  -> -0.0007 vs uniform 0.250
+LS 2-fold CV              -> -0.0430 vs uniform 0.250
+drop minority family      -> -0.1678 vs uniform 0.250
+elapsed 309s

@@ -1,0 +1,50 @@
+HCM0181: pool k=8  n=6
+field mean|f| = 0.2270 px
+
+[e10] GLOBAL kernel: sigma_eq=+0.4939px  sum=0.99494  center=0.7556 bias=+0.00266
+     kernel(7x7) x1000:
+[[ -0.   -5.6   0.2   5.7   7.1   1.5  -0.7]
+ [  3.    1.4  15.6 -50.8   8.9  10.7   6.6]
+ [ -6.6  24.1 -60.2  46.1  -8.2  -4.    8.4]
+ [ 32.2 -47.4 130.6 755.6 128.6 -36.3   6. ]
+ [ 11.6 -32.9 -26.3  83.1 -34.5  20.4  -8.4]
+ [  0.8  11.8  -2.5 -23.2   7.3 -12.7  11.3]
+ [-14.2   2.6  -5.3  20.4  22.4  -2.1  -7. ]]
+     TILE sigma_eq (3x3 field grid): [[0.4405 0.4459 0.6004]
+ [0.2353 0.5105 0.4851]
+ [0.2984 0.6743 0.5721]]
+     LOO SSE change (rel to identity SSE-with-offset) = -603.3559
+
+[e00] GLOBAL kernel: sigma_eq=+0.3646px  sum=0.99507  center=0.7872 bias=+0.00259
+     kernel(7x7) x1000:
+[[  0.5  -6.2   0.1   6.8   6.7   1.2  -1.2]
+ [  1.1   1.3  13.5 -52.5   5.8  10.3   5.8]
+ [ -7.1  21.8 -65.4  52.2 -12.2  -6.7   9.8]
+ [ 34.6 -51.3 135.6 787.2 133.7 -40.3   7.3]
+ [ 12.6 -36.3 -31.8  90.8 -39.9  18.7  -9.8]
+ [  0.1  11.   -6.1 -23.9   3.6 -12.8   9.8]
+ [-14.9   1.6  -5.6  23.2  22.1  -2.7  -6.7]]
+     TILE sigma_eq (3x3 field grid): [[0.1705 0.2686 0.4252]
+ [0.1248 0.3908 0.4334]
+ [0.1347 0.5853 0.5224]]
+     LOO SSE change (rel to identity SSE-with-offset) = -1092.3485
+
+scoring on cuda:0
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+[HCM0181 n=5] 595s
+         REF   77.0728 P 24.6723 S 0.8799 L 0.10319 d +0.0000 t    nan w  0/5
+          K7   76.6254 P 24.6756 S 0.8751 L 0.11081 d -0.4474 t  -6.42 w  0/5
+         K7G   76.9817 P 24.9472 S 0.8810 L 0.11041 d -0.0912 t  -0.79 w  2/5
+      NOREST   76.8074 P 24.7713 S 0.8786 L 0.11031 d +0.0000 t    nan w  0/5
+   NOREST_K7   76.4086 P 24.7339 S 0.8747 L 0.11682 d -0.3989 t  -5.67 w  0/5
+
+[HCM0181 n=6] 606s
+         REF   77.5338 P 25.0150 S 0.8849 L 0.10053 d +0.0000 t    nan w  0/6
+          K7   76.9901 P 24.9535 S 0.8788 L 0.10863 d -0.5437 t  -4.86 w  0/6
+         K7G   77.3448 P 25.2211 S 0.8847 L 0.10819 d -0.1890 t  -1.39 w  2/6
+      NOREST   77.2474 P 25.0876 S 0.8832 L 0.10752 d +0.0000 t    nan w  0/6
+   NOREST_K7   76.7707 P 25.0032 S 0.8783 L 0.11451 d -0.4767 t  -4.93 w  0/6

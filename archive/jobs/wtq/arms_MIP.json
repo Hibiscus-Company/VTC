@@ -1,0 +1,61 @@
+{
+ "tag": "HCM0421evalsplit",
+ "gtd": "/mnt/d/avv/evalsplit/HCM0421/eval_gt",
+ "dirpat": "%s",
+ "cache": "/home/bkai/.claude/jobs/1c9cf7e9/tmp/lens/cache/priv_HCM0421.npz",
+ "members": [
+  "/mnt/d/avv/evalgen/HCM0421/eval_png",
+  "/mnt/d/avv/mip3d/HCM0421_mip0.2/eval_png"
+ ],
+ "arms": [
+  {
+   "name": "uniform_CONTROL",
+   "w": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "name": "w_mip0.00",
+   "w": [
+    1.0,
+    0.0
+   ]
+  },
+  {
+   "name": "w_mip0.30",
+   "w": [
+    0.7,
+    0.3
+   ]
+  },
+  {
+   "name": "w_mip0.40",
+   "w": [
+    0.6,
+    0.4
+   ]
+  },
+  {
+   "name": "w_mip0.60",
+   "w": [
+    0.4,
+    0.6
+   ]
+  },
+  {
+   "name": "w_mip0.70",
+   "w": [
+    0.30000000000000004,
+    0.7
+   ]
+  },
+  {
+   "name": "w_mip1.00",
+   "w": [
+    0.0,
+    1.0
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+chair|minop02|--min_opacity 0.02
+HCM0181|minop02|--min_opacity 0.02
+chair|aniso01|--aniso_reg 0.1
+HCM0181|aniso01|--aniso_reg 0.1
+HCM0181|skydome50k|--sky_dome 50000
+chair|ema099|--ema_decay 0.99
+bonsai|ema099|--ema_decay 0.99
+HCM0181|ema099|--ema_decay 0.99
+chair|capmax2M|--cap_max 2000000
+HCM0181|skydome50k|--sky_dome 50000
+chair|ema999|--ema_decay 0.999
+HCM0181|ema999|--ema_decay 0.999

@@ -1,0 +1,150 @@
+### HCM0421 :: output_s2gates/HCM0421_champA
+peer detail range 0.03034..0.03414;  candidate 0.03012
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.02085). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0421 :: output_s2gates/HCM0421_memB
+peer detail range 0.03034..0.03414;  candidate 0.02740
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.02085). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0421 :: output_s2gates/HCM0421_memC
+peer detail range 0.03034..0.03414;  candidate 0.02923
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.02085). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0421 :: r17/HCM0421_ut7_ema999
+
+peer detail range 0.03034..0.03414;  candidate 0.03387
+
+VERDICT: PASS -- safe to include
+### HCM0421 :: r2r8/models/HCM0421_ut42
+
+peer detail range 0.03034..0.03414;  candidate 0.03091
+
+VERDICT: PASS -- safe to include
+### HCM0421 :: r2r8/models/HCM0421_ut7
+
+peer detail range 0.03034..0.03414;  candidate 0.03107
+
+VERDICT: PASS -- safe to include
+### HCM0539 :: output_s2gates/HCM0539_champA
+peer detail range 0.02995..0.03216;  candidate 0.02865
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.02136). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0539 :: output_s2gates/HCM0539_memB
+peer detail range 0.02995..0.03216;  candidate 0.02629
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.02136). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0539 :: output_s2gates/HCM0539_memC
+peer detail range 0.02995..0.03216;  candidate 0.02790
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.02136). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0539 :: r17/HCM0539_ut7_ema999
+
+peer detail range 0.02995..0.03216;  candidate 0.03207
+
+VERDICT: PASS -- safe to include
+### HCM0539 :: r2r8/models/HCM0539_ut42
+
+peer detail range 0.02995..0.03216;  candidate 0.03011
+
+VERDICT: PASS -- safe to include
+### HCM0539 :: r2r8/models/HCM0539_ut7
+
+peer detail range 0.02995..0.03216;  candidate 0.03004
+
+VERDICT: PASS -- safe to include
+### HCM0540 :: output_s2gates/HCM0540_champA
+peer detail range 0.02878..0.03211;  candidate 0.02636
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01993). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0540 :: output_s2gates/HCM0540_memB
+peer detail range 0.02878..0.03211;  candidate 0.02404
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01993). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0540 :: output_s2gates/HCM0540_memC
+peer detail range 0.02878..0.03211;  candidate 0.02565
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01993). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0540 :: r17/HCM0540_ut7_ema999
+
+peer detail range 0.02878..0.03211;  candidate 0.03190
+
+VERDICT: PASS -- safe to include
+### HCM0540 :: r2r8/models/HCM0540_ut42
+
+peer detail range 0.02878..0.03211;  candidate 0.02896
+
+VERDICT: PASS -- safe to include
+### HCM0540 :: r2r8/models/HCM0540_ut7
+
+peer detail range 0.02878..0.03211;  candidate 0.02936
+
+VERDICT: PASS -- safe to include
+### HCM0644 :: output_s2gates/HCM0644_champA
+
+peer detail range 0.02500..0.03051;  candidate 0.02789
+
+VERDICT: PASS -- safe to include
+### HCM0644 :: output_s2gates/HCM0644_memB
+peer detail range 0.02500..0.03051;  candidate 0.02426
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01599). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0644 :: output_s2gates/HCM0644_memC
+
+peer detail range 0.02500..0.03051;  candidate 0.02670
+
+VERDICT: PASS -- safe to include
+### HCM0644 :: r17/HCM0644_ut7_ema999
+
+peer detail range 0.02500..0.03051;  candidate 0.03019
+
+VERDICT: PASS -- safe to include
+### HCM0644 :: r2r8/models/HCM0644_ut42
+
+peer detail range 0.02500..0.03051;  candidate 0.02643
+
+VERDICT: PASS -- safe to include
+### HCM0644 :: r2r8/models/HCM0644_ut7
+
+peer detail range 0.02500..0.03051;  candidate 0.02629
+
+VERDICT: PASS -- safe to include
+### HCM0674 :: output_s2gates/HCM0674_champA
+peer detail range 0.02728..0.03091;  candidate 0.02634
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01864). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0674 :: output_s2gates/HCM0674_memB
+peer detail range 0.02728..0.03091;  candidate 0.02405
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01864). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0674 :: output_s2gates/HCM0674_memC
+peer detail range 0.02728..0.03091;  candidate 0.02561
+  WARN: softer than every peer, but within the regulariser-tolerance band (floor 0.01864). mip3d IS a band-limiter, so some softening is expected.
+
+VERDICT: PASS -- safe to include
+### HCM0674 :: r17/HCM0674_ut7_ema999
+
+peer detail range 0.02728..0.03091;  candidate 0.03038
+
+VERDICT: PASS -- safe to include
+### HCM0674 :: r2r8/models/HCM0674_ut42
+
+peer detail range 0.02728..0.03091;  candidate 0.02782
+
+VERDICT: PASS -- safe to include
+### HCM0674 :: r2r8/models/HCM0674_ut7
+
+peer detail range 0.02728..0.03091;  candidate 0.02783
+
+VERDICT: PASS -- safe to include

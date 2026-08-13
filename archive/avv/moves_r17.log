@@ -1,0 +1,22 @@
+Saved 5000000 gaussians to /mnt/d/avv/r14/bonsai_aa13/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r14/bonsai_aa13/test_render
+=== T2 VIDEO [bonsai] DONE ===
+Saved 8000000 gaussians to /mnt/d/avv/r14/chair_aa13/ckpt.pt
+Wrote 58 images to /mnt/d/avv/r14/chair_aa13/test_render
+=== T2 VIDEO [chair] DONE ===
+Saved 8000000 gaussians to /mnt/d/avv/r2r9/models/HCM0539_ut77/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r2r9/models/HCM0539_ut77/test_render
+=== T2 TOWER [HCM0539] DONE ===
+Saved 8000000 gaussians to /mnt/d/avv/r2r9/models/HCM0421_ut77/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r2r9/models/HCM0421_ut77/test_render
+=== T2 TOWER [HCM0421] DONE ===
+Saved 8000000 gaussians to /mnt/d/avv/r2r9/models/HCM0644_ut77/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r2r9/models/HCM0644_ut77/test_render
+=== T2 TOWER [HCM0644] DONE ===
+Saved 8000000 gaussians to /mnt/d/avv/r2r9/models/HCM0540_ut77/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r2r9/models/HCM0540_ut77/test_render
+=== T2 TOWER [HCM0540] DONE ===
+Saved 8000000 gaussians to /mnt/d/avv/r2r9/models/HCM0674_ut77/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r2r9/models/HCM0674_ut77/test_render
+=== T2 TOWER [HCM0674] DONE ===
+=== MOVES_R17 (T2) DONE ===

@@ -1,0 +1,17 @@
+train_poses.csv: 220 rows
+Wrote 220 images to /mnt/d/avv/blurbound/bonsai/train_render
+[fit 125/220] frame_001560: L1 0.0206 -> 0.0198  {'sx': -0.2523171901702881, 'sy': 1.740490436553955, 'th': -0.06398706883192062, 'a': -0.9748868346214294, 'gain': 0.9983465075492859, 'bias': 0.0026950619649142027}
+[fit 150/220] frame_001860: L1 0.0337 -> 0.0250  {'sx': 0.18255336582660675, 'sy': 2.452892541885376, 'th': -0.16450627148151398, 'a': -0.7145708203315735, 'gain': 1.108783483505249, 'bias': -0.10121684521436691}
+[fit 175/220] frame_002200: L1 0.0108 -> 0.0110  {'sx': 1.3557252883911133, 'sy': -0.031046755611896515, 'th': 0.43293246626853943, 'a': 0.19930824637413025, 'gain': 1.000357747077942, 'bias': -0.000930762616917491}
+[fit 200/220] frame_002490: L1 0.0120 -> 0.0122  {'sx': 2.5269274711608887, 'sy': 0.1449037492275238, 'th': 0.35331642627716064, 'a': 0.1728695034980774, 'gain': 0.999163031578064, 'bias': -0.0010907829273492098}
+fitted 220 train frames; median gain 0.9983 a -0.7059
+wrote 28 corrected eval renders -> /mnt/d/avv/blurbound/bonsai/eval_corrected
+=== SCORE (baseline bonsai_ema099 = 71.8829) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL bonsai_blurmatch n= 28  PSNR 27.0916  SSIM 0.8508  LPIPSvgg 0.2475  SCORE 71.8771
+=== BLUR BOUND BONSAI DONE Thu Jul 23 14:53:04 +07 2026 ===

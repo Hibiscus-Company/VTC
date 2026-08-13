@@ -1,0 +1,2174 @@
+WARNING: output/HCM0181_e10gate1/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e08gate2/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e11gate3/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+Ensembled 60 images from 4 members -> /mnt/d/avv/ens/hcm0181_ab/m4
+AB m4 HCM0181    n= 60  PSNR 24.6875  SSIM 0.8574  LPIPS(alex) 0.0842 LPIPS(vgg) 0.1146  Score(alex) 0.7717  Score(vgg) 0.7595
+AB m4   Score(vgg)  = 75.9492   [0.4*(1-LPIPS)=0.3541  0.3*SSIM=0.2572  0.3*PSNRn=0.1481]  (psnr_max=50.0)
+WARNING: output/HCM0181_e10gate1/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e08gate2/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e11gate3/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/hcm0181_ab/m5ut
+AB m5ut HCM0181    n= 60  PSNR 24.8827  SSIM 0.8625  LPIPS(alex) 0.0809 LPIPS(vgg) 0.1099  Score(alex) 0.7757  Score(vgg) 0.7641
+AB m5ut   Score(vgg)  = 76.4060   [0.4*(1-LPIPS)=0.3560  0.3*SSIM=0.2587  0.3*PSNRn=0.1493]  (psnr_max=50.0)
+WARNING: output/HCM0181_e10gate1/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e08gate2/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e11gate3/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/hcm0181_ab/m5pure
+AB m5pure HCM0181    n= 60  PSNR 24.7073  SSIM 0.8578  LPIPS(alex) 0.0850 LPIPS(vgg) 0.1141  Score(alex) 0.7716  Score(vgg) 0.7600
+AB m5pure   Score(vgg)  = 75.9954   [0.4*(1-LPIPS)=0.3544  0.3*SSIM=0.2573  0.3*PSNRn=0.1482]  (psnr_max=50.0)
+WARNING: output/HCM0181_e10gate1/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e08gate2/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+WARNING: output/HCM0181_e11gate3/test_poses_renders: 60/60 sources are JPEG, not lossless PNG
+Ensembled 60 images from 6 members -> /mnt/d/avv/ens/hcm0181_ab/m6utpure
+AB m6utpure HCM0181    n= 60  PSNR 24.8697  SSIM 0.8621  LPIPS(alex) 0.0821 LPIPS(vgg) 0.1103  Score(alex) 0.7750  Score(vgg) 0.7637
+AB m6utpure   Score(vgg)  = 76.3721   [0.4*(1-LPIPS)=0.3559  0.3*SSIM=0.2586  0.3*PSNRn=0.1492]  (psnr_max=50.0)
+ENSEMBLE AB DONE
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/train_gsplat.py:302: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  gt_cache[vi] = torch.from_numpy(
+200/388 images.bin entries have files in /home/bkai/data/phase1/public_set/hcm0031/train/images
+200 views, 211262 init points, K=[[925.7,0,660.0],[0,925.7,494.5]], size 1320x989
+3DGUT mode: classic + with_ut + with_eval3d, k1=+0.007864
+scene_scale 10.684
+[0] loss 0.2743 l1 0.1731 ssim 0.3508 N 211262
+Step 600: Relocated 21330 GSs.
+Step 600: Added 10563 GSs. Now having 221825 GSs.
+Step 700: Relocated 6052 GSs.
+Step 700: Added 11091 GSs. Now having 232916 GSs.
+Step 800: Relocated 5167 GSs.
+Step 800: Added 11645 GSs. Now having 244561 GSs.
+Step 900: Relocated 6204 GSs.
+Step 900: Added 12228 GSs. Now having 256789 GSs.
+Step 1000: Relocated 5631 GSs.
+Step 1000: Added 12839 GSs. Now having 269628 GSs.
+[1000] loss 0.1504 l1 0.0699 ssim 0.5464 N 269628
+Step 1100: Relocated 6078 GSs.
+Step 1100: Added 13481 GSs. Now having 283109 GSs.
+Step 1200: Relocated 6368 GSs.
+Step 1200: Added 14155 GSs. Now having 297264 GSs.
+Step 1300: Relocated 7007 GSs.
+Step 1300: Added 14863 GSs. Now having 312127 GSs.
+Step 1400: Relocated 8474 GSs.
+Step 1400: Added 15606 GSs. Now having 327733 GSs.
+Step 1500: Relocated 8393 GSs.
+Step 1500: Added 16386 GSs. Now having 344119 GSs.
+Step 1600: Relocated 10065 GSs.
+Step 1600: Added 17205 GSs. Now having 361324 GSs.
+Step 1700: Relocated 11010 GSs.
+Step 1700: Added 18066 GSs. Now having 379390 GSs.
+Step 1800: Relocated 11165 GSs.
+Step 1800: Added 18969 GSs. Now having 398359 GSs.
+Step 1900: Relocated 14167 GSs.
+Step 1900: Added 19917 GSs. Now having 418276 GSs.
+Step 2000: Relocated 15451 GSs.
+Step 2000: Added 20913 GSs. Now having 439189 GSs.
+[2000] loss 0.1414 l1 0.0643 ssim 0.5653 N 439189
+Step 2100: Relocated 14711 GSs.
+Step 2100: Added 21959 GSs. Now having 461148 GSs.
+Step 2200: Relocated 15935 GSs.
+Step 2200: Added 23057 GSs. Now having 484205 GSs.
+Step 2300: Relocated 18045 GSs.
+Step 2300: Added 24210 GSs. Now having 508415 GSs.
+Step 2400: Relocated 19702 GSs.
+Step 2400: Added 25420 GSs. Now having 533835 GSs.
+Step 2500: Relocated 22273 GSs.
+Step 2500: Added 26691 GSs. Now having 560526 GSs.
+Step 2600: Relocated 22316 GSs.
+Step 2600: Added 28026 GSs. Now having 588552 GSs.
+Step 2700: Relocated 22442 GSs.
+Step 2700: Added 29427 GSs. Now having 617979 GSs.
+Step 2800: Relocated 28078 GSs.
+Step 2800: Added 30898 GSs. Now having 648877 GSs.
+Step 2900: Relocated 27934 GSs.
+Step 2900: Added 32443 GSs. Now having 681320 GSs.
+Step 3000: Relocated 32528 GSs.
+Step 3000: Added 34066 GSs. Now having 715386 GSs.
+[3000] loss 0.0992 l1 0.0456 ssim 0.6988 N 715386
+Step 3100: Relocated 33222 GSs.
+Step 3100: Added 35769 GSs. Now having 751155 GSs.
+Step 3200: Relocated 34539 GSs.
+Step 3200: Added 37557 GSs. Now having 788712 GSs.
+Step 3300: Relocated 37786 GSs.
+Step 3300: Added 39435 GSs. Now having 828147 GSs.
+Step 3400: Relocated 41119 GSs.
+Step 3400: Added 41407 GSs. Now having 869554 GSs.
+Step 3500: Relocated 44775 GSs.
+Step 3500: Added 43477 GSs. Now having 913031 GSs.
+Step 3600: Relocated 50850 GSs.
+Step 3600: Added 45651 GSs. Now having 958682 GSs.
+Step 3700: Relocated 54095 GSs.
+Step 3700: Added 47934 GSs. Now having 1006616 GSs.
+Step 3800: Relocated 58200 GSs.
+Step 3800: Added 50330 GSs. Now having 1056946 GSs.
+Step 3900: Relocated 63303 GSs.
+Step 3900: Added 52847 GSs. Now having 1109793 GSs.
+Step 4000: Relocated 68127 GSs.
+Step 4000: Added 55489 GSs. Now having 1165282 GSs.
+[4000] loss 0.1145 l1 0.0571 ssim 0.6661 N 1165282
+Step 4100: Relocated 68297 GSs.
+Step 4100: Added 58264 GSs. Now having 1223546 GSs.
+Step 4200: Relocated 69293 GSs.
+Step 4200: Added 61177 GSs. Now having 1284723 GSs.
+Step 4300: Relocated 72383 GSs.
+Step 4300: Added 64236 GSs. Now having 1348959 GSs.
+Step 4400: Relocated 75041 GSs.
+Step 4400: Added 67447 GSs. Now having 1416406 GSs.
+Step 4500: Relocated 94184 GSs.
+Step 4500: Added 70820 GSs. Now having 1487226 GSs.
+Step 4600: Relocated 89677 GSs.
+Step 4600: Added 74361 GSs. Now having 1561587 GSs.
+Step 4700: Relocated 89835 GSs.
+Step 4700: Added 78079 GSs. Now having 1639666 GSs.
+Step 4800: Relocated 104212 GSs.
+Step 4800: Added 81983 GSs. Now having 1721649 GSs.
+Step 4900: Relocated 116508 GSs.
+Step 4900: Added 86082 GSs. Now having 1807731 GSs.
+Step 5000: Relocated 114526 GSs.
+Step 5000: Added 90386 GSs. Now having 1898117 GSs.
+[5000] loss 0.1118 l1 0.0557 ssim 0.6726 N 1898117
+Step 5100: Relocated 129326 GSs.
+Step 5100: Added 94905 GSs. Now having 1993022 GSs.
+Step 5200: Relocated 137937 GSs.
+Step 5200: Added 99651 GSs. Now having 2092673 GSs.
+Step 5300: Relocated 149721 GSs.
+Step 5300: Added 104633 GSs. Now having 2197306 GSs.
+Step 5400: Relocated 143091 GSs.
+Step 5400: Added 109865 GSs. Now having 2307171 GSs.
+Step 5500: Relocated 145611 GSs.
+Step 5500: Added 115358 GSs. Now having 2422529 GSs.
+Step 5600: Relocated 151883 GSs.
+Step 5600: Added 121126 GSs. Now having 2543655 GSs.
+Step 5700: Relocated 191463 GSs.
+Step 5700: Added 127182 GSs. Now having 2670837 GSs.
+Step 5800: Relocated 182527 GSs.
+Step 5800: Added 133541 GSs. Now having 2804378 GSs.
+Step 5900: Relocated 216782 GSs.
+Step 5900: Added 140218 GSs. Now having 2944596 GSs.
+Step 6000: Relocated 216596 GSs.
+Step 6000: Added 147229 GSs. Now having 3091825 GSs.
+[6000] loss 0.1069 l1 0.0489 ssim 0.6688 N 3091825
+Step 6100: Relocated 240176 GSs.
+Step 6100: Added 154591 GSs. Now having 3246416 GSs.
+Step 6200: Relocated 232534 GSs.
+Step 6200: Added 162320 GSs. Now having 3408736 GSs.
+Step 6300: Relocated 264067 GSs.
+Step 6300: Added 170436 GSs. Now having 3579172 GSs.
+Step 6400: Relocated 273676 GSs.
+Step 6400: Added 178958 GSs. Now having 3758130 GSs.
+Step 6500: Relocated 308682 GSs.
+Step 6500: Added 187906 GSs. Now having 3946036 GSs.
+Step 6600: Relocated 299473 GSs.
+Step 6600: Added 197301 GSs. Now having 4143337 GSs.
+Step 6700: Relocated 367805 GSs.
+Step 6700: Added 207166 GSs. Now having 4350503 GSs.
+Step 6800: Relocated 361576 GSs.
+Step 6800: Added 217525 GSs. Now having 4568028 GSs.
+Step 6900: Relocated 345528 GSs.
+Step 6900: Added 228401 GSs. Now having 4796429 GSs.
+Step 7000: Relocated 359687 GSs.
+Step 7000: Added 203571 GSs. Now having 5000000 GSs.
+[7000] loss 0.0631 l1 0.0384 ssim 0.8444 N 5000000
+Step 7100: Relocated 390757 GSs.
+Step 7100: Added 0 GSs. Now having 5000000 GSs.
+Step 7200: Relocated 322744 GSs.
+Step 7200: Added 0 GSs. Now having 5000000 GSs.
+Step 7300: Relocated 298358 GSs.
+Step 7300: Added 0 GSs. Now having 5000000 GSs.
+Step 7400: Relocated 292053 GSs.
+Step 7400: Added 0 GSs. Now having 5000000 GSs.
+Step 7500: Relocated 273613 GSs.
+Step 7500: Added 0 GSs. Now having 5000000 GSs.
+Step 7600: Relocated 268861 GSs.
+Step 7600: Added 0 GSs. Now having 5000000 GSs.
+Step 7700: Relocated 277917 GSs.
+Step 7700: Added 0 GSs. Now having 5000000 GSs.
+Step 7800: Relocated 266737 GSs.
+Step 7800: Added 0 GSs. Now having 5000000 GSs.
+Step 7900: Relocated 248675 GSs.
+Step 7900: Added 0 GSs. Now having 5000000 GSs.
+Step 8000: Relocated 244011 GSs.
+Step 8000: Added 0 GSs. Now having 5000000 GSs.
+[8000] loss 0.0819 l1 0.0434 ssim 0.7711 N 5000000
+Step 8100: Relocated 241649 GSs.
+Step 8100: Added 0 GSs. Now having 5000000 GSs.
+Step 8200: Relocated 249283 GSs.
+Step 8200: Added 0 GSs. Now having 5000000 GSs.
+Step 8300: Relocated 250451 GSs.
+Step 8300: Added 0 GSs. Now having 5000000 GSs.
+Step 8400: Relocated 239167 GSs.
+Step 8400: Added 0 GSs. Now having 5000000 GSs.
+Step 8500: Relocated 229863 GSs.
+Step 8500: Added 0 GSs. Now having 5000000 GSs.
+Step 8600: Relocated 240813 GSs.
+Step 8600: Added 0 GSs. Now having 5000000 GSs.
+Step 8700: Relocated 237873 GSs.
+Step 8700: Added 0 GSs. Now having 5000000 GSs.
+Step 8800: Relocated 253042 GSs.
+Step 8800: Added 0 GSs. Now having 5000000 GSs.
+Step 8900: Relocated 248376 GSs.
+Step 8900: Added 0 GSs. Now having 5000000 GSs.
+Step 9000: Relocated 244567 GSs.
+Step 9000: Added 0 GSs. Now having 5000000 GSs.
+[9000] loss 0.0716 l1 0.0370 ssim 0.7971 N 5000000
+Step 9100: Relocated 243828 GSs.
+Step 9100: Added 0 GSs. Now having 5000000 GSs.
+Step 9200: Relocated 228764 GSs.
+Step 9200: Added 0 GSs. Now having 5000000 GSs.
+Step 9300: Relocated 221756 GSs.
+Step 9300: Added 0 GSs. Now having 5000000 GSs.
+Step 9400: Relocated 231991 GSs.
+Step 9400: Added 0 GSs. Now having 5000000 GSs.
+Step 9500: Relocated 224695 GSs.
+Step 9500: Added 0 GSs. Now having 5000000 GSs.
+Step 9600: Relocated 227232 GSs.
+Step 9600: Added 0 GSs. Now having 5000000 GSs.
+Step 9700: Relocated 241072 GSs.
+Step 9700: Added 0 GSs. Now having 5000000 GSs.
+Step 9800: Relocated 225009 GSs.
+Step 9800: Added 0 GSs. Now having 5000000 GSs.
+Step 9900: Relocated 230199 GSs.
+Step 9900: Added 0 GSs. Now having 5000000 GSs.
+Step 10000: Relocated 242163 GSs.
+Step 10000: Added 0 GSs. Now having 5000000 GSs.
+[10000] loss 0.0504 l1 0.0287 ssim 0.8704 N 5000000
+Step 10100: Relocated 235574 GSs.
+Step 10100: Added 0 GSs. Now having 5000000 GSs.
+Step 10200: Relocated 224265 GSs.
+Step 10200: Added 0 GSs. Now having 5000000 GSs.
+Step 10300: Relocated 223097 GSs.
+Step 10300: Added 0 GSs. Now having 5000000 GSs.
+Step 10400: Relocated 241076 GSs.
+Step 10400: Added 0 GSs. Now having 5000000 GSs.
+Step 10500: Relocated 226964 GSs.
+Step 10500: Added 0 GSs. Now having 5000000 GSs.
+Step 10600: Relocated 235491 GSs.
+Step 10600: Added 0 GSs. Now having 5000000 GSs.
+Step 10700: Relocated 226138 GSs.
+Step 10700: Added 0 GSs. Now having 5000000 GSs.
+Step 10800: Relocated 228164 GSs.
+Step 10800: Added 0 GSs. Now having 5000000 GSs.
+Step 10900: Relocated 234537 GSs.
+Step 10900: Added 0 GSs. Now having 5000000 GSs.
+Step 11000: Relocated 244503 GSs.
+Step 11000: Added 0 GSs. Now having 5000000 GSs.
+[11000] loss 0.0765 l1 0.0389 ssim 0.7807 N 5000000
+Step 11100: Relocated 244499 GSs.
+Step 11100: Added 0 GSs. Now having 5000000 GSs.
+Step 11200: Relocated 259975 GSs.
+Step 11200: Added 0 GSs. Now having 5000000 GSs.
+Step 11300: Relocated 245104 GSs.
+Step 11300: Added 0 GSs. Now having 5000000 GSs.
+Step 11400: Relocated 240171 GSs.
+Step 11400: Added 0 GSs. Now having 5000000 GSs.
+Step 11500: Relocated 234768 GSs.
+Step 11500: Added 0 GSs. Now having 5000000 GSs.
+Step 11600: Relocated 225058 GSs.
+Step 11600: Added 0 GSs. Now having 5000000 GSs.
+Step 11700: Relocated 222512 GSs.
+Step 11700: Added 0 GSs. Now having 5000000 GSs.
+Step 11800: Relocated 226936 GSs.
+Step 11800: Added 0 GSs. Now having 5000000 GSs.
+Step 11900: Relocated 230042 GSs.
+Step 11900: Added 0 GSs. Now having 5000000 GSs.
+Step 12000: Relocated 243312 GSs.
+Step 12000: Added 0 GSs. Now having 5000000 GSs.
+[12000] loss 0.0593 l1 0.0342 ssim 0.8479 N 5000000
+Step 12100: Relocated 236530 GSs.
+Step 12100: Added 0 GSs. Now having 5000000 GSs.
+Step 12200: Relocated 231155 GSs.
+Step 12200: Added 0 GSs. Now having 5000000 GSs.
+Step 12300: Relocated 231773 GSs.
+Step 12300: Added 0 GSs. Now having 5000000 GSs.
+Step 12400: Relocated 228660 GSs.
+Step 12400: Added 0 GSs. Now having 5000000 GSs.
+Step 12500: Relocated 224888 GSs.
+Step 12500: Added 0 GSs. Now having 5000000 GSs.
+Step 12600: Relocated 233165 GSs.
+Step 12600: Added 0 GSs. Now having 5000000 GSs.
+Step 12700: Relocated 242007 GSs.
+Step 12700: Added 0 GSs. Now having 5000000 GSs.
+Step 12800: Relocated 229425 GSs.
+Step 12800: Added 0 GSs. Now having 5000000 GSs.
+Step 12900: Relocated 238128 GSs.
+Step 12900: Added 0 GSs. Now having 5000000 GSs.
+Step 13000: Relocated 230525 GSs.
+Step 13000: Added 0 GSs. Now having 5000000 GSs.
+[13000] loss 0.0620 l1 0.0373 ssim 0.8470 N 5000000
+Step 13100: Relocated 247945 GSs.
+Step 13100: Added 0 GSs. Now having 5000000 GSs.
+Step 13200: Relocated 240096 GSs.
+Step 13200: Added 0 GSs. Now having 5000000 GSs.
+Step 13300: Relocated 232546 GSs.
+Step 13300: Added 0 GSs. Now having 5000000 GSs.
+Step 13400: Relocated 214246 GSs.
+Step 13400: Added 0 GSs. Now having 5000000 GSs.
+Step 13500: Relocated 207330 GSs.
+Step 13500: Added 0 GSs. Now having 5000000 GSs.
+Step 13600: Relocated 215296 GSs.
+Step 13600: Added 0 GSs. Now having 5000000 GSs.
+Step 13700: Relocated 207050 GSs.
+Step 13700: Added 0 GSs. Now having 5000000 GSs.
+Step 13800: Relocated 215982 GSs.
+Step 13800: Added 0 GSs. Now having 5000000 GSs.
+Step 13900: Relocated 205427 GSs.
+Step 13900: Added 0 GSs. Now having 5000000 GSs.
+Step 14000: Relocated 202935 GSs.
+Step 14000: Added 0 GSs. Now having 5000000 GSs.
+[14000] loss 0.0658 l1 0.0372 ssim 0.8277 N 5000000
+Step 14100: Relocated 207629 GSs.
+Step 14100: Added 0 GSs. Now having 5000000 GSs.
+Step 14200: Relocated 221558 GSs.
+Step 14200: Added 0 GSs. Now having 5000000 GSs.
+Step 14300: Relocated 210922 GSs.
+Step 14300: Added 0 GSs. Now having 5000000 GSs.
+Step 14400: Relocated 204056 GSs.
+Step 14400: Added 0 GSs. Now having 5000000 GSs.
+Step 14500: Relocated 204919 GSs.
+Step 14500: Added 0 GSs. Now having 5000000 GSs.
+Step 14600: Relocated 201800 GSs.
+Step 14600: Added 0 GSs. Now having 5000000 GSs.
+Step 14700: Relocated 201077 GSs.
+Step 14700: Added 0 GSs. Now having 5000000 GSs.
+Step 14800: Relocated 199520 GSs.
+Step 14800: Added 0 GSs. Now having 5000000 GSs.
+Step 14900: Relocated 197491 GSs.
+Step 14900: Added 0 GSs. Now having 5000000 GSs.
+Step 15000: Relocated 202173 GSs.
+Step 15000: Added 0 GSs. Now having 5000000 GSs.
+[15000] loss 0.0706 l1 0.0384 ssim 0.8090 N 5000000
+Step 15100: Relocated 195380 GSs.
+Step 15100: Added 0 GSs. Now having 5000000 GSs.
+Step 15200: Relocated 188573 GSs.
+Step 15200: Added 0 GSs. Now having 5000000 GSs.
+Step 15300: Relocated 184384 GSs.
+Step 15300: Added 0 GSs. Now having 5000000 GSs.
+Step 15400: Relocated 190932 GSs.
+Step 15400: Added 0 GSs. Now having 5000000 GSs.
+Step 15500: Relocated 189397 GSs.
+Step 15500: Added 0 GSs. Now having 5000000 GSs.
+Step 15600: Relocated 194785 GSs.
+Step 15600: Added 0 GSs. Now having 5000000 GSs.
+Step 15700: Relocated 190653 GSs.
+Step 15700: Added 0 GSs. Now having 5000000 GSs.
+Step 15800: Relocated 197960 GSs.
+Step 15800: Added 0 GSs. Now having 5000000 GSs.
+Step 15900: Relocated 187963 GSs.
+Step 15900: Added 0 GSs. Now having 5000000 GSs.
+Step 16000: Relocated 197203 GSs.
+Step 16000: Added 0 GSs. Now having 5000000 GSs.
+[16000] loss 0.0708 l1 0.0370 ssim 0.8028 N 5000000
+Step 16100: Relocated 183830 GSs.
+Step 16100: Added 0 GSs. Now having 5000000 GSs.
+Step 16200: Relocated 183201 GSs.
+Step 16200: Added 0 GSs. Now having 5000000 GSs.
+Step 16300: Relocated 181340 GSs.
+Step 16300: Added 0 GSs. Now having 5000000 GSs.
+Step 16400: Relocated 191871 GSs.
+Step 16400: Added 0 GSs. Now having 5000000 GSs.
+Step 16500: Relocated 179692 GSs.
+Step 16500: Added 0 GSs. Now having 5000000 GSs.
+Step 16600: Relocated 184631 GSs.
+Step 16600: Added 0 GSs. Now having 5000000 GSs.
+Step 16700: Relocated 171381 GSs.
+Step 16700: Added 0 GSs. Now having 5000000 GSs.
+Step 16800: Relocated 186501 GSs.
+Step 16800: Added 0 GSs. Now having 5000000 GSs.
+Step 16900: Relocated 181037 GSs.
+Step 16900: Added 0 GSs. Now having 5000000 GSs.
+Step 17000: Relocated 189757 GSs.
+Step 17000: Added 0 GSs. Now having 5000000 GSs.
+[17000] loss 0.0542 l1 0.0323 ssim 0.8669 N 5000000
+Step 17100: Relocated 176004 GSs.
+Step 17100: Added 0 GSs. Now having 5000000 GSs.
+Step 17200: Relocated 183454 GSs.
+Step 17200: Added 0 GSs. Now having 5000000 GSs.
+Step 17300: Relocated 176119 GSs.
+Step 17300: Added 0 GSs. Now having 5000000 GSs.
+Step 17400: Relocated 164673 GSs.
+Step 17400: Added 0 GSs. Now having 5000000 GSs.
+Step 17500: Relocated 162934 GSs.
+Step 17500: Added 0 GSs. Now having 5000000 GSs.
+Step 17600: Relocated 177905 GSs.
+Step 17600: Added 0 GSs. Now having 5000000 GSs.
+Step 17700: Relocated 176360 GSs.
+Step 17700: Added 0 GSs. Now having 5000000 GSs.
+Step 17800: Relocated 173022 GSs.
+Step 17800: Added 0 GSs. Now having 5000000 GSs.
+Step 17900: Relocated 173561 GSs.
+Step 17900: Added 0 GSs. Now having 5000000 GSs.
+Step 18000: Relocated 165126 GSs.
+Step 18000: Added 0 GSs. Now having 5000000 GSs.
+[18000] loss 0.0610 l1 0.0321 ssim 0.8324 N 5000000
+Step 18100: Relocated 175113 GSs.
+Step 18100: Added 0 GSs. Now having 5000000 GSs.
+Step 18200: Relocated 175934 GSs.
+Step 18200: Added 0 GSs. Now having 5000000 GSs.
+Step 18300: Relocated 154282 GSs.
+Step 18300: Added 0 GSs. Now having 5000000 GSs.
+Step 18400: Relocated 170958 GSs.
+Step 18400: Added 0 GSs. Now having 5000000 GSs.
+Step 18500: Relocated 155303 GSs.
+Step 18500: Added 0 GSs. Now having 5000000 GSs.
+Step 18600: Relocated 159937 GSs.
+Step 18600: Added 0 GSs. Now having 5000000 GSs.
+Step 18700: Relocated 161784 GSs.
+Step 18700: Added 0 GSs. Now having 5000000 GSs.
+Step 18800: Relocated 152821 GSs.
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Step 18800: Added 0 GSs. Now having 5000000 GSs.
+Step 18900: Relocated 152870 GSs.
+Step 18900: Added 0 GSs. Now having 5000000 GSs.
+Step 19000: Relocated 154817 GSs.
+Step 19000: Added 0 GSs. Now having 5000000 GSs.
+[19000] loss 0.0728 l1 0.0410 ssim 0.8092 N 5000000
+Step 19100: Relocated 148547 GSs.
+Step 19100: Added 0 GSs. Now having 5000000 GSs.
+Step 19200: Relocated 140573 GSs.
+Step 19200: Added 0 GSs. Now having 5000000 GSs.
+Step 19300: Relocated 159539 GSs.
+Step 19300: Added 0 GSs. Now having 5000000 GSs.
+Step 19400: Relocated 142732 GSs.
+Step 19400: Added 0 GSs. Now having 5000000 GSs.
+Step 19500: Relocated 140102 GSs.
+Step 19500: Added 0 GSs. Now having 5000000 GSs.
+Step 19600: Relocated 137585 GSs.
+Step 19600: Added 0 GSs. Now having 5000000 GSs.
+Step 19700: Relocated 132848 GSs.
+Step 19700: Added 0 GSs. Now having 5000000 GSs.
+Step 19800: Relocated 129920 GSs.
+Step 19800: Added 0 GSs. Now having 5000000 GSs.
+Step 19900: Relocated 129465 GSs.
+Step 19900: Added 0 GSs. Now having 5000000 GSs.
+Step 20000: Relocated 131149 GSs.
+Step 20000: Added 0 GSs. Now having 5000000 GSs.
+[20000] loss 0.0423 l1 0.0254 ssim 0.8994 N 5000000
+Step 20100: Relocated 128739 GSs.
+Step 20100: Added 0 GSs. Now having 5000000 GSs.
+Step 20200: Relocated 134259 GSs.
+Step 20200: Added 0 GSs. Now having 5000000 GSs.
+Step 20300: Relocated 124067 GSs.
+Step 20300: Added 0 GSs. Now having 5000000 GSs.
+Step 20400: Relocated 122558 GSs.
+Step 20400: Added 0 GSs. Now having 5000000 GSs.
+Step 20500: Relocated 119164 GSs.
+Step 20500: Added 0 GSs. Now having 5000000 GSs.
+Step 20600: Relocated 127028 GSs.
+Step 20600: Added 0 GSs. Now having 5000000 GSs.
+Step 20700: Relocated 122600 GSs.
+Step 20700: Added 0 GSs. Now having 5000000 GSs.
+Step 20800: Relocated 128398 GSs.
+Step 20800: Added 0 GSs. Now having 5000000 GSs.
+Step 20900: Relocated 121595 GSs.
+Step 20900: Added 0 GSs. Now having 5000000 GSs.
+Step 21000: Relocated 130438 GSs.
+Step 21000: Added 0 GSs. Now having 5000000 GSs.
+[21000] loss 0.0713 l1 0.0420 ssim 0.8209 N 5000000
+Step 21100: Relocated 119514 GSs.
+Step 21100: Added 0 GSs. Now having 5000000 GSs.
+Step 21200: Relocated 117806 GSs.
+Step 21200: Added 0 GSs. Now having 5000000 GSs.
+Step 21300: Relocated 110695 GSs.
+Step 21300: Added 0 GSs. Now having 5000000 GSs.
+Step 21400: Relocated 118635 GSs.
+Step 21400: Added 0 GSs. Now having 5000000 GSs.
+Step 21500: Relocated 118197 GSs.
+Step 21500: Added 0 GSs. Now having 5000000 GSs.
+Step 21600: Relocated 111170 GSs.
+Step 21600: Added 0 GSs. Now having 5000000 GSs.
+Step 21700: Relocated 116963 GSs.
+Step 21700: Added 0 GSs. Now having 5000000 GSs.
+Step 21800: Relocated 108392 GSs.
+Step 21800: Added 0 GSs. Now having 5000000 GSs.
+Step 21900: Relocated 105392 GSs.
+Step 21900: Added 0 GSs. Now having 5000000 GSs.
+Step 22000: Relocated 109083 GSs.
+Step 22000: Added 0 GSs. Now having 5000000 GSs.
+[22000] loss 0.0407 l1 0.0248 ssim 0.9053 N 5000000
+Step 22100: Relocated 108397 GSs.
+Step 22100: Added 0 GSs. Now having 5000000 GSs.
+Step 22200: Relocated 106831 GSs.
+Step 22200: Added 0 GSs. Now having 5000000 GSs.
+Step 22300: Relocated 100566 GSs.
+Step 22300: Added 0 GSs. Now having 5000000 GSs.
+Step 22400: Relocated 101938 GSs.
+Step 22400: Added 0 GSs. Now having 5000000 GSs.
+Step 22500: Relocated 101561 GSs.
+Step 22500: Added 0 GSs. Now having 5000000 GSs.
+Step 22600: Relocated 104340 GSs.
+Step 22600: Added 0 GSs. Now having 5000000 GSs.
+Step 22700: Relocated 100376 GSs.
+Step 22700: Added 0 GSs. Now having 5000000 GSs.
+Step 22800: Relocated 99678 GSs.
+Step 22800: Added 0 GSs. Now having 5000000 GSs.
+Step 22900: Relocated 93337 GSs.
+Step 22900: Added 0 GSs. Now having 5000000 GSs.
+Step 23000: Relocated 94645 GSs.
+Step 23000: Added 0 GSs. Now having 5000000 GSs.
+[23000] loss 0.0609 l1 0.0367 ssim 0.8517 N 5000000
+Step 23100: Relocated 100496 GSs.
+Step 23100: Added 0 GSs. Now having 5000000 GSs.
+Step 23200: Relocated 89347 GSs.
+Step 23200: Added 0 GSs. Now having 5000000 GSs.
+Step 23300: Relocated 89490 GSs.
+Step 23300: Added 0 GSs. Now having 5000000 GSs.
+Step 23400: Relocated 89817 GSs.
+Step 23400: Added 0 GSs. Now having 5000000 GSs.
+Step 23500: Relocated 90301 GSs.
+Step 23500: Added 0 GSs. Now having 5000000 GSs.
+Step 23600: Relocated 92101 GSs.
+Step 23600: Added 0 GSs. Now having 5000000 GSs.
+Step 23700: Relocated 92354 GSs.
+Step 23700: Added 0 GSs. Now having 5000000 GSs.
+Step 23800: Relocated 90089 GSs.
+Step 23800: Added 0 GSs. Now having 5000000 GSs.
+Step 23900: Relocated 87180 GSs.
+Step 23900: Added 0 GSs. Now having 5000000 GSs.
+Step 24000: Relocated 87433 GSs.
+Step 24000: Added 0 GSs. Now having 5000000 GSs.
+[24000] loss 0.0519 l1 0.0319 ssim 0.8777 N 5000000
+Step 24100: Relocated 93379 GSs.
+Step 24100: Added 0 GSs. Now having 5000000 GSs.
+Step 24200: Relocated 84484 GSs.
+Step 24200: Added 0 GSs. Now having 5000000 GSs.
+Step 24300: Relocated 83395 GSs.
+Step 24300: Added 0 GSs. Now having 5000000 GSs.
+Step 24400: Relocated 82594 GSs.
+Step 24400: Added 0 GSs. Now having 5000000 GSs.
+Step 24500: Relocated 90006 GSs.
+Step 24500: Added 0 GSs. Now having 5000000 GSs.
+Step 24600: Relocated 84472 GSs.
+Step 24600: Added 0 GSs. Now having 5000000 GSs.
+Step 24700: Relocated 76423 GSs.
+Step 24700: Added 0 GSs. Now having 5000000 GSs.
+Step 24800: Relocated 78829 GSs.
+Step 24800: Added 0 GSs. Now having 5000000 GSs.
+Step 24900: Relocated 76889 GSs.
+Step 24900: Added 0 GSs. Now having 5000000 GSs.
+[25000] loss 0.0592 l1 0.0337 ssim 0.8489 N 5000000
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[26000] loss 0.0721 l1 0.0321 ssim 0.8518 N 5000000
+[27000] loss 0.0680 l1 0.0386 ssim 0.8700 N 5000000
+[28000] loss 0.0471 l1 0.0247 ssim 0.9139 N 5000000
+[29000] loss 0.0536 l1 0.0280 ssim 0.8985 N 5000000
+[29999] loss 0.0699 l1 0.0331 ssim 0.8541 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/output/hcm0031_gsplatB9ut/ckpt.pt
+=== hcm0031_gsplatB9ut TRAIN DONE ===
+Wrote 50 images to /mnt/d/avv/output/hcm0031_gsplatB9ut/test_poses_renders
+hcm0031    n= 50  PSNR 25.0693  SSIM 0.8332  LPIPS(alex) 0.0905 LPIPS(vgg) 0.1355  Score(alex) 0.7642  Score(vgg) 0.7462
+  Score(vgg)  = 74.6170   [0.4*(1-LPIPS)=0.3458  0.3*SSIM=0.2500  0.3*PSNRn=0.1504]  (psnr_max=50.0)
+=== hcm0031_gsplatB9ut SCORED ===
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/train_gsplat.py:302: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  gt_cache[vi] = torch.from_numpy(
+240/337 images.bin entries have files in /home/bkai/data/phase1/public_set/hcm0034/train/images
+240 views, 181413 init points, K=[[926.1,0,660.0],[0,926.1,494.5]], size 1320x989
+3DGUT mode: classic + with_ut + with_eval3d, k1=+0.007844
+scene_scale 10.258
+[0] loss 0.3472 l1 0.2544 ssim 0.3114 N 181413
+Step 600: Relocated 22261 GSs.
+Step 600: Added 9070 GSs. Now having 190483 GSs.
+Step 700: Relocated 5035 GSs.
+Step 700: Added 9524 GSs. Now having 200007 GSs.
+Step 800: Relocated 5778 GSs.
+Step 800: Added 10000 GSs. Now having 210007 GSs.
+Step 900: Relocated 5164 GSs.
+Step 900: Added 10500 GSs. Now having 220507 GSs.
+Step 1000: Relocated 5555 GSs.
+Step 1000: Added 11025 GSs. Now having 231532 GSs.
+[1000] loss 0.1114 l1 0.0530 ssim 0.6737 N 231532
+Step 1100: Relocated 5911 GSs.
+Step 1100: Added 11576 GSs. Now having 243108 GSs.
+Step 1200: Relocated 6265 GSs.
+Step 1200: Added 12155 GSs. Now having 255263 GSs.
+Step 1300: Relocated 7201 GSs.
+Step 1300: Added 12763 GSs. Now having 268026 GSs.
+Step 1400: Relocated 7178 GSs.
+Step 1400: Added 13401 GSs. Now having 281427 GSs.
+Step 1500: Relocated 8350 GSs.
+Step 1500: Added 14071 GSs. Now having 295498 GSs.
+Step 1600: Relocated 8642 GSs.
+Step 1600: Added 14774 GSs. Now having 310272 GSs.
+Step 1700: Relocated 10371 GSs.
+Step 1700: Added 15513 GSs. Now having 325785 GSs.
+Step 1800: Relocated 10837 GSs.
+Step 1800: Added 16289 GSs. Now having 342074 GSs.
+Step 1900: Relocated 11668 GSs.
+Step 1900: Added 17103 GSs. Now having 359177 GSs.
+Step 2000: Relocated 14388 GSs.
+Step 2000: Added 17958 GSs. Now having 377135 GSs.
+[2000] loss 0.1081 l1 0.0550 ssim 0.6946 N 377135
+Step 2100: Relocated 16708 GSs.
+Step 2100: Added 18856 GSs. Now having 395991 GSs.
+Step 2200: Relocated 15452 GSs.
+Step 2200: Added 19799 GSs. Now having 415790 GSs.
+Step 2300: Relocated 16462 GSs.
+Step 2300: Added 20789 GSs. Now having 436579 GSs.
+Step 2400: Relocated 20724 GSs.
+Step 2400: Added 21828 GSs. Now having 458407 GSs.
+Step 2500: Relocated 19355 GSs.
+Step 2500: Added 22920 GSs. Now having 481327 GSs.
+Step 2600: Relocated 21850 GSs.
+Step 2600: Added 24066 GSs. Now having 505393 GSs.
+Step 2700: Relocated 22168 GSs.
+Step 2700: Added 25269 GSs. Now having 530662 GSs.
+Step 2800: Relocated 28274 GSs.
+Step 2800: Added 26533 GSs. Now having 557195 GSs.
+Step 2900: Relocated 25952 GSs.
+Step 2900: Added 27859 GSs. Now having 585054 GSs.
+Step 3000: Relocated 30272 GSs.
+Step 3000: Added 29252 GSs. Now having 614306 GSs.
+[3000] loss 0.0883 l1 0.0473 ssim 0.7602 N 614306
+Step 3100: Relocated 27727 GSs.
+Step 3100: Added 30715 GSs. Now having 645021 GSs.
+Step 3200: Relocated 31062 GSs.
+Step 3200: Added 32251 GSs. Now having 677272 GSs.
+Step 3300: Relocated 34917 GSs.
+Step 3300: Added 33863 GSs. Now having 711135 GSs.
+Step 3400: Relocated 35839 GSs.
+Step 3400: Added 35556 GSs. Now having 746691 GSs.
+Step 3500: Relocated 35948 GSs.
+Step 3500: Added 37334 GSs. Now having 784025 GSs.
+Step 3600: Relocated 39439 GSs.
+Step 3600: Added 39201 GSs. Now having 823226 GSs.
+Step 3700: Relocated 46023 GSs.
+Step 3700: Added 41161 GSs. Now having 864387 GSs.
+Step 3800: Relocated 47608 GSs.
+Step 3800: Added 43219 GSs. Now having 907606 GSs.
+Step 3900: Relocated 52205 GSs.
+Step 3900: Added 45380 GSs. Now having 952986 GSs.
+Step 4000: Relocated 52823 GSs.
+Step 4000: Added 47649 GSs. Now having 1000635 GSs.
+[4000] loss 0.1028 l1 0.0510 ssim 0.7003 N 1000635
+Step 4100: Relocated 57691 GSs.
+Step 4100: Added 50031 GSs. Now having 1050666 GSs.
+Step 4200: Relocated 65892 GSs.
+Step 4200: Added 52533 GSs. Now having 1103199 GSs.
+Step 4300: Relocated 62001 GSs.
+Step 4300: Added 55159 GSs. Now having 1158358 GSs.
+Step 4400: Relocated 65756 GSs.
+Step 4400: Added 57917 GSs. Now having 1216275 GSs.
+Step 4500: Relocated 70258 GSs.
+Step 4500: Added 60813 GSs. Now having 1277088 GSs.
+Step 4600: Relocated 80805 GSs.
+Step 4600: Added 63854 GSs. Now having 1340942 GSs.
+Step 4700: Relocated 103743 GSs.
+Step 4700: Added 67047 GSs. Now having 1407989 GSs.
+Step 4800: Relocated 97453 GSs.
+Step 4800: Added 70399 GSs. Now having 1478388 GSs.
+Step 4900: Relocated 100950 GSs.
+Step 4900: Added 73919 GSs. Now having 1552307 GSs.
+Step 5000: Relocated 95392 GSs.
+Step 5000: Added 77615 GSs. Now having 1629922 GSs.
+[5000] loss 0.0819 l1 0.0432 ssim 0.7723 N 1629922
+Step 5100: Relocated 101494 GSs.
+Step 5100: Added 81496 GSs. Now having 1711418 GSs.
+Step 5200: Relocated 107943 GSs.
+Step 5200: Added 85570 GSs. Now having 1796988 GSs.
+Step 5300: Relocated 122258 GSs.
+Step 5300: Added 89849 GSs. Now having 1886837 GSs.
+Step 5400: Relocated 131691 GSs.
+Step 5400: Added 94341 GSs. Now having 1981178 GSs.
+Step 5500: Relocated 135464 GSs.
+Step 5500: Added 99058 GSs. Now having 2080236 GSs.
+Step 5600: Relocated 141957 GSs.
+Step 5600: Added 104011 GSs. Now having 2184247 GSs.
+Step 5700: Relocated 165003 GSs.
+Step 5700: Added 109212 GSs. Now having 2293459 GSs.
+Step 5800: Relocated 180537 GSs.
+Step 5800: Added 114672 GSs. Now having 2408131 GSs.
+Step 5900: Relocated 168364 GSs.
+Step 5900: Added 120406 GSs. Now having 2528537 GSs.
+Step 6000: Relocated 173232 GSs.
+Step 6000: Added 126426 GSs. Now having 2654963 GSs.
+[6000] loss 0.0775 l1 0.0400 ssim 0.7799 N 2654963
+Step 6100: Relocated 191318 GSs.
+Step 6100: Added 132748 GSs. Now having 2787711 GSs.
+Step 6200: Relocated 221342 GSs.
+Step 6200: Added 139385 GSs. Now having 2927096 GSs.
+Step 6300: Relocated 210520 GSs.
+Step 6300: Added 146354 GSs. Now having 3073450 GSs.
+Step 6400: Relocated 245551 GSs.
+Step 6400: Added 153672 GSs. Now having 3227122 GSs.
+Step 6500: Relocated 242754 GSs.
+Step 6500: Added 161356 GSs. Now having 3388478 GSs.
+Step 6600: Relocated 268977 GSs.
+Step 6600: Added 169423 GSs. Now having 3557901 GSs.
+Step 6700: Relocated 277784 GSs.
+Step 6700: Added 177895 GSs. Now having 3735796 GSs.
+Step 6800: Relocated 285862 GSs.
+Step 6800: Added 186789 GSs. Now having 3922585 GSs.
+Step 6900: Relocated 311345 GSs.
+Step 6900: Added 196129 GSs. Now having 4118714 GSs.
+Step 7000: Relocated 366086 GSs.
+Step 7000: Added 205935 GSs. Now having 4324649 GSs.
+[7000] loss 0.1056 l1 0.0592 ssim 0.7151 N 4324649
+Step 7100: Relocated 372857 GSs.
+Step 7100: Added 216232 GSs. Now having 4540881 GSs.
+Step 7200: Relocated 374907 GSs.
+Step 7200: Added 227044 GSs. Now having 4767925 GSs.
+Step 7300: Relocated 408512 GSs.
+Step 7300: Added 232075 GSs. Now having 5000000 GSs.
+Step 7400: Relocated 439220 GSs.
+Step 7400: Added 0 GSs. Now having 5000000 GSs.
+Step 7500: Relocated 376545 GSs.
+Step 7500: Added 0 GSs. Now having 5000000 GSs.
+Step 7600: Relocated 329272 GSs.
+Step 7600: Added 0 GSs. Now having 5000000 GSs.
+Step 7700: Relocated 310605 GSs.
+Step 7700: Added 0 GSs. Now having 5000000 GSs.
+Step 7800: Relocated 279707 GSs.
+Step 7800: Added 0 GSs. Now having 5000000 GSs.
+Step 7900: Relocated 285305 GSs.
+Step 7900: Added 0 GSs. Now having 5000000 GSs.
+Step 8000: Relocated 296033 GSs.
+Step 8000: Added 0 GSs. Now having 5000000 GSs.
+[8000] loss 0.0705 l1 0.0385 ssim 0.8077 N 5000000
+Step 8100: Relocated 306909 GSs.
+Step 8100: Added 0 GSs. Now having 5000000 GSs.
+Step 8200: Relocated 260443 GSs.
+Step 8200: Added 0 GSs. Now having 5000000 GSs.
+Step 8300: Relocated 257463 GSs.
+Step 8300: Added 0 GSs. Now having 5000000 GSs.
+Step 8400: Relocated 262477 GSs.
+Step 8400: Added 0 GSs. Now having 5000000 GSs.
+Step 8500: Relocated 246108 GSs.
+Step 8500: Added 0 GSs. Now having 5000000 GSs.
+Step 8600: Relocated 241562 GSs.
+Step 8600: Added 0 GSs. Now having 5000000 GSs.
+Step 8700: Relocated 247063 GSs.
+Step 8700: Added 0 GSs. Now having 5000000 GSs.
+Step 8800: Relocated 246703 GSs.
+Step 8800: Added 0 GSs. Now having 5000000 GSs.
+Step 8900: Relocated 253683 GSs.
+Step 8900: Added 0 GSs. Now having 5000000 GSs.
+Step 9000: Relocated 248827 GSs.
+Step 9000: Added 0 GSs. Now having 5000000 GSs.
+[9000] loss 0.0681 l1 0.0364 ssim 0.8116 N 5000000
+Step 9100: Relocated 231567 GSs.
+Step 9100: Added 0 GSs. Now having 5000000 GSs.
+Step 9200: Relocated 236652 GSs.
+Step 9200: Added 0 GSs. Now having 5000000 GSs.
+Step 9300: Relocated 248166 GSs.
+Step 9300: Added 0 GSs. Now having 5000000 GSs.
+Step 9400: Relocated 228977 GSs.
+Step 9400: Added 0 GSs. Now having 5000000 GSs.
+Step 9500: Relocated 234210 GSs.
+Step 9500: Added 0 GSs. Now having 5000000 GSs.
+Step 9600: Relocated 244131 GSs.
+Step 9600: Added 0 GSs. Now having 5000000 GSs.
+Step 9700: Relocated 236432 GSs.
+Step 9700: Added 0 GSs. Now having 5000000 GSs.
+Step 9800: Relocated 243307 GSs.
+Step 9800: Added 0 GSs. Now having 5000000 GSs.
+Step 9900: Relocated 234272 GSs.
+Step 9900: Added 0 GSs. Now having 5000000 GSs.
+Step 10000: Relocated 239903 GSs.
+Step 10000: Added 0 GSs. Now having 5000000 GSs.
+[10000] loss 0.0737 l1 0.0496 ssim 0.8368 N 5000000
+Step 10100: Relocated 235448 GSs.
+Step 10100: Added 0 GSs. Now having 5000000 GSs.
+Step 10200: Relocated 233480 GSs.
+Step 10200: Added 0 GSs. Now having 5000000 GSs.
+Step 10300: Relocated 232940 GSs.
+Step 10300: Added 0 GSs. Now having 5000000 GSs.
+Step 10400: Relocated 248174 GSs.
+Step 10400: Added 0 GSs. Now having 5000000 GSs.
+Step 10500: Relocated 230120 GSs.
+Step 10500: Added 0 GSs. Now having 5000000 GSs.
+Step 10600: Relocated 227081 GSs.
+Step 10600: Added 0 GSs. Now having 5000000 GSs.
+Step 10700: Relocated 243311 GSs.
+Step 10700: Added 0 GSs. Now having 5000000 GSs.
+Step 10800: Relocated 239893 GSs.
+Step 10800: Added 0 GSs. Now having 5000000 GSs.
+Step 10900: Relocated 227140 GSs.
+Step 10900: Added 0 GSs. Now having 5000000 GSs.
+Step 11000: Relocated 231018 GSs.
+Step 11000: Added 0 GSs. Now having 5000000 GSs.
+[11000] loss 0.0628 l1 0.0379 ssim 0.8451 N 5000000
+Step 11100: Relocated 239675 GSs.
+Step 11100: Added 0 GSs. Now having 5000000 GSs.
+Step 11200: Relocated 221140 GSs.
+Step 11200: Added 0 GSs. Now having 5000000 GSs.
+Step 11300: Relocated 221982 GSs.
+Step 11300: Added 0 GSs. Now having 5000000 GSs.
+Step 11400: Relocated 239786 GSs.
+Step 11400: Added 0 GSs. Now having 5000000 GSs.
+Step 11500: Relocated 233377 GSs.
+Step 11500: Added 0 GSs. Now having 5000000 GSs.
+Step 11600: Relocated 231204 GSs.
+Step 11600: Added 0 GSs. Now having 5000000 GSs.
+Step 11700: Relocated 227002 GSs.
+Step 11700: Added 0 GSs. Now having 5000000 GSs.
+Step 11800: Relocated 215531 GSs.
+Step 11800: Added 0 GSs. Now having 5000000 GSs.
+Step 11900: Relocated 227732 GSs.
+Step 11900: Added 0 GSs. Now having 5000000 GSs.
+Step 12000: Relocated 244172 GSs.
+Step 12000: Added 0 GSs. Now having 5000000 GSs.
+[12000] loss 0.0743 l1 0.0434 ssim 0.8094 N 5000000
+Step 12100: Relocated 222512 GSs.
+Step 12100: Added 0 GSs. Now having 5000000 GSs.
+Step 12200: Relocated 224977 GSs.
+Step 12200: Added 0 GSs. Now having 5000000 GSs.
+Step 12300: Relocated 229261 GSs.
+Step 12300: Added 0 GSs. Now having 5000000 GSs.
+Step 12400: Relocated 222317 GSs.
+Step 12400: Added 0 GSs. Now having 5000000 GSs.
+Step 12500: Relocated 218763 GSs.
+Step 12500: Added 0 GSs. Now having 5000000 GSs.
+Step 12600: Relocated 208789 GSs.
+Step 12600: Added 0 GSs. Now having 5000000 GSs.
+Step 12700: Relocated 216491 GSs.
+Step 12700: Added 0 GSs. Now having 5000000 GSs.
+Step 12800: Relocated 224076 GSs.
+Step 12800: Added 0 GSs. Now having 5000000 GSs.
+Step 12900: Relocated 216921 GSs.
+Step 12900: Added 0 GSs. Now having 5000000 GSs.
+Step 13000: Relocated 228790 GSs.
+Step 13000: Added 0 GSs. Now having 5000000 GSs.
+[13000] loss 0.0772 l1 0.0435 ssim 0.7958 N 5000000
+Step 13100: Relocated 226648 GSs.
+Step 13100: Added 0 GSs. Now having 5000000 GSs.
+Step 13200: Relocated 221707 GSs.
+Step 13200: Added 0 GSs. Now having 5000000 GSs.
+Step 13300: Relocated 233085 GSs.
+Step 13300: Added 0 GSs. Now having 5000000 GSs.
+Step 13400: Relocated 233122 GSs.
+Step 13400: Added 0 GSs. Now having 5000000 GSs.
+Step 13500: Relocated 243445 GSs.
+Step 13500: Added 0 GSs. Now having 5000000 GSs.
+Step 13600: Relocated 228293 GSs.
+Step 13600: Added 0 GSs. Now having 5000000 GSs.
+Step 13700: Relocated 244455 GSs.
+Step 13700: Added 0 GSs. Now having 5000000 GSs.
+Step 13800: Relocated 217089 GSs.
+Step 13800: Added 0 GSs. Now having 5000000 GSs.
+Step 13900: Relocated 210022 GSs.
+Step 13900: Added 0 GSs. Now having 5000000 GSs.
+Step 14000: Relocated 217585 GSs.
+Step 14000: Added 0 GSs. Now having 5000000 GSs.
+[14000] loss 0.0475 l1 0.0313 ssim 0.8955 N 5000000
+Step 14100: Relocated 213476 GSs.
+Step 14100: Added 0 GSs. Now having 5000000 GSs.
+Step 14200: Relocated 217061 GSs.
+Step 14200: Added 0 GSs. Now having 5000000 GSs.
+Step 14300: Relocated 211800 GSs.
+Step 14300: Added 0 GSs. Now having 5000000 GSs.
+Step 14400: Relocated 201406 GSs.
+Step 14400: Added 0 GSs. Now having 5000000 GSs.
+Step 14500: Relocated 196526 GSs.
+Step 14500: Added 0 GSs. Now having 5000000 GSs.
+Step 14600: Relocated 209397 GSs.
+Step 14600: Added 0 GSs. Now having 5000000 GSs.
+Step 14700: Relocated 212744 GSs.
+Step 14700: Added 0 GSs. Now having 5000000 GSs.
+Step 14800: Relocated 213578 GSs.
+Step 14800: Added 0 GSs. Now having 5000000 GSs.
+Step 14900: Relocated 192677 GSs.
+Step 14900: Added 0 GSs. Now having 5000000 GSs.
+Step 15000: Relocated 201154 GSs.
+Step 15000: Added 0 GSs. Now having 5000000 GSs.
+[15000] loss 0.0645 l1 0.0364 ssim 0.8305 N 5000000
+Step 15100: Relocated 201776 GSs.
+Step 15100: Added 0 GSs. Now having 5000000 GSs.
+Step 15200: Relocated 197311 GSs.
+Step 15200: Added 0 GSs. Now having 5000000 GSs.
+Step 15300: Relocated 211856 GSs.
+Step 15300: Added 0 GSs. Now having 5000000 GSs.
+Step 15400: Relocated 192786 GSs.
+Step 15400: Added 0 GSs. Now having 5000000 GSs.
+Step 15500: Relocated 202513 GSs.
+Step 15500: Added 0 GSs. Now having 5000000 GSs.
+Step 15600: Relocated 198557 GSs.
+Step 15600: Added 0 GSs. Now having 5000000 GSs.
+Step 15700: Relocated 197507 GSs.
+Step 15700: Added 0 GSs. Now having 5000000 GSs.
+Step 15800: Relocated 190826 GSs.
+Step 15800: Added 0 GSs. Now having 5000000 GSs.
+Step 15900: Relocated 202821 GSs.
+Step 15900: Added 0 GSs. Now having 5000000 GSs.
+Step 16000: Relocated 185745 GSs.
+Step 16000: Added 0 GSs. Now having 5000000 GSs.
+[16000] loss 0.0530 l1 0.0335 ssim 0.8773 N 5000000
+Step 16100: Relocated 181620 GSs.
+Step 16100: Added 0 GSs. Now having 5000000 GSs.
+Step 16200: Relocated 194305 GSs.
+Step 16200: Added 0 GSs. Now having 5000000 GSs.
+Step 16300: Relocated 201724 GSs.
+Step 16300: Added 0 GSs. Now having 5000000 GSs.
+Step 16400: Relocated 193920 GSs.
+Step 16400: Added 0 GSs. Now having 5000000 GSs.
+Step 16500: Relocated 183843 GSs.
+Step 16500: Added 0 GSs. Now having 5000000 GSs.
+Step 16600: Relocated 184641 GSs.
+Step 16600: Added 0 GSs. Now having 5000000 GSs.
+Step 16700: Relocated 176258 GSs.
+Step 16700: Added 0 GSs. Now having 5000000 GSs.
+Step 16800: Relocated 178990 GSs.
+Step 16800: Added 0 GSs. Now having 5000000 GSs.
+Step 16900: Relocated 176282 GSs.
+Step 16900: Added 0 GSs. Now having 5000000 GSs.
+Step 17000: Relocated 171255 GSs.
+Step 17000: Added 0 GSs. Now having 5000000 GSs.
+[17000] loss 0.0498 l1 0.0318 ssim 0.8865 N 5000000
+Step 17100: Relocated 180558 GSs.
+Step 17100: Added 0 GSs. Now having 5000000 GSs.
+Step 17200: Relocated 170440 GSs.
+Step 17200: Added 0 GSs. Now having 5000000 GSs.
+Step 17300: Relocated 169408 GSs.
+Step 17300: Added 0 GSs. Now having 5000000 GSs.
+Step 17400: Relocated 171619 GSs.
+Step 17400: Added 0 GSs. Now having 5000000 GSs.
+Step 17500: Relocated 176906 GSs.
+Step 17500: Added 0 GSs. Now having 5000000 GSs.
+Step 17600: Relocated 173109 GSs.
+Step 17600: Added 0 GSs. Now having 5000000 GSs.
+Step 17700: Relocated 162622 GSs.
+Step 17700: Added 0 GSs. Now having 5000000 GSs.
+Step 17800: Relocated 158405 GSs.
+Step 17800: Added 0 GSs. Now having 5000000 GSs.
+Step 17900: Relocated 161029 GSs.
+Step 17900: Added 0 GSs. Now having 5000000 GSs.
+Step 18000: Relocated 170433 GSs.
+Step 18000: Added 0 GSs. Now having 5000000 GSs.
+[18000] loss 0.0461 l1 0.0318 ssim 0.9050 N 5000000
+Step 18100: Relocated 164183 GSs.
+Step 18100: Added 0 GSs. Now having 5000000 GSs.
+Step 18200: Relocated 146456 GSs.
+Step 18200: Added 0 GSs. Now having 5000000 GSs.
+Step 18300: Relocated 158837 GSs.
+Step 18300: Added 0 GSs. Now having 5000000 GSs.
+Step 18400: Relocated 154349 GSs.
+Step 18400: Added 0 GSs. Now having 5000000 GSs.
+Step 18500: Relocated 150156 GSs.
+Step 18500: Added 0 GSs. Now having 5000000 GSs.
+Step 18600: Relocated 147836 GSs.
+Step 18600: Added 0 GSs. Now having 5000000 GSs.
+Step 18700: Relocated 147700 GSs.
+Step 18700: Added 0 GSs. Now having 5000000 GSs.
+Step 18800: Relocated 154550 GSs.
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Step 18800: Added 0 GSs. Now having 5000000 GSs.
+Step 18900: Relocated 165776 GSs.
+Step 18900: Added 0 GSs. Now having 5000000 GSs.
+Step 19000: Relocated 161623 GSs.
+Step 19000: Added 0 GSs. Now having 5000000 GSs.
+[19000] loss 0.0514 l1 0.0291 ssim 0.8673 N 5000000
+Step 19100: Relocated 159689 GSs.
+Step 19100: Added 0 GSs. Now having 5000000 GSs.
+Step 19200: Relocated 143023 GSs.
+Step 19200: Added 0 GSs. Now having 5000000 GSs.
+Step 19300: Relocated 140982 GSs.
+Step 19300: Added 0 GSs. Now having 5000000 GSs.
+Step 19400: Relocated 148589 GSs.
+Step 19400: Added 0 GSs. Now having 5000000 GSs.
+Step 19500: Relocated 158203 GSs.
+Step 19500: Added 0 GSs. Now having 5000000 GSs.
+Step 19600: Relocated 146450 GSs.
+Step 19600: Added 0 GSs. Now having 5000000 GSs.
+Step 19700: Relocated 137589 GSs.
+Step 19700: Added 0 GSs. Now having 5000000 GSs.
+Step 19800: Relocated 134656 GSs.
+Step 19800: Added 0 GSs. Now having 5000000 GSs.
+Step 19900: Relocated 132766 GSs.
+Step 19900: Added 0 GSs. Now having 5000000 GSs.
+Step 20000: Relocated 132154 GSs.
+Step 20000: Added 0 GSs. Now having 5000000 GSs.
+[20000] loss 0.0473 l1 0.0284 ssim 0.8854 N 5000000
+Step 20100: Relocated 129844 GSs.
+Step 20100: Added 0 GSs. Now having 5000000 GSs.
+Step 20200: Relocated 128359 GSs.
+Step 20200: Added 0 GSs. Now having 5000000 GSs.
+Step 20300: Relocated 131585 GSs.
+Step 20300: Added 0 GSs. Now having 5000000 GSs.
+Step 20400: Relocated 134081 GSs.
+Step 20400: Added 0 GSs. Now having 5000000 GSs.
+Step 20500: Relocated 132510 GSs.
+Step 20500: Added 0 GSs. Now having 5000000 GSs.
+Step 20600: Relocated 127628 GSs.
+Step 20600: Added 0 GSs. Now having 5000000 GSs.
+Step 20700: Relocated 133001 GSs.
+Step 20700: Added 0 GSs. Now having 5000000 GSs.
+Step 20800: Relocated 134205 GSs.
+Step 20800: Added 0 GSs. Now having 5000000 GSs.
+Step 20900: Relocated 133095 GSs.
+Step 20900: Added 0 GSs. Now having 5000000 GSs.
+Step 21000: Relocated 121625 GSs.
+Step 21000: Added 0 GSs. Now having 5000000 GSs.
+[21000] loss 0.0361 l1 0.0225 ssim 0.9180 N 5000000
+Step 21100: Relocated 125117 GSs.
+Step 21100: Added 0 GSs. Now having 5000000 GSs.
+Step 21200: Relocated 118023 GSs.
+Step 21200: Added 0 GSs. Now having 5000000 GSs.
+Step 21300: Relocated 120458 GSs.
+Step 21300: Added 0 GSs. Now having 5000000 GSs.
+Step 21400: Relocated 116593 GSs.
+Step 21400: Added 0 GSs. Now having 5000000 GSs.
+Step 21500: Relocated 113668 GSs.
+Step 21500: Added 0 GSs. Now having 5000000 GSs.
+Step 21600: Relocated 109163 GSs.
+Step 21600: Added 0 GSs. Now having 5000000 GSs.
+Step 21700: Relocated 117339 GSs.
+Step 21700: Added 0 GSs. Now having 5000000 GSs.
+Step 21800: Relocated 112798 GSs.
+Step 21800: Added 0 GSs. Now having 5000000 GSs.
+Step 21900: Relocated 118631 GSs.
+Step 21900: Added 0 GSs. Now having 5000000 GSs.
+Step 22000: Relocated 111773 GSs.
+Step 22000: Added 0 GSs. Now having 5000000 GSs.
+[22000] loss 0.0479 l1 0.0314 ssim 0.8948 N 5000000
+Step 22100: Relocated 115470 GSs.
+Step 22100: Added 0 GSs. Now having 5000000 GSs.
+Step 22200: Relocated 106658 GSs.
+Step 22200: Added 0 GSs. Now having 5000000 GSs.
+Step 22300: Relocated 105805 GSs.
+Step 22300: Added 0 GSs. Now having 5000000 GSs.
+Step 22400: Relocated 103106 GSs.
+Step 22400: Added 0 GSs. Now having 5000000 GSs.
+Step 22500: Relocated 99106 GSs.
+Step 22500: Added 0 GSs. Now having 5000000 GSs.
+Step 22600: Relocated 101099 GSs.
+Step 22600: Added 0 GSs. Now having 5000000 GSs.
+Step 22700: Relocated 100025 GSs.
+Step 22700: Added 0 GSs. Now having 5000000 GSs.
+Step 22800: Relocated 107808 GSs.
+Step 22800: Added 0 GSs. Now having 5000000 GSs.
+Step 22900: Relocated 102755 GSs.
+Step 22900: Added 0 GSs. Now having 5000000 GSs.
+Step 23000: Relocated 99070 GSs.
+Step 23000: Added 0 GSs. Now having 5000000 GSs.
+[23000] loss 0.0544 l1 0.0348 ssim 0.8755 N 5000000
+Step 23100: Relocated 95182 GSs.
+Step 23100: Added 0 GSs. Now having 5000000 GSs.
+Step 23200: Relocated 97791 GSs.
+Step 23200: Added 0 GSs. Now having 5000000 GSs.
+Step 23300: Relocated 95885 GSs.
+Step 23300: Added 0 GSs. Now having 5000000 GSs.
+Step 23400: Relocated 101042 GSs.
+Step 23400: Added 0 GSs. Now having 5000000 GSs.
+Step 23500: Relocated 100930 GSs.
+Step 23500: Added 0 GSs. Now having 5000000 GSs.
+Step 23600: Relocated 95483 GSs.
+Step 23600: Added 0 GSs. Now having 5000000 GSs.
+Step 23700: Relocated 86708 GSs.
+Step 23700: Added 0 GSs. Now having 5000000 GSs.
+Step 23800: Relocated 84739 GSs.
+Step 23800: Added 0 GSs. Now having 5000000 GSs.
+Step 23900: Relocated 85326 GSs.
+Step 23900: Added 0 GSs. Now having 5000000 GSs.
+Step 24000: Relocated 84037 GSs.
+Step 24000: Added 0 GSs. Now having 5000000 GSs.
+[24000] loss 0.0517 l1 0.0384 ssim 0.9038 N 5000000
+Step 24100: Relocated 81708 GSs.
+Step 24100: Added 0 GSs. Now having 5000000 GSs.
+Step 24200: Relocated 81019 GSs.
+Step 24200: Added 0 GSs. Now having 5000000 GSs.
+Step 24300: Relocated 80343 GSs.
+Step 24300: Added 0 GSs. Now having 5000000 GSs.
+Step 24400: Relocated 81573 GSs.
+Step 24400: Added 0 GSs. Now having 5000000 GSs.
+Step 24500: Relocated 82451 GSs.
+Step 24500: Added 0 GSs. Now having 5000000 GSs.
+Step 24600: Relocated 77442 GSs.
+Step 24600: Added 0 GSs. Now having 5000000 GSs.
+Step 24700: Relocated 75244 GSs.
+Step 24700: Added 0 GSs. Now having 5000000 GSs.
+Step 24800: Relocated 75350 GSs.
+Step 24800: Added 0 GSs. Now having 5000000 GSs.
+Step 24900: Relocated 76158 GSs.
+Step 24900: Added 0 GSs. Now having 5000000 GSs.
+[25000] loss 0.0410 l1 0.0254 ssim 0.9056 N 5000000
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[26000] loss 0.0453 l1 0.0256 ssim 0.9232 N 5000000
+[27000] loss 0.0514 l1 0.0259 ssim 0.8953 N 5000000
+[28000] loss 0.0464 l1 0.0237 ssim 0.9132 N 5000000
+[29000] loss 0.0607 l1 0.0357 ssim 0.8938 N 5000000
+[29999] loss 0.0450 l1 0.0271 ssim 0.9255 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/output/hcm0034_gsplatB9ut/ckpt.pt
+=== hcm0034_gsplatB9ut TRAIN DONE ===
+Wrote 60 images to /mnt/d/avv/output/hcm0034_gsplatB9ut/test_poses_renders
+hcm0034    n= 60  PSNR 25.1246  SSIM 0.8625  LPIPS(alex) 0.0751 LPIPS(vgg) 0.1209  Score(alex) 0.7794  Score(vgg) 0.7611
+  Score(vgg)  = 76.1116   [0.4*(1-LPIPS)=0.3516  0.3*SSIM=0.2587  0.3*PSNRn=0.1507]  (psnr_max=50.0)
+=== hcm0034_gsplatB9ut SCORED ===
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/train_gsplat.py:302: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  gt_cache[vi] = torch.from_numpy(
+240/397 images.bin entries have files in /home/bkai/data/phase1/public_set/HCM0193/train/images
+240 views, 214593 init points, K=[[925.2,0,660.0],[0,925.2,494.5]], size 1320x989
+3DGUT mode: classic + with_ut + with_eval3d, k1=+0.007952
+scene_scale 9.129
+[0] loss 0.2964 l1 0.2006 ssim 0.3511 N 214593
+Step 600: Relocated 28603 GSs.
+Step 600: Added 10729 GSs. Now having 225322 GSs.
+Step 700: Relocated 7040 GSs.
+Step 700: Added 11266 GSs. Now having 236588 GSs.
+Step 800: Relocated 6518 GSs.
+Step 800: Added 11829 GSs. Now having 248417 GSs.
+Step 900: Relocated 6596 GSs.
+Step 900: Added 12420 GSs. Now having 260837 GSs.
+Step 1000: Relocated 6846 GSs.
+Step 1000: Added 13041 GSs. Now having 273878 GSs.
+[1000] loss 0.1390 l1 0.0651 ssim 0.5832 N 273878
+Step 1100: Relocated 7677 GSs.
+Step 1100: Added 13693 GSs. Now having 287571 GSs.
+Step 1200: Relocated 7879 GSs.
+Step 1200: Added 14378 GSs. Now having 301949 GSs.
+Step 1300: Relocated 8616 GSs.
+Step 1300: Added 15097 GSs. Now having 317046 GSs.
+Step 1400: Relocated 9090 GSs.
+Step 1400: Added 15852 GSs. Now having 332898 GSs.
+Step 1500: Relocated 11609 GSs.
+Step 1500: Added 16644 GSs. Now having 349542 GSs.
+Step 1600: Relocated 11536 GSs.
+Step 1600: Added 17477 GSs. Now having 367019 GSs.
+Step 1700: Relocated 13559 GSs.
+Step 1700: Added 18350 GSs. Now having 385369 GSs.
+Step 1800: Relocated 13614 GSs.
+Step 1800: Added 19268 GSs. Now having 404637 GSs.
+Step 1900: Relocated 13923 GSs.
+Step 1900: Added 20231 GSs. Now having 424868 GSs.
+Step 2000: Relocated 17038 GSs.
+Step 2000: Added 21243 GSs. Now having 446111 GSs.
+[2000] loss 0.0921 l1 0.0421 ssim 0.7226 N 446111
+Step 2100: Relocated 19216 GSs.
+Step 2100: Added 22305 GSs. Now having 468416 GSs.
+Step 2200: Relocated 18983 GSs.
+Step 2200: Added 23420 GSs. Now having 491836 GSs.
+Step 2300: Relocated 19990 GSs.
+Step 2300: Added 24591 GSs. Now having 516427 GSs.
+Step 2400: Relocated 24147 GSs.
+Step 2400: Added 25821 GSs. Now having 542248 GSs.
+Step 2500: Relocated 24036 GSs.
+Step 2500: Added 27112 GSs. Now having 569360 GSs.
+Step 2600: Relocated 28022 GSs.
+Step 2600: Added 28468 GSs. Now having 597828 GSs.
+Step 2700: Relocated 25777 GSs.
+Step 2700: Added 29891 GSs. Now having 627719 GSs.
+Step 2800: Relocated 27758 GSs.
+Step 2800: Added 31385 GSs. Now having 659104 GSs.
+Step 2900: Relocated 30720 GSs.
+Step 2900: Added 32955 GSs. Now having 692059 GSs.
+Step 3000: Relocated 32802 GSs.
+Step 3000: Added 34602 GSs. Now having 726661 GSs.
+[3000] loss 0.1309 l1 0.0585 ssim 0.5915 N 726661
+Step 3100: Relocated 33704 GSs.
+Step 3100: Added 36333 GSs. Now having 762994 GSs.
+Step 3200: Relocated 41041 GSs.
+Step 3200: Added 38149 GSs. Now having 801143 GSs.
+Step 3300: Relocated 41480 GSs.
+Step 3300: Added 40057 GSs. Now having 841200 GSs.
+Step 3400: Relocated 43374 GSs.
+Step 3400: Added 42060 GSs. Now having 883260 GSs.
+Step 3500: Relocated 46165 GSs.
+Step 3500: Added 44163 GSs. Now having 927423 GSs.
+Step 3600: Relocated 53149 GSs.
+Step 3600: Added 46371 GSs. Now having 973794 GSs.
+Step 3700: Relocated 55849 GSs.
+Step 3700: Added 48689 GSs. Now having 1022483 GSs.
+Step 3800: Relocated 60204 GSs.
+Step 3800: Added 51124 GSs. Now having 1073607 GSs.
+Step 3900: Relocated 64565 GSs.
+Step 3900: Added 53680 GSs. Now having 1127287 GSs.
+Step 4000: Relocated 63699 GSs.
+Step 4000: Added 56364 GSs. Now having 1183651 GSs.
+[4000] loss 0.1107 l1 0.0466 ssim 0.6431 N 1183651
+Step 4100: Relocated 77365 GSs.
+Step 4100: Added 59182 GSs. Now having 1242833 GSs.
+Step 4200: Relocated 79904 GSs.
+Step 4200: Added 62141 GSs. Now having 1304974 GSs.
+Step 4300: Relocated 79571 GSs.
+Step 4300: Added 65248 GSs. Now having 1370222 GSs.
+Step 4400: Relocated 78956 GSs.
+Step 4400: Added 68511 GSs. Now having 1438733 GSs.
+Step 4500: Relocated 82379 GSs.
+Step 4500: Added 71936 GSs. Now having 1510669 GSs.
+Step 4600: Relocated 82873 GSs.
+Step 4600: Added 75533 GSs. Now having 1586202 GSs.
+Step 4700: Relocated 111916 GSs.
+Step 4700: Added 79310 GSs. Now having 1665512 GSs.
+Step 4800: Relocated 109406 GSs.
+Step 4800: Added 83275 GSs. Now having 1748787 GSs.
+Step 4900: Relocated 119767 GSs.
+Step 4900: Added 87439 GSs. Now having 1836226 GSs.
+Step 5000: Relocated 121705 GSs.
+Step 5000: Added 91811 GSs. Now having 1928037 GSs.
+[5000] loss 0.0764 l1 0.0377 ssim 0.7774 N 1928037
+Step 5100: Relocated 130369 GSs.
+Step 5100: Added 96401 GSs. Now having 2024438 GSs.
+Step 5200: Relocated 143829 GSs.
+Step 5200: Added 101221 GSs. Now having 2125659 GSs.
+Step 5300: Relocated 152512 GSs.
+Step 5300: Added 106282 GSs. Now having 2231941 GSs.
+Step 5400: Relocated 148754 GSs.
+Step 5400: Added 111597 GSs. Now having 2343538 GSs.
+Step 5500: Relocated 152117 GSs.
+Step 5500: Added 117176 GSs. Now having 2460714 GSs.
+Step 5600: Relocated 162227 GSs.
+Step 5600: Added 123035 GSs. Now having 2583749 GSs.
+Step 5700: Relocated 179853 GSs.
+Step 5700: Added 129187 GSs. Now having 2712936 GSs.
+Step 5800: Relocated 189939 GSs.
+Step 5800: Added 135646 GSs. Now having 2848582 GSs.
+Step 5900: Relocated 207586 GSs.
+Step 5900: Added 142429 GSs. Now having 2991011 GSs.
+Step 6000: Relocated 251292 GSs.
+Step 6000: Added 149550 GSs. Now having 3140561 GSs.
+[6000] loss 0.0715 l1 0.0342 ssim 0.7867 N 3140561
+Step 6100: Relocated 236660 GSs.
+Step 6100: Added 157028 GSs. Now having 3297589 GSs.
+Step 6200: Relocated 263167 GSs.
+Step 6200: Added 164879 GSs. Now having 3462468 GSs.
+Step 6300: Relocated 265092 GSs.
+Step 6300: Added 173123 GSs. Now having 3635591 GSs.
+Step 6400: Relocated 269086 GSs.
+Step 6400: Added 181779 GSs. Now having 3817370 GSs.
+Step 6500: Relocated 283517 GSs.
+Step 6500: Added 190868 GSs. Now having 4008238 GSs.
+Step 6600: Relocated 309395 GSs.
+Step 6600: Added 200411 GSs. Now having 4208649 GSs.
+Step 6700: Relocated 322409 GSs.
+Step 6700: Added 210432 GSs. Now having 4419081 GSs.
+Step 6800: Relocated 335854 GSs.
+Step 6800: Added 220954 GSs. Now having 4640035 GSs.
+Step 6900: Relocated 368991 GSs.
+Step 6900: Added 232001 GSs. Now having 4872036 GSs.
+Step 7000: Relocated 393721 GSs.
+Step 7000: Added 127964 GSs. Now having 5000000 GSs.
+[7000] loss 0.1222 l1 0.0679 ssim 0.6668 N 5000000
+Step 7100: Relocated 363316 GSs.
+Step 7100: Added 0 GSs. Now having 5000000 GSs.
+Step 7200: Relocated 323802 GSs.
+Step 7200: Added 0 GSs. Now having 5000000 GSs.
+Step 7300: Relocated 293679 GSs.
+Step 7300: Added 0 GSs. Now having 5000000 GSs.
+Step 7400: Relocated 291787 GSs.
+Step 7400: Added 0 GSs. Now having 5000000 GSs.
+Step 7500: Relocated 266983 GSs.
+Step 7500: Added 0 GSs. Now having 5000000 GSs.
+Step 7600: Relocated 278816 GSs.
+Step 7600: Added 0 GSs. Now having 5000000 GSs.
+Step 7700: Relocated 251614 GSs.
+Step 7700: Added 0 GSs. Now having 5000000 GSs.
+Step 7800: Relocated 254214 GSs.
+Step 7800: Added 0 GSs. Now having 5000000 GSs.
+Step 7900: Relocated 255567 GSs.
+Step 7900: Added 0 GSs. Now having 5000000 GSs.
+Step 8000: Relocated 248399 GSs.
+Step 8000: Added 0 GSs. Now having 5000000 GSs.
+[8000] loss 0.0518 l1 0.0272 ssim 0.8563 N 5000000
+Step 8100: Relocated 250355 GSs.
+Step 8100: Added 0 GSs. Now having 5000000 GSs.
+Step 8200: Relocated 235069 GSs.
+Step 8200: Added 0 GSs. Now having 5000000 GSs.
+Step 8300: Relocated 248135 GSs.
+Step 8300: Added 0 GSs. Now having 5000000 GSs.
+Step 8400: Relocated 234458 GSs.
+Step 8400: Added 0 GSs. Now having 5000000 GSs.
+Step 8500: Relocated 227634 GSs.
+Step 8500: Added 0 GSs. Now having 5000000 GSs.
+Step 8600: Relocated 230592 GSs.
+Step 8600: Added 0 GSs. Now having 5000000 GSs.
+Step 8700: Relocated 232568 GSs.
+Step 8700: Added 0 GSs. Now having 5000000 GSs.
+Step 8800: Relocated 244890 GSs.
+Step 8800: Added 0 GSs. Now having 5000000 GSs.
+Step 8900: Relocated 227944 GSs.
+Step 8900: Added 0 GSs. Now having 5000000 GSs.
+Step 9000: Relocated 243847 GSs.
+Step 9000: Added 0 GSs. Now having 5000000 GSs.
+[9000] loss 0.0578 l1 0.0288 ssim 0.8337 N 5000000
+Step 9100: Relocated 220641 GSs.
+Step 9100: Added 0 GSs. Now having 5000000 GSs.
+Step 9200: Relocated 229219 GSs.
+Step 9200: Added 0 GSs. Now having 5000000 GSs.
+Step 9300: Relocated 228617 GSs.
+Step 9300: Added 0 GSs. Now having 5000000 GSs.
+Step 9400: Relocated 223887 GSs.
+Step 9400: Added 0 GSs. Now having 5000000 GSs.
+Step 9500: Relocated 236317 GSs.
+Step 9500: Added 0 GSs. Now having 5000000 GSs.
+Step 9600: Relocated 223623 GSs.
+Step 9600: Added 0 GSs. Now having 5000000 GSs.
+Step 9700: Relocated 222765 GSs.
+Step 9700: Added 0 GSs. Now having 5000000 GSs.
+Step 9800: Relocated 224151 GSs.
+Step 9800: Added 0 GSs. Now having 5000000 GSs.
+Step 9900: Relocated 217160 GSs.
+Step 9900: Added 0 GSs. Now having 5000000 GSs.
+Step 10000: Relocated 222288 GSs.
+Step 10000: Added 0 GSs. Now having 5000000 GSs.
+[10000] loss 0.0573 l1 0.0324 ssim 0.8505 N 5000000
+Step 10100: Relocated 223312 GSs.
+Step 10100: Added 0 GSs. Now having 5000000 GSs.
+Step 10200: Relocated 223808 GSs.
+Step 10200: Added 0 GSs. Now having 5000000 GSs.
+Step 10300: Relocated 228607 GSs.
+Step 10300: Added 0 GSs. Now having 5000000 GSs.
+Step 10400: Relocated 229857 GSs.
+Step 10400: Added 0 GSs. Now having 5000000 GSs.
+Step 10500: Relocated 218620 GSs.
+Step 10500: Added 0 GSs. Now having 5000000 GSs.
+Step 10600: Relocated 212720 GSs.
+Step 10600: Added 0 GSs. Now having 5000000 GSs.
+Step 10700: Relocated 228365 GSs.
+Step 10700: Added 0 GSs. Now having 5000000 GSs.
+Step 10800: Relocated 221263 GSs.
+Step 10800: Added 0 GSs. Now having 5000000 GSs.
+Step 10900: Relocated 218146 GSs.
+Step 10900: Added 0 GSs. Now having 5000000 GSs.
+Step 11000: Relocated 214863 GSs.
+Step 11000: Added 0 GSs. Now having 5000000 GSs.
+[11000] loss 0.0791 l1 0.0398 ssim 0.7715 N 5000000
+Step 11100: Relocated 225726 GSs.
+Step 11100: Added 0 GSs. Now having 5000000 GSs.
+Step 11200: Relocated 232499 GSs.
+Step 11200: Added 0 GSs. Now having 5000000 GSs.
+Step 11300: Relocated 220737 GSs.
+Step 11300: Added 0 GSs. Now having 5000000 GSs.
+Step 11400: Relocated 224902 GSs.
+Step 11400: Added 0 GSs. Now having 5000000 GSs.
+Step 11500: Relocated 216369 GSs.
+Step 11500: Added 0 GSs. Now having 5000000 GSs.
+Step 11600: Relocated 208094 GSs.
+Step 11600: Added 0 GSs. Now having 5000000 GSs.
+Step 11700: Relocated 216813 GSs.
+Step 11700: Added 0 GSs. Now having 5000000 GSs.
+Step 11800: Relocated 202715 GSs.
+Step 11800: Added 0 GSs. Now having 5000000 GSs.
+Step 11900: Relocated 213677 GSs.
+Step 11900: Added 0 GSs. Now having 5000000 GSs.
+Step 12000: Relocated 217515 GSs.
+Step 12000: Added 0 GSs. Now having 5000000 GSs.
+[12000] loss 0.0579 l1 0.0315 ssim 0.8444 N 5000000
+Step 12100: Relocated 207261 GSs.
+Step 12100: Added 0 GSs. Now having 5000000 GSs.
+Step 12200: Relocated 207307 GSs.
+Step 12200: Added 0 GSs. Now having 5000000 GSs.
+Step 12300: Relocated 210455 GSs.
+Step 12300: Added 0 GSs. Now having 5000000 GSs.
+Step 12400: Relocated 200984 GSs.
+Step 12400: Added 0 GSs. Now having 5000000 GSs.
+Step 12500: Relocated 214631 GSs.
+Step 12500: Added 0 GSs. Now having 5000000 GSs.
+Step 12600: Relocated 200799 GSs.
+Step 12600: Added 0 GSs. Now having 5000000 GSs.
+Step 12700: Relocated 205749 GSs.
+Step 12700: Added 0 GSs. Now having 5000000 GSs.
+Step 12800: Relocated 214119 GSs.
+Step 12800: Added 0 GSs. Now having 5000000 GSs.
+Step 12900: Relocated 219594 GSs.
+Step 12900: Added 0 GSs. Now having 5000000 GSs.
+Step 13000: Relocated 226067 GSs.
+Step 13000: Added 0 GSs. Now having 5000000 GSs.
+[13000] loss 0.0790 l1 0.0421 ssim 0.7815 N 5000000
+Step 13100: Relocated 204007 GSs.
+Step 13100: Added 0 GSs. Now having 5000000 GSs.
+Step 13200: Relocated 209498 GSs.
+Step 13200: Added 0 GSs. Now having 5000000 GSs.
+Step 13300: Relocated 196991 GSs.
+Step 13300: Added 0 GSs. Now having 5000000 GSs.
+Step 13400: Relocated 202509 GSs.
+Step 13400: Added 0 GSs. Now having 5000000 GSs.
+Step 13500: Relocated 206723 GSs.
+Step 13500: Added 0 GSs. Now having 5000000 GSs.
+Step 13600: Relocated 197757 GSs.
+Step 13600: Added 0 GSs. Now having 5000000 GSs.
+Step 13700: Relocated 217161 GSs.
+Step 13700: Added 0 GSs. Now having 5000000 GSs.
+Step 13800: Relocated 198973 GSs.
+Step 13800: Added 0 GSs. Now having 5000000 GSs.
+Step 13900: Relocated 200309 GSs.
+Step 13900: Added 0 GSs. Now having 5000000 GSs.
+Step 14000: Relocated 206953 GSs.
+Step 14000: Added 0 GSs. Now having 5000000 GSs.
+[14000] loss 0.0461 l1 0.0265 ssim 0.8835 N 5000000
+Step 14100: Relocated 208161 GSs.
+Step 14100: Added 0 GSs. Now having 5000000 GSs.
+Step 14200: Relocated 191832 GSs.
+Step 14200: Added 0 GSs. Now having 5000000 GSs.
+Step 14300: Relocated 188114 GSs.
+Step 14300: Added 0 GSs. Now having 5000000 GSs.
+Step 14400: Relocated 194307 GSs.
+Step 14400: Added 0 GSs. Now having 5000000 GSs.
+Step 14500: Relocated 198878 GSs.
+Step 14500: Added 0 GSs. Now having 5000000 GSs.
+Step 14600: Relocated 190081 GSs.
+Step 14600: Added 0 GSs. Now having 5000000 GSs.
+Step 14700: Relocated 188764 GSs.
+Step 14700: Added 0 GSs. Now having 5000000 GSs.
+Step 14800: Relocated 194613 GSs.
+Step 14800: Added 0 GSs. Now having 5000000 GSs.
+Step 14900: Relocated 183911 GSs.
+Step 14900: Added 0 GSs. Now having 5000000 GSs.
+Step 15000: Relocated 183734 GSs.
+Step 15000: Added 0 GSs. Now having 5000000 GSs.
+[15000] loss 0.0607 l1 0.0307 ssim 0.8279 N 5000000
+Step 15100: Relocated 192964 GSs.
+Step 15100: Added 0 GSs. Now having 5000000 GSs.
+Step 15200: Relocated 180729 GSs.
+Step 15200: Added 0 GSs. Now having 5000000 GSs.
+Step 15300: Relocated 179720 GSs.
+Step 15300: Added 0 GSs. Now having 5000000 GSs.
+Step 15400: Relocated 183439 GSs.
+Step 15400: Added 0 GSs. Now having 5000000 GSs.
+Step 15500: Relocated 176252 GSs.
+Step 15500: Added 0 GSs. Now having 5000000 GSs.
+Step 15600: Relocated 175010 GSs.
+Step 15600: Added 0 GSs. Now having 5000000 GSs.
+Step 15700: Relocated 175408 GSs.
+Step 15700: Added 0 GSs. Now having 5000000 GSs.
+Step 15800: Relocated 180274 GSs.
+Step 15800: Added 0 GSs. Now having 5000000 GSs.
+Step 15900: Relocated 192478 GSs.
+Step 15900: Added 0 GSs. Now having 5000000 GSs.
+Step 16000: Relocated 165659 GSs.
+Step 16000: Added 0 GSs. Now having 5000000 GSs.
+[16000] loss 0.0443 l1 0.0251 ssim 0.8874 N 5000000
+Step 16100: Relocated 173650 GSs.
+Step 16100: Added 0 GSs. Now having 5000000 GSs.
+Step 16200: Relocated 179949 GSs.
+Step 16200: Added 0 GSs. Now having 5000000 GSs.
+Step 16300: Relocated 182415 GSs.
+Step 16300: Added 0 GSs. Now having 5000000 GSs.
+Step 16400: Relocated 175161 GSs.
+Step 16400: Added 0 GSs. Now having 5000000 GSs.
+Step 16500: Relocated 171055 GSs.
+Step 16500: Added 0 GSs. Now having 5000000 GSs.
+Step 16600: Relocated 161057 GSs.
+Step 16600: Added 0 GSs. Now having 5000000 GSs.
+Step 16700: Relocated 156549 GSs.
+Step 16700: Added 0 GSs. Now having 5000000 GSs.
+Step 16800: Relocated 158113 GSs.
+Step 16800: Added 0 GSs. Now having 5000000 GSs.
+Step 16900: Relocated 152723 GSs.
+Step 16900: Added 0 GSs. Now having 5000000 GSs.
+Step 17000: Relocated 156637 GSs.
+Step 17000: Added 0 GSs. Now having 5000000 GSs.
+[17000] loss 0.0680 l1 0.0356 ssim 0.8113 N 5000000
+Step 17100: Relocated 157333 GSs.
+Step 17100: Added 0 GSs. Now having 5000000 GSs.
+Step 17200: Relocated 149097 GSs.
+Step 17200: Added 0 GSs. Now having 5000000 GSs.
+Step 17300: Relocated 149993 GSs.
+Step 17300: Added 0 GSs. Now having 5000000 GSs.
+Step 17400: Relocated 147462 GSs.
+Step 17400: Added 0 GSs. Now having 5000000 GSs.
+Step 17500: Relocated 145001 GSs.
+Step 17500: Added 0 GSs. Now having 5000000 GSs.
+Step 17600: Relocated 144604 GSs.
+Step 17600: Added 0 GSs. Now having 5000000 GSs.
+Step 17700: Relocated 147224 GSs.
+Step 17700: Added 0 GSs. Now having 5000000 GSs.
+Step 17800: Relocated 150649 GSs.
+Step 17800: Added 0 GSs. Now having 5000000 GSs.
+Step 17900: Relocated 145815 GSs.
+Step 17900: Added 0 GSs. Now having 5000000 GSs.
+Step 18000: Relocated 145640 GSs.
+Step 18000: Added 0 GSs. Now having 5000000 GSs.
+[18000] loss 0.0393 l1 0.0231 ssim 0.9047 N 5000000
+Step 18100: Relocated 140657 GSs.
+Step 18100: Added 0 GSs. Now having 5000000 GSs.
+Step 18200: Relocated 132098 GSs.
+Step 18200: Added 0 GSs. Now having 5000000 GSs.
+Step 18300: Relocated 139492 GSs.
+Step 18300: Added 0 GSs. Now having 5000000 GSs.
+Step 18400: Relocated 128996 GSs.
+Step 18400: Added 0 GSs. Now having 5000000 GSs.
+Step 18500: Relocated 129640 GSs.
+Step 18500: Added 0 GSs. Now having 5000000 GSs.
+Step 18600: Relocated 134061 GSs.
+Step 18600: Added 0 GSs. Now having 5000000 GSs.
+Step 18700: Relocated 132200 GSs.
+Step 18700: Added 0 GSs. Now having 5000000 GSs.
+Step 18800: Relocated 136900 GSs.
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Step 18800: Added 0 GSs. Now having 5000000 GSs.
+Step 18900: Relocated 138791 GSs.
+Step 18900: Added 0 GSs. Now having 5000000 GSs.
+Step 19000: Relocated 132774 GSs.
+Step 19000: Added 0 GSs. Now having 5000000 GSs.
+[19000] loss 0.0565 l1 0.0299 ssim 0.8460 N 5000000
+Step 19100: Relocated 131588 GSs.
+Step 19100: Added 0 GSs. Now having 5000000 GSs.
+Step 19200: Relocated 124918 GSs.
+Step 19200: Added 0 GSs. Now having 5000000 GSs.
+Step 19300: Relocated 127257 GSs.
+Step 19300: Added 0 GSs. Now having 5000000 GSs.
+Step 19400: Relocated 132865 GSs.
+Step 19400: Added 0 GSs. Now having 5000000 GSs.
+Step 19500: Relocated 135240 GSs.
+Step 19500: Added 0 GSs. Now having 5000000 GSs.
+Step 19600: Relocated 130149 GSs.
+Step 19600: Added 0 GSs. Now having 5000000 GSs.
+Step 19700: Relocated 115645 GSs.
+Step 19700: Added 0 GSs. Now having 5000000 GSs.
+Step 19800: Relocated 110578 GSs.
+Step 19800: Added 0 GSs. Now having 5000000 GSs.
+Step 19900: Relocated 116679 GSs.
+Step 19900: Added 0 GSs. Now having 5000000 GSs.
+Step 20000: Relocated 110841 GSs.
+Step 20000: Added 0 GSs. Now having 5000000 GSs.
+[20000] loss 0.0460 l1 0.0253 ssim 0.8801 N 5000000
+Step 20100: Relocated 118527 GSs.
+Step 20100: Added 0 GSs. Now having 5000000 GSs.
+Step 20200: Relocated 114972 GSs.
+Step 20200: Added 0 GSs. Now having 5000000 GSs.
+Step 20300: Relocated 112461 GSs.
+Step 20300: Added 0 GSs. Now having 5000000 GSs.
+Step 20400: Relocated 109964 GSs.
+Step 20400: Added 0 GSs. Now having 5000000 GSs.
+Step 20500: Relocated 109369 GSs.
+Step 20500: Added 0 GSs. Now having 5000000 GSs.
+Step 20600: Relocated 107425 GSs.
+Step 20600: Added 0 GSs. Now having 5000000 GSs.
+Step 20700: Relocated 117980 GSs.
+Step 20700: Added 0 GSs. Now having 5000000 GSs.
+Step 20800: Relocated 112809 GSs.
+Step 20800: Added 0 GSs. Now having 5000000 GSs.
+Step 20900: Relocated 106120 GSs.
+Step 20900: Added 0 GSs. Now having 5000000 GSs.
+Step 21000: Relocated 100623 GSs.
+Step 21000: Added 0 GSs. Now having 5000000 GSs.
+[21000] loss 0.0407 l1 0.0219 ssim 0.8933 N 5000000
+Step 21100: Relocated 105807 GSs.
+Step 21100: Added 0 GSs. Now having 5000000 GSs.
+Step 21200: Relocated 103907 GSs.
+Step 21200: Added 0 GSs. Now having 5000000 GSs.
+Step 21300: Relocated 99300 GSs.
+Step 21300: Added 0 GSs. Now having 5000000 GSs.
+Step 21400: Relocated 95128 GSs.
+Step 21400: Added 0 GSs. Now having 5000000 GSs.
+Step 21500: Relocated 92194 GSs.
+Step 21500: Added 0 GSs. Now having 5000000 GSs.
+Step 21600: Relocated 93479 GSs.
+Step 21600: Added 0 GSs. Now having 5000000 GSs.
+Step 21700: Relocated 94030 GSs.
+Step 21700: Added 0 GSs. Now having 5000000 GSs.
+Step 21800: Relocated 97807 GSs.
+Step 21800: Added 0 GSs. Now having 5000000 GSs.
+Step 21900: Relocated 97449 GSs.
+Step 21900: Added 0 GSs. Now having 5000000 GSs.
+Step 22000: Relocated 97699 GSs.
+Step 22000: Added 0 GSs. Now having 5000000 GSs.
+[22000] loss 0.0512 l1 0.0299 ssim 0.8725 N 5000000
+Step 22100: Relocated 94800 GSs.
+Step 22100: Added 0 GSs. Now having 5000000 GSs.
+Step 22200: Relocated 86139 GSs.
+Step 22200: Added 0 GSs. Now having 5000000 GSs.
+Step 22300: Relocated 86005 GSs.
+Step 22300: Added 0 GSs. Now having 5000000 GSs.
+Step 22400: Relocated 92214 GSs.
+Step 22400: Added 0 GSs. Now having 5000000 GSs.
+Step 22500: Relocated 85501 GSs.
+Step 22500: Added 0 GSs. Now having 5000000 GSs.
+Step 22600: Relocated 82016 GSs.
+Step 22600: Added 0 GSs. Now having 5000000 GSs.
+Step 22700: Relocated 82385 GSs.
+Step 22700: Added 0 GSs. Now having 5000000 GSs.
+Step 22800: Relocated 85730 GSs.
+Step 22800: Added 0 GSs. Now having 5000000 GSs.
+Step 22900: Relocated 81634 GSs.
+Step 22900: Added 0 GSs. Now having 5000000 GSs.
+Step 23000: Relocated 85271 GSs.
+Step 23000: Added 0 GSs. Now having 5000000 GSs.
+[23000] loss 0.0742 l1 0.0410 ssim 0.8022 N 5000000
+Step 23100: Relocated 79744 GSs.
+Step 23100: Added 0 GSs. Now having 5000000 GSs.
+Step 23200: Relocated 76445 GSs.
+Step 23200: Added 0 GSs. Now having 5000000 GSs.
+Step 23300: Relocated 77686 GSs.
+Step 23300: Added 0 GSs. Now having 5000000 GSs.
+Step 23400: Relocated 77911 GSs.
+Step 23400: Added 0 GSs. Now having 5000000 GSs.
+Step 23500: Relocated 79767 GSs.
+Step 23500: Added 0 GSs. Now having 5000000 GSs.
+Step 23600: Relocated 75168 GSs.
+Step 23600: Added 0 GSs. Now having 5000000 GSs.
+Step 23700: Relocated 72370 GSs.
+Step 23700: Added 0 GSs. Now having 5000000 GSs.
+Step 23800: Relocated 71685 GSs.
+Step 23800: Added 0 GSs. Now having 5000000 GSs.
+Step 23900: Relocated 69060 GSs.
+Step 23900: Added 0 GSs. Now having 5000000 GSs.
+Step 24000: Relocated 71395 GSs.
+Step 24000: Added 0 GSs. Now having 5000000 GSs.
+[24000] loss 0.0387 l1 0.0225 ssim 0.9060 N 5000000
+Step 24100: Relocated 66710 GSs.
+Step 24100: Added 0 GSs. Now having 5000000 GSs.
+Step 24200: Relocated 69215 GSs.
+Step 24200: Added 0 GSs. Now having 5000000 GSs.
+Step 24300: Relocated 67793 GSs.
+Step 24300: Added 0 GSs. Now having 5000000 GSs.
+Step 24400: Relocated 69663 GSs.
+Step 24400: Added 0 GSs. Now having 5000000 GSs.
+Step 24500: Relocated 68303 GSs.
+Step 24500: Added 0 GSs. Now having 5000000 GSs.
+Step 24600: Relocated 63528 GSs.
+Step 24600: Added 0 GSs. Now having 5000000 GSs.
+Step 24700: Relocated 59847 GSs.
+Step 24700: Added 0 GSs. Now having 5000000 GSs.
+Step 24800: Relocated 62403 GSs.
+Step 24800: Added 0 GSs. Now having 5000000 GSs.
+Step 24900: Relocated 57907 GSs.
+Step 24900: Added 0 GSs. Now having 5000000 GSs.
+[25000] loss 0.0455 l1 0.0267 ssim 0.8886 N 5000000
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[26000] loss 0.0454 l1 0.0235 ssim 0.9151 N 5000000
+[27000] loss 0.0498 l1 0.0220 ssim 0.8932 N 5000000
+[28000] loss 0.0531 l1 0.0238 ssim 0.8869 N 5000000
+[29000] loss 0.0499 l1 0.0244 ssim 0.8988 N 5000000
+[29999] loss 0.0429 l1 0.0218 ssim 0.9179 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/output/HCM0193_gsplatB9ut/ckpt.pt
+=== HCM0193_gsplatB9ut TRAIN DONE ===
+Wrote 60 images to /mnt/d/avv/output/HCM0193_gsplatB9ut/test_poses_renders
+HCM0193    n= 60  PSNR 25.6613  SSIM 0.8454  LPIPS(alex) 0.0848 LPIPS(vgg) 0.1262  Score(alex) 0.7736  Score(vgg) 0.7571
+  Score(vgg)  = 75.7081   [0.4*(1-LPIPS)=0.3495  0.3*SSIM=0.2536  0.3*PSNRn=0.1540]  (psnr_max=50.0)
+=== HCM0193_gsplatB9ut SCORED ===
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/train_gsplat.py:302: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  gt_cache[vi] = torch.from_numpy(
+240/409 images.bin entries have files in /home/bkai/data/phase1/public_set/HCM0204/train/images
+240 views, 251715 init points, K=[[925.5,0,660.0],[0,925.5,494.5]], size 1320x989
+3DGUT mode: classic + with_ut + with_eval3d, k1=+0.010010
+scene_scale 11.581
+[0] loss 0.3292 l1 0.2186 ssim 0.2572 N 251715
+Step 600: Relocated 22955 GSs.
+Step 600: Added 12585 GSs. Now having 264300 GSs.
+Step 700: Relocated 7709 GSs.
+Step 700: Added 13215 GSs. Now having 277515 GSs.
+Step 800: Relocated 6580 GSs.
+Step 800: Added 13875 GSs. Now having 291390 GSs.
+Step 900: Relocated 6574 GSs.
+Step 900: Added 14569 GSs. Now having 305959 GSs.
+Step 1000: Relocated 7053 GSs.
+Step 1000: Added 15297 GSs. Now having 321256 GSs.
+[1000] loss 0.1225 l1 0.0577 ssim 0.6347 N 321256
+Step 1100: Relocated 8218 GSs.
+Step 1100: Added 16062 GSs. Now having 337318 GSs.
+Step 1200: Relocated 8903 GSs.
+Step 1200: Added 16865 GSs. Now having 354183 GSs.
+Step 1300: Relocated 10524 GSs.
+Step 1300: Added 17709 GSs. Now having 371892 GSs.
+Step 1400: Relocated 10174 GSs.
+Step 1400: Added 18594 GSs. Now having 390486 GSs.
+Step 1500: Relocated 12759 GSs.
+Step 1500: Added 19524 GSs. Now having 410010 GSs.
+Step 1600: Relocated 13438 GSs.
+Step 1600: Added 20500 GSs. Now having 430510 GSs.
+Step 1700: Relocated 14974 GSs.
+Step 1700: Added 21525 GSs. Now having 452035 GSs.
+Step 1800: Relocated 16163 GSs.
+Step 1800: Added 22601 GSs. Now having 474636 GSs.
+Step 1900: Relocated 17872 GSs.
+Step 1900: Added 23731 GSs. Now having 498367 GSs.
+Step 2000: Relocated 18994 GSs.
+Step 2000: Added 24918 GSs. Now having 523285 GSs.
+[2000] loss 0.1302 l1 0.0638 ssim 0.6169 N 523285
+Step 2100: Relocated 23239 GSs.
+Step 2100: Added 26164 GSs. Now having 549449 GSs.
+Step 2200: Relocated 22378 GSs.
+Step 2200: Added 27472 GSs. Now having 576921 GSs.
+Step 2300: Relocated 24285 GSs.
+Step 2300: Added 28846 GSs. Now having 605767 GSs.
+Step 2400: Relocated 31316 GSs.
+Step 2400: Added 30288 GSs. Now having 636055 GSs.
+Step 2500: Relocated 31144 GSs.
+Step 2500: Added 31802 GSs. Now having 667857 GSs.
+Step 2600: Relocated 33464 GSs.
+Step 2600: Added 33392 GSs. Now having 701249 GSs.
+Step 2700: Relocated 32924 GSs.
+Step 2700: Added 35062 GSs. Now having 736311 GSs.
+Step 2800: Relocated 33472 GSs.
+Step 2800: Added 36815 GSs. Now having 773126 GSs.
+Step 2900: Relocated 38374 GSs.
+Step 2900: Added 38656 GSs. Now having 811782 GSs.
+Step 3000: Relocated 41814 GSs.
+Step 3000: Added 40589 GSs. Now having 852371 GSs.
+[3000] loss 0.1011 l1 0.0494 ssim 0.7019 N 852371
+Step 3100: Relocated 43388 GSs.
+Step 3100: Added 42618 GSs. Now having 894989 GSs.
+Step 3200: Relocated 49234 GSs.
+Step 3200: Added 44749 GSs. Now having 939738 GSs.
+Step 3300: Relocated 52009 GSs.
+Step 3300: Added 46986 GSs. Now having 986724 GSs.
+Step 3400: Relocated 62052 GSs.
+Step 3400: Added 49336 GSs. Now having 1036060 GSs.
+Step 3500: Relocated 62336 GSs.
+Step 3500: Added 51803 GSs. Now having 1087863 GSs.
+Step 3600: Relocated 69160 GSs.
+Step 3600: Added 54393 GSs. Now having 1142256 GSs.
+Step 3700: Relocated 65018 GSs.
+Step 3700: Added 57112 GSs. Now having 1199368 GSs.
+Step 3800: Relocated 69264 GSs.
+Step 3800: Added 59968 GSs. Now having 1259336 GSs.
+Step 3900: Relocated 73122 GSs.
+Step 3900: Added 62966 GSs. Now having 1322302 GSs.
+Step 4000: Relocated 81426 GSs.
+Step 4000: Added 66115 GSs. Now having 1388417 GSs.
+[4000] loss 0.1161 l1 0.0542 ssim 0.6447 N 1388417
+Step 4100: Relocated 87303 GSs.
+Step 4100: Added 69420 GSs. Now having 1457837 GSs.
+Step 4200: Relocated 97004 GSs.
+Step 4200: Added 72891 GSs. Now having 1530728 GSs.
+Step 4300: Relocated 97854 GSs.
+Step 4300: Added 76536 GSs. Now having 1607264 GSs.
+Step 4400: Relocated 106671 GSs.
+Step 4400: Added 80363 GSs. Now having 1687627 GSs.
+Step 4500: Relocated 116215 GSs.
+Step 4500: Added 84381 GSs. Now having 1772008 GSs.
+Step 4600: Relocated 131618 GSs.
+Step 4600: Added 88600 GSs. Now having 1860608 GSs.
+Step 4700: Relocated 155600 GSs.
+Step 4700: Added 93030 GSs. Now having 1953638 GSs.
+Step 4800: Relocated 139420 GSs.
+Step 4800: Added 97681 GSs. Now having 2051319 GSs.
+Step 4900: Relocated 156489 GSs.
+Step 4900: Added 102565 GSs. Now having 2153884 GSs.
+Step 5000: Relocated 165007 GSs.
+Step 5000: Added 107694 GSs. Now having 2261578 GSs.
+[5000] loss 0.0858 l1 0.0443 ssim 0.7553 N 2261578
+Step 5100: Relocated 166878 GSs.
+Step 5100: Added 113078 GSs. Now having 2374656 GSs.
+Step 5200: Relocated 168611 GSs.
+Step 5200: Added 118732 GSs. Now having 2493388 GSs.
+Step 5300: Relocated 182882 GSs.
+Step 5300: Added 124669 GSs. Now having 2618057 GSs.
+Step 5400: Relocated 194400 GSs.
+Step 5400: Added 130902 GSs. Now having 2748959 GSs.
+Step 5500: Relocated 201087 GSs.
+Step 5500: Added 137447 GSs. Now having 2886406 GSs.
+Step 5600: Relocated 216688 GSs.
+Step 5600: Added 144320 GSs. Now having 3030726 GSs.
+Step 5700: Relocated 223765 GSs.
+Step 5700: Added 151536 GSs. Now having 3182262 GSs.
+Step 5800: Relocated 244433 GSs.
+Step 5800: Added 159113 GSs. Now having 3341375 GSs.
+Step 5900: Relocated 252115 GSs.
+Step 5900: Added 167068 GSs. Now having 3508443 GSs.
+Step 6000: Relocated 268457 GSs.
+Step 6000: Added 175422 GSs. Now having 3683865 GSs.
+[6000] loss 0.0996 l1 0.0549 ssim 0.7277 N 3683865
+Step 6100: Relocated 312591 GSs.
+Step 6100: Added 184193 GSs. Now having 3868058 GSs.
+Step 6200: Relocated 318516 GSs.
+Step 6200: Added 193402 GSs. Now having 4061460 GSs.
+Step 6300: Relocated 323710 GSs.
+Step 6300: Added 203073 GSs. Now having 4264533 GSs.
+Step 6400: Relocated 360454 GSs.
+Step 6400: Added 213226 GSs. Now having 4477759 GSs.
+Step 6500: Relocated 363048 GSs.
+Step 6500: Added 223887 GSs. Now having 4701646 GSs.
+Step 6600: Relocated 409413 GSs.
+Step 6600: Added 235082 GSs. Now having 4936728 GSs.
+Step 6700: Relocated 413484 GSs.
+Step 6700: Added 63272 GSs. Now having 5000000 GSs.
+Step 6800: Relocated 349702 GSs.
+Step 6800: Added 0 GSs. Now having 5000000 GSs.
+Step 6900: Relocated 309899 GSs.
+Step 6900: Added 0 GSs. Now having 5000000 GSs.
+Step 7000: Relocated 285759 GSs.
+Step 7000: Added 0 GSs. Now having 5000000 GSs.
+[7000] loss 0.1007 l1 0.0501 ssim 0.7025 N 5000000
+Step 7100: Relocated 281590 GSs.
+Step 7100: Added 0 GSs. Now having 5000000 GSs.
+Step 7200: Relocated 287433 GSs.
+Step 7200: Added 0 GSs. Now having 5000000 GSs.
+Step 7300: Relocated 275153 GSs.
+Step 7300: Added 0 GSs. Now having 5000000 GSs.
+Step 7400: Relocated 267423 GSs.
+Step 7400: Added 0 GSs. Now having 5000000 GSs.
+Step 7500: Relocated 250612 GSs.
+Step 7500: Added 0 GSs. Now having 5000000 GSs.
+Step 7600: Relocated 252884 GSs.
+Step 7600: Added 0 GSs. Now having 5000000 GSs.
+Step 7700: Relocated 231591 GSs.
+Step 7700: Added 0 GSs. Now having 5000000 GSs.
+Step 7800: Relocated 248502 GSs.
+Step 7800: Added 0 GSs. Now having 5000000 GSs.
+Step 7900: Relocated 244495 GSs.
+Step 7900: Added 0 GSs. Now having 5000000 GSs.
+Step 8000: Relocated 249265 GSs.
+Step 8000: Added 0 GSs. Now having 5000000 GSs.
+[8000] loss 0.0683 l1 0.0361 ssim 0.8089 N 5000000
+Step 8100: Relocated 235166 GSs.
+Step 8100: Added 0 GSs. Now having 5000000 GSs.
+Step 8200: Relocated 230422 GSs.
+Step 8200: Added 0 GSs. Now having 5000000 GSs.
+Step 8300: Relocated 237030 GSs.
+Step 8300: Added 0 GSs. Now having 5000000 GSs.
+Step 8400: Relocated 236081 GSs.
+Step 8400: Added 0 GSs. Now having 5000000 GSs.
+Step 8500: Relocated 230938 GSs.
+Step 8500: Added 0 GSs. Now having 5000000 GSs.
+Step 8600: Relocated 246348 GSs.
+Step 8600: Added 0 GSs. Now having 5000000 GSs.
+Step 8700: Relocated 245697 GSs.
+Step 8700: Added 0 GSs. Now having 5000000 GSs.
+Step 8800: Relocated 237878 GSs.
+Step 8800: Added 0 GSs. Now having 5000000 GSs.
+Step 8900: Relocated 235904 GSs.
+Step 8900: Added 0 GSs. Now having 5000000 GSs.
+Step 9000: Relocated 236186 GSs.
+Step 9000: Added 0 GSs. Now having 5000000 GSs.
+[9000] loss 0.0712 l1 0.0354 ssim 0.7920 N 5000000
+Step 9100: Relocated 236365 GSs.
+Step 9100: Added 0 GSs. Now having 5000000 GSs.
+Step 9200: Relocated 250066 GSs.
+Step 9200: Added 0 GSs. Now having 5000000 GSs.
+Step 9300: Relocated 255269 GSs.
+Step 9300: Added 0 GSs. Now having 5000000 GSs.
+Step 9400: Relocated 225155 GSs.
+Step 9400: Added 0 GSs. Now having 5000000 GSs.
+Step 9500: Relocated 231658 GSs.
+Step 9500: Added 0 GSs. Now having 5000000 GSs.
+Step 9600: Relocated 228134 GSs.
+Step 9600: Added 0 GSs. Now having 5000000 GSs.
+Step 9700: Relocated 234203 GSs.
+Step 9700: Added 0 GSs. Now having 5000000 GSs.
+Step 9800: Relocated 236191 GSs.
+Step 9800: Added 0 GSs. Now having 5000000 GSs.
+Step 9900: Relocated 239809 GSs.
+Step 9900: Added 0 GSs. Now having 5000000 GSs.
+Step 10000: Relocated 245735 GSs.
+Step 10000: Added 0 GSs. Now having 5000000 GSs.
+[10000] loss 0.0947 l1 0.0540 ssim 0.7490 N 5000000
+Step 10100: Relocated 232301 GSs.
+Step 10100: Added 0 GSs. Now having 5000000 GSs.
+Step 10200: Relocated 221792 GSs.
+Step 10200: Added 0 GSs. Now having 5000000 GSs.
+Step 10300: Relocated 235507 GSs.
+Step 10300: Added 0 GSs. Now having 5000000 GSs.
+Step 10400: Relocated 233861 GSs.
+Step 10400: Added 0 GSs. Now having 5000000 GSs.
+Step 10500: Relocated 240381 GSs.
+Step 10500: Added 0 GSs. Now having 5000000 GSs.
+Step 10600: Relocated 241781 GSs.
+Step 10600: Added 0 GSs. Now having 5000000 GSs.
+Step 10700: Relocated 226075 GSs.
+Step 10700: Added 0 GSs. Now having 5000000 GSs.
+Step 10800: Relocated 229622 GSs.
+Step 10800: Added 0 GSs. Now having 5000000 GSs.
+Step 10900: Relocated 224545 GSs.
+Step 10900: Added 0 GSs. Now having 5000000 GSs.
+Step 11000: Relocated 231976 GSs.
+Step 11000: Added 0 GSs. Now having 5000000 GSs.
+[11000] loss 0.0616 l1 0.0352 ssim 0.8397 N 5000000
+Step 11100: Relocated 220108 GSs.
+Step 11100: Added 0 GSs. Now having 5000000 GSs.
+Step 11200: Relocated 213246 GSs.
+Step 11200: Added 0 GSs. Now having 5000000 GSs.
+Step 11300: Relocated 227420 GSs.
+Step 11300: Added 0 GSs. Now having 5000000 GSs.
+Step 11400: Relocated 249908 GSs.
+Step 11400: Added 0 GSs. Now having 5000000 GSs.
+Step 11500: Relocated 225992 GSs.
+Step 11500: Added 0 GSs. Now having 5000000 GSs.
+Step 11600: Relocated 228307 GSs.
+Step 11600: Added 0 GSs. Now having 5000000 GSs.
+Step 11700: Relocated 222711 GSs.
+Step 11700: Added 0 GSs. Now having 5000000 GSs.
+Step 11800: Relocated 220468 GSs.
+Step 11800: Added 0 GSs. Now having 5000000 GSs.
+Step 11900: Relocated 216185 GSs.
+Step 11900: Added 0 GSs. Now having 5000000 GSs.
+Step 12000: Relocated 229956 GSs.
+Step 12000: Added 0 GSs. Now having 5000000 GSs.
+[12000] loss 0.0558 l1 0.0353 ssim 0.8690 N 5000000
+Step 12100: Relocated 223433 GSs.
+Step 12100: Added 0 GSs. Now having 5000000 GSs.
+Step 12200: Relocated 242884 GSs.
+Step 12200: Added 0 GSs. Now having 5000000 GSs.
+Step 12300: Relocated 240618 GSs.
+Step 12300: Added 0 GSs. Now having 5000000 GSs.
+Step 12400: Relocated 232204 GSs.
+Step 12400: Added 0 GSs. Now having 5000000 GSs.
+Step 12500: Relocated 243254 GSs.
+Step 12500: Added 0 GSs. Now having 5000000 GSs.
+Step 12600: Relocated 223083 GSs.
+Step 12600: Added 0 GSs. Now having 5000000 GSs.
+Step 12700: Relocated 223068 GSs.
+Step 12700: Added 0 GSs. Now having 5000000 GSs.
+Step 12800: Relocated 230236 GSs.
+Step 12800: Added 0 GSs. Now having 5000000 GSs.
+Step 12900: Relocated 223569 GSs.
+Step 12900: Added 0 GSs. Now having 5000000 GSs.
+Step 13000: Relocated 230126 GSs.
+Step 13000: Added 0 GSs. Now having 5000000 GSs.
+[13000] loss 0.0709 l1 0.0356 ssim 0.7955 N 5000000
+Step 13100: Relocated 217282 GSs.
+Step 13100: Added 0 GSs. Now having 5000000 GSs.
+Step 13200: Relocated 237613 GSs.
+Step 13200: Added 0 GSs. Now having 5000000 GSs.
+Step 13300: Relocated 228850 GSs.
+Step 13300: Added 0 GSs. Now having 5000000 GSs.
+Step 13400: Relocated 221745 GSs.
+Step 13400: Added 0 GSs. Now having 5000000 GSs.
+Step 13500: Relocated 217584 GSs.
+Step 13500: Added 0 GSs. Now having 5000000 GSs.
+Step 13600: Relocated 224427 GSs.
+Step 13600: Added 0 GSs. Now having 5000000 GSs.
+Step 13700: Relocated 221500 GSs.
+Step 13700: Added 0 GSs. Now having 5000000 GSs.
+Step 13800: Relocated 224719 GSs.
+Step 13800: Added 0 GSs. Now having 5000000 GSs.
+Step 13900: Relocated 218777 GSs.
+Step 13900: Added 0 GSs. Now having 5000000 GSs.
+Step 14000: Relocated 210694 GSs.
+Step 14000: Added 0 GSs. Now having 5000000 GSs.
+[14000] loss 0.0617 l1 0.0363 ssim 0.8440 N 5000000
+Step 14100: Relocated 204635 GSs.
+Step 14100: Added 0 GSs. Now having 5000000 GSs.
+Step 14200: Relocated 209523 GSs.
+Step 14200: Added 0 GSs. Now having 5000000 GSs.
+Step 14300: Relocated 198641 GSs.
+Step 14300: Added 0 GSs. Now having 5000000 GSs.
+Step 14400: Relocated 194331 GSs.
+Step 14400: Added 0 GSs. Now having 5000000 GSs.
+Step 14500: Relocated 199358 GSs.
+Step 14500: Added 0 GSs. Now having 5000000 GSs.
+Step 14600: Relocated 198882 GSs.
+Step 14600: Added 0 GSs. Now having 5000000 GSs.
+Step 14700: Relocated 206641 GSs.
+Step 14700: Added 0 GSs. Now having 5000000 GSs.
+Step 14800: Relocated 202108 GSs.
+Step 14800: Added 0 GSs. Now having 5000000 GSs.
+Step 14900: Relocated 197503 GSs.
+Step 14900: Added 0 GSs. Now having 5000000 GSs.
+Step 15000: Relocated 204805 GSs.
+Step 15000: Added 0 GSs. Now having 5000000 GSs.
+[15000] loss 0.0753 l1 0.0408 ssim 0.7943 N 5000000
+Step 15100: Relocated 194950 GSs.
+Step 15100: Added 0 GSs. Now having 5000000 GSs.
+Step 15200: Relocated 191933 GSs.
+Step 15200: Added 0 GSs. Now having 5000000 GSs.
+Step 15300: Relocated 195042 GSs.
+Step 15300: Added 0 GSs. Now having 5000000 GSs.
+Step 15400: Relocated 200531 GSs.
+Step 15400: Added 0 GSs. Now having 5000000 GSs.
+Step 15500: Relocated 192509 GSs.
+Step 15500: Added 0 GSs. Now having 5000000 GSs.
+Step 15600: Relocated 190328 GSs.
+Step 15600: Added 0 GSs. Now having 5000000 GSs.
+Step 15700: Relocated 195385 GSs.
+Step 15700: Added 0 GSs. Now having 5000000 GSs.
+Step 15800: Relocated 193570 GSs.
+Step 15800: Added 0 GSs. Now having 5000000 GSs.
+Step 15900: Relocated 211444 GSs.
+Step 15900: Added 0 GSs. Now having 5000000 GSs.
+Step 16000: Relocated 205233 GSs.
+Step 16000: Added 0 GSs. Now having 5000000 GSs.
+[16000] loss 0.0631 l1 0.0395 ssim 0.8501 N 5000000
+Step 16100: Relocated 183981 GSs.
+Step 16100: Added 0 GSs. Now having 5000000 GSs.
+Step 16200: Relocated 188847 GSs.
+Step 16200: Added 0 GSs. Now having 5000000 GSs.
+Step 16300: Relocated 186195 GSs.
+Step 16300: Added 0 GSs. Now having 5000000 GSs.
+Step 16400: Relocated 188020 GSs.
+Step 16400: Added 0 GSs. Now having 5000000 GSs.
+Step 16500: Relocated 185090 GSs.
+Step 16500: Added 0 GSs. Now having 5000000 GSs.
+Step 16600: Relocated 178572 GSs.
+Step 16600: Added 0 GSs. Now having 5000000 GSs.
+Step 16700: Relocated 172777 GSs.
+Step 16700: Added 0 GSs. Now having 5000000 GSs.
+Step 16800: Relocated 170832 GSs.
+Step 16800: Added 0 GSs. Now having 5000000 GSs.
+Step 16900: Relocated 171430 GSs.
+Step 16900: Added 0 GSs. Now having 5000000 GSs.
+Step 17000: Relocated 177398 GSs.
+Step 17000: Added 0 GSs. Now having 5000000 GSs.
+[17000] loss 0.0586 l1 0.0344 ssim 0.8529 N 5000000
+Step 17100: Relocated 166534 GSs.
+Step 17100: Added 0 GSs. Now having 5000000 GSs.
+Step 17200: Relocated 171684 GSs.
+Step 17200: Added 0 GSs. Now having 5000000 GSs.
+Step 17300: Relocated 165242 GSs.
+Step 17300: Added 0 GSs. Now having 5000000 GSs.
+Step 17400: Relocated 167614 GSs.
+Step 17400: Added 0 GSs. Now having 5000000 GSs.
+Step 17500: Relocated 176047 GSs.
+Step 17500: Added 0 GSs. Now having 5000000 GSs.
+Step 17600: Relocated 160319 GSs.
+Step 17600: Added 0 GSs. Now having 5000000 GSs.
+Step 17700: Relocated 167689 GSs.
+Step 17700: Added 0 GSs. Now having 5000000 GSs.
+Step 17800: Relocated 171060 GSs.
+Step 17800: Added 0 GSs. Now having 5000000 GSs.
+Step 17900: Relocated 166362 GSs.
+Step 17900: Added 0 GSs. Now having 5000000 GSs.
+Step 18000: Relocated 156173 GSs.
+Step 18000: Added 0 GSs. Now having 5000000 GSs.
+[18000] loss 0.0555 l1 0.0333 ssim 0.8636 N 5000000
+Step 18100: Relocated 156729 GSs.
+Step 18100: Added 0 GSs. Now having 5000000 GSs.
+Step 18200: Relocated 148415 GSs.
+Step 18200: Added 0 GSs. Now having 5000000 GSs.
+Step 18300: Relocated 156120 GSs.
+Step 18300: Added 0 GSs. Now having 5000000 GSs.
+Step 18400: Relocated 145119 GSs.
+Step 18400: Added 0 GSs. Now having 5000000 GSs.
+Step 18500: Relocated 154112 GSs.
+Step 18500: Added 0 GSs. Now having 5000000 GSs.
+Step 18600: Relocated 153746 GSs.
+Step 18600: Added 0 GSs. Now having 5000000 GSs.
+Step 18700: Relocated 157044 GSs.
+Step 18700: Added 0 GSs. Now having 5000000 GSs.
+Step 18800: Relocated 148256 GSs.
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Step 18800: Added 0 GSs. Now having 5000000 GSs.
+Step 18900: Relocated 155440 GSs.
+Step 18900: Added 0 GSs. Now having 5000000 GSs.
+Step 19000: Relocated 148341 GSs.
+Step 19000: Added 0 GSs. Now having 5000000 GSs.
+[19000] loss 0.0594 l1 0.0332 ssim 0.8441 N 5000000
+Step 19100: Relocated 163313 GSs.
+Step 19100: Added 0 GSs. Now having 5000000 GSs.
+Step 19200: Relocated 155696 GSs.
+Step 19200: Added 0 GSs. Now having 5000000 GSs.
+Step 19300: Relocated 137589 GSs.
+Step 19300: Added 0 GSs. Now having 5000000 GSs.
+Step 19400: Relocated 132789 GSs.
+Step 19400: Added 0 GSs. Now having 5000000 GSs.
+Step 19500: Relocated 139483 GSs.
+Step 19500: Added 0 GSs. Now having 5000000 GSs.
+Step 19600: Relocated 136672 GSs.
+Step 19600: Added 0 GSs. Now having 5000000 GSs.
+Step 19700: Relocated 137096 GSs.
+Step 19700: Added 0 GSs. Now having 5000000 GSs.
+Step 19800: Relocated 141221 GSs.
+Step 19800: Added 0 GSs. Now having 5000000 GSs.
+Step 19900: Relocated 131724 GSs.
+Step 19900: Added 0 GSs. Now having 5000000 GSs.
+Step 20000: Relocated 127140 GSs.
+Step 20000: Added 0 GSs. Now having 5000000 GSs.
+[20000] loss 0.0488 l1 0.0318 ssim 0.8917 N 5000000
+Step 20100: Relocated 128510 GSs.
+Step 20100: Added 0 GSs. Now having 5000000 GSs.
+Step 20200: Relocated 130585 GSs.
+Step 20200: Added 0 GSs. Now having 5000000 GSs.
+Step 20300: Relocated 129614 GSs.
+Step 20300: Added 0 GSs. Now having 5000000 GSs.
+Step 20400: Relocated 117889 GSs.
+Step 20400: Added 0 GSs. Now having 5000000 GSs.
+Step 20500: Relocated 122646 GSs.
+Step 20500: Added 0 GSs. Now having 5000000 GSs.
+Step 20600: Relocated 124165 GSs.
+Step 20600: Added 0 GSs. Now having 5000000 GSs.
+Step 20700: Relocated 120993 GSs.
+Step 20700: Added 0 GSs. Now having 5000000 GSs.
+Step 20800: Relocated 123702 GSs.
+Step 20800: Added 0 GSs. Now having 5000000 GSs.
+Step 20900: Relocated 125570 GSs.
+Step 20900: Added 0 GSs. Now having 5000000 GSs.
+Step 21000: Relocated 114390 GSs.
+Step 21000: Added 0 GSs. Now having 5000000 GSs.
+[21000] loss 0.0428 l1 0.0270 ssim 0.9026 N 5000000
+Step 21100: Relocated 113068 GSs.
+Step 21100: Added 0 GSs. Now having 5000000 GSs.
+Step 21200: Relocated 116820 GSs.
+Step 21200: Added 0 GSs. Now having 5000000 GSs.
+Step 21300: Relocated 115534 GSs.
+Step 21300: Added 0 GSs. Now having 5000000 GSs.
+Step 21400: Relocated 112204 GSs.
+Step 21400: Added 0 GSs. Now having 5000000 GSs.
+Step 21500: Relocated 108187 GSs.
+Step 21500: Added 0 GSs. Now having 5000000 GSs.
+Step 21600: Relocated 109024 GSs.
+Step 21600: Added 0 GSs. Now having 5000000 GSs.
+Step 21700: Relocated 108565 GSs.
+Step 21700: Added 0 GSs. Now having 5000000 GSs.
+Step 21800: Relocated 113114 GSs.
+Step 21800: Added 0 GSs. Now having 5000000 GSs.
+Step 21900: Relocated 115856 GSs.
+Step 21900: Added 0 GSs. Now having 5000000 GSs.
+Step 22000: Relocated 110841 GSs.
+Step 22000: Added 0 GSs. Now having 5000000 GSs.
+[22000] loss 0.0418 l1 0.0270 ssim 0.9079 N 5000000
+Step 22100: Relocated 108715 GSs.
+Step 22100: Added 0 GSs. Now having 5000000 GSs.
+Step 22200: Relocated 100266 GSs.
+Step 22200: Added 0 GSs. Now having 5000000 GSs.
+Step 22300: Relocated 96707 GSs.
+Step 22300: Added 0 GSs. Now having 5000000 GSs.
+Step 22400: Relocated 98728 GSs.
+Step 22400: Added 0 GSs. Now having 5000000 GSs.
+Step 22500: Relocated 98590 GSs.
+Step 22500: Added 0 GSs. Now having 5000000 GSs.
+Step 22600: Relocated 103200 GSs.
+Step 22600: Added 0 GSs. Now having 5000000 GSs.
+Step 22700: Relocated 93037 GSs.
+Step 22700: Added 0 GSs. Now having 5000000 GSs.
+Step 22800: Relocated 96570 GSs.
+Step 22800: Added 0 GSs. Now having 5000000 GSs.
+Step 22900: Relocated 97891 GSs.
+Step 22900: Added 0 GSs. Now having 5000000 GSs.
+Step 23000: Relocated 93872 GSs.
+Step 23000: Added 0 GSs. Now having 5000000 GSs.
+[23000] loss 0.0501 l1 0.0290 ssim 0.8742 N 5000000
+Step 23100: Relocated 86851 GSs.
+Step 23100: Added 0 GSs. Now having 5000000 GSs.
+Step 23200: Relocated 91048 GSs.
+Step 23200: Added 0 GSs. Now having 5000000 GSs.
+Step 23300: Relocated 83280 GSs.
+Step 23300: Added 0 GSs. Now having 5000000 GSs.
+Step 23400: Relocated 84837 GSs.
+Step 23400: Added 0 GSs. Now having 5000000 GSs.
+Step 23500: Relocated 89144 GSs.
+Step 23500: Added 0 GSs. Now having 5000000 GSs.
+Step 23600: Relocated 86900 GSs.
+Step 23600: Added 0 GSs. Now having 5000000 GSs.
+Step 23700: Relocated 80313 GSs.
+Step 23700: Added 0 GSs. Now having 5000000 GSs.
+Step 23800: Relocated 79666 GSs.
+Step 23800: Added 0 GSs. Now having 5000000 GSs.
+Step 23900: Relocated 83686 GSs.
+Step 23900: Added 0 GSs. Now having 5000000 GSs.
+Step 24000: Relocated 85699 GSs.
+Step 24000: Added 0 GSs. Now having 5000000 GSs.
+[24000] loss 0.0527 l1 0.0335 ssim 0.8796 N 5000000
+Step 24100: Relocated 83155 GSs.
+Step 24100: Added 0 GSs. Now having 5000000 GSs.
+Step 24200: Relocated 81539 GSs.
+Step 24200: Added 0 GSs. Now having 5000000 GSs.
+Step 24300: Relocated 74550 GSs.
+Step 24300: Added 0 GSs. Now having 5000000 GSs.
+Step 24400: Relocated 85505 GSs.
+Step 24400: Added 0 GSs. Now having 5000000 GSs.
+Step 24500: Relocated 81105 GSs.
+Step 24500: Added 0 GSs. Now having 5000000 GSs.
+Step 24600: Relocated 74848 GSs.
+Step 24600: Added 0 GSs. Now having 5000000 GSs.
+Step 24700: Relocated 74972 GSs.
+Step 24700: Added 0 GSs. Now having 5000000 GSs.
+Step 24800: Relocated 73768 GSs.
+Step 24800: Added 0 GSs. Now having 5000000 GSs.
+Step 24900: Relocated 70095 GSs.
+Step 24900: Added 0 GSs. Now having 5000000 GSs.
+[25000] loss 0.0997 l1 0.0444 ssim 0.6884 N 5000000
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[26000] loss 0.0457 l1 0.0255 ssim 0.9155 N 5000000
+[27000] loss 0.0462 l1 0.0218 ssim 0.9103 N 5000000
+[28000] loss 0.0672 l1 0.0292 ssim 0.8470 N 5000000
+[29000] loss 0.0639 l1 0.0303 ssim 0.8681 N 5000000
+[29999] loss 0.0507 l1 0.0285 ssim 0.9024 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/output/HCM0204_gsplatB9ut/ckpt.pt
+=== HCM0204_gsplatB9ut TRAIN DONE ===
+Wrote 60 images to /mnt/d/avv/output/HCM0204_gsplatB9ut/test_poses_renders
+HCM0204    n= 60  PSNR 24.8749  SSIM 0.8521  LPIPS(alex) 0.0760 LPIPS(vgg) 0.1201  Score(alex) 0.7745  Score(vgg) 0.7568
+  Score(vgg)  = 75.6814   [0.4*(1-LPIPS)=0.3519  0.3*SSIM=0.2556  0.3*PSNRn=0.1492]  (psnr_max=50.0)
+=== HCM0204_gsplatB9ut SCORED ===
+PUBUT QUEUE DONE

@@ -1,0 +1,31 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+field correlation between scenes (dx / dy):
+                 HCM0421         HCM0539         HCM0540         HCM0644         HCM0674
+ HCM0421  +1.00/ +1.00  +0.98/ +0.96  +0.97/ +0.97  +0.80/ +0.85  +0.98/ +0.96
+ HCM0539  +0.98/ +0.96  +1.00/ +1.00  +0.97/ +0.96  +0.81/ +0.88  +0.97/ +0.97
+ HCM0540  +0.97/ +0.97  +0.97/ +0.96  +1.00/ +1.00  +0.78/ +0.87  +0.97/ +0.97
+ HCM0644  +0.80/ +0.85  +0.81/ +0.88  +0.78/ +0.87  +1.00/ +1.00  +0.84/ +0.90
+ HCM0674  +0.98/ +0.96  +0.97/ +0.97  +0.97/ +0.97  +0.84/ +0.90  +1.00/ +1.00
+
+field magnitude (mean|d| px): {'HCM0421': 0.1563, 'HCM0539': 0.16, 'HCM0540': 0.1584, 'HCM0644': 0.1577, 'HCM0674': 0.1569}
+[HCM0421] 133s  none=-0.6404  pooled_foreign=-0.0457  median_foreign=-0.0269
+[HCM0539] 146s  none=-0.7244  pooled_foreign=-0.0361  median_foreign=-0.0202
+[HCM0540] 123s  none=-0.6572  pooled_foreign=-0.0346  median_foreign=-0.0149
+[HCM0644] 150s  none=-0.5128  pooled_foreign=-0.2135  median_foreign=-0.2127
+[HCM0674] 201s  none=-0.6254  pooled_foreign=+0.0212  median_foreign=+0.0236
+
+        field used  MEAN d(own)    HCM0421    HCM0539    HCM0540    HCM0644    HCM0674
+              none      -0.6320    -0.6404    -0.7244    -0.6572    -0.5128    -0.6254
+           own_LOO      +0.0000    +0.0000    +0.0000    +0.0000    +0.0000    +0.0000
+    pooled_foreign      -0.0617    -0.0457    -0.0361    -0.0346    -0.2135    +0.0212
+    median_foreign      -0.0502    -0.0269    -0.0202    -0.0149    -0.2127    +0.0236
+      from_HCM0421      -0.0704          -    -0.0205    -0.0256    -0.2349    -0.0007
+      from_HCM0539      -0.0747    -0.0376          -    -0.0246    -0.2416    +0.0051
+      from_HCM0540      -0.0828    -0.0351    -0.0444          -    -0.2505    -0.0010
+      from_HCM0644      -0.3527    -0.3940    -0.3913    -0.3689          -    -0.2566
+      from_HCM0674      -0.0805    -0.0435    -0.0401    -0.0338    -0.2044          -

@@ -1,0 +1,20 @@
+DIV8  het 4.050/255  meanSolo 24.008 dB  ['gsplatB11ut60k', 'gsplatB7ppisp2', 'e17visnorm', 'gsplatB9ut', 'm31b_nolpips', 'e15ceil95', 'gsplatB12ut8Ms7', 'gsplatB1']
+HOMO8 het 3.486/255  meanSolo 24.050 dB  ['gsplatB11ut60k', 'sh3', 'm31b_taillpips', 'm31b_nolpips', 'gsplatB12ut8Ms7', 'gsplatB10ut8M', 'gsplatB9ut', 'gsplatB1']
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60 4s
+  15/60 58s
+  30/60 112s
+  45/60 167s
+
+HETEROGENEITY GATE, HCM0181, n=60, FIXED k=8, full shipped chain
+    arm     SCORE     PSNR     SSIM    LPIPS   vs HOMO8      se    wins
+  HOMO8   78.6678  26.1268  0.89276  0.09477    +0.0000  0.0000   0/60 
+   DIV8   78.6883  26.2405  0.89482  0.09752    +0.0204  0.0330  26/60 
+
+GATE: DIV8 >> HOMO8 at matched quality => swapping for diversity pays => train non-UT (r34).
+      Otherwise heterogeneity is not the lever, r34/r35 are dead, and r31 stands.

@@ -1,0 +1,33 @@
+HCM0181: 60 paired views, src=/mnt/d/avv/prodharness/k4/png field=1
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+  img 0
+  img 10
+  img 20
+  img 30
+  img 40
+  img 50
+
+=== ORACLE FREQ PARTITION  HCM0181  n=60 ===
+  arm          PSNR     SSIM    LPIPS     SCORE    dSCORE    dLPIPS
+  base      25.8053  0.88438  0.10441   77.8380   +0.0000  +0.00000
+  LF2       27.4377  0.89684  0.09771   79.4597   +1.6217  -0.00671
+  LF4       26.7448  0.88764  0.10252   78.5752   +0.7372  -0.00189
+  LF8       26.4166  0.88538  0.10396   78.2529   +0.4149  -0.00045
+  LF16      26.2476  0.88482  0.10435   78.1189   +0.2809  -0.00006
+  LF32      26.1478  0.88461  0.10447   78.0480   +0.2100  +0.00006
+  LF64      26.0765  0.88449  0.10451   78.0001   +0.1621  +0.00010
+  HF16      36.8474  0.99730  0.00194   91.9496  +14.1116  -0.10247
+  HF32      37.8482  0.99743  0.00149   92.5722  +14.7342  -0.10292
+
+  residual ENERGY fraction captured by Gauss(sigma):
+    sigma   2:  20.49% of residual squared energy
+    sigma   4:  13.72% of residual squared energy
+    sigma   8:  10.02% of residual squared energy
+    sigma  16:   7.80% of residual squared energy
+    sigma  32:   6.22% of residual squared energy
+    sigma  64:   4.90% of residual squared energy

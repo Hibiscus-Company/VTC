@@ -1,0 +1,11 @@
+>>> prod seed 555 (gpu1) START 21:55
+Saved 5000000 gaussians to /mnt/d/avv/r38_prod/s555/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r38_prod/s555/test_render
+   CENSUS N=1,291,261  s2/s1 0.3777  s2/s3 1759194.9  s1/s3 5015268.9
+<<< prod seed 555 DONE 23:28 (28 pngs)
+>>> prod seed 777 (gpu1) START 23:28
+Saved 5000000 gaussians to /mnt/d/avv/r38_prod/s777/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r38_prod/s777/test_render
+   CENSUS N=1,302,718  s2/s1 0.3757  s2/s3 1794326.9  s1/s3 5074330.7
+<<< prod seed 777 DONE 01:01 (28 pngs)
+>>> prod seed 999 (gpu1) START 01:01

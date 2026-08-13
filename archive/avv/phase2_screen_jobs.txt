@@ -1,0 +1,7 @@
+screen|chair|baseline|
+screen|chair|ema099|--ema_decay 0.99
+screen|bonsai|baseline|
+screen|bonsai|ema099|--ema_decay 0.99
+screen|HCM0181|baseline|
+screen|HCM0181|ema099|--ema_decay 0.99
+screen|HCM0181|ema999|--ema_decay 0.999

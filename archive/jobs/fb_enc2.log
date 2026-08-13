@@ -1,0 +1,24 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  cache HCM0181 0/60
+  cache HCM0181 20/60
+  cache HCM0181 40/60
+  HCM0181 0/60 3s
+  HCM0181 15/60 48s
+  HCM0181 30/60 111s
+  HCM0181 45/60 191s
+
+=== HCM0181 n=60 ===
+             arm     SCORE    dSCORE      t    wins     PSNR    SSIM   LPIPS      MB    dMB%
+    prod_q100ss2   78.5245   +0.0000   0.00   0/60   25.9965  0.8901  0.0944   63.35   +0.00
+        ctrl_dup   78.5245   +0.0000   0.00   0/60   25.9965  0.8901  0.0944   63.35   +0.00
+      ctrl_noise   78.3167   -0.2077 -31.90   0/60   25.9769  0.8871  0.0971   65.88   +3.99
+   precomp_mu0.5   78.5193   -0.0051  -1.88  26/60   26.0005  0.8897  0.0943   64.30   +1.51
+   precomp_mu1.0   78.4482   -0.0763 -29.36   0/60   25.9891  0.8886  0.0951   65.59   +3.54
+ precomp_mu1.0x2   78.4677   -0.0567 -26.63   0/60   25.9895  0.8887  0.0947   66.00   +4.19
+        rgb_q100   78.5718   +0.0474  12.10  57/60   26.0000  0.8909  0.0939  156.99 +147.83
+         rgb_q87   77.1411   -1.3834 -41.16   0/60   25.7355  0.8733  0.1125   64.38   +1.62

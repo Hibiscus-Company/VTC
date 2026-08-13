@@ -1,0 +1,5 @@
+{
+  "gt_dir": "/home/bkai/data/phase1/private_set1/HNI0131/train/images",
+  "render_dir": "/mnt/d/avv/output/HNI0131_gsplatB9ut60k/train_png_warp",
+  "ds": 8
+}

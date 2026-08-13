@@ -1,0 +1,56 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+### HCM0181 n=20  residual energy (lowpass sigma=12.8) --- tot 2.100e-04 | per-image DC  29.6% | scene-common field  17.9% (of which shape-only   4.7%) | image-specific  82.1%
+  lpGT_full    PSNR  26.516 SSIM 0.8908 LPIPS 0.09992 dScore  +0.3167
+  lpGT_ds8     PSNR  26.514 SSIM 0.8907 LPIPS 0.09992 dScore  +0.3149
+  dcGT         PSNR  26.150 SSIM 0.8898 LPIPS 0.10026 dScore  +0.0556
+  affGT        PSNR  26.169 SSIM 0.8899 LPIPS 0.10023 dScore  +0.0707
+  looMean      PSNR  26.075 SSIM 0.8898 LPIPS 0.10034 dScore  +0.0061
+  looMeanNoDC  PSNR  26.040 SSIM 0.8897 LPIPS 0.10023 dScore  -0.0141
+
+### HCM0193 n=20  residual energy (lowpass sigma=12.8) --- tot 2.082e-04 | per-image DC  32.8% | scene-common field   5.4% (of which shape-only   5.1%) | image-specific  94.6%
+  lpGT_full    PSNR  26.825 SSIM 0.8617 LPIPS 0.12712 dScore  +0.3959
+  lpGT_ds8     PSNR  26.822 SSIM 0.8617 LPIPS 0.12714 dScore  +0.3932
+  dcGT         PSNR  26.418 SSIM 0.8609 LPIPS 0.12789 dScore  +0.0968
+  affGT        PSNR  26.459 SSIM 0.8606 LPIPS 0.12790 dScore  +0.1135
+  looMean      PSNR  26.235 SSIM 0.8608 LPIPS 0.12801 dScore  -0.0206
+  looMeanNoDC  PSNR  26.255 SSIM 0.8608 LPIPS 0.12799 dScore  -0.0063
+
+### HCM0204 n=20  residual energy (lowpass sigma=12.8) --- tot 2.078e-04 | per-image DC  14.5% | scene-common field   6.2% (of which shape-only   4.9%) | image-specific  93.8%
+  lpGT_full    PSNR  26.301 SSIM 0.8786 LPIPS 0.11502 dScore  +0.3410
+  lpGT_ds8     PSNR  26.298 SSIM 0.8786 LPIPS 0.11503 dScore  +0.3383
+  dcGT         PSNR  25.861 SSIM 0.8779 LPIPS 0.11571 dScore  +0.0277
+  affGT        PSNR  25.895 SSIM 0.8776 LPIPS 0.11569 dScore  +0.0396
+  looMean      PSNR  25.805 SSIM 0.8778 LPIPS 0.11585 dScore  -0.0122
+  looMeanNoDC  PSNR  25.802 SSIM 0.8778 LPIPS 0.11580 dScore  -0.0132
+
+### hcm0031 n=20  residual energy (lowpass sigma=12.8) --- tot 4.779e-04 | per-image DC  19.1% | scene-common field   6.6% (of which shape-only   6.3%) | image-specific  93.4%
+  lpGT_full    PSNR  25.890 SSIM 0.8371 LPIPS 0.14606 dScore  +0.6371
+  lpGT_ds8     PSNR  25.886 SSIM 0.8370 LPIPS 0.14608 dScore  +0.6325
+  dcGT         PSNR  25.086 SSIM 0.8354 LPIPS 0.14698 dScore  +0.0675
+  affGT        PSNR  25.138 SSIM 0.8352 LPIPS 0.14697 dScore  +0.0924
+  looMean      PSNR  24.958 SSIM 0.8352 LPIPS 0.14708 dScore  -0.0205
+  looMeanNoDC  PSNR  24.968 SSIM 0.8352 LPIPS 0.14706 dScore  -0.0130
+
+### hcm0034 n=20  residual energy (lowpass sigma=12.8) --- tot 4.073e-04 | per-image DC  13.4% | scene-common field   6.6% (of which shape-only   5.3%) | image-specific  93.4%
+  lpGT_full    PSNR  26.479 SSIM 0.8766 LPIPS 0.12191 dScore  +0.5859
+  lpGT_ds8     PSNR  26.475 SSIM 0.8766 LPIPS 0.12193 dScore  +0.5820
+  dcGT         PSNR  25.727 SSIM 0.8753 LPIPS 0.12301 dScore  +0.0507
+  affGT        PSNR  25.778 SSIM 0.8751 LPIPS 0.12290 dScore  +0.0826
+  looMean      PSNR  25.616 SSIM 0.8751 LPIPS 0.12325 dScore  -0.0293
+  looMeanNoDC  PSNR  25.616 SSIM 0.8751 LPIPS 0.12318 dScore  -0.0271
+
+============ POOLED OVER 5 TOWERS ============
+base PSNR 25.7517 SSIM 0.86781 LPIPS 0.12279 score 76.5738
+  lpGT_full    PSNR 26.4025 SSIM 0.86893 LPIPS 0.12201  dScore  +0.4553  (5/5 positive)
+  lpGT_ds8     PSNR 26.3991 SSIM 0.86891 LPIPS 0.12202  dScore  +0.4522  (5/5 positive)
+  dcGT         PSNR 25.8485 SSIM 0.86784 LPIPS 0.12277  dScore  +0.0596  (5/5 positive)
+  affGT        PSNR 25.8877 SSIM 0.86768 LPIPS 0.12274  dScore  +0.0798  (5/5 positive)
+  looMean      PSNR 25.7377 SSIM 0.86774 LPIPS 0.12290  dScore  -0.0153  (1/5 positive)
+  looMeanNoDC  PSNR 25.7362 SSIM 0.86771 LPIPS 0.12285  dScore  -0.0147  (0/5 positive)
+
+POOLED residual energy split: per-image DC 20.3%  scene-common field 8.0% (shape-only 5.5%)  image-specific 92.0%
+DONE

@@ -1,0 +1,37 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/28]
+[2/28]
+[3/28]
+[4/28]
+[5/28]
+[6/28]
+[7/28]
+[8/28]
+[9/28]
+[10/28]
+[11/28]
+[12/28]
+[13/28]
+[14/28]
+[15/28]
+[16/28]
+[17/28]
+[18/28]
+[19/28]
+[20/28]
+[21/28]
+[22/28]
+[23/28]
+[24/28]
+[25/28]
+[26/28]
+[27/28]
+[28/28]
+   ctrl2_enc n=28 PSNR 27.2707 SSIM 0.8517 LPIPS 0.2583 SCORE 71.5785  19.54 MB/28
+  treat2_enc n=28 PSNR 27.2215 SSIM 0.8515 LPIPS 0.2536 SCORE 71.7353  19.84 MB/28
+PAIRED treat2_enc - ctrl2_enc: D +0.1568 sd 0.3974 se 0.0751 t +2.09 wins 19/28

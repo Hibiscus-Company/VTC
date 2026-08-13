@@ -1,0 +1,26 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+[self-check] fast vs shipped restore  max|diff| = 6.557e-07  mean|diff| = 2.393e-08
+  1/30 9s
+  2/30 17s
+  4/30 43s
+  6/30 55s
+  8/30 73s
+  10/30 89s
+  12/30 112s
+  14/30 124s
+  16/30 145s
+  18/30 162s
+  20/30 180s
+  22/30 202s
+  24/30 218s
+  26/30 243s
+  28/30 263s
+  30/30 274s
+
+HCM0181 FULL SHIPPED CHAIN (weighted mean -> restore lam=1.0 -> field lanczos4 -> JPEG q100/ss2), n=30
+                   arm     SCORE     PSNR     SSIM    LPIPS   vs arm0      se   wins      MB
+              uniform8   78.8023  26.1942  0.89401  0.09336   +0.0000  0.0000    0/30   31.08
+           LS8_heldout   78.8232  26.1968  0.89407  0.09293   +0.0210  0.0039   24/30   31.15

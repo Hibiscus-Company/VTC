@@ -1,0 +1,71 @@
+== A. IN-SAMPLE (train photo vs its own render) vs HELD-OUT ==
+  IN foliage_frac     0.0377
+  IN foliage_mae      12.3667
+  IN foliage_share    0.0875
+  IN mae              6.0042
+  IN rest_hi_frac     0.1179
+  IN rest_hi_mae      13.0086
+  IN rest_hi_share    0.2404
+  IN rest_lo_frac     0.5162
+  IN rest_lo_mae      4.0041
+  IN rest_lo_share    0.3496
+  IN table_frac       0.3281
+  IN table_mae        5.6130
+  IN table_share      0.3225
+  IN vl_gt            2279.2416
+  IN vl_rd            613.1847
+== B. GT MOTION BLUR (eval GT vs its +-10 frame train-photo neighbours) ==
+  varLap(evalGT)/varLap(neighbours): mean 0.915  median 0.977  min 0.278 max 1.836  n=28
+  varLap over ALL 248 train photos: mean 1876 sd 1512 min 228 max 9742  p10 531 p90 4028
+== C. LPIPS (vgg) SPATIAL DECOMPOSITION, held-out n=28 ==
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [on]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+   frame_000010.jpg lpips 0.2750 table 0.0179/0.2606 hi 0.1455/0.1482
+   frame_000120.jpg lpips 0.3812 table 0.1058/0.2864 hi 0.1463/0.2780
+   frame_000190.jpg lpips 0.3267 table 0.0822/0.2530 hi 0.1496/0.2092
+   frame_000260.jpg lpips 0.3573 table 0.0633/0.3009 hi 0.1374/0.2659
+   frame_000440.jpg lpips 0.3663 table 0.1266/0.2478 hi 0.0943/0.2964
+   frame_000510.jpg lpips 0.3567 table 0.0910/0.2727 hi 0.0458/0.3256
+   frame_000630.jpg lpips 0.3100 table 0.2532/0.0660 hi 0.0293/0.2904
+   frame_000710.jpg lpips 0.2955 table 0.2316/0.0717 hi 0.0191/0.2826
+   frame_000810.jpg lpips 0.2596 table 0.0696/0.1956 hi 0.0109/0.2514
+   frame_000910.jpg lpips 0.2522 table 0.0979/0.1587 hi 0.0109/0.2485
+   frame_001100.jpg lpips 0.2648 table 0.0504/0.2188 hi 0.0191/0.2580
+   frame_001180.jpg lpips 0.3136 table 0.1199/0.2045 hi 0.0161/0.3152
+   frame_001250.jpg lpips 0.3032 table 0.2552/0.0678 hi 0.0043/0.3024
+   frame_001320.jpg lpips 0.3237 table 0.1514/0.1822 hi 0.0073/0.3209
+   frame_001400.jpg lpips 0.1911 table 0.0738/0.1259 hi 0.0199/0.1865
+   frame_001470.jpg lpips 0.2214 table 0.0611/0.1696 hi 0.0703/0.1786
+   frame_001540.jpg lpips 0.1910 table 0.0723/0.1270 hi 0.0463/0.1564
+   frame_001640.jpg lpips 0.2258 table 0.0481/0.1804 hi 0.0110/0.2187
+   frame_001720.jpg lpips 0.1716 table 0.0288/0.1469 hi 0.0091/0.1646
+   frame_001820.jpg lpips 0.1788 table 0.0465/0.1365 hi 0.0114/0.1705
+   frame_001930.jpg lpips 0.2317 table 0.0999/0.1383 hi 0.0058/0.2324
+   frame_002120.jpg lpips 0.1904 table 0.0529/0.1447 hi 0.0100/0.1901
+   frame_002190.jpg lpips 0.1631 table 0.0538/0.1162 hi 0.0049/0.1630
+   frame_002260.jpg lpips 0.2056 table 0.0336/0.1754 hi 0.0126/0.2009
+   frame_002330.jpg lpips 0.1659 table 0.0396/0.1283 hi 0.0103/0.1597
+   frame_002440.jpg lpips 0.1787 table 0.0416/0.1384 hi 0.0157/0.1700
+   frame_002510.jpg lpips 0.1773 table 0.0517/0.1296 hi 0.0111/0.1704
+   frame_002650.jpg lpips 0.2145 table 0.0498/0.1680 hi 0.0098/0.2116
+== LPIPS SUMMARY ==
+  lpips              0.25331
+  table_frac         0.32363
+  table_contrib      0.08820
+  table_dens         0.25936
+  foliage_frac       0.03460
+  foliage_contrib    0.00791
+  foliage_dens       0.22739
+  rest_hi_frac       0.11730
+  rest_hi_contrib    0.03871
+  rest_hi_dens       0.27761
+  rest_lo_frac       0.52447
+  rest_lo_contrib    0.11850
+  rest_lo_dens       0.23047
+  table_cf           0.17186
+  rest_hi_cf         0.22736
+  tex_dec_lpips [0.1417, 0.2082, 0.2354, 0.2465, 0.2618, 0.2745, 0.283, 0.2882, 0.2971, 0.2753]

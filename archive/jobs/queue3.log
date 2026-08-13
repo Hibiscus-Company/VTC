@@ -1,0 +1,21 @@
+=== [GPU 1] hcm0031 -> output/hcm0031_e03ga15 ===
+=== [GPU 1] hcm0034 -> output/hcm0034_e03ga15 ===
+=== [GPU 1] HCM0193 -> output/HCM0193_e03ga15 ===
+=== [GPU 1] HCM0204 -> output/HCM0204_e03ga15 ===
+=== [GPU 1] queue 'e03ga15' done ===
+=== score e03 FULL SET ===
+HCM0181    n= 60  PSNR 24.3020  SSIM 0.8458  LPIPS(alex) 0.0933 LPIPS(vgg) 0.1445  Score(alex) 0.7622  Score(vgg) 0.7417
+HCM0193    n= 60  PSNR 25.2989  SSIM 0.8363  LPIPS(alex) 0.1104 LPIPS(vgg) 0.1619  Score(alex) 0.7585  Score(vgg) 0.7379
+HCM0204    n= 60  PSNR 24.7873  SSIM 0.8474  LPIPS(alex) 0.0989 LPIPS(vgg) 0.1502  Score(alex) 0.7634  Score(vgg) 0.7429
+hcm0031    n= 50  PSNR 24.9010  SSIM 0.8265  LPIPS(alex) 0.1073 LPIPS(vgg) 0.1645  Score(alex) 0.7544  Score(vgg) 0.7315
+hcm0034    n= 60  PSNR 24.9085  SSIM 0.8571  LPIPS(alex) 0.0921 LPIPS(vgg) 0.1497  Score(alex) 0.7697  Score(vgg) 0.7467
+MEAN       n=  5  PSNR 24.8396  SSIM 0.8426  LPIPS(alex) 0.1004 LPIPS(vgg) 0.1542
+  Score(alex)  = 76.1661   [0.4*(1-LPIPS)=0.3598  0.3*SSIM=0.2528  0.3*PSNRn=0.1490]  (psnr_max=50.0)
+  Score(vgg)  = 74.0160   [0.4*(1-LPIPS)=0.3383  0.3*SSIM=0.2528  0.3*PSNRn=0.1490]  (psnr_max=50.0)
+=== exp04: lpips fine-tune on HCM0181 ===
+=== [GPU 1] HCM0181 -> output/HCM0181_e04lpips01 ===
+=== [GPU 1] queue 'e04lpips01' done ===
+HCM0181    n= 60  PSNR 24.2345  SSIM 0.8431  LPIPS(alex) 0.0897 LPIPS(vgg) 0.1266  Score(alex) 0.7625  Score(vgg) 0.7477
+  Score(alex)  = 76.2469   [0.4*(1-LPIPS)=0.3641  0.3*SSIM=0.2529  0.3*PSNRn=0.1454]  (psnr_max=50.0)
+  Score(vgg)  = 74.7726   [0.4*(1-LPIPS)=0.3494  0.3*SSIM=0.2529  0.3*PSNRn=0.1454]  (psnr_max=50.0)
+QUEUE DONE

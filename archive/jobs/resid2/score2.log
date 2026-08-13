@@ -1,0 +1,104 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+mean |field| px: base 0.2112  s 0.2785  cum2s 0.2784  cum2 0.2269
+cum2 rescale factor k=1.2268  (arm s and arm cum2s magnitudes matched to 0.2785 vs 0.2784)
+  5/60 56s
+
+[n=5] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   76.7911  24.5065  0.8753   0.1043  +0.0000  -0.0501    -0.99   2/5
+      s   76.8412  24.5551  0.8761   0.1044  +0.0501  +0.0000       --   0/5
+  cum2s   76.8333  24.5504  0.8760   0.1045  +0.0422  -0.0079    -0.81   2/5
+   cum2   76.8174  24.5243  0.8757   0.1042  +0.0263  -0.0238    -0.51   2/5
+  10/60 91s
+
+[n=10] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   77.6131  25.2899  0.8818   0.1004  +0.0000  -0.0664    -2.51   2/10
+      s   77.6796  25.3483  0.8829   0.1004  +0.0664  +0.0000       --   0/10
+  cum2s   77.6786  25.3482  0.8829   0.1005  +0.0655  -0.0010    -0.17   4/10
+   cum2   77.6468  25.3150  0.8824   0.1003  +0.0336  -0.0328    -1.35   3/10
+  15/60 128s
+
+[n=15] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   77.9508  25.4015  0.8871   0.0975  +0.0000  -0.0614    -2.96   3/15
+      s   78.0122  25.4570  0.8881   0.0976  +0.0614  +0.0000       --   0/15
+  cum2s   78.0107  25.4556  0.8881   0.0977  +0.0599  -0.0015    -0.31   7/15
+   cum2   77.9826  25.4255  0.8876   0.0975  +0.0318  -0.0296    -1.56   6/15
+  20/60 171s
+
+[n=20] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.1662  25.6158  0.8889   0.0968  +0.0000  -0.0902    -4.49   3/20
+      s   78.2564  25.6907  0.8904   0.0967  +0.0902  +0.0000       --   0/20
+  cum2s   78.2542  25.6890  0.8904   0.0968  +0.0881  -0.0022    -0.59   8/20
+   cum2   78.2033  25.6439  0.8895   0.0967  +0.0371  -0.0532    -3.03   6/20
+  25/60 208s
+
+[n=25] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.5296  25.8106  0.8924   0.0932  +0.0000  -0.0964    -5.66   3/25
+      s   78.6260  25.8898  0.8939   0.0931  +0.0964  +0.0000       --   0/25
+  cum2s   78.6252  25.8904  0.8939   0.0932  +0.0956  -0.0009    -0.27  10/25
+   cum2   78.5695  25.8418  0.8930   0.0931  +0.0399  -0.0565    -3.80   7/25
+  30/60 244s
+
+[n=30] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.3627  25.7616  0.8907   0.0954  +0.0000  -0.1092    -6.83   3/30
+      s   78.4719  25.8485  0.8925   0.0953  +0.1092  +0.0000       --   0/30
+  cum2s   78.4705  25.8490  0.8925   0.0953  +0.1077  -0.0014    -0.50  13/30
+   cum2   78.4051  25.7948  0.8914   0.0953  +0.0424  -0.0668    -4.79   7/30
+  35/60 287s
+
+[n=35] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.3299  25.7575  0.8908   0.0962  +0.0000  -0.1203    -7.93   3/35
+      s   78.4502  25.8531  0.8927   0.0961  +0.1203  +0.0000       --   0/35
+  cum2s   78.4473  25.8530  0.8927   0.0961  +0.1174  -0.0029    -1.09  15/35
+   cum2   78.3733  25.7922  0.8915   0.0962  +0.0434  -0.0769    -5.94   7/35
+  40/60 332s
+
+[n=40] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.5308  25.9319  0.8924   0.0950  +0.0000  -0.1314    -7.30   4/40
+      s   78.6621  26.0345  0.8945   0.0948  +0.1314  +0.0000       --   0/40
+  cum2s   78.6596  26.0348  0.8945   0.0949  +0.1288  -0.0026    -1.01  17/40
+   cum2   78.5775  25.9689  0.8931   0.0949  +0.0468  -0.0846    -5.58   8/40
+  45/60 358s
+
+[n=45] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.7432  26.1276  0.8939   0.0937  +0.0000  -0.1349    -7.96   5/45
+      s   78.8781  26.2342  0.8960   0.0936  +0.1349  +0.0000       --   0/45
+  cum2s   78.8749  26.2337  0.8960   0.0936  +0.1317  -0.0032    -1.31  20/45
+   cum2   78.7903  26.1650  0.8946   0.0937  +0.0471  -0.0878    -6.19   9/45
+  50/60 389s
+
+[n=50] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.7647  26.1502  0.8936   0.0934  +0.0000  -0.1418    -8.58   5/50
+      s   78.9064  26.2608  0.8958   0.0931  +0.1418  +0.0000       --   0/50
+  cum2s   78.9022  26.2596  0.8958   0.0932  +0.1376  -0.0042    -1.80  21/50
+   cum2   78.8120  26.1875  0.8943   0.0933  +0.0473  -0.0945    -6.76  10/50
+  55/60 440s
+
+[n=55] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.6640  26.0433  0.8922   0.0932  +0.0000  -0.1411    -9.02   6/55
+      s   78.8051  26.1541  0.8944   0.0930  +0.1411  +0.0000       --   0/55
+  cum2s   78.7995  26.1517  0.8943   0.0930  +0.1354  -0.0056    -2.43  22/55
+   cum2   78.7096  26.0793  0.8929   0.0931  +0.0456  -0.0954    -7.17  11/55
+  60/60 468s
+
+[n=60] SHAPE-vs-MAGNITUDE, HCM0181, full shipped chain
+    arm     SCORE     PSNR    SSIM    LPIPS  vs base     vs s   t vs s   win/N
+   base   78.3877  25.8879  0.8883   0.0948  +0.0000  -0.1422    -9.68   6/60
+      s   78.5300  25.9968  0.8906   0.0946  +0.1422  +0.0000       --   0/60
+  cum2s   78.5225  25.9933  0.8904   0.0947  +0.1348  -0.0075    -3.22  22/60
+   cum2   78.4318  25.9220  0.8890   0.0948  +0.0440  -0.0982    -7.80  11/60
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/resid2/res_score2.json   total 468s

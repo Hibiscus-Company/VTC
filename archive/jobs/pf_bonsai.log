@@ -1,0 +1,36 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+28 pairs
+[1/28] frame_000010 P22.916 S0.7278 L0.2536 sc65.439 gtlapv1326.12e-4 rnlapv166.85e-4 (11s)
+[2/28] frame_000120 P22.865 S0.6312 L0.3689 sc57.900 gtlapv487.31e-4 rnlapv65.21e-4 (18s)
+[3/28] frame_000190 P21.915 S0.6543 L0.2999 sc60.780 gtlapv931.31e-4 rnlapv105.53e-4 (26s)
+[4/28] frame_000260 P22.447 S0.6481 L0.3333 sc59.580 gtlapv765.19e-4 rnlapv121.93e-4 (35s)
+[5/28] frame_000440 P21.874 S0.6553 L0.3554 sc58.566 gtlapv574.91e-4 rnlapv113.49e-4 (47s)
+[6/28] frame_000510 P22.718 S0.7738 L0.3627 sc62.337 gtlapv213.38e-4 rnlapv39.77e-4 (60s)
+[7/28] frame_000630 P23.297 S0.7632 L0.2861 sc65.429 gtlapv448.92e-4 rnlapv198.79e-4 (68s)
+[8/28] frame_000710 P22.787 S0.7782 L0.2754 sc66.002 gtlapv398.56e-4 rnlapv121.83e-4 (81s)
+[9/28] frame_000810 P29.137 S0.8939 L0.2500 sc74.299 gtlapv53.98e-4 rnlapv62.81e-4 (91s)
+[10/28] frame_000910 P28.344 S0.8782 L0.2386 sc73.808 gtlapv189.44e-4 rnlapv45.45e-4 (99s)
+[11/28] frame_001100 P25.462 S0.8789 L0.2570 sc71.367 gtlapv123.33e-4 rnlapv59.36e-4 (106s)
+[12/28] frame_001180 P24.088 S0.8752 L0.2972 sc68.821 gtlapv50.40e-4 rnlapv38.37e-4 (115s)
+[13/28] frame_001250 P24.148 S0.8750 L0.2859 sc69.304 gtlapv189.77e-4 rnlapv82.39e-4 (123s)
+[14/28] frame_001320 P25.508 S0.8781 L0.3027 sc69.542 gtlapv55.02e-4 rnlapv58.26e-4 (133s)
+[15/28] frame_001400 P30.486 S0.8781 L0.1840 sc77.277 gtlapv199.90e-4 rnlapv81.45e-4 (143s)
+[16/28] frame_001470 P26.012 S0.7651 L0.2072 sc70.274 gtlapv641.34e-4 rnlapv140.12e-4 (153s)
+[17/28] frame_001540 P27.940 S0.8368 L0.1833 sc74.534 gtlapv425.99e-4 rnlapv136.28e-4 (164s)
+[18/28] frame_001640 P28.677 S0.9261 L0.2184 sc76.253 gtlapv144.87e-4 rnlapv68.34e-4 (173s)
+[19/28] frame_001720 P30.953 S0.9697 L0.1577 sc81.354 gtlapv212.44e-4 rnlapv121.02e-4 (184s)
+[20/28] frame_001820 P29.416 S0.9533 L0.1656 sc79.624 gtlapv257.72e-4 rnlapv84.10e-4 (193s)
+[21/28] frame_001930 P28.853 S0.9036 L0.2206 sc75.595 gtlapv128.73e-4 rnlapv44.86e-4 (200s)
+[22/28] frame_002120 P29.415 S0.9249 L0.1775 sc78.296 gtlapv235.60e-4 rnlapv70.28e-4 (207s)
+[23/28] frame_002190 P32.842 S0.9476 L0.1539 sc81.978 gtlapv175.94e-4 rnlapv61.55e-4 (216s)
+[24/28] frame_002260 P30.250 S0.9344 L0.2014 sc78.125 gtlapv65.20e-4 rnlapv100.83e-4 (225s)
+[25/28] frame_002330 P31.941 S0.9532 L0.1603 sc81.347 gtlapv120.93e-4 rnlapv90.68e-4 (231s)
+[26/28] frame_002440 P29.096 S0.9397 L0.1672 sc78.961 gtlapv283.95e-4 rnlapv114.06e-4 (238s)
+[27/28] frame_002510 P31.215 S0.9588 L0.1646 sc80.911 gtlapv157.23e-4 rnlapv82.58e-4 (246s)
+[28/28] frame_002650 P29.895 S0.9359 L0.1990 sc78.054 gtlapv78.44e-4 rnlapv71.26e-4 (255s)
+AGG n=28 PSNR 26.9464 SSIM 0.8478 LPIPS 0.2403 SCORE 71.9912

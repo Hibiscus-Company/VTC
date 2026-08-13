@@ -1,0 +1,63 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+GT-free member stats (dev/255 vs uniform-8 consensus, HF ratio):
+      gsplatB11ut60k dev 2.7579  HF 1.0615
+                 sh3 dev 2.7579  HF 1.0615
+        m31b_nolpips dev 3.1945  HF 1.0523
+      m31b_taillpips dev 3.1565  HF 1.0593
+       gsplatB10ut8M dev 3.7056  HF 1.0508
+     gsplatB12ut8Ms7 dev 3.7613  HF 1.0458
+          e17visnorm dev 4.0976  HF 0.9961
+           e15ceil95 dev 4.0910  HF 0.9942
+
+13 arms, n=60 views
+
+  0/60 10s
+  5/60 46s
+  10/60 82s
+  15/60 117s
+  20/60 166s
+  25/60 216s
+  30/60 298s
+  35/60 390s
+  40/60 490s
+  45/60 621s
+  50/60 802s
+  55/60 949s
+
+== SOLO MEMBER QUALITY (n=20, field+jpeg, no ensemble) ==
+      gsplatB11ut60k  77.1658  PSNR 25.1644 SSIM 0.87749 LPIPS 0.10644
+                 sh3  77.1658  PSNR 25.1644 SSIM 0.87749 LPIPS 0.10644
+        m31b_nolpips  75.9155  PSNR 25.0616 SSIM 0.87455 LPIPS 0.13395
+      m31b_taillpips  76.8255  PSNR 25.0967 SSIM 0.87275 LPIPS 0.11038
+       gsplatB10ut8M  76.8374  PSNR 25.0473 SSIM 0.87303 LPIPS 0.10955
+     gsplatB12ut8Ms7  76.7655  PSNR 25.0038 SSIM 0.87174 LPIPS 0.10973
+          e17visnorm  75.7339  PSNR 24.6688 SSIM 0.86405 LPIPS 0.12472
+           e15ceil95  75.6842  PSNR 24.6559 SSIM 0.86351 LPIPS 0.12537
+
+== ARMS, HCM0181, n=60, real test GT, full shipped chain ==
+                           arm     SCORE     PSNR     SSIM    LPIPS  vs uniform8      se       t   wins
+                      uniform8   78.8165  26.1849  0.89469  0.09338      +0.0000  0.0000   +0.00   0/60
+            LOO_gsplatB11ut60k   78.8336  26.2071  0.89521  0.09367      +0.0171  0.0052   +3.29  42/60
+                       LOO_sh3   78.8336  26.2071  0.89521  0.09367      +0.0171  0.0052   +3.29  42/60
+              LOO_m31b_nolpips   78.8538  26.1805  0.89473  0.09241      +0.0372  0.0051   +7.34  49/60
+            LOO_m31b_taillpips   78.8018  26.1889  0.89497  0.09402      -0.0147  0.0052   -2.81  20/60
+             LOO_gsplatB10ut8M   78.7185  26.1351  0.89355  0.09422      -0.0980  0.0066  -14.77   0/60
+           LOO_gsplatB12ut8Ms7   78.7223  26.1358  0.89356  0.09415      -0.0943  0.0059  -15.84   0/60
+                LOO_e17visnorm   78.7204  26.1245  0.89320  0.09376      -0.0961  0.0108   -8.87   5/60
+                 LOO_e15ceil95   78.7247  26.1254  0.89321  0.09367      -0.0919  0.0115   -7.97   8/60
+                 w1.5_top2solo   78.7694  26.1498  0.89391  0.09344      -0.0471  0.0048   -9.82   6/60
+   w1.5_top2dev(=4:1:1 analog)   78.8169  26.1937  0.89499  0.09372      +0.0003  0.0069   +0.05  29/60
+                  w_prop_1/dev   78.7602  26.1484  0.89382  0.09358      -0.0563  0.0058   -9.72   3/60
+                    w_prop_dev   78.8418  26.2057  0.89522  0.09346      +0.0252  0.0051   +4.94  45/60
+
+== does a GT-free stat predict the LOO delta? ==
+  corr(LOO_delta,        dev) = -0.901
+  corr(LOO_delta,    HFratio) = +0.653
+  corr(LOO_delta, solo_score) = +0.342
+
+DONE

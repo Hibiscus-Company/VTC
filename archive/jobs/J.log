@@ -1,0 +1,29 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+HCM0181: 60 train pairs; refit mean-ds8 rms 0.269px vs shipped 0.267px
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+   nofield:-1.2232  shipped(mean,ds8):+0.0000  med_ds16:+0.0639  med_ds8:+0.0631  med_ds4:+0.0634  med_ds2:+0.0628  refit_mean_ds8:+0.0114
+HCM0193: 60 train pairs; refit mean-ds8 rms 0.224px vs shipped 0.225px
+   nofield:-0.7776  shipped(mean,ds8):+0.0000  med_ds16:+0.2061  med_ds8:+0.2064  med_ds4:+0.2063  med_ds2:+0.2065  refit_mean_ds8:-0.0090
+HCM0204: 60 train pairs; refit mean-ds8 rms 0.239px vs shipped 0.242px
+   nofield:-0.8986  shipped(mean,ds8):+0.0000  med_ds16:+0.1597  med_ds8:+0.1601  med_ds4:+0.1594  med_ds2:+0.1594  refit_mean_ds8:-0.0037
+hcm0031: 50 train pairs; refit mean-ds8 rms 0.214px vs shipped 0.215px
+   nofield:-0.6030  shipped(mean,ds8):+0.0000  med_ds16:+0.2187  med_ds8:+0.2177  med_ds4:+0.2175  med_ds2:+0.2174  refit_mean_ds8:+0.0123
+hcm0034: 60 train pairs; refit mean-ds8 rms 0.205px vs shipped 0.205px
+   nofield:-0.9101  shipped(mean,ds8):+0.0000  med_ds16:+0.0472  med_ds8:+0.0471  med_ds4:+0.0469  med_ds2:+0.0472  refit_mean_ds8:+0.0013
+
+=== LENS-FIELD RESOLUTION SWEEP (train-fitted, zero leakage) ===
+    delta score vs shipped mean-pooled ds=8 field
+  variant                HCM0181   HCM0193   HCM0204   hcm0031   hcm0034      MEAN
+  nofield                -1.2232   -0.7776   -0.8986   -0.6030   -0.9101   -0.8825
+  shipped(mean,ds8)      +0.0000   +0.0000   +0.0000   +0.0000   +0.0000   +0.0000
+  med_ds16               +0.0639   +0.2061   +0.1597   +0.2187   +0.0472   +0.1391
+  med_ds8                +0.0631   +0.2064   +0.1601   +0.2177   +0.0471   +0.1389
+  med_ds4                +0.0634   +0.2063   +0.1594   +0.2175   +0.0469   +0.1387
+  med_ds2                +0.0628   +0.2065   +0.1594   +0.2174   +0.0472   +0.1386
+  refit_mean_ds8         +0.0114   -0.0090   -0.0037   +0.0123   +0.0013   +0.0025
+
+  absolute scores (shipped): HCM0181=76.4786 HCM0193=76.5310 HCM0204=76.6221 hcm0031=75.2566 hcm0034=77.0684

@@ -1,0 +1,24 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  10/60
+  20/60
+  30/60
+  40/60
+  50/60
+  60/60
+
+variant                   SCORE     PSNR    SSIM    LPIPS    n
+prebuilt k4/png         76.6745  24.9034  0.8650   0.1055   60
+p4 mean float32         76.6487  24.9026  0.8654   0.1063   60
+p4 mean uint8           76.6745  24.9034  0.8650   0.1055   60
+p7 mean float32         76.9928  25.1119  0.8706   0.1048   60
+p7 mean uint8           77.0219  25.1100  0.8702   0.1038   60
+p7 winsor1 float32      77.0016  25.0978  0.8704   0.1042   60
+p7 winsor1 uint8        77.0290  25.0960  0.8700   0.1032   60
+
+winsor1 - mean  in float32 : +0.0088
+winsor1 - mean  in uint8   : +0.0071

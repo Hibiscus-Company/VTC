@@ -1,0 +1,26 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lpd_sub_cpu.py:55: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).float().div_(255.0) \
+[1/14 86s] SHIP 74.9860 | SUB b0.70-0.2950 ROLL b0.70-4.4622
+[2/14 168s] SHIP 75.2113 | SUB b0.70-0.3328 ROLL b0.70-4.7275
+[3/14 203s] SHIP 75.7600 | SUB b0.70-0.3199 ROLL b0.70-4.8292
+[4/14 232s] SHIP 76.5996 | SUB b0.70-0.3026 ROLL b0.70-4.9220
+[5/14 284s] SHIP 76.7910 | SUB b0.70-0.2800 ROLL b0.70-4.8415
+[6/14 339s] SHIP 77.2508 | SUB b0.70-0.2682 ROLL b0.70-4.7793
+[7/14 396s] SHIP 77.6834 | SUB b0.70-0.2674 ROLL b0.70-4.7708
+[8/14 455s] SHIP 77.7598 | SUB b0.70-0.2783 ROLL b0.70-4.7594
+[9/14 518s] SHIP 77.6972 | SUB b0.70-0.2774 ROLL b0.70-4.8052
+[10/14 570s] SHIP 77.6131 | SUB b0.70-0.2907 ROLL b0.70-4.8416
+[11/14 606s] SHIP 77.6294 | SUB b0.70-0.2941 ROLL b0.70-4.8517
+[12/14 635s] SHIP 77.6386 | SUB b0.70-0.2994 ROLL b0.70-4.8405
+[13/14 678s] SHIP 77.6558 | SUB b0.70-0.2921 ROLL b0.70-4.8188
+[14/14 747s] SHIP 77.8158 | SUB b0.70-0.2863 ROLL b0.70-4.8160
+
+=== HCM0181 REAL TEST GT, FULL SHIPPED CHAIN (restore->median field lanczos4->JPEG q100/ss2), n=14, gate touches 53.40% of pixels ===
+         arm     SCORE     PSNR     SSIM    LPIPS   vs SHIP   win/n
+        SHIP   77.8158  25.3048  0.88483  0.09780   +0.0000    0/14
+   SUB b0.70   77.5295  25.2717  0.88194  0.10229   -0.2863    0/14
+  ROLL b0.70   72.9998  24.9257  0.83096  0.17211   -4.8160    0/14

@@ -1,0 +1,62 @@
+sub_round30c_k10_q98ss0.zip -- THE r30 TO SUBMIT.  Base r29 = 77.6644 (GRADED).
+317,400,412 bytes = 302.70 MiB.  386/386 exact, CRC OK, VERIFY PASSED.  NOT SUBMITTED.
+All 7 scenes differ from r29. Single-generation JPEG from PNG masters (no JPEG-of-JPEG anywhere).
+
+WHY THIS FILE AND NOT THE OTHER TWO. Three r30 candidates were built today; two are wrong:
+  sub_round30_k10.zip        right field gain (1.30), WRONG encode (q100/4:2:0)   333.39 MiB
+  sub_round30b_g150_...zip   right encode (q98/4:4:4), WRONG field gain (1.50)    302.50 MiB
+  sub_round30c_k10_q98ss0    BOTH CORRECT                                          302.70 MiB
+Adjudicated head-to-head on the production harness at k=10 with the gauss1 field, n=60, real test
+GT, paired, arms differing only in (gain x encode) -- /home/.../tmp/adjudicate.log:
+     g1.30_q100ss2  78.8767   +0.0000            0/60   59.30 MiB/60   <- r30
+     g1.30_q98ss0   78.9271   +0.0504 +-0.0030  59/60   53.04          <- r30c  t=16.96
+     g1.30_PNG      78.9312   +0.0544 +-0.0034  59/60  137.81
+     g1.40_q98ss0   78.9198   +0.0430           50/60   53.01
+     g1.50_q100ss2  78.8425   -0.0343 +-0.0122  19/60   59.25   t=-2.81  <- r30b's gain
+     g1.50_q98ss0   78.8911   +0.0144           32/60   52.99
+     g1.60_q98ss0   78.8420   -0.0347           27/60   52.96
+
+=================== CHANGE 4 (NEW): ENCODE q98 / 4:4:4  (+0.0504/tower) =========================
+MY ERROR, STATED PLAINLY: I concluded "the encode axis is closed, the byte cap is not a lever" from
+a grid that swept QUALITY at 4:2:0 (q100/98/96/93) and SUBSAMPLING at q100 (ss2/ss1/ss0) and NEVER
+CROSSED THEM. The winning cell was the single cell I did not test. A campaign agent found it; I
+re-measured it independently and it reproduces at +0.0504 against their +0.0507.
+Quality ladder AT 4:4:4 (qladder.log) shows a SHARP interior optimum, not a plateau:
+     q100 +0.0147 (45/60) | q99 +0.0384 (55/60) | **q98 +0.0504 (59/60)** | q97 +0.0209 (50/60)
+     q96 -0.0446 (1/60)   | q94 -0.2953 (0/60)
+q98/4:4:4 is also CHEAPER than what we shipped (53.04 vs 59.30 MiB/60), so this is a pure
+rate-distortion win, not a byte purchase. The whole submission drops 333.39 -> 302.70 MiB.
+MECHANISM: gain is LPIPS-led (0.09341 -> 0.09132) with PSNR/SSIM giving back a little. 4:2:0 blurs
+chroma spatially and leaves block structure; q98 trims incoherent HF in the frequency domain. They
+are different operations and the second is the one that helps.
+ALSO CORRECTED: "shipped q100/ss2 beats lossless PNG" is FALSE on the production harness -- PNG is
++0.0544. That belief came from the retired eval-split proxy. PNG is still infeasible (137.81 MiB/60
+=> ~690 MiB of towers alone); q98/4:4:4 captures 93% of the lossless gain at 38% of its bytes.
+
+=================== FIELD GAIN STAYS AT 1.30 -- 1.50 REFUTED ====================================
+The campaign synthesis argued gain 1.50 from a private-set observation (private fields are fit
+against 60k/8M models while 1.30 was calibrated on a 30k/5M model; the 30k field measures 1.1486x
+the 60k field, so 1.30 x 1.1486 = 1.493). Ingenious, and wrong: at matched encode 1.50 is -0.036
+against 1.30, and the direct r30-vs-r30b arm g1.50_q100ss2 is -0.0343 (t=-2.81, 19/60). 1.40 and
+1.60 also decline. This is now the THIRD independent measurement putting the optimum at 1.30
+(k=4 chain, single-member raw PNG, and this k=10 chain).
+
+=================== CHANGES 1-3, UNCHANGED FROM sub_round30_k10 =================================
+1. TOWERS 8 -> 10 MEMBERS, TRUE UNIFORM (+0.0488/tower, 4.7 sigma). Interior optimum at k~10:
+   k=4 77.9190 | k=6 78.5059 | k=8 78.8165 | k=10 78.8653 | k=12 78.8075 | k=14 78.7380.
+   PSNR rises monotonically to k=14 while LPIPS turns over after k=10. Added r17_ut7_ema999 (dev
+   2.79 -- better than every shipped UT member) and r2r8_ut42 (3.89). EXCLUDED s2gates champA/memB/
+   memC (dev 7.35-7.41 vs 2.5-3.3 for everything we ship) despite all 30 candidates PASSING the
+   collapse gate -- that gate catches fog, not mediocrity.
+2. FIELD GAUSS(sigma=1) (+0.0106/tower, 59/60).
+3. CHAIR GETS A LENS FIELD (+0.0483 on chair). LOVO calibrated against real test GT: it under-reads
+   a field 1.46x at matched gain (refuting my own 10-30x hypothesis -- it reads PRESENCE right and
+   AMPLITUDE wrong). chair has ~32x less misregistration than a tower (0.101 px vs 0.211 px).
+
+EXPECTED: +0.06 .. +0.10 blended over r29 -> roughly 77.72 .. 77.77.
+  towers k=10        +0.0349   |  field gauss1     +0.0076
+  chair field        +0.0069   |  encode q98/4:4:4 +0.036 (towers) .. +0.050 (if it transfers to
+                                  chair/bonsai, which is EXTRAPOLATED -- it is an encode-level
+                                  effect so it should, but the video scenes have burned us before)
+RISK: five stacked changes, so a bad result is not attributable to one. The two added members are
+ranked GT-free. The encode gain on chair/bonsai is extrapolated from towers.

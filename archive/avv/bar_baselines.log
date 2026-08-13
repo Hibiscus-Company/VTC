@@ -1,0 +1,12 @@
+arms: ['K1_noUT_aa', 'K4_pC_seed1k', 'K4_pC_seed7', 'eps10', 'eps20', 'ppisp_pc']
+
+                   arm : result
+         6-member MEAN : EVAL mean6            n= 28  PSNR 27.4462  SSIM 0.8587  LPIPSvgg 0.2491  SCORE 72.2644
+            K1_noUT_aa : EVAL K1_noUT_aa       n= 28  PSNR 26.9814  SSIM 0.8503  LPIPSvgg 0.2448  SCORE 71.9029
+          K4_pC_seed1k : EVAL K4_pC_seed1k     n= 28  PSNR 26.5942  SSIM 0.8458  LPIPSvgg 0.2506  SCORE 71.3067
+           K4_pC_seed7 : EVAL K4_pC_seed7      n= 28  PSNR 26.6543  SSIM 0.8438  LPIPSvgg 0.2522  SCORE 71.2190
+                 eps10 : EVAL eps10            n= 28  PSNR 26.7616  SSIM 0.8494  LPIPSvgg 0.2485  SCORE 71.5985
+                 eps20 : EVAL eps20            n= 28  PSNR 26.7481  SSIM 0.8482  LPIPSvgg 0.2493  SCORE 71.5260
+              ppisp_pc : EVAL ppisp_pc         n= 28  PSNR 26.6250  SSIM 0.8469  LPIPSvgg 0.2539  SCORE 71.2285
+
+BAR (campaign, today's scorer) = 70.7965

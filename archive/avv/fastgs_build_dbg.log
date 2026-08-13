@@ -1,0 +1,44 @@
+CUDA_HOME=/home/bkai/miniconda3/envs/fastgs2
+/home/bkai/miniconda3/envs/fastgs2/bin/nvcc
+Cuda compilation tools, release 12.8, V12.8.93
+Build cuda_12.8.r12.8/compiler.35583870_0
+  Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+  ninja: no work to do.
+  /home/bkai/miniconda3/envs/fastgs2/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/fastgs2/include -I/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/include -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib/stubs -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/fastgs2/include -I/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/include -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib/stubs -pthread -B /home/bkai/miniconda3/envs/fastgs2/compiler_compat -shared -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/fastgs2/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/fastgs2/lib -L/home/bkai/miniconda3/envs/fastgs2/lib -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib/stubs -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/fastgs2/include -I/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/include -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib/stubs -DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/fastgs2/include -I/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/include -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/fastgs2/targets/x86_64-linux/lib/stubs /mnt/c/Users/BKAI/an_plaza2/FastGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/ext.o /mnt/c/Users/BKAI/an_plaza2/FastGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/simple_knn.o /mnt/c/Users/BKAI/an_plaza2/FastGS/submodules/simple-knn/build/temp.linux-x86_64-cpython-310/spatial.o -L/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torch/lib -L/home/bkai/miniconda3/envs/fastgs2/lib -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-cpython-310/simple_knn/_C.cpython-310-x86_64-linux-gnu.so
+  installing to build/bdist.linux-x86_64/wheel
+  running install
+  running install_lib
+  creating build/bdist.linux-x86_64/wheel
+  creating build/bdist.linux-x86_64/wheel/simple_knn
+  copying build/lib.linux-x86_64-cpython-310/simple_knn/_C.cpython-310-x86_64-linux-gnu.so -> build/bdist.linux-x86_64/wheel/./simple_knn
+  running install_egg_info
+  running egg_info
+  writing simple_knn.egg-info/PKG-INFO
+  writing dependency_links to simple_knn.egg-info/dependency_links.txt
+  writing top-level names to simple_knn.egg-info/top_level.txt
+  reading manifest file 'simple_knn.egg-info/SOURCES.txt'
+  adding license file 'LICENSE.md'
+  writing manifest file 'simple_knn.egg-info/SOURCES.txt'
+  Copying simple_knn.egg-info to build/bdist.linux-x86_64/wheel/./simple_knn-0.0.0-py3.10.egg-info
+  running install_scripts
+  creating build/bdist.linux-x86_64/wheel/simple_knn-0.0.0.dist-info/WHEEL
+  creating '/home/bkai/.cache/pip/wheels/82/11/83/a6dfd405b7482a63a5fc09a2fdc0cf2438a447b1d512b9b301/tmpoe9hftxi/.tmp-0amw6jbp/simple_knn-0.0.0-cp310-cp310-linux_x86_64.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+  adding 'simple_knn/_C.cpython-310-x86_64-linux-gnu.so'
+  adding 'simple_knn-0.0.0.dist-info/licenses/LICENSE.md'
+  adding 'simple_knn-0.0.0.dist-info/METADATA'
+  adding 'simple_knn-0.0.0.dist-info/WHEEL'
+  adding 'simple_knn-0.0.0.dist-info/top_level.txt'
+  adding 'simple_knn-0.0.0.dist-info/RECORD'
+  removing build/bdist.linux-x86_64/wheel
+  Building wheel for simple_knn (pyproject.toml): finished with status 'done'
+  Created wheel for simple_knn: filename=simple_knn-0.0.0-cp310-cp310-linux_x86_64.whl size=575878 sha256=fd8cbc9693e868af0c21eb4e62af6855d62bba684442757600eec32c506a7ce8
+  Stored in directory: /home/bkai/.cache/pip/wheels/82/11/83/a6dfd405b7482a63a5fc09a2fdc0cf2438a447b1d512b9b301
+Successfully built simple_knn
+Installing collected packages: simple_knn
+  Attempting uninstall: simple_knn
+    Found existing installation: simple_knn 0.0.0
+    Uninstalling simple_knn-0.0.0:
+      Removing file or directory /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/simple_knn-0.0.0.dist-info/
+      Removing file or directory /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/simple_knn/
+      Successfully uninstalled simple_knn-0.0.0
+Successfully installed simple_knn-0.0.0

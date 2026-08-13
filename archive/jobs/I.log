@@ -1,0 +1,27 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+img 0
+img 15
+img 30
+img 45
+
+=== LPIPS per VGG layer (production k4+field, HCM0181) ===
+  layer               LPIPS  %oftotal | density by GT-gradient mask
+                                      |    flat(<p50)   low(p50-80)  edge(p80-95)  strong(>p95)
+  relu1_2(full)     0.01378     13.37 |         1.050         1.022         0.888         0.723
+  relu2_2(1/2)      0.02614     25.36 |         1.259         0.789         0.724         0.607
+  relu3_3(1/4)      0.01689     16.39 |         1.171         0.848         0.838         0.764
+  relu4_3(1/8)      0.02137     20.73 |         1.066         0.918         0.966         0.962
+  relu5_3(1/16)     0.02489     24.15 |         1.030         0.954         0.994         1.003
+
+=== interventions gated on RENDER gradient (test-time available) ===
+  base             PSNR  25.8561 SSIM 0.88568 LPIPS 0.10307 score   77.9612 (+0.0000)
+  bil_d5_s10       PSNR  25.8430 SSIM 0.88166 LPIPS 0.12556 score   76.9335 (-1.0277)
+  bil_d5_s20       PSNR  25.7890 SSIM 0.87149 LPIPS 0.15001 score   75.6179 (-2.3433)
+  gauss0.5_flat    PSNR  25.8049 SSIM 0.87882 LPIPS 0.11357 score   77.3046 (-0.6566)
+  gauss0.8_flat    PSNR  25.6146 SSIM 0.85926 LPIPS 0.15760 score   74.8425 (-3.1187)
+  med3_flat        PSNR  25.4798 SSIM 0.84850 LPIPS 0.16502 score   74.1419 (-3.8193)

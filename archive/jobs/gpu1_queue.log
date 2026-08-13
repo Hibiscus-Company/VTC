@@ -1,0 +1,23 @@
+########## JOB 1: restoration on HCM0421 (200/240 photos vs HCM0181's 180/240) ##########
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL HCM0421_base_all40 n= 40  PSNR 25.1137  SSIM 0.8403  LPIPSvgg 0.1129  SCORE 75.7616
+BASELINE (ensemble only, test poses): SCORE 72.5103  PSNR 23.6336 SSIM 0.7984 LPIPS 0.1405
+RESTORED (test poses):                SCORE 72.7838  PSNR 23.7203 SSIM 0.7992 LPIPS 0.1356
+=== HCM0421_s0: DELTA +0.2735 (baseline 72.5103 -> 72.7838) ===
+  per-image: 13/13 improved, mean +0.2735 sd 0.1574, jackknife range [+0.2477, +0.2876]
+BASELINE (ensemble only, test poses): SCORE 72.5103  PSNR 23.6336 SSIM 0.7984 LPIPS 0.1405
+RESTORED (test poses):                SCORE 72.7843  PSNR 23.7227 SSIM 0.7992 LPIPS 0.1356
+=== HCM0421_s1: DELTA +0.2740 (baseline 72.5103 -> 72.7843) ===
+  per-image: 13/13 improved, mean +0.2740 sd 0.1375, jackknife range [+0.2508, +0.2929]
+(HCM0181 k=1 comparison point was +0.4072 at 75% data; this is k=1 at 83% data)
+
+########## JOB 2: bonsai seed 303 (clean restart on a free GPU) ##########
+[29999] loss 0.0710 l1 0.0219 ssim 0.8364 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/r24_bonsai/aa303/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r24_bonsai/aa303/test_render
+=== GPU1 QUEUE DONE Sun Jul 26 13:16:14 +07 2026 ===

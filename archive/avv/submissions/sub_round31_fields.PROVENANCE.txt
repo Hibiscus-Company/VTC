@@ -1,0 +1,50 @@
+sub_round31_fields.zip -- r29 (77.6644, our BEST) + ONLY the two per-image FIELD operators.
+349,917,932 bytes = 333.71 MiB.  386/386 exact, CRC OK, VERIFY PASSED.  NOT SUBMITTED.
+Changed vs r29: 5 towers + chair. bonsai byte-verbatim.
+EXPECTED +0.010 -> ~77.674.  Deliberately modest; see below for why the last two rounds were not.
+
+=================== WHAT THIS REVERTS, AND HOW WE KNOW ==========================================
+Submitting r30 and r30c split the failed bundle EXACTLY:
+    r29  77.6644  (best)
+    r30  77.6614   members + gauss1 + chair field = -0.0030
+    r30c 77.6595   encode q98/4:4:4, ALONE        = -0.0019     total -0.0049
+Both verified against their own submetrics. Predicted +0.050 each. BOTH NEGATIVE.
+
+1. THE 2 EXTRA MEMBERS ARE REVERTED (back to r29's k=8). 8->10 gave PSNR +0.0073 and LPIPS WORSE
+   by +0.0309pp -- exactly the harness's PAST-THE-OPTIMUM signature (at k=12 the harness had PSNR
+   still climbing 26.2245->26.2338 while LPIPS turned 0.09348->0.09501). We did not move toward
+   k=10; we moved past OUR OWN optimum.
+   ROOT CAUSE: our pool's heterogeneity is 2.20/255 vs the harness pool's 4.67/255 -- HALF.
+   Homogeneous members carry less INDEPENDENT information, so k=8 on our pool is already as
+   over-smoothed as k~12 on a diverse one. EFFECTIVE k != NOMINAL k.
+2. THE ENCODE IS REVERTED (back to q100/4:2:0). Cross-validated after the fact on single-member
+   renders of all 5 public towers: -0.0094 mean, 0/5 positive, and NEGATIVE ON HCM0181 ITSELF
+   (-0.0100) -- the very scene whose k=10 ensemble gave +0.0504. The gain belonged to ensemble
+   over-smoothing (JPEG artifacts substitute for texture the pixel-mean destroys), not the encode.
+   LB confirmed at -0.0019.
+
+=================== WHAT SURVIVES -- AND IT IS CROSS-VALIDATED THIS TIME ========================
+GAUSS(sigma=1) FIELD SMOOTHING, measured on ALL FIVE public towers (gauss_xscene.py, single
+member, gain 1.30, shipped encode, real test GT):
+    HCM0181 +0.0095 (60/60) | HCM0193 +0.0082 (56/60) | HCM0204 +0.0073 (57/60)
+    hcm0031 +0.0080 (47/50) | hcm0034 +0.0077 (55/60)
+    5-SCENE MEAN +0.0081, POSITIVE 5/5, tight 0.0073-0.0095 band.
+That is what a transferable operator looks like -- contrast the encode's 0/5. sigma=2 is nominally
++0.0091 but with a wider spread and weaker win rates (40-53 vs 47-60); +0.0010 is negligible
+blended, so sigma=1 wins on CONSISTENCY, which is the property that survives transfer.
+CHAIR LENS FIELD: kept. A per-image operator in the same transferable class (the tower lens field
+delivered +0.7345 on the LB). LOVO +0.0299, projected ~+0.0483 via the measured 1.46x LOVO->
+production factor. THE ONE UNVERIFIED ITEM HERE -- chair has no test GT, so it cannot be
+cross-validated. If r31 disappoints, this is the first thing to drop (one-line revert: point the
+"chair" SRC entry at /mnt/d/avv/r29/video_ens/chair/png).
+
+=================== THE RULE THAT COST TWO ROUNDS ===============================================
+Every number behind r30/r30c came from HCM0181 ALONE -- n=60 VIEWS of n=1 SCENE. t=16.96 and 59/60
+measure VIEW-level variance and say NOTHING about cross-scene transfer, and I read them as if they
+bounded it. r29 transferred at ~1x precisely because its field gain was extended to all 5 public
+towers BEFORE shipping.
+=> A single-scene harness result is a HYPOTHESIS. Cross-validate on >=3 public towers, AND ask
+   whether the effect depends on ENSEMBLE DIVERSITY (if so, discount hard -- HCM0181's pool is
+   twice as diverse as anything we ship). Per-image operators independent of the pool -- lens
+   field, field smoothing, resampling kernel -- transfer at ~1x. Pool-dependent ones do not.
+NOTHING IN r31 DEPENDS ON ENSEMBLE DIVERSITY. That is the point of this round.

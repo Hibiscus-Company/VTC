@@ -1,0 +1,14 @@
+
+bonsai: n=248  gaps med 10
+  velocity/index  med 0.02971  CV 0.777  p95/p5 12.23x
+  corr(beta_t, trans speed/idx)  r=+0.122  spearman +0.277
+  corr(beta_t, ang speed/idx)    r=-0.109  spearman -0.029
+  velocity series first 12: [0.00115, 0.00233, 0.01241, 0.03535, 0.04828, 0.0421, 0.04133, 0.04699, 0.04647, 0.04436, 0.04224, 0.04453]
+  autocorr(v,lag1) +0.646  (smooth trajectory -> high; noise -> ~0)
+
+chair: n=205  gaps med 5
+  velocity/index  med 0.05194  CV 0.218  p95/p5 1.84x
+  corr(beta_t, trans speed/idx)  r=-0.252  spearman -0.169
+  corr(beta_t, ang speed/idx)    r=-0.262  spearman -0.263
+  velocity series first 12: [0.00075, 0.00098, 0.00348, 0.01181, 0.02993, 0.04114, 0.03946, 0.03991, 0.04104, 0.0392, 0.03662, 0.04409]
+  autocorr(v,lag1) +0.915  (smooth trajectory -> high; noise -> ~0)

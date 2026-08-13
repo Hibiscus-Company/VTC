@@ -1,0 +1,29 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+B9 field mean|f| 0.2112 px (shipped fit target, 60 views)
+     arm  mean|f|   p95|f|  cos(.,n120)  mean|f-n120|
+   n120m   0.2746   0.8165      1.00000        0.0000
+n120msm2   0.2746   0.8102      0.99814        0.0195
+   n60am   0.2746   0.8275      0.99536        0.0307
+n60amsm2   0.2746   0.8185      0.99604        0.0290
+ n60fixm   0.2746   0.8143      0.99559        0.0295
+n60fixmsm2   0.2746   0.8164      0.99588        0.0288
+  10/60 31s
+  20/60 60s
+  30/60 90s
+  40/60 119s
+  50/60 147s
+  60/60 174s
+
+SMOOTHING x FIT-DEPTH OVERLAP (all matched amplitude), HCM0181, n=60, FULL shipped chain, fields in PRODUCTION form (raw fit x1.30) unless suffixed m
+     arm     SCORE     PSNR    SSIM    LPIPS   vs n120  paired t   win/N
+   n120m   78.5127  25.9829  0.8903   0.0947   +0.0000        --   0/60
+n120msm2   78.5225  25.9888  0.8905   0.0946   +0.0097      6.85  50/60
+   n60am   78.4864  25.9638  0.8899   0.0948   -0.0263     -6.38  10/60
+n60amsm2   78.5070  25.9773  0.8903   0.0947   -0.0058     -1.24  26/60
+ n60fixm   78.4822  25.9618  0.8899   0.0948   -0.0305    -11.01   4/60
+n60fixmsm2   78.5013  25.9739  0.8901   0.0947   -0.0115     -3.38  19/60
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldrefit/res_overlap.json   total 174s

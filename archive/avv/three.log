@@ -1,0 +1,25 @@
+
+[M1] BONSAI capD 5M  N(op>0.05)=1,052,821
+   3D scale aspect (max/min axis): med 1012.98  p75 14052.01  p95 342644.06  frac>4 95.7%  frac>10 87.3%
+   PROJECTED 2D: sigma_minor med 0.687px   sigma_MAJOR med 1.608px   aspect med 2.10 p90 7.05
+   sigma_MAJOR: frac>1px 75.6%  frac>2px 40.4%  frac>4px 20.4%
+
+[M1] TOWER HCM0421 ut42  N(op>0.05)=5,401,392
+   3D scale aspect (max/min axis): med 207.91  p75 4135.03  p95 137598.01  frac>4 95.1%  frac>10 84.5%
+   PROJECTED 2D: sigma_minor med 0.610px   sigma_MAJOR med 1.351px   aspect med 1.99 p90 5.46
+   sigma_MAJOR: frac>1px 67.0%  frac>2px 32.2%  frac>4px 11.8%
+
+[M2] bonsai VoL  (Laplacian variance; higher = sharper)
+   single member (mean over 7):   51.83
+   ensemble mean               :   34.63   ratio ens/single 0.668
+   TRAIN single render   58.81   TRAIN GT photo  366.80   ratio 0.160
+
+[M3] bonsai  n=248 train frames
+   beta_t (HF energy frac): med 0.01377  CV 0.611  p5 0.00639  p95 0.03941  ratio p95/p5 6.17
+   gradient anisotropy    : med 0.1977  (0=isotropic, 1=fully directional)
+   dominant orientation   : circ-spread 26.3 deg  (large=varies per frame)
+
+[M3] chair  n=205 train frames
+   beta_t (HF energy frac): med 0.03775  CV 0.570  p5 0.01277  p95 0.09048  ratio p95/p5 7.09
+   gradient anisotropy    : med 0.2181  (0=isotropic, 1=fully directional)
+   dominant orientation   : circ-spread 47.2 deg  (large=varies per frame)

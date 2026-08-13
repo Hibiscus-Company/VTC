@@ -1,0 +1,15 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+bonsai TRAIN (in-sample)     n= 28  LPIPSvgg 0.2065 (sd 0.0556, sem 0.0105)
+bonsai EVAL (held-out)       n= 28  LPIPSvgg 0.2448 (sd 0.0663, sem 0.0125)
+  >>> bonsai LPIPS GAP (eval-train) +0.03824 +/- 0.01635   [worth -1.530 score pts]
+
+chair TRAIN (in-sample)      n= 28  LPIPSvgg 0.0905 (sd 0.0209, sem 0.0039)
+chair EVAL (held-out)        n= 28  LPIPSvgg 0.2284 (sd 0.0570, sem 0.0108)
+  >>> chair LPIPS GAP (eval-train) +0.13787 +/- 0.01148   [worth -5.515 score pts]
+
+DONE

@@ -1,0 +1,1 @@
+--iters 30000 --cap_max 5000000 --refine_stop 15000 --noise_stop 8000 --lpips_from 12000 --scale_reg 0.1 --seed 42 --min_opacity 0.01

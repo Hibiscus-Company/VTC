@@ -1,0 +1,20 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60 12s
+  15/60 129s
+  30/60 278s
+  45/60 389s
+
+ENCODE FIDELITY SWEEP, REAL GT, HCM0181, n=60, full r29 chain
+         arm     SCORE     PSNR     SSIM    LPIPS   vs ship      se    wins   MiB/60
+    q100_ss2   78.5186  25.9911  0.89042  0.09471   +0.0000  0.0000   0/60     60.35
+     q98_ss2   78.5206  25.9778  0.88973  0.09395   +0.0020  0.0020  32/60     45.48
+     q96_ss2   78.4081  25.9497  0.88807  0.09510   -0.1106  0.0028   0/60     37.21
+     q93_ss2   77.9139  25.8692  0.88270  0.10222   -0.6047  0.0114   0/60     29.24
+  q100_cb0.5   78.4987  25.9887  0.89040  0.09516   -0.0200  0.0007   0/60     60.15
+  q100_cb1.0   78.4540  25.9805  0.89042  0.09617   -0.0646  0.0018   0/60     58.63
+  q100_cb2.0   78.2400  25.9414  0.88971  0.10041   -0.2787  0.0062   0/60     57.08

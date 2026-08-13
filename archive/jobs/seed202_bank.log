@@ -1,0 +1,15 @@
+=== seed-202 UT member (HCM0181 eval-split, gpu0) Sat Jul 25 12:47:32 +07 2026 ===
+[59000] loss 0.0619 l1 0.0307 ssim 0.8636 N 8000000
+[59999] loss 0.0503 l1 0.0272 ssim 0.9061 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/seedbank/HCM0181_ut_s202/ckpt.pt
+Wrote 60 images to /mnt/d/avv/seedbank/HCM0181_ut_s202/eval_render
+=== SCORES (baseline ema999 solo = 75.4293) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL HCM0181_s202_solo n= 60  PSNR 24.0924  SSIM 0.8431  LPIPSvgg 0.1204  SCORE 74.9301
+COMBINE HCM0181_s202_add mean    n= 60 PSNR 24.5502 SSIM 0.8564 LPIPS 0.1096 SCORE 76.0350
+=== SEED202 DONE Sat Jul 25 16:18:48 +07 2026 ===

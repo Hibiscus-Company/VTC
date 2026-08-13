@@ -1,0 +1,6 @@
+=== TOWER EMA PRODUCTION [HCM0421] seed7 decay0.999 starting Thu Jul 23 04:33:37 +07 2026 ===
+[59999] loss 0.0401 l1 0.0215 ssim 0.9277 N 8000000
+Saving EMA-averaged params (decay 0.999, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/r17/HCM0421_ut7_ema999/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r17/HCM0421_ut7_ema999/test_render
+=== TOWER EMA PRODUCTION [HCM0421] DONE Thu Jul 23 06:55:42 +07 2026, 60 test renders ready ===

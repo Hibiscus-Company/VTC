@@ -1,0 +1,12 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+chair    PNG (lossless upper bound)   SCORE  71.1203  LPIPS 0.2193 SSIM 0.8147 PSNR 25.7500     67.5MB
+chair    q100 ss2 prog  [SHIPPED]     SCORE  71.0094  LPIPS 0.2202 SSIM 0.8125 PSNR 25.7372     28.8MB
+chair    q100 ss0 prog                SCORE  70.9913  LPIPS 0.2201 SSIM 0.8118 PSNR 25.7338     41.3MB
+chair    q100 ss0 prog keep_rgb       SCORE  71.1431  LPIPS 0.2182 SSIM 0.8141 PSNR 25.7461     71.3MB
+chair    q100 ss0 base keep_rgb       SCORE  71.1431  LPIPS 0.2182 SSIM 0.8141 PSNR 25.7461     76.5MB
+chair    q98  ss0 prog keep_rgb       SCORE  71.1248  LPIPS 0.2185 SSIM 0.8140 PSNR 25.7418     55.3MB

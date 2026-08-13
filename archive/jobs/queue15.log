@@ -1,0 +1,36 @@
+240 views, 224928 init points, K=[[926.4,0,660.0],[0,926.4,494.5]], size 1320x989
+scene_scale 10.363
+Traceback (most recent call last):
+RuntimeError: expected scalar type Float but found Double
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/avv/output/HCM0181_gsplat_smoke/ckpt.pt'
+TRACKB SMOKE DONE
+=== [GPU 0] HCM0181 -> /mnt/d/avv/output/HCM0181_e15ceil95 ===
+=== [GPU 0] queue 'e15ceil95' done ===
+=== score e15ceil95 ===
+HCM0181    n= 60  PSNR 24.3058  SSIM 0.8470  LPIPS(alex) 0.0827 LPIPS(vgg) 0.1226  Score(alex) 0.7668  Score(vgg) 0.7509
+  Score(alex)  = 76.6842   [0.4*(1-LPIPS)=0.3669  0.3*SSIM=0.2541  0.3*PSNRn=0.1458]  (psnr_max=50.0)
+  Score(vgg)  = 75.0875   [0.4*(1-LPIPS)=0.3509  0.3*SSIM=0.2541  0.3*PSNRn=0.1458]  (psnr_max=50.0)
+=== [GPU 0] HCM0181 -> /mnt/d/avv/output/HCM0181_e16app ===
+=== [GPU 0] queue 'e16app' done ===
+=== score e16app ===
+HCM0181    n= 60  PSNR 23.4321  SSIM 0.8377  LPIPS(alex) 0.0838 LPIPS(vgg) 0.1238  Score(alex) 0.7584  Score(vgg) 0.7424
+  Score(alex)  = 75.8383   [0.4*(1-LPIPS)=0.3665  0.3*SSIM=0.2513  0.3*PSNRn=0.1406]  (psnr_max=50.0)
+  Score(vgg)  = 74.2382   [0.4*(1-LPIPS)=0.3505  0.3*SSIM=0.2513  0.3*PSNRn=0.1406]  (psnr_max=50.0)
+=== [GPU 0] HCM0181 -> /mnt/d/avv/output/HCM0181_e17visnorm ===
+=== [GPU 0] queue 'e17visnorm' done ===
+=== score e17visnorm ===
+HCM0181    n= 60  PSNR 24.3164  SSIM 0.8474  LPIPS(alex) 0.0816 LPIPS(vgg) 0.1220  Score(alex) 0.7675  Score(vgg) 0.7513
+  Score(alex)  = 76.7470   [0.4*(1-LPIPS)=0.3674  0.3*SSIM=0.2542  0.3*PSNRn=0.1459]  (psnr_max=50.0)
+  Score(vgg)  = 75.1318   [0.4*(1-LPIPS)=0.3512  0.3*SSIM=0.2542  0.3*PSNRn=0.1459]  (psnr_max=50.0)
+LADDER DONE
+=== [GPU 0] HCM0249 -> /mnt/d/avv/output/HCM0249_memB ===
+=== [GPU 0] HCM0254 -> /mnt/d/avv/output/HCM0254_memB ===
+=== [GPU 0] HCM0276 -> /mnt/d/avv/output/HCM0276_memB ===
+=== [GPU 0] HCM1439 -> /mnt/d/avv/output/HCM1439_memB ===
+=== [GPU 0] HNI0131 -> /mnt/d/avv/output/HNI0131_memB ===
+=== [GPU 0] HNI0265 -> /mnt/d/avv/output/HNI0265_memB ===
+=== [GPU 0] HNI0366 -> /mnt/d/avv/output/HNI0366_memB ===
+=== [GPU 0] HNI0437 -> /mnt/d/avv/output/HNI0437_memB ===
+=== [GPU 0] queue 'memB' done ===
+MEMBER B DONE

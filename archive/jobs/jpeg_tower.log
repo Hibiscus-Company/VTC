@@ -1,0 +1,31 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+tower    PNG (lossless upper bound)   SCORE  76.2922  LPIPS 0.1078 SSIM 0.8598 PSNR 24.6837    144.1MB
+tower    q100 ss2 prog  [SHIPPED]     SCORE  76.2865  LPIPS 0.1068 SSIM 0.8585 PSNR 24.6755     63.0MB
+tower    q100 ss0 prog                SCORE  76.2894  LPIPS 0.1061 SSIM 0.8577 PSNR 24.6691     88.8MB
+Suspension not allowed here
+Traceback (most recent call last):
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/PIL/ImageFile.py", line 663, in _save
+    fh = fp.fileno()
+io.UnsupportedOperation: fileno
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/bkai/.claude/jobs/1c9cf7e9/tmp/jpeg_tax.py", line 70, in <module>
+    main()
+  File "/home/bkai/.claude/jobs/1c9cf7e9/tmp/jpeg_tax.py", line 52, in main
+    buf = io.BytesIO(); srcs[s].save(buf, "JPEG", **kw)
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/PIL/Image.py", line 2711, in save
+    save_handler(self, fp, filename)
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/PIL/JpegImagePlugin.py", line 847, in _save
+    ImageFile._save(
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/PIL/ImageFile.py", line 667, in _save
+    _encode_tile(im, fp, tile, bufsize, None, exc)
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/PIL/ImageFile.py", line 702, in _encode_tile
+    raise _get_oserror(errcode, encoder=True) from exc
+OSError: broken data stream when writing image file

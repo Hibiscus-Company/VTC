@@ -1,0 +1,10 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/audit_er.py:32: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+[5/60 232s] SHIP+0.2103 prod_u8+0.2081 c=1.000+0.1992 c=1.143+0.2054 c=1.167+0.2062 c=1.600+0.2086 clamp=1e9+0.2108 win=5+0.1744 L1too+0.1786 perchan+0.2083
+[10/60 368s] SHIP+0.2436 prod_u8+0.2416 c=1.000+0.2268 c=1.143+0.2344 c=1.167+0.2360 c=1.600+0.2451 clamp=1e9+0.2440 win=5+0.2099 L1too+0.2171 perchan+0.2417
+[15/60 608s] SHIP+0.2419 prod_u8+0.2402 c=1.000+0.2232 c=1.143+0.2328 c=1.167+0.2339 c=1.600+0.2453 clamp=1e9+0.2421 win=5+0.2105 L1too+0.2201 perchan+0.2404
+[20/60 806s] SHIP+0.2389 prod_u8+0.2380 c=1.000+0.2203 c=1.143+0.2297 c=1.167+0.2310 c=1.600+0.2433 clamp=1e9+0.2391 win=5+0.2081 L1too+0.2186 perchan+0.2380

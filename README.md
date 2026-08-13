@@ -1,3 +1,9 @@
+> **Hibiscus Company — VAR 2026 "BTS Digital Twin" fork.**
+> This repository carries our competition work on top of upstream FastGS. Start at
+> [`archive/INDEX.md`](archive/INDEX.md) for the full working record (experiment ledger, production
+> pipeline, distilled findings, environment specs), and [`REPRODUCE_r36.md`](REPRODUCE_r36.md) to
+> rebuild the graded submission. The upstream FastGS README follows unchanged.
+
 <div align="center">
 <h1>FastGS: Training 3D Gaussian Splatting in 100 Seconds</h1> 
 <h2>CVPR 2026</h2> 

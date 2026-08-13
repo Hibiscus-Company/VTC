@@ -1,0 +1,22 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0181: n=60 stems, 4 members, lam=1.0
+   restore_fast max|diff| vs production restore: 0.0
+  0/60  27s
+  10/60  249s
+  20/60  466s
+  30/60  705s
+  40/60  1129s
+  50/60  1636s
+
+FULL SHIPPED CHAIN, HCM0181, n=60, lam=1.0
+         arm     SCORE     PSNR     SSIM    LPIPS  vs prod_q100    MB/60      dMB
+   prod_q100   78.3851  25.8896   0.8879   0.0946       +0.0000    63.42    +0.00
+    prod_q99   78.3824  25.8845   0.8876   0.0944       -0.0026    56.41    -7.02
+  float_q100   78.3877  25.8879   0.8883   0.0948       +0.0027    63.36    -0.07
+
+blended (1 of 7 scenes) delta for switching ONE scene q99->q100: -0.0000 -- see per-scene numbers above, divide by 7

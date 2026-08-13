@@ -1,0 +1,14 @@
+per-view oracle flow rms  0.5095 px
+view-median flow rms      0.2813 px  (view-consistent part)
+per-view deviation rms    0.3833 px  (view-specific part)
+energy share view-consistent: 22.9%
+
+  variant             MSE       PSNR    dPSNR   dScore(PSNRterm)  %of oracle gain
+  raw                0.003357  24.7398  +0.0000    +0.0000          0.0%
+  shipped_field      0.002737  25.6277  +0.8878    +0.5327         35.9%
+  oracle_perview     0.001901  27.2111  +2.4713    +1.4828        100.0%
+  LOOmed_ds16        0.002652  25.7639  +1.0241    +0.6145         41.4%
+  LOOmed_ds8         0.002653  25.7631  +1.0233    +0.6140         41.4%
+  LOOmed_ds4         0.002653  25.7630  +1.0231    +0.6139         41.4%
+  LOOmed_ds2         0.002653  25.7626  +1.0227    +0.6136         41.4%
+  LOOmed_ds1         0.002653  25.7625  +1.0227    +0.6136         41.4%

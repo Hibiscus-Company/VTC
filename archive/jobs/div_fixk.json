@@ -1,0 +1,162 @@
+{
+ "n": 60,
+ "lam": 1.0,
+ "gain": 1.3,
+ "arms": {
+  "base_k3UT": {
+   "score": 78.36394811878046,
+   "psnr": 25.906823372003775,
+   "ssim": 0.8883937805891037,
+   "lpips": 0.09579898305237293,
+   "mb": 63.619509,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k"
+   ]
+  },
+  "k4_sameFAM(+B12ut8Ms7)": {
+   "score": 78.5277082746877,
+   "psnr": 25.994846833357155,
+   "ssim": 0.8905041356881459,
+   "lpips": 0.0946080973992745,
+   "mb": 63.257643,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7"
+   ]
+  },
+  "k4_+m31b_taillpips": {
+   "score": 78.53010359057804,
+   "psnr": 25.98998850665191,
+   "ssim": 0.8898651520411174,
+   "lpips": 0.09399610186616579,
+   "mb": 63.684571,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "m31b_taillpips"
+   ]
+  },
+  "k4_+m31b_nolpips": {
+   "score": 78.43098367011255,
+   "psnr": 26.005899819329493,
+   "ssim": 0.8904333015282949,
+   "lpips": 0.09713888168334961,
+   "mb": 63.259808,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "m31b_nolpips"
+   ]
+  },
+  "k4_+gsplatB8pure": {
+   "score": 78.60203621132317,
+   "psnr": 26.04734338560275,
+   "ssim": 0.8918679942687352,
+   "lpips": 0.09456024120251337,
+   "mb": 62.690029,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB8pure"
+   ]
+  },
+  "k4_+gsplatB4warm": {
+   "score": 78.54446918092377,
+   "psnr": 26.03989638093789,
+   "ssim": 0.8913318028052648,
+   "lpips": 0.09548556829492251,
+   "mb": 62.497649,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB4warm"
+   ]
+  },
+  "k4_+gsplatB7ppisp2": {
+   "score": 78.51668573539928,
+   "psnr": 26.068292626431813,
+   "ssim": 0.8907843937476476,
+   "lpips": 0.09619554132223129,
+   "mb": 62.409071,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB7ppisp2"
+   ]
+  },
+  "k4_+gsplatB1": {
+   "score": 78.41203661080988,
+   "psnr": 26.004089585886927,
+   "ssim": 0.8898597826560338,
+   "lpips": 0.09715526551008224,
+   "mb": 62.418399,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB1"
+   ]
+  },
+  "k4_+gsplatB2": {
+   "score": 78.41036097483604,
+   "psnr": 26.001822009298017,
+   "ssim": 0.889906785885493,
+   "lpips": 0.09719839518268904,
+   "mb": 62.418572,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB2"
+   ]
+  },
+  "k4_+e17visnorm": {
+   "score": 78.67032640758809,
+   "psnr": 26.089375484050255,
+   "ssim": 0.8927725344896317,
+   "lpips": 0.09416187293827534,
+   "mb": 62.83114,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "e17visnorm"
+   ]
+  },
+  "k4_+e15ceil95": {
+   "score": 78.66125698786175,
+   "psnr": 26.087452618631964,
+   "ssim": 0.892712128162384,
+   "lpips": 0.09431446070472399,
+   "mb": 62.819655,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "e15ceil95"
+   ]
+  },
+  "k4_+e16app": {
+   "score": 78.57433532795594,
+   "psnr": 25.96772939167562,
+   "ssim": 0.8921212315559387,
+   "lpips": 0.09424848134318987,
+   "mb": 62.870784,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "e16app"
+   ]
+  }
+ }
+}

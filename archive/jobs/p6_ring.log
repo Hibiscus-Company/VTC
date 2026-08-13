@@ -1,0 +1,19 @@
+Render canvas padding: 92px
+Wrote 40 images to /mnt/d/avv/output/HNI0131_champA/train_renders
+=== GATE TRAIN RENDERED ===
+rendered 40 train views -> /mnt/d/avv/output/HNI0131_gsplatB9ut/train_renders_p6
+=== UT TRAIN RENDERED ===
+
+===== P6: HNI0131 train views (n=40), mask suppresses 12.9% =====
+  gate_in   PSNR  30.020 dB
+  gate_out  PSNR  17.796 dB
+  ut_in     PSNR  28.910 dB
+  ut_out    PSNR  21.132 dB
+
+  gate degrades +12.22 dB going into the unsupervised ring
+  UT   degrades +7.78 dB over the same region
+  in the RING: UT beats gate by +3.34 dB
+
+  => if UT beats gate in the ring by a wide margin, giving the gates 0.4
+     weight there is pure loss and the mask is justified.
+P6 DONE

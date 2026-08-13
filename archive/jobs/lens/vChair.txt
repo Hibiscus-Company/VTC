@@ -1,0 +1,10 @@
+# Re-gate the CHAIR lens field. It was zeroed on 17/07 (held-out x-val dPSNR -0.127, "DoF/RS flow
+# noise") -- using the MEAN estimator, CUBIC remap, and leg-1 30k/5M renders. Every one of those
+# three has since been superseded, and the MEDIAN estimator is specifically an outlier-rejector for
+# exactly the failure mode that was blamed. Honest re-test on current production renders.
+# name|pool|ds|smooth|poly|up|remap
+mean_ds8_cubic|mean|8|0|0|cubic|cubic
+median_ds8|median|8|0|0|cubic|cubic
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds16_rlan|median|16|0|0|cubic|lanczos
+med_ds8_g1_rlan|median|8|1|0|cubic|lanczos

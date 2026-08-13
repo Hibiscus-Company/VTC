@@ -1,0 +1,6 @@
+>>> sr03 (gpu0) START 14:26 [--scale_reg 0.3]
+Saved 5000000 gaussians to /mnt/d/avv/r36_shape/sr03/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r36_shape/sr03/render
+   CENSUS N=1,390,944  s2/s1 0.4471  s2/s3 7138329.9  s1/s3 17184706.9
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 26.7747  SSIM 0.8454  LPIPSvgg 0.2418  SCORE 71.7553   [BAR 70.7965]
+<<< sr03 DONE 16:04

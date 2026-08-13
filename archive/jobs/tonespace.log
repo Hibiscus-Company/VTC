@@ -1,0 +1,52 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  HCM0181 0/30 1s
+  HCM0181 15/30 12s
+
+== HCM0181 n=30
+  p=0.4     76.5920 PSNR 25.0613 SSIM 0.87039 LPIPS 0.11391 d  -0.0063 se 0.0015 wins   8/30
+  p=0.7     76.5996 PSNR 25.0670 SSIM 0.87043 LPIPS 0.11383 d  +0.0014 se 0.0006 wins  18/30
+  p=1.0     76.5983 PSNR 25.0656 SSIM 0.87038 LPIPS 0.11382 d  +0.0000 se 0.0000 wins   0/30
+  p=1.4     76.5732 PSNR 25.0495 SSIM 0.87015 LPIPS 0.11403 d  -0.0251 se 0.0020 wins   0/30
+  HCM0193 0/30 1s
+  HCM0193 15/30 13s
+
+== HCM0193 n=30
+  p=0.4     73.6398 PSNR 24.7565 SSIM 0.83245 LPIPS 0.15469 d  -0.0049 se 0.0007 wins   5/30
+  p=0.7     73.6450 PSNR 24.7590 SSIM 0.83249 LPIPS 0.15463 d  +0.0004 se 0.0005 wins  19/30
+  p=1.0     73.6447 PSNR 24.7583 SSIM 0.83248 LPIPS 0.15462 d  +0.0000 se 0.0000 wins   0/30
+  p=1.4     73.6351 PSNR 24.7510 SSIM 0.83238 LPIPS 0.15467 d  -0.0096 se 0.0013 wins   0/30
+  HCM0204 0/30 1s
+  HCM0204 15/30 14s
+
+== HCM0204 n=30
+  p=0.4     76.3645 PSNR 25.4613 SSIM 0.87046 LPIPS 0.12566 d  -0.0076 se 0.0013 wins   3/30
+  p=0.7     76.3719 PSNR 25.4665 SSIM 0.87051 LPIPS 0.12558 d  -0.0002 se 0.0006 wins  14/30
+  p=1.0     76.3721 PSNR 25.4661 SSIM 0.87050 LPIPS 0.12557 d  +0.0000 se 0.0000 wins   0/30
+  p=1.4     76.3569 PSNR 25.4552 SSIM 0.87038 LPIPS 0.12569 d  -0.0151 se 0.0012 wins   0/30
+  hcm0031 0/30 1s
+  hcm0031 15/30 15s
+
+== hcm0031 n=30
+  p=0.4     73.6067 PSNR 24.7780 SSIM 0.82905 LPIPS 0.15329 d  -0.0022 se 0.0012 wins  12/30
+  p=0.7     73.6105 PSNR 24.7796 SSIM 0.82906 LPIPS 0.15322 d  +0.0016 se 0.0007 wins  24/30
+  p=1.0     73.6089 PSNR 24.7791 SSIM 0.82905 LPIPS 0.15325 d  +0.0000 se 0.0000 wins   0/30
+  p=1.4     73.6016 PSNR 24.7737 SSIM 0.82898 LPIPS 0.15330 d  -0.0073 se 0.0013 wins   3/30
+  hcm0034 0/30 1s
+  hcm0034 15/30 12s
+
+== hcm0034 n=30
+  p=0.4     74.8647 PSNR 24.3041 SSIM 0.85842 LPIPS 0.13676 d  -0.0042 se 0.0008 wins   6/30
+  p=0.7     74.8684 PSNR 24.3054 SSIM 0.85843 LPIPS 0.13670 d  -0.0005 se 0.0005 wins  15/30
+  p=1.0     74.8690 PSNR 24.3048 SSIM 0.85842 LPIPS 0.13666 d  +0.0000 se 0.0000 wins   0/30
+  p=1.4     74.8615 PSNR 24.3002 SSIM 0.85836 LPIPS 0.13673 d  -0.0075 se 0.0010 wins   1/30
+
+===== SUMMARY d vs p=1 (sRGB code space, shipped) =====
+p=0.4   MEAN  -0.0050  scenes+ 0/5  HCM0181-0.0063 HCM0193-0.0049 HCM0204-0.0076 hcm0031-0.0022 hcm0034-0.0042
+p=0.7   MEAN  +0.0005  scenes+ 3/5  HCM0181+0.0014 HCM0193+0.0004 HCM0204-0.0002 hcm0031+0.0016 hcm0034-0.0005
+p=1.0   MEAN  +0.0000  scenes+ 0/5  HCM0181+0.0000 HCM0193+0.0000 HCM0204+0.0000 hcm0031+0.0000 hcm0034+0.0000
+p=1.4   MEAN  -0.0129  scenes+ 0/5  HCM0181-0.0251 HCM0193-0.0096 HCM0204-0.0151 hcm0031-0.0073 hcm0034-0.0075

@@ -1,0 +1,23 @@
+pool: ['sr01_s42', 'sr01_s42b', 'sr01_s101', 'churn_s42', 'churn_s101', 'churn15k', 'sr0', 'sr0.03', 'minop001', 'appaffine']
+
+single members (PSNR over all 28 holes, tile-MSE aggregate):
+   sr01_s42     25.6546 dB
+   sr01_s42b    25.8627 dB
+   sr01_s101    25.6023 dB
+   churn_s42    25.7109 dB
+   churn_s101   25.7107 dB
+   churn15k     25.6079 dB
+   sr0          24.7181 dB
+   sr0.03       25.7639 dB
+   minop001     25.8117 dB
+   appaffine    24.0090 dB
+   GLOBAL BEST single = sr01_s42b  25.8627 dB
+   PIXEL MEAN of all 10 = 26.4036 dB   <- the shipped rule
+   ORACLE per-tile (illegal, fits noise) = 27.4399 dB
+   HONEST per-tile (fit on 14 holes, applied to the other 14, both ways) = 25.7150 dB
+      vs pixel mean: -0.6886 dB     vs global best single: -0.1477 dB
+      per-tile winner agrees between the two halves on 12.7% of tiles (chance = 10.0%)
+
+DARK SPECULAR REGION (GT luminance < 0.30, the glass table + black panel):
+   1.0% of tiles;  carries 0.9% of squared error
+   per-tile MSE there 0.00229 vs elsewhere 0.00260 (ratio 0.88x)

@@ -1,0 +1,5 @@
+{
+  "gt_dir": "/home/bkai/data/phase1/public_set/hcm0031/train/images",
+  "render_dir": "/mnt/d/avv/output/hcm0031_gsplatB9ut/train_renders",
+  "ds": 8
+}

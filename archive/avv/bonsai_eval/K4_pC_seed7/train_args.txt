@@ -1,0 +1,1 @@
+--ut --seed 7 --iters 30000 --cap_max 5000000 --refine_stop 15000 --noise_stop 8000 --lpips_from 12000

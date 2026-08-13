@@ -1,0 +1,39 @@
+{
+ "n": 58,
+ "members": [
+  "/mnt/d/avv/tw_test/chair_ema099/eval_png",
+  "/mnt/d/avv/tw_test/chair_ema999/eval_png",
+  "/mnt/d/avv/tw_test/chair_capmax2M/eval_png",
+  "/mnt/d/avv/tw_test/chair_capmax4M/eval_png",
+  "/mnt/d/avv/tw_test/chair_tw1.0/eval_png",
+  "/mnt/d/avv/tw_test/chair_noise40k/eval_png",
+  "/mnt/d/avv/tw_test/chair_tw3.0/eval_png"
+ ],
+ "sigma": 1.5,
+ "res": {
+  "0.0": {
+   "psnr": 25.915399952162048,
+   "ssim": 0.8173495972978657,
+   "lpips": 0.22250166432610874,
+   "score": 71.16966131718885
+  },
+  "0.3": {
+   "psnr": 25.889333263424554,
+   "ssim": 0.8163228076079796,
+   "lpips": 0.22017233780231968,
+   "score": 71.21639067420134
+  },
+  "0.6": {
+   "psnr": 25.80437871594837,
+   "ssim": 0.8123976680739172,
+   "lpips": 0.21862886807528034,
+   "score": 71.10940254877532
+  },
+  "1.0": {
+   "psnr": 25.606220327455958,
+   "ssim": 0.8031996478294504,
+   "lpips": 0.22136849717333398,
+   "score": 70.60498174442374
+  }
+ }
+}

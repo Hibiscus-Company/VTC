@@ -1,0 +1,52 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+
+================================================================================================
+HCM0181 (tower, tuned scene)   [eval-split / starved regime, k=4, tw_test family]
+================================================================================================
+  harness: 60 views x 4 members ['HCM0181_baseline_screen', 'HCM0181_ema099', 'HCM0181_aniso01', 'HCM0181_minop02']
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lv_main.py:114: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(self.G[i]).to(DEV).float().permute(2, 0, 1).unsqueeze(0) / 255.0
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+pixel-mean k=4                       76.1281  +0.0000  24.7413  0.8594   0.1125   0/60 
+energy lam0.5 win3                   76.2897  +0.1616  24.7026  0.8600   0.1083  60/60 
+energy lam0.75 win3                  76.3323  +0.2042  24.6771  0.8600   0.1069  60/60 
+energy lam1.0 win3                   76.3542  +0.2261  24.6474  0.8599   0.1058  60/60 
+energy lam1.25 win3                  76.3561  +0.2280  24.6136  0.8597   0.1051  58/60 
+energy lam1.5 win3                   76.3386  +0.2105  24.5759  0.8593   0.1046  54/60 
+
+================================================================================================
+chair (indoor video)   [eval-split / starved regime, k=4, tw_test family]
+================================================================================================
+  harness: 58 views x 4 members ['chair_baseline_screen', 'chair_ema099', 'chair_aniso01', 'chair_minop02']
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+pixel-mean k=4                       64.8714  +0.0000  20.4733  0.7701   0.2629   0/58 
+energy lam0.5 win3                   65.2359  +0.3644  20.4889  0.7737   0.2567  50/58 
+energy lam0.75 win3                  65.3400  +0.4686  20.4959  0.7750   0.2552  47/58 
+energy lam1.0 win3                   65.4078  +0.5364  20.5004  0.7758   0.2542  44/58 
+energy lam1.25 win3                  65.4370  +0.5656  20.5023  0.7763   0.2538  42/58 
+energy lam1.5 win3                   65.4285  +0.5571  20.5016  0.7764   0.2541  41/58 
+
+================================================================================================
+bonsai (indoor video)   [eval-split / starved regime, k=4, tw_test family]
+================================================================================================
+  harness: 28 views x 4 members ['bonsai_baseline_screen', 'bonsai_ema099', 'bonsai_tw1.0', 'bonsai_uncweight']
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+pixel-mean k=4                       72.0171  +0.0000  27.4625  0.8542   0.2521   0/28 
+energy lam0.5 win3                   72.1320  +0.1150  27.4728  0.8546   0.2497  17/28 
+energy lam0.75 win3                  72.2004  +0.1834  27.4753  0.8547   0.2482  16/28 
+energy lam1.0 win3                   72.2381  +0.2210  27.4763  0.8547   0.2472  16/28 
+energy lam1.25 win3                  72.2266  +0.2096  27.4758  0.8546   0.2474  15/28 
+energy lam1.5 win3                   72.1654  +0.1484  27.4738  0.8544   0.2488  15/28 
+
+================================================================================================
+SUMMARY: dScore vs lambda, per scene (eval-split regime, k=4).  t = paired per-view t
+================================================================================================
+scene                 lam0.5         lam0.75          lam1.0         lam1.25          lam1.5
+HCM0181       +0.1616(t 24.6)  +0.2042(t 22.2)  +0.2261(t 19.1)  +0.2280(t 15.6)  +0.2105(t 12.0)
+chair         +0.3644(t  7.9)  +0.4686(t  7.0)  +0.5364(t  6.2)  +0.5656(t  5.3)  +0.5571(t  4.5)
+bonsai        +0.1150(t  2.1)  +0.1834(t  2.5)  +0.2210(t  2.4)  +0.2096(t  1.9)  +0.1484(t  1.1)

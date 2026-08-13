@@ -1,0 +1,30 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0/60 3s
+  10/60 32s
+  20/60 64s
+  30/60 99s
+  40/60 131s
+  50/60 162s
+
+REFUTE-W  HCM0181  n=60  gauss1 field x1.3  JPEG q100/ss2  PRODUCTION restore
+           arm     SCORE     PSNR     SSIM    LPIPS      MB
+           m10   78.8802  26.2312  0.89557  0.09314   62.41
+     wx10_t0.5   78.8853  26.2297  0.89563  0.09303   62.45
+   wx10_k7dose   78.8855  26.2273  0.89561  0.09298   62.50
+     wx10_sub7   78.8881  26.2299  0.89565  0.09299   62.48
+        anti10   78.8688  26.2291  0.89543  0.09329   62.45
+   m10_lam1.10   78.8821  26.2220  0.89557  0.09296   62.59
+           mA8   78.8764  26.2346  0.89553  0.09325   62.57
+     wxA8_t0.5   78.8846  26.2348  0.89562  0.09312   62.62
+
+                              contrast     delta      se       t    wins
+                     wx10_t0.5  -  m10   +0.0051  0.0010   +5.01  48/60
+                   wx10_k7dose  -  m10   +0.0053  0.0013   +4.06  44/60
+                     wx10_sub7  -  m10   +0.0080  0.0016   +4.91  47/60
+                        anti10  -  m10   -0.0114  0.0018   -6.30   4/60
+                   m10_lam1.10  -  m10   +0.0020  0.0013   +1.52  39/60
+                     wxA8_t0.5  -  mA8   +0.0082  0.0015   +5.33  50/60
+                           m10  -  mA8   +0.0037  0.0055   +0.68  33/60

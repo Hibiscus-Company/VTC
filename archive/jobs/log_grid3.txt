@@ -1,0 +1,39 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  hcm0031 0/50 6s
+  hcm0031 20/50 70s
+  hcm0031 40/50 138s
+
+== hcm0031 (n=50) ==
+  none               P 25.0854  S 0.83504  L 0.13622  score  74.6536  d +0.0000
+  g2_mean            P 25.5008  S 0.84723  L 0.13445  score  75.3394  d +0.6858
+  g2_median          P 25.6352  S 0.85059  L 0.13351  score  75.5585  d +0.9049
+  g4_mean            P 25.5015  S 0.84725  L 0.13443  score  75.3410  d +0.6874
+  g4_median          P 25.6352  S 0.85060  L 0.13351  score  75.5588  d +0.9052
+  g8_mean            P 25.5044  S 0.84733  L 0.13440  score  75.3466  d +0.6930
+  g8_median          P 25.6355  S 0.85060  L 0.13350  score  75.5591  d +0.9055
+  g16_mean           P 25.5143  S 0.84760  L 0.13429  score  75.3653  d +0.7117
+  g16_median         P 25.6366  S 0.85062  L 0.13350  score  75.5608  d +0.9072
+  g32_mean           P 25.5346  S 0.84819  L 0.13411  score  75.4021  d +0.7485
+  g32_median         P 25.6354  S 0.85062  L 0.13349  score  75.5602  d +0.9066
+  hcm0034 0/60 3s
+  hcm0034 20/60 81s
+  hcm0034 40/60 159s
+
+== hcm0034 (n=60) ==
+  none               P 25.1418  S 0.86470  L 0.12169  score  76.1583  d +0.0000
+  g2_mean            P 25.8368  S 0.88072  L 0.11869  score  77.1761  d +1.0177
+  g2_median          P 25.8588  S 0.88151  L 0.11846  score  77.2222  d +1.0639
+  g4_mean            P 25.8372  S 0.88073  L 0.11869  score  77.1765  d +1.0182
+  g4_median          P 25.8589  S 0.88151  L 0.11846  score  77.2225  d +1.0641
+  g8_mean            P 25.8385  S 0.88076  L 0.11867  score  77.1790  d +1.0206
+  g8_median          P 25.8591  S 0.88152  L 0.11846  score  77.2228  d +1.0645
+  g16_mean           P 25.8439  S 0.88089  L 0.11864  score  77.1876  d +1.0293
+  g16_median         P 25.8590  S 0.88151  L 0.11845  score  77.2227  d +1.0643
+  g32_mean           P 25.8539  S 0.88114  L 0.11856  score  77.2043  d +1.0459
+  g32_median         P 25.8566  S 0.88146  L 0.11845  score  77.2199  d +1.0615
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/res/grid.json

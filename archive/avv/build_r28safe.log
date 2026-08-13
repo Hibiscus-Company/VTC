@@ -1,0 +1,29 @@
+=== HCM0421: energy restore (lam=0.5, k=7, 6-member map) -> median field (lanczos) ===
+restored 60 images (lam=0.5, k=7, 6 member(s)) -> /mnt/d/avv/r28e_safe/tower_ens/HCM0421/png_er
+field HCM0421.npy: mean|d| 0.1013px  max|d| 0.8377px
+corrected 60 images -> /mnt/d/avv/r28e_safe/tower_ens/HCM0421/png
+=== HCM0539: energy restore (lam=0.5, k=7, 6-member map) -> median field (lanczos) ===
+restored 60 images (lam=0.5, k=7, 6 member(s)) -> /mnt/d/avv/r28e_safe/tower_ens/HCM0539/png_er
+field HCM0539.npy: mean|d| 0.1039px  max|d| 1.1304px
+corrected 60 images -> /mnt/d/avv/r28e_safe/tower_ens/HCM0539/png
+=== HCM0540: energy restore (lam=0.5, k=7, 6-member map) -> median field (lanczos) ===
+restored 60 images (lam=0.5, k=7, 6 member(s)) -> /mnt/d/avv/r28e_safe/tower_ens/HCM0540/png_er
+field HCM0540.npy: mean|d| 0.1025px  max|d| 0.8351px
+corrected 60 images -> /mnt/d/avv/r28e_safe/tower_ens/HCM0540/png
+=== HCM0644: energy restore (lam=0.5, k=7, 6-member map) -> median field (lanczos) ===
+restored 60 images (lam=0.5, k=7, 6 member(s)) -> /mnt/d/avv/r28e_safe/tower_ens/HCM0644/png_er
+field HCM0644.npy: mean|d| 0.1024px  max|d| 1.0476px
+corrected 60 images -> /mnt/d/avv/r28e_safe/tower_ens/HCM0644/png
+=== HCM0674: energy restore (lam=0.5, k=7, 6-member map) -> median field (lanczos) ===
+restored 60 images (lam=0.5, k=7, 6 member(s)) -> /mnt/d/avv/r28e_safe/tower_ens/HCM0674/png_er
+field HCM0674.npy: mean|d| 0.1013px  max|d| 1.1281px
+corrected 60 images -> /mnt/d/avv/r28e_safe/tower_ens/HCM0674/png
+=== chair: energy restore (lam=0.5, k=7), NO field ===
+restored 58 images (lam=0.5, k=7, 7 member(s)) -> /mnt/d/avv/r28e_safe/video_ens/chair/png
+=== bonsai: lam=0, shipping r27 bytes verbatim (worst score-per-MB of the seven) ===
+=== assemble on top of r27 (ALL 7 scenes change) ===
+Traceback (most recent call last):
+  File "<stdin>", line 22, in <module>
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/PIL/Image.py", line 3639, in open
+    fp = builtins.open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/d/avv/r28e_safe/video_ens/bonsai/png/frame_001590.png'

@@ -1,0 +1,42 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+
+=== POOLED LOW-FREQ PHOTOMETRIC FIELD  HCM0181  n=60  sigma=32 ===
+  per-view LF residual RMS      : 3.393 LSB
+  pooled median field RMS       : 1.115 LSB   (max |M| 4.63)
+  residual after pooled removal : 3.204 LSB
+  VIEW-CONSISTENT energy fraction: 10.84%
+  base       PSNR  25.8053 SSIM 0.88438 LPIPS 0.10441 score   77.8380 (+0.0000, dLPIPS +0.00000)
+  pooledLOO  PSNR  25.8182 SSIM 0.88431 LPIPS 0.10467 score   77.8333 (-0.0047, dLPIPS +0.00026)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+
+=== POOLED LOW-FREQ PHOTOMETRIC FIELD  HCM0193  n=40  sigma=32 ===
+  per-view LF residual RMS      : 3.165 LSB
+  pooled median field RMS       : 1.074 LSB   (max |M| 4.03)
+  residual after pooled removal : 3.025 LSB
+  VIEW-CONSISTENT energy fraction: 8.65%
+  base       PSNR  25.5746 SSIM 0.84777 LPIPS 0.14001 score   75.1772 (+0.0000, dLPIPS +0.00000)
+  pooledLOO  PSNR  25.5780 SSIM 0.84753 LPIPS 0.14028 score   75.1614 (-0.0158, dLPIPS +0.00026)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+
+=== POOLED LOW-FREQ PHOTOMETRIC FIELD  HCM0204  n=40  sigma=32 ===
+  per-view LF residual RMS      : 2.978 LSB
+  pooled median field RMS       : 0.629 LSB   (max |M| 4.23)
+  residual after pooled removal : 2.920 LSB
+  VIEW-CONSISTENT energy fraction: 3.84%
+  base       PSNR  25.6806 SSIM 0.87526 LPIPS 0.11964 score   76.8805 (+0.0000, dLPIPS +0.00000)
+  pooledLOO  PSNR  25.6695 SSIM 0.87514 LPIPS 0.11996 score   76.8575 (-0.0230, dLPIPS +0.00032)

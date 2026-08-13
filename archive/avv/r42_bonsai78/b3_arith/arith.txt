@@ -1,0 +1,48 @@
+=== baselines ===
+  K1 (brief header)        P 26.9814  S 0.8503  L 0.2448  -> 71.9058
+  sr01 (best single)       P 26.9464  S 0.8478  L 0.2403  -> 71.9910
+  in-sample train views    P 27.9410  S 0.8707  L 0.2047  -> 74.6976
+
+BASE = 71.9058   TARGET = 78.0   NEED = +6.0942
+(from sr01 71.9910 the need is +6.0090)
+
+=== ROUTES TO 78 (each holds the other two metrics at baseline) ===
+LPIPS-only : dLPIPS -0.15235 -> LPIPS 0.09245   (62.2% reduction; vs in-sample 0.2047 = 2.21x better than the model's own train fit)
+PSNR-only  : dPSNR +10.1569 dB -> PSNR 37.1383 dB  (MSE x1/10.37; vs in-sample 27.941 dB = +9.20 dB above the train fit)
+SSIM-only  : dSSIM +0.20314 -> SSIM 1.05344  ** IMPOSSIBLE, SSIM<=1 **
+             SSIM=1.0 ceiling  -> score 76.3968  (max +4.4910); the SSIM axis alone cannot reach 78
+BALANCED   : each axis supplies +2.0314  ->  PSNR 30.3670 dB  SSIM 0.91801  LPIPS 0.19402
+             check 78.0000
+             vs in-sample: PSNR +2.426 dB, SSIM +0.0473, LPIPS -0.0107
+PROPORTIONAL (same fraction f of each metric's own headroom): f = 0.21692
+             PSNR 31.9746  SSIM 0.88277  LPIPS 0.19170   -> 78.0000
+
+=== PRICING EVERY MEASURED CEILING AGAINST THE +6.10 REQUIREMENT ===
+intervention                                                         dScore  % of +6.10
+A1 per-frame sharpening oracle (spec grid, a>=0, GT-peeking)        +0.0193        0.3%
+A1 per-frame oracle over unsharp incl. NEGATIVE alpha (GT-peeking)  +0.2405        3.9%
+A1 oracle over ALL 30 operators tested (GT-peeking)                 +0.2533        4.2%
+A1 best HONEST global operator (leave-one-out)                      +0.0541        0.9%
+A1 spectral-match oracle (per-channel)                              -1.8369      -30.1%
+A1 MSE-optimal radial zero-phase filter (family LS optimum)         -0.7075      -11.6%
+A2 oracle-keyed adaptive unsharp (uses actual GT sharpness)         +0.0170        0.3%
+A2 legal neighbour-predicted adaptive unsharp                       +0.0100        0.2%
+A3 per-image photometric refit oracle (gain+bias per channel)       +0.1160        1.9%
+A3 best +-3px integer global re-registration                        +0.0160        0.3%
+ENSEMBLE: 6-arm PNG mean vs best single (sr01)                      +0.2732        4.5%
+ENSEMBLE: mixsweep k=8 vs best single                               +0.2615        4.3%
+MODEL: scale_reg 0.01->0.1 (the one late-campaign WIN)              +0.1920        3.2%
+PERFECT GENERALISATION, LPIPS only (0.2448 -> in-sample 0.2065)     +1.5320       25.1%
+PERFECT GENERALISATION, full in-sample triple (74.697)              +2.7912       45.8%
+FIX the 8 sparse-coverage holes to the last-20 mean (75.99)         +3.9949       65.6%
+FIX the 8 sparse-coverage holes to the best frame ever (81.98)      +5.7131       93.7%
+
+OPTIMISTIC STACK (all-operator oracle + full ensemble + perfect generalisation, assumed additive): +3.3177 -> 75.2235   still 2.7765 SHORT
+
+BINDING CONSTRAINT: held-out = in-sample - 2.791. For held-out 78 the model must fit its OWN training photos at 80.79
+  (towers 80.8-81.8, chair 81.5, bonsai TODAY 74.70) -> bonsai must gain +6.09 IN-SAMPLE, i.e. the same +6.1, relocated to the fitting problem.
+
+=== LEADERBOARD TRANSLATION ===
+eval-split 71.906 reads 1.95 HIGH vs the LB scene level 69.96
+eval 78 -> LB scene ~76.05; scene weight 1/7 -> total LB +0.8706 at 1.0x transfer, +0.7400 at the 0.85x model-recipe rate
+For reference the ENTIRE campaign r28->r35 moved the LB +0.2077 in 8 rounds.

@@ -1,0 +1,12 @@
+[29000] loss 0.1171 l1 0.0373 ssim 0.7122 N 5000000 pose_r[mean/max] 0.00417/0.00741 pose_t[mean/max] 0.02097/0.05877
+[29999] loss 0.1358 l1 0.0415 ssim 0.6657 N 5000000 pose_r[mean/max] 0.00416/0.00753 pose_t[mean/max] 0.02101/0.05948
+Saved 5000000 gaussians to /mnt/d/avv/tw_test/bonsai_poseopt_v2/ckpt.pt
+Wrote 28 images to /mnt/d/avv/tw_test/bonsai_poseopt_v2/eval_render
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL bonsai_poseopt_v2 n= 28  PSNR 21.1397  SSIM 0.7143  LPIPSvgg 0.3361  SCORE 60.6676
+=== BONSAI_POSEOPT_V2 DONE ===

@@ -1,0 +1,44 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0193: 1 members, 40 poses, lam=1.0 field=1 gain=1.3
+  0/40  5s
+  10/40  45s
+  20/40  91s
+  30/40  127s
+
+=== HCM0193 FULL SHIPPED CHAIN, n=40, lam=1.0, field=1 ===
+      arm     SCORE     PSNR     SSIM    LPIPS  d_vs_q100ss2  MB/scene      dMB      d/MB
+  q100ss2   75.5093  25.7538  0.85183  0.13745       +0.0000     42.03    +0.00      +nan
+   q99ss2   75.4991  25.7474  0.85145  0.13732       -0.0102     37.35    -4.67   +0.0022
+   q98ss2   75.4807  25.7379  0.85093  0.13725       -0.0286     31.48   -10.54   +0.0027
+   q97ss2   75.4388  25.7255  0.85024  0.13759       -0.0705     28.25   -13.78   +0.0051
+  q100ss1   75.5144  25.7481  0.85119  0.13675       +0.0051     48.79    +6.77   +0.0008
+   q99ss1   75.5074  25.7415  0.85085  0.13658       -0.0019     41.57    -0.46   +0.0043
+   q98ss1   75.4992  25.7337  0.85050  0.13640       -0.0101     34.09    -7.93   +0.0013
+  q100ss0   75.5074  25.7397  0.85087  0.13657       -0.0020     60.75   +18.73   -0.0001
+   q99ss0   75.5048  25.7327  0.85062  0.13634       -0.0045     48.76    +6.73   -0.0007
+   q98ss0   75.5016  25.7264  0.85029  0.13608       -0.0077     38.50    -3.53   +0.0022
+   q97ss0   75.4666  25.7161  0.84962  0.13629       -0.0427     33.95    -8.08   +0.0053
+   q96ss0   75.4013  25.7027  0.84869  0.13702       -0.1080     30.45   -11.57   +0.0093
+      png   75.5501  25.7605  0.85289  0.13732       +0.0408     95.86   +53.83   +0.0008
+
+PAIRED vs q100ss2 (n=40)
+      arm    mean_d       se       t    wins    dPSNR     dSSIM     dLPIPS
+   q99ss2   -0.0102   0.0011   -9.71    1/40   -0.0064  -0.00038   -0.00013
+   q98ss2   -0.0286   0.0025  -11.65    0/40   -0.0160  -0.00090   -0.00020
+   q97ss2   -0.0705   0.0045  -15.76    0/40   -0.0283  -0.00159   +0.00015
+  q100ss1   +0.0051   0.0022    2.29   23/40   -0.0057  -0.00064   -0.00070
+   q99ss1   -0.0019   0.0018   -1.05   15/40   -0.0123  -0.00098   -0.00087
+   q98ss1   -0.0101   0.0023   -4.45   10/40   -0.0201  -0.00133   -0.00105
+  q100ss0   -0.0020   0.0035   -0.55   19/40   -0.0141  -0.00096   -0.00088
+   q99ss0   -0.0045   0.0029   -1.56   13/40   -0.0211  -0.00121   -0.00111
+   q98ss0   -0.0077   0.0033   -2.37   13/40   -0.0274  -0.00154   -0.00137
+   q97ss0   -0.0427   0.0043  -10.02    2/40   -0.0377  -0.00221   -0.00115
+   q96ss0   -0.1080   0.0070  -15.48    0/40   -0.0511  -0.00314   -0.00042
+      png   +0.0408   0.0077    5.27   31/40   +0.0067  +0.00106   -0.00012
+
+elapsed 157s

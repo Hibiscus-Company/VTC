@@ -1,0 +1,9 @@
+# Can the warp stop paying the resampling tax entirely?
+# r27 ships med_ds8_rlan. Round-trip isolation says lanczos4 still destroys 2.4% of the HF
+# energy, while an exact spectral upsample + lanczos on the 2x fine grid destroys 0.5%
+# (51.8 dB -> 62.2 dB round-trip). Does that convert to score against real test GT?
+# name|pool|ds|smooth|poly|up|remap
+median_ds8|median|8|0|0|cubic|cubic
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds8_fft2lan|median|8|0|0|cubic|fft2lan
+med_ds8_fft4cub|median|8|0|0|cubic|fft4cub

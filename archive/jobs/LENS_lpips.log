@@ -1,0 +1,104 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+### HCM0181  n=20  base PSNR 26.050 SSIM 0.8899 LPIPS 0.10018
+  bandGT_0       LPIPS 0.03348 (+66.58% of base)  PSNR  30.245 SSIM 0.9758  dScore  +7.7634
+  bandGT_1       LPIPS 0.07467 (+25.47% of base)  PSNR  28.025 SSIM 0.9313  dScore  +3.4497
+  bandGT_2       LPIPS 0.09242 ( +7.74% of base)  PSNR  26.949 SSIM 0.9036  dScore  +1.2607
+  bandGT_3       LPIPS 0.09785 ( +2.33% of base)  PSNR  26.498 SSIM 0.8934  dScore  +0.4669
+  bandGT_4       LPIPS 0.09960 ( +0.58% of base)  PSNR  26.287 SSIM 0.8906  dScore  +0.1872
+  bandGT_5       LPIPS 0.09992 ( +0.26% of base)  PSNR  26.516 SSIM 0.8908  dScore  +0.3167
+  lumaGT         LPIPS 0.01135 (+88.67% of base)  PSNR  42.195 SSIM 0.9956  dScore +16.4113
+  chromaGT       LPIPS 0.09474 ( +5.43% of base)  PSNR  26.130 SSIM 0.8938  dScore  +0.3820
+  bil_d5_s10     LPIPS 0.12186 (-21.64% of base)  PSNR  26.039 SSIM 0.8862  dScore  -0.9829
+  gauss0.5_flat  LPIPS 0.11273 (-12.53% of base)  PSNR  26.006 SSIM 0.8841  dScore  -0.7009
+  layers %: ['13.5', '25.5', '16.3', '20.6', '24.1']
+  ring density (<8,8-32,32-96,>=96 px from border): ['1.310', '1.460', '1.187', '0.878']  share: ['3.7%', '12.0%', '23.9%', '60.5%']  px: ['2.8%', '8.2%', '20.1%', '68.9%']
+  grad density (flat,low,edge,strong): ['1.107', '0.912', '0.880', '0.820']  share: ['55.3%', '27.4%', '13.2%', '4.1%']
+
+### HCM0193  n=20  base PSNR 26.262 SSIM 0.8609 LPIPS 0.12796
+  bandGT_0       LPIPS 0.05212 (+59.27% of base)  PSNR  29.770 SSIM 0.9644  dScore  +8.2451
+  bandGT_1       LPIPS 0.09444 (+26.19% of base)  PSNR  28.261 SSIM 0.9166  dScore  +4.2111
+  bandGT_2       LPIPS 0.11422 (+10.74% of base)  PSNR  27.322 SSIM 0.8816  dScore  +1.8075
+  bandGT_3       LPIPS 0.12285 ( +3.99% of base)  PSNR  26.826 SSIM 0.8663  dScore  +0.7053
+  bandGT_4       LPIPS 0.12635 ( +1.26% of base)  PSNR  26.580 SSIM 0.8621  dScore  +0.2930
+  bandGT_5       LPIPS 0.12712 ( +0.66% of base)  PSNR  26.825 SSIM 0.8617  dScore  +0.3959
+  lumaGT         LPIPS 0.01748 (+86.34% of base)  PSNR  40.417 SSIM 0.9939  dScore +16.9047
+  chromaGT       LPIPS 0.11985 ( +6.34% of base)  PSNR  26.390 SSIM 0.8652  dScore  +0.5305
+  bil_d5_s10     LPIPS 0.14643 (-14.43% of base)  PSNR  26.265 SSIM 0.8587  dScore  -0.8007
+  gauss0.5_flat  LPIPS 0.14008 ( -9.47% of base)  PSNR  26.240 SSIM 0.8561  dScore  -0.6414
+  layers %: ['12.9', '23.6', '18.3', '22.2', '23.0']
+  ring density (<8,8-32,32-96,>=96 px from border): ['1.238', '1.390', '1.156', '0.898']  share: ['3.5%', '11.4%', '23.3%', '61.9%']  px: ['2.8%', '8.2%', '20.1%', '68.9%']
+  grad density (flat,low,edge,strong): ['1.053', '0.950', '0.967', '0.869']  share: ['52.6%', '28.5%', '14.5%', '4.3%']
+
+### HCM0204  n=20  base PSNR 25.817 SSIM 0.8779 LPIPS 0.11575
+  bandGT_0       LPIPS 0.04583 (+60.40% of base)  PSNR  29.475 SSIM 0.9686  dScore  +7.7123
+  bandGT_1       LPIPS 0.08517 (+26.41% of base)  PSNR  27.839 SSIM 0.9269  dScore  +3.9068
+  bandGT_2       LPIPS 0.10381 (+10.32% of base)  PSNR  26.881 SSIM 0.8961  dScore  +1.6629
+  bandGT_3       LPIPS 0.11126 ( +3.87% of base)  PSNR  26.388 SSIM 0.8828  dScore  +0.6702
+  bandGT_4       LPIPS 0.11422 ( +1.32% of base)  PSNR  26.143 SSIM 0.8791  dScore  +0.2926
+  bandGT_5       LPIPS 0.11502 ( +0.63% of base)  PSNR  26.301 SSIM 0.8786  dScore  +0.3410
+  lumaGT         LPIPS 0.01439 (+87.57% of base)  PSNR  41.634 SSIM 0.9951  dScore +17.0609
+  chromaGT       LPIPS 0.10947 ( +5.42% of base)  PSNR  25.904 SSIM 0.8817  dScore  +0.4186
+  bil_d5_s10     LPIPS 0.13175 (-13.83% of base)  PSNR  25.822 SSIM 0.8768  dScore  -0.6695
+  gauss0.5_flat  LPIPS 0.12510 ( -8.08% of base)  PSNR  25.803 SSIM 0.8749  dScore  -0.4705
+  layers %: ['13.6', '25.1', '17.9', '21.3', '22.1']
+  ring density (<8,8-32,32-96,>=96 px from border): ['1.385', '1.556', '1.250', '0.845']  share: ['3.9%', '12.8%', '25.2%', '58.2%']  px: ['2.8%', '8.2%', '20.1%', '68.9%']
+  grad density (flat,low,edge,strong): ['1.096', '0.922', '0.896', '0.821']  share: ['54.8%', '27.7%', '13.4%', '4.1%']
+
+### hcm0031  n=20  base PSNR 24.982 SSIM 0.8352 LPIPS 0.14700
+  bandGT_0       LPIPS 0.06018 (+59.06% of base)  PSNR  27.917 SSIM 0.9519  dScore  +8.7346
+  bandGT_1       LPIPS 0.10798 (+26.54% of base)  PSNR  26.734 SSIM 0.8999  dScore  +4.5501
+  bandGT_2       LPIPS 0.13166 (+10.44% of base)  PSNR  26.031 SSIM 0.8620  dScore  +2.0447
+  bandGT_3       LPIPS 0.14099 ( +4.09% of base)  PSNR  25.639 SSIM 0.8436  dScore  +0.8865
+  bandGT_4       LPIPS 0.14482 ( +1.49% of base)  PSNR  25.421 SSIM 0.8376  dScore  +0.4206
+  bandGT_5       LPIPS 0.14606 ( +0.64% of base)  PSNR  25.890 SSIM 0.8371  dScore  +0.6371
+  lumaGT         LPIPS 0.01597 (+89.14% of base)  PSNR  41.254 SSIM 0.9949  dScore +19.7945
+  chromaGT       LPIPS 0.14035 ( +4.53% of base)  PSNR  25.074 SSIM 0.8386  dScore  +0.4233
+  bil_d5_s10     LPIPS 0.16185 (-10.10% of base)  PSNR  24.994 SSIM 0.8348  dScore  -0.6002
+  gauss0.5_flat  LPIPS 0.15769 ( -7.27% of base)  PSNR  24.980 SSIM 0.8323  dScore  -0.5184
+  layers %: ['13.5', '22.7', '17.7', '22.3', '23.8']
+  ring density (<8,8-32,32-96,>=96 px from border): ['1.285', '1.459', '1.215', '0.871']  share: ['3.6%', '12.0%', '24.5%', '60.0%']  px: ['2.8%', '8.2%', '20.1%', '68.9%']
+  grad density (flat,low,edge,strong): ['1.060', '0.966', '0.933', '0.802']  share: ['53.0%', '29.0%', '14.0%', '4.0%']
+
+### hcm0034  n=20  base PSNR 25.648 SSIM 0.8752 LPIPS 0.12307
+  bandGT_0       LPIPS 0.05278 (+57.11% of base)  PSNR  28.778 SSIM 0.9647  dScore  +7.3726
+  bandGT_1       LPIPS 0.09112 (+25.96% of base)  PSNR  27.386 SSIM 0.9228  dScore  +3.7477
+  bandGT_2       LPIPS 0.10921 (+11.26% of base)  PSNR  26.654 SSIM 0.8950  dScore  +1.7503
+  bandGT_3       LPIPS 0.11735 ( +4.64% of base)  PSNR  26.275 SSIM 0.8815  dScore  +0.7935
+  bandGT_4       LPIPS 0.12099 ( +1.69% of base)  PSNR  26.066 SSIM 0.8770  dScore  +0.3879
+  bandGT_5       LPIPS 0.12191 ( +0.94% of base)  PSNR  26.479 SSIM 0.8766  dScore  +0.5859
+  lumaGT         LPIPS 0.01769 (+85.63% of base)  PSNR  39.938 SSIM 0.9943  dScore +16.3614
+  chromaGT       LPIPS 0.11445 ( +7.00% of base)  PSNR  25.760 SSIM 0.8793  dScore  +0.5331
+  bil_d5_s10     LPIPS 0.14228 (-15.62% of base)  PSNR  25.650 SSIM 0.8736  dScore  -0.8164
+  gauss0.5_flat  LPIPS 0.13470 ( -9.46% of base)  PSNR  25.618 SSIM 0.8709  dScore  -0.6120
+  layers %: ['13.2', '24.4', '17.9', '21.5', '22.9']
+  ring density (<8,8-32,32-96,>=96 px from border): ['1.329', '1.491', '1.241', '0.858']  share: ['3.7%', '12.2%', '25.0%', '59.1%']  px: ['2.8%', '8.2%', '20.1%', '68.9%']
+  grad density (flat,low,edge,strong): ['1.086', '0.932', '0.900', '0.844']  share: ['54.3%', '28.0%', '13.5%', '4.2%']
+
+
+================ POOLED OVER 5 PUBLIC TOWERS ================
+base  PSNR 25.7517 SSIM 0.86781 LPIPS 0.12279 score 76.5738
+  bandGT_0       LPIPS 0.04888  recovery +60.19%  dScore  +7.9656  (5/5 LPIPS-positive)
+  bandGT_1       LPIPS 0.09068  recovery +26.15%  dScore  +3.9731  (5/5 LPIPS-positive)
+  bandGT_2       LPIPS 0.11026  recovery +10.20%  dScore  +1.7052  (5/5 LPIPS-positive)
+  bandGT_3       LPIPS 0.11806  recovery  +3.85%  dScore  +0.7045  (5/5 LPIPS-positive)
+  bandGT_4       LPIPS 0.12119  recovery  +1.30%  dScore  +0.3163  (5/5 LPIPS-positive)
+  bandGT_5       LPIPS 0.12201  recovery  +0.64%  dScore  +0.4553  (5/5 LPIPS-positive)
+  lumaGT         LPIPS 0.01537  recovery +87.48%  dScore +17.3066  (5/5 LPIPS-positive)
+  chromaGT       LPIPS 0.11577  recovery  +5.72%  dScore  +0.4575  (5/5 LPIPS-positive)
+  bil_d5_s10     LPIPS 0.14084  recovery -14.69%  dScore  -0.7740  (0/5 LPIPS-positive)
+  gauss0.5_flat  LPIPS 0.13406  recovery  -9.18%  dScore  -0.5886  (0/5 LPIPS-positive)
+
+per-layer LPIPS: relu1_2(1/1)=0.01638(13.3%) relu2_2(1/2)=0.02963(24.1%) relu3_3(1/4)=0.02172(17.7%) relu4_3(1/8)=0.02660(21.7%) relu5_3(1/16)=0.02847(23.2%)
+border rings <8 / 8-32 / 32-96 / >=96 px:
+   density ['1.309', '1.471', '1.210', '0.870']  LPIPS share ['3.68%', '12.06%', '24.35%', '59.91%']  px share ['2.81%', '8.20%', '20.13%', '68.86%']
+   relu1_2(1/1)   ring density ['1.440', '1.468', '1.208', '0.866']
+   relu2_2(1/2)   ring density ['1.224', '1.475', '1.238', '0.865']
+   relu3_3(1/4)   ring density ['1.198', '1.459', '1.208', '0.876']
+   relu4_3(1/8)   ring density ['1.334', '1.509', '1.209', '0.865']
+   relu5_3(1/16)  ring density ['1.387', '1.443', '1.183', '0.878']
+grad quartiles flat/low/edge/strong: density ['1.080', '0.937', '0.915', '0.831']  share ['54.0%', '28.1%', '13.7%', '4.2%']
+DONE

@@ -1,0 +1,47 @@
+ARMS6: ['K1_noUT_aa', 'K4_pC_seed1k', 'K4_pC_seed7', 'eps10', 'eps20', 'ppisp_pc']
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+frame_000010 base 64.5092 ctrl 64.7037 arm 64.7546  d +0.0509
+frame_000120 base 58.5073 ctrl 58.6313 arm 58.6176  d -0.0136
+frame_000190 base 59.8153 ctrl 59.9178 arm 60.0525  d +0.1347
+frame_000260 base 59.8780 ctrl 59.8164 arm 60.0661  d +0.2497
+frame_000440 base 60.3050 ctrl 60.2374 arm 60.3776  d +0.1402
+frame_000510 base 64.1757 ctrl 64.0791 arm 64.1495  d +0.0704
+frame_000630 base 66.3182 ctrl 66.5176 arm 66.5411  d +0.0235
+frame_000710 base 67.4297 ctrl 67.6145 arm 67.5526  d -0.0619
+frame_000810 base 74.6772 ctrl 74.4311 arm 74.3912  d -0.0398
+frame_000910 base 73.9603 ctrl 73.9347 arm 74.0121  d +0.0774
+frame_001100 base 72.4057 ctrl 72.3822 arm 72.3643  d -0.0179
+frame_001180 base 70.0437 ctrl 70.1778 arm 70.0396  d -0.1382
+frame_001250 base 70.5414 ctrl 70.5942 arm 70.5149  d -0.0793
+frame_001320 base 72.1710 ctrl 71.9268 arm 71.8600  d -0.0668
+frame_001400 base 77.1323 ctrl 77.2454 arm 77.3030  d +0.0576
+frame_001470 base 69.8003 ctrl 69.9438 arm 69.9383  d -0.0056
+frame_001540 base 74.2267 ctrl 74.4762 arm 74.2814  d -0.1948
+frame_001640 base 76.7857 ctrl 76.7989 arm 76.7781  d -0.0208
+frame_001720 base 81.0568 ctrl 81.0896 arm 81.1253  d +0.0357
+frame_001820 base 79.2359 ctrl 79.3253 arm 79.3539  d +0.0286
+frame_001930 base 75.9018 ctrl 75.7642 arm 75.8371  d +0.0729
+frame_002120 base 77.7840 ctrl 78.0415 arm 78.0727  d +0.0311
+frame_002190 base 80.3610 ctrl 80.7936 arm 80.8076  d +0.0141
+frame_002260 base 78.1674 ctrl 78.0572 arm 78.1227  d +0.0656
+frame_002330 base 81.4665 ctrl 81.3942 arm 81.4377  d +0.0435
+frame_002440 base 78.2899 ctrl 78.3663 arm 78.3875  d +0.0211
+frame_002510 base 80.7735 ctrl 80.6452 arm 80.7825  d +0.1373
+frame_002650 base 77.6903 ctrl 77.6136 arm 77.7414  d +0.1278
+
+base  PSNR 27.4462 SSIM 0.8587 LPIPS 0.2491 SCORE 72.2646
+
+ctrl  PSNR 27.4718 SSIM 0.8590 LPIPS 0.2487 SCORE 72.3043
+
+arm   PSNR 27.4566 SSIM 0.8593 LPIPS 0.2480 SCORE 72.3308
+
+MARGINAL 1-of-6 swap: +0.0265  sd 0.0908  se 0.0172  t 1.55  wins 18/28
+EXTRAPOLATED full 6-member replacement (6x marginal): +0.1593  [95% -0.0424, +0.3610]
+IMPLIED INHERITANCE vs single gain 0.1767: 0.901  [-0.240, 2.043]
+
+projection of (arm-ctrl) onto ensemble residual: mean -0.0164  rms_delta 6.424  rms_ensresid 11.471

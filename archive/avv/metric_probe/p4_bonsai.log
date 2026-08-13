@@ -1,0 +1,24 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  fold field: rms 2.060 px  max 8.420
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+   img 1 done
+   img 3 done
+   img 5 done
+   img 7 done
+   img 9 done
+  fold field: rms 2.032 px  max 6.433
+   img 0 done
+   img 2 done
+   img 4 done
+   img 6 done
+   img 8 done
+
+=== P4 bonsai n=10 2-fold CV field ===
+scale 0.00  PSNR 25.6986(+0.0000)  SSIM 0.80496(+0.00000)  LPIPS 0.26539(+0.00000)  SCORE  68.9524  d +0.0000
+scale 0.50  PSNR 25.1896(-0.5091)  SSIM 0.78346(-0.02150)  LPIPS 0.29527(+0.02988)  SCORE  66.8065  d -2.1460
+scale 0.75  PSNR 24.7668(-0.9318)  SSIM 0.76557(-0.03939)  LPIPS 0.30446(+0.03907)  SCORE  65.6488  d -3.3037
+scale 1.00  PSNR 24.3537(-1.3449)  SSIM 0.74882(-0.05614)  LPIPS 0.31409(+0.04870)  SCORE  64.5131  d -4.4393

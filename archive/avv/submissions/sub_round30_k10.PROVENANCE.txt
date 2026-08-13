@@ -1,0 +1,67 @@
+sub_round30_k10.zip -- r30 = r29 + THREE measured changes.  Base r29 = 77.6644 (GRADED).
+349,585,510 bytes = 333.39 MiB = 349.59 MB.  386/386 exact, CRC OK, VERIFY PASSED.  NOT SUBMITTED.
+Changed vs r29: 5 towers + chair. bonsai inherited BYTE-VERBATIM.
+EXPECTED +0.049 blended -> ~77.71.
+
+=================== CHANGE 1: TOWERS 8 -> 10 MEMBERS, TRUE UNIFORM  (+0.0349 blended) ============
+THE ENSEMBLE HAS AN INTERIOR OPTIMUM AT k~10 AND WE WERE SITTING AT 8.
+Production harness HCM0181, real test GT, n=60, FULL shipped chain, members added best-first:
+    k= 4  77.9190 | k= 6  78.5059 | k= 8  78.8165 (r29) | k=10  78.8653 <-ARGMAX
+    k=12  78.8075 | k=14  78.7380
+  8->10 = +0.0488 +/- 0.0104 (4.7 sigma).   8->12 = -0.0091.   8->14 = -0.0785.
+MECHANISM: PSNR rises MONOTONICALLY to k=14 (26.1849->26.2448) while LPIPS TURNS OVER after k=10
+(0.09338->0.09659). Deeper pixel-averaging keeps cutting squared error while destroying perceptual
+texture; LPIPS carries -40. Same "our HF is incoherent with GT" physics as JPEG>PNG, lanczos4>sharper.
+=> This RIGHT-SIZES the campaign's headline "composition is the lever, +0.2030, 44x weighting".
+   True climbing TOWARD the optimum (4->8 = +0.90). We were already at 8. Six free members per tower
+   exist on disk; taking all six would LOSE score. Took exactly two.
+
+WHICH TWO -- THE COLLAPSE GATE IS NOT A QUALITY GATE. All 30 unused members PASSED member_gate.py;
+it only catches fog. GT-free ranking against the shipped 8-member ensemble (cand_rank.py):
+   SHIPPED r2r9_ut7/ut42/seed101 dev 3.23-3.28 HF 1.037-1.039 | mip555 dev 2.49 HF 1.014
+   r17_ut7_ema999  dev 2.79  HF 1.038   BETTER than every shipped UT member ..... TAKEN
+   r2r8_ut42       dev 3.89  HF 1.013   credible second ............................ TAKEN
+   r2r8_ut7        dev 3.94  HF 1.015
+   s2g_champA/memB/memC  dev 7.35-7.41  HF 0.985-1.005 -- 2.3x the deviation of ANYTHING we ship,
+     and softer than the peer detail band in 14/15 pairs. A campaign agent recommended these FIRST
+     (on the name "champA"). Shipping them would have repeated gsplatB6bilagrid (-0.7418). EXCLUDED.
+WEIGHTS `6 1 1 1 1` = TRUE 10-way uniform, retiring r29's `4 1 1` which over-weighted each mip3d
+member 1.5x. Family tilt measured -0.0435 vs uniform at k=8: uniform is a real interior optimum.
+
+=================== CHANGE 2: FIELD GAUSSIAN SMOOTHING sigma=1  (+0.0076 blended) ================
+Full r29 chain, HCM0181, real test GT, n=60:
+   plain x1.30 78.5186 | gauss1 x1.30 78.5293 = +0.0106 +/- 0.0007, 59/60 WINS
+                       | gauss2 x1.30 78.5307 = +0.0120 +/- 0.0015, 52/60
+sigma=2's extra +0.0014 +/- 0.0017 is noise and its win rate is worse -> sigma=1. Independently the
+chair LOVO preferred med_ds8_g1_rlan (+0.0300) over med_ds8_rlan (+0.0207): second scene, same call.
+Costs nothing and no bytes. Fields in /mnt/d/avv/fields_median_g1_g130/.
+
+=================== CHANGE 3: CHAIR GETS A LENS FIELD AT LAST  (+0.0069 blended) =================
+chair and bonsai have shipped with NO field for the entire competition. chair's was killed by
+leave-one-view-out over TRAIN views. That protocol is now CALIBRATED against real test GT --
+HCM0181, same member, same field, same metric, only the pose set differing:
+   PROTOCOL A  LOVO, held-out TRAIN views, n=50: none 78.8906 -> field 79.8550 = +0.9644
+   PROTOCOL B  real TEST poses + real TEST GT, n=60: none 75.2555 -> same field @1.0 = +1.4116
+        gain 1.15 +1.5003 | gain 1.30 +1.5586 <-argmax | gain 1.45 +1.5559
+=> LOVO under-reads by 1.46x at matched gain; 1.0->1.30 adds a further 10.4%.
+   chair LOVO +0.0299 -> ~+0.0483 production -> +0.0069 blended.
+HONEST CORRECTION: this REFUTES the bigger hypothesis that LOVO under-reads 10-30x. It reads field
+PRESENCE nearly right (+0.9644 vs the LB's +1.028/scene at R7) and gets AMPLITUDE wrong -- separable
+failures. chair genuinely has ~32x less misregistration than a tower (mean |d| 0.101 px vs 0.211 px):
+handheld 720x1280, not a drone with k1~+0.009. Rule 10 clean: fit on chair TRAIN photos, --strict OK.
+ALSO SETTLED: gain 1.45 == 1.30 inside noise on a SECOND chain -> amplitude axis closed permanently.
+
+=================== DELIBERATELY NOT DONE =======================================================
+* NO member change on chair/bonsai. k=10 was measured WITH restore lam=1.0 putting texture back;
+  the video scenes ship lam=0, so their over-smoothing penalty per member is LARGER and their
+  optimum is probably LOWER. r28 already cost a round by assuming towers transfer to video scenes.
+* NO encode change. The 350 MiB cap is NOT a lever -- bytes buy only encode fidelity and we are at
+  its optimum: 4:4:4 -0.0076, 4:2:2 -0.0035, chroma blur monotone negative (-0.020/-0.065/-0.279),
+  q96 -0.1106, q93 -0.6047; q98..q100 is one flat plateau (+0.0020 +/- 0.0020). HCM0421's stray Q99
+  is harmless. CORRECTION: the long-carried "q100/ss0 = +0.0094" is WRONG (single-member PNG chain);
+  on the shipped chain it is -0.0076, independently reproduced by the jpegalloc lens at -0.0049.
+* Bankable: q98 is score-neutral at 25% fewer bytes -> ~80 MiB free if an operator ever needs it.
+
+RISK: the two added members are ranked GT-free (no test GT exists for private towers). If they are
+materially worse than the harness's members 9-10, the realised gain lands below +0.0488/tower; the
+k=12 datapoint bounds the downside at about -0.01/tower.

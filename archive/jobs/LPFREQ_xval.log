@@ -1,0 +1,90 @@
+HCM0193: 30 paired views, src=/mnt/d/avv/output/HCM0193_gsplatB9ut/test_poses_renders_field field=0
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+  img 0
+  img 10
+  img 20
+
+=== ORACLE FREQ PARTITION  HCM0193  n=30 ===
+  arm          PSNR     SSIM    LPIPS     SCORE    dSCORE    dLPIPS
+  base      24.6273  0.82894  0.15721   73.3562   +0.0000  +0.00000
+  LF2       26.6302  0.85253  0.14082   75.9211   +2.5648  -0.01639
+  LF4       25.6883  0.83462  0.15181   74.3790   +1.0228  -0.00540
+  LF8       25.2343  0.83040  0.15540   73.8364   +0.4801  -0.00181
+  LF16      25.0026  0.82947  0.15660   73.6219   +0.2656  -0.00061
+  LF32      24.8802  0.82920  0.15700   73.5242   +0.1680  -0.00021
+  LF64      24.8044  0.82908  0.15713   73.4697   +0.1134  -0.00008
+  HF16      37.2809  0.99853  0.00220   92.2365  +18.8803  -0.15501
+  HF32      38.9242  0.99897  0.00150   93.2637  +19.9074  -0.15571
+
+  residual ENERGY fraction captured by Gauss(sigma):
+    sigma   2:  23.03% of residual squared energy
+    sigma   4:  13.89% of residual squared energy
+    sigma   8:   8.79% of residual squared energy
+    sigma  16:   5.97% of residual squared energy
+    sigma  32:   4.25% of residual squared energy
+    sigma  64:   3.07% of residual squared energy
+HCM0204: 30 paired views, src=/mnt/d/avv/output/HCM0204_gsplatB9ut/test_poses_renders_field field=0
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+  img 0
+  img 10
+  img 20
+
+=== ORACLE FREQ PARTITION  HCM0204  n=30 ===
+  arm          PSNR     SSIM    LPIPS     SCORE    dSCORE    dLPIPS
+  base      25.2964  0.86738  0.12853   76.0583   +0.0000  +0.00000
+  LF2       27.1038  0.88483  0.11580   78.1751   +2.1168  -0.01272
+  LF4       26.2506  0.87155  0.12429   76.9249   +0.8667  -0.00423
+  LF8       25.8611  0.86844  0.12716   76.4834   +0.4252  -0.00136
+  LF16      25.6772  0.86776  0.12816   76.3129   +0.2547  -0.00037
+  LF32      25.5763  0.86756  0.12846   76.2339   +0.1756  -0.00006
+  LF64      25.5032  0.86747  0.12854   76.1845   +0.1262  +0.00001
+  HF16      37.4375  0.99872  0.00193   92.3472  +16.2889  -0.12660
+  HF32      38.7633  0.99905  0.00134   93.1756  +17.1174  -0.12718
+
+  residual ENERGY fraction captured by Gauss(sigma):
+    sigma   2:  21.06% of residual squared energy
+    sigma   4:  12.95% of residual squared energy
+    sigma   8:   8.78% of residual squared energy
+    sigma  16:   6.45% of residual squared energy
+    sigma  32:   4.85% of residual squared energy
+    sigma  64:   3.54% of residual squared energy
+hcm0034: 30 paired views, src=/mnt/d/avv/output/hcm0034_gsplatB9ut/test_poses_renders_field field=0
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+  img 0
+  img 10
+  img 20
+
+=== ORACLE FREQ PARTITION  hcm0034  n=30 ===
+  arm          PSNR     SSIM    LPIPS     SCORE    dSCORE    dLPIPS
+  base      24.2266  0.85673  0.13881   74.6856   +0.0000  +0.00000
+  LF2       26.8911  0.88109  0.12172   77.6984   +3.0128  -0.01709
+  LF4       25.8759  0.86403  0.13240   76.1505   +1.4650  -0.00641
+  LF8       25.3101  0.85908  0.13633   75.5054   +0.8198  -0.00248
+  LF16      24.9683  0.85776  0.13783   75.2004   +0.5148  -0.00098
+  LF32      24.7422  0.85731  0.13840   75.0285   +0.3429  -0.00041
+  LF64      24.5754  0.85707  0.13864   74.9117   +0.2261  -0.00017
+  HF16      34.3633  0.99779  0.00347   90.4131  +15.7275  -0.13534
+  HF32      35.8331  0.99840  0.00248   91.3526  +16.6670  -0.13633
+
+  residual ENERGY fraction captured by Gauss(sigma):
+    sigma   2:  31.82% of residual squared energy
+    sigma   4:  22.01% of residual squared energy
+    sigma   8:  15.54% of residual squared energy
+    sigma  16:  11.17% of residual squared energy
+    sigma  32:   7.91% of residual squared energy
+    sigma  64:   5.45% of residual squared energy

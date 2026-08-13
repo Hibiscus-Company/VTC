@@ -1,0 +1,29 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+
+================================================================================================
+S0. HEADLINE, k=4 production members, fresh compute. PNG then shipped JPEG q100/ss2.
+================================================================================================
+  harness: 60 views x 4 members ['gsplatB9ut', 'gsplatB10ut8M', 'gsplatB11ut60k', 'gsplatB12ut8Ms7']
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lv_main.py:114: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(self.G[i]).to(DEV).float().permute(2, 0, 1).unsqueeze(0) / 255.0
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+pixel-mean  [PNG] BASELINE           76.6749  +0.0000  24.9018  0.8650   0.1054   0/60 
+energy lam0.5 win3  [PNG]            76.8074  +0.1326  24.8750  0.8653   0.1019  60/60 
+energy lam0.75 win3  [PNG]           76.8473  +0.1725  24.8593  0.8654   0.1007  60/60 
+energy lam1.0 win3  [PNG]            76.8736  +0.1988  24.8414  0.8653   0.0998  60/60 
+energy lam1.25 win3  [PNG]           76.8848  +0.2099  24.8214  0.8652   0.0991  60/60 
+energy lam1.5 win3  [PNG]            76.8821  +0.2072  24.7993  0.8650   0.0987  60/60 
+
+pixel-mean  [JPEG] BASELINE          76.6936  +0.0000  24.8918  0.8637   0.1038   0/60 
+energy lam0.5 win3  [JPEG]           76.7889  +0.0953  24.8649  0.8639   0.1012  60/60 
+energy lam0.75 win3  [JPEG]          76.8156  +0.1220  24.8492  0.8640   0.1003  60/60 
+energy lam1.0 win3  [JPEG]           76.8270  +0.1334  24.8313  0.8639   0.0997  60/60 
+energy lam1.25 win3  [JPEG]          76.8280  +0.1344  24.8114  0.8637   0.0993  59/60 
+energy lam1.5 win3  [JPEG]           76.8157  +0.1220  24.7893  0.8635   0.0991  58/60 
+
+DONE 13:12:08

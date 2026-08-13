@@ -1,0 +1,25 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  [check] restore_multi({0:1.0}) == shipped restore, max|diff|=0.00e+00
+  1/8 153s | base=74.9860 dither1=-0.0200 dither_edge1=+0.0012 jart85=-0.5200 injflat=-0.1854 L1r0.5=-0.0090 L1r1.0=-0.0228
+  2/8 321s | base=76.6401 dither1=-0.0164 dither_edge1=+0.0023 jart85=-0.6692 injflat=-0.2803 L1r0.5=-0.0124 L1r1.0=-0.0264
+  3/8 361s | base=77.7068 dither1=-0.0146 dither_edge1=+0.0027 jart85=-0.6112 injflat=-0.2648 L1r0.5=-0.0085 L1r1.0=-0.0217
+  4/8 401s | base=78.6380 dither1=-0.0116 dither_edge1=+0.0013 jart85=-0.6293 injflat=-0.2472 L1r0.5=-0.0063 L1r1.0=-0.0169
+  5/8 437s | base=78.8132 dither1=-0.0093 dither_edge1=+0.0004 jart85=-0.6471 injflat=-0.2596 L1r0.5=-0.0078 L1r1.0=-0.0205
+  6/8 469s | base=78.9882 dither1=-0.0142 dither_edge1=+0.0000 jart85=-0.6704 injflat=-0.2714 L1r0.5=-0.0071 L1r1.0=-0.0219
+  7/8 501s | base=79.2838 dither1=-0.0209 dither_edge1=+0.0004 jart85=-0.6792 injflat=-0.2852 L1r0.5=-0.0081 L1r1.0=-0.0218
+  8/8 535s | base=78.9535 dither1=-0.0205 dither_edge1=+0.0002 jart85=-0.6789 injflat=-0.2742 L1r0.5=-0.0077 L1r1.0=-0.0220
+
+=== FLAT-REGION OPERATORS, HCM0181, n=8, full shipped chain ===
+          arm     SCORE     PSNR     SSIM    LPIPS   vs base    MB/60
+         base   78.9535  26.3115  0.89408  0.09140   +0.0000    64.11
+      dither1   78.9330  26.3105  0.89383  0.09171   -0.0205    64.27
+ dither_edge1   78.9536  26.3101  0.89401  0.09132   +0.0002    64.14
+       jart85   78.2746  26.2754  0.88699  0.10251   -0.6789    59.31
+      injflat   78.6793  26.2877  0.89022  0.09500   -0.2742    64.43
+       L1r0.5   78.9457  26.3046  0.89411  0.09151   -0.0077    64.15
+       L1r1.0   78.9315  26.2961  0.89411  0.09173   -0.0220    64.20

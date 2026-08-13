@@ -1,0 +1,9 @@
+240 views, 224928 init points, K=[[926.4,0,660.0],[0,926.4,494.5]], size 1320x989
+scene_scale 10.363
+[0] loss 0.3425 l1 0.2344 ssim 0.2545 N 224928
+[999] loss 0.1171 l1 0.0561 ssim 0.6587 N 273400
+Saved 273400 gaussians to /mnt/d/avv/output/HCM0181_gsplat_smoke/ckpt.pt
+273400 gaussians
+Render canvas padding: 4px
+Wrote 60 images to /mnt/d/avv/output/HCM0181_gsplat_smoke/renders
+TRACKB SMOKE2 DONE

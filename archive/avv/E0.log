@@ -1,0 +1,40 @@
+n=220 paired train views (single model)
+
+mean in-sample |err| = 5.685 levels
+
+=== ERROR BY IMAGE THIRD (rows) ===
+  TOP    (canopy/background)     3.631   ( 63.9% of mean)
+  MIDDLE (plant)                 6.667   (117.3% of mean)
+  BOTTOM (glass table)           6.757   (118.9% of mean)
+
+=== 8x12 CELL GRID, top-8 worst cells (row,col) ===
+   row 3 col  6  err  9.822
+   row 5 col 11  err  8.484
+   row 4 col  6  err  8.470
+   row 7 col 10  err  7.989
+   row 3 col  7  err  7.979
+   row 5 col  2  err  7.969
+   row 3 col  5  err  7.891
+   row 2 col  6  err  7.883
+
+  worst row mean 9.822 at row 7; best 2.602
+
+=== WHAT PREDICTS ERROR (cell level, n=21120) ===
+  corr(err, GT brightness) = -0.232   (glass is DARK -> negative means glass is worse)
+  corr(err, GT texture)    = +0.700
+  darkest 25% of cells: err 6.057 vs rest 5.561  ratio 1.09x
+  most-textured 25%   : err 10.493 vs rest 4.082  ratio 2.57x
+
+=== TOP-10 WORST FRAMES ===
+   frame_000020  11.017
+   frame_000000  11.011
+   frame_000430  10.407
+   frame_000540  10.215
+   frame_000400  9.992
+   frame_000110  9.977
+   frame_000270  9.853
+   frame_000290  9.467
+   frame_000200  9.391
+   frame_000720  9.252
+
+saved /mnt/d/avv/E0_errmap.png (normalised) and .npy

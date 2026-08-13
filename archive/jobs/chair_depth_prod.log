@@ -1,0 +1,6 @@
+done: 205 depth maps -> /mnt/d/avv/depth_prior/chair_full
+=== chair depth-prior PRODUCTION Fri Jul 24 13:36:14 +07 2026 ===
+[59999] loss 0.0626 l1 0.0272 ssim 0.8765 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/r17/chair_depth_seed42/ckpt.pt
+Wrote 58 images to /mnt/d/avv/r17/chair_depth_seed42/test_render
+=== CHAIR DEPTH PROD DONE Fri Jul 24 15:55:37 +07 2026, 58 renders ===

@@ -1,0 +1,32 @@
+=== TOWER EMA ROLLOUT [HCM0539] seed7 decay0.999 starting Thu Jul 23 09:20:27 +07 2026 (gpu1) ===
+=== TOWER EMA ROLLOUT [HCM0540] seed7 decay0.999 starting Thu Jul 23 09:20:27 +07 2026 (gpu0) ===
+Step 700: Added 10667 GSs. Now having 224007 GSs.
+Step 800: Relocated 6260 GSs.
+Step 800: Added 11200 GSs. Now having 235207 GSs.
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/tower_ema_rollout.sh: line 15: 253018 Killed                  CUDA_VISIBLE_DEVICES=$G python gsplat_track/train_gsplat.py --source $PRI/$S/train --images images --ut --seed 7 --ema_decay 0.999 --out $M $TOW_ARGS 2>&1
+     253019 Done                    | tail -3
+!!! TOWER EMA ROLLOUT HCM0540 FAIL
+Step 600: Added 10942 GSs. Now having 229788 GSs.
+Step 700: Relocated 6627 GSs.
+Step 700: Added 11489 GSs. Now having 241277 GSs.
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/tower_ema_rollout.sh: line 15: 252994 Killed                  CUDA_VISIBLE_DEVICES=$G python gsplat_track/train_gsplat.py --source $PRI/$S/train --images images --ut --seed 7 --ema_decay 0.999 --out $M $TOW_ARGS 2>&1
+     252995 Done                    | tail -3
+!!! TOWER EMA ROLLOUT HCM0539 FAIL
+=== TOWER EMA ROLLOUT [HCM0674] seed7 decay0.999 starting Thu Jul 23 09:20:52 +07 2026 (gpu0) ===
+=== TOWER EMA ROLLOUT [HCM0644] seed7 decay0.999 starting Thu Jul 23 09:20:52 +07 2026 (gpu1) ===
+[59999] loss 0.0528 l1 0.0292 ssim 0.9009 N 8000000
+Saving EMA-averaged params (decay 0.999, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/r17/HCM0644_ut7_ema999/ckpt.pt
+[54000] loss 0.0361 l1 0.0194 ssim 0.9339 N 8000000
+[55000] loss 0.0481 l1 0.0261 ssim 0.9128 N 8000000
+[56000] loss 0.0398 l1 0.0215 ssim 0.9248 N 8000000
+--ema_decay 0.999 --out $M $TOW_ARGS 2>&1
+     252080 Done                    | tail -3
+!!! TOWER EMA ROLLOUT HCM0644 FAIL
+Step 2000: Relocated 12044 GSs.
+Step 2000: Added 15271 GSs. Now having 320709 GSs.
+[2000] loss 0.1044 l1 0.0457 ssim 0.6761 N 320709
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/tower_ema_rollout.sh: line 15: 252115 Killed                  CUDA_VISIBLE_DEVICES=$G python gsplat_track/train_gsplat.py --source $PRI/$S/train --images images --ut --seed 7 --ema_decay 0.999 --out $M $TOW_ARGS 2>&1
+     252116 Done                    | tail -3
+!!! TOWER EMA ROLLOUT HCM0674 FAIL
+=== TOWER EMA ROLLOUT (all 4) DONE Thu Jul 23 09:20:51 +07 2026 ===

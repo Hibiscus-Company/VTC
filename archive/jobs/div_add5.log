@@ -1,0 +1,35 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60  13s
+  10/60  212s
+  20/60  575s
+  30/60  782s
+  40/60  919s
+  50/60  1109s
+
+add5  n=60  lam=1.0  fieldgain=1.3  FULL SHIPPED CHAIN
+                       arm  fam     SCORE     PSNR    SSIM   LPIPS   vs base   MB/60
+               +e17visnorm  FGS   78.7542  26.1354  0.8938  0.0935   +0.2265    62.7
+                +e15ceil95  FGS   78.7488  26.1340  0.8938  0.0936   +0.2211    62.6
+             +gsplatB8pure   AA   78.6988  26.0989  0.8931  0.0938   +0.1711    62.5
+                   +e16app  FGS   78.6928  26.0535  0.8934  0.0936   +0.1650    62.7
+           +m31b_taillpips  UTd   78.6492  26.0564  0.8916  0.0933   +0.1215    63.3
+             +gsplatB4warm   AA   78.6477  26.0922  0.8926  0.0946   +0.1200    62.4
+           +gsplatB7ppisp2   AA   78.6198  26.1141  0.8921  0.0953   +0.0921    62.3
+             +m31b_nolpips  UTd   78.5729  26.0711  0.8920  0.0958   +0.0452    63.0
+                 +gsplatB3   AA   78.5639  26.0675  0.8916  0.0956   +0.0362    62.4
+                      +sh3  UTd   78.5543  26.0053  0.8907  0.0942   +0.0266    63.4
+                  CLONECTL    -   78.5543  26.0053  0.8907  0.0942   +0.0266    63.4
+           +gsplatB5affine   AA   78.5444  26.0700  0.8917  0.0962   +0.0167    62.4
+                 +gsplatB1   AA   78.5432  26.0630  0.8914  0.0959   +0.0154    62.3
+                 +gsplatB2   AA   78.5422  26.0612  0.8915  0.0960   +0.0144    62.3
+                 base_k4UT   UT   78.5277  25.9948  0.8905  0.0946   +0.0000    63.3
+                      +sh2  UTd   78.3632  25.8857  0.8887  0.0957   -0.1645    63.0
+                      +sh1  UTd   78.1739  25.7542  0.8869  0.0972   -0.3538    62.9
+                  NOISECTL    -   78.1725  25.9937  0.8866  0.1005   -0.3553    65.9
+                      +sh0  UTd   78.0978  25.7007  0.8862  0.0977   -0.4299    62.9
+         +gsplatB6bilagrid   AA   77.7674  24.9998  0.8882  0.0970   -0.7603    62.2

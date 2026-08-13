@@ -1,0 +1,24 @@
+HCM0181: 60 pairs, 13s
+
+== HCM0181  n=60  field 165x123 (ds8)
+   |Y field|          mean 0.2926 px   max 2.2996 px
+   |R-B|              mean 0.0372 px   max 0.3181 px   p95 0.0885
+   fit noise SEM|R-B| mean 0.0799 px    => SNR 0.47
+   radial(R-B) vs radius: corr -0.480  slope -0.0764 px/half-diag  (pure LCA would be corr ~+-1)
+   |R-Y| mean 0.0218  |B-Y| mean 0.0222  |G-Y| mean 0.0128 px
+HCM0193: 60 pairs, 15s
+
+== HCM0193  n=60  field 165x123 (ds8)
+   |Y field|          mean 0.2444 px   max 2.2607 px
+   |R-B|              mean 0.0283 px   max 0.2939 px   p95 0.0657
+   fit noise SEM|R-B| mean 0.0740 px    => SNR 0.38
+   radial(R-B) vs radius: corr -0.402  slope -0.0441 px/half-diag  (pure LCA would be corr ~+-1)
+   |R-Y| mean 0.0175  |B-Y| mean 0.0181  |G-Y| mean 0.0102 px
+HCM0204: 60 pairs, 14s
+
+== HCM0204  n=60  field 165x123 (ds8)
+   |Y field|          mean 0.2684 px   max 2.4263 px
+   |R-B|              mean 0.0300 px   max 0.2295 px   p95 0.0710
+   fit noise SEM|R-B| mean 0.0876 px    => SNR 0.34
+   radial(R-B) vs radius: corr -0.430  slope -0.0519 px/half-diag  (pure LCA would be corr ~+-1)
+   |R-Y| mean 0.0183  |B-Y| mean 0.0197  |G-Y| mean 0.0115 px

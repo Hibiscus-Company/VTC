@@ -1,0 +1,11 @@
+{
+  "field": "/mnt/d/avv/r2r8/fields/chair.npy",
+  "n": 58,
+  "source": "/mnt/d/avv/r2r8/ens/chair/png_ens",
+  "field_meta": {
+    "gt_dir": "/mnt/d/avv/data/phase1/private_set2/chair/train/images",
+    "render_dir": "/mnt/d/avv/r2r8/models/chair_ut42/train_png",
+    "ds": 8,
+    "zeroed": "held-out train x-val NEGATIVE: dPSNR -0.127, dSSIM -0.0036, fold-corr 0.43 (noise, DoF/rolling-shutter flow) -> ship unwarped (audit r13 item 6 gate)"
+  }
+}

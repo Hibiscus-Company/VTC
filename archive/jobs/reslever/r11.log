@@ -1,0 +1,12 @@
+== post-field k4: residual variance explained per 32x32 block ==
+  DC (local brightness offset)       :  8.18%
+  DC + local sub-pixel shift         : 23.61%
+  DC + shift + local contrast gain   : 43.75%
+  UNEXPLAINED (genuinely wrong content): 56.25%
+  fitted local shift magnitude: median 0.1395 px, p90 0.4180 px  (n=24599)
+
+  by region (share of that region's residual explained by DC+shift):
+    sky          84.09%   (residual power share  0.07%)
+    flat_nonsky  45.29%   (residual power share  1.55%)
+    midtex       23.64%   (residual power share 10.51%)
+    hightex       9.18%   (residual power share  0.08%)

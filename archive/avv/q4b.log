@@ -1,0 +1,23 @@
+waiting for /mnt/d/avv/r45_prod/G1.DONE before touching gpu1 ...
+gpu1 confirmed free 22:14
+>>> dpsel_P1 [--depth_prior 0.05 --depth_cov_pow 1 --depth_dir /mnt/d/avv/depth/bonsai_sub] (gpu1) START 22:14
+depth prior redistributed by coverage: P=1.0 w min 0.102 med 0.823 max 3.311 (d5 min 0.0535 med 0.4326 max 1.7401)
+Saved 5000000 gaussians to /mnt/d/avv/r43_bonsai/dpsel_P1/ckpt.pt
+   CENSUS N=2,268,359  s2/s1 0.3603  s2/s3 10317652.7  s1/s3 32028225.2
+EVAL dpsel_P1           n= 28  PSNR 24.5009 SSIM 0.8722 LPIPS 0.2558  SCORE 70.6333   d_vs_ref -1.3578  [ref 71.9911]
+     first8  n= 8  PSNR 22.8590 SSIM 0.8039 LPIPS 0.2791  SCORE 66.6655
+     last20  n=20  PSNR 25.1576 SSIM 0.8995 LPIPS 0.2465  SCORE 72.2204
+PERFRAME 10:72.31 120:61.76 190:67.29 260:67.76 440:64.21 510:62.48 630:67.78 710:69.74 810:72.65 910:70.72 1100:62.34 1180:62.33 1250:65.68 1320:68.95 1400:76.06 1470:72.81 1540:72.08 1640:75.17 1720:78.28 1820:77.58 1930:71.49 2120:72.05 2190:75.20 2260:76.16 2330:76.13 2440:70.97 2510:75.17 2650:72.59
+  archived -> WEIGHTS/bonsai_dpsel_P1.pt
+<<< dpsel_P1 DONE 00:02
+>>> dpsel_P2_dp02 [--depth_prior 0.02 --depth_cov_pow 2 --depth_dir /mnt/d/avv/depth/bonsai_sub] (gpu1) START 00:02
+depth prior redistributed by coverage: P=2.0 w min 0.007 med 0.483 max 3.865 (d5 min 0.0535 med 0.4326 max 1.7401)
+Saved 5000000 gaussians to /mnt/d/avv/r43_bonsai/dpsel_P2_dp02/ckpt.pt
+   CENSUS N=2,322,468  s2/s1 0.3665  s2/s3 8751930.3  s1/s3 26332045.1
+EVAL dpsel_P2_dp02      n= 28  PSNR 25.7985 SSIM 0.8740 LPIPS 0.2453  SCORE 71.8861   d_vs_ref -0.1050  [ref 71.9911]
+     first8  n= 8  PSNR 23.1875 SSIM 0.7930 LPIPS 0.2803  SCORE 66.4922
+     last20  n=20  PSNR 26.8430 SSIM 0.9064 LPIPS 0.2313  SCORE 74.0436
+PERFRAME 10:72.97 120:61.05 190:66.60 260:65.72 440:65.07 510:63.49 630:66.94 710:70.09 810:72.64 910:71.62 1100:65.96 1180:64.40 1250:67.26 1320:69.39 1400:76.32 1470:73.42 1540:73.32 1640:75.98 1720:79.47 1820:78.31 1930:72.56 2120:76.81 2190:79.30 2260:77.48 2330:78.79 2440:74.37 2510:78.17 2650:75.30
+  archived -> WEIGHTS/bonsai_dpsel_P2_dp02.pt
+<<< dpsel_P2_dp02 DONE 01:48
+=== DPSEL gpu1 DONE 01:48 ===

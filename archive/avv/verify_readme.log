@@ -1,0 +1,7 @@
+--- stage 2: ensemble (README section 6) ---
+Ensembled 28 images from 13 members -> /mnt/d/avv/verify_readme/jpg_tmp
+--- stage 3: restore, k=13 lam=0.25 (README section 6 table) ---
+restored 28 images (lam=0.25, k=13.0, 6 member(s)) -> /mnt/d/avv/verify_readme/png_er
+--- stage 4: NO field for bonsai (README section 7) ---
+--- assemble + byte-compare (README section 8) ---
+RESULT  bonsai/: 28 byte-identical, 0 differ

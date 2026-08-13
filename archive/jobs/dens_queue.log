@@ -1,0 +1,39 @@
+=== [GPU 1] HCM0181 -> output/HCM0181_e02sched40k ===
+Optimizing output/HCM0181_e02sched40k
+Distortion warp enabled, k=+0.009004
+Loading output/HCM0181_e02sched40k/point_cloud/iteration_40000/point_cloud.ply
+1242232 gaussians
+Render canvas padding: 4px
+Wrote 60 images to output/HCM0181_e02sched40k/test_poses_renders
+  images : 60
+  PSNR   : 23.9229
+  SSIM   : 0.8265
+  LPIPS  : 0.1549
+  Score  : 0.7295  (psnr_max=50.0)
+Wrote output/HCM0181_e02sched40k/eval.json
+=== [GPU 1] queue 'e02sched40k' done ===
+=== [GPU 1] HCM0181 -> output/HCM0181_e03ga15 ===
+Optimizing output/HCM0181_e03ga15
+Distortion warp enabled, k=+0.009004
+Loading output/HCM0181_e03ga15/point_cloud/iteration_30000/point_cloud.ply
+2859956 gaussians
+Render canvas padding: 4px
+Wrote 60 images to output/HCM0181_e03ga15/test_poses_renders
+  images : 60
+  PSNR   : 24.3020
+  SSIM   : 0.8458
+  LPIPS  : 0.1228
+  Score  : 0.7504  (psnr_max=50.0)
+Wrote output/HCM0181_e03ga15/eval.json
+=== [GPU 1] queue 'e03ga15' done ===
+=== score e02sched40k ===
+HCM0181    n= 60  PSNR 23.9229  SSIM 0.8265  LPIPS(alex) 0.1160 LPIPS(vgg) 0.1804  Score(alex) 0.7451  Score(vgg) 0.7193
+  Score(alex)  = 74.5093   [0.4*(1-LPIPS)=0.3536  0.3*SSIM=0.2480  0.3*PSNRn=0.1435]  (psnr_max=50.0)
+  Score(vgg)  = 71.9337   [0.4*(1-LPIPS)=0.3278  0.3*SSIM=0.2480  0.3*PSNRn=0.1435]  (psnr_max=50.0)
+gaussians: output/HCM0181_e02sched40k/point_cloud/iteration_40000/point_cloud.ply 1242232
+=== score e03ga15 ===
+HCM0181    n= 60  PSNR 24.3020  SSIM 0.8458  LPIPS(alex) 0.0933 LPIPS(vgg) 0.1445  Score(alex) 0.7622  Score(vgg) 0.7417
+  Score(alex)  = 76.2240   [0.4*(1-LPIPS)=0.3627  0.3*SSIM=0.2538  0.3*PSNRn=0.1458]  (psnr_max=50.0)
+  Score(vgg)  = 74.1748   [0.4*(1-LPIPS)=0.3422  0.3*SSIM=0.2538  0.3*PSNRn=0.1458]  (psnr_max=50.0)
+gaussians: output/HCM0181_e03ga15/point_cloud/iteration_30000/point_cloud.ply 2859956
+QUEUE DONE

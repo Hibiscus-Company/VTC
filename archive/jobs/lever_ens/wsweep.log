@@ -1,0 +1,62 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+BASE k4 = 76.6745
+
+e17visnorm  single 75.2010 (gap -0.763)  corr_k4 0.817  resRMS_ratio 1.02
+   w=0.050  SCORE  76.7543  delta  +0.0798  PSNR 24.9515 SSIM 0.8663 LPIPS 0.1052  (213s)
+   w=0.100  SCORE  76.8240  delta  +0.1495  PSNR 24.9946 SSIM 0.8674 LPIPS 0.1049  (242s)
+   w=0.150  SCORE  76.8784  delta  +0.2039  PSNR 25.0288 SSIM 0.8683 LPIPS 0.1047  (285s)
+   w=0.200  SCORE  76.9181  delta  +0.2436  PSNR 25.0543 SSIM 0.8689 LPIPS 0.1045  (314s)
+   w=0.250  SCORE  76.9453  delta  +0.2708  PSNR 25.0719 SSIM 0.8693 LPIPS 0.1044  (338s)
+   w=0.333  SCORE  76.9525  delta  +0.2780  PSNR 25.0815 SSIM 0.8694 LPIPS 0.1045  (355s)
+
+e16app  single 74.3052 (gap -1.659)  corr_k4 0.738  resRMS_ratio 1.14
+   w=0.050  SCORE  76.7508  delta  +0.0763  PSNR 24.9446 SSIM 0.8663 LPIPS 0.1051  (416s)
+   w=0.100  SCORE  76.8102  delta  +0.1358  PSNR 24.9744 SSIM 0.8672 LPIPS 0.1048  (444s)
+   w=0.150  SCORE  76.8497  delta  +0.1752  PSNR 24.9899 SSIM 0.8679 LPIPS 0.1046  (464s)
+   w=0.200  SCORE  76.8685  delta  +0.1941  PSNR 24.9911 SSIM 0.8684 LPIPS 0.1045  (479s)
+   w=0.250  SCORE  76.8695  delta  +0.1950  PSNR 24.9790 SSIM 0.8686 LPIPS 0.1044  (506s)
+   w=0.333  SCORE  76.8233  delta  +0.1489  PSNR 24.9279 SSIM 0.8683 LPIPS 0.1046  (547s)
+
+gsplatB8pure  single 75.0470 (gap -0.917)  corr_k4 0.843  resRMS_ratio 1.03
+   w=0.050  SCORE  76.7326  delta  +0.0581  PSNR 24.9367 SSIM 0.8660 LPIPS 0.1052  (594s)
+   w=0.100  SCORE  76.7813  delta  +0.1068  PSNR 24.9657 SSIM 0.8668 LPIPS 0.1050  (632s)
+   w=0.150  SCORE  76.8156  delta  +0.1412  PSNR 24.9868 SSIM 0.8673 LPIPS 0.1049  (662s)
+   w=0.200  SCORE  76.8367  delta  +0.1622  PSNR 25.0005 SSIM 0.8677 LPIPS 0.1049  (673s)
+   w=0.250  SCORE  76.8461  delta  +0.1717  PSNR 25.0072 SSIM 0.8678 LPIPS 0.1048  (708s)
+   w=0.333  SCORE  76.8270  delta  +0.1526  PSNR 25.0014 SSIM 0.8676 LPIPS 0.1051  (733s)
+
+gsplatB1  single 74.5325 (gap -1.432)  corr_k4 0.867  resRMS_ratio 1.03
+   w=0.050  SCORE  76.6868  delta  +0.0124  PSNR 24.9257 SSIM 0.8655 LPIPS 0.1058  (760s)
+   w=0.100  SCORE  76.6882  delta  +0.0137  PSNR 24.9445 SSIM 0.8658 LPIPS 0.1063  (775s)
+   w=0.150  SCORE  76.6748  delta  +0.0004  PSNR 24.9565 SSIM 0.8659 LPIPS 0.1069  (806s)
+   w=0.200  SCORE  76.6521  delta  -0.0224  PSNR 24.9621 SSIM 0.8659 LPIPS 0.1075  (830s)
+   w=0.250  SCORE  76.6159  delta  -0.0586  PSNR 24.9618 SSIM 0.8656 LPIPS 0.1083  (852s)
+   w=0.333  SCORE  76.5241  delta  -0.1503  PSNR 24.9469 SSIM 0.8649 LPIPS 0.1097  (875s)
+
+sh2  single 72.5382 (gap -3.426)  corr_k4 0.785  resRMS_ratio 1.19
+   w=0.050  SCORE  76.6726  delta  -0.0018  PSNR 24.9021 SSIM 0.8649 LPIPS 0.1054  (916s)
+   w=0.100  SCORE  76.6507  delta  -0.0238  PSNR 24.8899 SSIM 0.8645 LPIPS 0.1055  (940s)
+   w=0.150  SCORE  76.6064  delta  -0.0681  PSNR 24.8638 SSIM 0.8639 LPIPS 0.1057  (970s)
+   w=0.200  SCORE  76.5394  delta  -0.1351  PSNR 24.8246 SSIM 0.8631 LPIPS 0.1062  (1016s)
+   w=0.250  SCORE  76.4523  delta  -0.2222  PSNR 24.7738 SSIM 0.8620 LPIPS 0.1068  (1045s)
+   w=0.333  SCORE  76.2562  delta  -0.4182  PSNR 24.6625 SSIM 0.8596 LPIPS 0.1082  (1082s)
+
+sh0  single 67.7954 (gap -8.169)  corr_k4 0.623  resRMS_ratio 1.48
+   w=0.050  SCORE  76.6451  delta  -0.0293  PSNR 24.8958 SSIM 0.8645 LPIPS 0.1057  (1129s)
+   w=0.100  SCORE  76.5663  delta  -0.1082  PSNR 24.8577 SSIM 0.8634 LPIPS 0.1063  (1167s)
+   w=0.150  SCORE  76.4356  delta  -0.2389  PSNR 24.7871 SSIM 0.8619 LPIPS 0.1073  (1207s)
+   w=0.200  SCORE  76.2532  delta  -0.4213  PSNR 24.6860 SSIM 0.8598 LPIPS 0.1088  (1243s)
+   w=0.250  SCORE  76.0218  delta  -0.6526  PSNR 24.5579 SSIM 0.8571 LPIPS 0.1107  (1267s)
+   w=0.333  SCORE  75.5259  delta  -1.1485  PSNR 24.2893 SSIM 0.8515 LPIPS 0.1148  (1287s)
+
+gsplatB6bilagrid  single 66.9167 (gap -9.048)  corr_k4 0.420  resRMS_ratio 2.26
+   w=0.050  SCORE  76.6269  delta  -0.0476  PSNR 24.8475 SSIM 0.8650 LPIPS 0.1058  (1316s)
+   w=0.100  SCORE  76.4935  delta  -0.1810  PSNR 24.6930 SSIM 0.8645 LPIPS 0.1064  (1364s)
+   w=0.150  SCORE  76.2805  delta  -0.3939  PSNR 24.4470 SSIM 0.8636 LPIPS 0.1074  (1399s)
+   w=0.200  SCORE  75.9967  delta  -0.6778  PSNR 24.1271 SSIM 0.8622 LPIPS 0.1086  (1429s)
+   w=0.250  SCORE  75.6630  delta  -1.0115  PSNR 23.7593 SSIM 0.8603 LPIPS 0.1100  (1461s)
+   w=0.333  SCORE  75.0049  delta  -1.6696  PSNR 23.0663 SSIM 0.8561 LPIPS 0.1130  (1489s)
+DONE 1489.507245540619

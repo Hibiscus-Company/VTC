@@ -1,0 +1,1359 @@
++ source /home/bkai/miniconda3/etc/profile.d/conda.sh
+++ export CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ export _CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ _CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ export CONDA_PYTHON_EXE=/home/bkai/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/home/bkai/miniconda3/bin/python
+++ export _CONDA_ROOT=/home/bkai/miniconda3
+++ _CONDA_ROOT=/home/bkai/miniconda3
+++ '[' -z x ']'
++ conda create -y -n ubs --clone gsplat
++ tail -3
+#
+#     $ conda deactivate
+
++ conda activate ubs
++ local cmd=activate
++ case "$cmd" in
++ __conda_activate activate ubs
++ '[' -n '' ']'
++ local ask_conda
+++ PS1=
+++ __conda_exe shell.posix activate ubs
+++ '[' -n '' ']'
+++ /home/bkai/miniconda3/bin/conda shell.posix activate ubs
++ ask_conda='export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+PS1='\''(ubs) '\''
+export PATH='\''/home/bkai/.local/bin:/home/bkai/.local/bin:/home/bkai/.nvm/versions/node/v24.16.0/bin:/home/bkai/miniconda3/envs/ubs/bin:/home/bkai/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/miniconda3/condabin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/Tailscale:/mnt/c/Program Files/LLVM/bin:/Docker/host/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/BKAI/.pixi/bin:/mnt/c/Users/BKAI/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/BKAI/AppData/Roaming/npm:/mnt/c/Users/BKAI:/mnt/c/ProgramData/miniconda3/Library:/mnt/c/ProgramData/miniconda3:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/d/docker_machine/ducluong/msys64/ucrt64/bin:/mnt/d/docker_machine/ducluong/msys64/mingw64/bin:/mnt/c/Users/BKAI/AppData/Local/cursor-agent:/mnt/c/Users/BKAI/.local/bin:/snap/bin'\''
+export CONDA_PREFIX='\''/home/bkai/miniconda3/envs/ubs'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''ubs'\''
+export CONDA_PROMPT_MODIFIER='\''(ubs) '\''
+export CONDA_PREFIX_1='\''/home/bkai/miniconda3'\''
+export CONDA_EXE='\''/home/bkai/miniconda3/bin/conda'\''
+export _CONDA_EXE='\''/home/bkai/miniconda3/bin/conda'\''
+export CONDA_PYTHON_EXE='\''/home/bkai/miniconda3/bin/python'\''
+export _CONDA_ROOT='\''/home/bkai/miniconda3'\''
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-binutils_linux-64.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-gcc_linux-64.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-gxx_linux-64.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/libglib_activate.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/~cuda-nvcc_activate.sh"'
++ eval 'export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+PS1='\''(ubs) '\''
+export PATH='\''/home/bkai/.local/bin:/home/bkai/.local/bin:/home/bkai/.nvm/versions/node/v24.16.0/bin:/home/bkai/miniconda3/envs/ubs/bin:/home/bkai/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/miniconda3/condabin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/Tailscale:/mnt/c/Program Files/LLVM/bin:/Docker/host/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/BKAI/.pixi/bin:/mnt/c/Users/BKAI/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/BKAI/AppData/Roaming/npm:/mnt/c/Users/BKAI:/mnt/c/ProgramData/miniconda3/Library:/mnt/c/ProgramData/miniconda3:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/d/docker_machine/ducluong/msys64/ucrt64/bin:/mnt/d/docker_machine/ducluong/msys64/mingw64/bin:/mnt/c/Users/BKAI/AppData/Local/cursor-agent:/mnt/c/Users/BKAI/.local/bin:/snap/bin'\''
+export CONDA_PREFIX='\''/home/bkai/miniconda3/envs/ubs'\''
+export CONDA_SHLVL='\''2'\''
+export CONDA_DEFAULT_ENV='\''ubs'\''
+export CONDA_PROMPT_MODIFIER='\''(ubs) '\''
+export CONDA_PREFIX_1='\''/home/bkai/miniconda3'\''
+export CONDA_EXE='\''/home/bkai/miniconda3/bin/conda'\''
+export _CONDA_EXE='\''/home/bkai/miniconda3/bin/conda'\''
+export CONDA_PYTHON_EXE='\''/home/bkai/miniconda3/bin/python'\''
+export _CONDA_ROOT='\''/home/bkai/miniconda3'\''
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-binutils_linux-64.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-gcc_linux-64.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-gxx_linux-64.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/libglib_activate.sh"
+. "/home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/~cuda-nvcc_activate.sh"'
+++ export _CE_M=
+++ _CE_M=
+++ export _CE_CONDA=
+++ _CE_CONDA=
+++ PS1='(ubs) '
+++ export 'PATH=/home/bkai/.local/bin:/home/bkai/.local/bin:/home/bkai/.nvm/versions/node/v24.16.0/bin:/home/bkai/miniconda3/envs/ubs/bin:/home/bkai/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/miniconda3/condabin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/Tailscale:/mnt/c/Program Files/LLVM/bin:/Docker/host/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/BKAI/.pixi/bin:/mnt/c/Users/BKAI/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/BKAI/AppData/Roaming/npm:/mnt/c/Users/BKAI:/mnt/c/ProgramData/miniconda3/Library:/mnt/c/ProgramData/miniconda3:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/d/docker_machine/ducluong/msys64/ucrt64/bin:/mnt/d/docker_machine/ducluong/msys64/mingw64/bin:/mnt/c/Users/BKAI/AppData/Local/cursor-agent:/mnt/c/Users/BKAI/.local/bin:/snap/bin'
+++ PATH='/home/bkai/.local/bin:/home/bkai/.local/bin:/home/bkai/.nvm/versions/node/v24.16.0/bin:/home/bkai/miniconda3/envs/ubs/bin:/home/bkai/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/ProgramData/miniconda3/condabin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.6/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/Tailscale:/mnt/c/Program Files/LLVM/bin:/Docker/host/bin:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2024.3.2:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/BKAI/.pixi/bin:/mnt/c/Users/BKAI/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/BKAI/AppData/Roaming/npm:/mnt/c/Users/BKAI:/mnt/c/ProgramData/miniconda3/Library:/mnt/c/ProgramData/miniconda3:/mnt/c/ProgramData/miniconda3/Scripts:/mnt/d/docker_machine/ducluong/msys64/ucrt64/bin:/mnt/d/docker_machine/ducluong/msys64/mingw64/bin:/mnt/c/Users/BKAI/AppData/Local/cursor-agent:/mnt/c/Users/BKAI/.local/bin:/snap/bin'
+++ export CONDA_PREFIX=/home/bkai/miniconda3/envs/ubs
+++ CONDA_PREFIX=/home/bkai/miniconda3/envs/ubs
+++ export CONDA_SHLVL=2
+++ CONDA_SHLVL=2
+++ export CONDA_DEFAULT_ENV=ubs
+++ CONDA_DEFAULT_ENV=ubs
+++ export 'CONDA_PROMPT_MODIFIER=(ubs) '
+++ CONDA_PROMPT_MODIFIER='(ubs) '
+++ export CONDA_PREFIX_1=/home/bkai/miniconda3
+++ CONDA_PREFIX_1=/home/bkai/miniconda3
+++ export CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ export _CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ _CONDA_EXE=/home/bkai/miniconda3/bin/conda
+++ export CONDA_PYTHON_EXE=/home/bkai/miniconda3/bin/python
+++ CONDA_PYTHON_EXE=/home/bkai/miniconda3/bin/python
+++ export _CONDA_ROOT=/home/bkai/miniconda3
+++ _CONDA_ROOT=/home/bkai/miniconda3
+++ . /home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-binutils_linux-64.sh
++++ '[' 0 = 1 ']'
++++ '[' 0 = 1 ']'
++++ _tc_activation activate x86_64-conda-linux-gnu- addr2line ar c++filt elfedit nm objcopy objdump ranlib readelf size strings strip as gprof ld
++++ local act_nature=activate
++++ shift
++++ local tc_prefix=x86_64-conda-linux-gnu-
++++ shift
++++ local thing
++++ local newval
++++ local from
++++ local to
++++ local pass
++++ '[' activate = activate ']'
++++ from=
++++ to=CONDA_BACKUP_
++++ for pass in check apply
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld ']'
++++ '[' check = apply ']'
++++ for pass in check apply
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line ']'
++++ '[' apply = apply ']'
+++++ echo addr2line
+++++ tr a-z+-. A-ZX__
++++ thing=ADDR2LINE
++++ eval 'oldval=${ADDR2LINE:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_ADDR2LINE
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line ']'
++++ eval export ''\''ADDR2LINE=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line'\'''
+++++ export ADDR2LINE=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line
+++++ ADDR2LINE=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-addr2line
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar ']'
++++ '[' apply = apply ']'
+++++ echo ar
+++++ tr a-z+-. A-ZX__
++++ thing=AR
++++ eval 'oldval=${AR:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_AR
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar ']'
++++ eval export ''\''AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar'\'''
+++++ export AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar
+++++ AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt ']'
++++ '[' apply = apply ']'
+++++ echo c++filt
+++++ tr a-z+-. A-ZX__
++++ thing=CXXFILT
++++ eval 'oldval=${CXXFILT:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CXXFILT
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt ']'
++++ eval export ''\''CXXFILT=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt'\'''
+++++ export CXXFILT=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt
+++++ CXXFILT=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++filt
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit ']'
++++ '[' apply = apply ']'
+++++ echo elfedit
+++++ tr a-z+-. A-ZX__
++++ thing=ELFEDIT
++++ eval 'oldval=${ELFEDIT:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_ELFEDIT
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit ']'
++++ eval export ''\''ELFEDIT=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit'\'''
+++++ export ELFEDIT=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit
+++++ ELFEDIT=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-elfedit
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm ']'
++++ '[' apply = apply ']'
+++++ echo nm
+++++ tr a-z+-. A-ZX__
++++ thing=NM
++++ eval 'oldval=${NM:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_NM
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm ']'
++++ eval export ''\''NM=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm'\'''
+++++ export NM=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm
+++++ NM=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-nm
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy ']'
++++ '[' apply = apply ']'
+++++ echo objcopy
+++++ tr a-z+-. A-ZX__
++++ thing=OBJCOPY
++++ eval 'oldval=${OBJCOPY:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_OBJCOPY
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy ']'
++++ eval export ''\''OBJCOPY=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy'\'''
+++++ export OBJCOPY=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy
+++++ OBJCOPY=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objcopy
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump ']'
++++ '[' apply = apply ']'
+++++ echo objdump
+++++ tr a-z+-. A-ZX__
++++ thing=OBJDUMP
++++ eval 'oldval=${OBJDUMP:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_OBJDUMP
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump ']'
++++ eval export ''\''OBJDUMP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump'\'''
+++++ export OBJDUMP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump
+++++ OBJDUMP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-objdump
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib ']'
++++ '[' apply = apply ']'
+++++ echo ranlib
+++++ tr a-z+-. A-ZX__
++++ thing=RANLIB
++++ eval 'oldval=${RANLIB:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_RANLIB
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib ']'
++++ eval export ''\''RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib'\'''
+++++ export RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib
+++++ RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf ']'
++++ '[' apply = apply ']'
+++++ echo readelf
+++++ tr a-z+-. A-ZX__
++++ thing=READELF
++++ eval 'oldval=${READELF:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_READELF
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf ']'
++++ eval export ''\''READELF=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf'\'''
+++++ export READELF=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf
+++++ READELF=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-readelf
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size ']'
++++ '[' apply = apply ']'
+++++ echo size
+++++ tr a-z+-. A-ZX__
++++ thing=SIZE
++++ eval 'oldval=${SIZE:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_SIZE
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size ']'
++++ eval export ''\''SIZE=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size'\'''
+++++ export SIZE=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size
+++++ SIZE=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-size
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings ']'
++++ '[' apply = apply ']'
+++++ echo strings
+++++ tr a-z+-. A-ZX__
++++ thing=STRINGS
++++ eval 'oldval=${STRINGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_STRINGS
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings ']'
++++ eval export ''\''STRINGS=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings'\'''
+++++ export STRINGS=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings
+++++ STRINGS=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strings
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip ']'
++++ '[' apply = apply ']'
+++++ echo strip
+++++ tr a-z+-. A-ZX__
++++ thing=STRIP
++++ eval 'oldval=${STRIP:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_STRIP
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip ']'
++++ eval export ''\''STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip'\'''
+++++ export STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip
+++++ STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as ']'
++++ '[' apply = apply ']'
+++++ echo as
+++++ tr a-z+-. A-ZX__
++++ thing=AS
++++ eval 'oldval=${AS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_AS
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as ']'
++++ eval export ''\''AS=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as'\'''
+++++ export AS=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as
+++++ AS=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-as
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof ']'
++++ '[' apply = apply ']'
+++++ echo gprof
+++++ tr a-z+-. A-ZX__
++++ thing=GPROF
++++ eval 'oldval=${GPROF:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_GPROF
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof ']'
++++ eval export ''\''GPROF=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof'\'''
+++++ export GPROF=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof
+++++ GPROF=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gprof
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld ']'
++++ '[' apply = apply ']'
+++++ echo ld
+++++ tr a-z+-. A-ZX__
++++ thing=LD
++++ eval 'oldval=${LD:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_LD
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld ']'
++++ eval export ''\''LD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld'\'''
+++++ export LD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld
+++++ LD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld
++++ return 0
++++ '[' 0 -ne 0 ']'
++++ '[' 0 = 1 ']'
++++ '[' 0 = 1 ']'
+++ . /home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-gcc_linux-64.sh
++++ '[' 0 = 1 ']'
++++ '[' 0 = 1 ']'
++++ CFLAGS_USED='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ DEBUG_CFLAGS_USED='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ CPPFLAGS_USED='-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ DEBUG_CPPFLAGS_USED='-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ LDFLAGS_USED='-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
++++ CMAKE_PREFIX_PATH_USED=/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
++++ '[' 0 = 1 ']'
++++ _CONDA_PYTHON_SYSCONFIGDATA_NAME_USED=_sysconfigdata_x86_64_conda_linux_gnu
++++ '[' -n _sysconfigdata_x86_64_conda_linux_gnu ']'
++++ '[' -n '' ']'
++++ _CMAKE_ARGS='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar'
++++ _CMAKE_ARGS='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib'
++++ _CMAKE_ARGS='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip'
++++ _CMAKE_ARGS='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
++++ _MESON_ARGS=-Dbuildtype=release
++++ '[' 0 = 1 ']'
++++ '[' '' = 1 ']'
++++ _tc_activation activate x86_64-conda-linux-gnu- HOST,x86_64-conda-linux-gnu BUILD,x86_64-conda-linux-gnu CONDA_TOOLCHAIN_HOST,x86_64-conda-linux-gnu CONDA_TOOLCHAIN_BUILD,x86_64-conda-linux-gnu CC,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc cpp gcc gcc-ar gcc-nm gcc-ranlib 'CPPFLAGS,-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include' 'CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' 'LDFLAGS,-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib' 'DEBUG_CPPFLAGS,-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include' 'DEBUG_CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' CMAKE_PREFIX_PATH,/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr _CONDA_PYTHON_SYSCONFIGDATA_NAME,_sysconfigdata_x86_64_conda_linux_gnu CONDA_BUILD_SYSROOT,/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot CONDA_BUILD_CROSS_COMPILATION, CC_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc build_alias,x86_64-conda-linux-gnu host_alias,x86_64-conda-linux-gnu MESON_ARGS,-Dbuildtype=release 'CMAKE_ARGS,-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
++++ local act_nature=activate
++++ shift
++++ local tc_prefix=x86_64-conda-linux-gnu-
++++ shift
++++ local thing
++++ local newval
++++ local from
++++ local to
++++ local pass
++++ '[' activate = activate ']'
++++ from=
++++ to=CONDA_BACKUP_
++++ for pass in check apply
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo HOST,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo HOST,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=HOST
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=BUILD
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_TOOLCHAIN_HOST,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo CONDA_TOOLCHAIN_HOST,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_TOOLCHAIN_HOST
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_TOOLCHAIN_BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo CONDA_TOOLCHAIN_BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_TOOLCHAIN_BUILD
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CC,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ echo CC,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CC
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp
+++++ echo cpp
+++++ tr a-z+- A-ZX_
++++ thing=CPP
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc
+++++ echo gcc
+++++ tr a-z+- A-ZX_
++++ thing=GCC
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar
+++++ echo gcc-ar
+++++ tr a-z+- A-ZX_
++++ thing=GCC_AR
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm
+++++ echo gcc-nm
+++++ tr a-z+- A-ZX_
++++ thing=GCC_NM
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib
+++++ echo gcc-ranlib
+++++ tr a-z+- A-ZX_
++++ thing=GCC_RANLIB
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CPPFLAGS,-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'CPPFLAGS,-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CPPFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'LDFLAGS,-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ echo 'LDFLAGS,-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=LDFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'DEBUG_CPPFLAGS,-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'DEBUG_CPPFLAGS,-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=DEBUG_CPPFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'DEBUG_CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'DEBUG_CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=DEBUG_CFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CMAKE_PREFIX_PATH,/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ echo CMAKE_PREFIX_PATH,/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CMAKE_PREFIX_PATH
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo _CONDA_PYTHON_SYSCONFIGDATA_NAME,_sysconfigdata_x86_64_conda_linux_gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=_sysconfigdata_x86_64_conda_linux_gnu
+++++ echo _CONDA_PYTHON_SYSCONFIGDATA_NAME,_sysconfigdata_x86_64_conda_linux_gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=_CONDA_PYTHON_SYSCONFIGDATA_NAME
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_BUILD_SYSROOT,/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ echo CONDA_BUILD_SYSROOT,/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_BUILD_SYSROOT
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_BUILD_CROSS_COMPILATION,
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=
+++++ echo CONDA_BUILD_CROSS_COMPILATION,
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_BUILD_CROSS_COMPILATION
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CC_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ echo CC_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CC_FOR_BUILD
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo build_alias,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo build_alias,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=build_alias
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo host_alias,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo host_alias,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=host_alias
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo MESON_ARGS,-Dbuildtype=release
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=-Dbuildtype=release
+++++ echo MESON_ARGS,-Dbuildtype=release
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=MESON_ARGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CMAKE_ARGS,-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ echo 'CMAKE_ARGS,-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CMAKE_ARGS
++++ '[' check = apply ']'
++++ for pass in check apply
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo HOST,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo HOST,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=HOST
++++ '[' apply = apply ']'
++++ eval 'oldval=${HOST:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_HOST
++++ '[' -n x86_64-conda-linux-gnu ']'
++++ eval export ''\''HOST=x86_64-conda-linux-gnu'\'''
+++++ export HOST=x86_64-conda-linux-gnu
+++++ HOST=x86_64-conda-linux-gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=BUILD
++++ '[' apply = apply ']'
++++ eval 'oldval=${BUILD:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_BUILD
++++ '[' -n x86_64-conda-linux-gnu ']'
++++ eval export ''\''BUILD=x86_64-conda-linux-gnu'\'''
+++++ export BUILD=x86_64-conda-linux-gnu
+++++ BUILD=x86_64-conda-linux-gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_TOOLCHAIN_HOST,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo CONDA_TOOLCHAIN_HOST,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_TOOLCHAIN_HOST
++++ '[' apply = apply ']'
++++ eval 'oldval=${CONDA_TOOLCHAIN_HOST:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CONDA_TOOLCHAIN_HOST
++++ '[' -n x86_64-conda-linux-gnu ']'
++++ eval export ''\''CONDA_TOOLCHAIN_HOST=x86_64-conda-linux-gnu'\'''
+++++ export CONDA_TOOLCHAIN_HOST=x86_64-conda-linux-gnu
+++++ CONDA_TOOLCHAIN_HOST=x86_64-conda-linux-gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_TOOLCHAIN_BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo CONDA_TOOLCHAIN_BUILD,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_TOOLCHAIN_BUILD
++++ '[' apply = apply ']'
++++ eval 'oldval=${CONDA_TOOLCHAIN_BUILD:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CONDA_TOOLCHAIN_BUILD
++++ '[' -n x86_64-conda-linux-gnu ']'
++++ eval export ''\''CONDA_TOOLCHAIN_BUILD=x86_64-conda-linux-gnu'\'''
+++++ export CONDA_TOOLCHAIN_BUILD=x86_64-conda-linux-gnu
+++++ CONDA_TOOLCHAIN_BUILD=x86_64-conda-linux-gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CC,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ echo CC,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CC
++++ '[' apply = apply ']'
++++ eval 'oldval=${CC:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CC
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc ']'
++++ eval export ''\''CC=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc'\'''
+++++ export CC=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ CC=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp
+++++ echo cpp
+++++ tr a-z+- A-ZX_
++++ thing=CPP
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp ']'
++++ '[' apply = apply ']'
++++ eval 'oldval=${CPP:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CPP
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp ']'
++++ eval export ''\''CPP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp'\'''
+++++ export CPP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp
+++++ CPP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cpp
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc
+++++ echo gcc
+++++ tr a-z+- A-ZX_
++++ thing=GCC
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc ']'
++++ '[' apply = apply ']'
++++ eval 'oldval=${GCC:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_GCC
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc ']'
++++ eval export ''\''GCC=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc'\'''
+++++ export GCC=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc
+++++ GCC=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar
+++++ echo gcc-ar
+++++ tr a-z+- A-ZX_
++++ thing=GCC_AR
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar ']'
++++ '[' apply = apply ']'
++++ eval 'oldval=${GCC_AR:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_GCC_AR
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar ']'
++++ eval export ''\''GCC_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar'\'''
+++++ export GCC_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar
+++++ GCC_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm
+++++ echo gcc-nm
+++++ tr a-z+- A-ZX_
++++ thing=GCC_NM
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm ']'
++++ '[' apply = apply ']'
++++ eval 'oldval=${GCC_NM:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_GCC_NM
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm ']'
++++ eval export ''\''GCC_NM=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm'\'''
+++++ export GCC_NM=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm
+++++ GCC_NM=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-nm
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib
+++++ echo gcc-ranlib
+++++ tr a-z+- A-ZX_
++++ thing=GCC_RANLIB
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib ']'
++++ '[' apply = apply ']'
++++ eval 'oldval=${GCC_RANLIB:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_GCC_RANLIB
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib ']'
++++ eval export ''\''GCC_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib'\'''
+++++ export GCC_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib
+++++ GCC_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CPPFLAGS,-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'CPPFLAGS,-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CPPFLAGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${CPPFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CPPFLAGS
++++ '[' -n '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include' ']'
++++ eval export ''\''CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'\'''
+++++ export 'CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ CPPFLAGS='-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CFLAGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${CFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CFLAGS
++++ '[' -n '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' ']'
++++ eval export ''\''CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'\'''
+++++ export 'CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ CFLAGS='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'LDFLAGS,-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ echo 'LDFLAGS,-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=LDFLAGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${LDFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_LDFLAGS
++++ '[' -n '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib' ']'
++++ eval export ''\''LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'\'''
+++++ export 'LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
+++++ LDFLAGS='-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'DEBUG_CPPFLAGS,-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'DEBUG_CPPFLAGS,-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=DEBUG_CPPFLAGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${DEBUG_CPPFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_DEBUG_CPPFLAGS
++++ '[' -n '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include' ']'
++++ eval export ''\''DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'\'''
+++++ export 'DEBUG_CPPFLAGS=-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ DEBUG_CPPFLAGS='-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'DEBUG_CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'DEBUG_CFLAGS,-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=DEBUG_CFLAGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${DEBUG_CFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_DEBUG_CFLAGS
++++ '[' -n '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' ']'
++++ eval export ''\''DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'\'''
+++++ export 'DEBUG_CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ DEBUG_CFLAGS='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CMAKE_PREFIX_PATH,/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ echo CMAKE_PREFIX_PATH,/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CMAKE_PREFIX_PATH
++++ '[' apply = apply ']'
++++ eval 'oldval=${CMAKE_PREFIX_PATH:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CMAKE_PREFIX_PATH
++++ '[' -n /home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr ']'
++++ eval export ''\''CMAKE_PREFIX_PATH=/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr'\'''
+++++ export CMAKE_PREFIX_PATH=/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
+++++ CMAKE_PREFIX_PATH=/home/bkai/miniconda3/envs/ubs:/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot/usr
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo _CONDA_PYTHON_SYSCONFIGDATA_NAME,_sysconfigdata_x86_64_conda_linux_gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=_sysconfigdata_x86_64_conda_linux_gnu
+++++ echo _CONDA_PYTHON_SYSCONFIGDATA_NAME,_sysconfigdata_x86_64_conda_linux_gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=_CONDA_PYTHON_SYSCONFIGDATA_NAME
++++ '[' apply = apply ']'
++++ eval 'oldval=${_CONDA_PYTHON_SYSCONFIGDATA_NAME:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP__CONDA_PYTHON_SYSCONFIGDATA_NAME
++++ '[' -n _sysconfigdata_x86_64_conda_linux_gnu ']'
++++ eval export ''\''_CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_linux_gnu'\'''
+++++ export _CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_linux_gnu
+++++ _CONDA_PYTHON_SYSCONFIGDATA_NAME=_sysconfigdata_x86_64_conda_linux_gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_BUILD_SYSROOT,/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ echo CONDA_BUILD_SYSROOT,/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_BUILD_SYSROOT
++++ '[' apply = apply ']'
++++ eval 'oldval=${CONDA_BUILD_SYSROOT:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CONDA_BUILD_SYSROOT
++++ '[' -n /home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot ']'
++++ eval export ''\''CONDA_BUILD_SYSROOT=/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot'\'''
+++++ export CONDA_BUILD_SYSROOT=/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
+++++ CONDA_BUILD_SYSROOT=/home/bkai/miniconda3/envs/ubs/x86_64-conda-linux-gnu/sysroot
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CONDA_BUILD_CROSS_COMPILATION,
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=
+++++ echo CONDA_BUILD_CROSS_COMPILATION,
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CONDA_BUILD_CROSS_COMPILATION
++++ '[' apply = apply ']'
++++ eval 'oldval=${CONDA_BUILD_CROSS_COMPILATION:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CONDA_BUILD_CROSS_COMPILATION
++++ '[' -n '' ']'
++++ eval unset '${from}${thing}'
+++++ unset CONDA_BUILD_CROSS_COMPILATION
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CC_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ echo CC_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CC_FOR_BUILD
++++ '[' apply = apply ']'
++++ eval 'oldval=${CC_FOR_BUILD:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CC_FOR_BUILD
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc ']'
++++ eval export ''\''CC_FOR_BUILD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc'\'''
+++++ export CC_FOR_BUILD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
+++++ CC_FOR_BUILD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-cc
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo build_alias,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo build_alias,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=build_alias
++++ '[' apply = apply ']'
++++ eval 'oldval=${build_alias:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_build_alias
++++ '[' -n x86_64-conda-linux-gnu ']'
++++ eval export ''\''build_alias=x86_64-conda-linux-gnu'\'''
+++++ export build_alias=x86_64-conda-linux-gnu
+++++ build_alias=x86_64-conda-linux-gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo host_alias,x86_64-conda-linux-gnu
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=x86_64-conda-linux-gnu
+++++ echo host_alias,x86_64-conda-linux-gnu
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=host_alias
++++ '[' apply = apply ']'
++++ eval 'oldval=${host_alias:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_host_alias
++++ '[' -n x86_64-conda-linux-gnu ']'
++++ eval export ''\''host_alias=x86_64-conda-linux-gnu'\'''
+++++ export host_alias=x86_64-conda-linux-gnu
+++++ host_alias=x86_64-conda-linux-gnu
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo MESON_ARGS,-Dbuildtype=release
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=-Dbuildtype=release
+++++ echo MESON_ARGS,-Dbuildtype=release
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=MESON_ARGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${MESON_ARGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_MESON_ARGS
++++ '[' -n -Dbuildtype=release ']'
++++ eval export ''\''MESON_ARGS=-Dbuildtype=release'\'''
+++++ export MESON_ARGS=-Dbuildtype=release
+++++ MESON_ARGS=-Dbuildtype=release
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CMAKE_ARGS,-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ echo 'CMAKE_ARGS,-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CMAKE_ARGS
++++ '[' apply = apply ']'
++++ eval 'oldval=${CMAKE_ARGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CMAKE_ARGS
++++ '[' -n '-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release' ']'
++++ eval export ''\''CMAKE_ARGS=-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'\'''
+++++ export 'CMAKE_ARGS=-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
+++++ CMAKE_ARGS='-DCMAKE_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'
++++ return 0
++++ unset _CMAKE_ARGS
++++ '[' '' = 1 ']'
++++ '[' 0 -ne 0 ']'
++++ '[' 0 = 1 ']'
++++ '[' -n '' ']'
++++ '[' 0 = 1 ']'
+++ . /home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/activate-gxx_linux-64.sh
++++ '[' 0 = 1 ']'
++++ '[' 0 = 1 ']'
++++ CXXFLAGS_USED='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ DEBUG_CXXFLAGS_USED='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ '[' 0 = 1 ']'
++++ _tc_activation activate x86_64-conda-linux-gnu- CXX,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++ g++ 'CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' 'DEBUG_CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' CXX_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
++++ local act_nature=activate
++++ shift
++++ local tc_prefix=x86_64-conda-linux-gnu-
++++ shift
++++ local thing
++++ local newval
++++ local from
++++ local to
++++ local pass
++++ '[' activate = activate ']'
++++ from=
++++ to=CONDA_BACKUP_
++++ for pass in check apply
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CXX,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ echo CXX,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CXX
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++ ']'
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CXXFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'DEBUG_CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'DEBUG_CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=DEBUG_CXXFLAGS
++++ '[' check = apply ']'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CXX_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ echo CXX_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CXX_FOR_BUILD
++++ '[' check = apply ']'
++++ for pass in check apply
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CXX,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ echo CXX,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CXX
++++ '[' apply = apply ']'
+++++ echo CXX
+++++ tr a-z+- A-ZX_
++++ thing=CXX
++++ eval 'oldval=${CXX:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CXX
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++ ']'
++++ eval export ''\''CXX=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++'\'''
+++++ export CXX=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ CXX=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
++++ for thing in "$@"
++++ case "${thing}" in
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++
++++ '[' '!' -x /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++ ']'
++++ '[' apply = apply ']'
+++++ echo g++
+++++ tr a-z+- A-ZX_
++++ thing=GXX
++++ eval 'oldval=${GXX:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_GXX
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++ ']'
++++ eval export ''\''GXX=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++'\'''
+++++ export GXX=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++
+++++ GXX=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-g++
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CXXFLAGS
++++ '[' apply = apply ']'
+++++ echo CXXFLAGS
+++++ tr a-z+- A-ZX_
++++ thing=CXXFLAGS
++++ eval 'oldval=${CXXFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CXXFLAGS
++++ '[' -n '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' ']'
++++ eval export ''\''CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'\'''
+++++ export 'CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ CXXFLAGS='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo 'DEBUG_CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ echo 'DEBUG_CXXFLAGS,-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=DEBUG_CXXFLAGS
++++ '[' apply = apply ']'
+++++ echo DEBUG_CXXFLAGS
+++++ tr a-z+- A-ZX_
++++ thing=DEBUG_CXXFLAGS
++++ eval 'oldval=${DEBUG_CXXFLAGS:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_DEBUG_CXXFLAGS
++++ '[' -n '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include' ']'
++++ eval export ''\''DEBUG_CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'\'''
+++++ export 'DEBUG_CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
+++++ DEBUG_CXXFLAGS='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include'
++++ for thing in "$@"
++++ case "${thing}" in
+++++ echo CXX_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^[^\,]*\,\(.*\),\1,'
++++ newval=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ echo CXX_FOR_BUILD,/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ sed 's,^\([^\,]*\)\,.*,\1,'
++++ thing=CXX_FOR_BUILD
++++ '[' apply = apply ']'
+++++ echo CXX_FOR_BUILD
+++++ tr a-z+- A-ZX_
++++ thing=CXX_FOR_BUILD
++++ eval 'oldval=${CXX_FOR_BUILD:-}'
+++++ oldval=
++++ '[' -n '' ']'
++++ eval unset '${to}${thing}'
+++++ unset CONDA_BACKUP_CXX_FOR_BUILD
++++ '[' -n /home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++ ']'
++++ eval export ''\''CXX_FOR_BUILD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++'\'''
+++++ export CXX_FOR_BUILD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
+++++ CXX_FOR_BUILD=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++
++++ return 0
++++ '[' 0 -ne 0 ']'
++++ '[' 0 = 1 ']'
++++ '[' 0 = 1 ']'
+++ . /home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/libglib_activate.sh
++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
++++ export GSETTINGS_SCHEMA_DIR=/home/bkai/miniconda3/envs/ubs/share/glib-2.0/schemas
++++ GSETTINGS_SCHEMA_DIR=/home/bkai/miniconda3/envs/ubs/share/glib-2.0/schemas
+++ . /home/bkai/miniconda3/envs/ubs/etc/conda/activate.d/~cuda-nvcc_activate.sh
++++ ERROR=false
++++ [[ linux-64 == \l\i\n\u\x\-\6\4 ]]
++++ targetsDir=targets/x86_64-linux
++++ [[ linux-64 == \l\i\n\u\x\-\p\p\c\6\4\l\e ]]
++++ [[ linux-64 == \l\i\n\u\x\-\a\a\r\c\h\6\4 ]]
++++ CUDA_CFLAGS=
++++ CUDA_LDFLAGS=
++++ '[' 0 = 1 ']'
++++ CUDA_CFLAGS=' -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include'
++++ CUDA_LDFLAGS=' -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib'
++++ CUDA_LDFLAGS=' -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ export 'CFLAGS=-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include  -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ CFLAGS='-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include  -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ export 'CPPFLAGS=-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include  -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ CPPFLAGS='-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/bkai/miniconda3/envs/ubs/include  -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ export 'CXXFLAGS=-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include  -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ CXXFLAGS='-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/bkai/miniconda3/envs/ubs/include  -I/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/include  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ export 'LDFLAGS=-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ LDFLAGS='-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/bkai/miniconda3/envs/ubs/lib -Wl,-rpath-link,/home/bkai/miniconda3/envs/ubs/lib -L/home/bkai/miniconda3/envs/ubs/lib  -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib -L/home/bkai/miniconda3/envs/ubs/targets/x86_64-linux/lib/stubs'
++++ '[' -z x ']'
++++ [[ ! -z '' ]]
++++ NVCC_PREPEND_FLAGS=' -ccbin=/home/bkai/miniconda3/envs/ubs/bin/x86_64-conda-linux-gnu-c++'
++++ export NVCC_PREPEND_FLAGS
++++ [[ ! -z '' ]]
++++ '[' 0 = 1 ']'
++++ export NVCC_APPEND_FLAGS
++++ false
++ __conda_hashr
++ '[' -n '' ']'
++ '[' -n '' ']'
++ hash -r
++ python -c 'import torch;print('\''torch'\'',torch.__version__,'\''cuda'\'',torch.version.cuda)'
+torch 2.7.1+cu128 cuda 12.8
++ cd /home/bkai/.claude/jobs/1c9cf7e9/tmp/ubs_repo/submodules
++ TORCH_CUDA_ARCH_LIST=12.0
++ tail -25
++ MAX_JOBS=6
++ pip install . --no-build-isolation --no-deps
+Processing ./.
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: gsplat
+  Building wheel for gsplat (pyproject.toml): started
+  Building wheel for gsplat (pyproject.toml): still running...
+  Building wheel for gsplat (pyproject.toml): still running...
+  Building wheel for gsplat (pyproject.toml): finished with status 'done'
+  Created wheel for gsplat: filename=gsplat-1.3.0-cp310-cp310-linux_x86_64.whl size=1658877 sha256=d0c625e8e38f6b46e6fc100b88625db096507e38d301c5ff15e2996605e02ba3
+  Stored in directory: /tmp/pip-ephem-wheel-cache-6qqnvsnz/wheels/3e/ed/e0/5fc16593a5c5b6abe80a724de9bb99b96e876b7608ab42f58b
+Successfully built gsplat
+Installing collected packages: gsplat
+  Attempting uninstall: gsplat
+    Found existing installation: gsplat 1.5.3
+    Uninstalling gsplat-1.5.3:
+      Successfully uninstalled gsplat-1.5.3
+Successfully installed gsplat-1.3.0
++ echo '=== import check (must be the UBS fork, not our gsplat) ==='
+=== import check (must be the UBS fork, not our gsplat) ===
++ cd /home/bkai/.claude/jobs/1c9cf7e9/tmp/ubs_repo
++ python -
+gsplat at: /home/bkai/miniconda3/envs/ubs/lib/python3.10/site-packages/gsplat
+has betas: True | has sb_params: False | has camera_model: False
+n params: 20
++ echo '=== UBS BUILD DONE ==='
+=== UBS BUILD DONE ===
++ touch /mnt/d/avv/ubs_build.DONE

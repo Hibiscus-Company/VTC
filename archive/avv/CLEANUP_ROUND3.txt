@@ -1,0 +1,17 @@
+CLEANUP ROUND 3  2026-08-02 13:11
+Scope: only artefacts this competition created. Other projects untouched per user.
+
+--- DELETE ---
+    27491 MB  C:/…/FastGS/output                                 FastGS-era Track A output; 28 dirs, all HCM0181/set1; 0 private_set2; unreferenced; 0 entries in delivery
+    29526 MB  ~/VAR2026_BTS_postverification.zip                   uploaded to drive R by user
+    29538 MB  ~/delivery_r36/                                      staging; rebuildable (stage_delivery.sh + 17/17 lineage sources intact)
+    26369 MB  ~/r36_{weights,renders}.zip                          split fallbacks, redundant once R holds the full package
+    30097 MB  conda envs fastgs, ubs, difix                        Track A dead / UBS killed / difix never run
+     2616 MB  ~/subs_eval, ~/densq                                 round-1 scoring + old 3DGUT A/B set
+      968 MB  ~/submission_round1_*.zip                            round-1 submissions, superseded
+
+--- KEEP, though we created it ---
+     6590 MB  ~/data (public_set + private_set1)                   COMPETITION DATA, not re-downloadable; evalsplit/HCM0181 points into it
+      351 MB  ~/r36_core.zip                                       351 MiB insurance: code+env+docs+BOTH submission zips, in case the R upload is bad
+    19868 MB  conda envs gsplat, fastgs2                           the environments REPRODUCE.md tells the committee to build
+        -  MB  /mnt/d/avv lineage (27 dirs)                        r36/r37 reproduction chain

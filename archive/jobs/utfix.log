@@ -1,0 +1,13 @@
+Distortion warp enabled, k=-0.114794
+5000000 gaussians (mode=classic, ut=True)
+Render canvas padding: 92px
+Wrote 60 images to /mnt/d/avv/output/HNI0131_gsplatB9ut/renders_warp
+UTFIX HNI0131_gsplatB9ut: native-vs-warp center 2.02/255 corner 1.44/255 (n=5)
+=== utfix HNI0131 SWAPPED to warp renders ===
+Distortion warp enabled, k=-0.114695
+5000000 gaussians (mode=classic, ut=True)
+Render canvas padding: 91px
+Wrote 52 images to /mnt/d/avv/output/HNI0265_gsplatB9ut/renders_warp
+UTFIX HNI0265_gsplatB9ut: native-vs-warp center 2.90/255 corner 1.97/255 (n=5)
+=== utfix HNI0265 SWAPPED to warp renders ===
+UTFIX DONE

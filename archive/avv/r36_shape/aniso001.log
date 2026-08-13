@@ -1,0 +1,7 @@
+>>> aniso001 (gpu1) START 12:02  [--aniso_reg 0.01]
+Saved 5000000 gaussians to /mnt/d/avv/r36_shape/aniso001/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r36_shape/aniso001/render
+--- census aniso001 ---
+   N=995,347  s2/s1 0.3584  s2/s3 2.6  s1/s3 9.5
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 26.8692  SSIM 0.8475  LPIPSvgg 0.2472  SCORE 71.6575   [BAR 70.7965]
+<<< aniso001 DONE 13:39

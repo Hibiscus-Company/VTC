@@ -1,0 +1,29 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/mixlever/p6_jpeg.py:40: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  g = torch.from_numpy(np.ascontiguousarray(G[v])).to(DEV).permute(2, 0, 1).float().unsqueeze(0) / 255.0
+view 0 5s
+view 10 57s
+view 20 108s
+view 30 160s
+view 40 211s
+view 50 260s
+
+cand                 PNG  JPEG q100ss2  jpeg-png
+rank_k2          76.3681       76.3216   -0.0465
+rank_k3          76.7428       76.7309   -0.0119
+rank_k4          76.8504       76.8539   +0.0034
+rank_k5          76.8092       76.8274   +0.0182
+rank_k6          77.0019       77.0160   +0.0142
+rank_k7          77.0642       77.0749   +0.0107
+rank_k8          77.0427       77.0516   +0.0089
+rank_k9          77.0306       77.0477   +0.0171
+rank_k10         76.9824       76.9978   +0.0154
+rank_k11         76.9365       76.9523   +0.0158
+rank_k12         76.8625       76.8789   +0.0164
+UT4_shipped      76.6749       76.6929   +0.0180
+elapsed 304s

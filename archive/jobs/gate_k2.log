@@ -1,0 +1,42 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  frame_000010 done
+  frame_000120 done
+  frame_000190 done
+  frame_000260 done
+  frame_000440 done
+  frame_000510 done
+  frame_000630 done
+  frame_000710 done
+  frame_000810 done
+  frame_000910 done
+  frame_001100 done
+  frame_001180 done
+  frame_001250 done
+  frame_001320 done
+  frame_001400 done
+  frame_001470 done
+  frame_001540 done
+  frame_001640 done
+  frame_001720 done
+  frame_001820 done
+  frame_001930 done
+  frame_002120 done
+  frame_002190 done
+  frame_002260 done
+  frame_002330 done
+  frame_002440 done
+  frame_002510 done
+  frame_002650 done
+
+ref_churn15k8k   k=2 encoded  PSNR 27.1980 SSIM 0.8512 LPIPS 0.2529  SCORE 71.7394   first8 62.2120  last20 75.5503
+churn_r25n25     k=2 encoded  PSNR 27.1957 SSIM 0.8577 LPIPS 0.2462  SCORE 72.2023   first8 63.7076  last20 75.6002
+
+PAIRED delta (churn_r25n25 - ref_churn15k8k) over 28 holes:
+  mean +0.4630   sd 0.8928   t = +2.744   wins 17/28
+  forecast LB scene gain = +0.4630 x 0.85 = +0.3935
+  forecast LB TOTAL gain = +0.05622   (r36 was +0.0124, r35 +0.0199)

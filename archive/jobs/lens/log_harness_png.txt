@@ -1,0 +1,43 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  [HCM0181] 0/60 8s
+  [HCM0181] 20/60 80s
+  [HCM0181] 40/60 147s
+[HCM0181] done 224s
+  [HCM0193] 0/60 19s
+  [HCM0193] 20/60 224s
+  [HCM0193] 40/60 20s
+[HCM0193] done 341s
+  [HCM0204] 0/60 11s
+  [HCM0204] 20/60 75s
+  [HCM0204] 40/60 128s
+[HCM0204] done 184s
+  [hcm0031] 0/50 16s
+  [hcm0031] 20/50 199s
+  [hcm0031] 40/50 364s
+[hcm0031] done 462s
+  [hcm0034] 0/60 9s
+  [hcm0034] 20/60 212s
+  [hcm0034] 40/60 308s
+[hcm0034] done 360s
+
+               variant      MEAN  d(base)    HCM0181    HCM0193    HCM0204    hcm0031    hcm0034
+                  none   75.7927  -1.0356    -1.3670    -0.9764    -1.0637    -0.8119    -0.9593
+              mean_ds8   76.6803  -0.1480    -0.1086    -0.2077    -0.1621    -0.2150    -0.0467
+            median_ds4   76.8276  -0.0007    -0.0007    -0.0008    -0.0010    -0.0003    -0.0006
+            median_ds8   76.8283  +0.0000    +0.0000    +0.0000    +0.0000    +0.0000    +0.0000
+           median_ds16   76.8291  +0.0008    +0.0013    +0.0009    +0.0001    +0.0019    -0.0001
+           median_ds32   76.8288  +0.0005    +0.0011    +0.0008    +0.0007    +0.0013    -0.0017
+            med_ds8_g1   76.8309  +0.0025    +0.0031    +0.0022    +0.0021    +0.0031    +0.0023
+             poly4_ds8   76.0642  -0.7641    -0.8485    -0.8164    -0.6955    -0.6724    -0.7877
+             poly8_ds8   76.6648  -0.1635    -0.1697    -0.1733    -0.1620    -0.1441    -0.1683
+        med_ds8_rtorch   76.8314  +0.0030    +0.0031    +0.0031    +0.0030    +0.0031    +0.0029
+          med_ds8_rlan   76.9379  +0.1095    +0.1358    +0.1155    +0.0926    +0.0957    +0.1082
+         med_ds8_rspl5   76.9405  +0.1122    +0.1387    +0.1191    +0.0942    +0.0980    +0.1111
+          med_ds4_rlan   76.9372  +0.1089    +0.1352    +0.1148    +0.0917    +0.0953    +0.1076
+         med_ds16_rlan   76.9386  +0.1103    +0.1369    +0.1165    +0.0926    +0.0976    +0.1079
+       med_ds8_g1_rlan   76.9397  +0.1114    +0.1381    +0.1169    +0.0940    +0.0982    +0.1097

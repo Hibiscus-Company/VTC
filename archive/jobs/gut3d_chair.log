@@ -1,0 +1,15 @@
+=== 3DGUT-eval3d video (chair, --ut k1=0) Fri Jul 24 18:14:07 +07 2026 ===
+[59000] loss 0.0482 l1 0.0256 ssim 0.9077 N 8000000
+[59999] loss 0.0674 l1 0.0327 ssim 0.8658 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/gut3d/chair/ckpt.pt
+Wrote 58 images to /mnt/d/avv/gut3d/chair/eval_render
+=== chair 3DGUT-video scores (baseline solo 69.8051 / ens-mean 71.0682) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_gut3d_solo n= 58  PSNR 24.7211  SSIM 0.7808  LPIPSvgg 0.2431  SCORE 68.5335
+COMBINE chair_gut3dadd mean    n= 58 PSNR 25.7713 SSIM 0.8162 LPIPS 0.2213 SCORE 71.0997
+=== GUT3D CHAIR DONE Fri Jul 24 21:02:41 +07 2026 ===

@@ -1,0 +1,162 @@
+waiting on: HCM1439 HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HCM1439 HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HCM1439 HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HCM1439 HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HCM1439 HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0131 HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0265 HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0366 HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+waiting on: HNI0437
+=== all 8 60k members present ===
+rendered 120 train views -> /mnt/d/avv/output/HCM0249_gsplatB9ut60k/train_png_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.171 px  max 1.21 px
+saved -> /mnt/d/avv/fields9/HCM0249.npy (+ .meta.json)
+  mask HCM0249.npy on /mnt/d/avv/output/HCM0249_champA/test_poses_renders_png: 0.00% suppressed
+  mask HCM0249.npy on /mnt/d/avv/output/HCM0249_memB/test_poses_renders_png: 0.00% suppressed
+  mask HCM0249.npy on /mnt/d/avv/output/HCM0249_memC/test_poses_renders_png: 0.00% suppressed
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/private_r9/HCM0249/jpg
+corrected 60 images -> /mnt/d/avv/ens/private_r9/HCM0249/png
+=== R9 HCM0249 DONE (60 imgs, native, stride 2) ===
+rendered 120 train views -> /mnt/d/avv/output/HCM0254_gsplatB9ut60k/train_png_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.185 px  max 1.38 px
+saved -> /mnt/d/avv/fields9/HCM0254.npy (+ .meta.json)
+k1=+0.00982  1320x989  unsupervised 0.00% -> /mnt/d/avv/masks/HCM0254.npy
+  mask HCM0254.npy on /mnt/d/avv/output/HCM0254_champA/test_poses_renders_png: 0.00% suppressed
+  mask HCM0254.npy on /mnt/d/avv/output/HCM0254_memB/test_poses_renders_png: 0.00% suppressed
+  mask HCM0254.npy on /mnt/d/avv/output/HCM0254_memC/test_poses_renders_png: 0.00% suppressed
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/private_r9/HCM0254/jpg
+corrected 60 images -> /mnt/d/avv/ens/private_r9/HCM0254/png
+=== R9 HCM0254 DONE (60 imgs, native, stride 2) ===
+rendered 120 train views -> /mnt/d/avv/output/HCM0276_gsplatB9ut60k/train_png_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.170 px  max 1.22 px
+saved -> /mnt/d/avv/fields9/HCM0276.npy (+ .meta.json)
+k1=+0.00810  1320x989  unsupervised 0.00% -> /mnt/d/avv/masks/HCM0276.npy
+  mask HCM0276.npy on /mnt/d/avv/output/HCM0276_champA/test_poses_renders_png: 0.00% suppressed
+  mask HCM0276.npy on /mnt/d/avv/output/HCM0276_memB/test_poses_renders_png: 0.00% suppressed
+  mask HCM0276.npy on /mnt/d/avv/output/HCM0276_memC/test_poses_renders_png: 0.00% suppressed
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/private_r9/HCM0276/jpg
+corrected 60 images -> /mnt/d/avv/ens/private_r9/HCM0276/png
+=== R9 HCM0276 DONE (60 imgs, native, stride 2) ===
+rendered 103 train views -> /mnt/d/avv/output/HCM1439_gsplatB9ut60k/train_png_native
+  fit on 103 pairs -> field 165x123  mean |d| 0.091 px  max 0.46 px
+saved -> /mnt/d/avv/fields9/HCM1439.npy (+ .meta.json)
+k1=+0.00759  1320x989  unsupervised 0.00% -> /mnt/d/avv/masks/HCM1439.npy
+  mask HCM1439.npy on /mnt/d/avv/output/HCM1439_champA/test_poses_renders_png: 0.00% suppressed
+  mask HCM1439.npy on /mnt/d/avv/output/HCM1439_memB/test_poses_renders_png: 0.00% suppressed
+  mask HCM1439.npy on /mnt/d/avv/output/HCM1439_memC/test_poses_renders_png: 0.00% suppressed
+Ensembled 26 images from 5 members -> /mnt/d/avv/ens/private_r9/HCM1439/jpg
+corrected 26 images -> /mnt/d/avv/ens/private_r9/HCM1439/png
+=== R9 HCM1439 DONE (26 imgs, native, stride 1) ===
+rendered 120 train views -> /mnt/d/avv/output/HNI0131_gsplatB9ut60k/train_png_warp
+  fit on 120 pairs -> field 165x123  mean |d| 0.245 px  max 4.99 px
+saved -> /mnt/d/avv/fields9/HNI0131.npy (+ .meta.json)
+  mask HNI0131.npy on /mnt/d/avv/output/HNI0131_champA/test_poses_renders_png: 12.89% suppressed
+  mask HNI0131.npy on /mnt/d/avv/output/HNI0131_memB/test_poses_renders_png: 12.89% suppressed
+  mask HNI0131.npy on /mnt/d/avv/output/HNI0131_memC/test_poses_renders_png: 12.89% suppressed
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/private_r9/HNI0131/jpg
+corrected 60 images -> /mnt/d/avv/ens/private_r9/HNI0131/png
+=== R9 HNI0131 DONE (60 imgs, warp, stride 2) ===
+rendered 103 train views -> /mnt/d/avv/output/HNI0265_gsplatB9ut60k/train_png_warp
+  fit on 103 pairs -> field 165x123  mean |d| 0.261 px  max 5.01 px
+saved -> /mnt/d/avv/fields9/HNI0265.npy (+ .meta.json)
+  mask HNI0265.npy on /mnt/d/avv/output/HNI0265_champA/test_poses_renders_png: 12.86% suppressed
+  mask HNI0265.npy on /mnt/d/avv/output/HNI0265_memB/test_poses_renders_png: 12.86% suppressed
+  mask HNI0265.npy on /mnt/d/avv/output/HNI0265_memC/test_poses_renders_png: 12.86% suppressed
+Ensembled 52 images from 5 members -> /mnt/d/avv/ens/private_r9/HNI0265/jpg
+corrected 52 images -> /mnt/d/avv/ens/private_r9/HNI0265/png
+=== R9 HNI0265 DONE (52 imgs, warp, stride 2) ===
+rendered 120 train views -> /mnt/d/avv/output/HNI0366_gsplatB9ut60k/train_png_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.153 px  max 1.12 px
+saved -> /mnt/d/avv/fields9/HNI0366.npy (+ .meta.json)
+k1=+0.01196  1320x989  unsupervised 0.00% -> /mnt/d/avv/masks/HNI0366.npy
+  mask HNI0366.npy on /mnt/d/avv/output/HNI0366_champA/test_poses_renders_png: 0.00% suppressed
+  mask HNI0366.npy on /mnt/d/avv/output/HNI0366_memB/test_poses_renders_png: 0.00% suppressed
+  mask HNI0366.npy on /mnt/d/avv/output/HNI0366_memC/test_poses_renders_png: 0.00% suppressed
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/private_r9/HNI0366/jpg
+corrected 60 images -> /mnt/d/avv/ens/private_r9/HNI0366/png
+=== R9 HNI0366 DONE (60 imgs, native, stride 2) ===
+rendered 112 train views -> /mnt/d/avv/output/HNI0437_gsplatB9ut60k/train_png_native
+  fit on 112 pairs -> field 165x123  mean |d| 0.138 px  max 0.86 px
+saved -> /mnt/d/avv/fields9/HNI0437.npy (+ .meta.json)
+k1=+0.01383  1320x989  unsupervised 0.00% -> /mnt/d/avv/masks/HNI0437.npy
+  mask HNI0437.npy on /mnt/d/avv/output/HNI0437_champA/test_poses_renders_png: 0.00% suppressed
+  mask HNI0437.npy on /mnt/d/avv/output/HNI0437_memB/test_poses_renders_png: 0.00% suppressed
+  mask HNI0437.npy on /mnt/d/avv/output/HNI0437_memC/test_poses_renders_png: 0.00% suppressed
+Ensembled 56 images from 5 members -> /mnt/d/avv/ens/private_r9/HNI0437/jpg
+corrected 56 images -> /mnt/d/avv/ens/private_r9/HNI0437/png
+=== R9 HNI0437 DONE (56 imgs, native, stride 2) ===
+442.0MB > 350.0MB, re-encoding HCM0254 at q99
+434.9MB > 350.0MB, re-encoding HCM0249 at q99
+427.9MB > 350.0MB, re-encoding HCM0276 at q99
+420.9MB > 350.0MB, re-encoding HNI0366 at q99
+414.0MB > 350.0MB, re-encoding HNI0131 at q99
+407.0MB > 350.0MB, re-encoding HNI0437 at q99
+400.5MB > 350.0MB, re-encoding HCM0254 at q98
+392.1MB > 350.0MB, re-encoding HCM0249 at q98
+383.6MB > 350.0MB, re-encoding HNI0265 at q99
+377.4MB > 350.0MB, re-encoding HCM0276 at q98
+369.1MB > 350.0MB, re-encoding HNI0366 at q98
+361.1MB > 350.0MB, re-encoding HNI0131 at q98
+353.1MB > 350.0MB, re-encoding HNI0437 at q98
+OK: /mnt/d/avv/submissions/sub_round9_ut60k_private.zip  345.6MB  434 files
+  HCM0249: q98
+  HCM0254: q98
+  HCM0276: q98
+  HCM1439: q100
+  HNI0131: q98
+  HNI0265: q99
+  HNI0366: q98
+  HNI0437: q98
+CRC: OK
+  HCM0249:  60/60 exact, all 1320x989, JPEG
+  HCM0254:  60/60 exact, all 1320x989, JPEG
+  HCM0276:  60/60 exact, all 1320x989, JPEG
+  HCM1439:  26/26 exact, all 1320x989, JPEG
+  HNI0131:  60/60 exact, all 1320x989, JPEG
+  HNI0265:  52/52 exact, all 1320x989, JPEG
+  HNI0366:  60/60 exact, all 1320x989, JPEG
+  HNI0437:  56/56 exact, all 1320x989, JPEG
+
+files 434/434   size 345.6 MB (limit 350.0)
+VERIFY PASSED
+R9 ZIP DONE

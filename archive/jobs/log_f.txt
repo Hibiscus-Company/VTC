@@ -1,0 +1,17 @@
+A) padding-mode sensitivity of the repo SSIM (what the zero-pad is worth to us)
+set             zeros(repo)    reflect  replicate  valid-crop  zeros-valid (pts)
+HCM0181/k4          0.86505    0.86260    0.86260     0.86514            -0.0028
+HCM0181/B9ut        0.84556    0.84294    0.84294     0.84555             0.0004
+HCM0193/B9ut        0.84734    0.84452    0.84453     0.84721             0.0039
+HCM0204/B9ut        0.85408    0.85148    0.85148     0.85415            -0.0022
+hcm0031/B9ut        0.83505    0.83199    0.83200     0.83441             0.0190
+hcm0034/B9ut        0.86470    0.86200    0.86200     0.86463             0.0019
+
+B) sensitivity: corrupt the outer w px of the RENDER, watch SSIM vs PSNR
+  outer  1px -> gray   : SSIM 0.86194  PSNR 24.5667   (dSSIM -0.0932 pts, dPSNR -0.2020 pts)
+  outer  3px -> gray   : SSIM 0.85777  PSNR 23.9671   (dSSIM -0.2184 pts, dPSNR -0.5618 pts)
+  outer  5px -> gray   : SSIM 0.85407  PSNR 23.4448   (dSSIM -0.3295 pts, dPSNR -0.8751 pts)
+  outer  1px -> noise  : SSIM 0.86013  PSNR 24.2051   (dSSIM -0.1477 pts, dPSNR -0.4190 pts)
+  outer  5px -> noise  : SSIM 0.84785  PSNR 22.2097   (dSSIM -0.5159 pts, dPSNR -1.6162 pts)
+  outer  5px -> gtcopy : SSIM 0.86743  PSNR 25.0786   (dSSIM +0.0714 pts, dPSNR +0.1051 pts)
+  outer 20px -> gtcopy : SSIM 0.88050  PSNR 25.5785   (dSSIM +0.4636 pts, dPSNR +0.4051 pts)

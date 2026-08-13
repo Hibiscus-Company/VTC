@@ -1,0 +1,44 @@
+=== config_batch2 START Wed Jul 22 10:19:58 +07 2026 ===
+[29999] loss 0.1126 l1 0.0362 ssim 0.7347 N 2500000
+Saved 2500000 gaussians to /mnt/d/avv/tw_test/bonsai_capmax2p5M/ckpt.pt
+Wrote 28 images to /mnt/d/avv/tw_test/bonsai_capmax2p5M/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL bonsai_capmax2p5M n= 28  PSNR 26.8302  SSIM 0.8457  LPIPSvgg 0.2508  SCORE 71.4349
+[59999] loss 0.0802 l1 0.0359 ssim 0.8300 N 4000000
+Saved 4000000 gaussians to /mnt/d/avv/tw_test/chair_capmax4M/ckpt.pt
+Wrote 58 images to /mnt/d/avv/tw_test/chair_capmax4M/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_capmax4M   n= 58  PSNR 25.1520  SSIM 0.7950  LPIPSvgg 0.2324  SCORE 69.6460
+[59999] loss 0.0589 l1 0.0294 ssim 0.8780 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/tw_test/HCM0181_initclip2/ckpt.pt
+Wrote 60 images to /mnt/d/avv/tw_test/HCM0181_initclip2/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL HCM0181_initclip2 n= 60  PSNR 24.0449  SSIM 0.8419  LPIPSvgg 0.1214  SCORE 74.8282
+=== GPU1 batch done ===
+[59999] loss 0.0735 l1 0.0338 ssim 0.8467 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/tw_test/chair_noise40k/ckpt.pt
+Wrote 58 images to /mnt/d/avv/tw_test/chair_noise40k/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_noise40k   n= 58  PSNR 25.0570  SSIM 0.7900  LPIPSvgg 0.2352  SCORE 69.3286
+=== GPU0 batch done ===
+=== CONFIG_BATCH2 DONE Wed Jul 22 14:14:19 +07 2026 ===

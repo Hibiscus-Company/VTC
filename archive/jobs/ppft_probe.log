@@ -1,0 +1,16 @@
+8000000 gaussians, k1=+0.009004
+DJI_20241229103827_0207_V.JPG: k-neighbors ['8_0208', '6_0206', '9_0209', '5_0205', '4_0204'] done
+DJI_20241229103426_0068_V.JPG: k-neighbors ['5_0067', '4_0066', '8_0070', '3_0065', '9_0071'] done
+DJI_20241229104217_0342_V.JPG: k-neighbors ['6_0341', '8_0343', '9_0344', '0_0345', '3_0338'] done
+DJI_20241229103809_0189_V.JPG: k-neighbors ['0_0190', '7_0187', '1_0191', '2_0192', '3_0193'] done
+DJI_20241229104214_0339_V.JPG: k-neighbors ['3_0338', '4_0337', '6_0341', '3_0336', '8_0343'] done
+DJI_20241229104030_0265_V.JPG: k-neighbors ['1_0266', '9_0264', '2_0267', '7_0262', '4_0269'] done
+Wrote 6 images to /mnt/d/avv/ibr/HCM0181_ppftprobe/renders
+PROBE_WALL 139.93 s
+=== PPFT PROBE RENDERED ===
+baseline subset: 6
+PROBE base HCM0181    n=  6  PSNR 23.4212  SSIM 0.8326  LPIPS(alex) 0.0731 LPIPS(vgg) 0.1210  Score(alex) 0.7611  Score(vgg) 0.7419
+PROBE base   Score(vgg)  = 74.1914   [0.4*(1-LPIPS)=0.3516  0.3*SSIM=0.2498  0.3*PSNRn=0.1405]  (psnr_max=50.0)
+PROBE tuned HCM0181    n=  6  PSNR 23.6420  SSIM 0.8384  LPIPS(alex) 0.0702 LPIPS(vgg) 0.1263  Score(alex) 0.7653  Score(vgg) 0.7428
+PROBE tuned   Score(vgg)  = 74.2839   [0.4*(1-LPIPS)=0.3495  0.3*SSIM=0.2515  0.3*PSNRn=0.1419]  (psnr_max=50.0)
+PPFT PROBE DONE

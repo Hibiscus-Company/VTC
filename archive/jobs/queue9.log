@@ -1,0 +1,12 @@
+=== [GPU 1] HCM0249 -> output/HCM0249_champ ===
+=== [GPU 1] HCM0254 -> output/HCM0254_champ ===
+=== [GPU 1] HCM0276 -> output/HCM0276_champ ===
+=== [GPU 1] HCM1439 -> output/HCM1439_champ ===
+=== [GPU 1] HNI0131 -> output/HNI0131_champ ===
+=== [GPU 1] HNI0265 -> output/HNI0265_champ ===
+=== [GPU 1] HNI0366 -> output/HNI0366_champ ===
+=== [GPU 1] HNI0437 -> output/HNI0437_champ ===
+=== [GPU 1] queue 'champ' done ===
+13 scenes with test_poses.csv found
+Wrote /mnt/d/avv/submissions/sub_round1_champ.zip: 724 images, 13 scenes, 1222.9 MB
+SUBMISSION DONE: /mnt/d/avv/submissions/sub_round1_champ.zip

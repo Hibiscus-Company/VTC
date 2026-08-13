@@ -1,0 +1,55 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/28] frame_000010  88s
+[2/28] frame_000120  193s
+[3/28] frame_000190  297s
+[4/28] frame_000260  402s
+[5/28] frame_000440  506s
+[6/28] frame_000510  613s
+[7/28] frame_000630  721s
+[8/28] frame_000710  827s
+[9/28] frame_000810  930s
+[10/28] frame_000910  1035s
+[11/28] frame_001100  1136s
+[12/28] frame_001180  1242s
+[13/28] frame_001250  1346s
+[14/28] frame_001320  1450s
+[15/28] frame_001400  1555s
+[16/28] frame_001470  1657s
+[17/28] frame_001540  1763s
+[18/28] frame_001640  1867s
+[19/28] frame_001720  1969s
+[20/28] frame_001820  2074s
+[21/28] frame_001930  2182s
+[22/28] frame_002120  2296s
+[23/28] frame_002190  2408s
+[24/28] frame_002260  2521s
+[25/28] frame_002330  2615s
+[26/28] frame_002440  2704s
+[27/28] frame_002510  2795s
+[28/28] frame_002650  2885s
+
+=== SOLO ===
+  eval_png                 PSNR 27.3812 SSIM 0.8524 LPIPS 0.2485 SCORE 72.0607
+  eval_png                 PSNR 26.9955 SSIM 0.8492 LPIPS 0.2448 SCORE 71.8830
+  eval_png                 PSNR 27.3996 SSIM 0.8542 LPIPS 0.2551 SCORE 71.8615
+  eval_png                 PSNR 27.0139 SSIM 0.8478 LPIPS 0.2524 SCORE 71.5467
+  eval_png                 PSNR 26.8302 SSIM 0.8457 LPIPS 0.2508 SCORE 71.4351
+  eval_png                 PSNR 26.7634 SSIM 0.8478 LPIPS 0.2533 SCORE 71.3606
+  eval_png                 PSNR 26.4325 SSIM 0.8441 LPIPS 0.2615 SCORE 70.7212
+  eval_png                 PSNR 26.3625 SSIM 0.8458 LPIPS 0.2534 SCORE 71.0575
+  eval_png                 PSNR 26.4209 SSIM 0.8425 LPIPS 0.2513 SCORE 71.0777
+=== CUMULATIVE PIXEL-MEAN DEPTH CURVE ===
+  k=1  PSNR 27.3812 SSIM 0.8524 LPIPS 0.2485 SCORE 72.0607
+  k=2  PSNR 27.6619 SSIM 0.8584 LPIPS 0.2412 SCORE 72.7035  delta +0.6428
+  k=3  PSNR 27.9287 SSIM 0.8632 LPIPS 0.2453 SCORE 72.8400  delta +0.1365
+  k=4  PSNR 27.9276 SSIM 0.8632 LPIPS 0.2489 SCORE 72.6957  delta -0.1444
+  k=5  PSNR 27.8716 SSIM 0.8627 LPIPS 0.2518 SCORE 72.5326  delta -0.1630
+  k=6  PSNR 27.8319 SSIM 0.8628 LPIPS 0.2539 SCORE 72.4258  delta -0.1068
+  k=7  PSNR 27.8175 SSIM 0.8632 LPIPS 0.2552 SCORE 72.3803  delta -0.0455
+  k=8  PSNR 27.7574 SSIM 0.8632 LPIPS 0.2567 SCORE 72.2837  delta -0.0966
+  k=9  PSNR 27.7395 SSIM 0.8633 LPIPS 0.2575 SCORE 72.2405  delta -0.0432

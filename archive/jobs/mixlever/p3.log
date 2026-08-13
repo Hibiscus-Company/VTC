@@ -1,0 +1,68 @@
+solo ranking: [('gsplatB11ut60k', 75.9644), ('m31b_taillpips', 75.7006), ('gsplatB12ut8Ms7', 75.6639), ('gsplatB10ut8M', 75.6331), ('gsplatB9ut', 75.2554), ('e17visnorm', 75.201), ('e15ceil95', 75.1577), ('gsplatB8pure', 75.0469), ('m31b_nolpips', 74.9198), ('gsplatB4warm', 74.8673), ('gsplatB7ppisp2', 74.7315), ('gsplatB2', 74.5343), ('gsplatB1', 74.5324), ('gsplatB3', 74.3172), ('e16app', 74.3051), ('gsplatB5affine', 74.1377), ('sh2', 72.5381), ('sh1', 69.158), ('sh0', 67.7954), ('gsplatB6bilagrid', 66.9168)]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/mixlever/core.py:64: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  g = torch.from_numpy(np.ascontiguousarray(G[vi])).to(DEV).permute(2, 0, 1).float().unsqueeze(0) / 255.0
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/mixlever/core.py:64: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  g = torch.from_numpy(np.ascontiguousarray(G[vi])).to(DEV).permute(2, 0, 1).float().unsqueeze(0) / 255.0
+
+=== A: rank-ordered k-curve  (108s)
+k= 1 +gsplatB11ut60k   score  75.9644  PSNR 24.4790 SSIM 0.8547 LPIPS 0.1091
+k= 2 +m31b_taillpips   score  76.3681  PSNR 24.6728 SSIM 0.8582 LPIPS 0.1046
+k= 3 +gsplatB12ut8Ms7  score  76.7428  PSNR 24.8692 SSIM 0.8638 LPIPS 0.1023
+k= 4 +gsplatB10ut8M    score  76.8504  PSNR 24.9438 SSIM 0.8659 LPIPS 0.1023
+k= 5 +gsplatB9ut       score  76.8092  PSNR 24.9615 SSIM 0.8663 LPIPS 0.1039
+k= 6 +e17visnorm       score  77.0022  PSNR 25.0863 SSIM 0.8694 LPIPS 0.1033
+k= 7 +e15ceil95        score  77.0642  PSNR 25.1399 SSIM 0.8709 LPIPS 0.1037
+k= 8 +gsplatB8pure     score  77.0427  PSNR 25.1401 SSIM 0.8710 LPIPS 0.1043
+k= 9 +m31b_nolpips     score  77.0306  PSNR 25.1614 SSIM 0.8714 LPIPS 0.1052
+k=10 +gsplatB4warm     score  76.9825  PSNR 25.1538 SSIM 0.8711 LPIPS 0.1061
+k=11 +gsplatB7ppisp2   score  76.9365  PSNR 25.1656 SSIM 0.8708 LPIPS 0.1072
+k=12 +gsplatB2         score  76.8627  PSNR 25.1548 SSIM 0.8703 LPIPS 0.1085
+k=13 +gsplatB1         score  76.7869  PSNR 25.1411 SSIM 0.8697 LPIPS 0.1097
+k=14 +gsplatB3         score  76.7249  PSNR 25.1300 SSIM 0.8691 LPIPS 0.1107
+k=15 +e16app           score  76.7314  PSNR 25.1261 SSIM 0.8693 LPIPS 0.1106
+k=16 +gsplatB5affine   score  76.6763  PSNR 25.1153 SSIM 0.8689 LPIPS 0.1115
+k=17 +sh2              score  76.6862  PSNR 25.1053 SSIM 0.8686 LPIPS 0.1109
+k=18 +sh1              score  76.6247  PSNR 25.0592 SSIM 0.8676 LPIPS 0.1110
+k=19 +sh0              score  76.5110  PSNR 24.9840 SSIM 0.8660 LPIPS 0.1115
+k=20 +gsplatB6bilagrid score  76.3882  PSNR 24.8715 SSIM 0.8650 LPIPS 0.1121
+
+=== B: add-one to UT4 base (base=76.6749)  (392s)
+member                 solo     gap  d(w=1/5)  d(w=.15)
+m31b_taillpips      75.7006 -0.2638    0.1343    0.1125
+e17visnorm          75.2010 -0.7634    0.2432    0.2035
+e15ceil95           75.1577 -0.8067    0.2369    0.1993
+gsplatB8pure        75.0469 -0.9175    0.1618    0.1407
+m31b_nolpips        74.9198 -1.0446    0.0280    0.0348
+gsplatB4warm        74.8673 -1.0970    0.0959    0.0907
+gsplatB7ppisp2      74.7315 -1.2329    0.0557    0.0611
+gsplatB2            74.5343 -1.4301   -0.0204    0.0020
+gsplatB1            74.5324 -1.4319   -0.0228   -0.0000
+gsplatB3            74.3172 -1.6472   -0.0004    0.0202
+e16app              74.3051 -1.6592    0.1937    0.1748
+gsplatB5affine      74.1377 -1.8267   -0.0136    0.0143
+sh2                 72.5381 -3.4262   -0.1355   -0.0686
+sh1                 69.1580 -6.8064   -0.3354   -0.1879
+sh0                 67.7954 -8.1690   -0.4217   -0.2393
+gsplatB6bilagrid    66.9168 -9.0475   -0.6782   -0.3949
+greedy k= 1 +gsplatB11ut60k     75.9644   (583s)
+greedy k= 2 +e17visnorm         76.7706   (677s)
+greedy k= 3 +gsplatB10ut8M      76.9730   (819s)
+greedy k= 4 +m31b_taillpips     77.0553   (956s)
+greedy k= 5 +e15ceil95          77.0890   (1139s)
+greedy k= 6 +gsplatB12ut8Ms7    77.1170   (1224s)
+greedy k= 7 +e16app             77.0796   (1645s)
+greedy k= 8 +m31b_nolpips       77.0650   (1789s)
+greedy k= 9 +gsplatB9ut         77.0463   (1855s)
+greedy k=10 +gsplatB8pure       77.0277   (1918s)
+greedy k=11 +gsplatB7ppisp2     76.9795   (1980s)
+greedy k=12 +sh2                76.9417   (2049s)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 12 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

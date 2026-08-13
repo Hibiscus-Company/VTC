@@ -1,0 +1,38 @@
+>>> gpu0 chair START 14:22  [--seed 555 --ema_decay 0.99 --mip3d 0.2 --mip3d_every 100 --iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 30000]
+>>> gpu1 bonsai START 14:23  [--seed 555 --mip3d 0.2 --mip3d_every 100 --iters 30000 --cap_max 5000000 --refine_stop 15000 --noise_stop 8000 --lpips_from 12000]
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.0014601, mean opacity 0.0381
+Saved 5000000 gaussians to /mnt/d/avv/r28_members/bonsai/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r28_members/bonsai/test_render
+<<< gpu1 bonsai DONE 16:15  (28 pngs)
+>>> gpu1 HCM0421 START 16:15  [--seed 777 --ut --ema_decay 0.999 --mip3d 0.2 --mip3d_every 100 --iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 50000]
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00117899, mean opacity 0.0945
+Saved 8000000 gaussians to /mnt/d/avv/r28_members/chair/ckpt.pt
+Wrote 58 images to /mnt/d/avv/r28_members/chair/test_render
+<<< gpu0 chair DONE 16:57  (58 pngs)
+>>> gpu0 HCM0539 START 16:57  [--seed 777 --ut --ema_decay 0.999 --mip3d 0.2 --mip3d_every 100 --iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 50000]
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00481426, mean opacity 0.1147
+Saved 8000000 gaussians to /mnt/d/avv/r28_members/HCM0421/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r28_members/HCM0421/test_render
+<<< gpu1 HCM0421 DONE 19:01  (60 pngs)
+>>> gpu1 HCM0540 START 19:01  [--seed 777 --ut --ema_decay 0.999 --mip3d 0.2 --mip3d_every 100 --iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 50000]
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00448407, mean opacity nan
+Saved 8000000 gaussians to /mnt/d/avv/r28_members/HCM0539/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r28_members/HCM0539/test_render
+<<< gpu0 HCM0539 DONE 19:46  (60 pngs)
+>>> gpu0 HCM0644 START 19:46  [--seed 777 --ut --ema_decay 0.999 --mip3d 0.2 --mip3d_every 100 --iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 50000]
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00476767, mean opacity 0.1139
+Saved 8000000 gaussians to /mnt/d/avv/r28_members/HCM0540/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r28_members/HCM0540/test_render
+<<< gpu1 HCM0540 DONE 21:43  (60 pngs)
+>>> gpu1 HCM0674 START 21:43  [--seed 777 --ut --ema_decay 0.999 --mip3d 0.2 --mip3d_every 100 --iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 50000]
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00370288, mean opacity 0.1146
+Saved 8000000 gaussians to /mnt/d/avv/r28_members/HCM0644/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r28_members/HCM0644/test_render
+<<< gpu0 HCM0644 DONE 00:56  (60 pngs)
+=== worker gpu0 drained 00:56 ===
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00354807, mean opacity 0.1007
+Saved 8000000 gaussians to /mnt/d/avv/r28_members/HCM0674/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r28_members/HCM0674/test_render
+<<< gpu1 HCM0674 DONE 04:14  (60 pngs)
+=== worker gpu1 drained 04:14 ===
+=== R28 MEMBER BANK COMPLETE Tue Jul 28 04:14:01 +07 2026 ===

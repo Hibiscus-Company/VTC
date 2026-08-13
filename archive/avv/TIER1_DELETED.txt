@@ -1,0 +1,46 @@
+TIER-1 DELETION 2026-08-01 07:19
+Approved by user. Verified: none of these appears in the r36/r37 lineage
+(build_r37 <- r36 <- r35 <- r32 <- r31 <- r29 <- r22, plus the production runs),
+which reads only: data fields_chair fields_median_g130 fields_median_g1_g130 r14 r17 r20
+r21 r22 r22_seed101 r24_bonsai r25_mip3d r28_members r29 r2r9 r30 r31 r32 r35 r36 r37
+r38_prod r45_prod submissions.
+Independent guarantee: /home/bkai/VAR2026_BTS_postverification.zip (5058 entries) already
+reproduces both r36 and r37 without touching /mnt/d at all.
+
+   21671 MB  output_s2gates
+   12185 MB  ens
+    9696 MB  tw_test
+    4962 MB  difix_ft
+     507 MB  difix
+    4825 MB  bonsai_perc
+    4089 MB  lpsweep
+    3976 MB  chair_lpearly
+    3877 MB  depth_prior
+    2522 MB  restore
+    2487 MB  bonsai_pc
+    2484 MB  bonsai_final
+    2235 MB  bonsai_sel
+    1927 MB  gut3d
+    1102 MB  blurbound
+     694 MB  ibr
+     388 MB  mip3d
+     135 MB  mip
+     219 MB  ADVC
+     368 MB  prodharness
+     477 MB  seedbank
+     146 MB  fb_cache
+     433 MB  tmp_db_test
+    1775 MB  r13
+    1826 MB  r15
+    2001 MB  r16
+    1807 MB  r25
+     689 MB  r26
+     692 MB  r27
+    1506 MB  r28e_safe
+     839 MB  r28e_v2
+     709 MB  r30b
+    1333 MB  r33
+    1833 MB  r33_bonsai
+     186 MB  r34
+     108 MB  verify_r36
+     108 MB  verify_readme

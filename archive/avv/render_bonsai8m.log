@@ -1,0 +1,2 @@
+=== opacity gate (weights_only=False) ===
+GATE n=8000000 median_opacity=0.0001 dead_frac=0.7329

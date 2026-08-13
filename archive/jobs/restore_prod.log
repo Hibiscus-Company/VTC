@@ -1,0 +1,18 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+60 pose pairs, image (989, 1320, 3)
+fit on 40 poses, HELD-OUT test on 20 poses
+BASELINE (ensemble only, test poses): SCORE 77.1105  PSNR 25.1682 SSIM 0.8690 LPIPS 0.1015
+  [0] loss 0.0763
+  [500] loss 0.0670
+  [1000] loss 0.0768
+  [1500] loss 0.0752
+  [2000] loss 0.0812
+  [2500] loss 0.0684
+RESTORED (test poses):                SCORE 77.4234  PSNR 25.0444 SSIM 0.8671 LPIPS 0.0904
+=== PROD_restore: DELTA +0.3128 (baseline 77.1105 -> 77.4234) ===
+  per-image: 19/20 improved, mean +0.3128 sd 0.1924, jackknife range [+0.2983, +0.3334]

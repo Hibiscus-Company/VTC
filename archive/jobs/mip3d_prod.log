@@ -1,0 +1,26 @@
+>>> gpu0 HCM0421 mip3d train 15:43
+>>> gpu1 HCM0539 mip3d train 15:47
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00482227, mean opacity 0.1148
+Saved 8000000 gaussians to /mnt/d/avv/r25_mip3d/HCM0421/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r25_mip3d/HCM0421/test_render
+<<< gpu0 HCM0421 done 18:26 (60 pngs)
+>>> gpu0 HCM0540 mip3d train 18:26
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00451333, mean opacity nan
+Saved 8000000 gaussians to /mnt/d/avv/r25_mip3d/HCM0539/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r25_mip3d/HCM0539/test_render
+<<< gpu1 HCM0539 done 18:36 (60 pngs)
+>>> gpu1 HCM0644 mip3d train 18:36
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00368826, mean opacity nan
+Saved 8000000 gaussians to /mnt/d/avv/r25_mip3d/HCM0644/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r25_mip3d/HCM0644/test_render
+<<< gpu1 HCM0644 done 00:02 (60 pngs)
+>>> gpu1 HCM0674 mip3d train 00:02
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00478293, mean opacity 0.1139
+Saved 8000000 gaussians to /mnt/d/avv/r25_mip3d/HCM0540/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r25_mip3d/HCM0540/test_render
+<<< gpu0 HCM0540 done 05:04 (60 pngs)
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00355025, mean opacity 0.1006
+Saved 8000000 gaussians to /mnt/d/avv/r25_mip3d/HCM0674/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r25_mip3d/HCM0674/test_render
+<<< gpu1 HCM0674 done 05:23 (60 pngs)
+=== MIP3D PRODUCTION MEMBERS DONE Mon Jul 27 05:23:53 +07 2026 ===

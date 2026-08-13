@@ -1,0 +1,14 @@
+waiting for /mnt/d/avv/r45_prod/G0.DONE before touching gpu0 ...
+gpu0 confirmed free 22:14
+>>> dpsel_P2 [--depth_prior 0.05 --depth_cov_pow 2 --depth_dir /mnt/d/avv/depth/bonsai_sub] (gpu0) START 22:14
+depth prior redistributed by coverage: P=2.0 w min 0.007 med 0.483 max 3.865 (d5 min 0.0535 med 0.4326 max 1.7401)
+Saved 5000000 gaussians to /mnt/d/avv/r43_bonsai/dpsel_P2/ckpt.pt
+   CENSUS N=2,261,364  s2/s1 0.3574  s2/s3 9459325.9  s1/s3 29726998.9
+EVAL dpsel_P2           n= 28  PSNR 24.2187 SSIM 0.8722 LPIPS 0.2591  SCORE 70.3316   d_vs_ref -1.6595  [ref 71.9911]
+     first8  n= 8  PSNR 22.9209 SSIM 0.8089 LPIPS 0.2767  SCORE 66.9488
+     last20  n=20  PSNR 24.7379 SSIM 0.8975 LPIPS 0.2521  SCORE 71.6848
+PERFRAME 10:72.68 120:62.38 190:67.26 260:68.07 440:65.13 510:62.06 630:68.18 710:69.82 810:72.27 910:70.35 1100:62.32 1180:61.98 1250:65.29 1320:68.90 1400:76.04 1470:72.21 1540:72.21 1640:74.69 1720:78.14 1820:77.33 1930:70.27 2120:71.37 2190:74.08 2260:75.33 2330:75.37 2440:69.56 2510:74.05 2650:71.94
+  archived -> WEIGHTS/bonsai_dpsel_P2.pt
+<<< dpsel_P2 DONE 00:21
+dpsel_P2_dp10 done, skip
+=== DPSEL gpu0 DONE 00:21 ===

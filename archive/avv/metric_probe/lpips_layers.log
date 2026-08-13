@@ -1,0 +1,10 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+LPIPS-vgg per-layer (relu1_2,2_2,3_3,4_3,5_3); receptive scale 1,2,4,8,16 px
+  HCM0421   [0.011  0.0171 0.0119 0.0123 0.0124]  total 0.0647  shares 16.9% 26.5% 18.4% 19.0% 19.1%
+  chair     [0.0274 0.0542 0.0557 0.0739 0.0683]  total 0.2795  shares  9.8% 19.4% 19.9% 26.4% 24.4%
+  bonsai    [0.0534 0.0641 0.0735 0.1005 0.0915]  total 0.3830  shares 14.0% 16.7% 19.2% 26.2% 23.9%

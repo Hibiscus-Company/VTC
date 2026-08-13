@@ -1,0 +1,23 @@
+=== chair: 8-member mean -> restore(lam=0.60, k=8) -> gauss1 x1.30 field ===
+restored 58 images (lam=0.6, k=8.0, 8 member(s)) -> /mnt/d/avv/r34/video_ens/chair/png_er
+field chair_g1_g130.npy: mean|d| 0.0790px  max|d| 0.6127px
+corrected 58 images -> /mnt/d/avv/r34/video_ens/chair/png
+=== bonsai: 7-member mean -> restore(lam=0.50, k=7), no field ===
+restored 28 images (lam=0.5, k=7.0, 7 member(s)) -> /mnt/d/avv/r34/video_ens/bonsai/png
+=== assemble on r32 (all 300 tower files byte-verbatim) ===
+re-encoded 86 (chair+bonsai), carried 300 verbatim
+files 386/386  351,726,522 B = 335.43 MiB  headroom 14.57 MiB
+scenes changed vs r32: ['bonsai', 'chair']   tower files byte-identical: 300/300
+CRC: OK
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 335.43 MiB / 351.73 MB (limit 350.0 MiB = 367.0 MB)
+VERIFY PASSED
+=== r34 BUILT -- NOT SUBMITTED ===

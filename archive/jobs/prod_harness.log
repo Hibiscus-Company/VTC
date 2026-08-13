@@ -1,0 +1,18 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+members available: 4/4
+REAL test poses with GT and all members: 60
+
+ k     SCORE     PSNR    SSIM    LPIPS   marginal
+ 1   75.2555  24.2675  0.8456   0.1168           
+ 2   76.0587  24.6104  0.8567   0.1103    +0.8032
+ 3   76.5568  24.8420  0.8636   0.1064    +0.4981
+ 4   76.6487  24.9026  0.8654   0.1063    +0.0919
+
+CALIBRATION: 3->4 member marginal here = +0.0919
+             LB-observed tower 3->4 seeds  = +0.1420
+             |deviation| = 0.0501  -> CALIBRATED: read every post-processing operator here

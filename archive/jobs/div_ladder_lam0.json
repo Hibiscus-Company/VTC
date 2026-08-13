@@ -1,0 +1,221 @@
+{
+ "n": 60,
+ "lam": 0.0,
+ "gain": 1.3,
+ "arms": {
+  "Q2_UTonly": {
+   "score": 77.65944527609167,
+   "psnr": 25.691838728438128,
+   "ssim": 0.8807427177826563,
+   "lpips": 0.10444848736127217,
+   "mb": 62.73634,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M"
+   ]
+  },
+  "Q3_UTonly": {
+   "score": 78.20559013355786,
+   "psnr": 25.96559005427717,
+   "ssim": 0.8875017633040746,
+   "lpips": 0.09997041995326678,
+   "mb": 62.220973,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k"
+   ]
+  },
+  "Q4_UTonly": {
+   "score": 78.33045945446007,
+   "psnr": 26.04318365256508,
+   "ssim": 0.8893239269653956,
+   "lpips": 0.09937921365102133,
+   "mb": 61.871051,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7"
+   ]
+  },
+  "Q5_UTonly": {
+   "score": 78.46206901128342,
+   "psnr": 26.106441371229785,
+   "ssim": 0.890481040875117,
+   "lpips": 0.09790567594269911,
+   "mb": 61.920836,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips"
+   ]
+  },
+  "Q6_UTonly": {
+   "score": 78.41854185340345,
+   "psnr": 26.129811943861203,
+   "ssim": 0.8908779472112656,
+   "lpips": 0.09964209323128065,
+   "mb": 61.794713,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips",
+    "m31b_nolpips"
+   ]
+  },
+  "Q2+AA(B8pure)": {
+   "score": 78.07873771554308,
+   "psnr": 25.94440863308108,
+   "ssim": 0.8865663528442382,
+   "lpips": 0.1021224512408177,
+   "mb": 61.085482,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB8pure"
+   ]
+  },
+  "Q3+AA(B8pure)": {
+   "score": 78.39306204510795,
+   "psnr": 26.098025871532933,
+   "ssim": 0.8903523455063502,
+   "lpips": 0.09940809607505799,
+   "mb": 61.142019,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB8pure"
+   ]
+  },
+  "Q4+AA(B8pure)": {
+   "score": 78.46704561613946,
+   "psnr": 26.14154705741255,
+   "ssim": 0.8914206167062123,
+   "lpips": 0.09901252798736096,
+   "mb": 60.994369,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "gsplatB8pure"
+   ]
+  },
+  "Q5+AA(B8pure)": {
+   "score": 78.56545538075227,
+   "psnr": 26.18481827059484,
+   "ssim": 0.892202248175939,
+   "lpips": 0.09778757567207018,
+   "mb": 61.18916,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips",
+    "gsplatB8pure"
+   ]
+  },
+  "Q6+AA(B8pure)": {
+   "score": 78.52604227354217,
+   "psnr": 26.20076745069837,
+   "ssim": 0.8924490054448445,
+   "lpips": 0.09919720900555452,
+   "mb": 61.148924,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips",
+    "m31b_nolpips",
+    "gsplatB8pure"
+   ]
+  },
+  "Q3+FGS(e17)": {
+   "score": 78.45962704402616,
+   "psnr": 26.14592261914428,
+   "ssim": 0.8912348210811615,
+   "lpips": 0.09912427899738153,
+   "mb": 61.245981,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "e17visnorm"
+   ]
+  },
+  "Q4+FGS(e17)": {
+   "score": 78.52250082896315,
+   "psnr": 26.182539183334566,
+   "ssim": 0.8921623518069585,
+   "lpips": 0.09879733088115851,
+   "mb": 61.069411,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "e17visnorm"
+   ]
+  },
+  "Q6+FGS(e17)": {
+   "score": 78.5653414604948,
+   "psnr": 26.231054304024592,
+   "ssim": 0.8929686079422633,
+   "lpips": 0.09905873400469621,
+   "mb": 61.191388,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips",
+    "m31b_nolpips",
+    "e17visnorm"
+   ]
+  },
+  "Q6+AA+FGS": {
+   "score": 78.5910710579844,
+   "psnr": 26.254003169916007,
+   "ssim": 0.893532254298528,
+   "lpips": 0.09918246182302634,
+   "mb": 60.723421,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips",
+    "m31b_nolpips",
+    "gsplatB8pure",
+    "e17visnorm"
+   ]
+  },
+  "Q6+4foreign": {
+   "score": 78.54565028540775,
+   "psnr": 26.261101194429465,
+   "ssim": 0.8936205883820851,
+   "lpips": 0.10049070206781228,
+   "mb": 60.039707,
+   "members": [
+    "gsplatB9ut",
+    "gsplatB10ut8M",
+    "gsplatB11ut60k",
+    "gsplatB12ut8Ms7",
+    "m31b_taillpips",
+    "m31b_nolpips",
+    "gsplatB8pure",
+    "gsplatB4warm",
+    "e17visnorm",
+    "e15ceil95"
+   ]
+  }
+ }
+}

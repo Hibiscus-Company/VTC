@@ -1,0 +1,11 @@
+=== GPU0 free -- 2DGS SMOKE (200 iter) Fri Jul 24 15:55:49 +07 2026 ===
+Traceback (most recent call last):
+    loss.backward()
+RuntimeError: grad.depths must be contiguous
+!!! 2DGS SMOKE did not reach save -- checking...
+=== 2DGS full eval-split run (chair, 30k) Fri Jul 24 15:55:55 +07 2026 ===
+    return getattr(torch.ops.gsplat, name)(*args, **kwargs)
+  File "/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torch/_ops.py", line 1158, in __call__
+    return self._op(*args, **(kwargs or {}))
+RuntimeError: grad.depths must be contiguous
+!!! 2DGS FULL FAIL

@@ -1,0 +1,22 @@
+# Memory Index
+
+- [NVS competition setup](nvs-competition-setup.md) — dataset paths/layout, verified pose convention, metrics, submission format
+- [FastGS env and build](fastgs-env-and-build.md) — use conda env `fastgs2` (not `fastgs`), sm_120 build steps, cstdint fix, --mult caveat
+- [FastGS CUDA crash fixes](fastgs-cuda-crash-fixes.md) — fused-ssim shared-mem overflow (real trigger) + SnugBox budget hardening, compute-sanitizer recipe
+- [Ensemble strategy](ensemble-strategy.md) — averaging rules + **r30's k=8→10 lost on the LB: cause is member QUALITY, not depth; diversity at fixed k measured at noise (t=0.62)**
+- [3DGUT breakthrough](3dgut-breakthrough.md) — distorted-space UT is new base method, family-weighted ensemble, LB progression R1 74.3→R5 77.3, IBR rejected
+- [Lens field correction](lens-field-correction.md) — renders are misregistered by a fixed sub-px field; fit it on TRAIN photos, warp renders. CONFIRMED on LB: R7 78.397 (+0.73). **Ship it at gain 1.30 — the train fit undershoots ~30% (r29 +0.16).** Kills ideas 6 and 8.
+- [PSNR ceiling RETRACTED](psnr-ceiling-retracted.md) — the impossibility proof expired at R7; stop citing it. The 4-7 dB gap is real but no longer provable. Top-1 forensics closed (submetrics not visible).
+- [Round-2 dataset](round2-dataset.md) — private_set2: 5 towers + 2 indoor videos, LB top 80.56, our round10b 76.11, bonsai collapse fix (churn not cap)
+- [Eval-split method](eval-split-method.md) — LB-proven per-scene recipe selection: isolated-hole train/eval split mimics test, name-free router, public = calibration
+- [Audit practice](audit-practice.md) — periodic sub-agent audits, two mandates: code errors (resume a05c83f5cc3b23e12) + game-changer tweaks (fresh agent), read-only
+- [ETA feedback](feedback_eta.md) — always give upfront time estimates for time-consuming tasks, not just on request
+- [Family-ensemble + zip directive](feedback_family-ensemble-and-zip.md) — winning candidates become ensemble family branches (keep if within ~0.15 + decorrelated); zip + notify every submission round, never auto-submit
+- [Production harness + TRANSFER RULE](production-harness.md) — public_set test GT in production regime; **per-image operators transfer ~1x, pool-dependent ones don't** (harness pool is 2x as diverse as ours); cross-validate on >=3 towers
+- [Submission size cap](submission-size-cap.md) — 350MB means 350 MiB = 367,001,600 bytes, not 350e6
+- [JPEG encode: DO NOT ship q98/4:4:4](jpeg-encode-optimum.md) — it LOST on the LB; harness gain came from ensemble heterogeneity we don't have (2.20 vs 4.67/255)
+- [bonsai capacity starvation](bonsai-capacity-starvation.md) — the one broken scene. **The capacity AND blur diagnoses were both confounds; the measured driver is sparse view coverage in the first third of the capture.** Partial every per-frame correlation against frame index.
+- [Detached GPU jobs](detached-gpu-jobs.md) — `setsid` or lose the run when the process exits; cost 12.5 GPU-h once
+- [Never delete checkpoints](never-delete-checkpoints.md) — `rm -f ckpt.pt` destroyed 50/62 submission weights before the organiser asked for them; render archives are what actually reproduce a submission
+- [uint8 deadband + operator sign](uint8-deadband-operator-sign.md) — sub-LSB corrections die to intermediate rounding; and fixing delivery is harmful where the operator's sign is negative.
+- [Gate calibration](gate-calibration.md) — r35 proved it: encoded k=2 gate predicts LB scene gain at 0.84x, mixsweep inflates 2.2x; scale_reg peak = 0.1.

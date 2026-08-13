@@ -1,0 +1,28 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60  7s
+  10/60  64s
+  20/60  125s
+  30/60  179s
+  40/60  286s
+  50/60  398s
+
+NEGATIVE lam1 (band-1 SHRINKAGE), HCM0181, n=60, k=8, FULL shipped chain
+                 arm     SCORE     PSNR    SSIM    LPIPS   vs base
+       base(shipped)   78.3334  25.6244  0.8915   0.0947   +0.0000
+            l1_-0.25   78.3348  25.6264  0.8915   0.0946   +0.0014
+            l1_-0.50   78.3354  25.6278  0.8914   0.0946   +0.0020
+            l1_-1.00   78.3302  25.6289  0.8913   0.0947   -0.0032
+     CTRL_shuf_-0.50   78.2550  25.5825  0.8903   0.0951   -0.0784
+  no_restore(lam0=0)   78.0394  25.6379  0.8891   0.1004   -0.2940
+
+MSE GEOMETRY of each band's increment (registered domain, k=8)
+ lev  lam*_MSE  dPSNR@lam1  coherence  ||d||/||err||
+   0    0.2652     -0.0214    +0.0272         0.1025
+   1    0.1335     -0.0040    +0.0047         0.0356
+
+total 511s

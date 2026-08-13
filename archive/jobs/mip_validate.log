@@ -1,0 +1,8 @@
+=== r20 built, GPU1 free -- Mip eval validation Fri Jul 24 07:44:09 +07 2026 ===
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+!!! [chair] FILTER FAIL
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.
+!!! [HCM0181] FILTER FAIL
+=== ENSEMBLE-ADD (Mip member joins existing eval ensemble) ===
+REFERENCE (no-Mip means): chair 71.0682 | tower 76.3883
+=== MIP VALIDATION DONE Fri Jul 24 07:45:05 +07 2026 ===

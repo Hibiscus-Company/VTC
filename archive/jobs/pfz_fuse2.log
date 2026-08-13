@@ -1,0 +1,48 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0181 n=40 arms=8 pools=['A_pub', 'B_shrunk', 'C_ut4real']
+  0 37s
+  5 461s
+  10 883s
+  15 1341s
+  20 1730s
+  25 2242s
+  30 2563s
+  35 2802s
+
+pool A_pub: disagreement 4.571/255  k=8
+             arm     SCORE     PSNR    SSIM    LPIPS   dSCORE      t     win     MB
+     base_lam1.0   78.7717  26.0890  0.8971   0.0949  +0.0000   0.00   0/40   41.7
+         lam1.25   78.7634  26.0604  0.8971   0.0946  -0.0083  -1.72  19/40   42.0
+          lam1.5   78.7327  26.0242  0.8969   0.0947  -0.0390  -3.71  12/40   42.3
+          lam2.0   78.6129  25.9309  0.8959   0.0956  -0.1588  -6.50   6/40   42.8
+         gam0.85   78.7959  26.0768  0.8977   0.0945  +0.0242   7.60  35/40   41.9
+          gam0.7   78.7946  26.0421  0.8981   0.0943  +0.0229   2.83  28/40   42.3
+          gam0.5   78.6576  25.8977  0.8974   0.0951  -0.1141  -5.54   6/40   43.0
+   gam0.7_lam0.8   78.8064  26.0822  0.8981   0.0946  +0.0347   6.74  35/40   42.0
+
+pool B_shrunk: disagreement 2.176/255  k=8
+             arm     SCORE     PSNR    SSIM    LPIPS   dSCORE      t     win     MB
+     base_lam1.0   78.6298  26.1265  0.8958   0.0980  +0.0000   0.00   0/40   40.9
+         lam1.25   78.6543  26.1254  0.8960   0.0975  +0.0245  21.96  40/40   41.0
+          lam1.5   78.6756  26.1235  0.8961   0.0971  +0.0458  22.12  40/40   41.1
+          lam2.0   78.7084  26.1178  0.8964   0.0963  +0.0786  21.45  40/40   41.2
+         gam0.85   78.6737  26.1282  0.8963   0.0973  +0.0439  25.63  40/40   41.0
+          gam0.7   78.7282  26.1272  0.8971   0.0965  +0.0985  24.94  40/40   41.3
+          gam0.5   78.7885  26.0964  0.8983   0.0954  +0.1587  15.87  39/40   41.8
+   gam0.7_lam0.8   78.6964  26.1303  0.8968   0.0971  +0.0667  25.00  40/40   41.1
+
+pool C_ut4real: disagreement 3.323/255  k=4
+             arm     SCORE     PSNR    SSIM    LPIPS   dSCORE      t     win     MB
+     base_lam1.0   78.5308  25.9319  0.8924   0.0950  +0.0000   0.00   0/40   42.9
+         lam1.25   78.5214  25.9053  0.8923   0.0947  -0.0093  -2.62  14/40   43.1
+          lam1.5   78.4925  25.8737  0.8920   0.0948  -0.0382  -5.14   6/40   43.4
+          lam2.0   78.3926  25.7970  0.8910   0.0954  -0.1382  -8.52   3/40   43.8
+         gam0.85   78.5350  25.9085  0.8926   0.0947  +0.0042   1.05  25/40   43.1
+          gam0.7   78.5130  25.8605  0.8926   0.0946  -0.0178  -1.72  20/40   43.4
+          gam0.5   78.3493  25.6948  0.8914   0.0952  -0.1815  -7.05   3/40   44.2
+   gam0.7_lam0.8   78.5316  25.9020  0.8929   0.0949  +0.0008   0.13  21/40   43.2

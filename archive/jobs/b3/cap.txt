@@ -1,0 +1,21 @@
+17/07 cap ladder (UT recipe), as logged and re-based onto today's scorer:
+    0.5M   logged 69.5706   today-equivalent 68.6232
+    1.0M   logged 70.2975   today-equivalent 69.3501
+    2.0M   logged 70.6599   today-equivalent 69.7125
+    5.0M   logged 71.1563   today-equivalent 70.2089
+
+marginal gain per DOUBLING of cap:
+   0.5M ->  1.0M  (1.000 doublings)  d=+0.7269  per-doubling +0.7269
+   1.0M ->  2.0M  (1.000 doublings)  d=+0.3624  per-doubling +0.3624
+   2.0M ->  5.0M  (1.322 doublings)  d=+0.4964  per-doubling +0.3755
+
+local slope at the top of the ladder (2M->5M): +0.3755 / doubling
+  extrapolated 5M ->  8.0M (0.678 doublings): predicted +0.2546
+  extrapolated 5M -> 10.0M (1.000 doublings): predicted +0.3755
+  extrapolated 5M -> 16.0M (1.678 doublings): predicted +0.6301
+
+--- THE DIRECT TEST (single variable, same recipe generation, same scorer) ---
+  5M  bonsai_eval/K1_noUT_aa  --iters 30000 --cap_max 5000000 --refine_stop 15000 --noise_stop 8000 --lpips_from 12000   PNG   71.9029
+  8M  r33_bonsai/eval_s42     IDENTICAL except --cap_max 8000000                  JPEG  70.0864
+  (identical command strings verified from the two train_args.txt / launch scripts;
+   the ONLY confound is delivery format: 5M scored on PNG, 8M scored on JPEG q100/4:4:4)

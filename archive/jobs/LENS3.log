@@ -1,0 +1,40 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+pass1 HCM0181
+pass1 HCM0193
+pass1 HCM0204
+pass1 hcm0031
+pass1 hcm0034
+
+=== RADIAL BAND AMPLITUDE: render vs GT, by radius (0=centre,7=corner) ===
+  band0 (sigma<0.8px): rms ratio |R|/|G| then MSE-optimal gain g*
+  --- band0 ---
+   HCM0181   |R|/|G| 0.811 0.869 0.883 0.843 0.785 0.705 0.655 0.599   g* 0.779 0.869 0.926 0.984 1.034 1.040 0.997 0.931
+   HCM0193   |R|/|G| 0.740 0.848 0.859 0.839 0.815 0.764 0.695 0.630   g* 0.773 0.859 0.919 0.946 0.939 0.925 0.878 0.777
+   HCM0204   |R|/|G| 0.805 0.868 0.874 0.853 0.815 0.741 0.693 0.631   g* 0.830 0.906 0.938 0.972 0.985 0.974 0.920 0.840
+   hcm0031   |R|/|G| 0.793 0.889 0.913 0.870 0.830 0.749 0.673 0.604   g* 0.744 0.828 0.874 0.924 0.949 0.962 0.931 0.779
+   hcm0034   |R|/|G| 0.842 0.923 0.925 0.874 0.836 0.774 0.700 0.632   g* 0.752 0.828 0.886 0.942 0.984 1.000 0.987 0.865
+   POOLED    |R|/|G| 0.798 0.879 0.891 0.856 0.816 0.747 0.683 0.619   g* 0.776 0.858 0.909 0.953 0.978 0.980 0.942 0.838
+  --- band1 ---
+   HCM0181   |R|/|G| 0.881 0.933 0.948 0.949 0.942 0.922 0.903 0.866   g* 0.897 0.942 0.977 0.988 0.993 0.985 0.958 0.905
+   HCM0193   |R|/|G| 0.843 0.915 0.949 0.956 0.952 0.940 0.929 0.895   g* 0.866 0.919 0.941 0.951 0.948 0.926 0.881 0.795
+   HCM0204   |R|/|G| 0.879 0.937 0.961 0.966 0.956 0.936 0.916 0.887   g* 0.934 0.950 0.969 0.978 0.976 0.957 0.915 0.830
+   hcm0031   |R|/|G| 0.839 0.920 0.949 0.957 0.951 0.924 0.893 0.878   g* 0.860 0.922 0.954 0.960 0.959 0.951 0.920 0.814
+   hcm0034   |R|/|G| 0.894 0.930 0.958 0.951 0.951 0.943 0.923 0.892   g* 0.916 0.953 0.964 0.977 0.981 0.966 0.932 0.843
+   POOLED    |R|/|G| 0.867 0.927 0.953 0.956 0.951 0.933 0.913 0.884   g* 0.895 0.937 0.961 0.971 0.971 0.957 0.921 0.837
+pass2 HCM0181
+pass2 HCM0193
+pass2 HCM0204
+pass2 hcm0031
+pass2 hcm0034
+
+=== RADIAL MTF OPERATOR, through q100/ss2 encode, 5 towers x 12 imgs ===
+  base           PSNR  25.7293 SSIM  0.86658 LPIPS  0.12119 score   76.5871  dScore   +0.0000
+  oracle_rad     PSNR  25.7676 SSIM  0.86558 LPIPS  0.12231 score   76.5355  dScore   -0.0516
+  loso_rad       PSNR  25.7615 SSIM  0.86557 LPIPS  0.12221 score   76.5355  dScore   -0.0517
+  global_scalar  PSNR  25.7482 SSIM  0.86532 LPIPS  0.12222 score   76.5197  dScore   -0.0674
+  oracle_energy  PSNR  25.4148 SSIM  0.86473 LPIPS  0.12004 score   76.3893  dScore   -0.1979
+  oracle_energy_half PSNR  25.6184 SSIM  0.86686 LPIPS  0.12009 score   76.5734  dScore   -0.0137
+DONE3

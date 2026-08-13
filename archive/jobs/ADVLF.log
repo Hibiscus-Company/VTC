@@ -1,0 +1,23 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+HCM0181 n=24 k=8 lam=0.5 sigma=12.8 dev=cuda:1
+  img 0
+  img 6
+  img 12
+  img 18
+
+LF residual (sigma 12.8) RMS 3.839 LSB | pooled-median RMS 0.934 | after median removal 3.734
+VIEW-CONSISTENT energy fraction: median 5.43%  mean 7.65%
+
+=== FULL SHIPPED CHAIN, HCM0181, n=24 real test poses, lam=0.5 ===
+        arm     PSNR     SSIM    LPIPS     SCORE    dSCORE    dLPIPS   win/N
+       base  26.4380  0.89925  0.09414   79.0747   +0.0000  +0.00000    0/24
+   oracleLF  26.9557  0.89980  0.09401   79.4069   +0.3323  -0.00013   24/24
+   oracleDC  26.5461  0.89876  0.09424   79.1207   +0.0460  +0.00010   18/24
+  oracleAFF  26.5799  0.89931  0.09419   79.1595   +0.0848  +0.00005   20/24
+  pooledLOO  26.4257  0.89898  0.09459   79.0412   -0.0335  +0.00045    7/24
+ pooledLOOm  26.4228  0.89900  0.09445   79.0458   -0.0289  +0.00031    8/24
+pooledLOO per-image dScore mean -0.0335 sd 0.0469 sem 0.0096
+DONE

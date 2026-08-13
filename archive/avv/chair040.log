@@ -1,0 +1,2 @@
+DEADBAND FIX: rebuilding ens in float from 8 dir(s) weights=[0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125, 0.125]
+restored 58 images (lam=0.4, k=8.0, 8 member(s), FLOAT MEAN, worst tie-frac 0.0000%) -> /mnt/d/avv/r33/video_ens/chair/png_er040

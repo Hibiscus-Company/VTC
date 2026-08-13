@@ -1,0 +1,30 @@
+=== waiting for all 5 mip3d production members ===
+=== all members landed Mon Jul 27 05:24:09 +07 2026 ===
+  HCM0421: 60
+  HCM0539: 60
+  HCM0540: 60
+  HCM0644: 60
+  HCM0674: 60
+
+=== mip3d ensemble-weight sweep (do this BEFORE building, not after) ===
+HCM0421 proxy: 40 poses with both members + GT
+ w_mip     SCORE    LPIPS    SSIM     PSNR   vs uniform
+  0.00   75.7615   0.1129  0.8403  25.1137      +0.0000
+  0.25   76.2936   0.1093  0.8477  25.3884      +0.0000
+  0.40   76.4741   0.1082  0.8504  25.4849      +0.0000
+  0.50   76.5407   0.1078  0.8514  25.5180      +0.0000
+  0.60   76.5651   0.1076  0.8518  25.5255      +0.0244
+  0.70   76.5471   0.1075  0.8515  25.5073      +0.0064
+  0.80   76.4850   0.1077  0.8505  25.4637      -0.0557
+  1.00   76.2186   0.1091  0.8467  25.3045      -0.3221
+
+best w_mip = 0.60 (uniform=0.50), gain over uniform +0.0244
+solo baseline w=0 -> 75.7615 | solo mip3d w=1 -> 76.2186
+=> mip3d deserves ~1.50x a normal member's weight. In a 6-normal + 1-mip3d
+   ensemble that is w_mip = 0.200 instead of the uniform 0.143.
+
+=== STOPPING ALL TRAINING (user directive: ideation window until 11:59) ===
+remaining trainers: 0
+0, 0 %, 59 MiB
+1, 0 %, 5 MiB
+=== TRAINING HALTED Mon Jul 27 05:25:25 +07 2026 -- ideation window open ===

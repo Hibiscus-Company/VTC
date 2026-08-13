@@ -1,0 +1,39 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+scene HCM0181 done
+scene HCM0193 done
+scene HCM0204 done
+scene hcm0031 done
+scene hcm0034 done
+
+=== (C) chroma exploit, 5 towers x 12 imgs, THROUGH q100/ss2 encode ===
+  arm              PSNR     SSIM    LPIPS     score    dScore
+  base          25.7293  0.86658  0.12119   76.5871   +0.0000   dL +0.0000pp
+  chroma_g1     25.7177  0.86631  0.12250   76.5200   -0.0672   dL +0.1304pp
+  chroma_g2     25.6748  0.86544  0.12710   76.2843   -0.3029   dL +0.5902pp
+  chroma_g4     25.5400  0.86322  0.14053   75.5994   -0.9877   dL +1.9333pp
+  chroma_med5   24.2313  0.86070  0.18113   73.1146   -3.4726   dL +5.9935pp
+  luma_g1       23.5889  0.73455  0.27674   65.1202  -11.4669   dL +15.5542pp
+
+=== (A)+(B) spatial profile: is the border ramp real or a metric artifact? ===
+  pair                   <8     8-32    32-96     >=96   (density, mean=1)
+  render(base)        1.299    1.462    1.201    0.874
+  ctrl:noise.02       0.806    1.011    1.015    1.002
+  ctrl:blur0.7        0.822    0.995    0.993    1.010
+  ctrl:shift0.3px     0.789    0.984    0.991    1.013
+
+  radial quartiles (r from image centre):
+  pair               q1(in)       q2       q3  q4(out)
+  render(base)        0.900    0.794    0.961    1.344
+  ctrl:noise.02       0.933    1.026    1.010    1.031
+  ctrl:blur0.7        1.006    1.012    1.008    0.974
+  ctrl:shift0.3px     1.034    1.011    0.999    0.956
+
+  within the outer 48px band: corner vs edge-midpoint density
+  render(base)     corner 0.23488  edge-mid 0.16510  ratio 1.423
+  ctrl:noise.02    corner 0.08860  edge-mid 0.08840  ratio 1.002
+  ctrl:blur0.7     corner 0.11533  edge-mid 0.11913  ratio 0.968
+  ctrl:shift0.3px  corner 0.03212  edge-mid 0.03407  ratio 0.943
+DONE2

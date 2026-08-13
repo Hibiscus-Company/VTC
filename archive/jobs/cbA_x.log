@@ -1,0 +1,27 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/50 6s
+  6/50 28s
+  11/50 -193s
+  16/50 113s
+  21/50 159s
+  26/50 204s
+  31/50 247s
+  36/50 288s
+  41/50 330s
+  46/50 368s
+
+POOL A  big=6 small=2  k=8  n=50  lam=1.0 gain=1.3
+FULL SHIPPED CHAIN: combine -> uint8 -> restore(k=8) -> field(lanczos4) -> JPEG q100/ss2
+           arm     SCORE     PSNR     SSIM    LPIPS   d(mean8)      se      t    wins      MB
+    winsorx0.5   79.2801  26.5092  0.90086  0.09128    +0.0106  0.0019   5.49  43/50   52.79
+       winsor1   79.2781  26.5035  0.90077  0.09118    +0.0087  0.0025   3.40  35/50   52.92
+         mean8   79.2694  26.5089  0.90074  0.09145    +0.0000  0.0000   0.00   0/50   52.74
+    winsorx1.5   79.2573  26.4880  0.90042  0.09120    -0.0122  0.0021  -5.75   8/50   53.16
+    hybinv_r32   79.2311  26.4538  0.90057  0.09146    -0.0383  0.0077  -4.95  10/50   52.75
+       winsor2   79.2251  26.4581  0.90006  0.09129    -0.0444  0.0092  -4.82  14/50   53.28
+         trim2   79.2226  26.4551  0.90004  0.09129    -0.0469  0.0099  -4.72  14/50   53.26
+    famw_s0.00   78.9948  26.3158  0.89700  0.09261    -0.2746  0.0338  -8.12   4/50   53.66
+wrote cbA_x.json

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+  File "/home/bkai/.claude/jobs/1c9cf7e9/tmp/ubs_repo/scene/__init__.py", line 16, in <module>
+    from scene.dataset_readers import sceneLoadTypeCallbacks
+  File "/home/bkai/.claude/jobs/1c9cf7e9/tmp/ubs_repo/scene/dataset_readers.py", line 34, in <module>
+    import imagesize
+ModuleNotFoundError: No module named 'imagesize'

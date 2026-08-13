@@ -1,0 +1,17 @@
+=== GPU1 free -- tower depth-prior (HCM0181) Fri Jul 24 11:26:45 +07 2026 ===
+done: 180 depth maps -> /mnt/d/avv/depth_prior/HCM0181
+[59000] loss 0.0412 l1 0.0221 ssim 0.9328 N 8000000
+[59999] loss 0.0640 l1 0.0295 ssim 0.8712 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/depth/HCM0181_dp05/ckpt.pt
+Wrote 60 images to /mnt/d/avv/depth/HCM0181_dp05/eval_render
+=== SCORES (tower ema999 solo 75.4293) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL tower_depth_solo n= 60  PSNR 23.9295  SSIM 0.8401  LPIPSvgg 0.1230  SCORE 74.6377
+=== ensemble-add (ref mean 76.3883) ===
+COMBINE tower_depthadd mean    n= 60 PSNR 24.7742 SSIM 0.8628 LPIPS 0.1087 SCORE 76.3983
+=== DEPTH TOWER DONE Fri Jul 24 13:32:12 +07 2026 ===

@@ -1,0 +1,22 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  solo HCM0181: 76.7817  PSNR 25.284 SSIM 0.86980 LPIPS 0.11207  se 0.305
+  solo HCM0193: 76.8812  PSNR 26.416 SSIM 0.86609 LPIPS 0.12378  se 0.549
+  solo HCM0204: 76.9727  PSNR 25.777 SSIM 0.87294 LPIPS 0.11703  se 0.512
+  solo hcm0031: 75.6435  PSNR 25.695 SSIM 0.85137 LPIPS 0.13287  se 0.580
+  solo hcm0034: 77.2931  PSNR 25.933 SSIM 0.88181 LPIPS 0.11802  se 0.526
+  pow HCM0181: vs TESTGT mid 0.902 high 0.750 | vs TRAIN mid 0.890 high 0.729
+  pow HCM0193: vs TESTGT mid 0.846 high 0.692 | vs TRAIN mid 0.867 high 0.714
+  pow HCM0204: vs TESTGT mid 0.899 high 0.749 | vs TRAIN mid 0.936 high 0.759
+  pow hcm0031: vs TESTGT mid 0.879 high 0.741 | vs TRAIN mid 0.884 high 0.774
+  pow hcm0034: vs TESTGT mid 0.865 high 0.729 | vs TRAIN mid 0.882 high 0.744
+  pow HCM0421: vs TRAIN mid 0.922 high 0.678
+  pow HCM0539: vs TRAIN mid 0.910 high 0.650
+  pow HCM0540: vs TRAIN mid 0.920 high 0.649
+  pow HCM0644: vs TRAIN mid 0.852 high 0.610
+  pow HCM0674: vs TRAIN mid 0.914 high 0.650
+WROTE /home/bkai/.claude/jobs/1c9cf7e9/tmp/LENS6_towers.json

@@ -1,0 +1,16 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  0/60 2s
+  15/60 25s
+  30/60 47s
+  45/60 69s
+
+REFUTE-W2  HCM0181  DISJOINT PoolC  k=10  n=60
+         arm     SCORE     PSNR     SSIM    LPIPS
+        mC10   76.9134  25.0707  0.87643  0.11055
+  wxC10_t0.5   76.9748  25.1866  0.87626  0.11062
+     antiC10   76.7936  24.9197  0.87597  0.11094
+     wxC10_t0.5 - mC10   +0.0614  0.0088 t= +7.00 51/60
+        antiC10 - mC10   -0.1198  0.0091 t=-13.21 3/60

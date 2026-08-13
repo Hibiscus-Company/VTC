@@ -1,0 +1,35 @@
+  mask HNI0131.npy on /mnt/d/avv/output/HNI0131_champA/test_poses_renders_png: 12.89% suppressed
+  mask HNI0131.npy on /mnt/d/avv/output/HNI0131_memB/test_poses_renders_png: 12.89% suppressed
+  mask HNI0131.npy on /mnt/d/avv/output/HNI0131_memC/test_poses_renders_png: 12.89% suppressed
+Ensembled 60 images from 5 members -> /mnt/d/avv/ens/private_r8/HNI0131/jpg
+corrected 60 images -> /mnt/d/avv/ens/private_r8/HNI0131/png
+=== R8 HNI0131 DONE (masked + field, 60 imgs) ===
+  mask HNI0265.npy on /mnt/d/avv/output/HNI0265_champA/test_poses_renders_png: 12.86% suppressed
+  mask HNI0265.npy on /mnt/d/avv/output/HNI0265_memB/test_poses_renders_png: 12.86% suppressed
+  mask HNI0265.npy on /mnt/d/avv/output/HNI0265_memC/test_poses_renders_png: 12.86% suppressed
+Ensembled 52 images from 5 members -> /mnt/d/avv/ens/private_r8/HNI0265/jpg
+corrected 52 images -> /mnt/d/avv/ens/private_r8/HNI0265/png
+=== R8 HNI0265 DONE (masked + field, 52 imgs) ===
+438.8MB > 350.0MB, re-encoding HCM0254 at q99
+431.8MB > 350.0MB, re-encoding HCM0249 at q99
+424.8MB > 350.0MB, re-encoding HCM0276 at q99
+417.8MB > 350.0MB, re-encoding HNI0366 at q99
+410.9MB > 350.0MB, re-encoding HNI0131 at q99
+403.9MB > 350.0MB, re-encoding HNI0437 at q99
+397.4MB > 350.0MB, re-encoding HCM0254 at q98
+389.0MB > 350.0MB, re-encoding HCM0249 at q98
+380.5MB > 350.0MB, re-encoding HNI0265 at q99
+374.4MB > 350.0MB, re-encoding HCM0276 at q98
+366.1MB > 350.0MB, re-encoding HNI0366 at q98
+358.2MB > 350.0MB, re-encoding HNI0131 at q98
+350.2MB > 350.0MB, re-encoding HNI0437 at q98
+OK: /mnt/d/avv/submissions/sub_round8_maskfield_private.zip  342.7MB  434 files
+  HCM0249: q98
+  HCM0254: q98
+  HCM0276: q98
+  HCM1439: q100
+  HNI0131: q98
+  HNI0265: q99
+  HNI0366: q98
+  HNI0437: q98
+R8 ZIP DONE

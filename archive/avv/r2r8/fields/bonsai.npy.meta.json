@@ -1,0 +1,6 @@
+{
+  "gt_dir": "/mnt/d/avv/data/phase1/private_set2/bonsai/train/images",
+  "render_dir": "/mnt/d/avv/r2r8/models/bonsai_ut42/train_png",
+  "ds": 8,
+  "zeroed": "held-out train x-val: DIS field +0.003dB, KP field +0.0006dB, fold-corr 0.50 -> view-dependent glass-reflection junk, not registration; ship unwarped (audit r13 item 6 gate)"
+}

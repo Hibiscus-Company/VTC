@@ -1,0 +1,8 @@
+=== 2DGS chair eval-split (gpu0) Fri Jul 24 16:08:13 +07 2026 ===
+Step 12200: 800167 GSs duplicated, 44272 GSs split. Now having 5928224 GSs.
+Step 12200: 1035111 GSs pruned. Now having 4893113 GSs.
+Step 12300: 594238 GSs duplicated, 17383 GSs split. Now having 5504734 GSs.
+Step 12300: 279796 GSs pruned. Now having 5224938 GSs.
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/twodgs_video.sh: line 14: 470510 Killed                  CUDA_VISIBLE_DEVICES=$G python gsplat_track/train_2dgs.py --source $ES/train_sub --images images --out $M --iters $ITERS --refine_stop $RSTOP --lpips_from $LP --csv $ES/eval_poses.csv --png_dir $M/eval_png 2>&1
+     470511 Done                    | tail -4
+!!! 2DGS chair FAIL

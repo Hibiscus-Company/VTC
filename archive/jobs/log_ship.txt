@@ -1,0 +1,52 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  HCM0181 0/60 2s
+  HCM0181 20/60 25s
+  HCM0181 40/60 65s
+
+== HCM0181 (n=60) ==
+  none               P 24.2675  S 0.84556  L 0.11680  score  75.2554  d +0.0000
+  med_s1.0           P 25.1832  S 0.86852  L 0.11260  score  76.6615  d +1.4060
+  med_s1.35          P 25.2876  S 0.87099  L 0.11232  score  76.8094  d +1.5540
+  med_s1.4           P 25.2897  S 0.87105  L 0.11233  score  76.8120  d +1.5566
+  HCM0193 0/60 3s
+  HCM0193 20/60 45s
+  HCM0193 40/60 90s
+
+== HCM0193 (n=60) ==
+  none               P 25.6807  S 0.84734  L 0.12688  score  75.7534  d +0.0000
+  med_s1.0           P 26.3627  S 0.86554  L 0.12358  score  76.8409  d +1.0876
+  med_s1.35          P 26.4222  S 0.86715  L 0.12350  score  76.9278  d +1.1745
+  med_s1.4           P 26.4207  S 0.86714  L 0.12355  score  76.9245  d +1.1711
+  HCM0204 0/60 2s
+  HCM0204 20/60 45s
+  HCM0204 40/60 91s
+
+== HCM0204 (n=60) ==
+  none               P 24.8906  S 0.85408  L 0.12083  score  75.7235  d +0.0000
+  med_s1.0           P 25.6829  S 0.87201  L 0.11734  score  76.8761  d +1.1527
+  med_s1.35          P 25.7842  S 0.87417  L 0.11707  score  77.0126  d +1.2891
+  med_s1.4           P 25.7885  S 0.87426  L 0.11708  score  77.0178  d +1.2943
+  hcm0031 0/50 2s
+  hcm0031 20/50 49s
+  hcm0031 40/50 94s
+
+== hcm0031 (n=50) ==
+  none               P 25.0854  S 0.83504  L 0.13622  score  74.6536  d +0.0000
+  med_s1.0           P 25.6355  S 0.85060  L 0.13350  score  75.5591  d +0.9055
+  med_s1.35          P 25.7028  S 0.85258  L 0.13331  score  75.6667  d +1.0131
+  med_s1.4           P 25.7057  S 0.85268  L 0.13332  score  75.6712  d +1.0176
+  hcm0034 0/60 3s
+  hcm0034 20/60 45s
+  hcm0034 40/60 89s
+
+== hcm0034 (n=60) ==
+  none               P 25.1418  S 0.86470  L 0.12169  score  76.1583  d +0.0000
+  med_s1.0           P 25.8591  S 0.88152  L 0.11846  score  77.2228  d +1.0645
+  med_s1.35          P 25.9344  S 0.88308  L 0.11828  score  77.3217  d +1.1634
+  med_s1.4           P 25.9349  S 0.88308  L 0.11831  score  77.3209  d +1.1626
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/res/ship.json

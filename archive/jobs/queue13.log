@@ -1,0 +1,5 @@
+Wrote 60 images to output/HCM0181_e13gate0/test_poses_renders_fixed
+=== score e13gate0 ===
+HCM0181    n= 60  PSNR 24.3155  SSIM 0.8478  LPIPS(alex) 0.0811 LPIPS(vgg) 0.1219  Score(alex) 0.7678  Score(vgg) 0.7515
+  Score(alex)  = 76.7786   [0.4*(1-LPIPS)=0.3676  0.3*SSIM=0.2543  0.3*PSNRn=0.1459]  (psnr_max=50.0)
+  Score(vgg)  = 75.1458   [0.4*(1-LPIPS)=0.3512  0.3*SSIM=0.2543  0.3*PSNRn=0.1459]  (psnr_max=50.0)

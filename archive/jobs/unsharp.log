@@ -1,0 +1,42 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/28] frame_000010
+[2/28] frame_000120
+[3/28] frame_000190
+[4/28] frame_000260
+[5/28] frame_000440
+[6/28] frame_000510
+[7/28] frame_000630
+[8/28] frame_000710
+[9/28] frame_000810
+[10/28] frame_000910
+[11/28] frame_001100
+[12/28] frame_001180
+[13/28] frame_001250
+[14/28] frame_001320
+[15/28] frame_001400
+[16/28] frame_001470
+[17/28] frame_001540
+[18/28] frame_001640
+[19/28] frame_001720
+[20/28] frame_001820
+[21/28] frame_001930
+[22/28] frame_002120
+[23/28] frame_002190
+[24/28] frame_002260
+[25/28] frame_002330
+[26/28] frame_002440
+[27/28] frame_002510
+[28/28] frame_002650
+
+unsharp sigma 0.0 amount 0.00: PSNR 26.9464 SSIM 0.8478 LPIPS 0.2403 SCORE 71.9912 (d +0.0000)  first8 62.004 last20 75.986
+unsharp sigma 1.0 amount 0.30: PSNR 26.8587 SSIM 0.8457 LPIPS 0.2467 SCORE 71.6196 (d -0.3716)  first8 61.851 last20 75.527
+unsharp sigma 1.0 amount 0.60: PSNR 26.7319 SSIM 0.8425 LPIPS 0.2582 SCORE 70.9880 (d -1.0032)  first8 61.506 last20 74.781
+unsharp sigma 1.0 amount 1.00: PSNR 26.5104 SSIM 0.8369 LPIPS 0.2779 SCORE 69.8991 (d -2.0921)  first8 60.853 last20 73.518
+unsharp sigma 2.0 amount 0.50: PSNR 26.4974 SSIM 0.8390 LPIPS 0.2667 SCORE 70.3975 (d -1.5937)  first8 61.237 last20 74.062
+
+wrote /mnt/d/avv/r42_bonsai78/a3_diag/bonsai_unsharp_sweep.json

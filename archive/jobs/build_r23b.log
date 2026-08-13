@@ -1,0 +1,32 @@
+391.7MB > 350.0MB, re-encoding HCM0421 at q99
+384.8MB > 350.0MB, re-encoding HCM0540 at q99
+377.8MB > 350.0MB, re-encoding HCM0539 at q99
+370.8MB > 350.0MB, re-encoding HCM0674 at q99
+363.9MB > 350.0MB, re-encoding HCM0644 at q99
+357.1MB > 350.0MB, re-encoding HCM0421 at q98
+OK: /mnt/d/avv/submissions/sub_round23b_jpegfix.zip  348.8MB  386 files
+  HCM0421: q98 ss2
+  HCM0539: q99 ss2
+  HCM0540: q99 ss2
+  HCM0644: q99 ss2
+  HCM0674: q99 ss2
+  bonsai: q98 ss0 keep_rgb
+  chair: q98 ss0 keep_rgb
+=== verify ===
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 348.8 MB (limit 350.0)
+VERIFY PASSED
+=== confirm video scenes really are keep_rgb RGB-mode jpegs, towers unchanged ===
+bonsai   bonsai/frame_000080.jpg      fmt=JPEG mode=RGB size=(1920, 1080) bytes= 1445649  (r22   797608)
+chair    chair/frame_000025.jpg       fmt=JPEG mode=RGB size=(720, 1280) bytes= 1239775  (r22   597635)
+HCM0421  HCM0421/DJI_20241230093347_0009_V.JPG fmt=JPEG mode=RGB size=(1320, 989) bytes=  869885  (r22  1013262)
+all scenes decode as real JPEGs at correct size
+=== R23 BUILD DONE Sun Jul 26 02:28:57 +07 2026 ===

@@ -1,0 +1,35 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+frame_000010.jpg sigma 0.93  LPIPS render 0.2750  LPIPS blurGT 0.1294  PSNR render 22.77 blurGT 29.57
+frame_000120.jpg sigma 1.05  LPIPS render 0.3812  LPIPS blurGT 0.1423  PSNR render 22.77 blurGT 32.48
+frame_000190.jpg sigma 1.03  LPIPS render 0.3267  LPIPS blurGT 0.1550  PSNR render 22.66 blurGT 30.08
+frame_000260.jpg sigma 0.89  LPIPS render 0.3573  LPIPS blurGT 0.1287  PSNR render 23.00 blurGT 32.96
+frame_000440.jpg sigma 0.88  LPIPS render 0.3663  LPIPS blurGT 0.1060  PSNR render 22.21 blurGT 33.78
+frame_000510.jpg sigma 0.90  LPIPS render 0.3567  LPIPS blurGT 0.0986  PSNR render 23.35 blurGT 37.65
+frame_000630.jpg sigma 0.53  LPIPS render 0.3100  LPIPS blurGT 0.0259  PSNR render 22.80 blurGT 42.48
+frame_000710.jpg sigma 0.65  LPIPS render 0.2955  LPIPS blurGT 0.0480  PSNR render 22.82 blurGT 38.68
+frame_000810.jpg sigma 0.05  LPIPS render 0.2596  LPIPS blurGT 0.0000  PSNR render 28.92 blurGT 138.13
+frame_000910.jpg sigma 0.81  LPIPS render 0.2522  LPIPS blurGT 0.0843  PSNR render 27.89 blurGT 39.43
+frame_001100.jpg sigma 0.59  LPIPS render 0.2648  LPIPS blurGT 0.0464  PSNR render 25.44 blurGT 45.71
+frame_001180.jpg sigma 0.40  LPIPS render 0.3136  LPIPS blurGT 0.0042  PSNR render 23.37 blurGT 62.06
+frame_001250.jpg sigma 0.73  LPIPS render 0.3032  LPIPS blurGT 0.0730  PSNR render 24.14 blurGT 40.50
+frame_001320.jpg sigma 0.31  LPIPS render 0.3237  LPIPS blurGT 0.0001  PSNR render 25.55 blurGT 79.02
+frame_001400.jpg sigma 0.66  LPIPS render 0.1911  LPIPS blurGT 0.0507  PSNR render 30.57 blurGT 41.46
+frame_001470.jpg sigma 0.79  LPIPS render 0.2214  LPIPS blurGT 0.0945  PSNR render 26.08 blurGT 34.29
+frame_001540.jpg sigma 0.72  LPIPS render 0.1910  LPIPS blurGT 0.0656  PSNR render 28.14 blurGT 37.13
+frame_001640.jpg sigma 0.56  LPIPS render 0.2258  LPIPS blurGT 0.0351  PSNR render 28.76 blurGT 45.79
+frame_001720.jpg sigma 0.51  LPIPS render 0.1716  LPIPS blurGT 0.0237  PSNR render 29.94 blurGT 46.28
+frame_001820.jpg sigma 0.67  LPIPS render 0.1788  LPIPS blurGT 0.0520  PSNR render 28.27 blurGT 40.37
+frame_001930.jpg sigma 0.69  LPIPS render 0.2317  LPIPS blurGT 0.0622  PSNR render 28.13 blurGT 43.05
+frame_002120.jpg sigma 0.79  LPIPS render 0.1904  LPIPS blurGT 0.0808  PSNR render 28.93 blurGT 38.68
+frame_002190.jpg sigma 0.69  LPIPS render 0.1631  LPIPS blurGT 0.0611  PSNR render 32.07 blurGT 41.57
+frame_002260.jpg sigma 0.05  LPIPS render 0.2056  LPIPS blurGT 0.0000  PSNR render 30.18 blurGT 138.13
+frame_002330.jpg sigma 0.45  LPIPS render 0.1659  LPIPS blurGT 0.0106  PSNR render 32.06 blurGT 52.17
+frame_002440.jpg sigma 0.58  LPIPS render 0.1787  LPIPS blurGT 0.0374  PSNR render 28.68 blurGT 42.08
+frame_002510.jpg sigma 0.55  LPIPS render 0.1773  LPIPS blurGT 0.0315  PSNR render 30.58 blurGT 45.65
+frame_002650.jpg sigma 0.41  LPIPS render 0.2145  LPIPS blurGT 0.0065  PSNR render 29.31 blurGT 57.87
+MEAN sigma 0.64 | LPIPS render 0.2533 blurGT 0.0591 (blur explains 23.3%) | PSNR render 26.76 blurGT 49.54

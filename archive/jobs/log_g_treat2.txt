@@ -1,0 +1,14 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0181/k4     base             PSNR  24.9034 SSIM 0.86505 LPIPS 0.10547 SCORE  76.6745 dScore +0.0000
+HCM0181/k4     blur0.7_w20      PSNR  24.9293 SSIM 0.86383 LPIPS 0.10941 SCORE  76.4961 dScore -0.1785
+HCM0181/k4     blur1.5_w20      PSNR  24.8348 SSIM 0.85901 LPIPS 0.11947 SCORE  75.8922 dScore -0.7823
+HCM0181/k4     shrink0.85_w10   PSNR  24.9161 SSIM 0.86499 LPIPS 0.10567 SCORE  76.6724 dScore -0.0021
+HCM0181/k4     shrink0.85_w20   PSNR  24.9258 SSIM 0.86485 LPIPS 0.10586 SCORE  76.6665 dScore -0.0080
+HCM0181/k4     shrink0.70_w20   PSNR  24.9327 SSIM 0.86433 LPIPS 0.10677 SCORE  76.6186 dScore -0.0559
+HCM0181/k4     shrink0.85_w40   PSNR  24.9388 SSIM 0.86448 LPIPS 0.10621 SCORE  76.6493 dScore -0.0252
+hcm0031/B9ut   base             PSNR  25.0854 SSIM 0.83505 LPIPS 0.13622 SCORE  74.6536 dScore +0.0000

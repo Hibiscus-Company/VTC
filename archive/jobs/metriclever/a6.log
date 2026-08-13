@@ -1,0 +1,11 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0181|plain    n= 60 rho=0.8598 base= 75.2555 best g=1.000 d=+0.0000  0.95:-0.021 1.0:+0.000 1.025:-0.003 1.05:-0.015 1.075:-0.035 1.1:-0.064 1.125:-0.100 1.15:-0.143
+HCM0181|field    n= 60 rho=0.8864 base= 76.4930 best g=1.050 d=+0.0208  0.95:-0.059 1.0:+0.000 1.025:+0.015 1.05:+0.021 1.075:+0.017 1.1:+0.006 1.125:-0.015 1.15:-0.043
+HCM0193|plain    n= 60 rho=0.8565 base= 75.7534 best g=1.000 d=+0.0000  0.95:-0.017 1.0:+0.000 1.025:-0.005 1.05:-0.020 1.075:-0.043 1.1:-0.075 1.125:-0.115 1.15:-0.162
+HCM0193|field    n= 60 rho=0.8729 base= 76.5209 best g=1.025 d=+0.0085  0.95:-0.047 1.0:+0.000 1.025:+0.008 1.05:+0.007 1.075:-0.003 1.1:-0.021 1.125:-0.049 1.15:-0.084
+HCM0204|plain    n= 60 rho=0.8634 base= 75.7235 best g=1.000 d=+0.0000  0.95:-0.019 1.0:+0.000 1.025:-0.003 1.05:-0.015 1.075:-0.035 1.1:-0.062 1.125:-0.097 1.15:-0.139

@@ -1,0 +1,7 @@
+>>> appaffine (gpu0) START 20:15 [--seed 42 --app_affine]
+Saved 5000000 gaussians to /mnt/d/avv/r38/appaffine/ckpt.pt
+Saved app_affine.pt  |M-I| mean 0.0127 max 0.0825
+Wrote 28 images to /mnt/d/avv/r38/appaffine/render
+   CENSUS N=1,030,538  s2/s1 0.3000  s2/s3 248.7  s1/s3 826.6
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 24.9599  SSIM 0.8436  LPIPSvgg 0.2846  SCORE 68.9011   [BAR 71.799]
+<<< appaffine DONE 21:57

@@ -1,0 +1,42 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/28] frame_000010
+[2/28] frame_000120
+[3/28] frame_000190
+[4/28] frame_000260
+[5/28] frame_000440
+[6/28] frame_000510
+[7/28] frame_000630
+[8/28] frame_000710
+[9/28] frame_000810
+[10/28] frame_000910
+[11/28] frame_001100
+[12/28] frame_001180
+[13/28] frame_001250
+[14/28] frame_001320
+[15/28] frame_001400
+[16/28] frame_001470
+[17/28] frame_001540
+[18/28] frame_001640
+[19/28] frame_001720
+[20/28] frame_001820
+[21/28] frame_001930
+[22/28] frame_002120
+[23/28] frame_002190
+[24/28] frame_002260
+[25/28] frame_002330
+[26/28] frame_002440
+[27/28] frame_002510
+[28/28] frame_002650
+       sr01_single n=28 PSNR 26.9464 SSIM 0.8478 LPIPS 0.2403 SCORE 71.9912
+         K1_single n=28 PSNR 26.9814 SSIM 0.8503 LPIPS 0.2448 SCORE 71.9030
+      ctrl2_K1+c42 n=28 PSNR 27.2854 SSIM 0.8546 LPIPS 0.2409 SCORE 72.3704
+   treat2_s003+s01 n=28 PSNR 27.2362 SSIM 0.8544 LPIPS 0.2360 SCORE 72.5356
+       mix2_K1+s01 n=28 PSNR 27.2869 SSIM 0.8552 LPIPS 0.2361 SCORE 72.5839
+PAIRED treat2_s003+s01 - ctrl2_K1+c42: D +0.1652 sd 0.3889 se 0.0735 t +2.25 wins 19/28
+PAIRED mix2_K1+s01 - ctrl2_K1+c42: D +0.2135 sd 0.2690 se 0.0508 t +4.20 wins 20/28
+PAIRED sr01_single - K1_single: D +0.0882 sd 0.5283 se 0.0998 t +0.88 wins 18/28

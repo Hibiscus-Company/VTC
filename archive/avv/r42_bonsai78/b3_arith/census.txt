@@ -1,0 +1,18 @@
+
+### /mnt/d/avv/bonsai_eval/K1_noUT_aa/ckpt.pt
+  N = 5,000,000   median opacity 0.0002  mean 0.0533  sum 266,435
+  frac below: 0.001:57.37%  0.005:63.18%  0.01:65.00%  0.05:78.89%  0.1:86.88%  0.2:93.00%  0.5:97.35%
+  live(op>0.05) N = 1,055,310 (21.11%)   op>0.005 N = 1,841,044 (36.82%)
+  ALL              n=5,000,000  geo-mean maxscale 0.00226167  median maxscale 0.00285855  median minscale 2.48581e-06
+  live             n=1,055,310  geo-mean maxscale 0.0182642  median maxscale 0.0155741  median minscale 1.17071e-05
+  dead(op<0.005)   n=3,158,956  geo-mean maxscale 0.000643071  median maxscale 0.000676951  median minscale 7.99842e-07
+  opacity mass in live splats: 92.07% of total
+
+### /mnt/d/avv/r33_bonsai/eval_s42/ckpt.pt
+  N = 8,000,000   median opacity 0.0001  mean 0.0400  sum 320,007
+  frac below: 0.001:67.34%  0.005:73.46%  0.01:75.16%  0.05:85.45%  0.1:90.80%  0.2:94.82%  0.5:97.78%
+  live(op>0.05) N = 1,164,016 (14.55%)   op>0.005 N = 2,122,919 (26.54%)
+  ALL              n=8,000,000  geo-mean maxscale 0.00129022  median maxscale 0.00156612  median minscale 3.20835e-07
+  live             n=1,164,016  geo-mean maxscale 0.0172557  median maxscale 0.014418  median minscale 1.39573e-06
+  dead(op<0.005)   n=5,877,081  geo-mean maxscale 0.000495542  median maxscale 0.000604547  median minscale 2.22906e-07
+  opacity mass in live splats: 92.12% of total

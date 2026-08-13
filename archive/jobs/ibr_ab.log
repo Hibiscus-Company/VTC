@@ -1,0 +1,31 @@
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/../render_test_poses.py:121: RuntimeWarning: invalid value encountered in cast
+  img = Image.fromarray((arr * 255.0 + 0.5).astype(np.uint8))
+8000000 gaussians, ut=True
+k1=+0.009004 pad=4px
+240 train frames (seq numbering: True)
+photo coverage: mean 0.760 min 0.431 max 0.929
+Wrote 60 images to /mnt/d/avv/ibr/HCM0181_base/renders
+IBR base HCM0181    n= 60  PSNR 23.0285  SSIM 0.7679  LPIPS(alex) 0.1181 LPIPS(vgg) 0.1784  Score(alex) 0.7213  Score(vgg) 0.6972
+IBR base   Score(vgg)  = 69.7186   [0.4*(1-LPIPS)=0.3287  0.3*SSIM=0.2304  0.3*PSNRn=0.1382]  (psnr_max=50.0)
+=== IBR base SCORED ===
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/../render_test_poses.py:121: RuntimeWarning: invalid value encountered in cast
+  img = Image.fromarray((arr * 255.0 + 0.5).astype(np.uint8))
+8000000 gaussians, ut=True
+k1=+0.009004 pad=4px
+240 train frames (seq numbering: True)
+photo coverage: mean 0.815 min 0.509 max 0.958
+Wrote 60 images to /mnt/d/avv/ibr/HCM0181_loose/renders
+IBR loose HCM0181    n= 60  PSNR 22.5523  SSIM 0.7468  LPIPS(alex) 0.1316 LPIPS(vgg) 0.1932  Score(alex) 0.7067  Score(vgg) 0.6821
+IBR loose   Score(vgg)  = 68.2064   [0.4*(1-LPIPS)=0.3227  0.3*SSIM=0.2240  0.3*PSNRn=0.1353]  (psnr_max=50.0)
+=== IBR loose SCORED ===
+/mnt/c/Users/BKAI/an_plaza2/FastGS/gsplat_track/../render_test_poses.py:121: RuntimeWarning: invalid value encountered in cast
+  img = Image.fromarray((arr * 255.0 + 0.5).astype(np.uint8))
+8000000 gaussians, ut=True
+k1=+0.009004 pad=4px
+240 train frames (seq numbering: True)
+photo coverage: mean 0.676 min 0.310 max 0.881
+Wrote 60 images to /mnt/d/avv/ibr/HCM0181_tight/renders
+IBR tight HCM0181    n= 60  PSNR 23.4014  SSIM 0.7892  LPIPS(alex) 0.1067 LPIPS(vgg) 0.1642  Score(alex) 0.7345  Score(vgg) 0.7115
+IBR tight   Score(vgg)  = 71.1490   [0.4*(1-LPIPS)=0.3343  0.3*SSIM=0.2368  0.3*PSNRn=0.1404]  (psnr_max=50.0)
+=== IBR tight SCORED ===
+IBR AB DONE

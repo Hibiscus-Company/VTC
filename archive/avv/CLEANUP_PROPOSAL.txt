@@ -1,0 +1,71 @@
+CLEANUP PROPOSAL -- /mnt/d/avv   (1.9 TB, currently 99% full, 30 GB free)
+Criterion: a directory is KEEP if the r36/r37 reproduction chain reads from it, or if it is the
+evidence behind a number recorded in EXPERIMENTS.md. Everything else is a candidate.
+Nothing here is deleted until you approve. test_png / png_ens archives inside KEEP dirs are never touched.
+
+TIER 1 -- dead experiment scratch, no checkpoints, nothing reads them  [RECOMMEND DELETE]
+  output_s2gates         21671 MB
+  ens                    12185 MB
+  tw_test                 9696 MB
+  difix_ft                4962 MB
+  difix                    507 MB
+  bonsai_perc             4825 MB
+  lpsweep                 4089 MB
+  chair_lpearly           3976 MB
+  depth_prior             3877 MB
+  restore                 2522 MB
+  bonsai_pc               2487 MB
+  bonsai_final            2484 MB
+  bonsai_sel              2235 MB
+  gut3d                   1927 MB
+  blurbound               1102 MB
+  ibr                      694 MB
+  mip3d                    388 MB
+  mip                      135 MB
+  ADVC                     219 MB
+  prodharness              368 MB
+  seedbank                 477 MB
+  fb_cache                 146 MB
+  tmp_db_test              433 MB
+  r13                     1775 MB
+  r15                     1826 MB
+  r16                     2001 MB
+  r25                     1807 MB
+  r26                      689 MB
+  r27                      692 MB
+  r28e_safe               1506 MB
+  r28e_v2                  839 MB
+  r30b                     709 MB
+  r33                     1333 MB
+  r33_bonsai              1833 MB
+  r34                      186 MB
+  verify_r36               108 MB
+  verify_readme            108 MB
+  -- subtotal --         96817 MB
+
+TIER 2 -- large, but CONTAINS CHECKPOINTS (eval-split models, not submission members)
+  chair_eval             13479 MB
+  bonsai_eval             8378 MB
+  -- subtotal --         21857 MB
+
+TIER 3 -- set1 / public_set renders; its checkpoints were already removed 31/07
+  output                 41458 MB
+  -- subtotal --         41458 MB
+
+TIER 4 -- NOT a competition directory (TRIPLEX / an_model / figures). Confirm before deleting.
+  an_plaza               50014 MB
+  -- subtotal --         50014 MB
+
+KEEP anyway, though outside the chain -- these back numbers in EXPERIMENTS.md (cheap to hold)
+  r36_shape                478 MB
+  r38                      159 MB
+  r35_scalereg             235 MB
+  r41_towersr              318 MB
+  evalgen                  159 MB
+  -- subtotal --          1349 MB
+
+TOTALS
+  tier 1  96817 MB   tier 2  21857 MB   tier 3  41458 MB   tier 4  50014 MB
+  tier 1 alone            =  94.5 GB   (free would go 30 -> 125 GB)
+  tiers 1+2+3             = 156.4 GB   (free -> 186 GB)
+  tiers 1+2+3+4           = 205.2 GB   (free -> 235 GB)

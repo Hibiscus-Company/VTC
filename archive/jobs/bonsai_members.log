@@ -1,0 +1,16 @@
+>>> gpu0 bonsai seed 202 train 03:52
+>>> gpu1 bonsai seed 101 train 04:24
+[29999] loss 0.0359 l1 0.0148 ssim 0.9570 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/r24_bonsai/aa202/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r24_bonsai/aa202/test_render
+<<< gpu0 bonsai s202 done 05:55 (28 pngs)
+>>> gpu0 bonsai seed 303 train 05:55
+[29999] loss 0.0631 l1 0.0221 ssim 0.8793 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/r24_bonsai/aa101/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r24_bonsai/aa101/test_render
+<<< gpu1 bonsai s101 done 06:01 (28 pngs)
+[26000] loss 0.0550 l1 0.0229 ssim 0.9303 N 5000000
+[27000] loss 0.0664 l1 0.0307 ssim 0.9133 N 5000000
+Terminated
+!!! bonsai s303 TRAIN FAIL
+=== BONSAI MEMBERS DONE Sun Jul 26 11:24:51 +07 2026 ===

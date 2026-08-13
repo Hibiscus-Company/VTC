@@ -1,0 +1,20 @@
+=== building k=1 / k=2 / k=3 ensembles ===
+Ensembled 60 images from 2 members -> /mnt/d/avv/restore/k2/jpg
+
+########## RESTORATION at ensemble depth k=1 ##########
+BASELINE (ensemble only, test poses): SCORE 75.0757  PSNR 24.1414 SSIM 0.8405 LPIPS 0.1156
+RESTORED (test poses):                SCORE 75.4830  PSNR 24.2553 SSIM 0.8421 LPIPS 0.1083
+=== k1: DELTA +0.4072 (baseline 75.0757 -> 75.4830) ===
+
+########## RESTORATION at ensemble depth k=2 ##########
+BASELINE (ensemble only, test poses): SCORE 75.7542  PSNR 24.4611 SSIM 0.8497 LPIPS 0.1103
+RESTORED (test poses):                SCORE 76.0399  PSNR 24.4881 SSIM 0.8494 LPIPS 0.1034
+=== k2: DELTA +0.2857 (baseline 75.7542 -> 76.0399) ===
+
+########## RESTORATION at ensemble depth k=3 ##########
+BASELINE (ensemble only, test poses): SCORE 75.9590  PSNR 24.5695 SSIM 0.8527 LPIPS 0.1091
+RESTORED (test poses):                SCORE 76.2509  PSNR 24.5636 SSIM 0.8518 LPIPS 0.1011
+=== k3: DELTA +0.2919 (baseline 75.9590 -> 76.2509) ===
+
+=== INTERPRETATION: if DELTA decays steeply with k (like the encode did: +0.259 -> +0.115),
+=== restoration is a proxy artifact and must not ship on proxy evidence. If flat, it is real.

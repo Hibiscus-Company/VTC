@@ -1,0 +1,26 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  HCM0181 n=60 33s
+  HCM0193 n=60 31s
+  HCM0204 n=60 29s
+  hcm0031 n=50 27s
+  hcm0034 n=60 32s
+
+q99ss2 vs q100ss2 -- single member + shipped field, REAL public test GT
+    scene       arm     SCORE  d_vs_q100      se     wins    dPSNR     dSSIM    dLPIPS  selfRMSE  MiB/img
+  HCM0181   q100ss2   76.7817    +0.0000  0.0000   0/60    +0.0000  +0.00000  +0.00000    1.2282    1.012
+  HCM0181    q99ss2   76.7758    -0.0060  0.0011  13/60    -0.0051  -0.00038  -0.00021    1.3211    0.900
+  HCM0193   q100ss2   76.8812    +0.0000  0.0000   0/60    +0.0000  +0.00000  +0.00000    1.2358    1.000
+  HCM0193    q99ss2   76.8707    -0.0105  0.0009   6/60    -0.0069  -0.00038  -0.00013    1.3266    0.889
+  HCM0204   q100ss2   76.9727    +0.0000  0.0000   0/60    +0.0000  +0.00000  +0.00000    1.2053    0.983
+  HCM0204    q99ss2   76.9646    -0.0082  0.0010   9/60    -0.0053  -0.00029  -0.00010    1.2959    0.872
+  hcm0031   q100ss2   75.6435    +0.0000  0.0000   0/50    +0.0000  +0.00000  +0.00000    1.1618    0.992
+  hcm0031    q99ss2   75.6364    -0.0070  0.0007   5/50    -0.0055  -0.00037  -0.00018    1.2575    0.880
+  hcm0034   q100ss2   77.2931    +0.0000  0.0000   0/60    +0.0000  +0.00000  +0.00000    1.2533    0.986
+  hcm0034    q99ss2   77.2889    -0.0042  0.0012  16/60    -0.0056  -0.00033  -0.00023    1.3398    0.874
+
+q99ss2 5-scene mean -0.0072  sd 0.0024  se_of_mean 0.0011  per-scene [-0.006, -0.0105, -0.0082, -0.007, -0.0042]  positive 0/5

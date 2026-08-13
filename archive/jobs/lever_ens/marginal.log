@@ -1,0 +1,24 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+BASE k4 (4): SCORE 76.6745  PSNR 24.9034 SSIM 0.8650 LPIPS 0.1055
+
+add                    single     gap   corr  k+1 score    delta   dPSNR    dSSIM   dLPIPS
+e15ceil95             75.1578  -0.807  0.817    76.9118  +0.2373 +0.1493 +0.00378 -0.00086
+e16app                74.3052  -1.659  0.738    76.8686  +0.1941 +0.0877 +0.00335 -0.00102
+e17visnorm            75.2010  -0.763  0.817    76.9181  +0.2436 +0.1509 +0.00384 -0.00095
+gsplatB1              74.5325  -1.432  0.867    76.6521  -0.0224 +0.0587 +0.00084 +0.00207
+gsplatB2              74.5344  -1.430  0.867    76.6545  -0.0200 +0.0583 +0.00089 +0.00204
+gsplatB3              74.3173  -1.647  0.848    76.6745  -0.0000 +0.0688 +0.00097 +0.00176
+gsplatB4warm          74.8674  -1.097  0.850    76.7708  +0.0963 +0.0847 +0.00198 +0.00035
+gsplatB5affine        74.1378  -1.827  0.838    76.6613  -0.0132 +0.0644 +0.00109 +0.00211
+gsplatB6bilagrid      66.9167  -9.048  0.420    75.9967  -0.6778 -0.7763 -0.00289 +0.00313
+gsplatB7ppisp2        74.7316  -1.233  0.835    76.7306  +0.0561 +0.0993 +0.00149 +0.00120
+gsplatB8pure          75.0470  -0.917  0.843    76.8367  +0.1622 +0.0970 +0.00265 -0.00061
+m31b_nolpips          74.9199  -1.044  0.885    76.7029  +0.0284 +0.0804 +0.00182 +0.00186
+m31b_taillpips        75.7006  -0.264  0.896    76.8092  +0.1347 +0.0581 +0.00125 -0.00156
+sh0                   67.7954  -8.169  0.623    76.2532  -0.4213 -0.2174 -0.00529 +0.00330
+sh1                   69.1581  -6.806  0.665    76.3395  -0.3350 -0.1767 -0.00428 +0.00252
+sh2                   72.5382  -3.426  0.785    76.5394  -0.1351 -0.0788 -0.00198 +0.00071
+DONE 470.4289927482605

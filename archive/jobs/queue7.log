@@ -1,0 +1,13 @@
+=== [GPU 1] HCM0181 -> output/HCM0181_e10gate1 ===
+=== [GPU 1] queue 'e10gate1' done ===
+=== [GPU 1] HCM0181 -> output/HCM0181_e11gate3 ===
+=== [GPU 1] queue 'e11gate3' done ===
+=== score e10gate1 ===
+HCM0181    n= 60  PSNR 24.3347  SSIM 0.8475  LPIPS(alex) 0.0824 LPIPS(vgg) 0.1220  Score(alex) 0.7673  Score(vgg) 0.7515
+  Score(alex)  = 76.7296   [0.4*(1-LPIPS)=0.3670  0.3*SSIM=0.2542  0.3*PSNRn=0.1460]  (psnr_max=50.0)
+  Score(vgg)  = 75.1459   [0.4*(1-LPIPS)=0.3512  0.3*SSIM=0.2542  0.3*PSNRn=0.1460]  (psnr_max=50.0)
+=== score e11gate3 ===
+HCM0181    n= 60  PSNR 24.3033  SSIM 0.8461  LPIPS(alex) 0.0852 LPIPS(vgg) 0.1231  Score(alex) 0.7656  Score(vgg) 0.7504
+  Score(alex)  = 76.5570   [0.4*(1-LPIPS)=0.3659  0.3*SSIM=0.2538  0.3*PSNRn=0.1458]  (psnr_max=50.0)
+  Score(vgg)  = 75.0410   [0.4*(1-LPIPS)=0.3508  0.3*SSIM=0.2538  0.3*PSNRn=0.1458]  (psnr_max=50.0)
+GATE SWEEP DONE

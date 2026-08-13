@@ -1,0 +1,46 @@
+TIER-3 DELETION 2026-08-01 08:36  -- approved by user
+output/ holds set1 / public_set scenes (HCM0181, hcm0031, hcm0034, HCM0249, HCM0254,
+HCM0276, HCM1439, HNI0131, HNI0265 ...). private_set2 -- the seven scenes r36/r37 are
+built from -- appears nowhere in it. Its checkpoints were already removed on 31/07.
+Verified absent from the r36/r37 lineage before deletion.
+
+1630	output/HCM0181_e17visnorm
+1595	output/HCM0249_memD
+1537	output/HCM0181_e16app
+1367	output/HCM0181_e15ceil95
+1289	output/HCM0276_memC
+1231	output/HNI0265_memC
+1208	output/HCM0249_memC
+1145	output/HCM0254_memC
+1102	output/HNI0366_memC
+1059	output/HNI0437_memC
+1016	output/HNI0131_memC
+973	output/HCM0276_memB
+930	output/HCM0249_memB
+921	output/HCM1439_memC
+907	output/HNI0265_memB
+890	output/HCM0254_memB
+824	output/HNI0366_memB
+816	output/HNI0131_gsplatB9ut
+804	output/HNI0437_memB
+760	output/HNI0131_memB
+668	output/HNI0265_gsplatB9ut
+651	output/HCM1439_memB
+542	output/HCM0254_gsplatB9ut60k
+539	output/HCM0249_gsplatB9ut60k
+531	output/HNI0366_gsplatB9ut60k
+531	output/HCM0276_gsplatB9ut60k
+531	output/HCM0254_gsplatB9ut
+526	output/HCM0249_gsplatB9ut
+525	output/HCM0181_gsplatB11ut60k
+521	output/HNI0366_gsplatB9ut
+519	output/HCM0276_gsplatB9ut
+516	output/HCM0181_gsplatB9ut
+511	output/HCM0193_gsplatB9ut
+506	output/HNI0131_gsplatB9ut60k
+505	output/hcm0034_gsplatB9ut
+500	output/HCM0204_gsplatB9ut
+495	output/HNI0437_gsplatB9ut60k
+485	output/HNI0437_gsplatB9ut
+467	output/HNI0265_gsplatB9ut60k
+424	output/hcm0031_gsplatB9ut

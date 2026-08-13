@@ -1,0 +1,92 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  HCM0181 0/60 2s
+  HCM0181 20/60 29s
+  HCM0181 40/60 57s
+
+== HCM0181 (n=60) ==
+  none               P 24.2675  S 0.84556  L 0.11680  score  75.2554  d +0.0000
+  med_s1.0           P 25.1832  S 0.86852  L 0.11260  score  76.6615  d +1.4060
+  med_s1.15          P 25.2467  S 0.87001  L 0.11239  score  76.7527  d +1.4973
+  med_s1.3           P 25.2821  S 0.87085  L 0.11232  score  76.8021  d +1.5467
+  med_s1.45          P 25.2885  S 0.87104  L 0.11237  score  76.8093  d +1.5539
+  med_s1.6           P 25.2658  S 0.87057  L 0.11256  score  76.7743  d +1.5189
+  med_s1.8           P 25.1937  S 0.86899  L 0.11299  score  76.6662  d +1.4108
+  med_s2.0           P 25.0789  S 0.86637  L 0.11363  score  76.4931  d +1.2377
+  mean_s1.0          P 25.1669  S 0.86784  L 0.11290  score  76.6195  d +1.3640
+  mean_s1.3          P 25.1487  S 0.86712  L 0.11331  score  76.5705  d +1.3150
+  mean_s1.6          P 24.9751  S 0.86257  L 0.11441  score  76.2860  d +1.0306
+  mean_s1.8          P 24.7872  S 0.85758  L 0.11551  score  75.9794  d +0.7240
+  HCM0193 0/60 2s
+  HCM0193 20/60 37s
+  HCM0193 40/60 91s
+
+== HCM0193 (n=60) ==
+  none               P 25.6807  S 0.84734  L 0.12688  score  75.7534  d +0.0000
+  med_s1.0           P 26.3627  S 0.86554  L 0.12358  score  76.8409  d +1.0876
+  med_s1.15          P 26.4027  S 0.86659  L 0.12346  score  76.9009  d +1.1476
+  med_s1.3           P 26.4210  S 0.86710  L 0.12347  score  76.9267  d +1.1733
+  med_s1.45          P 26.4168  S 0.86706  L 0.12360  score  76.9179  d +1.1645
+  med_s1.6           P 26.3899  S 0.86646  L 0.12384  score  76.8741  d +1.1207
+  med_s1.8           P 26.3198  S 0.86478  L 0.12435  score  76.7611  d +1.0077
+  med_s2.0           P 26.2134  S 0.86213  L 0.12505  score  76.5899  d +0.8366
+  mean_s1.0          P 26.2344  S 0.86223  L 0.12443  score  76.6303  d +0.8769
+  mean_s1.3          P 26.1965  S 0.86133  L 0.12500  score  76.5578  d +0.8044
+  mean_s1.6          P 26.0526  S 0.85755  L 0.12619  score  76.3104  d +0.5571
+  mean_s1.8          P 25.9048  S 0.85349  L 0.12726  score  76.0570  d +0.3036
+  HCM0204 0/60 3s
+  HCM0204 20/60 43s
+  HCM0204 40/60 81s
+
+== HCM0204 (n=60) ==
+  none               P 24.8906  S 0.85408  L 0.12083  score  75.7235  d +0.0000
+  med_s1.0           P 25.6829  S 0.87201  L 0.11734  score  76.8761  d +1.1527
+  med_s1.15          P 25.7412  S 0.87324  L 0.11716  score  76.9558  d +1.2324
+  med_s1.3           P 25.7773  S 0.87402  L 0.11707  score  77.0040  d +1.2805
+  med_s1.45          P 25.7903  S 0.87431  L 0.11710  score  77.0194  d +1.2959
+  med_s1.6           P 25.7798  S 0.87411  L 0.11723  score  77.0022  d +1.2787
+  med_s1.8           P 25.7301  S 0.87310  L 0.11756  score  76.9288  d +1.2053
+  med_s2.0           P 25.6418  S 0.87124  L 0.11806  score  76.8000  d +1.0765
+  mean_s1.0          P 25.5874  S 0.86979  L 0.11800  score  76.7260  d +1.0025
+  mean_s1.3          P 25.5584  S 0.86907  L 0.11842  score  76.6703  d +0.9469
+  mean_s1.6          P 25.4058  S 0.86555  L 0.11938  score  76.4347  d +0.7112
+  mean_s1.8          P 25.2448  S 0.86170  L 0.12031  score  76.1855  d +0.4620
+  hcm0031 0/50 2s
+  hcm0031 20/50 50s
+  hcm0031 40/50 97s
+
+== hcm0031 (n=50) ==
+  none               P 25.0854  S 0.83504  L 0.13622  score  74.6536  d +0.0000
+  med_s1.0           P 25.6355  S 0.85060  L 0.13350  score  75.5591  d +0.9055
+  med_s1.15          P 25.6744  S 0.85171  L 0.13336  score  75.6216  d +0.9680
+  med_s1.3           P 25.6984  S 0.85243  L 0.13331  score  75.6596  d +1.0060
+  med_s1.45          P 25.7067  S 0.85274  L 0.13333  score  75.6729  d +1.0193
+  med_s1.6           P 25.6993  S 0.85263  L 0.13345  score  75.6607  d +1.0071
+  med_s1.8           P 25.6648  S 0.85184  L 0.13372  score  75.6053  d +0.9517
+  med_s2.0           P 25.6039  S 0.85032  L 0.13411  score  75.5073  d +0.8537
+  mean_s1.0          P 25.5044  S 0.84733  L 0.13440  score  75.3466  d +0.6930
+  mean_s1.3          P 25.4622  S 0.84633  L 0.13489  score  75.2715  d +0.6179
+  mean_s1.6          P 25.3369  S 0.84290  L 0.13590  score  75.0534  d +0.3998
+  mean_s1.8          P 25.2128  S 0.83931  L 0.13677  score  74.8361  d +0.1825
+  hcm0034 0/60 4s
+  hcm0034 20/60 110s
+  hcm0034 40/60 215s
+
+== hcm0034 (n=60) ==
+  none               P 25.1418  S 0.86470  L 0.12169  score  76.1583  d +0.0000
+  med_s1.0           P 25.8591  S 0.88152  L 0.11846  score  77.2228  d +1.0645
+  med_s1.15          P 25.9063  S 0.88253  L 0.11831  score  77.2871  d +1.1287
+  med_s1.3           P 25.9313  S 0.88303  L 0.11827  score  77.3189  d +1.1606
+  med_s1.45          P 25.9327  S 0.88302  L 0.11834  score  77.3166  d +1.1583
+  med_s1.6           P 25.9104  S 0.88248  L 0.11852  score  77.2799  d +1.1216
+  med_s1.8           P 25.8448  S 0.88097  L 0.11891  score  77.1796  d +1.0213
+  med_s2.0           P 25.7420  S 0.87859  L 0.11948  score  77.0240  d +0.8656
+  mean_s1.0          P 25.8385  S 0.88076  L 0.11867  score  77.1790  d +1.0206
+  mean_s1.3          P 25.8676  S 0.88124  L 0.11874  score  77.2080  d +1.0496
+  mean_s1.6          P 25.7898  S 0.87929  L 0.11934  score  77.0787  d +0.9203
+  mean_s1.8          P 25.6822  S 0.87665  L 0.12002  score  76.9081  d +0.7498
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/res/scale2.json

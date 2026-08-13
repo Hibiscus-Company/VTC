@@ -1,0 +1,12 @@
+K1_noUT_aa /mnt/d/avv/bonsai_eval/K1_noUT_aa/eval_png 28
+K4_pC_seed1k /mnt/d/avv/bonsai_eval/K4_pC_seed1k/eval_png 28
+K4_pC_seed7 /mnt/d/avv/bonsai_eval/K4_pC_seed7/eval_png 28
+eps10 /mnt/d/avv/bonsai_eval/eps10/eval_png 28
+eps20 /mnt/d/avv/bonsai_eval/eps20/eval_png 28
+ppisp_pc /mnt/d/avv/bonsai_eval/ppisp_pc/eval_png 28
+sr001seed42 /mnt/d/avv/r36_shape/sr001seed42/eval_png 28
+sr0.03 /mnt/d/avv/r35_scalereg/sr0.03/eval_png 28
+built P6 /mnt/d/avv/ADV_P6_uop6ndi7 28
+built P7c /mnt/d/avv/ADV_P7c__bbqhpol 28
+built P7t /mnt/d/avv/ADV_P7t_hglts7fy 28
+ARGS /mnt/d/avv/ADV_P6_uop6ndi7=P6 /mnt/d/avv/ADV_P7c__bbqhpol=P7c /mnt/d/avv/ADV_P7t_hglts7fy=P7t

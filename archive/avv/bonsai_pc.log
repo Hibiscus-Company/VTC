@@ -1,0 +1,8 @@
+[29999] loss 0.0532 l1 0.0225 ssim 0.9282 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/bonsai_pc/ut42/ckpt.pt
+Wrote 28 images to /mnt/d/avv/bonsai_pc/ut42/test_render
+[29999] loss 0.0552 l1 0.0223 ssim 0.9260 N 5000000
+Saved 5000000 gaussians to /mnt/d/avv/bonsai_pc/ut7/ckpt.pt
+Wrote 28 images to /mnt/d/avv/bonsai_pc/ut7/test_render
+Ensembled 28 images from 2 members -> /mnt/d/avv/bonsai_pc/ens/jpg
+=== BONSAI pC FINAL READY: /mnt/d/avv/bonsai_pc/ens/png (28 imgs) ===

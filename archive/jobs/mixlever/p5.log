@@ -1,0 +1,46 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/mixlever/core.py:64: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  g = torch.from_numpy(np.ascontiguousarray(G[vi])).to(DEV).permute(2, 0, 1).float().unsqueeze(0) / 255.0
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/mixlever/core.py:64: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  g = torch.from_numpy(np.ascontiguousarray(G[vi])).to(DEV).permute(2, 0, 1).float().unsqueeze(0) / 255.0
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+
+=== depth k selected on one fold, scored on the other (rank-ordered)
+rank    k*(A)=7 k*(B)=7  out-of-fold 77.0642  in-sample-best 77.0642
+greedy  k*(A)=6 k*(B)=6  out-of-fold 77.1170  in-sample-best 77.1170
+
+=== full curve, all 60 views
+  k      rank    greedy
+  2   76.3681   76.7706
+  3   76.7428   76.9730
+  4   76.8504   77.0553
+  5   76.8092   77.0890
+  6   77.0022   77.1170
+  7   77.0642   77.0796
+  8   77.0427   77.0650
+  9   77.0306   77.0463
+ 10   76.9825   77.0277
+ 11   76.9365   76.9795
+ 12   76.8627   76.9417
+
+=== LS weights vs uniform, out of fold (full competition metric)
+greedyBest   unifA 77.0407 fitB->A 77.0428 (+0.0022) | unifB 77.1933 fitA->B 77.1835 (-0.0098) | CV mean -0.0038 | in-sample 77.1137
+all20        unifA 77.0407 fitB->A 76.8686 (-0.1721) | unifB 77.1933 fitA->B 77.0207 (-0.1727) | CV mean -0.1724 | in-sample 76.9479
+
+weights:
+  greedyBest_unif {'e15ceil95': 0.1667, 'e17visnorm': 0.1667, 'gsplatB10ut8M': 0.1667, 'gsplatB11ut60k': 0.1667, 'gsplatB12ut8Ms7': 0.1667, 'm31b_taillpips': 0.1667}
+  greedyBest_lsALL {'e15ceil95': 0.178, 'e17visnorm': 0.1807, 'gsplatB10ut8M': 0.1585, 'gsplatB11ut60k': 0.1531, 'gsplatB12ut8Ms7': 0.1551, 'm31b_taillpips': 0.1747}
+  all20_lsALL {'e15ceil95': 0.1242, 'e16app': 0.0246, 'e17visnorm': 0.1259, 'gsplatB1': 0.0032, 'gsplatB10ut8M': 0.1017, 'gsplatB11ut60k': 0.0816, 'gsplatB12ut8Ms7': 0.1064, 'gsplatB3': 0.0234, 'gsplatB5affine': 0.0223, 'gsplatB7ppisp2': 0.1033, 'gsplatB9ut': 0.0455, 'm31b_nolpips': 0.1775, 'm31b_taillpips': 0.0605}
+  all20_lsA {'e15ceil95': 0.1326, 'e16app': 0.0038, 'e17visnorm': 0.1339, 'gsplatB1': 0.0068, 'gsplatB10ut8M': 0.11, 'gsplatB11ut60k': 0.0715, 'gsplatB12ut8Ms7': 0.1079, 'gsplatB2': 0.0005, 'gsplatB3': 0.0287, 'gsplatB4warm': 0.0025, 'gsplatB5affine': 0.0148, 'gsplatB7ppisp2': 0.1035, 'gsplatB8pure': 0.003, 'gsplatB9ut': 0.045, 'm31b_nolpips': 0.1772, 'm31b_taillpips': 0.0583}
+  all20_lsB {'e15ceil95': 0.1162, 'e16app': 0.0414, 'e17visnorm': 0.1172, 'gsplatB10ut8M': 0.0925, 'gsplatB11ut60k': 0.0922, 'gsplatB12ut8Ms7': 0.1046, 'gsplatB3': 0.018, 'gsplatB5affine': 0.0294, 'gsplatB7ppisp2': 0.1029, 'gsplatB9ut': 0.0458, 'm31b_nolpips': 0.1773, 'm31b_taillpips': 0.0624}
+elapsed 221s

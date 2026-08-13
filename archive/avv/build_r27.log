@@ -1,0 +1,41 @@
+=== assert the lanczos flag is actually live ===
+OK: apply_field defaults to INTER_LANCZOS4
+=== HCM0421: re-applying the SAME median field with lanczos4 ===
+field HCM0421.npy: mean|d| 0.1013px  max|d| 0.8377px
+corrected 60 images -> /mnt/d/avv/r27/tower_ens/HCM0421/png
+=== HCM0539: re-applying the SAME median field with lanczos4 ===
+field HCM0539.npy: mean|d| 0.1039px  max|d| 1.1304px
+corrected 60 images -> /mnt/d/avv/r27/tower_ens/HCM0539/png
+=== HCM0540: re-applying the SAME median field with lanczos4 ===
+field HCM0540.npy: mean|d| 0.1025px  max|d| 0.8351px
+corrected 60 images -> /mnt/d/avv/r27/tower_ens/HCM0540/png
+=== HCM0644: re-applying the SAME median field with lanczos4 ===
+field HCM0644.npy: mean|d| 0.1024px  max|d| 1.0476px
+corrected 60 images -> /mnt/d/avv/r27/tower_ens/HCM0644/png
+=== HCM0674: re-applying the SAME median field with lanczos4 ===
+field HCM0674.npy: mean|d| 0.1013px  max|d| 1.1281px
+corrected 60 images -> /mnt/d/avv/r27/tower_ens/HCM0674/png
+=== confirm the fields are the very ones r26 shipped (no silent refit) ===
+  HCM0421: field HCM0421.npy fit on /mnt/d/avv/data/phase1/private_set2/HCM0421/train/images  n=60
+  HCM0539: field HCM0539.npy fit on /mnt/d/avv/data/phase1/private_set2/HCM0539/train/images  n=60
+  HCM0540: field HCM0540.npy fit on /mnt/d/avv/data/phase1/private_set2/HCM0540/train/images  n=60
+  HCM0644: field HCM0644.npy fit on /mnt/d/avv/data/phase1/private_set2/HCM0644/train/images  n=60
+  HCM0674: field HCM0674.npy fit on /mnt/d/avv/data/phase1/private_set2/HCM0674/train/images  n=60
+=== assemble: 5 towers re-warped, chair+bonsai byte-identical from r26 ===
+re-encoded 300 tower files, copied 86 chair/bonsai verbatim
+=== verify ===
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 345.1 MB (limit 350.0)
+VERIFY PASSED
+=== confirm ONLY the towers differ from r26 ===
+scenes changed vs r26: ['HCM0421', 'HCM0539', 'HCM0540', 'HCM0644', 'HCM0674']
+CONFIRMED: single-variable (remap kernel only); chair+bonsai byte-identical. 345.1 MB
+=== R27 BUILD DONE Mon Jul 27 12:52:47 +07 2026 ===

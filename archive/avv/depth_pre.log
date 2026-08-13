@@ -1,0 +1,27 @@
+>>> depth /mnt/d/avv/evalsplit/bonsai/train_sub/images -> /mnt/d/avv/depth/bonsai_sub  START 00:40
+Loading weights:   0%|          | 0/287 [00:00<?, ?it/s]Loading weights:  23%|██▎       | 67/287 [00:00<00:00, 659.09it/s]Loading weights: 100%|██████████| 287/287 [00:00<00:00, 1673.20it/s]
+[0/220] frame_000000 depth (1080, 1920) range 0.18-7.74
+[25/220] frame_000330 depth (1080, 1920) range 0.03-8.85
+[50/220] frame_000650 depth (1080, 1920) range -0.08-7.39
+[75/220] frame_000960 depth (1080, 1920) range -0.16-7.14
+[100/220] frame_001270 depth (1080, 1920) range -0.15-4.75
+[125/220] frame_001560 depth (1080, 1920) range 0.11-6.78
+[150/220] frame_001860 depth (1080, 1920) range -0.07-7.76
+[175/220] frame_002200 depth (1080, 1920) range -0.58-5.27
+[200/220] frame_002490 depth (1080, 1920) range -0.47-6.80
+done: 220 depth maps -> /mnt/d/avv/depth/bonsai_sub
+<<< 220 npy files  DONE 00:43
+>>> depth /mnt/d/avv/data/phase1/private_set2/bonsai/train/images -> /mnt/d/avv/depth/bonsai_full  START 00:43
+Loading weights:   0%|          | 0/287 [00:00<?, ?it/s]Loading weights: 100%|██████████| 287/287 [00:00<00:00, 3299.09it/s]
+[0/248] frame_000000 depth (1080, 1920) range 0.18-7.74
+[25/248] frame_000270 depth (1080, 1920) range 0.00-8.53
+[50/248] frame_000580 depth (1080, 1920) range -0.17-7.00
+[75/248] frame_000840 depth (1080, 1920) range -0.10-8.03
+[100/248] frame_001140 depth (1080, 1920) range -0.60-5.84
+[125/248] frame_001390 depth (1080, 1920) range 0.08-7.10
+[150/248] frame_001650 depth (1080, 1920) range -0.30-9.20
+[175/248] frame_001930 depth (1080, 1920) range -0.14-7.51
+[200/248] frame_002220 depth (1080, 1920) range -0.54-5.00
+[225/248] frame_002480 depth (1080, 1920) range -0.50-6.50
+done: 248 depth maps -> /mnt/d/avv/depth/bonsai_full
+<<< 248 npy files  DONE 00:46

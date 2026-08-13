@@ -1,0 +1,11 @@
+[59999] loss 0.0675 l1 0.0340 ssim 0.8708 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/chair_eval/lpearly60k/ckpt.pt
+Wrote 58 images to /mnt/d/avv/chair_eval/lpearly60k/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_lpearly60k n= 58  PSNR 24.7485  SSIM 0.7808  LPIPSvgg 0.2434  SCORE 68.5364
+=== CHAIR lpearly60k DONE ===

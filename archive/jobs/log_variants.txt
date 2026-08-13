@@ -1,0 +1,62 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+
+-- gsplatB1|B9field (n=60) --
+   scale 0.00  P 24.2324  S 0.84071  L 0.13071  score  74.5324  d +0.0000
+   scale 1.00  P 25.0587  S 0.86132  L 0.12700  score  75.7947  d +1.2623
+   scale 1.15  P 25.1102  S 0.86253  L 0.12685  score  75.8681  d +1.3357
+   scale 1.30  P 25.1357  S 0.86314  L 0.12682  score  75.9027  d +1.3702
+   scale 1.45  P 25.1353  S 0.86316  L 0.12692  score  75.8992  d +1.3668
+   scale 1.60  P 25.1090  S 0.86259  L 0.12713  score  75.8577  d +1.3253
+   best scale 1.3
+
+-- gsplatB8pure|B9field (n=60) --
+   scale 0.00  P 24.2469  S 0.84591  L 0.12197  score  75.0469  d +0.0000
+   scale 1.00  P 25.0714  S 0.86649  L 0.11851  score  76.2970  d +1.2501
+   scale 1.15  P 25.1160  S 0.86752  L 0.11844  score  76.3577  d +1.3108
+   scale 1.30  P 25.1333  S 0.86791  L 0.11851  score  76.3770  d +1.3301
+   scale 1.45  P 25.1235  S 0.86766  L 0.11869  score  76.3562  d +1.3093
+   scale 1.60  P 25.0869  S 0.86679  L 0.11900  score  76.2957  d +1.2487
+   best scale 1.3
+
+-- gsplatB11ut60k|B9field (n=60) --
+   scale 0.00  P 24.4790  S 0.85466  L 0.10907  score  75.9644  d +0.0000
+   scale 1.00  P 25.4177  S 0.87740  L 0.10498  score  77.3733  d +1.4089
+   scale 1.15  P 25.4746  S 0.87869  L 0.10484  score  77.4520  d +1.4876
+   scale 1.30  P 25.5000  S 0.87928  L 0.10484  score  77.4850  d +1.5206
+   scale 1.45  P 25.4939  S 0.87917  L 0.10497  score  77.4726  d +1.5082
+   scale 1.60  P 25.4563  S 0.87836  L 0.10526  score  77.4142  d +1.4498
+   best scale 1.3
+
+-- m31b_nolpips|B9field (n=60) --
+   scale 0.00  P 24.4783  S 0.85340  L 0.13423  score  74.9198  d +0.0000
+   scale 1.00  P 25.3513  S 0.87494  L 0.13011  score  76.2545  d +1.3347
+   scale 1.15  P 25.3987  S 0.87607  L 0.12991  score  76.3250  d +1.4052
+   scale 1.30  P 25.4161  S 0.87652  L 0.12987  score  76.3505  d +1.4307
+   scale 1.45  P 25.4033  S 0.87628  L 0.12996  score  76.3319  d +1.4121
+   scale 1.60  P 25.3608  S 0.87536  L 0.13019  score  76.2699  d +1.3500
+   best scale 1.3
+
+-- gsplatB12ut8Ms7|B9field (n=60) --
+   scale 0.00  P 24.3637  S 0.85029  L 0.11158  score  75.6639  d +0.0000
+   scale 1.00  P 25.2946  S 0.87345  L 0.10740  score  77.0843  d +1.4204
+   scale 1.15  P 25.3573  S 0.87491  L 0.10721  score  77.1733  d +1.5094
+   scale 1.30  P 25.3905  S 0.87569  L 0.10716  score  77.2186  d +1.5547
+   scale 1.45  P 25.3937  S 0.87579  L 0.10724  score  77.2204  d +1.5565
+   scale 1.60  P 25.3667  S 0.87521  L 0.10745  score  77.1783  d +1.5144
+   best scale 1.45
+  fit on 120 pairs -> field 165x123  mean |d| 0.174 px  max 1.73 px
+B11 own field mean|d| 0.17393371
+
+-- gsplatB11ut60k|ownfield (n=60) --
+   scale 0.00  P 24.4790  S 0.85466  L 0.10907  score  75.9644  d +0.0000
+   scale 1.00  P 25.3285  S 0.87534  L 0.10531  score  77.2452  d +1.2808
+   scale 1.15  P 25.4031  S 0.87707  L 0.10504  score  77.3524  d +1.3880
+   scale 1.30  P 25.4565  S 0.87832  L 0.10489  score  77.4278  d +1.4634
+   scale 1.45  P 25.4877  S 0.87907  L 0.10483  score  77.4717  d +1.5073
+   scale 1.60  P 25.4959  S 0.87931  L 0.10486  score  77.4824  d +1.5180
+   best scale 1.6

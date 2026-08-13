@@ -1,0 +1,27 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+pool=pB  k=4  views=60
+  [degeneracy check k=4] max|median-trim1|=0.00e+00  max|median-winsor1|=5.96e-08
+  10/60  (58s)
+  20/60  (116s)
+  30/60  (176s)
+  40/60  (234s)
+  50/60  (292s)
+  60/60  (349s)
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/agg_pB.json
+
+aggregator                SCORE  d(mean)     PSNR    SSIM    LPIPS
+hybridfreq(r=2)         75.3678  +0.0153  24.6251  0.8523   0.1244
+lumguided(med)          75.3604  +0.0079  24.6144  0.8524   0.1245
+blend(a=0.5)            75.3551  +0.0027  24.6400  0.8531   0.1256
+blend(a=0.75)           75.3538  +0.0014  24.6474  0.8533   0.1258
+mean                    75.3525  +0.0000  24.6503  0.8533   0.1259
+huber(c=4.0)            75.3502  -0.0023  24.6485  0.8533   0.1259
+median                  75.3496  -0.0029  24.6121  0.8522   0.1246
+huber(c=1.345)          75.3448  -0.0076  24.6287  0.8529   0.1255
+tukey(c=4.685)          75.3168  -0.0357  24.5969  0.8522   0.1252
+vecmed                  75.2566  -0.0959  24.5445  0.8487   0.1233

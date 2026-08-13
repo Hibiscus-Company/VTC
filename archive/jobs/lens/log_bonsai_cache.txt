@@ -1,0 +1,1 @@
+lens/cache/chairbonsai_bonsai.npz: 124 pairs, 1080x1920, ds=(2, 4, 8, 16, 32)

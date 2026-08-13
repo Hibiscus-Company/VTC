@@ -1,0 +1,17 @@
+[HCM0421v2] pooling global field ...
+  0/25
+  10/25
+  20/25
+
+[HCM0421v2] scored on HELD-OUT BOTTOM HALF only, n=25
+           variant     PSNR    SSIM   partial   vs global
+              none  28.5158  0.9167   44.6115     +0.0000
+        global_med  28.9319  0.9232   45.0538     +0.0000
+   perview_tophalf  27.4384  0.8947   43.3041     -1.7497
+    perview_offset  27.9436  0.9048   43.9091     -1.1447
+    perview_oracle  29.9167  0.9325   45.9256     +0.8718
+
+[HCM0421v2] VERDICT
+  oracle (fitted ON the scored rows, upper bound incl. noise-fitting): +0.8718
+  per-view fitted on HELD-OUT rows (what a real predictor could reach): -1.1447
+  -> if the held-out number is <= 0, the oracle is noise-fitting and the 3D-lift is DEAD.

@@ -1,0 +1,21 @@
+=== bonsai: 10-member mean (7 old + 3 new lam=0.1) ===
+Ensembled 28 images from 10 members -> /mnt/d/avv/r35/bonsai/jpg_tmp
+=== restore lam=0.25, k=10 ===
+restored 28 images (lam=0.25, k=10.0, 3 member(s)) -> /mnt/d/avv/r35/bonsai/png
+=== assemble on r32 (towers + chair byte-verbatim) ===
+re-encoded 28 (bonsai), carried 358 verbatim
+files 386/386  350,604,153 B = 334.36 MiB  headroom 15.64 MiB
+scenes changed vs r32: ['bonsai']
+CRC: OK
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 334.36 MiB / 350.60 MB (limit 350.0 MiB = 367.0 MB)
+VERIFY PASSED
+=== r35 BUILT -- NOT SUBMITTED ===

@@ -1,0 +1,133 @@
+=== HCM0249: 240 train frames, stride 2 -> 120 pairs, path=native ===
+240/306 images.bin entries have files in /home/bkai/data/phase1/private_set1/HCM0249/train/images
+5000000 gaussians, ut=True, k1=+0.008910, 1320x989, path=native
+  25/120
+  50/120
+  75/120
+  100/120
+rendered 120 train views -> /mnt/d/avv/output/HCM0249_gsplatB9ut/train_renders_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.195 px  max 1.67 px
+saved -> /mnt/d/avv/fields/HCM0249.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/ens/private_r7/HCM0249/png
+=== PRIVFIELD HCM0249 DONE (60 imgs) ===
+=== HCM0254: 240 train frames, stride 2 -> 120 pairs, path=native ===
+240/341 images.bin entries have files in /home/bkai/data/phase1/private_set1/HCM0254/train/images
+5000000 gaussians, ut=True, k1=+0.009819, 1320x989, path=native
+  25/120
+  50/120
+  75/120
+  100/120
+rendered 120 train views -> /mnt/d/avv/output/HCM0254_gsplatB9ut/train_renders_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.220 px  max 1.68 px
+saved -> /mnt/d/avv/fields/HCM0254.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/ens/private_r7/HCM0254/png
+=== PRIVFIELD HCM0254 DONE (60 imgs) ===
+=== HCM0276: 240 train frames, stride 2 -> 120 pairs, path=native ===
+240/372 images.bin entries have files in /home/bkai/data/phase1/private_set1/HCM0276/train/images
+5000000 gaussians, ut=True, k1=+0.008102, 1320x989, path=native
+  25/120
+  50/120
+  75/120
+  100/120
+rendered 120 train views -> /mnt/d/avv/output/HCM0276_gsplatB9ut/train_renders_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.191 px  max 1.56 px
+saved -> /mnt/d/avv/fields/HCM0276.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/ens/private_r7/HCM0276/png
+=== PRIVFIELD HCM0276 DONE (60 imgs) ===
+=== HCM1439: 103 train frames, stride 1 -> 103 pairs, path=native ===
+103/129 images.bin entries have files in /home/bkai/data/phase1/private_set1/HCM1439/train/images
+5000000 gaussians, ut=True, k1=+0.007594, 1320x989, path=native
+  25/103
+  50/103
+  75/103
+  100/103
+rendered 103 train views -> /mnt/d/avv/output/HCM1439_gsplatB9ut/train_renders_native
+  fit on 103 pairs -> field 165x123  mean |d| 0.132 px  max 0.99 px
+saved -> /mnt/d/avv/fields/HCM1439.npy (+ .meta.json)
+corrected 26 images -> /mnt/d/avv/ens/private_r7/HCM1439/png
+=== PRIVFIELD HCM1439 DONE (26 imgs) ===
+=== HNI0131: 240 train frames, stride 2 -> 120 pairs, path=warp ===
+240/466 images.bin entries have files in /home/bkai/data/phase1/private_set1/HNI0131/train/images
+5000000 gaussians, ut=True, k1=-0.114794, 1320x989, path=warp pad=92
+  25/120
+  50/120
+  75/120
+  100/120
+rendered 120 train views -> /mnt/d/avv/output/HNI0131_gsplatB9ut/train_renders_warp
+  fit on 120 pairs -> field 165x123  mean |d| 0.275 px  max 5.69 px
+saved -> /mnt/d/avv/fields/HNI0131.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/ens/private_r7/HNI0131/png
+=== PRIVFIELD HNI0131 DONE (60 imgs) ===
+=== HNI0265: 205 train frames, stride 2 -> 102 pairs, path=warp ===
+205/257 images.bin entries have files in /home/bkai/data/phase1/private_set1/HNI0265/train/images
+5000000 gaussians, ut=True, k1=-0.114695, 1320x989, path=warp pad=91
+  25/103
+  50/103
+  75/103
+  100/103
+rendered 103 train views -> /mnt/d/avv/output/HNI0265_gsplatB9ut/train_renders_warp
+  fit on 103 pairs -> field 165x123  mean |d| 0.301 px  max 5.75 px
+saved -> /mnt/d/avv/fields/HNI0265.npy (+ .meta.json)
+corrected 52 images -> /mnt/d/avv/ens/private_r7/HNI0265/png
+=== PRIVFIELD HNI0265 DONE (52 imgs) ===
+=== HNI0366: 240 train frames, stride 2 -> 120 pairs, path=native ===
+240/357 images.bin entries have files in /home/bkai/data/phase1/private_set1/HNI0366/train/images
+5000000 gaussians, ut=True, k1=+0.011961, 1320x989, path=native
+  25/120
+  50/120
+  75/120
+  100/120
+rendered 120 train views -> /mnt/d/avv/output/HNI0366_gsplatB9ut/train_renders_native
+  fit on 120 pairs -> field 165x123  mean |d| 0.169 px  max 1.23 px
+saved -> /mnt/d/avv/fields/HNI0366.npy (+ .meta.json)
+corrected 60 images -> /mnt/d/avv/ens/private_r7/HNI0366/png
+=== PRIVFIELD HNI0366 DONE (60 imgs) ===
+=== HNI0437: 224 train frames, stride 2 -> 112 pairs, path=native ===
+224/280 images.bin entries have files in /home/bkai/data/phase1/private_set1/HNI0437/train/images
+5000000 gaussians, ut=True, k1=+0.013835, 1320x989, path=native
+  25/112
+  50/112
+  75/112
+  100/112
+rendered 112 train views -> /mnt/d/avv/output/HNI0437_gsplatB9ut/train_renders_native
+  fit on 112 pairs -> field 165x123  mean |d| 0.156 px  max 0.98 px
+saved -> /mnt/d/avv/fields/HNI0437.npy (+ .meta.json)
+corrected 56 images -> /mnt/d/avv/ens/private_r7/HNI0437/png
+=== PRIVFIELD HNI0437 DONE (56 imgs) ===
+=== fitted field magnitudes (HNI0131/HNI0265 are the k1=-0.115 pair; a LARGE
+===  field there would confirm the degenerate-fit story) ===
+  HCM0181.npy    mean |d| 0.267 px   max 1.87 px
+  HCM0193.npy    mean |d| 0.225 px   max 1.70 px
+  HCM0204.npy    mean |d| 0.242 px   max 1.62 px
+  HCM0249.npy    mean |d| 0.195 px   max 1.67 px
+  HCM0254.npy    mean |d| 0.220 px   max 1.68 px
+  HCM0276.npy    mean |d| 0.191 px   max 1.56 px
+  HCM1439.npy    mean |d| 0.132 px   max 0.99 px
+  HNI0131.npy    mean |d| 0.275 px   max 5.69 px
+  HNI0265.npy    mean |d| 0.301 px   max 5.75 px
+  HNI0366.npy    mean |d| 0.169 px   max 1.23 px
+  HNI0437.npy    mean |d| 0.156 px   max 0.98 px
+  hcm0031.npy    mean |d| 0.215 px   max 1.40 px
+  hcm0034.npy    mean |d| 0.205 px   max 1.70 px
+438.5MB > 350.0MB, re-encoding HCM0254 at q99
+431.5MB > 350.0MB, re-encoding HCM0249 at q99
+424.5MB > 350.0MB, re-encoding HCM0276 at q99
+417.5MB > 350.0MB, re-encoding HNI0366 at q99
+410.6MB > 350.0MB, re-encoding HNI0131 at q99
+403.6MB > 350.0MB, re-encoding HNI0437 at q99
+397.1MB > 350.0MB, re-encoding HCM0254 at q98
+388.7MB > 350.0MB, re-encoding HCM0249 at q98
+380.2MB > 350.0MB, re-encoding HNI0265 at q99
+374.1MB > 350.0MB, re-encoding HCM0276 at q98
+365.8MB > 350.0MB, re-encoding HNI0366 at q98
+357.9MB > 350.0MB, re-encoding HNI0131 at q98
+OK: /mnt/d/avv/submissions/sub_round7_field_private.zip  350.0MB  434 files
+  HCM0249: q98
+  HCM0254: q98
+  HCM0276: q98
+  HCM1439: q100
+  HNI0131: q98
+  HNI0265: q99
+  HNI0366: q98
+  HNI0437: q99
+PRIVFIELD ZIP DONE

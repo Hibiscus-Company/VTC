@@ -1,0 +1,4 @@
+=== GPU0 free -- LPIPS-weight sweep (towers) Fri Jul 24 21:01:53 +07 2026 ===
+--- lambda_lpips 0.3 ---
+Step 5900: Relocated 190143 GSs.
+Step 5900: Added 149289 GSs. Now having 3135077 GSs.

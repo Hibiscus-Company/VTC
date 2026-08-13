@@ -1,0 +1,49 @@
+Distortion warp enabled, k=+0.008910
+Loading output/HCM0249_champ/point_cloud/iteration_30000/point_cloud.ply
+4722797 gaussians
+Render canvas padding: 4px
+Wrote 60 images to /mnt/d/avv/output/HCM0249_champA/test_poses_renders
+=== renderA HCM0249 done ===
+Distortion warp enabled, k=+0.009819
+Loading output/HCM0254_champ/point_cloud/iteration_30000/point_cloud.ply
+4398002 gaussians
+Render canvas padding: 4px
+Wrote 60 images to /mnt/d/avv/output/HCM0254_champA/test_poses_renders
+=== renderA HCM0254 done ===
+Distortion warp enabled, k=+0.008102
+Loading output/HCM0276_champ/point_cloud/iteration_30000/point_cloud.ply
+5225003 gaussians
+Render canvas padding: 4px
+Wrote 60 images to /mnt/d/avv/output/HCM0276_champA/test_poses_renders
+=== renderA HCM0276 done ===
+Distortion warp enabled, k=+0.007594
+Loading output/HCM1439_champ/point_cloud/iteration_30000/point_cloud.ply
+4207750 gaussians
+Render canvas padding: 4px
+Wrote 26 images to /mnt/d/avv/output/HCM1439_champA/test_poses_renders
+=== renderA HCM1439 done ===
+Distortion warp enabled, k=-0.114794
+Loading output/HNI0131_champ/point_cloud/iteration_30000/point_cloud.ply
+3965575 gaussians
+Render canvas padding: 92px
+Wrote 60 images to /mnt/d/avv/output/HNI0131_champA/test_poses_renders
+=== renderA HNI0131 done ===
+Distortion warp enabled, k=-0.114695
+Loading output/HNI0265_champ/point_cloud/iteration_30000/point_cloud.ply
+5081325 gaussians
+Render canvas padding: 91px
+Wrote 52 images to /mnt/d/avv/output/HNI0265_champA/test_poses_renders
+=== renderA HNI0265 done ===
+Distortion warp enabled, k=+0.011961
+Loading output/HNI0366_champ/point_cloud/iteration_30000/point_cloud.ply
+4376394 gaussians
+Render canvas padding: 4px
+Wrote 60 images to /mnt/d/avv/output/HNI0366_champA/test_poses_renders
+=== renderA HNI0366 done ===
+Distortion warp enabled, k=+0.013835
+Loading output/HNI0437_champ/point_cloud/iteration_30000/point_cloud.ply
+4195915 gaussians
+Render canvas padding: 4px
+Wrote 56 images to /mnt/d/avv/output/HNI0437_champA/test_poses_renders
+=== renderA HNI0437 done ===
+MEMBER A PNG DONE

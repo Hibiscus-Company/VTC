@@ -1,0 +1,37 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60  10s
+  10/60  84s
+  20/60  176s
+  30/60  279s
+  40/60  388s
+  50/60  526s
+
+solo  n=60  lam=1.0  fieldgain=1.3  FULL SHIPPED CHAIN
+                       arm  fam     SCORE     PSNR    SSIM   LPIPS   vs base   MB/60
+                 base_k4UT   UT   78.5277  25.9948  0.8905  0.0946   +0.0000    63.3
+       solo:gsplatB11ut60k   UT   77.4329  25.4978  0.8781  0.1052   -1.0948    64.8
+                  solo:sh3  UTd   77.4329  25.4978  0.8781  0.1052   -1.0948    64.8
+      solo:gsplatB12ut8Ms7   UT   77.1772  25.3874  0.8745  0.1072   -1.3505    64.2
+       solo:m31b_taillpips  UTd   77.1545  25.4328  0.8738  0.1080   -1.3732    65.7
+        solo:gsplatB10ut8M   UT   77.1396  25.3766  0.8741  0.1078   -1.3881    64.3
+           solo:gsplatB9ut   UT   76.7723  25.2793  0.8697  0.1121   -1.7554    63.7
+         solo:m31b_nolpips  UTd   76.3862  25.4092  0.8753  0.1280   -2.1415    63.7
+           solo:e17visnorm  FGS   76.3015  25.1206  0.8679  0.1202   -2.2262    62.4
+         solo:gsplatB8pure   AA   76.2873  25.1271  0.8667  0.1197   -2.2404    61.4
+            solo:e15ceil95  FGS   76.2627  25.1101  0.8677  0.1208   -2.2650    62.4
+         solo:gsplatB4warm   AA   76.1724  25.1254  0.8657  0.1218   -2.3554    60.3
+       solo:gsplatB7ppisp2   AA   76.0389  25.0858  0.8648  0.1239   -2.4888    59.7
+             solo:gsplatB1   AA   75.8499  25.1287  0.8619  0.1271   -2.6778    59.7
+             solo:gsplatB2   AA   75.8412  25.1236  0.8621  0.1274   -2.6865    59.7
+             solo:gsplatB3   AA   75.5580  24.9952  0.8577  0.1293   -2.9697    60.2
+       solo:gsplatB5affine   AA   75.4443  24.9001  0.8624  0.1342   -3.0834    60.3
+               solo:e16app  FGS   75.3346  24.0902  0.8585  0.1219   -3.1932    62.6
+                  solo:sh2  UTd   73.7473  23.5554  0.8391  0.1390   -4.7804    63.2
+                  solo:sh1  UTd   70.2127  21.9633  0.7971  0.1720   -8.3150    62.8
+                  solo:sh0  UTd   68.7950  21.3972  0.7794  0.1857   -9.7327    62.5
+     solo:gsplatB6bilagrid   AA   67.7979  17.5345  0.7811  0.1539  -10.7298    58.5

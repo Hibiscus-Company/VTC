@@ -1,0 +1,3 @@
+8000000 gaussians (mode=classic, ut=True, eps2d=-1.0)
+3DGUT native distorted render, k1=+0.008945 (no warp)
+Wrote 40 images to /mnt/d/avv/r41_towersr/sr005/eval_render

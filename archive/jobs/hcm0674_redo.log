@@ -1,0 +1,5 @@
+=== HCM0674 EMA re-run (clean GPU1) Fri Jul 24 13:35:37 +07 2026 ===
+Saving EMA-averaged params (decay 0.999, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/r17/HCM0674_ut7_ema999/ckpt.pt
+Wrote 60 images to /mnt/d/avv/r17/HCM0674_ut7_ema999/test_render
+=== HCM0674 EMA DONE Fri Jul 24 15:59:19 +07 2026, 60 renders ===

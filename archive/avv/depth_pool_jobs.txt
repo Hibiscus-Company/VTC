@@ -1,0 +1,4 @@
+HCM0421|dp05|0.05|--ut
+HCM0539|dp05|0.05|--ut
+bonsai|dp15|0.15|
+chair|dp15|0.15|

@@ -1,0 +1,42 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/28] frame_000010 66s
+[2/28] frame_000120 131s
+[3/28] frame_000190 195s
+[4/28] frame_000260 259s
+[5/28] frame_000440 323s
+[6/28] frame_000510 387s
+[7/28] frame_000630 449s
+[8/28] frame_000710 514s
+[9/28] frame_000810 577s
+[10/28] frame_000910 643s
+[11/28] frame_001100 706s
+[12/28] frame_001180 768s
+[13/28] frame_001250 833s
+[14/28] frame_001320 895s
+[15/28] frame_001400 950s
+[16/28] frame_001470 1006s
+[17/28] frame_001540 1060s
+[18/28] frame_001640 1114s
+[19/28] frame_001720 1168s
+[20/28] frame_001820 1225s
+[21/28] frame_001930 1280s
+[22/28] frame_002120 1335s
+[23/28] frame_002190 1390s
+[24/28] frame_002260 1445s
+[25/28] frame_002330 1500s
+[26/28] frame_002440 1552s
+[27/28] frame_002510 1604s
+[28/28] frame_002650 1658s
+
+=== DEPTH CURVE THROUGH SHIPPED CHAIN (uint8 + q100 ss2 prog JPEG) ===
+  k=1  PSNR 27.3679 SSIM 0.8495 LPIPS 0.2744 SCORE 70.9310   20.9MB
+  k=2  PSNR 27.6387 SSIM 0.8549 LPIPS 0.2574 SCORE 71.9363  delta +1.0053   19.7MB
+  k=3  PSNR 27.9087 SSIM 0.8596 LPIPS 0.2556 SCORE 72.3116  delta +0.3754   19.3MB
+  k=4  PSNR 27.9042 SSIM 0.8597 LPIPS 0.2542 SCORE 72.3655  delta +0.0538   18.8MB
+  k=5  PSNR 27.8514 SSIM 0.8592 LPIPS 0.2536 SCORE 72.3438  delta -0.0217   18.3MB
+  k=6  PSNR 27.8106 SSIM 0.8594 LPIPS 0.2535 SCORE 72.3262  delta -0.0176   18.2MB

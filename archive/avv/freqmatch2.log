@@ -1,0 +1,20 @@
+tower intrinsics from csv: (926.3566353543065, 926.3566353543065, 660.0, 494.5)
+
+============================================================================================
+BONSAI (shipped capD 5M)  ckpt=capD_5Mearly  n=3 views, cell=16px
+  frame_000000.jpg                   cells  6119  sigma_min med  0.735px  texperiod med  47.57px  ratio med  0.110
+  frame_000920.jpg                   cells  5594  sigma_min med  0.695px  texperiod med  64.98px  ratio med  0.061
+  frame_001800.jpg                   cells  4761  sigma_min med  0.689px  texperiod med  73.80px  ratio med  0.055
+  --> RATIO (4*sigma_finest / texture_period): med 0.070  p25 0.031  p75 0.202  frac>1 (gaussians COARSER than texture) 3.7%
+
+============================================================================================
+TOWER HCM0421 (ut42 8M)  ckpt=HCM0421_ut42  n=3 views, cell=16px
+  DJI_20241230093301_0003_V.JPG      cells  3287  sigma_min med  0.580px  texperiod med  61.73px  ratio med  0.058
+  DJI_20241230093536_0099_V.JPG      cells  4997  sigma_min med  0.571px  texperiod med  58.33px  ratio med  0.040
+  DJI_20241230093940_0253_V.JPG      cells  4997  sigma_min med  0.560px  texperiod med  57.78px  ratio med  0.040
+  --> RATIO (4*sigma_finest / texture_period): med 0.043  p25 0.025  p75 0.083  frac>1 (gaussians COARSER than texture) 0.3%
+
+============================================================================================
+VERDICT INPUT: bonsai median ratio 0.070 vs tower 0.043
+  ratio > 1  => gaussians coarser than the texture they must carry => densification is the bottleneck
+  ratio < 1  => gaussians already finer than the texture => the kernel/rasteriser is

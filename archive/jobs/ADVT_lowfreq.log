@@ -1,0 +1,43 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+
+### HCM0181 n=20 rmsD 3.705/255  view-consistent share 17.8%  per-img-globalRGB share 29.5%  const-globalRGB share 13.1%
+  oracle_lowpass     PSNR  26.516 SSIM 0.8908 LPIPS 0.09992 dScore  +0.3167
+  LOVO_meanfield     PSNR  26.075 SSIM 0.8898 LPIPS 0.10034 dScore  +0.0060
+  oracle_globalRGB   PSNR  26.150 SSIM 0.8898 LPIPS 0.10026 dScore  +0.0556
+  LOVO_globalRGB     PSNR  26.085 SSIM 0.8899 LPIPS 0.10029 dScore  +0.0176
+
+### HCM0193 n=20 rmsD 3.693/255  view-consistent share 5.4%  per-img-globalRGB share 32.5%  const-globalRGB share 0.3%
+  oracle_lowpass     PSNR  26.825 SSIM 0.8617 LPIPS 0.12712 dScore  +0.3959
+  LOVO_meanfield     PSNR  26.235 SSIM 0.8608 LPIPS 0.12801 dScore  -0.0207
+  oracle_globalRGB   PSNR  26.418 SSIM 0.8609 LPIPS 0.12789 dScore  +0.0968
+  LOVO_globalRGB     PSNR  26.241 SSIM 0.8608 LPIPS 0.12799 dScore  -0.0142
+
+### HCM0204 n=20 rmsD 3.692/255  view-consistent share 6.2%  per-img-globalRGB share 14.3%  const-globalRGB share 1.3%
+  oracle_lowpass     PSNR  26.301 SSIM 0.8786 LPIPS 0.11502 dScore  +0.3410
+  LOVO_meanfield     PSNR  25.805 SSIM 0.8778 LPIPS 0.11585 dScore  -0.0124
+  oracle_globalRGB   PSNR  25.861 SSIM 0.8779 LPIPS 0.11571 dScore  +0.0277
+  LOVO_globalRGB     PSNR  25.820 SSIM 0.8779 LPIPS 0.11578 dScore  +0.0011
+
+### hcm0031 n=20 rmsD 5.595/255  view-consistent share 6.6%  per-img-globalRGB share 19.0%  const-globalRGB share 0.3%
+  oracle_lowpass     PSNR  25.890 SSIM 0.8371 LPIPS 0.14606 dScore  +0.6371
+  LOVO_meanfield     PSNR  24.958 SSIM 0.8352 LPIPS 0.14708 dScore  -0.0206
+  oracle_globalRGB   PSNR  25.086 SSIM 0.8354 LPIPS 0.14698 dScore  +0.0675
+  LOVO_globalRGB     PSNR  24.972 SSIM 0.8352 LPIPS 0.14703 dScore  -0.0074
+
+### hcm0034 n=20 rmsD 5.165/255  view-consistent share 6.6%  per-img-globalRGB share 13.3%  const-globalRGB share 1.3%
+  oracle_lowpass     PSNR  26.479 SSIM 0.8766 LPIPS 0.12191 dScore  +0.5859
+  LOVO_meanfield     PSNR  25.616 SSIM 0.8751 LPIPS 0.12325 dScore  -0.0294
+  oracle_globalRGB   PSNR  25.727 SSIM 0.8753 LPIPS 0.12301 dScore  +0.0507
+  LOVO_globalRGB     PSNR  25.648 SSIM 0.8752 LPIPS 0.12313 dScore  -0.0020
+
+============ POOLED 5 TOWERS ============
+base PSNR 25.7517 SSIM 0.86781 LPIPS 0.12279 score 76.5738
+  oracle_lowpass     PSNR 26.4025 SSIM 0.86893 LPIPS 0.12201 dScore  +0.4553 (5/5 score-positive)   LBequiv(5/7) +0.3252
+  LOVO_meanfield     PSNR 25.7377 SSIM 0.86774 LPIPS 0.12291 dScore  -0.0154 (1/5 score-positive)   LBequiv(5/7) -0.0110
+  oracle_globalRGB   PSNR 25.8485 SSIM 0.86784 LPIPS 0.12277 dScore  +0.0596 (5/5 score-positive)   LBequiv(5/7) +0.0426
+  LOVO_globalRGB     PSNR 25.7533 SSIM 0.86782 LPIPS 0.12284 dScore  -0.0010 (2/5 score-positive)   LBequiv(5/7) -0.0007
+view-consistent share mean 8.5%  per-img-globalRGB 21.7%  const-globalRGB 3.3%
+DONE

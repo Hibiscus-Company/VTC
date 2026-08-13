@@ -1,0 +1,32 @@
+=== [GPU 1] HCM0181 -> output/HCM0181_e08gate2 ===
+=== [GPU 1] queue 'e08gate2' done ===
+=== [GPU 1] HCM0181 -> output/HCM0181_e09prune98 ===
+=== [GPU 1] queue 'e09prune98' done ===
+=== score e08gate2 ===
+HCM0181    n= 60  PSNR 24.3150  SSIM 0.8469  LPIPS(alex) 0.0838 LPIPS(vgg) 0.1224  Score(alex) 0.7664  Score(vgg) 0.7510
+  Score(alex)  = 76.6438   [0.4*(1-LPIPS)=0.3665  0.3*SSIM=0.2541  0.3*PSNRn=0.1459]  (psnr_max=50.0)
+  Score(vgg)  = 75.1010   [0.4*(1-LPIPS)=0.3511  0.3*SSIM=0.2541  0.3*PSNRn=0.1459]  (psnr_max=50.0)
+=== score e09prune98 ===
+HCM0181    n= 60  PSNR 24.2672  SSIM 0.8443  LPIPS(alex) 0.0885 LPIPS(vgg) 0.1251  Score(alex) 0.7635  Score(vgg) 0.7489
+  Score(alex)  = 76.3474   [0.4*(1-LPIPS)=0.3646  0.3*SSIM=0.2533  0.3*PSNRn=0.1456]  (psnr_max=50.0)
+  Score(vgg)  = 74.8855   [0.4*(1-LPIPS)=0.3500  0.3*SSIM=0.2533  0.3*PSNRn=0.1456]  (psnr_max=50.0)
+GATES DONE
+=== [GPU 1] HCM0181 -> output/HCM0181_e07a_l02 ===
+=== [GPU 1] queue 'e07a_l02' done ===
+=== [GPU 1] HCM0181 -> output/HCM0181_e07b_l005 ===
+=== [GPU 1] queue 'e07b_l005' done ===
+=== [GPU 1] HCM0181 -> output/HCM0181_e07c_l01f20 ===
+=== [GPU 1] queue 'e07c_l01f20' done ===
+=== score e07a_l02 ===
+HCM0181    n= 60  PSNR 24.2343  SSIM 0.8429  LPIPS(alex) 0.0869 LPIPS(vgg) 0.1230  Score(alex) 0.7635  Score(vgg) 0.7491
+  Score(alex)  = 76.3526   [0.4*(1-LPIPS)=0.3652  0.3*SSIM=0.2529  0.3*PSNRn=0.1454]  (psnr_max=50.0)
+  Score(vgg)  = 74.9065   [0.4*(1-LPIPS)=0.3508  0.3*SSIM=0.2529  0.3*PSNRn=0.1454]  (psnr_max=50.0)
+=== score e07b_l005 ===
+HCM0181    n= 60  PSNR 24.2523  SSIM 0.8446  LPIPS(alex) 0.0900 LPIPS(vgg) 0.1279  Score(alex) 0.7629  Score(vgg) 0.7477
+  Score(alex)  = 76.2887   [0.4*(1-LPIPS)=0.3640  0.3*SSIM=0.2534  0.3*PSNRn=0.1455]  (psnr_max=50.0)
+  Score(vgg)  = 74.7712   [0.4*(1-LPIPS)=0.3488  0.3*SSIM=0.2534  0.3*PSNRn=0.1455]  (psnr_max=50.0)
+=== score e07c_l01f20 ===
+HCM0181    n= 60  PSNR 24.2117  SSIM 0.8436  LPIPS(alex) 0.0879 LPIPS(vgg) 0.1237  Score(alex) 0.7632  Score(vgg) 0.7489
+  Score(alex)  = 76.3206   [0.4*(1-LPIPS)=0.3648  0.3*SSIM=0.2531  0.3*PSNRn=0.1453]  (psnr_max=50.0)
+  Score(vgg)  = 74.8895   [0.4*(1-LPIPS)=0.3505  0.3*SSIM=0.2531  0.3*PSNRn=0.1453]  (psnr_max=50.0)
+QUEUE DONE

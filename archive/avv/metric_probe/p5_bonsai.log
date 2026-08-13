@@ -1,0 +1,26 @@
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  sigma-bin gain lookup (SSIM-opt): [1.823 3.907 4.    2.559 1.766 1.342 1.027 1.   ] 
+  (MSE-opt): [0.225 0.516 0.776 0.987 1.1   1.018 0.854 0.971]
+   img 1 done
+   img 3 done
+   img 5 done
+  sigma-bin gain lookup (SSIM-opt): [2.031 2.564 2.487 2.061 1.567 1.202 1.058 1.   ] 
+  (MSE-opt): [0.246 0.453 0.607 0.653 0.678 0.776 0.89  0.957]
+   img 0 done
+   img 2 done
+   img 4 done
+
+=== P5 bonsai n=6 2-fold CV local-contrast gain ===
+ssimlut_lam0.0   PSNR 25.6340(+0.0000)  SSIM 0.80766(+0.00000)  LPIPS 0.27921(+0.00000)  SCORE  68.4419  d +0.0000
+ssimlut_lam0.25  PSNR 25.6023(-0.0317)  SSIM 0.80527(-0.00239)  LPIPS 0.28777(+0.00857)  SCORE  68.0085  d -0.4334
+ssimlut_lam0.5   PSNR 25.5602(-0.0738)  SSIM 0.80129(-0.00637)  LPIPS 0.30403(+0.02483)  SCORE  67.2135  d -1.2284
+ssimlut_lam0.75  PSNR 25.5112(-0.1228)  SSIM 0.79695(-0.01071)  LPIPS 0.32009(+0.04088)  SCORE  66.4115  d -2.0304
+ssimlut_lam1.0   PSNR 25.4615(-0.1724)  SSIM 0.79401(-0.01365)  LPIPS 0.33101(+0.05180)  SCORE  65.8567  d -2.5851
+mselut_lam1.0    PSNR 25.6518(+0.0178)  SSIM 0.80529(-0.00237)  LPIPS 0.28730(+0.00809)  SCORE  68.0580  d -0.3839
+flat_g1.10       PSNR 25.6122(-0.0218)  SSIM 0.80769(+0.00003)  LPIPS 0.27901(-0.00020)  SCORE  68.4376  d -0.0043
+flat_g1.25       PSNR 25.5615(-0.0725)  SSIM 0.80710(-0.00056)  LPIPS 0.28067(+0.00146)  SCORE  68.3232  d -0.1187

@@ -1,0 +1,34 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  [HCM0181] 0/60 3s
+  [HCM0181] 20/60 44s
+  [HCM0181] 40/60 88s
+[HCM0181] done 126s
+  [HCM0193] 0/60 2s
+  [HCM0193] 20/60 35s
+  [HCM0193] 40/60 68s
+[HCM0193] done 103s
+  [HCM0204] 0/60 4s
+  [HCM0204] 20/60 39s
+  [HCM0204] 40/60 74s
+[HCM0204] done 108s
+  [hcm0031] 0/50 2s
+  [hcm0031] 20/50 41s
+  [hcm0031] 40/50 77s
+[hcm0031] done 92s
+  [hcm0034] 0/60 2s
+  [hcm0034] 20/60 41s
+  [hcm0034] 40/60 76s
+[hcm0034] done 108s
+
+               variant      MEAN  d(base)    HCM0181    HCM0193    HCM0204    hcm0031    hcm0034
+                  none   75.7646  -1.0374    -1.3725    -0.9767    -1.0630    -0.8132    -0.9614
+            median_ds8   76.8020  +0.0000    +0.0000    +0.0000    +0.0000    +0.0000    +0.0000
+          med_ds8_rlan   76.9098  +0.1078    +0.1337    +0.1127    +0.0909    +0.0952    +0.1062
+         med_ds8_rspl5   76.9122  +0.1102    +0.1356    +0.1169    +0.0930    +0.0966    +0.1090
+       med_ds8_g1_rlan   76.9115  +0.1095    +0.1359    +0.1140    +0.0924    +0.0979    +0.1072
+         med_ds16_rlan   76.9105  +0.1085    +0.1346    +0.1142    +0.0911    +0.0967    +0.1060

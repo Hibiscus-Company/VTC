@@ -1,0 +1,44 @@
+PREFLIGHT /mnt/d/avv/data/phase1/private_set2  (6 scenes)
+
+scene        model          WxH                k1 path     train  test  status
+HCM0421      SIMPLE_RADIAL  (1320, 989)  +0.00894 native     240    60  OK
+HCM0539      SIMPLE_RADIAL  (1320, 989)  +0.00810 native     240    60  OK
+HCM0540      SIMPLE_RADIAL  (1320, 989)  +0.00887 native     240    60  OK
+HCM0644      SIMPLE_RADIAL  (1320, 989)  +0.00903 native     240    60  OK
+HCM0674      SIMPLE_RADIAL  (1320, 989)  +0.00881 native     240    60  OK
+chair        SIMPLE_PINHOLE (720, 1280)  +0.00000 native     205    58  OK
+
+PREFLIGHT PASSED
+Ensembled 60 images from 2 members -> /mnt/d/avv/r2r9/ens/HCM0421/jpg
+corrected 60 images -> /mnt/d/avv/r2r9/ens/HCM0421/png
+Ensembled 60 images from 2 members -> /mnt/d/avv/r2r9/ens/HCM0539/jpg
+corrected 60 images -> /mnt/d/avv/r2r9/ens/HCM0539/png
+Ensembled 60 images from 2 members -> /mnt/d/avv/r2r9/ens/HCM0540/jpg
+corrected 60 images -> /mnt/d/avv/r2r9/ens/HCM0540/png
+Ensembled 60 images from 2 members -> /mnt/d/avv/r2r9/ens/HCM0644/jpg
+corrected 60 images -> /mnt/d/avv/r2r9/ens/HCM0644/png
+Ensembled 60 images from 2 members -> /mnt/d/avv/r2r9/ens/HCM0674/jpg
+corrected 60 images -> /mnt/d/avv/r2r9/ens/HCM0674/png
+Ensembled 58 images from 2 members -> /mnt/d/avv/r2r9/ens/chair/jpg
+corrected 58 images -> /mnt/d/avv/r2r9/ens/chair/png
+OK: /mnt/d/avv/submissions/sub_round11_towerschair_tmp.zip  343.4MB  358 files
+  HCM0421: q100
+  HCM0539: q100
+  HCM0540: q100
+  HCM0644: q100
+  HCM0674: q100
+  chair: q100
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai: FAIL  missing=28 extra=0
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 358/386   size 343.4 MB (limit 350.0)
+
+VERIFY FAILED:
+  - bonsai: 28 missing, 0 extra
+  - zip holds 358 files, expected 386

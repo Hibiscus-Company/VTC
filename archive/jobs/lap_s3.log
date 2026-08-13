@@ -1,0 +1,83 @@
+
+================================================================================================
+A. k-CURVE -- does the gain decay with ensemble depth (cleanup-class => DANGER) or hold/grow?
+================================================================================================
+ k  pixel-mean   energy n1   d(energy)    pnorm n1    d(pnorm)
+harness: 60 poses x 2 members ['m1', 'm2']
+ 2     76.0694     76.1599     +0.0905     76.1580     +0.0886
+harness: 60 poses x 3 members ['m1', 'm2', 'm3']
+ 3     76.5762     76.7160     +0.1398     76.7007     +0.1245
+harness: 60 poses x 4 members ['m1', 'm2', 'm3', 'm4']
+ 4     76.6749     76.8491     +0.1742     76.8351     +0.1603
+harness: 60 poses x 4 members ['m1', 'm2', 'm3', 'm4']
+
+================================================================================================
+B. POST-JPEG (q100 ss2 prog -- the SHIPPED encode). production writes JPEG, so this is the
+   number that actually ships.
+================================================================================================
+config                                     SCORE   dScore     PSNR    SSIM    LPIPS
+pixelmean  [PNG]                         76.6749  +0.0000  24.9018  0.8650   0.1054
+pixelmean  [JPEG shipped]                76.6936  +0.0188  24.8918  0.8637   0.1038
+energy_n1_lam1.0_win5  [PNG]             76.8491  +0.1742  24.8419  0.8654   0.1005
+energy_n1_lam1.0_win5  [JPEG]            76.8070  +0.1134  24.8317  0.8640   0.1003
+pnorm_n1_p2.0_win3  [PNG]                76.8351  +0.1603  24.8543  0.8650   0.1007
+pnorm_n1_p2.0_win3  [JPEG]               76.8007  +0.1071  24.8436  0.8636   0.1003
+energy_n1_lam1.5_win5  [PNG]             76.8587  +0.1839  24.8023  0.8653   0.0995
+energy_n1_lam1.5_win5  [JPEG]            76.7968  +0.1032  24.7920  0.8638   0.0998
+gain_n1_g1.02  [PNG]                     76.7377  +0.0628  24.8810  0.8653   0.1037
+gain_n1_g1.02  [JPEG]                    76.7287  +0.0351  24.8707  0.8639   0.1028
+
+================================================================================================
+C. PARAMETER SWEEP (PNG). fitted params = (lam, win, rmax); cross-validated below.
+================================================================================================
+config                                     SCORE   dScore     PSNR    SSIM    LPIPS
+energy_n1_lam0.75_win3                   76.8473  +0.1725  24.8593  0.8654   0.1007
+energy_n1_lam0.75_win5                   76.8267  +0.1519  24.8592  0.8654   0.1013
+energy_n1_lam0.75_win9                   76.7995  +0.1246  24.8601  0.8655   0.1020
+energy_n1_lam0.75_win17                  76.7748  +0.1000  24.8610  0.8655   0.1027
+energy_n1_lam1.0_win3                    76.8736  +0.1988  24.8414  0.8653   0.0998
+energy_n1_lam1.0_win5                    76.8491  +0.1742  24.8419  0.8654   0.1005
+energy_n1_lam1.0_win9                    76.8156  +0.1408  24.8437  0.8656   0.1014
+energy_n1_lam1.0_win17                   76.7847  +0.1099  24.8452  0.8656   0.1022
+energy_n1_lam1.25_win3                   76.8848  +0.2099  24.8214  0.8652   0.0991
+energy_n1_lam1.25_win5                   76.8593  +0.1844  24.8229  0.8654   0.0999
+energy_n1_lam1.25_win9                   76.8235  +0.1486  24.8258  0.8656   0.1010
+energy_n1_lam1.25_win17                  76.7896  +0.1148  24.8282  0.8656   0.1019
+energy_n1_lam1.5_win3                    76.8821  +0.2072  24.7993  0.8650   0.0987
+energy_n1_lam1.5_win5                    76.8587  +0.1839  24.8023  0.8653   0.0995
+energy_n1_lam1.5_win9                    76.8233  +0.1484  24.8065  0.8655   0.1007
+energy_n1_lam1.5_win17                   76.7890  +0.1142  24.8099  0.8656   0.1017
+energy_n1_lam1.0_rmax1.5_win5            76.8259  +0.1510  24.8457  0.8656   0.1012
+energy_n1_lam1.0_rmax2.0_win5            76.8465  +0.1717  24.8427  0.8655   0.1006
+energy_n1_lam1.0_rmax8.0_win5            76.8491  +0.1742  24.8419  0.8654   0.1005
+
+================================================================================================
+D. CONTROLS -- is the real ensemble-disagreement map load-bearing?
+   'const'   = same per-image AVERAGE boost, no spatial map
+   'shuffle' = same boost HISTOGRAM, spatially scrambled
+   'blurNNN' = boost map smoothed over NNN px
+================================================================================================
+config                                     SCORE   dScore     PSNR    SSIM    LPIPS
+energy_n1_lam1.0_mapraw_win5             76.8491  +0.1742  24.8419  0.8654   0.1005
+energy_n1_lam1.0_mapconst_win5           76.6461  -0.0287  24.7108  0.8650   0.1032
+energy_n1_lam1.0_mapshuffle_win5         76.0472  -0.6277  24.4992  0.8586   0.1102
+energy_n1_lam1.0_mapblur33_win5          76.7412  +0.0663  24.7860  0.8653   0.1022
+energy_n1_lam1.0_mapblur129_win5         76.6891  +0.0143  24.7426  0.8652   0.1028
+
+================================================================================================
+E. CROSS-FAMILY TRANSFER -- fixed (lam=1.0,win=5,n=1) on member families it was NOT tuned on
+================================================================================================
+family                   pixel-mean      energy      delta
+harness: 60 poses x 4 members ['m1', 'm2', 'm3', 'm4']
+UT prod (tuned on)          76.6749     76.8491    +0.1742
+harness: 60 poses x 4 members ['s0', 's1', 's2', 's3']
+sh0-sh3                     72.5531     72.6718    +0.1187
+harness: 60 poses x 4 members ['b1', 'b2', 'b3', 'b8']
+Traceback (most recent call last):
+  File "/home/bkai/.claude/jobs/1c9cf7e9/tmp/lap_s3_main.py", line 119, in <module>
+    b = run(Hf, None, "f_" + fname.split()[0])
+  File "/home/bkai/.claude/jobs/1c9cf7e9/tmp/lap_s3_main.py", line 31, in run
+    np.save(f, rows)
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/numpy/lib/npyio.py", line 542, in save
+    file_ctx = open(file, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/bkai/.claude/jobs/1c9cf7e9/tmp/lap_rows/f_gsplatB1/2/3/8_png__pixelmean.npy'

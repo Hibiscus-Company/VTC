@@ -1,0 +1,18 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+BONSAI lambda sweep, n=28 held-out frames, k=6 members, shipped encode
+
+  lam    PSNR    SSIM   LPIPS    SCORE  d(lam=0)   MB/28
+ 0.00  27.431  0.8560  0.2546   71.955    +0.000   18.06
+ 0.25  27.429  0.8556  0.2649   71.531    -0.424   19.21
+ 0.50  27.426  0.8554  0.2682   71.390    -0.565   19.83
+ 0.75  27.421  0.8549  0.2753   71.088    -0.867   20.62
+ 1.00  27.415  0.8544  0.2830   70.760    -1.195   21.37
+ 1.50  27.399  0.8530  0.2965   70.172    -1.783   22.75
+ 2.00  27.378  0.8513  0.3079   69.650    -2.304   23.98
+
+r32 ships lam=0.25. LB value of a bonsai gain g is g/7.

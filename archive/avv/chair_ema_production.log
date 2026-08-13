@@ -1,0 +1,6 @@
+=== GPU1 free (chair_ema999 eval-split test done), starting chair EMA PRODUCTION Thu Jul 23 02:06:07 +07 2026 ===
+[59999] loss 0.0603 l1 0.0276 ssim 0.8774 N 8000000
+Saving EMA-averaged params (decay 0.99, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/r17/chair_ema099_seed42/ckpt.pt
+Wrote 58 images to /mnt/d/avv/r17/chair_ema099_seed42/test_render
+=== CHAIR EMA PRODUCTION DONE Thu Jul 23 04:24:48 +07 2026, 58 test renders ready ===

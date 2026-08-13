@@ -1,0 +1,18 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+pool=pD mode=extrap k=4 views=60
+  15/60 (128s)
+  30/60 (212s)
+  45/60 (314s)
+  60/60 (486s)
+
+variant                    SCORE   d(mean)     PSNR    SSIM   LPIPS
+al_extrap2.00            76.2076   +0.0442  24.9070  0.8631  0.1158
+al_extrap1.50            76.2037   +0.0403  24.9254  0.8635  0.1164
+al_extrap1.25            76.1991   +0.0357  24.9329  0.8636  0.1167
+al_l1.00                 76.1931   +0.0297  24.9393  0.8637  0.1170
+mean                     76.1634   +0.0000  24.9527  0.8636  0.1179

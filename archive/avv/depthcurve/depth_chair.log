@@ -1,0 +1,85 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+[1/58] frame_000005  41s
+[2/58] frame_000015  86s
+[3/58] frame_000045  129s
+[4/58] frame_000055  171s
+[5/58] frame_000085  213s
+[6/58] frame_000100  254s
+[7/58] frame_000110  297s
+[8/58] frame_000120  340s
+[9/58] frame_000130  382s
+[10/58] frame_000140  424s
+[11/58] frame_000175  470s
+[12/58] frame_000185  513s
+[13/58] frame_000225  556s
+[14/58] frame_000235  598s
+[15/58] frame_000280  644s
+[16/58] frame_000295  688s
+[17/58] frame_000335  730s
+[18/58] frame_000345  773s
+[19/58] frame_000355  816s
+[20/58] frame_000425  859s
+[21/58] frame_000475  902s
+[22/58] frame_000485  946s
+[23/58] frame_000495  988s
+[24/58] frame_000520  1031s
+[25/58] frame_000560  1072s
+[26/58] frame_000575  1114s
+[27/58] frame_000585  1157s
+[28/58] frame_000640  1199s
+[29/58] frame_000695  1239s
+[30/58] frame_000705  1284s
+[31/58] frame_000755  1326s
+[32/58] frame_000765  1368s
+[33/58] frame_000775  1410s
+[34/58] frame_000785  1453s
+[35/58] frame_000815  1496s
+[36/58] frame_000825  1539s
+[37/58] frame_000835  1581s
+[38/58] frame_000845  1623s
+[39/58] frame_000905  1666s
+[40/58] frame_000920  1707s
+[41/58] frame_000955  1749s
+[42/58] frame_000965  1792s
+[43/58] frame_000975  1833s
+[44/58] frame_000985  1876s
+[45/58] frame_001020  1916s
+[46/58] frame_001030  1958s
+[47/58] frame_001040  2002s
+[48/58] frame_001050  2045s
+[49/58] frame_001060  2087s
+[50/58] frame_001090  2132s
+[51/58] frame_001100  2177s
+[52/58] frame_001125  2223s
+[53/58] frame_001150  2266s
+[54/58] frame_001160  2314s
+[55/58] frame_001175  2361s
+[56/58] frame_001185  2405s
+[57/58] frame_001245  2450s
+[58/58] frame_001275  2497s
+
+=== SOLO ===
+  eval_png                 PSNR 25.1490 SSIM 0.7942 LPIPS 0.2277 SCORE 69.8052
+  eval_png                 PSNR 25.1263 SSIM 0.7933 LPIPS 0.2283 SCORE 69.7417
+  eval_png                 PSNR 25.1164 SSIM 0.7943 LPIPS 0.2379 SCORE 69.3827
+  eval_png                 PSNR 25.1520 SSIM 0.7950 LPIPS 0.2324 SCORE 69.6461
+  eval_png                 PSNR 25.0200 SSIM 0.7843 LPIPS 0.2462 SCORE 68.6936
+  eval_png                 PSNR 25.0570 SSIM 0.7900 LPIPS 0.2352 SCORE 69.3286
+  eval_png                 PSNR 24.8331 SSIM 0.7755 LPIPS 0.2577 SCORE 67.8595
+  eval_png                 PSNR 24.9112 SSIM 0.7891 LPIPS 0.2350 SCORE 69.2171
+  eval_png                 PSNR 25.0494 SSIM 0.7808 LPIPS 0.2622 SCORE 67.9672
+=== CUMULATIVE PIXEL-MEAN DEPTH CURVE ===
+  k=1  PSNR 25.1490 SSIM 0.7942 LPIPS 0.2277 SCORE 69.8052
+  k=2  PSNR 25.5554 SSIM 0.8075 LPIPS 0.2196 SCORE 70.7741  delta +0.9689
+  k=3  PSNR 25.7272 SSIM 0.8135 LPIPS 0.2207 SCORE 71.0139  delta +0.2399
+  k=4  PSNR 25.7851 SSIM 0.8159 LPIPS 0.2213 SCORE 71.0942  delta +0.0802
+  k=5  PSNR 25.8556 SSIM 0.8169 LPIPS 0.2229 SCORE 71.1019  delta +0.0077
+  k=6  PSNR 25.8791 SSIM 0.8178 LPIPS 0.2230 SCORE 71.1400  delta +0.0381
+  k=7  PSNR 25.9177 SSIM 0.8179 LPIPS 0.2247 SCORE 71.0976  delta -0.0423
+  k=8  PSNR 25.9178 SSIM 0.8184 LPIPS 0.2245 SCORE 71.1226  delta +0.0250
+  k=9  PSNR 25.9514 SSIM 0.8187 LPIPS 0.2256 SCORE 71.1089  delta -0.0137

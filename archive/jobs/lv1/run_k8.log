@@ -1,0 +1,49 @@
+k=8 n=20 workers=5 arms=['base', 'L0', 'L0+L1_0.5', 'L0+L1_1.0', 'L1only_1.0']
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/20 DJI_20241229103346_0032_V  base:-0.1725  L0:+0.0000  L0+L1_0.5:-0.0192  L0+L1_1.0:-0.0499  L1only_1.0:-0.1845
+  2/20 DJI_20241229103341_0027_V  base:-0.2608  L0:+0.0000  L0+L1_0.5:-0.0229  L0+L1_1.0:-0.0609  L1only_1.0:-0.2567
+  3/20 DJI_20241229103340_0026_V  base:-0.2717  L0:+0.0000  L0+L1_0.5:-0.0203  L0+L1_1.0:-0.0533  L1only_1.0:-0.2634
+  4/20 DJI_20241229103342_0028_V  base:-0.2959  L0:+0.0000  L0+L1_0.5:-0.0203  L0+L1_1.0:-0.0513  L1only_1.0:-0.2852
+  5/20 DJI_20241229103355_0037_V  base:-0.2891  L0:+0.0000  L0+L1_0.5:-0.0176  L0+L1_1.0:-0.0450  L1only_1.0:-0.2795
+  6/20 DJI_20241229103357_0039_V  base:-0.3076  L0:+0.0000  L0+L1_0.5:-0.0150  L0+L1_1.0:-0.0387  L1only_1.0:-0.2964
+  7/20 DJI_20241229103402_0044_V  base:-0.3119  L0:+0.0000  L0+L1_0.5:-0.0149  L0+L1_1.0:-0.0385  L1only_1.0:-0.2998
+  8/20 DJI_20241229103359_0041_V  base:-0.3167  L0:+0.0000  L0+L1_0.5:-0.0151  L0+L1_1.0:-0.0384  L1only_1.0:-0.3082
+  9/20 DJI_20241229103358_0040_V  base:-0.3204  L0:+0.0000  L0+L1_0.5:-0.0140  L0+L1_1.0:-0.0358  L1only_1.0:-0.3121
+  10/20 DJI_20241229103404_0046_V  base:-0.3329  L0:+0.0000  L0+L1_0.5:-0.0143  L0+L1_1.0:-0.0360  L1only_1.0:-0.3242
+  11/20 DJI_20241229103421_0063_V  base:-0.3296  L0:+0.0000  L0+L1_0.5:-0.0137  L0+L1_1.0:-0.0344  L1only_1.0:-0.3210
+  12/20 DJI_20241229103407_0049_V  base:-0.3354  L0:+0.0000  L0+L1_0.5:-0.0136  L0+L1_1.0:-0.0336  L1only_1.0:-0.3264
+  13/20 DJI_20241229103426_0068_V  base:-0.3319  L0:+0.0000  L0+L1_0.5:-0.0129  L0+L1_1.0:-0.0326  L1only_1.0:-0.3223
+  14/20 DJI_20241229103427_0069_V  base:-0.3362  L0:+0.0000  L0+L1_0.5:-0.0119  L0+L1_1.0:-0.0311  L1only_1.0:-0.3257
+  15/20 DJI_20241229103440_0072_V  base:-0.3382  L0:+0.0000  L0+L1_0.5:-0.0110  L0+L1_1.0:-0.0299  L1only_1.0:-0.3260
+  16/20 DJI_20241229103448_0080_V  base:-0.3331  L0:+0.0000  L0+L1_0.5:-0.0106  L0+L1_1.0:-0.0288  L1only_1.0:-0.3209
+  17/20 DJI_20241229103505_0097_V  base:-0.3405  L0:+0.0000  L0+L1_0.5:-0.0109  L0+L1_1.0:-0.0292  L1only_1.0:-0.3283
+  18/20 DJI_20241229103553_0118_V  base:-0.3365  L0:+0.0000  L0+L1_0.5:-0.0107  L0+L1_1.0:-0.0282  L1only_1.0:-0.3245
+  19/20 DJI_20241229103545_0110_V  base:-0.3387  L0:+0.0000  L0+L1_0.5:-0.0109  L0+L1_1.0:-0.0281  L1only_1.0:-0.3273
+  20/20 DJI_20241229103600_0125_V  base:-0.3352  L0:+0.0000  L0+L1_0.5:-0.0102  L0+L1_1.0:-0.0267  L1only_1.0:-0.3239
+
+FULL SHIPPED CHAIN (mean -> restore -> median field lanczos4 -> JPEG q100/ss2), HCM0181 real test GT, k=8, n=20
+         arm     SCORE     PSNR    SSIM    LPIPS   vs base     vs L0  paired se   MB/60
+        base   77.9873  25.7996  0.8902   0.1050   +0.0000   -0.3352     0.0159   59.34
+          L0   78.3225  25.7751  0.8929   0.0982   +0.3352   +0.0000     0.0000   60.98
+   L0+L1_0.5   78.3123  25.7646  0.8930   0.0984   +0.3250   -0.0102     0.0018   61.03
+   L0+L1_1.0   78.2958  25.7510  0.8930   0.0986   +0.3085   -0.0267     0.0039   61.09
+  L1only_1.0   77.9986  25.7905  0.8906   0.1049   +0.0113   -0.3239     0.0151   59.47

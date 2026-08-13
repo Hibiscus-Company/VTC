@@ -1,0 +1,13 @@
+>>> gpu1 HCM0421 train 01:52
+Saving EMA-averaged params (decay 0.999, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/evalgen/HCM0421/ckpt.pt
+Wrote 40 images to /mnt/d/avv/evalgen/HCM0421/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL HCM0421_evalgen  n= 40  PSNR 25.1137  SSIM 0.8403  LPIPSvgg 0.1129  SCORE 75.7616
+<<< gpu1 HCM0421 done 04:24
+=== TOWER EVALGEN POOL DONE Sun Jul 26 04:24:17 +07 2026 ===

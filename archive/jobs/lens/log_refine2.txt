@@ -1,0 +1,26 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  [HCM0421] fold0 stage2 residual mean|d| 0.0215 px
+  [HCM0421] fold1 stage2 residual mean|d| 0.0219 px
+[HCM0421] n=14 30s  none=-0.5652  stage1=+0.0000  stage2=-0.0239
+  [HCM0539] fold0 stage2 residual mean|d| 0.0221 px
+  [HCM0539] fold1 stage2 residual mean|d| 0.0210 px
+[HCM0539] n=14 34s  none=-0.7394  stage1=+0.0000  stage2=-0.0204
+  [HCM0540] fold0 stage2 residual mean|d| 0.0217 px
+  [HCM0540] fold1 stage2 residual mean|d| 0.0227 px
+[HCM0540] n=14 35s  none=-0.6719  stage1=+0.0000  stage2=-0.0303
+  [HCM0644] fold0 stage2 residual mean|d| 0.0263 px
+  [HCM0644] fold1 stage2 residual mean|d| 0.0262 px
+[HCM0644] n=14 35s  none=-0.4240  stage1=+0.0000  stage2=-0.0375
+  [HCM0674] fold0 stage2 residual mean|d| 0.0226 px
+  [HCM0674] fold1 stage2 residual mean|d| 0.0230 px
+[HCM0674] n=14 35s  none=-0.5963  stage1=+0.0000  stage2=-0.0289
+
+     model  MEAN d(stage1)    HCM0421    HCM0539    HCM0540    HCM0644    HCM0674
+      none         -0.5994    -0.5652    -0.7394    -0.6719    -0.4240    -0.5963
+    stage1         +0.0000    +0.0000    +0.0000    +0.0000    +0.0000    +0.0000
+    stage2         -0.0282    -0.0239    -0.0204    -0.0303    -0.0375    -0.0289

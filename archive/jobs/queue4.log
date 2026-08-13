@@ -1,0 +1,16 @@
+=== [GPU 1] HCM0181 -> output/HCM0181_e06stack ===
+=== [GPU 1] HCM0193 -> output/HCM0193_e06stack ===
+=== [GPU 1] HCM0204 -> output/HCM0204_e06stack ===
+=== [GPU 1] hcm0031 -> output/hcm0031_e06stack ===
+=== [GPU 1] hcm0034 -> output/hcm0034_e06stack ===
+=== [GPU 1] queue 'e06stack' done ===
+=== score e06 FULL SET ===
+HCM0181    n= 60  PSNR 24.2522  SSIM 0.8441  LPIPS(alex) 0.0884 LPIPS(vgg) 0.1251  Score(alex) 0.7634  Score(vgg) 0.7487
+HCM0193    n= 60  PSNR 25.2129  SSIM 0.8334  LPIPS(alex) 0.1059 LPIPS(vgg) 0.1447  Score(alex) 0.7589  Score(vgg) 0.7434
+HCM0204    n= 60  PSNR 24.7499  SSIM 0.8453  LPIPS(alex) 0.0941 LPIPS(vgg) 0.1332  Score(alex) 0.7644  Score(vgg) 0.7488
+hcm0031    n= 50  PSNR 24.8820  SSIM 0.8248  LPIPS(alex) 0.1034 LPIPS(vgg) 0.1485  Score(alex) 0.7554  Score(vgg) 0.7373
+hcm0034    n= 60  PSNR 24.8708  SSIM 0.8553  LPIPS(alex) 0.0886 LPIPS(vgg) 0.1323  Score(alex) 0.7703  Score(vgg) 0.7529
+MEAN       n=  5  PSNR 24.7936  SSIM 0.8406  LPIPS(alex) 0.0961 LPIPS(vgg) 0.1368
+  Score(alex)  = 76.2496   [0.4*(1-LPIPS)=0.3616  0.3*SSIM=0.2522  0.3*PSNRn=0.1488]  (psnr_max=50.0)
+  Score(vgg)  = 74.6229   [0.4*(1-LPIPS)=0.3453  0.3*SSIM=0.2522  0.3*PSNRn=0.1488]  (psnr_max=50.0)
+QUEUE DONE

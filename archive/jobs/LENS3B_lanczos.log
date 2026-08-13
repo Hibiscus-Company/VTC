@@ -1,0 +1,32 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+pass1 HCM0181
+pass1 HCM0193
+pass1 HCM0204
+pass1 hcm0031
+pass1 hcm0034
+pass2 HCM0181
+pass2 HCM0193
+pass2 HCM0204
+pass2 hcm0031
+pass2 hcm0034
+
+=== DIRECT VERTEX MEASUREMENT resamp=4 (4=LANCZOS4,2=CUBIC), 60 imgs ===
+  base     PSNR  25.7523 SSIM  0.86729 LPIPS  0.11924 score   76.7005  dScore   +0.0000
+  t0.15    PSNR  25.7329 SSIM  0.86754 LPIPS  0.11902 score   76.7053  dScore   +0.0048
+  t0.21    PSNR  25.7203 SSIM  0.86764 LPIPS  0.11886 score   76.7069  dScore   +0.0064
+  t0.25    PSNR  25.7114 SSIM  0.86768 LPIPS  0.11875 score   76.7072  dScore   +0.0067
+  t0.30    PSNR  25.6996 SSIM  0.86769 LPIPS  0.11862 score   76.7056  dScore   +0.0051
+  t0.50    PSNR  25.6440 SSIM  0.86748 LPIPS  0.11829 score   76.6795  dScore   -0.0210
+  t1.00    PSNR  25.4478 SSIM  0.86541 LPIPS  0.11832 score   76.4983  dScore   -0.2022
+
+--- PER SCENE dScore ---
+  scene          t0.15     t0.21     t0.25     t0.30     t0.50     t1.00
+  HCM0181      +0.0277   +0.0399   +0.0460   +0.0525   +0.0516   -0.0996
+  HCM0193      -0.0068   -0.0124   -0.0165   -0.0234   -0.0690   -0.2988
+  HCM0204      +0.0020   +0.0027   +0.0029   +0.0004   -0.0296   -0.2116
+  hcm0031      +0.0000   +0.0005   -0.0002   -0.0029   -0.0303   -0.2080
+  hcm0034      +0.0012   +0.0013   +0.0013   -0.0012   -0.0278   -0.1932
+DONEB

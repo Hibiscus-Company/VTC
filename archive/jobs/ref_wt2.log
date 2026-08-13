@@ -1,0 +1,17 @@
+  warnings.warn(
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60 3s
+  10/60 33s
+  20/60 62s
+  30/60 88s
+  40/60 116s
+  50/60 145s
+
+MAJORITY-POOL CONTROL, HCM0181, n=60, minority family FIXED at ['fid_ctrl', 'm31b_taillpips'], k=8, full chain
+           majority pool A6    0.2500    0.3333    0.4000    0.5000    argmax  d(.40-.3333)       t    wins
+  A_claim  (UT4+B1+B2 weak)   78.7348   78.7761   78.7948   78.7944    0.4000       +0.0188    5.89  45/60 
+  A_homo   (UT4+e17+B8pure)   78.9320   78.9441   78.9398   78.9064    0.3333       -0.0043   -1.53  30/60 
+  A_homo2  (UT4+e15+B4warm)   78.9091   78.9237   78.9211   78.8907    0.3333       -0.0026   -0.89  34/60 
+elapsed 169s

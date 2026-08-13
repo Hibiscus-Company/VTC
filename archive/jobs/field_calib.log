@@ -1,0 +1,20 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60 2s
+  15/60 26s
+  30/60 78s
+  45/60 138s
+
+PROTOCOL B -- REAL TEST POSES, REAL TEST GT, single member gsplatB9ut, raw PNG (n=60)
+                     arm     SCORE     PSNR     SSIM    LPIPS   vs none      se
+                    none   75.2555  24.2675  0.84556  0.11680   +0.0000  0.0000
+       med_ds8_rlan_g1.0   76.6649  25.1849  0.86875  0.11272   +1.4094  0.0390
+    med_ds8_g1_rlan_g1.0   76.6670  25.1854  0.86877  0.11268   +1.4116  0.0390
+      med_ds8_rlan_g1.15   76.7558  25.2485  0.87025  0.11252   +1.5003  0.0431
+       med_ds8_rlan_g1.3   76.8047  25.2838  0.87109  0.11246   +1.5492  0.0469
+   med_ds8_g1_rlan_g1.30   76.8141  25.2889  0.87122  0.11240   +1.5586  0.0470
+      med_ds8_rlan_g1.45   76.8114  25.2903  0.87128  0.11253   +1.5559  0.0504

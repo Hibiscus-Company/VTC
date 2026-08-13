@@ -1,0 +1,40 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+frame_000010 {'E_bar': 64.5092, 'E_null': 64.3057, 'E_arm': 64.3382}
+frame_000120 {'E_bar': 58.5073, 'E_null': 58.4704, 'E_arm': 58.501}
+frame_000190 {'E_bar': 59.8153, 'E_null': 59.7607, 'E_arm': 59.9056}
+frame_000260 {'E_bar': 59.878, 'E_null': 59.7484, 'E_arm': 59.9858}
+frame_000440 {'E_bar': 60.305, 'E_null': 60.3238, 'E_arm': 60.4698}
+frame_000510 {'E_bar': 64.1757, 'E_null': 64.1123, 'E_arm': 64.18}
+frame_000630 {'E_bar': 66.3182, 'E_null': 66.3925, 'E_arm': 66.4117}
+frame_000710 {'E_bar': 67.4297, 'E_null': 67.4078, 'E_arm': 67.3508}
+frame_000810 {'E_bar': 74.6772, 'E_null': 74.6057, 'E_arm': 74.5874}
+frame_000910 {'E_bar': 73.9603, 'E_null': 73.9398, 'E_arm': 74.0125}
+frame_001100 {'E_bar': 72.4057, 'E_null': 72.4788, 'E_arm': 72.4526}
+frame_001180 {'E_bar': 70.0438, 'E_null': 70.2437, 'E_arm': 70.1191}
+frame_001250 {'E_bar': 70.5414, 'E_null': 70.5734, 'E_arm': 70.5091}
+frame_001320 {'E_bar': 72.171, 'E_null': 72.1021, 'E_arm': 72.031}
+frame_001400 {'E_bar': 77.1323, 'E_null': 76.9985, 'E_arm': 77.064}
+frame_001470 {'E_bar': 69.8004, 'E_null': 69.6605, 'E_arm': 69.6617}
+frame_001540 {'E_bar': 74.2267, 'E_null': 73.9784, 'E_arm': 73.7842}
+frame_001640 {'E_bar': 76.7857, 'E_null': 76.7283, 'E_arm': 76.7323}
+frame_001720 {'E_bar': 81.0568, 'E_null': 81.1325, 'E_arm': 81.1744}
+frame_001820 {'E_bar': 79.2359, 'E_null': 79.2397, 'E_arm': 79.2636}
+frame_001930 {'E_bar': 75.9018, 'E_null': 75.8524, 'E_arm': 75.9157}
+frame_002120 {'E_bar': 77.784, 'E_null': 77.8597, 'E_arm': 77.8916}
+frame_002190 {'E_bar': 80.361, 'E_null': 80.3799, 'E_arm': 80.4027}
+frame_002260 {'E_bar': 78.1674, 'E_null': 78.1589, 'E_arm': 78.2351}
+frame_002330 {'E_bar': 81.4665, 'E_null': 81.4369, 'E_arm': 81.4863}
+frame_002440 {'E_bar': 78.2899, 'E_null': 78.2956, 'E_arm': 78.3167}
+frame_002510 {'E_bar': 80.7735, 'E_null': 80.7833, 'E_arm': 80.9278}
+frame_002650 {'E_bar': 77.6903, 'E_null': 77.6667, 'E_arm': 77.7987}
+E_bar   PSNR 27.4462 SSIM 0.8587 LPIPS 0.2491 SCORE 72.2646
+E_null  PSNR 27.4554 SSIM 0.8582 LPIPS 0.2496 SCORE 72.2370
+E_arm   PSNR 27.4410 SSIM 0.8585 LPIPS 0.2488 SCORE 72.2682
+E_null-E_bar     mean -0.0276 se 0.0173 t -1.60 wins 11/28
+E_arm-E_bar      mean +0.0036 se 0.0236 t +0.15 wins 18/28
+E_arm-E_null     mean +0.0312 se 0.0167 t +1.87 wins 21/28

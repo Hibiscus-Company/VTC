@@ -1,0 +1,16 @@
+{
+ "foldA": [
+  {
+   "k": 1,
+   "added": "gsplatB11ut60k",
+   "train_score": 75.84537474888646,
+   "test_score": 76.08338263151879
+  },
+  {
+   "k": 2,
+   "added": "e17visnorm",
+   "train_score": 76.70299778726827,
+   "test_score": 76.83826237099844
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+=== [GPU 1] HCM0193 -> output/HCM0193_e12champ ===
+=== [GPU 1] HCM0204 -> output/HCM0204_e12champ ===
+=== [GPU 1] hcm0031 -> output/hcm0031_e12champ ===
+=== [GPU 1] hcm0034 -> output/hcm0034_e12champ ===
+=== [GPU 1] queue 'e12champ' done ===
+=== score e12 FULL SET ===
+HCM0181    n= 60  PSNR 24.3347  SSIM 0.8475  LPIPS(alex) 0.0824 LPIPS(vgg) 0.1220  Score(alex) 0.7673  Score(vgg) 0.7515
+HCM0193    n= 60  PSNR 25.3051  SSIM 0.8375  LPIPS(alex) 0.0987 LPIPS(vgg) 0.1409  Score(alex) 0.7636  Score(vgg) 0.7467
+HCM0204    n= 60  PSNR 24.7843  SSIM 0.8475  LPIPS(alex) 0.0893 LPIPS(vgg) 0.1315  Score(alex) 0.7672  Score(vgg) 0.7504
+hcm0031    n= 50  PSNR 24.7820  SSIM 0.8249  LPIPS(alex) 0.0994 LPIPS(vgg) 0.1482  Score(alex) 0.7564  Score(vgg) 0.7369
+hcm0034    n= 60  PSNR 24.8802  SSIM 0.8573  LPIPS(alex) 0.0842 LPIPS(vgg) 0.1300  Score(alex) 0.7728  Score(vgg) 0.7545
+MEAN       n=  5  PSNR 24.8173  SSIM 0.8429  LPIPS(alex) 0.0908 LPIPS(vgg) 0.1345
+  Score(alex)  = 76.5456   [0.4*(1-LPIPS)=0.3637  0.3*SSIM=0.2529  0.3*PSNRn=0.1489]  (psnr_max=50.0)
+  Score(vgg)  = 74.7969   [0.4*(1-LPIPS)=0.3462  0.3*SSIM=0.2529  0.3*PSNRn=0.1489]  (psnr_max=50.0)
+CHAMP DONE

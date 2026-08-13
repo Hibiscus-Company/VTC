@@ -1,0 +1,31 @@
+21 variants, 60 common stems
+
+SOLO PSNR RANKING (n=15)
+   1. gsplatB11ut60k          24.384 dB
+   2. sh3                     24.384 dB
+   3. m31b_nolpips            24.379 dB
+   4. m31b_taillpips          24.346 dB
+   5. gsplatB10ut8M           24.274 dB
+   6. gsplatB12ut8Ms7         24.268 dB
+   7. e17visnorm              24.256 dB
+   8. e15ceil95               24.239 dB
+   9. gsplatB9ut              24.187 dB
+  10. gsplatB8pure            24.182 dB
+  11. gsplatB2                24.157 dB
+  12. gsplatB4warm            24.154 dB
+  13. gsplatB1                24.151 dB
+  14. gsplatB7ppisp2          24.101 dB
+  15. gsplatB3                24.046 dB
+  16. gsplatB5affine          23.934 dB
+  17. e16app                  23.674 dB
+  18. sh2                     22.926 dB
+  19. sh1                     21.594 dB
+  20. sh0                     21.094 dB
+  21. gsplatB6bilagrid        16.915 dB
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60 35s

@@ -1,0 +1,45 @@
+=== applying HCM0181 lens field to the restorer's input (production-matched) ===
+field HCM0181.npy: mean|d| 0.1718px  max|d| 1.5497px
+corrected 60 images -> /mnt/d/avv/restore/HCM0181_ens_fielded
+
+=== A: baseline UN-fielded (what the original +0.3152 was measured against) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL unfielded_all60  n= 60  PSNR 24.6837  SSIM 0.8598  LPIPSvgg 0.1078  SCORE 76.2922
+=== B: baseline FIELDED (what production actually ships) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL fielded_all60    n= 60  PSNR 25.5667  SSIM 0.8796  LPIPSvgg 0.1069  SCORE 77.4488
+
+########## RESTORATION on FIELDED input, seed 0 ##########
+BASELINE (ensemble only, test poses): SCORE 77.1561  PSNR 25.4644 SSIM 0.8737 LPIPS 0.1084
+RESTORED (test poses):                SCORE 77.5861  PSNR 25.4943 SSIM 0.8747 LPIPS 0.0988
+=== fielded_s0: DELTA +0.4300 (baseline 77.1561 -> 77.5861) ===
+  per-image: 20/20 improved, mean +0.4300 sd 0.1110, jackknife range [+0.4172, +0.4417]
+  saved 20 restored renders -> /mnt/d/avv/restore/fielded_restored_s0
+
+########## RESTORATION on FIELDED input, seed 1 ##########
+BASELINE (ensemble only, test poses): SCORE 77.1561  PSNR 25.4644 SSIM 0.8737 LPIPS 0.1084
+RESTORED (test poses):                SCORE 77.5428  PSNR 25.4560 SSIM 0.8734 LPIPS 0.0983
+=== fielded_s1: DELTA +0.3867 (baseline 77.1561 -> 77.5428) ===
+  per-image: 20/20 improved, mean +0.3867 sd 0.1186, jackknife range [+0.3743, +0.3996]
+  saved 20 restored renders -> /mnt/d/avv/restore/fielded_restored_s1
+
+########## control: same seeds on the UN-fielded input (isolates the field's effect) ##########
+BASELINE (ensemble only, test poses): SCORE 75.9590  PSNR 24.5695 SSIM 0.8527 LPIPS 0.1091
+RESTORED (test poses):                SCORE 76.2422  PSNR 24.5620 SSIM 0.8520 LPIPS 0.1014
+=== unfielded_s0: DELTA +0.2832 (baseline 75.9590 -> 76.2422) ===
+  per-image: 19/20 improved, mean +0.2832 sd 0.1985, jackknife range [+0.2595, +0.2991]
+  saved 20 restored renders -> /mnt/d/avv/restore/unfielded_restored_s0
+
+=== READ: if the FIELDED delta collapses toward 0 (or the SSIM cost blows out), restoration
+=== is an artifact of measuring on a misregistered image and we stop. Seed spread across
+=== s0/s1 also gives the training-seed variance component that was previously unmeasured.

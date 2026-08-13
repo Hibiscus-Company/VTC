@@ -1,0 +1,30 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  0/60  5s
+  10/60  59s
+  20/60  116s
+  30/60  169s
+  40/60  225s
+  50/60  275s
+
+ladder  n=60  lam=1.0  fieldgain=1.3  FULL SHIPPED CHAIN
+                       arm  fam     SCORE     PSNR    SSIM   LPIPS   vs base   MB/60
+                 Q6+AA+FGS  FGS   78.8401  26.2123  0.8953  0.0936   +1.0787    62.3
+               Q6+4foreign  FGS   78.8236  26.2315  0.8958  0.0947   +1.0622    61.6
+               Q6+FGS(e17)  FGS   78.7954  26.1818  0.8944  0.0937   +1.0340    62.7
+             Q5+AA(B8pure)   AA   78.7856  26.1405  0.8937  0.0928   +1.0242    62.7
+             Q6+AA(B8pure)   AA   78.7544  26.1544  0.8939  0.0939   +0.9930    62.6
+               Q4+FGS(e17)  FGS   78.7542  26.1354  0.8938  0.0935   +0.9928    62.7
+             Q4+AA(B8pure)   AA   78.6988  26.0989  0.8931  0.0938   +0.9374    62.5
+               Q3+FGS(e17)  FGS   78.6703  26.0894  0.8928  0.0942   +0.9089    62.8
+                 Q5_UTonly  UTd   78.6492  26.0564  0.8916  0.0933   +0.8878    63.3
+                 Q6_UTonly  UTd   78.6154  26.0779  0.8919  0.0947   +0.8540    63.2
+             Q3+AA(B8pure)   AA   78.6020  26.0473  0.8919  0.0946   +0.8406    62.7
+                 Q4_UTonly   UT   78.5277  25.9948  0.8905  0.0946   +0.7663    63.3
+                 Q3_UTonly   UT   78.3639  25.9068  0.8884  0.0958   +0.6025    63.6
+             Q2+AA(B8pure)   AA   78.2641  25.8882  0.8879  0.0976   +0.5027    62.7
+                 Q2_UTonly   UT   77.7614  25.6291  0.8810  0.1012   +0.0000    63.9

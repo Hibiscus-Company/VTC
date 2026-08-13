@@ -1,0 +1,7 @@
+>>> scale_reg=0.003 (gpu1) START 09:26
+Saved 5000000 gaussians to /mnt/d/avv/r35_scalereg/sr0.003/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r35_scalereg/sr0.003/render
+--- shape census sr=0.003 ---
+   N=955,994  s2/s1 med 0.2971   s2/s3 med 94.8
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 26.9042  SSIM 0.8477  LPIPSvgg 0.2517  SCORE 71.5086   [BAR 70.7965]
+<<< sr0.003 DONE 11:05

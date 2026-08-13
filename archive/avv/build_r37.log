@@ -1,0 +1,22 @@
+=== all 4 long45k production members present 22:05 ===
+=== bonsai: 17-member mean (13 carried + 4 long45k) ===
+Ensembled 28 images from 17 members -> /mnt/d/avv/r37/bonsai/jpg_tmp
+=== restore lam=0.25, k=17 (true member count) ===
+restored 28 images (lam=0.25, k=17.0, 4 member(s)) -> /mnt/d/avv/r37/bonsai/png
+=== assemble on r36 (towers + chair byte-verbatim) ===
+re-encoded 28 (bonsai), carried 358 verbatim
+files 386/386  350,572,727 B = 334.33 MiB  headroom 15.67 MiB
+scenes changed vs r36: ['bonsai']
+CRC: OK
+CRC: OK
+  HCM0421:  60/60 exact, all 1320x989, JPEG
+  HCM0539:  60/60 exact, all 1320x989, JPEG
+  HCM0540:  60/60 exact, all 1320x989, JPEG
+  HCM0644:  60/60 exact, all 1320x989, JPEG
+  HCM0674:  60/60 exact, all 1320x989, JPEG
+  bonsai:  28/28 exact, all 1920x1080, JPEG
+  chair:  58/58 exact, all 720x1280, JPEG
+
+files 386/386   size 334.33 MiB / 350.57 MB (limit 350.0 MiB = 367.0 MB)
+VERIFY PASSED
+=== r37 BUILT -- NOT SUBMITTED 22:07 ===

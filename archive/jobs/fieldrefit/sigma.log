@@ -1,0 +1,32 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+     arm  mean|f|   p95|f|  cos(.,ship)  mean|f-ship|
+    ship   0.2746   0.7977      1.00000        0.0000
+     sm1   0.2746   0.8005      0.99878        0.0157
+     sm2   0.2746   0.8032      0.99704        0.0244
+     sm3   0.2746   0.8026      0.99482        0.0321
+     sm4   0.2746   0.8044      0.99151        0.0409
+     sm6   0.2746   0.8031      0.97993        0.0625
+    sm10   0.2746   0.7762      0.93386        0.1115
+  sm3raw   0.2607   0.7619      0.99482        0.0344
+  10/60 337s
+  20/60 402s
+  30/60 447s
+  40/60 491s
+  50/60 531s
+  60/60 584s
+
+FIELD SMOOTHING SWEEP, HCM0181, n=60, FULL shipped chain
+     arm     SCORE     PSNR    SSIM    LPIPS   vs ship  paired t   win/N
+    ship   78.5277  25.9948  0.8905   0.0946   +0.0000        --   0/60
+     sm1   78.5392  26.0025  0.8907   0.0946   +0.0115     16.43  59/60
+     sm2   78.5423  26.0045  0.8907   0.0946   +0.0146      9.27  55/60
+     sm3   78.5386  26.0015  0.8907   0.0946   +0.0109      3.81  45/60
+     sm4   78.5267  25.9931  0.8905   0.0946   -0.0010     -0.21  28/60
+     sm6   78.4756  25.9565  0.8897   0.0948   -0.0521     -5.61  13/60
+    sm10   78.2554  25.8048  0.8864   0.0955   -0.2724    -12.93   5/60
+  sm3raw   78.5236  25.9895  0.8904   0.0946   -0.0041     -1.44  23/60
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldrefit/res_sigma.json   total 584s

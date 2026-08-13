@@ -1,0 +1,22 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+HCM0181: k-sweep on 45 poses, dev=cuda:1
+  0/45  4s
+  10/45  28s
+  20/45  54s
+  30/45  80s
+  40/45  -160s
+
+=== HCM0181 ENSEMBLE-DEPTH SWEEP, n=45 ===
+delta = q98ss0 - q100ss2, paired per image
+        config  base(q100ss2)     delta      se       t     wins  dMB/scene
+            k1        77.0334   -0.0169  0.0037   -4.61    10/45       -5.23
+            k2        78.0802   -0.0033  0.0039   -0.85    28/45       -5.83
+            k4        78.8763   +0.0177  0.0037    4.75    34/45       -6.20
+  k4_norestore        78.6654   +0.0232  0.0031    7.60    36/45       -6.24
+
+elapsed 117s

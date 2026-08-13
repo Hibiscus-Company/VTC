@@ -1,0 +1,25 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+composition                             k     SCORE    first8    last20
+3 old only (the r36 recipe class)       3   72.0247   62.5473   75.8157
+2 new only (long45k)                    2   72.6437   65.6443   75.4434
+2 mid only (churn_r25n25)               2   72.2023   63.7076   75.6002
+3 old + 2 new                           5   73.0613   65.0572   76.2629
+2 old + 2 new                           4   73.0984   65.3587   76.1943
+1 old + 2 new                           3   73.0522   65.6231   76.0238
+2 mid + 2 new                           4   73.0490   65.6070   76.0258
+3 old + 2 mid + 2 new (everything)      7   73.1034   65.0308   76.3324
+
+ranked:
+  73.1034  k=7  3 old + 2 mid + 2 new (everything)
+  73.0984  k=4  2 old + 2 new
+  73.0613  k=5  3 old + 2 new
+  73.0522  k=3  1 old + 2 new
+  73.0490  k=4  2 mid + 2 new
+  72.6437  k=2  2 new only (long45k)
+  72.2023  k=2  2 mid only (churn_r25n25)
+  72.0247  k=3  3 old only (the r36 recipe class)

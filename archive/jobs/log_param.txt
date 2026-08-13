@@ -1,0 +1,67 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  HCM0181 0/60 3s
+  HCM0181 20/60 44s
+  HCM0181 40/60 86s
+
+== HCM0181 (n=60) ==
+  g8_median          P 25.1832  S 0.86852  L 0.11260  score  76.6615  d +0.0000
+  p_trans            P 24.2570  S 0.84508  L 0.11691  score  75.2301  d -1.4313
+  p_affine           P 24.2405  S 0.84435  L 0.11703  score  75.1935  d -1.4679
+  p_poly2            P 24.4115  S 0.84922  L 0.11616  score  75.4772  d -1.1843
+  p_poly3            P 24.6264  S 0.85420  L 0.11533  score  75.7887  d -0.8728
+  p_poly4            P 24.6518  S 0.85460  L 0.11522  score  75.8201  d -0.8414
+  p_brown            P 24.7238  S 0.85709  L 0.11465  score  75.9611  d -0.7004
+  HCM0193 0/60 1s
+  HCM0193 20/60 66s
+  HCM0193 40/60 129s
+
+== HCM0193 (n=60) ==
+  g8_median          P 26.3627  S 0.86554  L 0.12358  score  76.8409  d +0.0000
+  p_trans            P 25.6807  S 0.84734  L 0.12688  score  75.7534  d -1.0876
+  p_affine           P 25.6755  S 0.84707  L 0.12693  score  75.7399  d -1.1010
+  p_poly2            P 25.6900  S 0.84739  L 0.12686  score  75.7615  d -1.0795
+  p_poly3            P 25.8030  S 0.84950  L 0.12662  score  75.9020  d -0.9389
+  p_poly4            P 25.8257  S 0.85002  L 0.12653  score  75.9351  d -0.9059
+  p_brown            P 25.9830  S 0.85529  L 0.12538  score  76.2335  d -0.6074
+  HCM0204 0/60 3s
+  HCM0204 20/60 90s
+  HCM0204 40/60 177s
+
+== HCM0204 (n=60) ==
+  g8_median          P 25.6829  S 0.87201  L 0.11734  score  76.8761  d +0.0000
+  p_trans            P 24.8833  S 0.85388  L 0.12090  score  75.7104  d -1.1658
+  p_affine           P 24.9044  S 0.85457  L 0.12074  score  75.7502  d -1.1259
+  p_poly2            P 25.0234  S 0.85754  L 0.12016  score  75.9338  d -0.9423
+  p_poly3            P 25.1498  S 0.85973  L 0.11980  score  76.0897  d -0.7865
+  p_poly4            P 25.1775  S 0.86015  L 0.11971  score  76.1225  d -0.7536
+  p_brown            P 25.2774  S 0.86297  L 0.11911  score  76.2913  d -0.5849
+  hcm0031 0/50 4s
+  hcm0031 20/50 76s
+  hcm0031 40/50 146s
+
+== hcm0031 (n=50) ==
+  g8_median          P 25.6355  S 0.85060  L 0.13350  score  75.5591  d +0.0000
+  p_trans            P 25.0854  S 0.83504  L 0.13622  score  74.6536  d -0.9055
+  p_affine           P 25.0736  S 0.83450  L 0.13629  score  74.6273  d -0.9319
+  p_poly2            P 25.0838  S 0.83472  L 0.13624  score  74.6424  d -0.9168
+  p_poly3            P 25.1756  S 0.83680  L 0.13600  score  74.7696  d -0.7896
+  p_poly4            P 25.2049  S 0.83754  L 0.13585  score  74.8152  d -0.7440
+  p_brown            P 25.3195  S 0.84162  L 0.13504  score  75.0388  d -0.5203
+  hcm0034 0/60 5s
+  hcm0034 20/60 61s
+  hcm0034 40/60 112s
+
+== hcm0034 (n=60) ==
+  g8_median          P 25.8591  S 0.88152  L 0.11846  score  77.2228  d +0.0000
+  p_trans            P 25.1418  S 0.86470  L 0.12169  score  76.1583  d -1.0645
+  p_affine           P 25.1364  S 0.86445  L 0.12173  score  76.1460  d -1.0768
+  p_poly2            P 25.1494  S 0.86465  L 0.12169  score  76.1614  d -1.0614
+  p_poly3            P 25.2586  S 0.86655  L 0.12144  score  76.2940  d -0.9289
+  p_poly4            P 25.2980  S 0.86748  L 0.12124  score  76.3536  d -0.8692
+  p_brown            P 25.4604  S 0.87202  L 0.12024  score  76.6273  d -0.5955
+saved /home/bkai/.claude/jobs/1c9cf7e9/tmp/res/param.json

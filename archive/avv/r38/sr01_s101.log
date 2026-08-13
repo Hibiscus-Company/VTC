@@ -1,0 +1,6 @@
+>>> sr01_s101 (gpu1) START 20:15 [--seed 101 --scale_reg 0.1]
+Saved 5000000 gaussians to /mnt/d/avv/r38/sr01_s101/ckpt.pt
+Wrote 28 images to /mnt/d/avv/r38/sr01_s101/render
+   CENSUS N=1,345,427  s2/s1 0.3767  s2/s3 1892255.4  s1/s3 5406378.2
+                    eval_png (n= 28) : EVAL cand             n= 28  PSNR 26.8403  SSIM 0.8479  LPIPSvgg 0.2429  SCORE 71.8254   [BAR 71.799]
+<<< sr01_s101 DONE 21:48

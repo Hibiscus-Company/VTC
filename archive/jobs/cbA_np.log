@@ -1,0 +1,26 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/50 5s
+  6/50 26s
+  11/50 41s
+  16/50 58s
+  21/50 72s
+  26/50 95s
+  31/50 111s
+  36/50 130s
+  41/50 153s
+  46/50 177s
+
+POOL A  big=6 small=2  k=8  n=50  lam=1.0 gain=1.3
+FULL SHIPPED CHAIN: combine -> uint8 -> restore(k=8) -> field(lanczos4) -> JPEG q100/ss2
+           arm     SCORE     PSNR     SSIM    LPIPS   d(mean8)      se      t    wins      MB
+       winsor1   79.2781  26.5035  0.90077  0.09118    +0.0087  0.0025   3.40  35/50   52.92
+      agree_b2   79.2707  26.5020  0.90076  0.09134    +0.0012  0.0039   0.31  27/50   52.80
+         mean8   79.2694  26.5089  0.90074  0.09145    +0.0000  0.0000   0.00   0/50   52.74
+        moment   79.2601  26.5047  0.90056  0.09149    -0.0094  0.0029  -3.21  14/50   52.69
+      agree_b1   79.2394  26.4664  0.90039  0.09130    -0.0300  0.0127  -2.35  23/50   52.93
+     invvar_r8   79.1949  26.4265  0.89985  0.09142    -0.0745  0.0182  -4.10  17/50   53.06
+    agree_b0.5   79.0901  26.3469  0.89847  0.09180    -0.1793  0.0292  -6.15   8/50   53.40
+wrote cbA_np.json

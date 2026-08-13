@@ -1,0 +1,24 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/50 3s
+  6/50 14s
+  11/50 26s
+  16/50 36s
+  21/50 48s
+  26/50 59s
+  31/50 69s
+  36/50 84s
+  41/50 96s
+  46/50 109s
+
+SAME-FAMILY vs DIFFERENT-FAMILY ADD, HCM0181, n=50, FULL SHIPPED CHAIN
+           arm  k     SCORE     PSNR     SSIM    LPIPS   d(base6)      se       t    wins
+  add_e2_CLAIM  8   79.2694  26.5089  0.90074  0.09145    +0.2651  0.0287    9.23  48/50
+    add_e16_pp  8   79.1994  26.4728  0.90010  0.09218    +0.1950  0.0361    5.40  37/50
+        add_wp  8   79.1985  26.4739  0.89993  0.09209    +0.1942  0.0263    7.39  43/50
+       add_B35  8   79.0752  26.4565  0.89870  0.09400    +0.0708  0.0295    2.40  24/50
+       add_B12  8   79.0490  26.4416  0.89844  0.09423    +0.0446  0.0272    1.64  21/50
+         base6  6   79.0043  26.3482  0.89713  0.09296    +0.0000  0.0000    0.00   0/50
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/refadd2.json

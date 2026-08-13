@@ -1,0 +1,98 @@
+### BONSAI ###
+  bonsai_sr01 frame_000010 sig_gt 0.00791 dmean -0.0150 shift (-0.08,-0.03) bestint (+0,+0) P 22.92->photo 23.11 ->shift 22.92
+  bonsai_sr01 frame_000120 sig_gt 0.00505 dmean -0.0039 shift (+0.02,-0.12) bestint (+0,+0) P 22.86->photo 22.91 ->shift 22.90
+  bonsai_sr01 frame_000190 sig_gt 0.00699 dmean -0.0055 shift (-0.43,+0.04) bestint (+0,+0) P 21.92->photo 21.96 ->shift 21.92
+  bonsai_sr01 frame_000260 sig_gt 0.00409 dmean -0.0036 shift (+0.67,+0.16) bestint (+0,+0) P 22.45->photo 22.46 ->shift 22.47
+  bonsai_sr01 frame_000440 sig_gt 0.00453 dmean -0.0074 shift (-0.17,-0.24) bestint (+0,+0) P 21.87->photo 21.94 ->shift 21.87
+  bonsai_sr01 frame_000510 sig_gt 0.00241 dmean -0.0001 shift (-0.32,+0.21) bestint (+1,+0) P 22.72->photo 22.75 ->shift 22.75
+  bonsai_sr01 frame_000630 sig_gt 0.00311 dmean -0.0070 shift (+0.18,+0.03) bestint (+0,+0) P 23.30->photo 23.36 ->shift 23.36
+  bonsai_sr01 frame_000710 sig_gt 0.00430 dmean +0.0099 shift (+0.16,+0.17) bestint (+0,+0) P 22.79->photo 22.86 ->shift 22.80
+  bonsai_sr01 frame_000810 sig_gt 0.00116 dmean +0.0002 shift (-0.31,+0.33) bestint (+1,+0) P 29.14->photo 29.23 ->shift 29.23
+  bonsai_sr01 frame_000910 sig_gt 0.00263 dmean -0.0034 shift (+0.37,+0.11) bestint (+0,+0) P 28.34->photo 28.44 ->shift 28.34
+  bonsai_sr01 frame_001100 sig_gt 0.00162 dmean -0.0008 shift (+1.33,-0.72) bestint (-1,+0) P 25.46->photo 25.75 ->shift 25.56
+  bonsai_sr01 frame_001180 sig_gt 0.00116 dmean +0.0065 shift (-0.25,+0.43) bestint (-1,-2) P 24.09->photo 24.18 ->shift 24.36
+  bonsai_sr01 frame_001250 sig_gt 0.00244 dmean +0.0040 shift (-0.18,+0.18) bestint (+0,+0) P 24.15->photo 24.18 ->shift 24.15
+  bonsai_sr01 frame_001320 sig_gt 0.00110 dmean +0.0269 shift (-0.21,+0.08) bestint (+0,+0) P 25.51->photo 26.94 ->shift 25.52
+  bonsai_sr01 frame_001400 sig_gt 0.00280 dmean -0.0001 shift (+0.15,+0.09) bestint (+0,+0) P 30.49->photo 30.50 ->shift 30.50
+  bonsai_sr01 frame_001470 sig_gt 0.00567 dmean +0.0011 shift (-0.10,-0.13) bestint (+0,+0) P 26.01->photo 26.07 ->shift 26.09
+  bonsai_sr01 frame_001540 sig_gt 0.00427 dmean +0.0023 shift (+0.02,+0.03) bestint (+0,+0) P 27.94->photo 28.00 ->shift 27.98
+  bonsai_sr01 frame_001640 sig_gt 0.00154 dmean -0.0079 shift (+0.07,-0.14) bestint (+0,+0) P 28.68->photo 29.52 ->shift 28.68
+  bonsai_sr01 frame_001720 sig_gt 0.00153 dmean -0.0028 shift (-0.06,-0.13) bestint (+0,+0) P 30.95->photo 31.18 ->shift 30.95
+  bonsai_sr01 frame_001820 sig_gt 0.00183 dmean +0.0009 shift (-0.14,-0.07) bestint (+0,+0) P 29.42->photo 29.43 ->shift 29.42
+  bonsai_sr01 frame_001930 sig_gt 0.00193 dmean -0.0005 shift (-0.17,+0.12) bestint (+0,+0) P 28.85->photo 28.94 ->shift 28.85
+  bonsai_sr01 frame_002120 sig_gt 0.00258 dmean -0.0052 shift (-0.14,+0.07) bestint (+0,+0) P 29.41->photo 29.55 ->shift 29.41
+  bonsai_sr01 frame_002190 sig_gt 0.00217 dmean +0.0073 shift (-0.09,-0.05) bestint (+0,+0) P 32.84->photo 33.41 ->shift 32.86
+  bonsai_sr01 frame_002260 sig_gt 0.00104 dmean +0.0046 shift (-0.02,+0.01) bestint (+0,+0) P 30.25->photo 30.39 ->shift 30.25
+  bonsai_sr01 frame_002330 sig_gt 0.00176 dmean -0.0052 shift (+0.13,+0.02) bestint (+0,+0) P 31.94->photo 32.28 ->shift 31.95
+  bonsai_sr01 frame_002440 sig_gt 0.00262 dmean -0.0060 shift (-0.10,+0.14) bestint (+0,+0) P 29.10->photo 29.24 ->shift 29.23
+  bonsai_sr01 frame_002510 sig_gt 0.00163 dmean +0.0063 shift (-0.01,-0.07) bestint (+0,+0) P 31.22->photo 31.45 ->shift 31.22
+  bonsai_sr01 frame_002650 sig_gt 0.00128 dmean +0.0018 shift (+0.08,+0.07) bestint (+0,+0) P 29.90->photo 29.95 ->shift 29.90
+
+bonsai_sr01 noise-corrected band ratios (render / noise-free GT):
+  0.0-0.2 Nyq raw 0.9870  noise-corrected 0.9870  (noise share of GT band = 0.0%)
+  0.2-0.4 Nyq raw 0.7028  noise-corrected 0.7034  (noise share of GT band = 0.1%)
+  0.4-0.6 Nyq raw 0.4445  noise-corrected 0.4465  (noise share of GT band = 0.4%)
+  0.6-0.8 Nyq raw 0.3225  noise-corrected 0.3301  (noise share of GT band = 2.3%)
+  0.8-1.0 Nyq raw 0.3461  noise-corrected 0.4324  (noise share of GT band = 20.0%)
+
+### HCM0421 (reference tower) ###
+  HCM0421_evalgen DJI_20241230093301_0003_V sig_gt 0.00920 
+  HCM0421_evalgen DJI_20241230093349_0010_V sig_gt 0.03331 
+  HCM0421_evalgen DJI_20241230093354_0016_V sig_gt 0.02860 
+  HCM0421_evalgen DJI_20241230093402_0024_V sig_gt 0.02953 
+  HCM0421_evalgen DJI_20241230093409_0031_V sig_gt 0.02981 
+  HCM0421_evalgen DJI_20241230093415_0037_V sig_gt 0.02624 
+  HCM0421_evalgen DJI_20241230093422_0044_V sig_gt 0.02356 
+  HCM0421_evalgen DJI_20241230093429_0051_V sig_gt 0.02498 
+  HCM0421_evalgen DJI_20241230093452_0058_V sig_gt 0.02228 
+  HCM0421_evalgen DJI_20241230093458_0064_V sig_gt 0.02347 
+  HCM0421_evalgen DJI_20241230093504_0070_V sig_gt 0.02414 
+  HCM0421_evalgen DJI_20241230093512_0078_V sig_gt 0.02298 
+  HCM0421_evalgen DJI_20241230093522_0085_V sig_gt 0.02253 
+  HCM0421_evalgen DJI_20241230093531_0094_V sig_gt 0.02182 
+  HCM0421_evalgen DJI_20241230093540_0103_V sig_gt 0.02046 
+  HCM0421_evalgen DJI_20241230093549_0112_V sig_gt 0.02362 
+  HCM0421_evalgen DJI_20241230093602_0121_V sig_gt 0.02188 
+  HCM0421_evalgen DJI_20241230093612_0131_V sig_gt 0.02183 
+  HCM0421_evalgen DJI_20241230093618_0137_V sig_gt 0.02143 
+  HCM0421_evalgen DJI_20241230093626_0145_V sig_gt 0.02311 
+  HCM0421_evalgen DJI_20241230093647_0152_V sig_gt 0.02267 
+  HCM0421_evalgen DJI_20241230093655_0160_V sig_gt 0.02294 
+  HCM0421_evalgen DJI_20241230093701_0166_V sig_gt 0.02504 
+  HCM0421_evalgen DJI_20241230093733_0185_V sig_gt 0.02753 
+  HCM0421_evalgen DJI_20241230093742_0194_V sig_gt 0.02855 
+  HCM0421_evalgen DJI_20241230093929_0242_V sig_gt 0.02237 
+  HCM0421_evalgen DJI_20241230093935_0248_V sig_gt 0.03330 
+  HCM0421_evalgen DJI_20241230093945_0255_V sig_gt 0.02208 
+  HCM0421_evalgen DJI_20241230093952_0262_V sig_gt 0.03010 
+  HCM0421_evalgen DJI_20241230094005_0271_V sig_gt 0.02766 
+  HCM0421_evalgen DJI_20241230094012_0278_V sig_gt 0.03099 
+  HCM0421_evalgen DJI_20241230094024_0288_V sig_gt 0.03155 
+  HCM0421_evalgen DJI_20241230094031_0295_V sig_gt 0.02711 
+  HCM0421_evalgen DJI_20241230094041_0302_V sig_gt 0.02726 
+  HCM0421_evalgen DJI_20241230094049_0310_V sig_gt 0.02495 
+  HCM0421_evalgen DJI_20241230094059_0317_V sig_gt 0.02918 
+  HCM0421_evalgen DJI_20241230094106_0324_V sig_gt 0.02105 
+  HCM0421_evalgen DJI_20241230094115_0330_V sig_gt 0.02723 
+  HCM0421_evalgen DJI_20241230094123_0338_V sig_gt 0.02443 
+  HCM0421_evalgen DJI_20241230094134_0346_V sig_gt 0.02014 
+
+HCM0421_evalgen noise-corrected band ratios (render / noise-free GT):
+  0.0-0.2 Nyq raw 0.9936  noise-corrected 0.9940  (noise share of GT band = 0.0%)
+  0.2-0.4 Nyq raw 0.9222  noise-corrected 0.9381  (noise share of GT band = 1.7%)
+  0.4-0.6 Nyq raw 0.8315  noise-corrected 0.8744  (noise share of GT band = 4.9%)
+  0.6-0.8 Nyq raw 0.7855  noise-corrected 0.8782  (noise share of GT band = 10.6%)
+  0.8-1.0 Nyq raw 0.9468  noise-corrected 1.4202  (noise share of GT band = 33.3%)
+
+GT sensor-noise sigma (Immerkaer, [0,1] gray): bonsai median 0.00242 (0.62/255) | HCM0421 median 0.02428 (6.19/255)
+  psnr_raw       first8 +22.6023  last20 +28.6840  all +26.9464
+  psnr_photofix  first8 +22.6693  last20 +28.9317  all +27.1424
+  psnr_shiftfix  first8 +22.6233  last20 +28.7225  all +26.9798
+  ssim_raw       first8  +0.7040  last20  +0.9053  all  +0.8478
+  ssim_photofix  first8  +0.7034  last20  +0.9055  all  +0.8478
+  ssim_shiftfix  first8  +0.7037  last20  +0.9053  all  +0.8477
+  dmean          first8  -0.0041  last20  +0.0015  all  -0.0001
+  shift_mag      first8  +0.3016  last20  +0.2572  all  +0.2699
+
+  per-image affine photometric fix: dPSNR +0.1961 dSSIM -0.0000 -> dScore +0.1163 (first8 +0.0224)
+  best integer shift fix        : dPSNR +0.0335 dSSIM -0.0001 -> dScore +0.0161 (first8 +0.0046)

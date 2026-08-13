@@ -1,0 +1,24 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+  [1/8] DJI_20241230093349_0010_V
+  [2/8] DJI_20241230093415_0037_V
+  [3/8] DJI_20241230093458_0064_V
+  [4/8] DJI_20241230093531_0094_V
+  [5/8] DJI_20241230093612_0131_V
+  [6/8] DJI_20241230093655_0160_V
+  [7/8] DJI_20241230093929_0242_V
+  [8/8] DJI_20241230094005_0271_V
+
+=== P1b HCM0421 n=8 ===
+png_lossless         PSNR 26.0589(+0.0136)  SSIM 0.86936(+0.00126)  LPIPS 0.09580(-0.00098)  MB  0.00  SCORE  77.8842  d +0.0851
+q100_ss2_SHIPPED     PSNR 26.0454(+0.0000)  SSIM 0.86811(+0.00000)  LPIPS 0.09678(+0.00000)  MB  1.25  SCORE  77.7992  d +0.0000
+q100_ss0             PSNR 26.0377(-0.0077)  SSIM 0.86740(-0.00070)  LPIPS 0.09569(-0.00109)  MB  1.79  SCORE  77.8169  d +0.0177
+q98_ss2              PSNR 26.0285(-0.0169)  SSIM 0.86717(-0.00093)  LPIPS 0.09661(-0.00017)  MB  0.93  SCORE  77.7679  d -0.0313
+q96_ss2              PSNR 25.9952(-0.0502)  SSIM 0.86543(-0.00268)  LPIPS 0.09827(+0.00149)  MB  0.76  SCORE  77.6294  d -0.1698
+q95_ss2_GTLATTICE    PSNR 25.9669(-0.0785)  SSIM 0.86385(-0.00425)  LPIPS 0.10055(+0.00377)  MB  0.69  SCORE  77.4737  d -0.3254
+q95_ss0              PSNR 25.9715(-0.0739)  SSIM 0.86364(-0.00447)  LPIPS 0.09827(+0.00148)  MB  0.78  SCORE  77.5615  d -0.2377
+q92_ss2              PSNR 25.8721(-0.1733)  SSIM 0.85812(-0.00998)  LPIPS 0.10932(+0.01254)  MB  0.54  SCORE  76.8940  d -0.9052

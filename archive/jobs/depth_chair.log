@@ -1,0 +1,16 @@
+=== chair depth-prior 0.05 training Fri Jul 24 08:36:57 +07 2026 ===
+[59000] loss 0.0606 l1 0.0301 ssim 0.8804 N 8000000
+[59999] loss 0.0762 l1 0.0351 ssim 0.8506 N 8000000
+Saved 8000000 gaussians to /mnt/d/avv/depth/chair_dp05/ckpt.pt
+Wrote 58 images to /mnt/d/avv/depth/chair_dp05/eval_render
+=== SCORES (chair baseline eval 69.8051) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_depth_solo n= 58  PSNR 24.8494  SSIM 0.7885  LPIPSvgg 0.2352  SCORE 69.1583
+=== ensemble-add: depth member joins the chair eval ensemble (ref mean 71.0682) ===
+COMBINE chair_depthadd mean    n= 58 PSNR 25.7944 SSIM 0.8170 LPIPS 0.2210 SCORE 71.1461
+=== DEPTH CHAIR DONE Fri Jul 24 11:09:12 +07 2026 ===

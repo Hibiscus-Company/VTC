@@ -1,0 +1,23 @@
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+
+================================================================================================
+S4. FULL SHIPPED CHAIN: fuse -> median lens field (cv2.remap) -> JPEG q100 ss2.
+    The field is a sub-pixel resample, exactly the operator that could eat a
+    finest-level texture boost. Field fit on HCM0181 TRAIN photos (no test leakage).
+================================================================================================
+  harness: 60 views x 4 members ['gsplatB9ut', 'gsplatB10ut8M', 'gsplatB11ut60k', 'gsplatB12ut8Ms7']
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/lv_main.py:141: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  rows.append(self.eval_img(torch.from_numpy(np.ascontiguousarray(a)), i))
+config                                 SCORE   dScore     PSNR    SSIM    LPIPS     win
+pixmean +field +JPEG (SHIPPED)       78.1992  +0.0000  25.9417  0.8870   0.0994   0/60 
+energy lam0.5 +field +JPEG           78.3148  +0.1156  25.9270  0.8877   0.0968  60/60 
+energy lam0.75 +field +JPEG          78.3497  +0.1505  25.9169  0.8879   0.0959  60/60 
+energy lam1.0 +field +JPEG           78.3712  +0.1721  25.9041  0.8880   0.0953  60/60 
+energy lam1.25 +field +JPEG          78.3798  +0.1806  25.8887  0.8880   0.0949  60/60 
+
+DONE 13:33:55

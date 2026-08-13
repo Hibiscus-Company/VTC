@@ -1,0 +1,12 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+ cubic (shipped)            PSNR 26.1466 SSIM 0.89203 LPIPS 0.10026 comp  78.4383  d +0.0000
+ lanczos4                   PSNR 26.1836 SSIM 0.89332 LPIPS 0.09808 comp  78.5864  d +0.1481
+ linear                     PSNR 25.9818 SSIM 0.88406 LPIPS 0.10969 comp  77.7231  d -0.7151
+ cubic+usm(.8,.10) after    PSNR 26.0975 SSIM 0.89296 LPIPS 0.09843 comp  78.5103  d +0.0720
+ cubic+usm(.8,.10) before   PSNR 26.0978 SSIM 0.89296 LPIPS 0.09842 comp  78.5106  d +0.0723
+ lanczos4+usm(.8,.10)       PSNR 26.1321 SSIM 0.89419 LPIPS 0.09635 comp  78.6511  d +0.2128
+ lanczos4+usm(.8,.05)       PSNR 26.1652 SSIM 0.89391 LPIPS 0.09709 comp  78.6328  d +0.1945
+ no warp+usm(.8,.10)        PSNR 24.9813 SSIM 0.86926 LPIPS 0.10080 comp  77.0346  d -1.4037

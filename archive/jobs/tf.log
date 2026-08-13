@@ -1,0 +1,17 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+RES ES_chair   ES          n= 58 nL=8 PSNR  24.7485 SSIM 0.7808 LPIPS 0.2248 SCORE 69.2806 (237.5s)
+RES ES_bonsai  ES          n= 28 nL=8 PSNR  26.7634 SSIM 0.8478 LPIPS 0.2577 SCORE 71.1845 (278.1s)
+RES ES_0421    ES          n= 40 nL=8 PSNR  25.1137 SSIM 0.8403 LPIPS 0.1550 SCORE 74.0757 (327.5s)
+RES ES_0181    ES          n= 60 nL=8 PSNR  24.0684 SSIM 0.8415 LPIPS 0.1272 SCORE 74.5980 (327.9s)
+RES 0181_SHIP  PROD-chain  n= 60 nL=8 PSNR  25.8561 SSIM 0.8857 LPIPS 0.1173 SCORE 77.3907 (332.3s)
+RES 0181_solo  PROD-solo   n= 60 nL=8 PSNR  24.2675 SSIM 0.8456 LPIPS 0.1333 SCORE 74.5970 (300.3s)
+RES 0193_solo  PROD-solo   n= 60 nL=8 PSNR  25.6807 SSIM 0.8473 LPIPS 0.1266 SCORE 75.7652 (279.7s)
+RES 0204_solo  PROD-solo   n= 60 nL=8 PSNR  24.8906 SSIM 0.8541 LPIPS 0.1263 SCORE 75.5051 (278.1s)
+RES 0031_solo  PROD-solo   n= 50 nL=8 PSNR  25.0854 SSIM 0.8350 LPIPS 0.1384 SCORE 74.5652 (344.0s)
+RES 0034_solo  PROD-solo   n= 60 nL=8 PSNR  25.1418 SSIM 0.8647 LPIPS 0.1320 SCORE 75.7478 (197.4s)
+DONE

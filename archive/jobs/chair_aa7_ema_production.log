@@ -1,0 +1,6 @@
+=== GPU1 free (tower decay0.999 done), starting chair_aa7 EMA Thu Jul 23 06:56:03 +07 2026 ===
+[59999] loss 0.0650 l1 0.0230 ssim 0.8430 N 8000000
+Saving EMA-averaged params (decay 0.99, from refine_stop 50000)
+Saved 8000000 gaussians to /mnt/d/avv/r17/chair_ema099_seed7/ckpt.pt
+Wrote 58 images to /mnt/d/avv/r17/chair_ema099_seed7/test_render
+=== chair_aa7 EMA DONE Thu Jul 23 09:14:34 +07 2026, 58 test renders ready ===

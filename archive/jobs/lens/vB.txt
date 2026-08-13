@@ -1,0 +1,25 @@
+# name|pool|ds|smooth|poly|up|remap
+mean_ds8|mean|8|0|0|cubic|cubic
+median_ds2|median|2|0|0|cubic|cubic
+median_ds4|median|4|0|0|cubic|cubic
+median_ds8|median|8|0|0|cubic|cubic
+median_ds16|median|16|0|0|cubic|cubic
+median_ds32|median|32|0|0|cubic|cubic
+med_ds8_g1|median|8|1|0|cubic|cubic
+med_ds4_g2|median|4|2|0|cubic|cubic
+med_ds2_g4|median|2|4|0|cubic|cubic
+poly1_ds8|median|8|0|1|cubic|cubic
+poly2_ds8|median|8|0|2|cubic|cubic
+poly4_ds8|median|8|0|4|cubic|cubic
+poly6_ds8|median|8|0|6|cubic|cubic
+poly8_ds8|median|8|0|8|cubic|cubic
+med_ds8_uplan|median|8|0|0|lanczos|cubic
+med_ds8_rlan|median|8|0|0|cubic|lanczos
+med_ds8_rspl3|median|8|0|0|cubic|spline3
+med_ds8_rspl5|median|8|0|0|cubic|spline5
+med_ds8_rtorch|median|8|0|0|cubic|torch_bicubic
+med_ds4_rlan|median|4|0|0|cubic|lanczos
+med_ds16_rlan|median|16|0|0|cubic|lanczos
+med_ds8_g1_rlan|median|8|1|0|cubic|lanczos
+med_ds8_rlanlin|median|8|0|0|cubic|lanczos_lin
+med_ds8_rcubiclin|median|8|0|0|cubic|cubic_lin

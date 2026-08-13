@@ -1,0 +1,86 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldlib.py:24: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(a)).to(dev).float().div_(255.0) \
+  HCM0421 0/120 2s
+  HCM0421 20/120 32s
+  HCM0421 40/120 61s
+  HCM0421 60/120 92s
+  HCM0421 80/120 120s
+  HCM0421 100/120 142s
+
+== LOO-train priv HCM0421 (n=120) ==
+  scale 0.00  P 28.0169  S 0.91254  L 0.06594  score  81.5487  d +0.0000
+  scale 1.00  P 28.6120  S 0.92057  L 0.06506  score  82.1822  d +0.6335
+  scale 1.15  P 28.5962  S 0.92026  L 0.06532  score  82.1526  d +0.6039
+  scale 1.30  P 28.5504  S 0.91953  L 0.06568  score  82.0888  d +0.5400
+  scale 1.45  P 28.4770  S 0.91840  L 0.06612  score  81.9934  d +0.4446
+  scale 1.60  P 28.3772  S 0.91686  L 0.06664  score  81.8665  d +0.3178
+  scale 1.80  P 28.2090  S 0.91423  L 0.06744  score  81.6544  d +0.1057
+  scale 2.00  P 28.0064  S 0.91094  L 0.06837  score  81.3971  d -0.1516
+  HCM0539 0/120 1s
+  HCM0539 20/120 25s
+  HCM0539 40/120 50s
+  HCM0539 60/120 77s
+  HCM0539 80/120 102s
+  HCM0539 100/120 127s
+
+== LOO-train priv HCM0539 (n=120) ==
+  scale 0.00  P 28.4281  S 0.92021  L 0.06425  score  82.0931  d +0.0000
+  scale 1.00  P 29.1204  S 0.92910  L 0.06322  score  82.8166  d +0.7235
+  scale 1.15  P 29.0997  S 0.92882  L 0.06347  score  82.7855  d +0.6924
+  scale 1.30  P 29.0450  S 0.92810  L 0.06383  score  82.7169  d +0.6238
+  scale 1.45  P 28.9577  S 0.92696  L 0.06428  score  82.6119  d +0.5188
+  scale 1.60  P 28.8410  S 0.92540  L 0.06482  score  82.4735  d +0.3804
+  scale 1.80  P 28.6449  S 0.92268  L 0.06567  score  82.2408  d +0.1477
+  scale 2.00  P 28.4114  S 0.91929  L 0.06664  score  81.9599  d -0.1332
+  HCM0540 0/120 1s
+  HCM0540 20/120 27s
+  HCM0540 40/120 58s
+  HCM0540 60/120 82s
+  HCM0540 80/120 103s
+  HCM0540 100/120 123s
+
+== LOO-train priv HCM0540 (n=120) ==
+  scale 0.00  P 28.4102  S 0.91059  L 0.06739  score  81.6681  d +0.0000
+  scale 1.00  P 29.0041  S 0.91836  L 0.06659  score  82.2896  d +0.6214
+  scale 1.15  P 28.9853  S 0.91793  L 0.06687  score  82.2544  d +0.5863
+  scale 1.30  P 28.9357  S 0.91708  L 0.06723  score  82.1844  d +0.5163
+  scale 1.45  P 28.8573  S 0.91580  L 0.06768  score  82.0812  d +0.4131
+  scale 1.60  P 28.7531  S 0.91414  L 0.06820  score  81.9479  d +0.2798
+  scale 1.80  P 28.5783  S 0.91132  L 0.06902  score  81.7258  d +0.0577
+  scale 2.00  P 28.3692  S 0.90786  L 0.06996  score  81.4592  d -0.2090
+  HCM0644 0/120 2s
+  HCM0644 20/120 36s
+  HCM0644 40/120 61s
+  HCM0644 60/120 86s
+  HCM0644 80/120 111s
+  HCM0644 100/120 135s
+
+== LOO-train priv HCM0644 (n=120) ==
+  scale 0.00  P 27.1483  S 0.91439  L 0.07829  score  80.5892  d +0.0000
+  scale 1.00  P 27.5849  S 0.92087  L 0.07773  score  81.0678  d +0.4786
+  scale 1.15  P 27.5650  S 0.92051  L 0.07799  score  81.0348  d +0.4456
+  scale 1.30  P 27.5242  S 0.91981  L 0.07831  score  80.9763  d +0.3871
+  scale 1.45  P 27.4616  S 0.91876  L 0.07872  score  80.8913  d +0.3021
+  scale 1.60  P 27.3803  S 0.91740  L 0.07918  score  80.7829  d +0.1937
+  scale 1.80  P 27.2442  S 0.91509  L 0.07990  score  80.6034  d +0.0142
+  scale 2.00  P 27.0812  S 0.91226  L 0.08070  score  80.3886  d -0.2006
+  HCM0674 0/120 1s
+  HCM0674 20/120 47s
+  HCM0674 40/120 104s
+  HCM0674 60/120 153s
+  HCM0674 80/120 195s
+  HCM0674 100/120 228s
+
+== LOO-train priv HCM0674 (n=120) ==
+  scale 0.00  P 28.5080  S 0.92396  L 0.06485  score  82.2296  d +0.0000
+  scale 1.00  P 29.1125  S 0.93122  L 0.06409  score  82.8408  d +0.6112
+  scale 1.15  P 29.0910  S 0.93084  L 0.06435  score  82.8057  d +0.5760
+  scale 1.30  P 29.0388  S 0.93006  L 0.06471  score  82.7369  d +0.5073
+  scale 1.45  P 28.9577  S 0.92890  L 0.06514  score  82.6362  d +0.4066
+  scale 1.60  P 28.8505  S 0.92738  L 0.06564  score  82.5059  d +0.2763
+  scale 1.80  P 28.6712  S 0.92480  L 0.06642  score  82.2898  d +0.0602
+  scale 2.00  P 28.4576  S 0.92163  L 0.06731  score  82.0310  d -0.1986

@@ -1,0 +1,42 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+radial gain table (fold A):  f  gmatch  gwiener
+   0.006   0.996   0.995
+   0.050   1.002   0.985
+   0.094   1.010   0.963
+   0.138   1.023   0.943
+   0.182   1.044   0.924
+   0.227   1.073   0.905
+   0.271   1.110   0.908
+   0.315   1.148   0.903
+   0.359   1.178   0.866
+   0.403   1.189   0.806
+   0.448   1.154   0.733
+   0.492   1.110   0.645
+   0.536   1.141   0.586
+   0.580   1.116   0.525
+   0.624   1.024   0.353
+   0.669   0.895   0.249
+   img 1 done
+   img 3 done
+   img 5 done
+   img 7 done
+   img 0 done
+   img 2 done
+   img 4 done
+   img 6 done
+
+=== P3 HCM0421  n=8 (2-fold, gains never self-fitted) ===
+identity           PSNR 26.0399(+0.0000)  SSIM 0.86845(+0.00000)  LPIPS 0.09543(+0.00000)  SCORE  77.8606  d +0.0000
+match^0.25         PSNR 25.9720(-0.0679)  SSIM 0.86876(+0.00031)  LPIPS 0.09562(+0.00020)  SCORE  77.8212  d -0.0394
+match^0.5          PSNR 25.9014(-0.1385)  SSIM 0.86808(-0.00038)  LPIPS 0.09562(+0.00019)  SCORE  77.7585  d -0.1021
+match^0.75         PSNR 25.8096(-0.2304)  SSIM 0.86717(-0.00128)  LPIPS 0.09580(+0.00038)  SCORE  77.6688  d -0.1918
+match^1.0          PSNR 25.7027(-0.3372)  SSIM 0.86580(-0.00265)  LPIPS 0.09624(+0.00082)  SCORE  77.5460  d -0.3146
+wiener             PSNR 26.1137(+0.0738)  SSIM 0.86770(-0.00075)  LPIPS 0.09935(+0.00392)  SCORE  77.7253  d -0.1353
+trim_only_f0.40    PSNR 26.1388(+0.0988)  SSIM 0.86963(+0.00118)  LPIPS 0.09802(+0.00260)  SCORE  77.8513  d -0.0093
+trim_only_f0.45    PSNR 26.1208(+0.0808)  SSIM 0.86954(+0.00108)  LPIPS 0.09658(+0.00115)  SCORE  77.8955  d +0.0349
+match0.5_trim      PSNR 26.0306(-0.0094)  SSIM 0.86901(+0.00056)  LPIPS 0.09797(+0.00255)  SCORE  77.7698  d -0.0908

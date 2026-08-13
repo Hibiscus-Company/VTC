@@ -1,0 +1,39 @@
+
+=== HCM0181  (train pairs 60) ===
+  fit gain1    s=[0.99938] b=[0.]
+  fit gain3    s=[0.99972 0.9996  0.99882] b=[0. 0. 0.]
+  fit affine3  s=[0.99332 0.99225 0.99195] b=[0.00403 0.00472 0.00431]
+  fit gamma    gamma=0.9950
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+  BASE (train-fit)       PSNR  24.2675 SSIM 0.84556 LPIPS 0.11680 SCORE  75.2555
+  gain1                  PSNR  24.2675 SSIM 0.84556 LPIPS 0.11680 SCORE  75.2555  dScore +0.0000
+  gain3                  PSNR  24.2675 SSIM 0.84556 LPIPS 0.11680 SCORE  75.2555  dScore +0.0000
+  affine3                PSNR  24.2837 SSIM 0.84522 LPIPS 0.11701 SCORE  75.2462  dScore -0.0093
+  gamma                  PSNR  24.2675 SSIM 0.84556 LPIPS 0.11680 SCORE  75.2555  dScore +0.0000
+  ORACLE affine3(test)   PSNR  24.2860 SSIM 0.84446 LPIPS 0.11715 SCORE  75.2193  dScore -0.0361
+
+=== HCM0193  (train pairs 60) ===
+  fit gain1    s=[0.99726] b=[0.]
+  fit gain3    s=[0.99688 0.99765 0.99722] b=[0. 0. 0.]
+  fit affine3  s=[0.98885 0.98852 0.99189] b=[0.00459 0.00539 0.00317]
+  fit gamma    gamma=1.0000
+  BASE (train-fit)       PSNR  25.6807 SSIM 0.84734 LPIPS 0.12688 SCORE  75.7534
+  gain1                  PSNR  25.6910 SSIM 0.84726 LPIPS 0.12693 SCORE  75.7552  dScore +0.0018
+  gain3                  PSNR  25.6912 SSIM 0.84726 LPIPS 0.12709 SCORE  75.7489  dScore -0.0045
+  affine3                PSNR  25.7043 SSIM 0.84699 LPIPS 0.12713 SCORE  75.7471  dScore -0.0063
+  gamma                  PSNR  25.6807 SSIM 0.84734 LPIPS 0.12688 SCORE  75.7534  dScore +0.0000
+  ORACLE affine3(test)   PSNR  25.7078 SSIM 0.84676 LPIPS 0.12724 SCORE  75.7379  dScore -0.0155
+
+=== HCM0204  (train pairs 60) ===
+  fit gain1    s=[0.99725] b=[0.]
+  fit gain3    s=[0.9976  0.99741 0.99671] b=[0. 0. 0.]
+  fit affine3  s=[0.99227 0.9924  0.99413] b=[0.00321 0.00307 0.00155]
+  fit gamma    gamma=1.0025
+  BASE (train-fit)       PSNR  24.8906 SSIM 0.85408 LPIPS 0.12083 SCORE  75.7235
+  gain1                  PSNR  24.8931 SSIM 0.85396 LPIPS 0.12092 SCORE  75.7179  dScore -0.0056
+  gain3                  PSNR  24.8939 SSIM 0.85399 LPIPS 0.12095 SCORE  75.7179  dScore -0.0056

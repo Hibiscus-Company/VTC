@@ -1,0 +1,54 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+pool=p4  k=4  views=60
+  [degeneracy check k=4] max|median-trim1|=0.00e+00  max|median-winsor1|=5.96e-08
+  10/60  (319s)
+  20/60  (1137s)
+  30/60  (2119s)
+  40/60  (2870s)
+  50/60  (3653s)
+  60/60  (4172s)
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/agg_p4.json
+
+aggregator                SCORE  d(mean)     PSNR    SSIM    LPIPS
+mean                    76.6487  +0.0000  24.9026  0.8654   0.1063
+pmean(p=0.5)            76.6476  -0.0011  24.8968  0.8654   0.1063
+blend(a=0.75)           76.6450  -0.0036  24.8980  0.8653   0.1063
+geomean(p=0)            76.6427  -0.0060  24.8873  0.8654   0.1063
+huber(c=4.0)            76.6421  -0.0066  24.8982  0.8653   0.1064
+pmean(p=2)              76.6411  -0.0076  24.9041  0.8652   0.1064
+mean_linearRGB          76.6395  -0.0092  24.9019  0.8652   0.1064
+blend(a=0.5)            76.6386  -0.0101  24.8882  0.8651   0.1062
+chromarobust            76.6379  -0.0108  24.8982  0.8651   0.1063
+invvar(r=24)            76.6287  -0.0199  24.8864  0.8651   0.1064
+blend(a=0.25)           76.6281  -0.0205  24.8731  0.8646   0.1059
+hybridfreq(r=2)         76.6247  -0.0239  24.8655  0.8641   0.1054
+invvar(r=8)             76.6235  -0.0252  24.8771  0.8650   0.1063
+lumguided(med)          76.6234  -0.0253  24.8556  0.8642   0.1054
+huber(c=2.0)            76.6224  -0.0262  24.8837  0.8651   0.1065
+huber-lum(c=1.345)      76.6174  -0.0313  24.8726  0.8648   0.1063
+hybridfreq(r=8)         76.6150  -0.0337  24.8586  0.8640   0.1055
+huber(c=1.345)          76.6136  -0.0350  24.8719  0.8648   0.1063
+hybridfreq(r=32)        76.6132  -0.0355  24.8560  0.8640   0.1055
+median                  76.6112  -0.0375  24.8529  0.8640   0.1055
+trim1                   76.6112  -0.0375  24.8529  0.8640   0.1055
+winsor1                 76.6112  -0.0375  24.8529  0.8640   0.1055
+huber(c=1.0)            76.6110  -0.0377  24.8645  0.8645   0.1061
+huber(c=0.5)            76.6095  -0.0392  24.8556  0.8641   0.1057
+tukey(c=8.0)            76.6066  -0.0420  24.8741  0.8649   0.1066
+softmax(b=2.0)          76.5862  -0.0625  24.8494  0.8642   0.1062
+blend(a=-0.25)          76.5850  -0.0636  24.8275  0.8632   0.1052
+softmax(b=1.0)          76.5653  -0.0834  24.8245  0.8631   0.1056
+tukey-lum(c=4.685)      76.5499  -0.0988  24.8272  0.8638   0.1065
+blend(a=-0.5)           76.5466  -0.1021  24.7973  0.8621   0.1049
+tukey(c=4.685)          76.5423  -0.1064  24.8245  0.8637   0.1066
+tukey(c=3.0)            76.4872  -0.1615  24.7788  0.8619   0.1060
+tukey(c=2.0)            76.4719  -0.1767  24.7652  0.8607   0.1052
+vecmed                  76.4487  -0.2000  24.7716  0.8600   0.1053
+closest2med             76.3468  -0.3019  24.7392  0.8586   0.1064
+softmax(b=0.5)          76.1030  -0.5456  24.6812  0.8603   0.1129
+patchsel64              75.6953  -0.9534  24.4270  0.8508   0.1122

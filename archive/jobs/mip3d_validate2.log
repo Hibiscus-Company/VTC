@@ -1,0 +1,14 @@
+=== HCM0421 + mip3d 0.2 on gpu0 Sun Jul 26 05:56:37 +07 2026 (paired baseline seed42/ema999 = 75.7616) ===
+[59999] loss 0.0546 l1 0.0281 ssim 0.8947 N 8000000
+Baked mip3d filter (factor 0.2) into ckpt: median sigma 0.00482463, mean opacity 0.1186
+Saved 8000000 gaussians to /mnt/d/avv/mip3d/HCM0421_mip0.2/ckpt.pt
+Wrote 40 images to /mnt/d/avv/mip3d/HCM0421_mip0.2/eval_render
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL HCM0421_mip0.2   n= 40  PSNR 25.3045  SSIM 0.8467  LPIPSvgg 0.1091  SCORE 76.2188
+=== baseline HCM0421_evalgen was: PSNR 25.1137 SSIM 0.8403 LPIPS 0.1129 SCORE 75.7616 ===
+=== MIP3D HCM0421 VALIDATION DONE Sun Jul 26 15:33:54 +07 2026 ===

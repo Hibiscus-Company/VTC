@@ -1,0 +1,32 @@
+[?25h[1A[2KSuccessfully installed markdown-it-py-4.2.0 mdurl-0.1.2 pygments-2.20.0 rich-15.0.0
+
+[31m×[0m Failed to build installable wheels for some pyproject.toml based projects
+[31m╰─>[0m gsplat
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'gsplat'
+  [31m   [0m   File "/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/setuptools/command/build_ext.py", line 262, in build_extension
+  [31m   [0m     _build_ext.build_extension(self, ext)
+  [31m   [0m   File "/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/setuptools/_distutils/command/build_ext.py", line 564, in build_extension
+  [31m   [0m     objects = self.compiler.compile(
+  [31m   [0m   File "/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 815, in unix_wrap_ninja_compile
+  [31m   [0m     _write_ninja_file_and_compile_objects(
+  [31m   [0m   File "/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2159, in _write_ninja_file_and_compile_objects
+  [31m   [0m     _run_ninja_build(
+  [31m   [0m   File "/home/bkai/miniconda3/envs/gsplat/lib/python3.10/site-packages/torch/utils/cpp_extension.py", line 2522, in _run_ninja_build
+  [31m   [0m     raise RuntimeError(message) from e
+  [31m   [0m RuntimeError: Error compiling objects for extension
+  [31m   [0m [31m[end of output][0m
+  
+  [1;35mnote[0m: This error originates from a subprocess, and is likely not a problem with pip.
+[31m  ERROR: Failed building wheel for gsplat[0m[31m
+[0mFailed to build gsplat
+[1;31merror[0m: [1mfailed-wheel-build-for-install[0m
+
+[31m×[0m Failed to build installable wheels for some pyproject.toml based projects
+[31m╰─>[0m gsplat
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'gsplat'
+GSPLAT IMPORT FAILED
+GSPLAT ENV DONE

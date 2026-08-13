@@ -1,0 +1,53 @@
+sub_round32_videolam.zip -- GRADED 77.6907 (NEW BEST, +0.0103 over r31 77.6804)
+Built 28/07 13:40. Submitted 28/07 ~14:2x. Provenance written 28/07 (was missing; caught by the
+freeze-day zip audit).
+
+SUBMETRICS      PSNR 26.640357   SSIM 87.3191   LPIPS 11.2230
+r31 was         PSNR 26.645885   SSIM 87.3345   LPIPS 11.2687
+
+DECOMPOSITION (dScore = -40*dLPIPS + 30*dSSIM + 0.6*dPSNR), closes exactly:
+   LPIPS -0.000457 -> +0.01828     <-- the entire gain
+   SSIM  -0.000154 -> -0.00462
+   PSNR  -0.005528 -> -0.00332
+   total                +0.01034   (observed +0.0103)
+The round traded a little PSNR and SSIM for LPIPS and won, which is correct at these weights
+(the LPIPS coefficient is -40 against +0.6 for PSNR).
+
+CONTENTS
+  386 entries, ZIP_STORED, 350,756,907 B = 334.51 MiB. Cap 350 MiB = 367,001,600 B.
+  HEADROOM 16,244,693 B = 15.49 MiB.  (EXPERIMENTS.md line ~4234 says "32 MiB spare" -- that is
+  WRONG and is corrected here. The zip fits either way; logged because a MiB/MB slip already cost
+  us a round once.)
+  towers HCM0421/0539/0540/0644/0674  60 each @1320x989  -- 300/300 sha256-IDENTICAL to r31
+  chair   58 @720x1280   -- re-encoded, changed
+  bonsai  28 @1920x1080  -- re-encoded, changed
+  All progressive JPEG (SOF2), 3-component, 4:2:0, JFIF APP0 only, no EXIF/COM. DQT md5 and
+  subsampling identical to r31 per scene => byte growth is added content entropy, not an encoder
+  setting change. The rejected q98/4:4:4 axis was NOT reopened.
+
+RECIPE (delta vs r31 only)
+  chair : 8-member mean -> energy restore lam=0.40 k=8 -> lens field chair_g1_g130.npy
+          (gauss sigma=1, gain 1.30) -> JPEG q100/ss2
+  bonsai: 7-member mean -> energy restore lam=0.25 k=7 -> no field -> JPEG q100/ss2
+  towers: carried byte-verbatim from r31.
+  lambdas set by boost-matching (lambda_diag.py, GT-free): target the towers' ~27% delivered
+  finest-band boost. chair 27/64.5 = 0.42 -> 0.40 ; bonsai 27/119.2 = 0.23 -> 0.25.
+
+*** POST-HOC CORRECTION -- WHERE THE GAIN ACTUALLY CAME FROM ***
+The freeze-day audit measured the SHIPPED BYTES rather than the intent, and the bonsai half of
+this round was a null-op:
+  bonsai r32 vs r31: mean|d| 0.0479 levels, RMS 0.2306, PSNR(r32,r31) 59.94 dB, 0.71% of pixels
+  move >1 level, finest-band energy ratio 1.0091 (+0.9%) against a 27% target -- ~30x short.
+  chair  r32 vs r31: RMS 0.779 levels, finest-band +4.10% -- also short of 27%, but 4.5x more
+  operator than bonsai received.
+So +0.0103 is attributable to CHAIR essentially alone. Two consequences:
+  (a) the boost-matching normalization is NOT validated by this round -- it shipped at a small
+      fraction of its nominal strength, so the round tested a weak version of the hypothesis;
+  (b) bonsai's LPIPS problem is NOT an operator problem. Per-scene triage on train photos
+      (legal GT) puts bonsai at LPIPS 0.2047 vs 0.075-0.091 for the other six scenes, with a
+      render/GT radial power ratio of 0.42 mid / 0.19 high -- the reconstruction never resolved
+      the scene. That is a training-capacity fault, not something a band operator can repair.
+      See the r33 bonsai capacity work.
+
+STATUS: superseded as the shipping base only if r33 beats it. Until then r32 IS the best graded
+submission and the base every later zip is assembled on.

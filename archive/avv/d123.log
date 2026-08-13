@@ -1,0 +1,32 @@
+================================================================================================
+D1  DISC OR NEEDLE  (3D scales, sorted s1>=s2>=s3, projection-free)
+
+ bonsai capD 5M  N=1,052,821
+   s2/s1  (->1 = DISC)   med 0.3400   p10 0.0922  p25 0.1781  p75 0.5690  p90 0.7888
+   s2/s3  (->1 = NEEDLE) med 355.44   p10 2.26  p25 11.16  p75 3952.75  p90 22334.01
+   classify: DISC-like (s2/s1>0.5) 31.4%   NEEDLE-like (s2/s3<2) 8.5%   neither 60.1%
+
+ tower ut42 8M  N=5,401,392
+   s2/s1  (->1 = DISC)   med 0.2662   p10 0.0775  p25 0.1372  p75 0.4840  p90 0.7222
+   s2/s3  (->1 = NEEDLE) med 51.51   p10 1.69  p25 4.31  p75 967.14  p90 7725.97
+   classify: DISC-like (s2/s1>0.5) 23.7%   NEEDLE-like (s2/s3<2) 13.0%   neither 63.3%
+
+================================================================================================
+D2  IS beta_t BLUR OR CONTENT?  (correlate with camera velocity from COLMAP)
+
+ bonsai: n=248  beta_t med 0.01377  p95/p5 6.17x
+   corr(beta_t, translational speed) r=+0.132  spearman +0.232
+   corr(beta_t, angular speed)       r=-0.114  spearman -0.046
+   READ: strongly NEGATIVE r => faster camera -> less HF -> beta_t IS motion blur.
+         near-zero r        => beta_t is CONTENT, group 4 ungated.
+
+ chair: n=205  beta_t med 0.03775  p95/p5 7.09x
+   corr(beta_t, translational speed) r=-0.001  spearman +0.031
+   corr(beta_t, angular speed)       r=-0.061  spearman -0.058
+   READ: strongly NEGATIVE r => faster camera -> less HF -> beta_t IS motion blur.
+         near-zero r        => beta_t is CONTENT, group 4 ungated.
+
+================================================================================================
+D3  DOES THE GAUSSIAN MAJOR AXIS ALIGN WITH THE BLUR DIRECTION? (bonsai)
+   n=10 frames; median |angle(gaussian major) - angle(blur)| = 39.0 deg
+   45 deg = NO alignment (random).  <30 = aligned (blur absorbed into gaussian shape).

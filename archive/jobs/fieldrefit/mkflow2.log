@@ -1,0 +1,8 @@
+120 matched train pairs
+  0/120 1s
+  20/120 26s
+  40/120 45s
+  60/120 64s
+  80/120 80s
+  100/120 86s
+wrote flow_HCM0181_B11all.npz  n=120  97s

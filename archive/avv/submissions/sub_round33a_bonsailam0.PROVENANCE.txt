@@ -1,0 +1,48 @@
+sub_round33a_bonsailam0.zip -- BUILT 28/07, NOT SUBMITTED
+Base: sub_round32_videolam.zip (GRADED 77.6907, best). Exactly ONE scene changes: bonsai.
+
+CHANGE: bonsai energy-restoration lambda 0.25 -> 0.
+  Source = /mnt/d/avv/r29/video_ens/bonsai/png_ens (the plain 7-member mean, no restore, no
+  field), re-encoded q100/ss2/optimize/progressive. VERIFIED: all 28 bonsai entries are
+  BYTE-IDENTICAL to sub_round31_fields.zip, i.e. this restores content that was already graded
+  across r29/r30/r31 rather than introducing anything new.
+
+WHY: lambda was swept on 28 REAL held-out frames (evalsplit/bonsai, k=6 members, full shipped
+encode). Restoration is MONOTONICALLY HARMFUL on this scene:
+    lam 0.00 -> 71.955   0.25 -> 71.531 (-0.424)   0.50 -> 71.390
+        0.75 -> 71.088   1.00 -> 70.760 (-1.195)   2.00 -> 69.650 (-2.304)
+The operator assumes member disagreement means "averaging destroyed detail". On bonsai the
+members disagree because the RECONSTRUCTION FAILED (render/GT radial power: mid 0.42, high 0.19,
+vs 1.02 / 0.90 on a tower), so the r-map amplifies noise instead of restoring signal.
+r32's bonsai lam=0.25 was therefore a mistake. It cost almost nothing only because of the
+deadband (below), which destroyed ~97% of it -- byte analysis of the shipped r32 put bonsai's
+delivered finest-band boost at +0.9% against a 27% target, mean|d| 0.0479 levels, PSNR(r32,r31)
+59.94 dB. That is also why r32's entire +0.0103 is attributable to CHAIR, not bonsai.
+
+EXPECTED: +0.008 (range 0 .. +0.013). Low risk -- it removes a measured-negative operator and
+returns to bytes with three rounds of grading history.
+
+VERIFY: 386/386 entries, 350,572,701 B = 334.33 MiB, cap 350 MiB = 367,001,600 B,
+headroom 15.67 MiB. CRC OK. Scenes changed vs r32: ['bonsai'] only. 358 files carried verbatim.
+
+NOT INCLUDED, and why:
+ - TOWER DEADBAND FIX: built and ready (/mnt/d/avv/r33/tower_ens/*/png, all 5 x 60) but held
+   behind a public-harness A/B against real GT. energy_restore reads png_ens = round(mean)*255,
+   an exact integer, so the final uint8 write computes round(n+d) = n + round(d) and every
+   sub-0.5-LSB correction is thresholded to zero. The float rebuild was verified to reproduce
+   png_ens BIT-EXACTLY (worst tie-fraction 0.0000% over 60 frames -- ensemble_renders.py built
+   the original mean in float32, so a float32 rebuild reproduces its tie-breaking), and the
+   shipped chain was reproduced 8/8 byte-exact (r29 png_er -> g1_g130 field -> JPEG q99 for
+   HCM0421, q100 elsewhere). Held because the fix does not merely deliver more of the same
+   operator: it also perturbs the r-map where Eb->0 makes r unstable (max 21 levels on 0.35% of
+   pixels), and because the SAME operator measured monotonically harmful on BOTH video scenes.
+   Towers have positive LB evidence (r28 lam=1.0 beat r27 lam=0 by +0.1005), so the sign is
+   probably right there -- but not shipped on theory.
+ - CHAIR: carried verbatim. Its own held-out sweep (58 frames, chair_eval) also says lam=0 is
+   optimal (0.00 71.003 / 0.25 70.953 / 1.00 70.430), which CONTRADICTS the leaderboard, where
+   r32's chair lam=0.40 gained +0.0103. Resolution: the operator is POOL-DEPENDENT and
+   chair_eval's 7 arms are different models from the 8 production members, so the sweep measures
+   the wrong pool. The LB measured the right one. Both agree on not INCREASING it -> no deadband
+   fix on chair, no lambda change, bytes untouched.
+ - HCM0421 q99 -> q100: deferred with the tower rebuild (it only becomes affordable because the
+   deadband fix shrinks tower JPEGs ~0.54%).

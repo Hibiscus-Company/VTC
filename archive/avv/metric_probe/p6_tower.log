@@ -1,0 +1,23 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/mnt/d/avv/metric_probe/mlib.py:56: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:203.)
+  return torch.from_numpy(np.ascontiguousarray(arr_u8)).float().div_(255.0) \
+field /mnt/d/avv/r2r9/fields/HCM0421.npy: rms 0.171 px  max 1.202
+  [1/8] DJI_20241230093349_0010_V
+  [2/8] DJI_20241230093415_0037_V
+  [3/8] DJI_20241230093458_0064_V
+  [4/8] DJI_20241230093531_0094_V
+  [5/8] DJI_20241230093612_0131_V
+  [6/8] DJI_20241230093655_0160_V
+  [7/8] DJI_20241230093929_0242_V
+  [8/8] DJI_20241230094005_0271_V
+
+=== P6 HCM0421 n=8 production-field scale sweep ===
+scale 0.00  PSNR 26.0589(+0.0000)  SSIM 0.86936(+0.00000)  LPIPS 0.09580(+0.00000)  SCORE  77.8842  d +0.0000
+scale 0.75  PSNR 26.6895(+0.6305)  SSIM 0.88257(+0.01321)  LPIPS 0.09380(-0.00200)  SCORE  78.7388  d +0.8546
+scale 1.00  PSNR 26.8142(+0.7553)  SSIM 0.88536(+0.01600)  LPIPS 0.09386(-0.00194)  SCORE  78.8947  d +1.0105
+scale 1.25  PSNR 26.8828(+0.8238)  SSIM 0.88712(+0.01776)  LPIPS 0.09418(-0.00162)  SCORE  78.9760  d +1.0918
+scale 1.50  PSNR 26.8907(+0.8317)  SSIM 0.88773(+0.01837)  LPIPS 0.09470(-0.00110)  SCORE  78.9785  d +1.0943
+scale 1.75  PSNR 26.8373(+0.7784)  SSIM 0.88714(+0.01778)  LPIPS 0.09545(-0.00035)  SCORE  78.8985  d +1.0143

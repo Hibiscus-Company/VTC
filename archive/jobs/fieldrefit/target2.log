@@ -1,0 +1,38 @@
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+         arm  mean|f| px   p95|f|  cos(.,B9)  mean|f-ref| px
+          B9      0.2112   0.6136     1.0000          0.0634
+      B9x130      0.2746   0.7977     1.0000          0.0000
+      M2x130      0.2466   0.7275     0.9944          0.0393
+      M2m130      0.2746   0.8101     0.9944          0.0325
+    M2ERm130      0.2746   0.8121     0.9945          0.0321
+     B11m130      0.2746   0.8143     0.9863          0.0513
+  B11n30m130      0.2746   0.7589     0.9672          0.0758
+ B11n120m130      0.2746   0.8165     0.9856          0.0515
+  5/60 17s
+  10/60 33s
+  15/60 46s
+  20/60 61s
+  25/60 74s
+  30/60 99s
+  35/60 128s
+  40/60 175s
+  45/60 233s
+  50/60 306s
+  55/60 351s
+  60/60 404s
+
+FIT-TARGET AT MATCHED AMPLITUDE, HCM0181, n=60, FULL shipped chain (k4 mean -> restore lam=1.0 -> warp lanczos4 -> JPEG q100/ss2)
+         arm     SCORE     PSNR    SSIM    LPIPS  vs B9x130  paired t   win/N
+          B9   78.3877  25.8879  0.8883   0.0948    -0.1400    -10.15   5/60
+      B9x130   78.5277  25.9948  0.8905   0.0946    +0.0000        --   0/60
+      M2x130   78.4829  25.9601  0.8898   0.0947    -0.0449     -5.24  17/60
+      M2m130   78.5130  25.9839  0.8903   0.0947    -0.0147     -3.54  20/60
+    M2ERm130   78.5150  25.9857  0.8904   0.0947    -0.0127     -3.15  19/60
+     B11m130   78.4822  25.9618  0.8899   0.0948    -0.0455     -6.05  14/60
+  B11n30m130   78.4473  25.9411  0.8893   0.0949    -0.0804     -4.60  19/60
+ B11n120m130   78.5127  25.9829  0.8903   0.0947    -0.0150     -1.80  29/60
+
+wrote /home/bkai/.claude/jobs/1c9cf7e9/tmp/fieldrefit/res_target2.json   total 404s

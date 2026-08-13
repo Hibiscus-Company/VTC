@@ -1,0 +1,40 @@
+k=8 n=20 workers=5 arms=['base', 'lam0.75', 'lam1.00', 'lam1.25', 'lam1.50']
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+  1/20 DJI_20241229103342_0028_V  base:-0.3686  lam0.75:-0.0414  lam1.00:+0.0000  lam1.25:+0.0057  lam1.50:-0.0189
+  2/20 DJI_20241229103346_0032_V  base:-0.2705  lam0.75:-0.0185  lam1.00:+0.0000  lam1.25:-0.0088  lam1.50:-0.0438
+  3/20 DJI_20241229103340_0026_V  base:-0.2782  lam0.75:-0.0168  lam1.00:+0.0000  lam1.25:-0.0116  lam1.50:-0.0454
+  4/20 DJI_20241229103341_0027_V  base:-0.2959  lam0.75:-0.0187  lam1.00:+0.0000  lam1.25:-0.0125  lam1.50:-0.0490
+  5/20 DJI_20241229103355_0037_V  base:-0.2891  lam0.75:-0.0194  lam1.00:+0.0000  lam1.25:-0.0103  lam1.50:-0.0435
+  6/20 DJI_20241229103357_0039_V  base:-0.3076  lam0.75:-0.0254  lam1.00:+0.0000  lam1.25:-0.0021  lam1.50:-0.0254
+  7/20 DJI_20241229103359_0041_V  base:-0.3137  lam0.75:-0.0271  lam1.00:+0.0000  lam1.25:-0.0004  lam1.50:-0.0232
+  8/20 DJI_20241229103402_0044_V  base:-0.3167  lam0.75:-0.0271  lam1.00:+0.0000  lam1.25:-0.0009  lam1.50:-0.0240
+  9/20 DJI_20241229103358_0040_V  base:-0.3204  lam0.75:-0.0285  lam1.00:+0.0000  lam1.25:+0.0024  lam1.50:-0.0184
+  10/20 DJI_20241229103404_0046_V  base:-0.3329  lam0.75:-0.0309  lam1.00:+0.0000  lam1.25:+0.0037  lam1.50:-0.0159
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/multiprocessing/spawn.py", line 116, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+  File "/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/multiprocessing/spawn.py", line 126, in _main
+    self = reduction.pickle.load(from_parent)
+_pickle.UnpicklingError: pickle data was truncated
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 6 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

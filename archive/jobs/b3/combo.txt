@@ -1,0 +1,10 @@
+K1 base (30k/5M/r15k/n8k/lp12k s42)    P 26.9814 S 0.8503 L 0.2448 -> 71.9058  dScore +0.0000  [cP +0.0000 cS +0.0000 cL -0.0000]
++ scale_reg 0.1  (sr01)                P 26.9464 S 0.8478 L 0.2403 -> 71.9898  dScore +0.0840  [cP -0.0210 cS -0.0750 cL +0.1800]
++ texture_weight 1.0 (tw1.0)           P 27.3812 S 0.8524 L 0.2485 -> 72.0607  dScore +0.1549  [cP +0.2399 cS +0.0630 cL -0.1480]
++ texture_weight 3.0 (tw3.0)           P 27.3996 S 0.8542 L 0.2551 -> 71.8618  dScore -0.0441  [cP +0.2509 cS +0.1170 cL -0.4120]
+
+PREDICTED sr0.1 x tw1.0 if the two deltas are ADDITIVE:
+   P 27.3462 S 0.8499 L 0.2440 -> 72.1447  dScore +0.2389
+   (they move OPPOSITE metrics: scale_reg buys LPIPS and pays PSNR/SSIM; texture_weight buys PSNR/SSIM and pays LPIPS)
+
+seed-noise reference: scale_reg 0.1 replicates 71.9911 / 71.9816 / 71.8254 -> mean 71.9327, sd 0.0930, SE 0.0537

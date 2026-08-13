@@ -1,0 +1,30 @@
+train_poses.csv: 147 rows
+Wrote 147 images to /mnt/d/avv/blurbound/chair/train_render
+[fit 0/147] frame_000000: L1 0.0293 -> 0.0291  {'sx': 0.8157274723052979, 'sy': 0.2872883379459381, 'th': -0.2101966291666031, 'a': 0.34335795044898987, 'gain': 0.9891651272773743, 'bias': 0.00551593629643321}
+[fit 25/147] frame_000230: L1 0.0373 -> 0.0361  {'sx': -0.1483450084924698, 'sy': -0.030465109273791313, 'th': -1.4315714836120605, 'a': 0.13935822248458862, 'gain': 1.0258491039276123, 'bias': -0.016941256821155548}
+[fit 50/147] frame_000450: L1 0.0183 -> 0.0166  {'sx': 1.4082205295562744, 'sy': 0.3075665831565857, 'th': 0.22887319326400757, 'a': -0.8966522216796875, 'gain': 1.0003416538238525, 'bias': 0.003077101893723011}
+[fit 75/147] frame_000690: L1 0.0264 -> 0.0224  {'sx': 0.6954200267791748, 'sy': 0.383134126663208, 'th': -0.5179017186164856, 'a': -0.8477515578269958, 'gain': 0.9790939092636108, 'bias': 0.022976305335760117}
+[fit 100/147] frame_000910: L1 0.0113 -> 0.0112  {'sx': 0.3063441216945648, 'sy': 0.7633880972862244, 'th': -0.9458527565002441, 'a': -0.9307629466056824, 'gain': 0.9970186352729797, 'bias': 0.0013677661772817373}
+[fit 125/147] frame_001135: L1 0.0157 -> 0.0149  {'sx': 0.16757738590240479, 'sy': 0.5878292322158813, 'th': 0.17637109756469727, 'a': -0.08236100524663925, 'gain': 1.0096346139907837, 'bias': -0.009699080139398575}
+fitted 147 train frames; median gain 1.0004 a -0.0681
+wrote 58 corrected eval renders -> /mnt/d/avv/blurbound/chair/eval_corrected
+[fit 100/147] frame_000910: L1 0.0113 -> 0.0114  {'sx': 1.0, 'sy': 1.0, 'th': 0.0, 'a': 0.0, 'gain': 0.9971126914024353, 'bias': 0.001890410203486681}
+[fit 125/147] frame_001135: L1 0.0157 -> 0.0149  {'sx': 1.0, 'sy': 1.0, 'th': 0.0, 'a': 0.0, 'gain': 1.0094892978668213, 'bias': -0.009610473178327084}
+fitted 147 train frames; median gain 0.9995 a 0.0000
+wrote 58 corrected eval renders -> /mnt/d/avv/blurbound/chair/eval_gainonly
+=== SCORES (baseline chair_ema099 = 69.8051) ===
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_blurmatch  n= 58  PSNR 25.2194  SSIM 0.7963  LPIPSvgg 0.2280  SCORE 69.8994
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/bkai/miniconda3/envs/fastgs2/lib/python3.10/site-packages/lpips/weights/v0.1/vgg.pth
+EVAL chair_gainonly   n= 58  PSNR 25.1701  SSIM 0.7942  LPIPSvgg 0.2278  SCORE 69.8183
+=== BLUR BOUND CHAIR DONE Thu Jul 23 14:12:07 +07 2026 ===
