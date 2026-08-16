@@ -1,3 +1,8 @@
+> **LAYOUT NOTE (2026-08-16):** this document describes the PRE-REORG repo layout
+> (`gsplat_track/`, root helpers, `scripts/*.py`). Those paths no longer exist on main —
+> to execute these steps verbatim, `git checkout pre-reorg` first. The same tools live
+> on in `original/` (see docs/runbooks/pipeline_runbook.md).
+
 # Reproducing `sub_round36_bonsai13.zip`
 
 VAR 2026 "BTS Digital Twin" — novel-view synthesis on `private_set2` (7 scenes).
