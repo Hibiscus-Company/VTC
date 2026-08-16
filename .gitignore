@@ -3,8 +3,10 @@ __pycache__/
 *.log
 output/
 runs/
-dataset/
+dataset/raw/
+dataset/processed/
 dist/
 env/weights/
 env/wheels/
 .ipynb_checkpoints/
+configs/paths.sh

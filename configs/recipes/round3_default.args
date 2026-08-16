@@ -1,0 +1,1 @@
+--iters 30000 --cap_max 8000000 --refine_stop 25000 --lpips_from 25000

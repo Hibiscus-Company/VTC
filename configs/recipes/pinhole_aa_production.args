@@ -1,0 +1,1 @@
+--iters 60000 --cap_max 8000000 --refine_stop 50000 --noise_stop 50000 --lpips_from 30000 --ema_decay 0.99

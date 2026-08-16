@@ -2,14 +2,15 @@
 
 > Distilled 2026-08-15 from the 24 persistent cross-session memory notes behind this project.
 > Companions: `README.md` (upstream FastGS), `archive/INDEX.md` (full working record, 2,889 files),
-> `REPRODUCE_r36.md` (rebuild of the graded submission).
+> `docs/REPRODUCE_r36.md` (rebuild of the graded submission).
+> **Layout note:** paths below predate the 2026-08-16 refactor — the live pipeline now lives flat in `original/` (was `gsplat_track/` + root helpers + `scripts/*.py`).
 
 ---
 
 ## 1. Project & current status
 
 Fork of **FastGS** (CVPR 2026) carrying Hibiscus's **VAR 2026 "BTS Digital Twin"** NVS competition
-work. The production method is **not** the upstream FastGS trainer: it is the `gsplat_track/`
+work. The production method is **not** the upstream FastGS trainer: it is the gsplat
 pipeline (gsplat MCMC + 3DGUT distorted-space rendering), with FastGS as the fork base.
 
 - **Rounds 1–2 (finished):** final graded submission **r36 = 77.7230** on private_set2
@@ -30,7 +31,7 @@ pipeline (gsplat MCMC + 3DGUT distorted-space rendering), with FastGS as the for
 - **Submission**: JPEG images (only frames named in each scene's `test/test_poses.csv`) in a zip.
   **Cap = 350 MiB = 367,001,600 bytes** (empirically confirmed: a 357-MB-decimal zip was accepted).
   Ship `quality=100, subsampling=2`, single-generation encode from PNG archives, never re-encode
-  an existing JPEG. Build: `build_submission_zip.py`; gate: `scripts/verify_zip.py`.
+  an existing JPEG. Build: `original/build_submission_zip.py`; gate: `original/verify_zip.py`.
 - **Pose convention verified**: `test_poses.csv` rows are byte-identical to COLMAP `images.bin`
   world-to-camera entries. Organiser poses measured correct to **0.018 px** — trust their geometry;
   never re-solve test poses.
@@ -77,7 +78,7 @@ pipeline (gsplat MCMC + 3DGUT distorted-space rendering), with FastGS as the for
   (energy restore is monotonically harmful on bonsai). Measure delivered amplitude in LSB; sweep
   operator sign per scene family.
 - Local scorer: `score_submission.py` (pip lpips vgg, psnr_max=50), bias local−LB ≈ −0.6.
-  `scripts/eval_score.py` drifted after 17/07 (−0.95 on identical bytes) — pre/post numbers are
+  `eval_score.py` (now `original/eval_score.py`) drifted after 17/07 (−0.95 on identical bytes) — pre/post numbers are
   incomparable.
 
 ## 5. Kill list (measured dead — do not retry)
@@ -213,8 +214,8 @@ pre-registered (staticness, illumination variance, depth-alignment).
 | Full experiment ledger (397 KB) | `archive/avv/EXPERIMENTS.md` |
 | Idea ledger (85 closed / 25 untried) | `archive/avv/IDEA_LEDGER.md` |
 | Production builds as-run | `archive/jobs/build_r22.sh … build_r37.sh` |
-| Graded-submission rebuild | `REPRODUCE_r36.md` (§7 is fresh-build, not as-run) |
+| Graded-submission rebuild | `docs/REPRODUCE_r36.md` (§7 is fresh-build, not as-run) |
 | Surviving weights manifest | `archive/env/WEIGHTS_MANIFEST.md` |
-| Round-3 briefing artifact | claude.ai/code/artifact/c65b74d5-4c23-40db-812b-c9cf5dbbde77 |
+| Round-3 strategy (offline copy) | `docs/round3/strategy.md` (exported from the claude.ai briefing artifact) |
 | Off-repo data/renders | `/mnt/d/avv/` (submissions, r38/r45 member PNGs, phase1 data) |
-| Memory source notes (24) | `~/.claude/projects/-mnt-c-Users-BKAI-an-plaza2-FastGS/memory/` |
+| Memory source notes (24) | `~/.claude/projects/...FastGS/memory/` on the original dev machine only — this file is their distillation |

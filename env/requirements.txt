@@ -1,0 +1,12 @@
+# Pinned to the exact working env ("gsplat" conda env, verified 2026-08-16, WSL2 + sm_120).
+# python 3.10. torch build must match the machine's CUDA (cu128 locally; on the H200
+# whatever torch>=2.4/cu12x is preinstalled is fine — gsplat compiles against it).
+torch==2.7.1
+torchvision==0.22.1
+numpy==1.26.4
+opencv-python==4.11.0.86
+Pillow==12.3.0
+scipy==1.15.3
+lpips==0.1.4
+# gsplat==1.5.3      -> build from env/vendor/ source (needs CUDA arch flag; see SETUP.md)
+# fused-ssim         -> build from env/vendor/fused-ssim (LOCAL FORK with shared-mem fix)
