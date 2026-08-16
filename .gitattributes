@@ -1,0 +1,14 @@
+# Normalize line endings: text files stored as LF in git, checked out as-is.
+# Without this, the Windows/WSL checkout shows every file modified (CRLF churn)
+# and replica diffs (an/ bach/ tu/ vs original/) become 100% noise.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.tiff binary
+*.pt binary
+*.npy binary
+*.pdf binary
+*.docx binary
+*.zip binary
+*.ipynb text eol=lf
